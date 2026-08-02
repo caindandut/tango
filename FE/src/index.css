@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #1a202c 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@layer components {
+  /* Main study card */
+  .study-card {
+    @apply bg-card rounded-2xl p-8 mx-auto w-full max-w-2xl;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Kanji display */
+  .kanji-display {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Meaning text */
+  .meaning-text {
+    font-family: 'Inter', sans-serif;
+    color: #9ca3af;
+    font-size: 1.125rem;
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* Hiragana result */
+  .hiragana-result {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  /* Hint dashes */
+  .hint-dash {
+    display: inline-block;
+    width: 1.5rem;
+    height: 3px;
+    background: #9ca3af;
+    margin: 0 4px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .hint-char {
+    font-family: 'Noto Sans JP', sans-serif;
+    display: inline-block;
+    font-size: 1.25rem;
+    color: #9ca3af;
+    margin: 0 2px;
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  /* Input field */
+  .romaji-input {
+    @apply w-full py-4 px-6 rounded-xl text-center text-lg;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-family: 'Noto Sans JP', 'Inter', sans-serif;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  .romaji-input::placeholder {
+    color: #6b7280;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+  }
+
+  .romaji-input:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Action buttons */
+  .btn-check {
+    @apply w-full py-4 px-6 rounded-xl font-semibold text-lg;
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
+  }
+
+  .btn-check:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
+  }
+
+  .btn-check:active {
+    transform: translateY(0);
+  }
+
+  .btn-check:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .btn-hint {
+    @apply w-full py-4 px-6 rounded-xl font-medium text-base;
+    background: rgba(255, 255, 255, 0.95);
+    color: #374151;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-hint:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-1px);
+  }
+
+  .btn-hint:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  /* Result feedback */
+  .result-correct {
+    @apply w-full py-4 px-6 rounded-xl text-center font-semibold text-lg;
+    background: rgba(34, 197, 94, 0.2);
+    border: 2px solid #22c55e;
+    color: #22c55e;
+    animation: scaleIn 0.3s ease-out;
+  }
+
+  .result-wrong {
+    @apply w-full py-4 px-6 rounded-xl text-center font-semibold text-lg;
+    background: rgba(239, 68, 68, 0.2);
+    border: 2px solid #ef4444;
+    color: #ef4444;
+    animation: shake 0.5s ease-in-out;
+  }
+
+  /* Progress bar */
+  .progress-bar-container {
+    @apply w-full h-1.5 rounded-full overflow-hidden;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #22c55e 0%, #f97316 100%);
+    transition: width 0.5s ease;
+  }
+
+  /* Toggle buttons */
+  .toggle-btn {
+    @apply px-4 py-2 rounded-lg text-sm font-medium;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .toggle-btn.active {
+    background: #f97316;
+    border-color: #f97316;
+    color: #ffffff;
+  }
+
+  .toggle-btn:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+
+  /* Flashcard flip interaction */
+  .flashcard-scene {
+    position: relative;
+    min-height: 0;
+    perspective: 1200px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .flashcard-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 0.55s ease;
+  }
+
+  .flashcard-back {
+    transform: rotateY(180deg);
+  }
+
+  .flashcard-scene.is-flipped .flashcard-front {
+    transform: rotateY(-180deg);
+  }
+
+  .flashcard-scene.is-flipped .flashcard-back {
+    transform: rotateY(0deg);
+  }
+
+  /* Dropzone */
+  .dropzone {
+    @apply rounded-2xl p-12 text-center;
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.03);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .dropzone:hover,
+  .dropzone.active {
+    border-color: #f97316;
+    background: rgba(249, 115, 22, 0.05);
+  }
+
+  /* Card for vocabulary sets */
+  .vocab-set-card {
+    @apply rounded-xl p-6;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .vocab-set-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(249, 115, 22, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}

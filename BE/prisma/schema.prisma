@@ -1,0 +1,61 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model VocabularySet {
+  id          String       @id @default(uuid())
+  name        String
+  totalWords  Int
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  vocabularies Vocabulary[]
+  sessions    StudySession[]
+}
+
+model Vocabulary {
+  id        String        @id @default(uuid())
+  position  Int           @default(0)
+  kanji     String
+  hiragana  String
+  meaning   String
+  setId     String
+  set       VocabularySet @relation(fields: [setId], references: [id], onDelete: Cascade)
+  results   StudyResult[]
+
+  @@index([setId])
+}
+
+model StudySession {
+  id           String        @id @default(uuid())
+  setId        String
+  set          VocabularySet @relation(fields: [setId], references: [id], onDelete: Cascade)
+  totalWords   Int
+  correctCount Int           @default(0)
+  wrongCount   Int           @default(0)
+  currentIndex Int           @default(0)
+  shuffledOrder Int[]
+  isCompleted  Boolean       @default(false)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  results      StudyResult[]
+
+  @@index([setId])
+}
+
+model StudyResult {
+  id         String       @id @default(uuid())
+  sessionId  String
+  session    StudySession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  vocabId    String
+  vocabulary Vocabulary   @relation(fields: [vocabId], references: [id], onDelete: Cascade)
+  userAnswer String
+  isCorrect  Boolean
+  hintsUsed  Int          @default(0)
+  answeredAt DateTime     @default(now())
+
+  @@index([sessionId])
+}

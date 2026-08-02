@@ -1,0 +1,2 @@
+ALTER TABLE "Vocabulary"
+ADD COLUMN "position" INTEGER NOT NULL DEFAULT 0;
