@@ -326,7 +326,7 @@ export default function StudyPage() {
                   >
                     <span className="flashcard-face flashcard-front study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
                       <span className="text-xs uppercase tracking-widest text-accent-orange font-semibold mb-8">Từ vựng</span>
-                      <span className="kanji-display">{currentWord.kanji}</span>
+                      <span className="kanji-display">{currentWord.kanji?.trim() || currentWord.hiragana}</span>
                       <span className="text-primary-500 text-xs mt-10">Nhấn để lật thẻ</span>
                     </span>
                     <span className="flashcard-face flashcard-back study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
