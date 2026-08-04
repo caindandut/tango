@@ -8,3 +8,8 @@ tmp/
 **/.codex/
 .DS_Store
 *.log
+BE/file/pdf_pages/
+BE/file/pdf_text_*.txt
+BE/file/*.py
+
+
