@@ -40,7 +40,22 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal server error' });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Tango API server running on port ${PORT}`);
-  console.log(`📝 Environment: ${process.env.NODE_ENV || 'development'}`);
-});
+const seedN3FromJson = require('./scripts/seedN3FromJson');
+
+// Seed database on server startup
+async function startServer() {
+  try {
+    console.log('🔄 Syncing N3 vocabulary to Database...');
+    await seedN3FromJson();
+  } catch (err) {
+    console.error('⚠️ Failed to sync vocabulary on startup:', err);
+  }
+
+  app.listen(PORT, () => {
+    console.log(`🚀 Tango API server running on port ${PORT}`);
+    console.log(`📝 Environment: ${process.env.NODE_ENV || 'development'}`);
+  });
+}
+
+startServer();
+
