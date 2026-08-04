@@ -27,7 +27,11 @@ router.post('/start/:setId', async (req, res) => {
       return res.status(404).json({ error: 'Vocabulary set not found' });
     }
 
-    const shuffledOrder = generateShuffledOrder(set.vocabularies.length);
+    const { shuffle = false } = req.body || {};
+    const shuffledOrder = shuffle
+      ? generateShuffledOrder(set.vocabularies.length)
+      : Array.from({ length: set.vocabularies.length }, (_, i) => i);
+
 
     const session = await prisma.studySession.create({
       data: {
