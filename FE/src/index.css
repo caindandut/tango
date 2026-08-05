@@ -39,7 +39,7 @@
 
   /* Kanji display - Heavy bold strokes and crisp outline */
   .kanji-display {
-    font-family: 'Noto Sans JP', 'M PLUS 1p', 'Zen Kaku Gothic New', 'BIZ UDPGothic', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'Yu Gothic', sans-serif;
+    font-family: 'Meiryo', 'MS PGothic', 'Noto Sans JP', 'M PLUS 1p', 'Zen Kaku Gothic New', 'BIZ UDPGothic', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
     font-size: 4rem;
     font-weight: 900;
     color: #ffffff;
@@ -62,7 +62,7 @@
 
   /* Hiragana result */
   .hiragana-result {
-    font-family: 'Noto Sans JP', 'M PLUS 1p', 'Zen Kaku Gothic New', 'BIZ UDPGothic', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'Yu Gothic', sans-serif;
+    font-family: 'Meiryo', 'MS PGothic', 'Noto Sans JP', 'M PLUS 1p', 'Zen Kaku Gothic New', 'BIZ UDPGothic', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
     font-size: 2.5rem;
     font-weight: 900;
     text-align: center;
@@ -83,7 +83,7 @@
   }
 
   .hint-char {
-    font-family: 'Noto Sans JP', 'M PLUS 1p', 'Zen Kaku Gothic New', 'BIZ UDPGothic', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'Yu Gothic', sans-serif;
+    font-family: 'Meiryo', 'MS PGothic', 'Noto Sans JP', 'M PLUS 1p', 'Zen Kaku Gothic New', 'BIZ UDPGothic', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
     display: inline-block;
     font-size: 1.75rem;
     font-weight: 800;
@@ -98,7 +98,7 @@
     background: rgba(255, 255, 255, 0.05);
     border: 2px solid rgba(255, 255, 255, 0.15);
     color: #ffffff;
-    font-family: 'Noto Sans JP', 'M PLUS 1p', 'Zen Kaku Gothic New', 'BIZ UDPGothic', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Meiryo', 'Yu Gothic', sans-serif;
+    font-family: 'Meiryo', 'MS PGothic', 'Noto Sans JP', 'M PLUS 1p', 'Zen Kaku Gothic New', 'BIZ UDPGothic', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
     font-weight: 700;
     letter-spacing: 0.04em;
     outline: none;
