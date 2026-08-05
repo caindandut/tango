@@ -435,10 +435,8 @@ export default function StudyPage() {
               {/* Kanji Display */}
               <div className="text-center mb-8">
                 <h2 lang="ja" className="kanji-display mb-3">{currentWord.kanji}</h2>
-                {showMeaning || (checkResult && checkResult.isCorrect) ? (
+                {(showMeaning || (checkResult && checkResult.isCorrect)) && (
                   <p className="meaning-text animate-fade-in">{currentWord.meaning}</p>
-                ) : (
-                  <p className="meaning-text opacity-40 italic text-sm">(Nghĩa đã bị ẩn)</p>
                 )}
               </div>
 
