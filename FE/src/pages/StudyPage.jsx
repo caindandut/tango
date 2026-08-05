@@ -51,7 +51,7 @@ export default function StudyPage() {
   // Focus input when word changes
   useEffect(() => {
     if (currentWord && !checkResult && inputRef.current) {
-      setTimeout(() => inputRef.current?.focus(), 100);
+      requestAnimationFrame(() => inputRef.current?.focus());
     }
   }, [currentWord, checkResult]);
 
@@ -90,9 +90,6 @@ export default function StudyPage() {
   useEffect(() => {
     const handleGlobalKeyDown = (e) => {
       if (studyMode !== 'reading' || e.key !== 'Enter' || e.isComposing || !currentWord || isCompleted) return;
-
-      // Let a focused button handle its own native Enter click once.
-      if (e.target instanceof HTMLElement && e.target.closest('button')) return;
 
       e.preventDefault();
       if (checkResult) {
@@ -433,17 +430,23 @@ export default function StudyPage() {
               ) : (
                 <>
               {/* Kanji Display */}
-              <div className="text-center mb-8">
-                <h2 lang="ja" className="kanji-display mb-3">{currentWord.kanji}</h2>
-                {(showMeaning || (checkResult && checkResult.isCorrect)) && (
-                  <p className="meaning-text animate-fade-in">{currentWord.meaning}</p>
-                )}
+              <div className="text-center mb-6">
+                <h2 lang="ja" className="kanji-display mb-2">{currentWord.kanji}</h2>
+                <div className="h-7 flex items-center justify-center">
+                  <p className={`meaning-text transition-all duration-300 ${
+                    showMeaning || (checkResult && checkResult.isCorrect)
+                      ? 'opacity-100 translate-y-0'
+                      : 'opacity-0 -translate-y-1 pointer-events-none'
+                  }`}>
+                    {currentWord.meaning}
+                  </p>
+                </div>
               </div>
 
               {/* Hint Dashes or Result Hiragana */}
-              <div className="text-center mb-8 min-h-[3rem] flex items-center justify-center">
+              <div className="text-center mb-6 h-14 flex items-center justify-center">
                 {checkResult ? (
-                  <p lang="ja" className={`hiragana-result animate-scale-in ${
+                  <p lang="ja" className={`hiragana-result transition-all duration-300 ${
                     checkResult.isCorrect ? 'text-accent-green' : 'text-accent-red'
                   }`}>
                     {checkResult.correctAnswer}
@@ -456,75 +459,82 @@ export default function StudyPage() {
               </div>
 
               {/* Input or Result Feedback */}
-              {!checkResult ? (
-                <>
-                  {/* Input */}
-                  <div className="mb-4">
-                    <HiraganaInput
-                      ref={inputRef}
-                      value={inputValue}
-                      onChange={setInputValue}
-                      placeholder="Gõ romaji (vd: toshokan → としょかん)"
-                      disabled={!!checkResult}
-                    />
-                  </div>
+              <div className="min-h-[140px] flex flex-col justify-end">
+                {!checkResult ? (
+                  <div className="animate-fade-in space-y-4">
+                    {/* Input */}
+                    <div>
+                      <HiraganaInput
+                        ref={inputRef}
+                        value={inputValue}
+                        onChange={setInputValue}
+                        placeholder="Gõ romaji (vd: toshokan → としょかん)"
+                        disabled={!!checkResult}
+                      />
+                    </div>
 
-                  {/* Action Buttons */}
-                  <div className="grid grid-cols-2 gap-3 mb-6">
-                    <button
-                      onClick={getHint}
-                      disabled={hintsUsed >= totalChars}
-                      className="btn-hint flex items-center justify-center gap-2"
-                    >
-                      <Lightbulb className="w-4 h-4" />
-                      Gợi ý ({hintsUsed}/{totalChars})
-                    </button>
-                    <button
-                      onClick={handleCheck}
-                      disabled={!inputValue.trim() || isChecking}
-                      className="btn-check flex items-center justify-center gap-2"
-                    >
-                      <Keyboard className="w-4 h-4" />
-                      Kiểm tra
-                    </button>
-                  </div>
-                </>
-              ) : (
-                <>
-                  {/* Result Feedback */}
-                  <div className={`mb-4 ${checkResult.isCorrect ? 'result-correct' : 'result-wrong'}`}>
-                    <div className="flex flex-col items-center justify-center gap-1">
-                      <div className="flex items-center gap-2">
-                        {checkResult.isCorrect ? (
-                          <>
-                            <Check className="w-5 h-5" />
-                            <span>Chính xác!</span>
-                          </>
-                        ) : (
-                          <>
-                            <X className="w-5 h-5" />
-                            <span>Sai rồi!</span>
-                          </>
-                        )}
-                      </div>
-                      {checkResult.isCorrect && !showMeaning && (
-                        <p className="text-sm font-medium text-white/90 mt-1 animate-fade-in">
-                          Nghĩa: <span className="text-accent-green font-semibold">{currentWord.meaning}</span>
-                        </p>
-                      )}
+                    {/* Action Buttons */}
+                    <div className="grid grid-cols-2 gap-3">
+                      <button
+                        type="button"
+                        onClick={getHint}
+                        disabled={hintsUsed >= totalChars}
+                        className="btn-hint flex items-center justify-center gap-2"
+                      >
+                        <Lightbulb className="w-4 h-4" />
+                        Gợi ý ({hintsUsed}/{totalChars})
+                      </button>
+                      <button
+                        type="button"
+                        onClick={handleCheck}
+                        disabled={!inputValue.trim() || isChecking}
+                        className="btn-check flex items-center justify-center gap-2"
+                      >
+                        <Keyboard className="w-4 h-4" />
+                        Kiểm tra
+                      </button>
                     </div>
                   </div>
+                ) : (
+                  <div className="animate-fade-in space-y-4">
+                    {/* Result Feedback */}
+                    <div className={`py-3.5 px-6 rounded-xl text-center font-semibold text-lg transition-all duration-300 ${
+                      checkResult.isCorrect ? 'result-correct' : 'result-wrong'
+                    }`}>
+                      <div className="flex flex-col items-center justify-center gap-1">
+                        <div className="flex items-center gap-2">
+                          {checkResult.isCorrect ? (
+                            <>
+                              <Check className="w-5 h-5" />
+                              <span>Chính xác!</span>
+                            </>
+                          ) : (
+                            <>
+                              <X className="w-5 h-5" />
+                              <span>Sai rồi!</span>
+                            </>
+                          )}
+                        </div>
+                        {checkResult.isCorrect && !showMeaning && (
+                          <p className="text-sm font-medium text-white/90 mt-0.5 animate-fade-in">
+                            Nghĩa: <span className="text-accent-green font-semibold">{currentWord.meaning}</span>
+                          </p>
+                        )}
+                      </div>
+                    </div>
 
-                  {/* Next Button */}
-                  <button
-                    onClick={handleNext}
-                    className="btn-check w-full flex items-center justify-center gap-2 mb-6"
-                  >
-                    Tiếp theo
-                    <ChevronRight className="w-5 h-5" />
-                  </button>
-                </>
-              )}
+                    {/* Next Button */}
+                    <button
+                      type="button"
+                      onClick={handleNext}
+                      className="btn-check w-full flex items-center justify-center gap-2"
+                    >
+                      Tiếp theo
+                      <ChevronRight className="w-5 h-5" />
+                    </button>
+                  </div>
+                )}
+              </div>
 
               {/* Enter shortcut hint */}
               <p className="text-center text-sm text-primary-500">
