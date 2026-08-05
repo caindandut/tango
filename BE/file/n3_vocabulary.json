@@ -2156,7 +2156,7 @@
     {
       "kanji": "引く",
       "hiragana": "ひく",
-      "meaning": "Kéo, trừ, rút (tha động từ)"
+      "meaning": "Kéo, trừ, rút, tra (từ điển) (tha động từ)"
     },
     {
       "kanji": "増える",
@@ -2251,7 +2251,7 @@
     {
       "kanji": "殺す",
       "hiragana": "ころす",
-      "meaning": "Giết (tha động từ)"
+      "meaning": "Giết, sát hại (tha động từ)"
     },
     {
       "kanji": "隠れる",
@@ -2291,17 +2291,17 @@
     {
       "kanji": "開く",
       "hiragana": "ひらく",
-      "meaning": "Mở, nở (hoa), tổ chức (tự động từ)"
+      "meaning": "Mở, nở (hoa), tổ chức (tự/tha động từ)"
     },
     {
       "kanji": "閉じる",
       "hiragana": "とじる",
-      "meaning": "Đóng, khép (tha động từ)"
+      "meaning": "Đóng, khép (mắt, sách) (tự/tha động từ)"
     },
     {
       "kanji": "飛ぶ",
       "hiragana": "とぶ",
-      "meaning": "Bay, biến mất (tự động từ)"
+      "meaning": "Bay, bắn, biến mất (tự động từ)"
     },
     {
       "kanji": "飛ばす",
@@ -2351,7 +2351,7 @@
     {
       "kanji": "間違う",
       "hiragana": "まちがう",
-      "meaning": "Sai, nhầm lẫn (tự động từ)"
+      "meaning": "Sai, nhầm lẫn (tự/tha động từ)"
     },
     {
       "kanji": "間違える",
@@ -2476,12 +2476,12 @@
     {
       "kanji": "外れる",
       "hiragana": "はずれる",
-      "meaning": "Tuột ra, rời ra, trúng (vé số) (tự động từ)"
+      "meaning": "Tuột ra, rời ra, trượt (xổ số), sai lệch (tự động từ)"
     },
     {
       "kanji": "外す",
       "hiragana": "はずす",
-      "meaning": "Tháo ra, sai lệch (tha động từ)"
+      "meaning": "Tháo ra, gỡ ra, rời khỏi, sai lệch (tha động từ)"
     },
     {
       "kanji": "揺れる",
@@ -2556,7 +2556,7 @@
     {
       "kanji": "感じる",
       "hiragana": "かんじる",
-      "meaning": "Cảm thấy, cảm giác (tha động từ)"
+      "meaning": "Cảm thấy, cảm giác (tự/tha động từ)"
     }
   ],
   "Bài 6": [
