@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { ArrowLeft, Layers, Lightbulb, Keyboard, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, ListOrdered } from 'lucide-react';
+import { ArrowLeft, Layers, Lightbulb, Keyboard, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, Eye, EyeOff } from 'lucide-react';
 import { Toaster } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
@@ -15,6 +15,10 @@ export default function StudyPage() {
   );
   const [isFlashcardFlipped, setIsFlashcardFlipped] = useState(false);
   const [isShuffled, setIsShuffled] = useState(false);
+  const [showMeaning, setShowMeaning] = useState(() => {
+    const saved = localStorage.getItem('tango_show_meaning');
+    return saved !== null ? saved === 'true' : true;
+  });
   const inputRef = useRef(null);
 
   const {
@@ -132,6 +136,14 @@ export default function StudyPage() {
       resetSession();
       startSession(setId, nextState);
     }
+  };
+
+  const handleToggleMeaning = () => {
+    setShowMeaning((prev) => {
+      const next = !prev;
+      localStorage.setItem('tango_show_meaning', String(next));
+      return next;
+    });
   };
 
   const handleRestartStudy = () => {
@@ -298,6 +310,29 @@ export default function StudyPage() {
           </button>
 
           <div className="flex flex-wrap items-center justify-end gap-3">
+            {/* Meaning Toggle Button (Bật/Tắt Hiển thị Nghĩa) */}
+            {studyMode === 'reading' && (
+              <button
+                type="button"
+                onClick={handleToggleMeaning}
+                className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-2 border ${
+                  showMeaning
+                    ? 'bg-accent-orange/20 border-accent-orange text-accent-orange shadow-sm shadow-accent-orange/20'
+                    : 'bg-primary-900/60 border-white/10 text-primary-400 hover:text-white hover:border-white/20'
+                }`}
+                title={showMeaning ? 'Đang bật hiển thị nghĩa (Nhấn để tắt)' : 'Đang tắt hiển thị nghĩa (Nhấn để bật)'}
+              >
+                {showMeaning ? (
+                  <Eye className="w-3.5 h-3.5 text-accent-orange" />
+                ) : (
+                  <EyeOff className="w-3.5 h-3.5 text-primary-400" />
+                )}
+                <span>
+                  Nghĩa: <strong className={showMeaning ? 'text-accent-orange' : 'text-primary-300'}>{showMeaning ? 'Bật' : 'Tắt'}</strong>
+                </span>
+              </button>
+            )}
+
             {/* Shuffle Toggle Button (Bật/Tắt Xáo trộn) */}
             <button
               type="button"
@@ -400,7 +435,11 @@ export default function StudyPage() {
               {/* Kanji Display */}
               <div className="text-center mb-8">
                 <h2 lang="ja" className="kanji-display mb-3">{currentWord.kanji}</h2>
-                <p className="meaning-text">{currentWord.meaning}</p>
+                {showMeaning || (checkResult && checkResult.isCorrect) ? (
+                  <p className="meaning-text animate-fade-in">{currentWord.meaning}</p>
+                ) : (
+                  <p className="meaning-text opacity-40 italic text-sm">(Nghĩa đã bị ẩn)</p>
+                )}
               </div>
 
               {/* Hint Dashes or Result Hiragana */}
@@ -456,17 +495,24 @@ export default function StudyPage() {
                 <>
                   {/* Result Feedback */}
                   <div className={`mb-4 ${checkResult.isCorrect ? 'result-correct' : 'result-wrong'}`}>
-                    <div className="flex items-center justify-center gap-2">
-                      {checkResult.isCorrect ? (
-                        <>
-                          <Check className="w-5 h-5" />
-                          <span>Chính xác!</span>
-                        </>
-                      ) : (
-                        <>
-                          <X className="w-5 h-5" />
-                          <span>Sai rồi!</span>
-                        </>
+                    <div className="flex flex-col items-center justify-center gap-1">
+                      <div className="flex items-center gap-2">
+                        {checkResult.isCorrect ? (
+                          <>
+                            <Check className="w-5 h-5" />
+                            <span>Chính xác!</span>
+                          </>
+                        ) : (
+                          <>
+                            <X className="w-5 h-5" />
+                            <span>Sai rồi!</span>
+                          </>
+                        )}
+                      </div>
+                      {checkResult.isCorrect && !showMeaning && (
+                        <p className="text-sm font-medium text-white/90 mt-1 animate-fade-in">
+                          Nghĩa: <span className="text-accent-green font-semibold">{currentWord.meaning}</span>
+                        </p>
                       )}
                     </div>
                   </div>
