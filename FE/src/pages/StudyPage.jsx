@@ -123,14 +123,14 @@ export default function StudyPage() {
     return () => window.removeEventListener('keydown', handleFlashcardKeyDown);
   }, [currentWord, handleFlashcardNext, handleFlashcardPrevious, isCompleted, studyMode]);
 
-  const handleOrderChange = (shuffle) => {
-    if (isShuffled === shuffle) return;
-    setIsShuffled(shuffle);
+  const handleToggleShuffle = () => {
+    const nextState = !isShuffled;
+    setIsShuffled(nextState);
     setInputValue('');
     setIsFlashcardFlipped(false);
     if (setId) {
       resetSession();
-      startSession(setId, shuffle);
+      startSession(setId, nextState);
     }
   };
 
@@ -298,23 +298,20 @@ export default function StudyPage() {
           </button>
 
           <div className="flex flex-wrap items-center justify-end gap-3">
-            {/* Order Toggle (Bình thường vs Xáo trộn) */}
-            <div className="flex items-center gap-1 p-1 bg-primary-900/60 rounded-lg border border-white/10" aria-label="Thứ tự từ vựng">
-              <button
-                onClick={() => handleOrderChange(false)}
-                className={`px-3 py-1.5 rounded-md text-xs font-medium transition-all flex items-center gap-1.5 ${!isShuffled ? 'bg-accent-orange text-white shadow-sm' : 'text-primary-400 hover:text-white'}`}
-                title="Thứ tự theo file JSON bài học"
-              >
-                <ListOrdered className="w-3.5 h-3.5" /> Bình thường
-              </button>
-              <button
-                onClick={() => handleOrderChange(true)}
-                className={`px-3 py-1.5 rounded-md text-xs font-medium transition-all flex items-center gap-1.5 ${isShuffled ? 'bg-accent-orange text-white shadow-sm' : 'text-primary-400 hover:text-white'}`}
-                title="Đảo lộn thứ tự ngẫu nhiên"
-              >
-                <Shuffle className="w-3.5 h-3.5" /> Xáo trộn
-              </button>
-            </div>
+            {/* Shuffle Toggle Button (Bật/Tắt Xáo trộn) */}
+            <button
+              type="button"
+              onClick={handleToggleShuffle}
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-2 border ${
+                isShuffled
+                  ? 'bg-accent-orange/20 border-accent-orange text-accent-orange shadow-sm shadow-accent-orange/20'
+                  : 'bg-primary-900/60 border-white/10 text-primary-400 hover:text-white hover:border-white/20'
+              }`}
+              title={isShuffled ? 'Đang bật xáo trộn (Nhấn để tắt)' : 'Đang tắt xáo trộn (Nhấn để bật)'}
+            >
+              <Shuffle className={`w-3.5 h-3.5 ${isShuffled ? 'text-accent-orange' : 'text-primary-400'}`} />
+              <span>Xáo trộn: <strong className={isShuffled ? 'text-accent-orange' : 'text-primary-300'}>{isShuffled ? 'Bật' : 'Tắt'}</strong></span>
+            </button>
 
             {/* Study Mode Toggle */}
             <div className="flex items-center gap-2" role="tablist" aria-label="Chế độ học">

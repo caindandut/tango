@@ -13,7 +13,7 @@ async function seedN3FromJson() {
   }
 
   await prisma.$transaction(async (tx) => {
-    await tx.vocabularySet.deleteMany({ where: { name: { contains: 'N3 Mimikara' } } });
+    await tx.vocabularySet.deleteMany({});
     for (const [name, words] of lessons) {
       await tx.vocabularySet.create({
         data: {
