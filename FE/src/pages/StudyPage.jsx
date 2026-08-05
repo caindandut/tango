@@ -150,7 +150,7 @@ export default function StudyPage() {
     for (let i = 0; i < totalChars; i++) {
       if (i < hintsUsed && hintText[i]) {
         chars.push(
-          <span key={i} className="hint-char">
+          <span lang="ja" key={i} className="hint-char">
             {hintText[i]}
           </span>
         );
@@ -356,13 +356,13 @@ export default function StudyPage() {
                   >
                     <span className="flashcard-face flashcard-front study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
                       <span className="text-xs uppercase tracking-widest text-accent-orange font-semibold mb-8">Từ vựng</span>
-                      <span className="kanji-display">{currentWord.kanji?.trim() || currentWord.hiragana}</span>
+                      <span lang="ja" className="kanji-display">{currentWord.kanji?.trim() || currentWord.hiragana}</span>
                       <span className="text-primary-500 text-xs mt-10">Nhấn để lật thẻ</span>
                     </span>
                     <span className="flashcard-face flashcard-back study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
                       <span className="text-xs uppercase tracking-widest text-accent-green font-semibold mb-8">Nghĩa & cách đọc</span>
                       <span className="text-primary-200 text-xl sm:text-2xl text-center mb-5">{currentWord.meaning}</span>
-                      <span className="hiragana-result text-accent-green">{currentWord.hiragana}</span>
+                      <span lang="ja" className="hiragana-result text-accent-green">{currentWord.hiragana}</span>
                       <span className="text-primary-500 text-xs mt-10">Nhấn để xem lại từ vựng</span>
                     </span>
                   </button>
@@ -399,14 +399,14 @@ export default function StudyPage() {
                 <>
               {/* Kanji Display */}
               <div className="text-center mb-8">
-                <h2 className="kanji-display mb-3">{currentWord.kanji}</h2>
+                <h2 lang="ja" className="kanji-display mb-3">{currentWord.kanji}</h2>
                 <p className="meaning-text">{currentWord.meaning}</p>
               </div>
 
               {/* Hint Dashes or Result Hiragana */}
               <div className="text-center mb-8 min-h-[3rem] flex items-center justify-center">
                 {checkResult ? (
-                  <p className={`hiragana-result animate-scale-in ${
+                  <p lang="ja" className={`hiragana-result animate-scale-in ${
                     checkResult.isCorrect ? 'text-accent-green' : 'text-accent-red'
                   }`}>
                     {checkResult.correctAnswer}

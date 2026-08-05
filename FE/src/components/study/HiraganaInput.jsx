@@ -47,6 +47,7 @@ const HiraganaInput = forwardRef(({ value, onChange, onKeyDown, placeholder, dis
     <input
       ref={inputRef}
       type="text"
+      lang="ja"
       className="romaji-input"
       placeholder={placeholder}
       disabled={disabled}

@@ -36,7 +36,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        japanese: ['"Noto Sans JP"', 'sans-serif'],
+        japanese: ['"Zen Kaku Gothic New"', '"Noto Sans JP"', '"BIZ UDPGothic"', '"Hiragino Sans"', '"Hiragino Kaku Gothic ProN"', '"Meiryo"', '"Yu Gothic"', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.3s ease-out',

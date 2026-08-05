@@ -78,7 +78,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/')}>
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-accent-orange via-orange-500 to-amber-400 flex items-center justify-center shadow-lg shadow-accent-orange/30 transform hover:scale-105 transition-transform">
-              <span className="text-xl font-bold font-japanese text-slate-950">単</span>
+              <span lang="ja" className="text-xl font-bold font-japanese text-slate-950">単</span>
             </div>
             <div>
               <div className="flex items-center gap-2">
@@ -343,7 +343,7 @@ export default function HomePage() {
       <footer className="py-8 px-4 border-t border-white/10 bg-slate-950 text-center text-xs text-primary-500">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <span className="font-japanese font-bold text-accent-orange">単</span>
+            <span lang="ja" className="font-japanese font-bold text-accent-orange">単</span>
             <span>Tango N3 Mimikara Oboeru Vocabulary</span>
           </div>
           <p>© 2026 Tango N3. All rights reserved.</p>
