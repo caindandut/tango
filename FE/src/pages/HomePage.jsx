@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BookOpen, BarChart3, Sparkles, Shuffle, Play } from 'lucide-react';
+import { BookOpen, BarChart3, Sparkles, Shuffle, Play, ListOrdered } from 'lucide-react';
 import { vocabularyApi } from '@/lib/api';
 import { Toaster, toast } from 'sonner';
 
@@ -57,7 +57,7 @@ export default function HomePage() {
             Chinh phục <span className="text-gradient">Từ Vựng JLPT N3</span>
           </h2>
           <p className="text-primary-300 text-base md:text-lg max-w-xl mx-auto">
-            Chọn bài học để bắt đầu. Mỗi lượt học sẽ <span className="text-accent-orange font-semibold">tự động đảo lộn từ vựng</span> giúp ghi nhớ sâu và phản xạ gõ Hiragana tức thì.
+            Chọn bài học để bắt đầu. Mặc định từ vựng theo <span className="text-accent-orange font-semibold">đúng thứ tự file JSON</span>, có thể bật Xáo trộn từ vựng bất kỳ lúc nào.
           </p>
         </div>
       </section>
@@ -71,8 +71,8 @@ export default function HomePage() {
               Danh sách Bài Học ({sets.length} Bài)
             </h3>
             <span className="text-xs text-primary-400 flex items-center gap-1">
-              <Shuffle className="w-3.5 h-3.5 text-accent-orange" />
-              Đảo lộn thứ tự ngẫu nhiên mỗi lần học
+              <ListOrdered className="w-3.5 h-3.5 text-accent-orange" />
+              Thứ tự chuẩn từ file JSON (Có thể bật Xáo trộn)
             </span>
           </div>
 
@@ -122,7 +122,7 @@ export default function HomePage() {
 
                   <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between gap-3">
                     <span className="text-xs text-primary-400 flex items-center gap-1">
-                      <Shuffle className="w-3 h-3 text-accent-orange" /> Random Shuffle
+                      <ListOrdered className="w-3 h-3 text-accent-orange" /> Thứ tự chuẩn JSON
                     </span>
                     <button className="px-4 py-2 rounded-lg bg-accent-orange text-white text-sm font-semibold flex items-center gap-1.5 group-hover:bg-accent-orange-hover transition-colors shadow-md shadow-accent-orange/20">
                       <Play className="w-3.5 h-3.5 fill-current" /> Học ngay

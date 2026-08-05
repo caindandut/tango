@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { ArrowLeft, Layers, Lightbulb, Keyboard, ChevronRight, RotateCcw, Trophy, X, Check } from 'lucide-react';
+import { ArrowLeft, Layers, Lightbulb, Keyboard, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, ListOrdered } from 'lucide-react';
 import { Toaster } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
@@ -14,6 +14,7 @@ export default function StudyPage() {
     location.pathname.startsWith('/flashcards/') ? 'flashcard' : 'reading',
   );
   const [isFlashcardFlipped, setIsFlashcardFlipped] = useState(false);
+  const [isShuffled, setIsShuffled] = useState(false);
   const inputRef = useRef(null);
 
   const {
@@ -38,7 +39,7 @@ export default function StudyPage() {
   // Start session on mount
   useEffect(() => {
     if (setId) {
-      startSession(setId);
+      startSession(setId, isShuffled);
     }
     return () => resetSession();
   }, [resetSession, setId, startSession]);
@@ -122,10 +123,21 @@ export default function StudyPage() {
     return () => window.removeEventListener('keydown', handleFlashcardKeyDown);
   }, [currentWord, handleFlashcardNext, handleFlashcardPrevious, isCompleted, studyMode]);
 
+  const handleOrderChange = (shuffle) => {
+    if (isShuffled === shuffle) return;
+    setIsShuffled(shuffle);
+    setInputValue('');
+    setIsFlashcardFlipped(false);
+    if (setId) {
+      resetSession();
+      startSession(setId, shuffle);
+    }
+  };
+
   const handleRestartStudy = () => {
     resetSession();
     if (setId) {
-      startSession(setId);
+      startSession(setId, isShuffled);
       setInputValue('');
     }
   };
@@ -285,23 +297,44 @@ export default function StudyPage() {
             <span className="text-sm">Thoát</span>
           </button>
 
-          <div className="flex items-center justify-end gap-2" role="tablist" aria-label="Chế độ học">
-            <button
-              onClick={() => handleModeChange('reading')}
-              className={`toggle-btn flex-1 sm:flex-none flex items-center justify-center gap-1.5 ${studyMode === 'reading' ? 'active' : ''}`}
-              aria-selected={studyMode === 'reading'}
-              role="tab"
-            >
-              <Keyboard className="w-3.5 h-3.5" /> Cách đọc
-            </button>
-            <button
-              onClick={() => handleModeChange('flashcard')}
-              className={`toggle-btn flex-1 sm:flex-none flex items-center justify-center gap-1.5 ${studyMode === 'flashcard' ? 'active' : ''}`}
-              aria-selected={studyMode === 'flashcard'}
-              role="tab"
-            >
-              <Layers className="w-3.5 h-3.5" /> Flashcard
-            </button>
+          <div className="flex flex-wrap items-center justify-end gap-3">
+            {/* Order Toggle (Bình thường vs Xáo trộn) */}
+            <div className="flex items-center gap-1 p-1 bg-primary-900/60 rounded-lg border border-white/10" aria-label="Thứ tự từ vựng">
+              <button
+                onClick={() => handleOrderChange(false)}
+                className={`px-3 py-1.5 rounded-md text-xs font-medium transition-all flex items-center gap-1.5 ${!isShuffled ? 'bg-accent-orange text-white shadow-sm' : 'text-primary-400 hover:text-white'}`}
+                title="Thứ tự theo file JSON bài học"
+              >
+                <ListOrdered className="w-3.5 h-3.5" /> Bình thường
+              </button>
+              <button
+                onClick={() => handleOrderChange(true)}
+                className={`px-3 py-1.5 rounded-md text-xs font-medium transition-all flex items-center gap-1.5 ${isShuffled ? 'bg-accent-orange text-white shadow-sm' : 'text-primary-400 hover:text-white'}`}
+                title="Đảo lộn thứ tự ngẫu nhiên"
+              >
+                <Shuffle className="w-3.5 h-3.5" /> Xáo trộn
+              </button>
+            </div>
+
+            {/* Study Mode Toggle */}
+            <div className="flex items-center gap-2" role="tablist" aria-label="Chế độ học">
+              <button
+                onClick={() => handleModeChange('reading')}
+                className={`toggle-btn flex-1 sm:flex-none flex items-center justify-center gap-1.5 ${studyMode === 'reading' ? 'active' : ''}`}
+                aria-selected={studyMode === 'reading'}
+                role="tab"
+              >
+                <Keyboard className="w-3.5 h-3.5" /> Cách đọc
+              </button>
+              <button
+                onClick={() => handleModeChange('flashcard')}
+                className={`toggle-btn flex-1 sm:flex-none flex items-center justify-center gap-1.5 ${studyMode === 'flashcard' ? 'active' : ''}`}
+                aria-selected={studyMode === 'flashcard'}
+                role="tab"
+              >
+                <Layers className="w-3.5 h-3.5" /> Flashcard
+              </button>
+            </div>
           </div>
         </div>
       </header>

@@ -20,7 +20,7 @@ export const vocabularyApi = {
 
 // Study API
 export const studyApi = {
-  startSession: (setId) => api.post(`/study/start/${setId}`),
+  startSession: (setId, shuffle = false) => api.post(`/study/start/${setId}`, { shuffle }),
 
   getSession: (sessionId) => api.get(`/study/session/${sessionId}`),
 

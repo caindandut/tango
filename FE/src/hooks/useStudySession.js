@@ -17,11 +17,11 @@ export function useStudySession() {
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
 
-  const startSession = useCallback(async (setId) => {
+  const startSession = useCallback(async (setId, shuffle = false) => {
     setIsLoading(true);
     setError(null);
     try {
-      const { data } = await studyApi.startSession(setId);
+      const { data } = await studyApi.startSession(setId, shuffle);
       setSessionId(data.sessionId);
       setIsCompleted(false);
       setResults(null);
