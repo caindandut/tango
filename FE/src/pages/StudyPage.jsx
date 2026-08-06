@@ -239,7 +239,7 @@ export default function StudyPage() {
       <div className="min-h-screen flex flex-col">
         <Toaster position="top-right" theme="dark" />
 
-        <header className="py-6 px-8">
+        <header className="py-4 sm:py-6 px-4 sm:px-8">
           <div className="max-w-2xl mx-auto">
             <button
               onClick={() => navigate('/')}
@@ -251,7 +251,7 @@ export default function StudyPage() {
           </div>
         </header>
 
-        <div className="flex-1 flex items-center justify-center px-8 pb-12">
+        <div className="flex-1 flex items-center justify-center px-4 sm:px-8 pb-8 sm:pb-12">
           <div className="w-full max-w-lg animate-scale-in">
             <div className="text-center mb-8">
               <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-accent-orange to-yellow-500 flex items-center justify-center">
@@ -295,12 +295,12 @@ export default function StudyPage() {
                 </h3>
                 <div className="space-y-3 max-h-60 overflow-y-auto">
                   {results.wrongAnswers.map((item, idx) => (
-                    <div key={idx} className="flex items-center justify-between bg-primary-800/50 rounded-lg p-3">
+                    <div key={idx} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 bg-primary-800/50 rounded-lg p-3">
                       <div>
                         <span className="font-japanese font-medium">{item.kanji}</span>
                         <span className="text-primary-400 text-sm ml-2">({item.meaning})</span>
                       </div>
-                      <div className="text-right">
+                      <div className="text-left sm:text-right">
                         <span className="text-accent-green font-japanese text-sm">{item.hiragana}</span>
                         <span className="text-accent-red font-japanese text-xs block line-through">
                           {item.userAnswer}
@@ -312,7 +312,7 @@ export default function StudyPage() {
               </div>
             )}
 
-            <div className="flex gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <button onClick={handleRestartStudy} className="btn-check flex-1 flex items-center justify-center gap-2">
                 <RotateCcw className="w-4 h-4" />
                 Học lại
@@ -333,23 +333,24 @@ export default function StudyPage() {
       <Toaster position="top-right" theme="dark" />
 
       {/* Header */}
-      <header className="py-4 px-4 sm:px-8">
-        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+      <header className="py-3 sm:py-4 px-3 sm:px-8">
+        <div className="max-w-3xl mx-auto flex flex-col gap-3">
+          <div className="flex items-center justify-between gap-2">
           <button
             onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-primary-400 hover:text-white transition-colors"
+            className="flex items-center gap-2 text-primary-400 hover:text-white transition-colors shrink-0"
           >
             <ArrowLeft className="w-4 h-4" />
             <span className="text-sm">Thoát</span>
           </button>
 
-          <div className="flex flex-wrap items-center justify-end gap-3">
+          <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
             {/* Meaning Toggle Button (Bật/Tắt Hiển thị Nghĩa) */}
             {studyMode === 'reading' && (
               <button
                 type="button"
                 onClick={handleToggleMeaning}
-                className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-2 border ${
+                className={`px-2 sm:px-3.5 py-2 sm:py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-2 border ${
                   showMeaning
                     ? 'bg-accent-orange/20 border-accent-orange text-accent-orange shadow-sm shadow-accent-orange/20'
                     : 'bg-primary-900/60 border-white/10 text-primary-400 hover:text-white hover:border-white/20'
@@ -371,7 +372,7 @@ export default function StudyPage() {
             <button
               type="button"
               onClick={handleToggleShuffle}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-2 border ${
+              className={`px-2 sm:px-3.5 py-2 sm:py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-2 border ${
                 isShuffled
                   ? 'bg-accent-orange/20 border-accent-orange text-accent-orange shadow-sm shadow-accent-orange/20'
                   : 'bg-primary-900/60 border-white/10 text-primary-400 hover:text-white hover:border-white/20'
@@ -382,11 +383,13 @@ export default function StudyPage() {
               <span>Xáo trộn: <strong className={isShuffled ? 'text-accent-orange' : 'text-primary-300'}>{isShuffled ? 'Bật' : 'Tắt'}</strong></span>
             </button>
 
+          </div>
+
             {/* Study Mode Toggle */}
-            <div className="flex items-center gap-2" role="tablist" aria-label="Chế độ học">
+            <div className="w-full grid grid-cols-3 gap-1.5 sm:flex sm:w-auto sm:items-center sm:gap-2" role="tablist" aria-label="Chế độ học">
               <button
                 onClick={() => handleModeChange('reading')}
-                className={`toggle-btn flex-1 sm:flex-none flex items-center justify-center gap-1.5 ${studyMode === 'reading' ? 'active' : ''}`}
+                className={`toggle-btn min-w-0 px-2 sm:px-4 text-[11px] sm:text-sm flex items-center justify-center gap-1 sm:gap-1.5 ${studyMode === 'reading' ? 'active' : ''}`}
                 aria-selected={studyMode === 'reading'}
                 role="tab"
               >
@@ -394,7 +397,7 @@ export default function StudyPage() {
               </button>
               <button
                 onClick={() => handleModeChange('flashcard')}
-                className={`toggle-btn flex-1 sm:flex-none flex items-center justify-center gap-1.5 ${studyMode === 'flashcard' ? 'active' : ''}`}
+                className={`toggle-btn min-w-0 px-2 sm:px-4 text-[11px] sm:text-sm flex items-center justify-center gap-1 sm:gap-1.5 ${studyMode === 'flashcard' ? 'active' : ''}`}
                 aria-selected={studyMode === 'flashcard'}
                 role="tab"
               >
@@ -402,7 +405,7 @@ export default function StudyPage() {
               </button>
               <button
                 onClick={() => handleModeChange('quiz')}
-                className={`toggle-btn flex-1 sm:flex-none flex items-center justify-center gap-1.5 ${studyMode === 'quiz' ? 'active' : ''}`}
+                className={`toggle-btn min-w-0 px-2 sm:px-4 text-[11px] sm:text-sm flex items-center justify-center gap-1 sm:gap-1.5 ${studyMode === 'quiz' ? 'active' : ''}`}
                 aria-selected={studyMode === 'quiz'}
                 role="tab"
               >
@@ -414,10 +417,15 @@ export default function StudyPage() {
       </header>
 
       {/* Main study area */}
-      <div className="flex-1 flex items-center justify-center px-4 sm:px-8 pb-6">
+      <div className="flex-1 flex items-center justify-center px-3 sm:px-8 pb-4 sm:pb-6">
         <div className="w-full max-w-2xl">
           {currentWord && (
             <div className="animate-fade-in">
+              {currentWord.isReviewRound && studyMode !== 'flashcard' && (
+                <div className="mb-4 rounded-xl border border-accent-orange/30 bg-accent-orange/10 px-4 py-3 text-center text-sm text-accent-orange">
+                  Ôn lại {currentWord.reviewRoundSize} từ đã trả lời sai
+                </div>
+              )}
               {studyMode === 'flashcard' ? (
                 <div>
                   <div className="flex items-center justify-between mb-3 text-sm text-primary-400">
@@ -482,7 +490,7 @@ export default function StudyPage() {
                     <p className="meaning-text">{currentWord.meaning}</p>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5" role="radiogroup" aria-label="Các đáp án cách đọc">
+                  <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-5" role="radiogroup" aria-label="Các đáp án cách đọc">
                     {(currentWord.quizOptions || []).map((option, index) => {
                       const isCorrectOption = checkResult && option === checkResult.correctAnswer;
                       const isSelectedWrong = checkResult && option === checkResult.userAnswer && !checkResult.isCorrect;
@@ -500,7 +508,7 @@ export default function StudyPage() {
                           type="button"
                           onClick={() => handleQuizSelect(option)}
                           disabled={!!checkResult || isChecking}
-                          className={`min-h-16 rounded-xl border-2 px-4 py-3 text-lg font-japanese font-semibold transition-all ${stateClass}`}
+                          className={`min-h-16 rounded-xl border-2 px-2 sm:px-4 py-3 text-base sm:text-lg font-japanese font-semibold transition-all ${stateClass}`}
                           role="radio"
                           aria-checked={checkResult?.userAnswer === option}
                         >
