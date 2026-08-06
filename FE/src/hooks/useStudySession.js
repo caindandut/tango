@@ -17,11 +17,11 @@ export function useStudySession() {
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
 
-  const startSession = useCallback(async (setId, shuffle = false) => {
+  const startSession = useCallback(async (setId, shuffle = false, mode = 'reading') => {
     setIsLoading(true);
     setError(null);
     try {
-      const { data } = await studyApi.startSession(setId, shuffle);
+      const { data } = await studyApi.startSession(setId, shuffle, mode);
       setSessionId(data.sessionId);
       setIsCompleted(false);
       setResults(null);
@@ -40,11 +40,11 @@ export function useStudySession() {
     }
   }, []);
 
-  const checkAnswer = useCallback(async (answer) => {
+  const checkAnswer = useCallback(async (answer, answerHintsUsed = hintsUsed) => {
     if (!sessionId || isChecking) return;
     setIsChecking(true);
     try {
-      const { data } = await studyApi.checkAnswer(sessionId, answer, hintsUsed);
+      const { data } = await studyApi.checkAnswer(sessionId, answer, answerHintsUsed);
       setCheckResult(data);
 
       // Update current word counts
@@ -61,6 +61,24 @@ export function useStudySession() {
       setIsChecking(false);
     }
   }, [sessionId, hintsUsed, isChecking, currentWord]);
+
+  const changeMode = useCallback(async (mode) => {
+    if (!sessionId) return;
+
+    setIsLoading(true);
+    setError(null);
+    try {
+      await studyApi.changeMode(sessionId, mode);
+      const { data: wordData } = await studyApi.getCurrentWord(sessionId);
+      setCurrentWord(wordData);
+      setTotalChars(wordData.hiraganaLength);
+    } catch (err) {
+      setError(err.response?.data?.error || 'Failed to change study mode');
+      throw err;
+    } finally {
+      setIsLoading(false);
+    }
+  }, [sessionId]);
 
   const getHint = useCallback(async () => {
     if (!sessionId) return;
@@ -147,6 +165,7 @@ export function useStudySession() {
     results,
     error,
     startSession,
+    changeMode,
     checkAnswer,
     getHint,
     nextWord,

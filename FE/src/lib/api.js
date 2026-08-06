@@ -20,9 +20,12 @@ export const vocabularyApi = {
 
 // Study API
 export const studyApi = {
-  startSession: (setId, shuffle = false) => api.post(`/study/start/${setId}`, { shuffle }),
+  startSession: (setId, shuffle = false, mode = 'reading') =>
+    api.post(`/study/start/${setId}`, { shuffle, mode }),
 
   getSession: (sessionId) => api.get(`/study/session/${sessionId}`),
+
+  changeMode: (sessionId, mode) => api.patch(`/study/session/${sessionId}/mode`, { mode }),
 
   getCurrentWord: (sessionId) => api.get(`/study/session/${sessionId}/current`),
 

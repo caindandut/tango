@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { ArrowLeft, Layers, Lightbulb, Keyboard, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, Eye, EyeOff } from 'lucide-react';
-import { Toaster } from 'sonner';
+import { ArrowLeft, Layers, Lightbulb, Keyboard, ListChecks, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, Eye, EyeOff } from 'lucide-react';
+import { Toaster, toast } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
 
@@ -22,6 +22,7 @@ export default function StudyPage() {
   const inputRef = useRef(null);
 
   const {
+    sessionId,
     currentWord,
     checkResult,
     hintsUsed,
@@ -33,6 +34,7 @@ export default function StudyPage() {
     results,
     error,
     startSession,
+    changeMode,
     checkAnswer,
     getHint,
     nextWord,
@@ -43,9 +45,12 @@ export default function StudyPage() {
   // Start session on mount
   useEffect(() => {
     if (setId) {
-      startSession(setId, isShuffled);
+      startSession(setId, isShuffled, studyMode);
     }
     return () => resetSession();
+  // The initial route decides the first mode. Mode changes use changeMode so
+  // the current question and session progress are preserved.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [resetSession, setId, startSession]);
 
   // Focus input when word changes
@@ -76,9 +81,20 @@ export default function StudyPage() {
     await previousWord();
   }, [currentWord, isLoading, previousWord]);
 
-  const handleModeChange = (mode) => {
+  const handleModeChange = async (mode) => {
+    if (mode === studyMode || !sessionId) return;
+
+    const previousMode = studyMode;
     setStudyMode(mode);
+    setInputValue('');
     setIsFlashcardFlipped(false);
+
+    try {
+      await changeMode(mode);
+    } catch {
+      setStudyMode(previousMode);
+      toast.error('Không thể chuyển chế độ học');
+    }
   };
 
   useEffect(() => {
@@ -89,12 +105,12 @@ export default function StudyPage() {
   // window so Enter still advances when the feedback/Next button is shown.
   useEffect(() => {
     const handleGlobalKeyDown = (e) => {
-      if (studyMode !== 'reading' || e.key !== 'Enter' || e.isComposing || !currentWord || isCompleted) return;
+      if (!['reading', 'quiz'].includes(studyMode) || e.key !== 'Enter' || e.isComposing || !currentWord || isCompleted) return;
 
       e.preventDefault();
       if (checkResult) {
         handleNext();
-      } else {
+      } else if (studyMode === 'reading') {
         handleCheck();
       }
     };
@@ -102,6 +118,27 @@ export default function StudyPage() {
     window.addEventListener('keydown', handleGlobalKeyDown);
     return () => window.removeEventListener('keydown', handleGlobalKeyDown);
   }, [checkResult, currentWord, isCompleted, handleCheck, handleNext, studyMode]);
+
+  const handleQuizSelect = useCallback((option) => {
+    if (studyMode !== 'quiz' || checkResult || isChecking || !option) return;
+    checkAnswer(option, 0);
+  }, [checkAnswer, checkResult, isChecking, studyMode]);
+
+  useEffect(() => {
+    const handleQuizKeyDown = (event) => {
+      if (studyMode !== 'quiz' || !currentWord || isCompleted || checkResult) return;
+      if (event.target instanceof HTMLElement && event.target.closest('button')) return;
+
+      const optionNumber = Number(event.key);
+      if (optionNumber >= 1 && optionNumber <= 4) {
+        event.preventDefault();
+        handleQuizSelect(currentWord.quizOptions?.[optionNumber - 1]);
+      }
+    };
+
+    window.addEventListener('keydown', handleQuizKeyDown);
+    return () => window.removeEventListener('keydown', handleQuizKeyDown);
+  }, [checkResult, currentWord, handleQuizSelect, isCompleted, studyMode]);
 
   useEffect(() => {
     const handleFlashcardKeyDown = (event) => {
@@ -131,7 +168,7 @@ export default function StudyPage() {
     setIsFlashcardFlipped(false);
     if (setId) {
       resetSession();
-      startSession(setId, nextState);
+      startSession(setId, nextState, studyMode);
     }
   };
 
@@ -146,7 +183,7 @@ export default function StudyPage() {
   const handleRestartStudy = () => {
     resetSession();
     if (setId) {
-      startSession(setId, isShuffled);
+      startSession(setId, isShuffled, studyMode);
       setInputValue('');
     }
   };
@@ -363,6 +400,14 @@ export default function StudyPage() {
               >
                 <Layers className="w-3.5 h-3.5" /> Flashcard
               </button>
+              <button
+                onClick={() => handleModeChange('quiz')}
+                className={`toggle-btn flex-1 sm:flex-none flex items-center justify-center gap-1.5 ${studyMode === 'quiz' ? 'active' : ''}`}
+                aria-selected={studyMode === 'quiz'}
+                role="tab"
+              >
+                <ListChecks className="w-3.5 h-3.5" /> Trắc nghiệm
+              </button>
             </div>
           </div>
         </div>
@@ -426,6 +471,70 @@ export default function StudyPage() {
                   <p className="text-center text-xs sm:text-sm text-primary-500 mt-5">
                     Dùng <kbd className="px-1.5 py-0.5 rounded bg-primary-700 text-primary-300 font-mono mx-1">Space</kbd> để lật · <kbd className="px-1.5 py-0.5 rounded bg-primary-700 text-primary-300 font-mono mx-1">← →</kbd> để chuyển thẻ
                   </p>
+                </div>
+              ) : studyMode === 'quiz' ? (
+                <div>
+                  <div className="text-center mb-6">
+                    <p className="text-xs uppercase tracking-widest text-accent-orange font-semibold mb-4">
+                      Chọn cách đọc đúng
+                    </p>
+                    <h2 lang="ja" className="kanji-display mb-2">{currentWord.kanji}</h2>
+                    <p className="meaning-text">{currentWord.meaning}</p>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5" role="radiogroup" aria-label="Các đáp án cách đọc">
+                    {(currentWord.quizOptions || []).map((option, index) => {
+                      const isCorrectOption = checkResult && option === checkResult.correctAnswer;
+                      const isSelectedWrong = checkResult && option === checkResult.userAnswer && !checkResult.isCorrect;
+                      const stateClass = isCorrectOption
+                        ? 'border-accent-green bg-accent-green/20 text-accent-green'
+                        : isSelectedWrong
+                          ? 'border-accent-red bg-accent-red/20 text-accent-red'
+                          : checkResult
+                            ? 'border-white/10 bg-primary-900/40 text-primary-500 opacity-70'
+                            : 'border-white/15 bg-primary-900/60 text-white hover:border-accent-orange hover:bg-accent-orange/10';
+
+                      return (
+                        <button
+                          key={`${option}-${index}`}
+                          type="button"
+                          onClick={() => handleQuizSelect(option)}
+                          disabled={!!checkResult || isChecking}
+                          className={`min-h-16 rounded-xl border-2 px-4 py-3 text-lg font-japanese font-semibold transition-all ${stateClass}`}
+                          role="radio"
+                          aria-checked={checkResult?.userAnswer === option}
+                        >
+                          <span className="mr-3 text-sm font-sans opacity-60">{index + 1}.</span>
+                          {option}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {checkResult ? (
+                    <div className="animate-fade-in space-y-4">
+                      <div className={`py-3.5 px-6 rounded-xl text-center font-semibold text-lg ${
+                        checkResult.isCorrect ? 'result-correct' : 'result-wrong'
+                      }`}>
+                        <div className="flex items-center justify-center gap-2">
+                          {checkResult.isCorrect ? <Check className="w-5 h-5" /> : <X className="w-5 h-5" />}
+                          <span>{checkResult.isCorrect ? 'Chính xác!' : 'Sai rồi!'}</span>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={handleNext}
+                        className="btn-check w-full flex items-center justify-center gap-2"
+                      >
+                        Tiếp theo
+                        <ChevronRight className="w-5 h-5" />
+                      </button>
+                    </div>
+                  ) : (
+                    <p className="text-center text-sm text-primary-500">
+                      Nhấn <kbd className="px-2 py-0.5 rounded bg-primary-700 text-primary-300 text-xs font-mono mx-1">1–4</kbd> để chọn đáp án
+                    </p>
+                  )}
                 </div>
               ) : (
                 <>
@@ -555,7 +664,7 @@ export default function StudyPage() {
               <span className="text-sm font-medium text-primary-400">
                 {currentWord.currentIndex + 1} / {currentWord.totalWords}
               </span>
-              {studyMode === 'reading' && (
+              {studyMode !== 'flashcard' && (
                 <span className="text-xs text-primary-500">
                   ✓ {currentWord.correctCount || 0} &nbsp; ✗ {currentWord.wrongCount || 0}
                 </span>
