@@ -371,5 +371,13 @@
   .study-page .text-slate-700 { color: #e2e8f0 !important; }
   .study-page .bg-white { background-color: #111a2e !important; }
   .study-page .border-slate-200 { border-color: rgba(148, 163, 184, 0.2) !important; }
+  .study-page [class*="bg-indigo-50"] {
+    background-color: #27356b !important;
+    color: #c7d2fe !important;
+  }
+  .study-page [class*="hover:bg-indigo-50"]:hover {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+  }
   .study-page kbd { background: #1e293b !important; color: #cbd5e1 !important; }
 }
