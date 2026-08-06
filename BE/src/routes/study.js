@@ -2,6 +2,7 @@ const express = require('express');
 const prisma = require('../lib/prisma');
 
 const router = express.Router();
+const STUDY_MODES = new Set(['reading', 'flashcard', 'quiz']);
 
 /**
  * Fisher-Yates shuffle - returns array of indices
@@ -13,6 +14,67 @@ function generateShuffledOrder(length) {
     [order[i], order[j]] = [order[j], order[i]];
   }
   return order;
+}
+
+function normalizeStudyMode(mode) {
+  return STUDY_MODES.has(mode) ? mode : 'reading';
+}
+
+/**
+ * Generate and persistable quiz option indexes for every question in a session.
+ * Distractors are unique readings from the same lesson and never share the
+ * target reading, so each question has exactly one correct option.
+ */
+function generateQuizOptions(vocabularies, questionOrder) {
+  const uniqueReadings = new Set(vocabularies.map((vocab) => vocab.hiragana));
+
+  if (uniqueReadings.size < 4) {
+    const error = new Error('Quiz requires at least 4 unique readings in this lesson');
+    error.code = 'QUIZ_NOT_AVAILABLE';
+    throw error;
+  }
+
+  return questionOrder.map((targetIndex) => {
+    const targetReading = vocabularies[targetIndex].hiragana;
+    const distractorPool = [];
+    const seenReadings = new Set([targetReading]);
+
+    vocabularies.forEach((vocab, index) => {
+      if (index === targetIndex || seenReadings.has(vocab.hiragana)) return;
+      seenReadings.add(vocab.hiragana);
+      distractorPool.push(index);
+    });
+
+    const shuffledDistractors = generateShuffledOrder(distractorPool.length)
+      .slice(0, 3)
+      .map((poolIndex) => distractorPool[poolIndex]);
+
+    return generateShuffledOrder(4).map((optionIndex) => (
+      optionIndex === 0 ? targetIndex : shuffledDistractors[optionIndex - 1]
+    ));
+  });
+}
+
+function getSessionQuizOptions(session, vocabularies) {
+  const optionIndexes = session.quizOptions?.[session.currentIndex];
+
+  if (!Array.isArray(optionIndexes) || optionIndexes.length !== 4) {
+    return null;
+  }
+
+  return optionIndexes.map((index) => vocabularies[index]?.hiragana).filter(Boolean);
+}
+
+function getQuizErrorResponse(error, res, fallbackMessage) {
+  if (error.code === 'QUIZ_NOT_AVAILABLE') {
+    return res.status(400).json({
+      code: error.code,
+      error: 'Bài này cần ít nhất 4 cách đọc khác nhau để mở chế độ trắc nghiệm',
+    });
+  }
+
+  console.error(fallbackMessage, error);
+  return res.status(500).json({ error: fallbackMessage });
 }
 
 // POST /api/study/start/:setId - Start a new study session
@@ -28,27 +90,33 @@ router.post('/start/:setId', async (req, res) => {
     }
 
     const { shuffle = false } = req.body || {};
+    const mode = normalizeStudyMode(req.body?.mode);
     const shuffledOrder = shuffle
       ? generateShuffledOrder(set.vocabularies.length)
       : Array.from({ length: set.vocabularies.length }, (_, i) => i);
+    const quizOptions = mode === 'quiz'
+      ? generateQuizOptions(set.vocabularies, shuffledOrder)
+      : undefined;
 
 
     const session = await prisma.studySession.create({
       data: {
         setId: set.id,
+        mode,
         totalWords: set.vocabularies.length,
         shuffledOrder,
+        ...(quizOptions ? { quizOptions } : {}),
       },
     });
 
     res.status(201).json({
       sessionId: session.id,
+      mode: session.mode,
       totalWords: session.totalWords,
       currentIndex: 0,
     });
   } catch (error) {
-    console.error('Start session error:', error);
-    res.status(500).json({ error: 'Failed to start study session' });
+    return getQuizErrorResponse(error, res, 'Failed to start study session');
   }
 });
 
@@ -70,6 +138,7 @@ router.get('/session/:sessionId', async (req, res) => {
 
     res.json({
       sessionId: session.id,
+      mode: session.mode,
       totalWords: session.totalWords,
       currentIndex: session.currentIndex,
       correctCount: session.correctCount,
@@ -80,6 +149,54 @@ router.get('/session/:sessionId', async (req, res) => {
   } catch (error) {
     console.error('Get session error:', error);
     res.status(500).json({ error: 'Failed to fetch session' });
+  }
+});
+
+// PATCH /api/study/session/:sessionId/mode - Change mode without changing progress
+router.patch('/session/:sessionId/mode', async (req, res) => {
+  try {
+    const mode = req.body?.mode;
+
+    if (!STUDY_MODES.has(mode)) {
+      return res.status(400).json({ error: 'Invalid study mode' });
+    }
+
+    const session = await prisma.studySession.findUnique({
+      where: { id: req.params.sessionId },
+      include: {
+        set: {
+          include: { vocabularies: { orderBy: { position: 'asc' } } },
+        },
+      },
+    });
+
+    if (!session) {
+      return res.status(404).json({ error: 'Session not found' });
+    }
+
+    if (session.isCompleted) {
+      return res.status(400).json({ error: 'Session is already completed' });
+    }
+
+    const quizOptions = mode === 'quiz'
+      ? generateQuizOptions(session.set.vocabularies, session.shuffledOrder)
+      : null;
+
+    const updatedSession = await prisma.studySession.update({
+      where: { id: session.id },
+      data: {
+        mode,
+        ...(quizOptions ? { quizOptions } : {}),
+      },
+    });
+
+    res.json({
+      sessionId: updatedSession.id,
+      mode: updatedSession.mode,
+      currentIndex: updatedSession.currentIndex,
+    });
+  } catch (error) {
+    return getQuizErrorResponse(error, res, 'Failed to change study mode');
   }
 });
 
@@ -115,6 +232,10 @@ router.get('/session/:sessionId/current', async (req, res) => {
       kanji: vocab.kanji,
       hiragana: vocab.hiragana,
       meaning: vocab.meaning,
+      mode: session.mode,
+      ...(session.mode === 'quiz'
+        ? { quizOptions: getSessionQuizOptions(session, session.set.vocabularies) }
+        : {}),
       hiraganaLength: vocab.hiragana.length,
       currentIndex: session.currentIndex,
       totalWords: session.totalWords,
