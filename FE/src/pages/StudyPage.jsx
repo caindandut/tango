@@ -1,9 +1,15 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { ArrowLeft, Layers, Lightbulb, Keyboard, ListChecks, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, Eye, EyeOff } from 'lucide-react';
+import { ArrowLeft, Layers, Lightbulb, Keyboard, ListChecks, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, Eye, EyeOff, Settings2, ChevronDown } from 'lucide-react';
 import { Toaster, toast } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
+
+const STUDY_MODE_OPTIONS = [
+  { value: 'reading', label: 'Cách đọc', icon: Keyboard },
+  { value: 'flashcard', label: 'Flashcard', icon: Layers },
+  { value: 'quiz', label: 'Trắc nghiệm', icon: ListChecks },
+];
 
 export default function StudyPage() {
   const { setId } = useParams();
@@ -15,11 +21,18 @@ export default function StudyPage() {
   );
   const [isFlashcardFlipped, setIsFlashcardFlipped] = useState(false);
   const [isShuffled, setIsShuffled] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [isModeMenuOpen, setIsModeMenuOpen] = useState(false);
   const [showMeaning, setShowMeaning] = useState(() => {
     const saved = localStorage.getItem('tango_show_meaning');
     return saved !== null ? saved === 'true' : true;
   });
   const inputRef = useRef(null);
+  const settingsMenuRef = useRef(null);
+  const modeMenuRef = useRef(null);
+
+  const activeMode = STUDY_MODE_OPTIONS.find((option) => option.value === studyMode) || STUDY_MODE_OPTIONS[0];
+  const ActiveModeIcon = activeMode.icon;
 
   const {
     sessionId,
@@ -96,6 +109,39 @@ export default function StudyPage() {
       toast.error('Không thể chuyển chế độ học');
     }
   };
+
+  const handleSelectMode = async (mode) => {
+    setIsModeMenuOpen(false);
+    await handleModeChange(mode);
+  };
+
+  useEffect(() => {
+    if (!isSettingsOpen && !isModeMenuOpen) return undefined;
+
+    const handleMenuDismiss = (event) => {
+      if (event.key === 'Escape') {
+        setIsSettingsOpen(false);
+        setIsModeMenuOpen(false);
+        return;
+      }
+
+      if (event.type === 'mousedown') {
+        if (isSettingsOpen && !settingsMenuRef.current?.contains(event.target)) {
+          setIsSettingsOpen(false);
+        }
+        if (isModeMenuOpen && !modeMenuRef.current?.contains(event.target)) {
+          setIsModeMenuOpen(false);
+        }
+      }
+    };
+
+    window.addEventListener('mousedown', handleMenuDismiss);
+    window.addEventListener('keydown', handleMenuDismiss);
+    return () => {
+      window.removeEventListener('mousedown', handleMenuDismiss);
+      window.removeEventListener('keydown', handleMenuDismiss);
+    };
+  }, [isModeMenuOpen, isSettingsOpen]);
 
   useEffect(() => {
     setIsFlashcardFlipped(false);
@@ -334,8 +380,7 @@ export default function StudyPage() {
 
       {/* Header */}
       <header className="py-3 sm:py-4 px-3 sm:px-8">
-        <div className="max-w-3xl mx-auto flex flex-col gap-3">
-          <div className="flex items-center justify-between gap-2">
+        <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
           <button
             onClick={() => navigate('/')}
             className="flex items-center gap-2 text-primary-400 hover:text-white transition-colors shrink-0"
@@ -344,73 +389,105 @@ export default function StudyPage() {
             <span className="text-sm">Thoát</span>
           </button>
 
-          <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
-            {/* Meaning Toggle Button (Bật/Tắt Hiển thị Nghĩa) */}
-            {studyMode === 'reading' && (
+          <div className="flex items-center justify-end gap-2">
+            <div className="relative" ref={settingsMenuRef}>
               <button
                 type="button"
-                onClick={handleToggleMeaning}
-                className={`px-2 sm:px-3.5 py-2 sm:py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-2 border ${
-                  showMeaning
-                    ? 'bg-accent-orange/20 border-accent-orange text-accent-orange shadow-sm shadow-accent-orange/20'
-                    : 'bg-primary-900/60 border-white/10 text-primary-400 hover:text-white hover:border-white/20'
+                onClick={() => {
+                  setIsSettingsOpen((open) => !open);
+                  setIsModeMenuOpen(false);
+                }}
+                className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-xs font-semibold transition-all sm:px-3.5 ${
+                  isSettingsOpen
+                    ? 'border-accent-orange bg-accent-orange/20 text-accent-orange'
+                    : 'border-white/10 bg-primary-900/60 text-primary-300 hover:border-white/20 hover:text-white'
                 }`}
-                title={showMeaning ? 'Đang bật hiển thị nghĩa (Nhấn để tắt)' : 'Đang tắt hiển thị nghĩa (Nhấn để bật)'}
+                aria-expanded={isSettingsOpen}
+                aria-haspopup="menu"
               >
-                {showMeaning ? (
-                  <Eye className="w-3.5 h-3.5 text-accent-orange" />
-                ) : (
-                  <EyeOff className="w-3.5 h-3.5 text-primary-400" />
-                )}
-                <span>
-                  Nghĩa: <strong className={showMeaning ? 'text-accent-orange' : 'text-primary-300'}>{showMeaning ? 'Bật' : 'Tắt'}</strong>
-                </span>
+                <Settings2 className="h-4 w-4" />
+                <span className="hidden sm:inline">Cài đặt</span>
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform ${isSettingsOpen ? 'rotate-180' : ''}`} />
               </button>
-            )}
 
-            {/* Shuffle Toggle Button (Bật/Tắt Xáo trộn) */}
-            <button
-              type="button"
-              onClick={handleToggleShuffle}
-              className={`px-2 sm:px-3.5 py-2 sm:py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-2 border ${
-                isShuffled
-                  ? 'bg-accent-orange/20 border-accent-orange text-accent-orange shadow-sm shadow-accent-orange/20'
-                  : 'bg-primary-900/60 border-white/10 text-primary-400 hover:text-white hover:border-white/20'
-              }`}
-              title={isShuffled ? 'Đang bật xáo trộn (Nhấn để tắt)' : 'Đang tắt xáo trộn (Nhấn để bật)'}
-            >
-              <Shuffle className={`w-3.5 h-3.5 ${isShuffled ? 'text-accent-orange' : 'text-primary-400'}`} />
-              <span>Xáo trộn: <strong className={isShuffled ? 'text-accent-orange' : 'text-primary-300'}>{isShuffled ? 'Bật' : 'Tắt'}</strong></span>
-            </button>
+              {isSettingsOpen && (
+                <div className="absolute right-0 top-full z-50 mt-2 w-64 rounded-2xl border border-white/10 bg-slate-900/95 p-2 shadow-2xl shadow-black/40 backdrop-blur-xl" role="menu">
+                  <p className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-primary-500">Cài đặt học</p>
+                  <button
+                    type="button"
+                    onClick={handleToggleMeaning}
+                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-primary-200 transition-colors hover:bg-white/5"
+                    role="menuitem"
+                    aria-pressed={showMeaning}
+                  >
+                    <span className="flex items-center gap-2.5">
+                      {showMeaning ? <Eye className="h-4 w-4 text-accent-orange" /> : <EyeOff className="h-4 w-4 text-primary-500" />}
+                      Hiển thị nghĩa
+                    </span>
+                    <span className={`text-xs font-bold ${showMeaning ? 'text-accent-orange' : 'text-primary-500'}`}>{showMeaning ? 'Bật' : 'Tắt'}</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleToggleShuffle}
+                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-primary-200 transition-colors hover:bg-white/5"
+                    role="menuitem"
+                    aria-pressed={isShuffled}
+                  >
+                    <span className="flex items-center gap-2.5">
+                      <Shuffle className={`h-4 w-4 ${isShuffled ? 'text-accent-orange' : 'text-primary-500'}`} />
+                      Xáo trộn từ
+                    </span>
+                    <span className={`text-xs font-bold ${isShuffled ? 'text-accent-orange' : 'text-primary-500'}`}>{isShuffled ? 'Bật' : 'Tắt'}</span>
+                  </button>
+                </div>
+              )}
+            </div>
 
-          </div>
+            <div className="relative" ref={modeMenuRef}>
+              <button
+                type="button"
+                onClick={() => {
+                  setIsModeMenuOpen((open) => !open);
+                  setIsSettingsOpen(false);
+                }}
+                className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-xs font-semibold transition-all sm:px-3.5 ${
+                  isModeMenuOpen
+                    ? 'border-accent-orange bg-accent-orange/20 text-accent-orange'
+                    : 'border-white/10 bg-primary-900/60 text-primary-300 hover:border-white/20 hover:text-white'
+                }`}
+                aria-expanded={isModeMenuOpen}
+                aria-haspopup="menu"
+              >
+                <ActiveModeIcon className="h-4 w-4 text-accent-orange" />
+                <span>{activeMode.label}</span>
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform ${isModeMenuOpen ? 'rotate-180' : ''}`} />
+              </button>
 
-            {/* Study Mode Toggle */}
-            <div className="w-full grid grid-cols-3 gap-1.5 sm:flex sm:w-auto sm:items-center sm:gap-2" role="tablist" aria-label="Chế độ học">
-              <button
-                onClick={() => handleModeChange('reading')}
-                className={`toggle-btn min-w-0 px-2 sm:px-4 text-[11px] sm:text-sm flex items-center justify-center gap-1 sm:gap-1.5 ${studyMode === 'reading' ? 'active' : ''}`}
-                aria-selected={studyMode === 'reading'}
-                role="tab"
-              >
-                <Keyboard className="w-3.5 h-3.5" /> Cách đọc
-              </button>
-              <button
-                onClick={() => handleModeChange('flashcard')}
-                className={`toggle-btn min-w-0 px-2 sm:px-4 text-[11px] sm:text-sm flex items-center justify-center gap-1 sm:gap-1.5 ${studyMode === 'flashcard' ? 'active' : ''}`}
-                aria-selected={studyMode === 'flashcard'}
-                role="tab"
-              >
-                <Layers className="w-3.5 h-3.5" /> Flashcard
-              </button>
-              <button
-                onClick={() => handleModeChange('quiz')}
-                className={`toggle-btn min-w-0 px-2 sm:px-4 text-[11px] sm:text-sm flex items-center justify-center gap-1 sm:gap-1.5 ${studyMode === 'quiz' ? 'active' : ''}`}
-                aria-selected={studyMode === 'quiz'}
-                role="tab"
-              >
-                <ListChecks className="w-3.5 h-3.5" /> Trắc nghiệm
-              </button>
+              {isModeMenuOpen && (
+                <div className="absolute right-0 top-full z-50 mt-2 w-52 rounded-2xl border border-white/10 bg-slate-900/95 p-2 shadow-2xl shadow-black/40 backdrop-blur-xl" role="menu">
+                  <p className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-primary-500">Chế độ học</p>
+                  {STUDY_MODE_OPTIONS.map(({ value, label, icon: ModeIcon }) => (
+                    <button
+                      key={value}
+                      type="button"
+                      onClick={() => handleSelectMode(value)}
+                      className={`flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm transition-colors ${
+                        studyMode === value
+                          ? 'bg-accent-orange/15 text-accent-orange'
+                          : 'text-primary-200 hover:bg-white/5'
+                      }`}
+                      role="menuitemradio"
+                      aria-checked={studyMode === value}
+                    >
+                      <span className="flex items-center gap-2.5">
+                        <ModeIcon className="h-4 w-4" />
+                        {label}
+                      </span>
+                      {studyMode === value && <Check className="h-4 w-4" />}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
