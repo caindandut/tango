@@ -4,13 +4,11 @@ import {
   BookOpen,
   BarChart3,
   Sparkles,
-  Play,
   ListOrdered,
   Search,
   Keyboard,
   Layers,
   Zap,
-  CheckCircle2,
   X,
   Shuffle,
   ChevronRight,
@@ -70,7 +68,7 @@ export default function HomePage() {
   }, [sets]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-950 text-white selection:bg-accent-orange selection:text-white">
+    <div className="quizlet-home min-h-screen flex flex-col bg-slate-950 text-white selection:bg-indigo-500 selection:text-white">
       <Toaster position="top-right" theme="dark" />
 
       {/* 1. Sticky Glassmorphism Header */}
@@ -283,7 +281,17 @@ export default function HomePage() {
                 return (
                   <div
                     key={set.id}
-                    className="group relative rounded-2xl p-6 bg-slate-900/60 hover:bg-slate-900/80 border border-white/10 hover:border-accent-orange/40 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-accent-orange/10 flex flex-col justify-between overflow-hidden"
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => navigate(`/study/${set.id}`)}
+                    onKeyDown={(event) => {
+                      if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        navigate(`/study/${set.id}`);
+                      }
+                    }}
+                    aria-label={`Học ${set.name}`}
+                    className="group relative rounded-2xl p-5 sm:p-6 bg-slate-900/60 hover:bg-slate-900/80 border border-white/10 hover:border-indigo-400/50 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between overflow-hidden cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-400"
                   >
                     {/* Glowing Top Accent on Hover */}
                     <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent-orange via-amber-400 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -301,7 +309,7 @@ export default function HomePage() {
                       </div>
 
                       {/* Lesson Title */}
-                      <h3 className="text-xl font-bold text-white group-hover:text-accent-orange transition-colors mb-2 leading-snug">
+                      <h3 className="text-xl font-bold text-white group-hover:text-indigo-300 transition-colors mb-2 leading-snug">
                         {set.name}
                       </h3>
 
@@ -312,7 +320,7 @@ export default function HomePage() {
                     </div>
 
                     {/* Dual Action Buttons */}
-                    <div className="pt-4 border-t border-white/10 grid grid-cols-2 gap-2.5">
+                    <div className="hidden">
                       <button
                         onClick={() => navigate(`/study/${set.id}`)}
                         className="py-2.5 px-3 rounded-xl bg-gradient-to-r from-accent-orange to-orange-600 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-md shadow-accent-orange/20 hover:brightness-110 active:scale-95 transition-all"
@@ -330,6 +338,10 @@ export default function HomePage() {
                         <Layers className="w-4 h-4 text-accent-orange" />
                         <span>Flashcard</span>
                       </button>
+                    </div>
+                    <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-semibold text-slate-400 group-hover:text-indigo-300 transition-colors">
+                      <span>Nhấn để bắt đầu học</span>
+                      <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                     </div>
                   </div>
                 );

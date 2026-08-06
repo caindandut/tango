@@ -327,3 +327,49 @@
     @apply text-base;
   }
 }
+
+/* Study screen stays focused and dark, while the lesson catalogue can use a lighter visual language. */
+@layer utilities {
+  .quizlet-home [class*="bg-accent-orange"] { background-color: rgba(66, 85, 255, 0.16) !important; }
+  .quizlet-home [class*="text-accent-orange"] { color: #a5b4fc !important; }
+  .quizlet-home [class*="border-accent-orange"] { border-color: rgba(129, 140, 248, 0.42) !important; }
+  .quizlet-home [class*="shadow-accent-orange"] { --tw-shadow-color: rgba(66, 85, 255, 0.22) !important; }
+  .quizlet-home [class*="from-accent-orange"] { --tw-gradient-from: #4255ff !important; --tw-gradient-to: rgb(66 85 255 / 0) !important; }
+  .quizlet-home [class*="to-orange-600"] { --tw-gradient-to: #6366f1 !important; }
+  .quizlet-home .bg-accent-orange { background-color: #4255ff !important; }
+
+  .study-page {
+    background: #070d1f;
+    color: #f8fafc;
+  }
+
+  .study-page .study-card {
+    background: #111a2e;
+    border-color: rgba(148, 163, 184, 0.2);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+  }
+
+  .study-page .kanji-display { color: #f8fafc; }
+  .study-page .meaning-text { color: #94a3b8; }
+  .study-page .romaji-input {
+    background: #0d1629;
+    border-color: rgba(148, 163, 184, 0.3);
+    color: #f8fafc;
+  }
+  .study-page .romaji-input:focus { background: #111a2e; }
+  .study-page .btn-hint {
+    background: #172238;
+    border-color: rgba(148, 163, 184, 0.25);
+    color: #cbd5e1;
+  }
+  .study-page .btn-hint:hover { background: #202d48; border-color: #818cf8; color: #fff; }
+  .study-page .progress-bar-container { background: rgba(148, 163, 184, 0.18); }
+  .study-page .flashcard-face { background: #111a2e; }
+  .study-page .text-slate-400 { color: #94a3b8 !important; }
+  .study-page .text-slate-500 { color: #64748b !important; }
+  .study-page .text-slate-600 { color: #cbd5e1 !important; }
+  .study-page .text-slate-700 { color: #e2e8f0 !important; }
+  .study-page .bg-white { background-color: #111a2e !important; }
+  .study-page .border-slate-200 { border-color: rgba(148, 163, 184, 0.2) !important; }
+  .study-page kbd { background: #1e293b !important; color: #cbd5e1 !important; }
+}

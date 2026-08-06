@@ -282,7 +282,7 @@ export default function StudyPage() {
   // Completed - Results screen
   if (isCompleted && results) {
     return (
-      <div className="min-h-screen flex flex-col">
+      <div className="study-page min-h-screen flex flex-col">
         <Toaster position="top-right" theme="dark" />
 
         <header className="py-4 sm:py-6 px-4 sm:px-8">
@@ -375,7 +375,7 @@ export default function StudyPage() {
 
   // Main study interface
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="study-page min-h-screen flex flex-col">
       <Toaster position="top-right" theme="dark" />
 
       {/* Header */}
@@ -576,8 +576,8 @@ export default function StudyPage() {
                         : isSelectedWrong
                           ? 'border-red-300 bg-red-50 text-red-700'
                           : checkResult
-                            ? 'border-slate-200 bg-slate-50 text-slate-400 opacity-70'
-                            : 'border-slate-200 bg-white text-slate-800 hover:border-indigo-400 hover:bg-indigo-50';
+                            ? 'border-white/10 bg-primary-900/40 text-primary-500 opacity-70'
+                            : 'border-white/15 bg-primary-900/60 text-white hover:border-indigo-400 hover:bg-indigo-500/10';
 
                       return (
                         <button
