@@ -38,6 +38,7 @@ model StudySession {
   correctCount Int           @default(0)
   wrongCount   Int           @default(0)
   currentIndex Int           @default(0)
+  roundStartIndex Int        @default(0)
   shuffledOrder Int[]
   quizOptions  Json?
   isCompleted  Boolean       @default(false)
