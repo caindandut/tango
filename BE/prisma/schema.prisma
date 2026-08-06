@@ -33,11 +33,13 @@ model StudySession {
   id           String        @id @default(uuid())
   setId        String
   set          VocabularySet @relation(fields: [setId], references: [id], onDelete: Cascade)
+  mode         String        @default("reading")
   totalWords   Int
   correctCount Int           @default(0)
   wrongCount   Int           @default(0)
   currentIndex Int           @default(0)
   shuffledOrder Int[]
+  quizOptions  Json?
   isCompleted  Boolean       @default(false)
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @updatedAt
