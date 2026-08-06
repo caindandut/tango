@@ -399,8 +399,8 @@ export default function StudyPage() {
                 }}
                 className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-xs font-semibold transition-all sm:px-3.5 ${
                   isSettingsOpen
-                    ? 'border-indigo-500 bg-indigo-50 text-indigo-600'
-                    : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-300 hover:text-indigo-600'
+                    ? 'border-indigo-400 bg-indigo-500/20 text-indigo-300'
+                    : 'border-white/10 bg-slate-900 text-slate-300 hover:border-indigo-400 hover:text-white'
                 }`}
                 aria-expanded={isSettingsOpen}
                 aria-haspopup="menu"
@@ -411,12 +411,12 @@ export default function StudyPage() {
               </button>
 
               {isSettingsOpen && (
-                <div className="absolute right-0 top-full z-50 mt-2 w-64 rounded-2xl border border-slate-200 bg-white p-2 shadow-xl" role="menu">
-                  <p className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-slate-400">Cài đặt học</p>
+                <div className="absolute right-0 top-full z-50 mt-2 w-64 rounded-2xl border border-white/10 bg-slate-900/95 p-2 shadow-xl shadow-black/30 backdrop-blur-xl" role="menu">
+                  <p className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">Cài đặt học</p>
                   <button
                     type="button"
                     onClick={handleToggleMeaning}
-                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-slate-700 transition-colors hover:bg-indigo-50"
+                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-slate-200 transition-colors hover:bg-white/5"
                     role="menuitem"
                     aria-pressed={showMeaning}
                   >
@@ -429,7 +429,7 @@ export default function StudyPage() {
                   <button
                     type="button"
                     onClick={handleToggleShuffle}
-                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-slate-700 transition-colors hover:bg-indigo-50"
+                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-slate-200 transition-colors hover:bg-white/5"
                     role="menuitem"
                     aria-pressed={isShuffled}
                   >
@@ -452,8 +452,8 @@ export default function StudyPage() {
                 }}
                 className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-xs font-semibold transition-all sm:px-3.5 ${
                   isModeMenuOpen
-                    ? 'border-indigo-500 bg-indigo-50 text-indigo-600'
-                    : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-300 hover:text-indigo-600'
+                    ? 'border-indigo-400 bg-indigo-500/20 text-indigo-300'
+                    : 'border-white/10 bg-slate-900 text-slate-300 hover:border-indigo-400 hover:text-white'
                 }`}
                 aria-expanded={isModeMenuOpen}
                 aria-haspopup="menu"
@@ -464,8 +464,8 @@ export default function StudyPage() {
               </button>
 
               {isModeMenuOpen && (
-                <div className="absolute right-0 top-full z-50 mt-2 w-52 rounded-2xl border border-slate-200 bg-white p-2 shadow-xl" role="menu">
-                  <p className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-slate-400">Chế độ học</p>
+                <div className="absolute right-0 top-full z-50 mt-2 w-52 rounded-2xl border border-white/10 bg-slate-900/95 p-2 shadow-xl shadow-black/30 backdrop-blur-xl" role="menu">
+                  <p className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">Chế độ học</p>
                   {STUDY_MODE_OPTIONS.map(({ value, label, icon: ModeIcon }) => (
                     <button
                       key={value}
@@ -473,8 +473,8 @@ export default function StudyPage() {
                       onClick={() => handleSelectMode(value)}
                       className={`flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm transition-colors ${
                         studyMode === value
-                          ? 'bg-indigo-50 text-indigo-600'
-                          : 'text-slate-700 hover:bg-indigo-50'
+                          ? 'bg-indigo-500/20 text-indigo-300'
+                          : 'text-slate-200 hover:bg-white/5'
                       }`}
                       role="menuitemradio"
                       aria-checked={studyMode === value}
