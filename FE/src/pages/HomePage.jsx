@@ -291,7 +291,7 @@ export default function HomePage() {
                       }
                     }}
                     aria-label={`Học ${set.name}`}
-                    className="group relative rounded-2xl p-5 sm:p-6 bg-slate-900/60 hover:bg-slate-900/80 border border-white/10 hover:border-indigo-400/50 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between overflow-hidden cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                    className="group relative rounded-2xl p-5 sm:p-6 bg-slate-900/60 hover:bg-slate-900/80 border border-white/10 hover:border-indigo-400/50 backdrop-blur-xl transition-all duration-300 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between overflow-hidden cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-400"
                   >
                     {/* Glowing Top Accent on Hover */}
                     <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent-orange via-amber-400 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity" />
