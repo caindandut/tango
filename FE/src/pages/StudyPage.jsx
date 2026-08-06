@@ -572,9 +572,9 @@ export default function StudyPage() {
                       const isCorrectOption = checkResult && option === checkResult.correctAnswer;
                       const isSelectedWrong = checkResult && option === checkResult.userAnswer && !checkResult.isCorrect;
                       const stateClass = isCorrectOption
-                        ? 'border-emerald-400 bg-emerald-50 text-emerald-700'
+                        ? 'border-emerald-400 bg-emerald-500/20 text-emerald-300'
                         : isSelectedWrong
-                          ? 'border-red-300 bg-red-50 text-red-700'
+                          ? 'border-red-400 bg-red-500/20 text-red-300'
                           : checkResult
                             ? 'border-white/10 bg-primary-900/40 text-primary-500 opacity-70'
                             : 'border-white/15 bg-primary-900/60 text-white hover:border-indigo-400 hover:bg-indigo-500/10';
