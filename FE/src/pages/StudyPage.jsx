@@ -259,7 +259,7 @@ export default function StudyPage() {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <div className="w-16 h-16 mx-auto mb-4 rounded-full border-4 border-accent-orange border-t-transparent animate-spin" />
-          <p className="text-primary-400">Đang tải bộ từ vựng...</p>
+          <p className="text-slate-500">Đang tải bộ từ vựng...</p>
         </div>
       </div>
     );
@@ -270,7 +270,7 @@ export default function StudyPage() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <p className="text-accent-red text-lg mb-4">{error}</p>
+          <p className="text-red-600 text-lg mb-4">{error}</p>
           <button onClick={() => navigate('/')} className="btn-hint">
             Quay lại trang chủ
           </button>
@@ -289,7 +289,7 @@ export default function StudyPage() {
           <div className="max-w-2xl mx-auto">
             <button
               onClick={() => navigate('/')}
-              className="flex items-center gap-2 text-primary-400 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-slate-500 hover:text-indigo-600 transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
               <span className="text-sm">Trang chủ</span>
@@ -304,22 +304,22 @@ export default function StudyPage() {
                 <Trophy className="w-10 h-10 text-white" />
               </div>
               <h2 className="text-3xl font-bold mb-2">Hoàn thành!</h2>
-              <p className="text-primary-400">{results.setName}</p>
+              <p className="text-slate-500">{results.setName}</p>
             </div>
 
             <div className="study-card mb-6">
               <div className="grid grid-cols-3 gap-4 text-center mb-6">
                 <div>
                   <p className="text-3xl font-bold text-accent-green">{results.correctCount}</p>
-                  <p className="text-sm text-primary-400">Đúng</p>
+                  <p className="text-sm text-slate-500">Đúng</p>
                 </div>
                 <div>
                   <p className="text-3xl font-bold text-accent-red">{results.wrongCount}</p>
-                  <p className="text-sm text-primary-400">Sai</p>
+                  <p className="text-sm text-slate-500">Sai</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-accent-orange">{results.accuracy}%</p>
-                  <p className="text-sm text-primary-400">Chính xác</p>
+                  <p className="text-3xl font-bold text-indigo-600">{results.accuracy}%</p>
+                  <p className="text-sm text-slate-500">Chính xác</p>
                 </div>
               </div>
 
@@ -341,14 +341,14 @@ export default function StudyPage() {
                 </h3>
                 <div className="space-y-3 max-h-60 overflow-y-auto">
                   {results.wrongAnswers.map((item, idx) => (
-                    <div key={idx} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 bg-primary-800/50 rounded-lg p-3">
+                    <div key={idx} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 bg-slate-50 border border-slate-200 rounded-lg p-3">
                       <div>
                         <span className="font-japanese font-medium">{item.kanji}</span>
-                        <span className="text-primary-400 text-sm ml-2">({item.meaning})</span>
+                        <span className="text-slate-500 text-sm ml-2">({item.meaning})</span>
                       </div>
                       <div className="text-left sm:text-right">
-                        <span className="text-accent-green font-japanese text-sm">{item.hiragana}</span>
-                        <span className="text-accent-red font-japanese text-xs block line-through">
+                      <span className="text-emerald-600 font-japanese text-sm">{item.hiragana}</span>
+                      <span className="text-red-600 font-japanese text-xs block line-through">
                           {item.userAnswer}
                         </span>
                       </div>
@@ -383,7 +383,7 @@ export default function StudyPage() {
         <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
           <button
             onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-primary-400 hover:text-white transition-colors shrink-0"
+            className="flex items-center gap-2 text-slate-500 hover:text-indigo-600 transition-colors shrink-0"
           >
             <ArrowLeft className="w-4 h-4" />
             <span className="text-sm">Thoát</span>
@@ -399,8 +399,8 @@ export default function StudyPage() {
                 }}
                 className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-xs font-semibold transition-all sm:px-3.5 ${
                   isSettingsOpen
-                    ? 'border-accent-orange bg-accent-orange/20 text-accent-orange'
-                    : 'border-white/10 bg-primary-900/60 text-primary-300 hover:border-white/20 hover:text-white'
+                    ? 'border-indigo-500 bg-indigo-50 text-indigo-600'
+                    : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-300 hover:text-indigo-600'
                 }`}
                 aria-expanded={isSettingsOpen}
                 aria-haspopup="menu"
@@ -411,33 +411,33 @@ export default function StudyPage() {
               </button>
 
               {isSettingsOpen && (
-                <div className="absolute right-0 top-full z-50 mt-2 w-64 rounded-2xl border border-white/10 bg-slate-900/95 p-2 shadow-2xl shadow-black/40 backdrop-blur-xl" role="menu">
-                  <p className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-primary-500">Cài đặt học</p>
+                <div className="absolute right-0 top-full z-50 mt-2 w-64 rounded-2xl border border-slate-200 bg-white p-2 shadow-xl" role="menu">
+                  <p className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-slate-400">Cài đặt học</p>
                   <button
                     type="button"
                     onClick={handleToggleMeaning}
-                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-primary-200 transition-colors hover:bg-white/5"
+                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-slate-700 transition-colors hover:bg-indigo-50"
                     role="menuitem"
                     aria-pressed={showMeaning}
                   >
                     <span className="flex items-center gap-2.5">
-                      {showMeaning ? <Eye className="h-4 w-4 text-accent-orange" /> : <EyeOff className="h-4 w-4 text-primary-500" />}
+                      {showMeaning ? <Eye className="h-4 w-4 text-indigo-600" /> : <EyeOff className="h-4 w-4 text-slate-400" />}
                       Hiển thị nghĩa
                     </span>
-                    <span className={`text-xs font-bold ${showMeaning ? 'text-accent-orange' : 'text-primary-500'}`}>{showMeaning ? 'Bật' : 'Tắt'}</span>
+                    <span className={`text-xs font-bold ${showMeaning ? 'text-indigo-600' : 'text-slate-400'}`}>{showMeaning ? 'Bật' : 'Tắt'}</span>
                   </button>
                   <button
                     type="button"
                     onClick={handleToggleShuffle}
-                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-primary-200 transition-colors hover:bg-white/5"
+                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-slate-700 transition-colors hover:bg-indigo-50"
                     role="menuitem"
                     aria-pressed={isShuffled}
                   >
                     <span className="flex items-center gap-2.5">
-                      <Shuffle className={`h-4 w-4 ${isShuffled ? 'text-accent-orange' : 'text-primary-500'}`} />
+                      <Shuffle className={`h-4 w-4 ${isShuffled ? 'text-indigo-600' : 'text-slate-400'}`} />
                       Xáo trộn từ
                     </span>
-                    <span className={`text-xs font-bold ${isShuffled ? 'text-accent-orange' : 'text-primary-500'}`}>{isShuffled ? 'Bật' : 'Tắt'}</span>
+                    <span className={`text-xs font-bold ${isShuffled ? 'text-indigo-600' : 'text-slate-400'}`}>{isShuffled ? 'Bật' : 'Tắt'}</span>
                   </button>
                 </div>
               )}
@@ -452,20 +452,20 @@ export default function StudyPage() {
                 }}
                 className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-xs font-semibold transition-all sm:px-3.5 ${
                   isModeMenuOpen
-                    ? 'border-accent-orange bg-accent-orange/20 text-accent-orange'
-                    : 'border-white/10 bg-primary-900/60 text-primary-300 hover:border-white/20 hover:text-white'
+                    ? 'border-indigo-500 bg-indigo-50 text-indigo-600'
+                    : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-300 hover:text-indigo-600'
                 }`}
                 aria-expanded={isModeMenuOpen}
                 aria-haspopup="menu"
               >
-                <ActiveModeIcon className="h-4 w-4 text-accent-orange" />
+                <ActiveModeIcon className="h-4 w-4 text-indigo-600" />
                 <span>{activeMode.label}</span>
                 <ChevronDown className={`h-3.5 w-3.5 transition-transform ${isModeMenuOpen ? 'rotate-180' : ''}`} />
               </button>
 
               {isModeMenuOpen && (
-                <div className="absolute right-0 top-full z-50 mt-2 w-52 rounded-2xl border border-white/10 bg-slate-900/95 p-2 shadow-2xl shadow-black/40 backdrop-blur-xl" role="menu">
-                  <p className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-primary-500">Chế độ học</p>
+                <div className="absolute right-0 top-full z-50 mt-2 w-52 rounded-2xl border border-slate-200 bg-white p-2 shadow-xl" role="menu">
+                  <p className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-slate-400">Chế độ học</p>
                   {STUDY_MODE_OPTIONS.map(({ value, label, icon: ModeIcon }) => (
                     <button
                       key={value}
@@ -473,8 +473,8 @@ export default function StudyPage() {
                       onClick={() => handleSelectMode(value)}
                       className={`flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm transition-colors ${
                         studyMode === value
-                          ? 'bg-accent-orange/15 text-accent-orange'
-                          : 'text-primary-200 hover:bg-white/5'
+                          ? 'bg-indigo-50 text-indigo-600'
+                          : 'text-slate-700 hover:bg-indigo-50'
                       }`}
                       role="menuitemradio"
                       aria-checked={studyMode === value}
@@ -499,13 +499,13 @@ export default function StudyPage() {
           {currentWord && (
             <div className="animate-fade-in">
               {currentWord.isReviewRound && studyMode !== 'flashcard' && (
-                <div className="mb-4 rounded-xl border border-accent-orange/30 bg-accent-orange/10 px-4 py-3 text-center text-sm text-accent-orange">
+                <div className="mb-4 rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-3 text-center text-sm text-indigo-700">
                   Ôn lại {currentWord.reviewRoundSize} từ đã trả lời sai
                 </div>
               )}
               {studyMode === 'flashcard' ? (
                 <div>
-                  <div className="flex items-center justify-between mb-3 text-sm text-primary-400">
+                  <div className="flex items-center justify-between mb-3 text-sm text-slate-500">
                     <span>Ôn tập flashcard</span>
                     <span>{isFlashcardFlipped ? 'Mặt sau' : 'Mặt trước'}</span>
                   </div>
@@ -517,15 +517,15 @@ export default function StudyPage() {
                     aria-label={isFlashcardFlipped ? 'Lật về mặt trước' : 'Lật sang mặt sau'}
                   >
                     <span className="flashcard-face flashcard-front study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
-                      <span className="text-xs uppercase tracking-widest text-accent-orange font-semibold mb-8">Từ vựng</span>
+                      <span className="text-xs uppercase tracking-widest text-indigo-600 font-semibold mb-8">Từ vựng</span>
                       <span lang="ja" className="kanji-display">{currentWord.kanji?.trim() || currentWord.hiragana}</span>
-                      <span className="text-primary-500 text-xs mt-10">Nhấn để lật thẻ</span>
+                      <span className="text-slate-400 text-xs mt-10">Nhấn để lật thẻ</span>
                     </span>
                     <span className="flashcard-face flashcard-back study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
-                      <span className="text-xs uppercase tracking-widest text-accent-green font-semibold mb-8">Nghĩa & cách đọc</span>
-                      <span className="text-primary-200 text-xl sm:text-2xl text-center mb-5">{currentWord.meaning}</span>
-                      <span lang="ja" className="hiragana-result text-accent-green">{currentWord.hiragana}</span>
-                      <span className="text-primary-500 text-xs mt-10">Nhấn để xem lại từ vựng</span>
+                      <span className="text-xs uppercase tracking-widest text-emerald-600 font-semibold mb-8">Nghĩa & cách đọc</span>
+                      <span className="text-slate-700 text-xl sm:text-2xl text-center mb-5">{currentWord.meaning}</span>
+                      <span lang="ja" className="hiragana-result text-emerald-600">{currentWord.hiragana}</span>
+                      <span className="text-slate-400 text-xs mt-10">Nhấn để xem lại từ vựng</span>
                     </span>
                   </button>
 
@@ -553,14 +553,14 @@ export default function StudyPage() {
                     </button>
                   </div>
 
-                  <p className="text-center text-xs sm:text-sm text-primary-500 mt-5">
-                    Dùng <kbd className="px-1.5 py-0.5 rounded bg-primary-700 text-primary-300 font-mono mx-1">Space</kbd> để lật · <kbd className="px-1.5 py-0.5 rounded bg-primary-700 text-primary-300 font-mono mx-1">← →</kbd> để chuyển thẻ
+                  <p className="text-center text-xs sm:text-sm text-slate-400 mt-5">
+                    Dùng <kbd className="px-1.5 py-0.5 rounded bg-slate-200 text-slate-600 font-mono mx-1">Space</kbd> để lật · <kbd className="px-1.5 py-0.5 rounded bg-slate-200 text-slate-600 font-mono mx-1">← →</kbd> để chuyển thẻ
                   </p>
                 </div>
               ) : studyMode === 'quiz' ? (
                 <div>
                   <div className="text-center mb-6">
-                    <p className="text-xs uppercase tracking-widest text-accent-orange font-semibold mb-4">
+                    <p className="text-xs uppercase tracking-widest text-indigo-600 font-semibold mb-4">
                       Chọn cách đọc đúng
                     </p>
                     <h2 lang="ja" className="kanji-display mb-2">{currentWord.kanji}</h2>
@@ -572,12 +572,12 @@ export default function StudyPage() {
                       const isCorrectOption = checkResult && option === checkResult.correctAnswer;
                       const isSelectedWrong = checkResult && option === checkResult.userAnswer && !checkResult.isCorrect;
                       const stateClass = isCorrectOption
-                        ? 'border-accent-green bg-accent-green/20 text-accent-green'
+                        ? 'border-emerald-400 bg-emerald-50 text-emerald-700'
                         : isSelectedWrong
-                          ? 'border-accent-red bg-accent-red/20 text-accent-red'
+                          ? 'border-red-300 bg-red-50 text-red-700'
                           : checkResult
-                            ? 'border-white/10 bg-primary-900/40 text-primary-500 opacity-70'
-                            : 'border-white/15 bg-primary-900/60 text-white hover:border-accent-orange hover:bg-accent-orange/10';
+                            ? 'border-slate-200 bg-slate-50 text-slate-400 opacity-70'
+                            : 'border-slate-200 bg-white text-slate-800 hover:border-indigo-400 hover:bg-indigo-50';
 
                       return (
                         <button
@@ -616,8 +616,8 @@ export default function StudyPage() {
                       </button>
                     </div>
                   ) : (
-                    <p className="text-center text-sm text-primary-500">
-                      Nhấn <kbd className="px-2 py-0.5 rounded bg-primary-700 text-primary-300 text-xs font-mono mx-1">1–4</kbd> để chọn đáp án
+                    <p className="text-center text-sm text-slate-400">
+                      Nhấn <kbd className="px-2 py-0.5 rounded bg-slate-200 text-slate-600 text-xs font-mono mx-1">1–4</kbd> để chọn đáp án
                     </p>
                   )}
                 </div>
@@ -641,7 +641,7 @@ export default function StudyPage() {
               <div className="text-center mb-6 h-14 flex items-center justify-center">
                 {checkResult ? (
                   <p lang="ja" className={`hiragana-result transition-all duration-300 ${
-                    checkResult.isCorrect ? 'text-accent-green' : 'text-accent-red'
+                    checkResult.isCorrect ? 'text-emerald-600' : 'text-red-600'
                   }`}>
                     {checkResult.correctAnswer}
                   </p>
@@ -710,8 +710,8 @@ export default function StudyPage() {
                           )}
                         </div>
                         {checkResult.isCorrect && !showMeaning && (
-                          <p className="text-sm font-medium text-white/90 mt-0.5 animate-fade-in">
-                            Nghĩa: <span className="text-accent-green font-semibold">{currentWord.meaning}</span>
+                          <p className="text-sm font-medium text-slate-600 mt-0.5 animate-fade-in">
+                            Nghĩa: <span className="text-emerald-600 font-semibold">{currentWord.meaning}</span>
                           </p>
                         )}
                       </div>
@@ -731,8 +731,8 @@ export default function StudyPage() {
               </div>
 
               {/* Enter shortcut hint */}
-              <p className="text-center text-sm text-primary-500">
-                Nhấn <kbd className="px-2 py-0.5 rounded bg-primary-700 text-primary-300 text-xs font-mono mx-1">Enter</kbd> để {checkResult ? 'tiếp theo' : 'kiểm tra'}
+              <p className="text-center text-sm text-slate-400">
+                Nhấn <kbd className="px-2 py-0.5 rounded bg-slate-200 text-slate-600 text-xs font-mono mx-1">Enter</kbd> để {checkResult ? 'tiếp theo' : 'kiểm tra'}
               </p>
                 </>
               )}
@@ -746,11 +746,11 @@ export default function StudyPage() {
         <div className="px-4 sm:px-8 pb-4">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm font-medium text-primary-400">
+              <span className="text-sm font-medium text-slate-600">
                 {currentWord.currentIndex + 1} / {currentWord.totalWords}
               </span>
               {studyMode !== 'flashcard' && (
-                <span className="text-xs text-primary-500">
+                <span className="text-xs text-slate-400">
                   ✓ {currentWord.correctCount || 0} &nbsp; ✗ {currentWord.wrongCount || 0}
                 </span>
               )}
