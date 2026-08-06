@@ -256,10 +256,11 @@ export default function StudyPage() {
   // Loading state
   if (isLoading && !currentWord) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="study-page min-h-screen flex items-center justify-center px-6">
         <div className="text-center">
-          <div className="w-16 h-16 mx-auto mb-4 rounded-full border-4 border-accent-orange border-t-transparent animate-spin" />
-          <p className="text-slate-500">Đang tải bộ từ vựng...</p>
+          <div className="w-14 h-14 mx-auto mb-5 rounded-full border-4 border-indigo-400/30 border-t-indigo-400 animate-spin" />
+          <p className="text-slate-300 text-sm font-medium">Đang tải bộ từ vựng...</p>
+          <p className="text-slate-500 text-xs mt-2">Chuẩn bị bài học cho bạn</p>
         </div>
       </div>
     );
@@ -268,9 +269,9 @@ export default function StudyPage() {
   // Error state
   if (error && !currentWord) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="study-page min-h-screen flex items-center justify-center px-6">
         <div className="text-center">
-          <p className="text-red-600 text-lg mb-4">{error}</p>
+          <p className="text-rose-400 text-lg mb-4">{error}</p>
           <button onClick={() => navigate('/')} className="btn-hint">
             Quay lại trang chủ
           </button>
