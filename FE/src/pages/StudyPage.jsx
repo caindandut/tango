@@ -554,7 +554,7 @@ export default function StudyPage() {
                     </button>
                   </div>
 
-                  <p className="text-center text-xs sm:text-sm text-slate-400 mt-5">
+                  <p className="hidden sm:block text-center text-xs sm:text-sm text-slate-400 mt-6">
                     Dùng <kbd className="px-1.5 py-0.5 rounded bg-slate-200 text-slate-600 font-mono mx-1">Space</kbd> để lật · <kbd className="px-1.5 py-0.5 rounded bg-slate-200 text-slate-600 font-mono mx-1">← →</kbd> để chuyển thẻ
                   </p>
                 </div>
@@ -617,7 +617,7 @@ export default function StudyPage() {
                       </button>
                     </div>
                   ) : (
-                    <p className="text-center text-sm text-slate-400">
+                    <p className="hidden sm:block text-center text-sm text-slate-400 mt-6">
                       Nhấn <kbd className="px-2 py-0.5 rounded bg-slate-200 text-slate-600 text-xs font-mono mx-1">1–4</kbd> để chọn đáp án
                     </p>
                   )}
@@ -732,7 +732,7 @@ export default function StudyPage() {
               </div>
 
               {/* Enter shortcut hint */}
-              <p className="text-center text-sm text-slate-400">
+              <p className="hidden sm:block text-center text-sm text-slate-400 mt-6">
                 Nhấn <kbd className="px-2 py-0.5 rounded bg-slate-200 text-slate-600 text-xs font-mono mx-1">Enter</kbd> để {checkResult ? 'tiếp theo' : 'kiểm tra'}
               </p>
                 </>
