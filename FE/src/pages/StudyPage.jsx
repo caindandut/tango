@@ -443,17 +443,6 @@ export default function StudyPage() {
           </button>
 
           <div className="flex items-center justify-end gap-2">
-            <button
-              type="button"
-              onClick={handleToggleFocusMode}
-              className="flex items-center gap-2 rounded-xl border border-white/10 bg-slate-900 px-3 py-2 text-xs font-semibold text-slate-300 transition hover:border-indigo-400 hover:text-white sm:hidden"
-              aria-label={isFocusMode ? 'Thoát chế độ toàn màn hình' : 'Bật chế độ toàn màn hình'}
-              aria-pressed={isFocusMode}
-              title={isFocusMode ? 'Thoát chế độ toàn màn hình' : 'Toàn màn hình'}
-            >
-              {isFocusMode ? <Minimize2 className="h-4 w-4" /> : <Maximize2 className="h-4 w-4" />}
-              <span>{isFocusMode ? 'Thoát' : 'Toàn màn hình'}</span>
-            </button>
             <div className="relative" ref={settingsMenuRef}>
               <button
                 type="button"
@@ -502,6 +491,22 @@ export default function StudyPage() {
                       Xáo trộn từ
                     </span>
                     <span className={`text-xs font-bold ${isShuffled ? 'text-indigo-600' : 'text-slate-400'}`}>{isShuffled ? 'Bật' : 'Tắt'}</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsSettingsOpen(false);
+                      handleToggleFocusMode();
+                    }}
+                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-slate-200 transition-colors hover:bg-white/5"
+                    role="menuitem"
+                    aria-pressed={isFocusMode}
+                  >
+                    <span className="flex items-center gap-2.5">
+                      {isFocusMode ? <Minimize2 className="h-4 w-4 text-indigo-600" /> : <Maximize2 className="h-4 w-4 text-slate-400" />}
+                      Toàn màn hình
+                    </span>
+                    <span className={`text-xs font-bold ${isFocusMode ? 'text-indigo-600' : 'text-slate-400'}`}>{isFocusMode ? 'Bật' : 'Tắt'}</span>
                   </button>
                 </div>
               )}
