@@ -22,6 +22,7 @@ model Vocabulary {
   kanji     String
   hiragana  String
   meaning   String
+  examples  Json          @default("[]")
   setId     String
   set       VocabularySet @relation(fields: [setId], references: [id], onDelete: Cascade)
   results   StudyResult[]

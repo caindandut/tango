@@ -6,6 +6,7 @@
     "dev": "nodemon src/app.js",
     "start": "npm run seed && node src/app.js",
     "seed": "node src/scripts/seedN3FromJson.js",
+    "validate:vocab": "node src/scripts/validateN3Vocabulary.js",
 
     "prisma:generate": "npx prisma generate",
     "prisma:migrate": "npx prisma migrate dev",

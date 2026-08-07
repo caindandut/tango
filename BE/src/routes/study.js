@@ -247,6 +247,7 @@ router.get('/session/:sessionId/current', async (req, res) => {
       totalWords: session.totalWords,
       correctCount: session.correctCount,
       wrongCount: session.wrongCount,
+      examples: Array.isArray(vocab.examples) ? vocab.examples : [],
     });
   } catch (error) {
     console.error('Get current vocab error:', error);
