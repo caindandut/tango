@@ -392,6 +392,32 @@
   .study-page kbd { background: #1e293b !important; color: #cbd5e1 !important; }
 
   @media (max-width: 640px) {
+    .study-page.keyboard-open .study-main {
+      align-items: flex-start;
+      justify-content: flex-start;
+      min-height: 0;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      padding-top: 0.5rem;
+      padding-bottom: 1rem;
+    }
+
+    .study-page.keyboard-open .study-vocabulary {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      margin-top: -0.25rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.75rem;
+      background: #111a2e;
+      box-shadow: 0 0.75rem 1.25rem rgba(17, 26, 46, 0.95);
+      scroll-margin-top: 0.5rem;
+    }
+
+    .study-page.keyboard-open .study-vocabulary .kanji-display {
+      font-size: clamp(2.25rem, 12vw, 3.25rem);
+    }
+
     .study-page.focus-mode {
       position: fixed;
       inset: 0;

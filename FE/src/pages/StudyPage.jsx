@@ -24,6 +24,7 @@ export default function StudyPage() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isModeMenuOpen, setIsModeMenuOpen] = useState(false);
   const [isFocusMode, setIsFocusMode] = useState(false);
+  const [isKeyboardOpen, setIsKeyboardOpen] = useState(false);
   const [showMeaning, setShowMeaning] = useState(() => {
     const saved = localStorage.getItem('tango_show_meaning');
     return saved !== null ? saved === 'true' : true;
@@ -31,19 +32,54 @@ export default function StudyPage() {
   const inputRef = useRef(null);
   const vocabularyRef = useRef(null);
   const inputFocusTimerRef = useRef(null);
+  const viewportResizeCleanupRef = useRef(null);
   const settingsMenuRef = useRef(null);
   const modeMenuRef = useRef(null);
+
+  const focusVocabulary = useCallback(() => {
+    vocabularyRef.current?.scrollIntoView({ behavior: 'auto', block: 'start' });
+  }, []);
 
   const handleInputFocus = useCallback(() => {
     if (!window.matchMedia('(max-width: 640px)').matches) return;
 
+    setIsKeyboardOpen(true);
     window.clearTimeout(inputFocusTimerRef.current);
     inputFocusTimerRef.current = window.setTimeout(() => {
-      vocabularyRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 300);
+      focusVocabulary();
+    }, 350);
+
+    viewportResizeCleanupRef.current?.();
+    const viewport = window.visualViewport;
+    if (!viewport) return;
+
+    const handleViewportResize = () => {
+      focusVocabulary();
+      viewportResizeCleanupRef.current?.();
+    };
+
+    viewport.addEventListener('resize', handleViewportResize);
+    viewportResizeCleanupRef.current = () => {
+      viewport.removeEventListener('resize', handleViewportResize);
+      viewportResizeCleanupRef.current = null;
+    };
+
+    window.setTimeout(() => viewportResizeCleanupRef.current?.(), 1500);
+  }, [focusVocabulary]);
+
+  const handleInputBlur = useCallback(() => {
+    window.setTimeout(() => {
+      if (document.activeElement !== inputRef.current) {
+        setIsKeyboardOpen(false);
+        viewportResizeCleanupRef.current?.();
+      }
+    }, 200);
   }, []);
 
-  useEffect(() => () => window.clearTimeout(inputFocusTimerRef.current), []);
+  useEffect(() => () => {
+    window.clearTimeout(inputFocusTimerRef.current);
+    viewportResizeCleanupRef.current?.();
+  }, []);
 
   useEffect(() => {
     const handleFullscreenChange = () => {
@@ -441,7 +477,7 @@ export default function StudyPage() {
 
   // Main study interface
   return (
-    <div className={`study-page min-h-screen flex flex-col ${isFocusMode ? 'focus-mode' : ''}`}>
+    <div className={`study-page min-h-screen flex flex-col ${isFocusMode ? 'focus-mode' : ''} ${isKeyboardOpen ? 'keyboard-open' : ''}`}>
       <Toaster position="top-right" theme="dark" />
 
       {/* Header */}
@@ -736,7 +772,7 @@ export default function StudyPage() {
               ) : (
                 <>
               {/* Kanji Display */}
-              <div ref={vocabularyRef} className="scroll-mt-16 text-center mb-6">
+              <div ref={vocabularyRef} className="study-vocabulary scroll-mt-16 text-center mb-6">
                 <h2 lang="ja" className="kanji-display mb-2">{currentWord.kanji}</h2>
                 <div className="h-7 flex items-center justify-center">
                   <p className={`meaning-text transition-all duration-300 ${
@@ -775,6 +811,7 @@ export default function StudyPage() {
                         value={inputValue}
                         onChange={setInputValue}
                         onFocus={handleInputFocus}
+                        onBlur={handleInputBlur}
                         placeholder="Gõ romaji (vd: toshokan → としょかん)"
                         disabled={!!checkResult}
                       />
