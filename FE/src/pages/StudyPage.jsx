@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { ArrowLeft, Layers, Lightbulb, Keyboard, ListChecks, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, Eye, EyeOff, Settings2, ChevronDown, Maximize2, Minimize2 } from 'lucide-react';
+import { ArrowLeft, Layers, Lightbulb, Keyboard, ListChecks, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, Eye, EyeOff, Settings2, ChevronDown, Maximize2, Minimize2, LoaderCircle } from 'lucide-react';
 import { Toaster, toast } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
@@ -29,8 +29,21 @@ export default function StudyPage() {
     return saved !== null ? saved === 'true' : true;
   });
   const inputRef = useRef(null);
+  const vocabularyRef = useRef(null);
+  const inputFocusTimerRef = useRef(null);
   const settingsMenuRef = useRef(null);
   const modeMenuRef = useRef(null);
+
+  const handleInputFocus = useCallback(() => {
+    if (!window.matchMedia('(max-width: 640px)').matches) return;
+
+    window.clearTimeout(inputFocusTimerRef.current);
+    inputFocusTimerRef.current = window.setTimeout(() => {
+      vocabularyRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 300);
+  }, []);
+
+  useEffect(() => () => window.clearTimeout(inputFocusTimerRef.current), []);
 
   useEffect(() => {
     const handleFullscreenChange = () => {
@@ -576,10 +589,7 @@ export default function StudyPage() {
                 </div>
               )}
               {isLoading && (
-                <div className="mb-4 flex items-center gap-2 rounded-xl border border-indigo-400/20 bg-indigo-500/10 px-4 py-3 text-sm text-indigo-100" role="status" aria-live="polite">
-                  <span className="h-4 w-4 animate-spin rounded-full border-2 border-indigo-200/30 border-t-indigo-200" aria-hidden="true" />
-                  <span>Đang cập nhật bài học…</span>
-                </div>
+                <span className="sr-only" role="status" aria-live="polite">Đang chuyển sang từ tiếp theo</span>
               )}
               {currentWord.isReviewRound && studyMode !== 'flashcard' && (
                 <div className="mb-4 rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-3 text-center text-sm text-indigo-700">
@@ -631,8 +641,17 @@ export default function StudyPage() {
                       disabled={isLoading}
                       className="btn-check text-sm sm:text-base flex items-center justify-center gap-1 sm:gap-2"
                     >
-                      {currentWord.currentIndex + 1 === currentWord.totalWords ? 'Hoàn thành' : 'Tiếp'}
-                      <ChevronRight className="w-4 h-4" />
+                      {isLoading ? (
+                        <>
+                          <LoaderCircle className="h-4 w-4 animate-spin" aria-hidden="true" />
+                          <span>Đang tải</span>
+                        </>
+                      ) : (
+                        <>
+                          {currentWord.currentIndex + 1 === currentWord.totalWords ? 'Hoàn thành' : 'Tiếp'}
+                          <ChevronRight className="w-4 h-4" />
+                        </>
+                      )}
                     </button>
                   </div>
 
@@ -692,10 +711,20 @@ export default function StudyPage() {
                       <button
                         type="button"
                         onClick={handleNext}
+                        disabled={isLoading}
                         className="btn-check w-full flex items-center justify-center gap-2"
                       >
-                        Tiếp theo
-                        <ChevronRight className="w-5 h-5" />
+                        {isLoading ? (
+                          <>
+                            <LoaderCircle className="h-5 w-5 animate-spin" aria-hidden="true" />
+                            Đang tải
+                          </>
+                        ) : (
+                          <>
+                            Tiếp theo
+                            <ChevronRight className="w-5 h-5" />
+                          </>
+                        )}
                       </button>
                     </div>
                   ) : (
@@ -707,7 +736,7 @@ export default function StudyPage() {
               ) : (
                 <>
               {/* Kanji Display */}
-              <div className="text-center mb-6">
+              <div ref={vocabularyRef} className="scroll-mt-16 text-center mb-6">
                 <h2 lang="ja" className="kanji-display mb-2">{currentWord.kanji}</h2>
                 <div className="h-7 flex items-center justify-center">
                   <p className={`meaning-text transition-all duration-300 ${
@@ -745,6 +774,7 @@ export default function StudyPage() {
                         ref={inputRef}
                         value={inputValue}
                         onChange={setInputValue}
+                        onFocus={handleInputFocus}
                         placeholder="Gõ romaji (vd: toshokan → としょかん)"
                         disabled={!!checkResult}
                       />
@@ -804,10 +834,20 @@ export default function StudyPage() {
                     <button
                       type="button"
                       onClick={handleNext}
+                      disabled={isLoading}
                       className="btn-check w-full flex items-center justify-center gap-2"
                     >
-                      Tiếp theo
-                      <ChevronRight className="w-5 h-5" />
+                      {isLoading ? (
+                        <>
+                          <LoaderCircle className="h-5 w-5 animate-spin" aria-hidden="true" />
+                          Đang tải
+                        </>
+                      ) : (
+                        <>
+                          Tiếp theo
+                          <ChevronRight className="w-5 h-5" />
+                        </>
+                      )}
                     </button>
                   </div>
                 )}

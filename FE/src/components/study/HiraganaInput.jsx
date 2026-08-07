@@ -1,7 +1,7 @@
 import { forwardRef, useEffect, useRef } from 'react';
 import * as wanakana from 'wanakana';
 
-const HiraganaInput = forwardRef(({ value, onChange, onKeyDown, placeholder, disabled }, ref) => {
+const HiraganaInput = forwardRef(({ value, onChange, onKeyDown, onFocus, placeholder, disabled }, ref) => {
   const internalRef = useRef(null);
   const inputRef = ref || internalRef;
   const boundRef = useRef(false);
@@ -52,6 +52,7 @@ const HiraganaInput = forwardRef(({ value, onChange, onKeyDown, placeholder, dis
       placeholder={placeholder}
       disabled={disabled}
       onKeyDown={onKeyDown}
+      onFocus={onFocus}
       autoComplete="off"
       autoCorrect="off"
       spellCheck="false"
