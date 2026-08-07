@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { ArrowLeft, Layers, Lightbulb, Keyboard, ListChecks, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, Eye, EyeOff, Settings2, ChevronDown } from 'lucide-react';
+import { ArrowLeft, Layers, Lightbulb, Keyboard, ListChecks, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, Eye, EyeOff, Settings2, ChevronDown, Maximize2, Minimize2 } from 'lucide-react';
 import { Toaster, toast } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
@@ -23,6 +23,7 @@ export default function StudyPage() {
   const [isShuffled, setIsShuffled] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isModeMenuOpen, setIsModeMenuOpen] = useState(false);
+  const [isFocusMode, setIsFocusMode] = useState(false);
   const [showMeaning, setShowMeaning] = useState(() => {
     const saved = localStorage.getItem('tango_show_meaning');
     return saved !== null ? saved === 'true' : true;
@@ -30,6 +31,36 @@ export default function StudyPage() {
   const inputRef = useRef(null);
   const settingsMenuRef = useRef(null);
   const modeMenuRef = useRef(null);
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      if (document.fullscreenEnabled) {
+        setIsFocusMode(Boolean(document.fullscreenElement));
+      }
+    };
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, []);
+
+  const handleToggleFocusMode = useCallback(async () => {
+    if (isFocusMode) {
+      setIsFocusMode(false);
+      if (document.fullscreenElement && document.exitFullscreen) {
+        await document.exitFullscreen();
+      }
+      return;
+    }
+
+    setIsFocusMode(true);
+    if (document.documentElement.requestFullscreen) {
+      try {
+        await document.documentElement.requestFullscreen();
+      } catch {
+        // iOS Safari may reject Fullscreen API requests; CSS focus mode remains active.
+      }
+    }
+  }, [isFocusMode]);
 
   const activeMode = STUDY_MODE_OPTIONS.find((option) => option.value === studyMode) || STUDY_MODE_OPTIONS[0];
   const ActiveModeIcon = activeMode.icon;
@@ -397,11 +428,11 @@ export default function StudyPage() {
 
   // Main study interface
   return (
-    <div className="study-page min-h-screen flex flex-col">
+    <div className={`study-page min-h-screen flex flex-col ${isFocusMode ? 'focus-mode' : ''}`}>
       <Toaster position="top-right" theme="dark" />
 
       {/* Header */}
-      <header className="py-3 sm:py-4 px-3 sm:px-8">
+      <header className="study-header py-3 sm:py-4 px-3 sm:px-8">
         <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
           <button
             onClick={() => navigate('/')}
@@ -412,6 +443,17 @@ export default function StudyPage() {
           </button>
 
           <div className="flex items-center justify-end gap-2">
+            <button
+              type="button"
+              onClick={handleToggleFocusMode}
+              className="flex items-center gap-2 rounded-xl border border-white/10 bg-slate-900 px-3 py-2 text-xs font-semibold text-slate-300 transition hover:border-indigo-400 hover:text-white sm:hidden"
+              aria-label={isFocusMode ? 'Thoát chế độ toàn màn hình' : 'Bật chế độ toàn màn hình'}
+              aria-pressed={isFocusMode}
+              title={isFocusMode ? 'Thoát chế độ toàn màn hình' : 'Toàn màn hình'}
+            >
+              {isFocusMode ? <Minimize2 className="h-4 w-4" /> : <Maximize2 className="h-4 w-4" />}
+              <span>{isFocusMode ? 'Thoát' : 'Toàn màn hình'}</span>
+            </button>
             <div className="relative" ref={settingsMenuRef}>
               <button
                 type="button"
@@ -516,7 +558,7 @@ export default function StudyPage() {
       </header>
 
       {/* Main study area */}
-      <div className="flex-1 flex items-center justify-center px-3 py-3 sm:px-8 sm:py-6">
+      <div className="study-main flex-1 flex items-center justify-center px-3 py-3 sm:px-8 sm:py-6">
         <div className="w-full max-w-3xl">
           {currentWord && (
             <div className={`animate-fade-in ${studyMode === 'flashcard' ? '' : 'study-card !max-w-3xl'}`}>
@@ -779,7 +821,7 @@ export default function StudyPage() {
 
       {/* Progress Bar (bottom) */}
       {currentWord && (
-        <div className="px-4 sm:px-8 pb-4">
+        <div className="study-progress px-4 sm:px-8 pb-4">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm font-medium text-slate-600">

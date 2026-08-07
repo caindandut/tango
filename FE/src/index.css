@@ -390,4 +390,34 @@
     color: #e2e8f0 !important;
   }
   .study-page kbd { background: #1e293b !important; color: #cbd5e1 !important; }
+
+  @media (max-width: 640px) {
+    .study-page.focus-mode {
+      min-height: 100svh;
+      height: 100svh;
+      overflow: hidden;
+    }
+
+    .study-page.focus-mode .study-header {
+      flex: 0 0 auto;
+      padding-top: max(0.75rem, env(safe-area-inset-top));
+    }
+
+    .study-page.focus-mode .study-main {
+      align-items: flex-start;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      padding-top: 0.5rem;
+      padding-bottom: 1rem;
+    }
+
+    .study-page.focus-mode .study-progress {
+      flex: 0 0 auto;
+      padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    }
+
+    .study-page.focus-mode .study-card {
+      box-shadow: none;
+    }
+  }
 }
