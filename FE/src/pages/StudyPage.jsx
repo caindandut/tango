@@ -4,6 +4,7 @@ import { ArrowLeft, Layers, Lightbulb, Keyboard, ListChecks, ChevronRight, Rotat
 import { Toaster, toast } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
+import VocabularyExamples from '@/components/study/VocabularyExamples';
 
 const STUDY_MODE_OPTIONS = [
   { value: 'reading', label: 'Cách đọc', icon: Keyboard },
@@ -744,6 +745,7 @@ export default function StudyPage() {
                           <span>{checkResult.isCorrect ? 'Chính xác!' : 'Sai rồi!'}</span>
                         </div>
                       </div>
+                      {checkResult.isCorrect && <VocabularyExamples examples={currentWord.examples} />}
                       <button
                         type="button"
                         onClick={handleNext}
@@ -866,6 +868,8 @@ export default function StudyPage() {
                         )}
                       </div>
                     </div>
+
+                    {checkResult.isCorrect && <VocabularyExamples examples={currentWord.examples} />}
 
                     {/* Next Button */}
                     <button

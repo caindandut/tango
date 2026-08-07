@@ -73,6 +73,7 @@ export function useStudySession() {
       const { data: wordData } = await studyApi.getCurrentWord(sessionId);
       setCurrentWord(wordData);
       setTotalChars(wordData.hiraganaLength);
+      setCheckResult(null);
     } catch (err) {
       setError(err.response?.data?.error || 'Failed to change study mode');
       throw err;
