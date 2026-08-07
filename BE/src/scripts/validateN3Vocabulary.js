@@ -1,4 +1,5 @@
 const EXPECTED_LESSON_COUNTS = [120, 100, 78, 112, 100, 40, 40, 45, 80, 80, 50, 35];
+const OCR_GARBAGE_PATTERN = /[\u00e5\u00f6\u00fc\u00f8\u00e6&\u2175\u03b2\ufffd]/u;
 
 function validateN3Vocabulary(data) {
   const lessons = Object.entries(data || {});
@@ -37,6 +38,9 @@ function validateN3Vocabulary(data) {
           if (typeof example[field] !== 'string' || !example[field].trim()) {
             throw new Error(`${lessonName}[${index}].examples[${exampleIndex}].${field} must be a non-empty string`);
           }
+        }
+        if (OCR_GARBAGE_PATTERN.test(example.vietnamese)) {
+          throw new Error(`${lessonName}[${index}].examples[${exampleIndex}].vietnamese contains OCR garbage characters`);
         }
       }
     }
