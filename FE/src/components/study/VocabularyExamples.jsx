@@ -10,30 +10,30 @@ export default function VocabularyExamples({ examples = [] }) {
 
   return (
     <section
-      className="rounded-2xl border border-emerald-200/80 bg-emerald-50/80 p-4 text-left shadow-sm sm:p-5"
+      className="vocabulary-examples rounded-2xl border p-4 text-left shadow-sm sm:p-5"
       aria-label="Ví dụ của từ vựng"
       aria-live="polite"
     >
       <div className="mb-3 flex items-center justify-between gap-3">
-        <h3 className="text-sm font-bold uppercase tracking-[0.14em] text-emerald-800">Ví dụ</h3>
+        <h3 className="vocabulary-examples__title text-sm font-bold uppercase tracking-[0.14em]">Ví dụ</h3>
         {validExamples.length > 0 && (
-          <span className="text-xs font-medium text-emerald-700">{validExamples.length} câu</span>
+          <span className="vocabulary-examples__count text-xs font-medium">{validExamples.length} câu</span>
         )}
       </div>
 
       {validExamples.length === 0 ? (
-        <p className="text-sm leading-6 text-emerald-900/70">Từ này hiện chưa có ví dụ trong giáo trình.</p>
+        <p className="vocabulary-examples__empty text-sm leading-6">Từ này hiện chưa có ví dụ trong giáo trình.</p>
       ) : (
         <ol className={`space-y-3 ${validExamples.length > 2 ? 'max-h-64 overflow-y-auto pr-1 sm:max-h-72' : ''}`}>
           {validExamples.map((example, index) => (
-            <li key={`${example.japanese}-${index}`} className="rounded-xl bg-white/75 p-3 ring-1 ring-emerald-100">
-              <p lang="ja" className="font-japanese text-base font-semibold leading-7 text-slate-900 sm:text-lg">
-                <span className="mr-2 inline-flex min-w-5 items-center justify-center rounded-full bg-emerald-100 px-1.5 py-0.5 align-middle font-sans text-xs font-bold text-emerald-700">
+            <li key={`${example.japanese}-${index}`} className="vocabulary-examples__item rounded-xl p-3 sm:p-3.5">
+              <p lang="ja" className="vocabulary-examples__japanese font-japanese text-base font-semibold leading-7 sm:text-lg">
+                <span className="vocabulary-examples__index mr-2 inline-flex min-w-5 items-center justify-center rounded-full px-1.5 py-0.5 align-middle font-sans text-xs font-bold">
                   {index + 1}
                 </span>
                 {example.japanese}
               </p>
-              <p className="mt-1.5 text-sm leading-6 text-slate-600 sm:text-[0.95rem]">{example.vietnamese}</p>
+              <p className="vocabulary-examples__translation mt-1.5 text-sm leading-6 sm:text-[0.95rem]">{example.vietnamese}</p>
             </li>
           ))}
         </ol>

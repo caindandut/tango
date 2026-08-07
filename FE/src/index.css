@@ -381,6 +381,27 @@
   .study-page .text-slate-700 { color: #e2e8f0 !important; }
   .study-page .bg-white { background-color: #111a2e !important; }
   .study-page .border-slate-200 { border-color: rgba(148, 163, 184, 0.2) !important; }
+
+  /* Keep the examples card readable on the dark study surface. */
+  .study-page .vocabulary-examples {
+    background: #d9f3ec !important;
+    border-color: #8ed8c4 !important;
+    color: #12352f;
+  }
+  .study-page .vocabulary-examples__title { color: #0f513f !important; }
+  .study-page .vocabulary-examples__count { color: #176b53 !important; }
+  .study-page .vocabulary-examples__empty { color: #24594d !important; }
+  .study-page .vocabulary-examples__item {
+    background: #ffffff !important;
+    box-shadow: inset 0 0 0 1px #b9e6d8;
+  }
+  .study-page .vocabulary-examples__japanese { color: #0f172a !important; }
+  .study-page .vocabulary-examples__index {
+    background: #c9f2e4 !important;
+    color: #0f513f !important;
+  }
+  .study-page .vocabulary-examples__translation { color: #334155 !important; }
+
   .study-page [class*="bg-indigo-50"] {
     background-color: #27356b !important;
     color: #c7d2fe !important;
