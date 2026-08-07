@@ -271,9 +271,30 @@ export default function StudyPage() {
     return (
       <div className="study-page min-h-screen flex items-center justify-center px-6">
         <div className="text-center">
+          <button onClick={handleRestartStudy} className="btn-check mb-4 max-w-xs mx-auto">
+            Thử lại
+          </button>
           <p className="text-rose-400 text-lg mb-4">{error}</p>
           <button onClick={() => navigate('/')} className="btn-hint">
             Quay lại trang chủ
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // Empty state: the session returned no word to study.
+  if (!isLoading && !currentWord && !isCompleted) {
+    return (
+      <div className="study-page min-h-screen flex items-center justify-center px-4 py-8 sm:px-6">
+        <div className="w-full max-w-md rounded-2xl border border-white/10 bg-slate-900/80 p-6 text-center shadow-2xl shadow-black/20 sm:p-8" role="status">
+          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500/10 text-indigo-300">
+            <Layers className="h-6 w-6" aria-hidden="true" />
+          </div>
+          <h1 className="text-lg font-semibold text-white">Chưa có từ vựng để học</h1>
+          <p className="mt-2 text-sm leading-6 text-slate-400">Bài học này hiện chưa có dữ liệu. Hãy quay lại và chọn bài khác.</p>
+          <button type="button" onClick={() => navigate('/')} className="btn-check mt-6">
+            Về trang chủ
           </button>
         </div>
       </div>
@@ -495,10 +516,24 @@ export default function StudyPage() {
       </header>
 
       {/* Main study area */}
-      <div className="flex-1 flex items-center justify-center px-3 sm:px-8 pb-4 sm:pb-6">
-        <div className="w-full max-w-2xl">
+      <div className="flex-1 flex items-center justify-center px-3 py-3 sm:px-8 sm:py-6">
+        <div className="w-full max-w-3xl">
           {currentWord && (
-            <div className="animate-fade-in">
+            <div className={`animate-fade-in ${studyMode === 'flashcard' ? '' : 'study-card !max-w-3xl'}`}>
+              {error && (
+                <div className="mb-4 flex flex-col gap-3 rounded-xl border border-rose-400/25 bg-rose-500/10 px-4 py-3 text-sm text-rose-100 sm:flex-row sm:items-center sm:justify-between" role="alert">
+                  <span>{error}</span>
+                  <button type="button" onClick={handleRestartStudy} className="shrink-0 rounded-lg border border-rose-300/30 px-3 py-2 text-xs font-semibold text-rose-100 transition hover:bg-rose-500/20">
+                    Thử lại bài học
+                  </button>
+                </div>
+              )}
+              {isLoading && (
+                <div className="mb-4 flex items-center gap-2 rounded-xl border border-indigo-400/20 bg-indigo-500/10 px-4 py-3 text-sm text-indigo-100" role="status" aria-live="polite">
+                  <span className="h-4 w-4 animate-spin rounded-full border-2 border-indigo-200/30 border-t-indigo-200" aria-hidden="true" />
+                  <span>Đang cập nhật bài học…</span>
+                </div>
+              )}
               {currentWord.isReviewRound && studyMode !== 'flashcard' && (
                 <div className="mb-4 rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-3 text-center text-sm text-indigo-700">
                   Ôn lại {currentWord.reviewRoundSize} từ đã trả lời sai
@@ -756,7 +791,14 @@ export default function StudyPage() {
                 </span>
               )}
             </div>
-            <div className="progress-bar-container">
+            <div
+              className="progress-bar-container"
+              role="progressbar"
+              aria-label="Tiến độ bài học"
+              aria-valuemin="0"
+              aria-valuemax={currentWord.totalWords}
+              aria-valuenow={currentWord.currentIndex + 1}
+            >
               <div
                 className="progress-bar-fill"
                 style={{ width: `${((currentWord.currentIndex + 1) / currentWord.totalWords) * 100}%` }}

@@ -43,6 +43,7 @@ export function useStudySession() {
   const checkAnswer = useCallback(async (answer, answerHintsUsed = hintsUsed) => {
     if (!sessionId || isChecking) return;
     setIsChecking(true);
+    setError(null);
     try {
       const { data } = await studyApi.checkAnswer(sessionId, answer, answerHintsUsed);
       setCheckResult(data);
@@ -83,6 +84,7 @@ export function useStudySession() {
   const getHint = useCallback(async () => {
     if (!sessionId) return;
     const nextReveal = hintsUsed + 1;
+    setError(null);
     try {
       const { data } = await studyApi.getHint(sessionId, nextReveal);
       setHintText(data.hint);
@@ -96,6 +98,7 @@ export function useStudySession() {
   const nextWord = useCallback(async () => {
     if (!sessionId) return;
     setIsLoading(true);
+    setError(null);
     try {
       const { data: nextData } = await studyApi.nextWord(sessionId);
 
@@ -123,6 +126,7 @@ export function useStudySession() {
   const previousWord = useCallback(async () => {
     if (!sessionId || !currentWord || currentWord.currentIndex <= 0) return;
     setIsLoading(true);
+    setError(null);
     try {
       await studyApi.previousWord(sessionId);
       const { data: wordData } = await studyApi.getCurrentWord(sessionId);
