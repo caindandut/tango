@@ -1,4 +1,8 @@
+import { useId, useState } from 'react';
+
 export default function VocabularyExamples({ examples = [] }) {
+  const [openExamples, setOpenExamples] = useState(() => new Set());
+  const exampleIdPrefix = useId();
   const validExamples = Array.isArray(examples)
     ? examples.filter((example) => (
       typeof example?.japanese === 'string'
@@ -7,6 +11,20 @@ export default function VocabularyExamples({ examples = [] }) {
       && example.vietnamese.trim()
     ))
     : [];
+
+  const toggleExample = (index) => {
+    setOpenExamples((currentOpenExamples) => {
+      const nextOpenExamples = new Set(currentOpenExamples);
+
+      if (nextOpenExamples.has(index)) {
+        nextOpenExamples.delete(index);
+      } else {
+        nextOpenExamples.add(index);
+      }
+
+      return nextOpenExamples;
+    });
+  };
 
   return (
     <section
@@ -27,13 +45,28 @@ export default function VocabularyExamples({ examples = [] }) {
         <ol className={`space-y-3 ${validExamples.length > 2 ? 'max-h-64 overflow-y-auto pr-1 sm:max-h-72' : ''}`}>
           {validExamples.map((example, index) => (
             <li key={`${example.japanese}-${index}`} className="vocabulary-examples__item rounded-xl p-3 sm:p-3.5">
-              <p lang="ja" className="vocabulary-examples__japanese font-japanese text-base font-medium leading-7 sm:text-lg">
-                <span className="vocabulary-examples__index mr-2 inline-flex min-w-5 items-center justify-center rounded-full px-1.5 py-0.5 align-middle font-sans text-xs font-bold">
+              <button
+                type="button"
+                className="vocabulary-examples__trigger"
+                aria-expanded={openExamples.has(index)}
+                aria-controls={`${exampleIdPrefix}-meaning-${index}`}
+                onClick={() => toggleExample(index)}
+              >
+                <span className="vocabulary-examples__index inline-flex min-w-5 shrink-0 items-center justify-center rounded-full px-1.5 py-0.5 font-sans text-xs font-bold">
                   {index + 1}
                 </span>
-                {example.japanese}
-              </p>
-              <p className="vocabulary-examples__translation mt-1.5 text-sm leading-6 sm:text-[0.95rem]">{example.vietnamese}</p>
+                <span lang="ja" className="vocabulary-examples__japanese font-japanese text-lg font-medium leading-7 sm:text-xl">
+                  {example.japanese}
+                </span>
+                <span className="vocabulary-examples__chevron" aria-hidden="true">
+                  {openExamples.has(index) ? '⌃' : '⌄'}
+                </span>
+              </button>
+              {openExamples.has(index) && (
+                <p id={`${exampleIdPrefix}-meaning-${index}`} className="vocabulary-examples__translation mt-1.5 text-sm leading-6 sm:text-[0.95rem]">
+                  {example.vietnamese}
+                </p>
+              )}
             </li>
           ))}
         </ol>
