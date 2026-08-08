@@ -27,7 +27,7 @@ export default function VocabularyExamples({ examples = [] }) {
         <ol className={`space-y-3 ${validExamples.length > 2 ? 'max-h-64 overflow-y-auto pr-1 sm:max-h-72' : ''}`}>
           {validExamples.map((example, index) => (
             <li key={`${example.japanese}-${index}`} className="vocabulary-examples__item rounded-xl p-3 sm:p-3.5">
-              <p lang="ja" className="vocabulary-examples__japanese font-japanese text-base font-semibold leading-7 sm:text-lg">
+              <p lang="ja" className="vocabulary-examples__japanese font-japanese text-base font-medium leading-7 sm:text-lg">
                 <span className="vocabulary-examples__index mr-2 inline-flex min-w-5 items-center justify-center rounded-full px-1.5 py-0.5 align-middle font-sans text-xs font-bold">
                   {index + 1}
                 </span>

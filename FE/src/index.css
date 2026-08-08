@@ -395,7 +395,13 @@
     background: #ffffff !important;
     box-shadow: inset 0 0 0 1px #b9e6d8;
   }
-  .study-page .vocabulary-examples__japanese { color: #0f172a !important; }
+  .study-page .vocabulary-examples__japanese {
+    color: #0f172a !important;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-shadow: none;
+    -webkit-text-stroke: 0 transparent;
+  }
   .study-page .vocabulary-examples__index {
     background: #c9f2e4 !important;
     color: #0f513f !important;
