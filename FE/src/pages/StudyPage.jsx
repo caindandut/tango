@@ -861,6 +861,18 @@ export default function StudyPage() {
                             </>
                           )}
                         </div>
+                        {!checkResult.isCorrect && (
+                          <div className="mt-2 space-y-1 text-left text-sm font-medium">
+                            <p>
+                              <span className="text-red-200/75">Đã nhập:</span>{' '}
+                              <span lang="ja" className="font-japanese text-red-100">{checkResult.userAnswer || '—'}</span>
+                            </p>
+                            <p>
+                              <span className="text-red-200/75">Đáp án:</span>{' '}
+                              <span lang="ja" className="font-japanese font-semibold text-white">{checkResult.correctAnswer}</span>
+                            </p>
+                          </div>
+                        )}
                         {checkResult.isCorrect && !showMeaning && (
                           <p className="text-sm font-medium text-slate-600 mt-0.5 animate-fade-in">
                             Nghĩa: <span className="text-emerald-600 font-semibold">{currentWord.meaning}</span>
