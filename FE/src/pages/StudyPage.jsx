@@ -393,7 +393,7 @@ export default function StudyPage() {
                     </span>
                     <span className="flashcard-face flashcard-back study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
                       <span className="text-xs uppercase tracking-widest text-accent-green font-semibold mb-8">Nghĩa & cách đọc</span>
-                      <span className="text-primary-200 text-xl sm:text-2xl text-center mb-5">{currentWord.meaning}</span>
+                      <span className="font-japanese text-primary-200 text-xl sm:text-2xl text-center mb-5">{currentWord.meaning}</span>
                       <span lang="ja" className="hiragana-result text-accent-green">{currentWord.hiragana}</span>
                       <span className="text-primary-500 text-xs mt-10">Nhấn để xem lại từ vựng</span>
                     </span>
@@ -517,7 +517,7 @@ export default function StudyPage() {
                         </div>
                         {checkResult.isCorrect && !showMeaning && (
                           <p className="text-sm font-medium text-white/90 mt-0.5 animate-fade-in">
-                            Nghĩa: <span className="text-accent-green font-semibold">{currentWord.meaning}</span>
+                            Nghĩa: <span className="font-japanese text-accent-green font-semibold">{currentWord.meaning}</span>
                           </p>
                         )}
                       </div>

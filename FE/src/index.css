@@ -37,9 +37,9 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   }
 
-  /* Kanji display - Clean Meiryo typography */
+  /* Vocabulary typography - keep Japanese glyphs consistent across study modes */
   .kanji-display {
-    font-family: 'Meiryo', sans-serif;
+    font-family: 'Gen Jyuu Gothic-Regular', Arial, sans-serif;
     font-size: 3.75rem;
     font-weight: 700;
     color: #ffffff;
@@ -51,7 +51,7 @@
 
   /* Meaning text */
   .meaning-text {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Gen Jyuu Gothic-Regular', Arial, sans-serif;
     color: #9ca3af;
     font-size: 1.125rem;
     text-align: center;
@@ -60,7 +60,7 @@
 
   /* Hiragana result */
   .hiragana-result {
-    font-family: 'Meiryo', sans-serif;
+    font-family: 'Gen Jyuu Gothic-Regular', Arial, sans-serif;
     font-size: 2.25rem;
     font-weight: 700;
     text-align: center;
@@ -81,7 +81,7 @@
   }
 
   .hint-char {
-    font-family: 'Meiryo', sans-serif;
+    font-family: 'Gen Jyuu Gothic-Regular', Arial, sans-serif;
     display: inline-block;
     font-size: 1.75rem;
     font-weight: 700;
@@ -96,7 +96,7 @@
     background: rgba(255, 255, 255, 0.05);
     border: 2px solid rgba(255, 255, 255, 0.15);
     color: #ffffff;
-    font-family: 'Meiryo', sans-serif;
+    font-family: 'Gen Jyuu Gothic-Regular', Arial, sans-serif;
     font-weight: 600;
     letter-spacing: 0.03em;
     outline: none;

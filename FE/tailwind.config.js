@@ -36,7 +36,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        japanese: ['"Meiryo"', 'sans-serif'],
+        japanese: ['"Gen Jyuu Gothic-Regular"', 'Arial', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.3s ease-out',
