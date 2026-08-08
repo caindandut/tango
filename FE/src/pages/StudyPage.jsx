@@ -745,7 +745,7 @@ export default function StudyPage() {
                           <span>{checkResult.isCorrect ? 'Chính xác!' : 'Sai rồi!'}</span>
                         </div>
                       </div>
-                      {checkResult.isCorrect && <VocabularyExamples examples={currentWord.examples} />}
+                      {checkResult && <VocabularyExamples examples={currentWord.examples} />}
                       <button
                         type="button"
                         onClick={handleNext}
@@ -869,7 +869,7 @@ export default function StudyPage() {
                       </div>
                     </div>
 
-                    {checkResult.isCorrect && <VocabularyExamples examples={currentWord.examples} />}
+                    {checkResult && <VocabularyExamples examples={currentWord.examples} />}
 
                     {/* Next Button */}
                     <button
