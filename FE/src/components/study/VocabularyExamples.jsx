@@ -28,11 +28,11 @@ export default function VocabularyExamples({ examples = [] }) {
 
   return (
     <section
-      className="vocabulary-examples rounded-2xl border p-4 text-left shadow-sm sm:p-5"
+      className="vocabulary-examples rounded-xl border p-3 text-left shadow-sm sm:rounded-2xl sm:p-4 lg:p-5"
       aria-label="Ví dụ của từ vựng"
       aria-live="polite"
     >
-      <div className="mb-3 flex items-center justify-between gap-3">
+      <div className="mb-2.5 flex items-center justify-between gap-3 sm:mb-3">
         <h3 className="vocabulary-examples__title text-sm font-bold uppercase tracking-[0.14em]">Ví dụ</h3>
         {validExamples.length > 0 && (
           <span className="vocabulary-examples__count text-xs font-medium">{validExamples.length} câu</span>
@@ -42,9 +42,9 @@ export default function VocabularyExamples({ examples = [] }) {
       {validExamples.length === 0 ? (
         <p className="vocabulary-examples__empty text-sm leading-6">Từ này hiện chưa có ví dụ trong giáo trình.</p>
       ) : (
-        <ol className={`space-y-3 ${validExamples.length > 2 ? 'max-h-64 overflow-y-auto pr-1 sm:max-h-72' : ''}`}>
+        <ol className={`vocabulary-examples__list space-y-2.5 sm:space-y-3 ${validExamples.length > 2 ? 'max-h-72 overflow-y-auto pr-1 sm:max-h-80 lg:max-h-96' : ''}`}>
           {validExamples.map((example, index) => (
-            <li key={`${example.japanese}-${index}`} className="vocabulary-examples__item rounded-xl p-3 sm:p-3.5">
+            <li key={`${example.japanese}-${index}`} className="vocabulary-examples__item rounded-lg p-2.5 sm:rounded-xl sm:p-3.5">
               <button
                 type="button"
                 className="vocabulary-examples__trigger"
@@ -55,7 +55,7 @@ export default function VocabularyExamples({ examples = [] }) {
                 <span className="vocabulary-examples__index inline-flex min-w-5 shrink-0 items-center justify-center rounded-full px-1.5 py-0.5 font-sans text-xs font-bold">
                   {index + 1}
                 </span>
-                <span lang="ja" className="vocabulary-examples__japanese font-japanese text-lg font-medium leading-7 sm:text-xl">
+                <span lang="ja" className="vocabulary-examples__japanese min-w-0 flex-1 font-japanese text-lg font-medium leading-7 sm:text-xl">
                   {example.japanese}
                 </span>
                 <span className="vocabulary-examples__chevron" aria-hidden="true">
