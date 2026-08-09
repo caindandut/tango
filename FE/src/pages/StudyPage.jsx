@@ -115,7 +115,6 @@ export default function StudyPage() {
 
   const activeMode = STUDY_MODE_OPTIONS.find((option) => option.value === studyMode) || STUDY_MODE_OPTIONS[0];
   const ActiveModeIcon = activeMode.icon;
-  const isQuizMeaningVisible = shouldShowQuizMeaning(showMeaning, checkResult);
 
   const {
     sessionId,
@@ -137,6 +136,7 @@ export default function StudyPage() {
     previousWord,
     resetSession,
   } = useStudySession();
+  const isQuizMeaningVisible = shouldShowQuizMeaning(showMeaning, checkResult);
 
   // Start session on mount
   useEffect(() => {
