@@ -5,6 +5,7 @@ import { Toaster, toast } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
 import VocabularyExamples from '@/components/study/VocabularyExamples';
+import { shouldShowQuizMeaning } from '@/lib/studyPresentation';
 
 const STUDY_MODE_OPTIONS = [
   { value: 'reading', label: 'Cách đọc', icon: Keyboard },
@@ -114,6 +115,7 @@ export default function StudyPage() {
 
   const activeMode = STUDY_MODE_OPTIONS.find((option) => option.value === studyMode) || STUDY_MODE_OPTIONS[0];
   const ActiveModeIcon = activeMode.icon;
+  const isQuizMeaningVisible = shouldShowQuizMeaning(showMeaning, checkResult);
 
   const {
     sessionId,
@@ -703,7 +705,16 @@ export default function StudyPage() {
                       Chọn cách đọc đúng
                     </p>
                     <h2 lang="ja" className="kanji-display mb-2">{currentWord.kanji}</h2>
-                    <p className="meaning-text">{currentWord.meaning}</p>
+                    <p
+                      className={`meaning-text transition-all duration-300 ${
+                        isQuizMeaningVisible
+                          ? 'opacity-100 translate-y-0'
+                          : 'opacity-0 -translate-y-1 pointer-events-none'
+                      }`}
+                      aria-hidden={!isQuizMeaningVisible}
+                    >
+                      {currentWord.meaning}
+                    </p>
                   </div>
 
                   <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-5" role="radiogroup" aria-label="Các đáp án cách đọc">
