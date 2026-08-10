@@ -42,4 +42,8 @@ export const studyApi = {
   getResults: (sessionId) => api.get(`/study/session/${sessionId}/results`),
 };
 
+export const dictionaryApi = {
+  lookup: (term, sentence) => api.post('/dictionary/lookup', { term, sentence }),
+};
+
 export default api;

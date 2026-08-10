@@ -442,6 +442,43 @@
     color: #334155 !important;
   }
 
+  .dictionary-lookup {
+    position: fixed;
+    z-index: 50;
+    width: min(18rem, calc(100vw - 2rem));
+    transform: translateX(-50%);
+  }
+
+  .dictionary-lookup__action,
+  .dictionary-lookup__result,
+  .dictionary-lookup__status {
+    border: 1px solid #99d7c3;
+    border-radius: 0.75rem;
+    background: #f4fffa;
+    box-shadow: 0 0.75rem 1.5rem rgb(15 81 63 / 20%);
+  }
+
+  .dictionary-lookup__action {
+    width: 100%;
+    padding: 0.625rem 0.75rem;
+    color: #0f513f;
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+
+  .dictionary-lookup__action:hover,
+  .dictionary-lookup__action:focus-visible { background: #dcf7ec; }
+
+  .dictionary-lookup__status { padding: 0.625rem 0.75rem; color: #24594d; font-size: 0.875rem; }
+
+  .dictionary-lookup__result { position: relative; padding: 0.75rem 2.5rem 0.75rem 0.875rem; }
+  .dictionary-lookup__term { color: #0f513f; font-size: 1.25rem; font-weight: 700; }
+  .dictionary-lookup__reading { margin-top: 0.125rem; color: #176b53; font-size: 1rem; }
+  .dictionary-lookup__meaning { margin-top: 0.5rem; color: #24594d; font-size: 0.875rem; line-height: 1.4; }
+  .dictionary-lookup__error { color: #a61b3c; font-size: 0.875rem; line-height: 1.4; }
+  .dictionary-lookup__close { position: absolute; top: 0.375rem; right: 0.5rem; color: #24594d; font-size: 1.5rem; line-height: 1; }
+  .dictionary-lookup__retry { margin-top: 0.5rem; color: #0f513f; font-size: 0.875rem; font-weight: 700; text-decoration: underline; }
+
   @media (min-width: 641px) {
     .study-page .vocabulary-examples__trigger {
       min-height: 3rem;
