@@ -5,7 +5,10 @@ import { Toaster, toast } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
 import VocabularyExamples from '@/components/study/VocabularyExamples';
-import { shouldShowQuizMeaning } from '@/lib/studyPresentation';
+import {
+  getReadingCorrectAnswer,
+  shouldShowQuizMeaning,
+} from '@/lib/studyPresentation';
 
 const STUDY_MODE_OPTIONS = [
   { value: 'reading', label: 'Cách đọc', icon: Keyboard },
@@ -137,6 +140,7 @@ export default function StudyPage() {
     resetSession,
   } = useStudySession();
   const isQuizMeaningVisible = shouldShowQuizMeaning(showMeaning, checkResult);
+  const readingCorrectAnswer = getReadingCorrectAnswer(checkResult, currentWord);
 
   // Start session on mount
   useEffect(() => {
@@ -804,7 +808,7 @@ export default function StudyPage() {
                   <p lang="ja" className={`hiragana-result transition-all duration-300 ${
                     checkResult.isCorrect ? 'text-emerald-600' : 'text-red-600'
                   }`}>
-                    {checkResult.correctAnswer}
+                    {readingCorrectAnswer}
                   </p>
                 ) : (
                   <div className="flex items-center justify-center gap-1 flex-wrap">
@@ -880,7 +884,7 @@ export default function StudyPage() {
                             </p>
                             <p>
                               <span className="text-red-200/75">Đáp án:</span>{' '}
-                              <span lang="ja" className="font-japanese font-semibold text-white">{checkResult.correctAnswer}</span>
+                              <span lang="ja" className="font-japanese font-semibold text-white">{readingCorrectAnswer}</span>
                             </p>
                           </div>
                         )}
