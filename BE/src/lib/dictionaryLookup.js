@@ -5,6 +5,7 @@ const MAX_SENTENCE_LENGTH = 500;
 const MAX_MEANING_LENGTH = 400;
 const JAPANESE_TERM_PATTERN = /^[\u3041-\u3096\u30a1-\u30fa\u30fc\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\u3005\u3006\u30f6]+$/u;
 const HIRAGANA_PATTERN = /^[\u3041-\u3096\u30fc]+$/u;
+const JAPANESE_TEXT_PATTERN = /[\u3041-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/u;
 const KANJI_PATTERN = /[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]/u;
 
 class DictionaryLookupError extends Error {
@@ -22,7 +23,7 @@ function validateLookupInput(input) {
     throw new DictionaryLookupError('TERM_INVALID');
   }
 
-  if (!sentence || sentence.length > MAX_SENTENCE_LENGTH || !JAPANESE_TERM_PATTERN.test(sentence.replace(/[\s\p{P}\p{S}]/gu, ''))) {
+  if (!sentence || sentence.length > MAX_SENTENCE_LENGTH || !JAPANESE_TEXT_PATTERN.test(sentence) || /[\u0000-\u001f\u007f]/u.test(sentence)) {
     throw new DictionaryLookupError('SENTENCE_INVALID');
   }
 
@@ -32,26 +33,33 @@ function validateLookupInput(input) {
 function parseLookupResponse(text, lookup) {
   let parsed;
   try {
-    parsed = JSON.parse(text);
+    const rawText = typeof text === 'string' ? text.trim() : '';
+    const fencedJson = rawText.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/iu)?.[1] || rawText;
+    parsed = JSON.parse(fencedJson);
   } catch {
     throw new DictionaryLookupError('MODEL_RESPONSE_INVALID');
   }
 
   const meaning = typeof parsed?.meaning === 'string' ? parsed.meaning.trim() : '';
   const hiragana = parsed?.hiragana;
+  const normalizedHiragana = typeof hiragana === 'string'
+    ? hiragana.replace(/[\u30a1-\u30f6]/gu, (character) => (
+      String.fromCharCode(character.charCodeAt(0) - 0x60)
+    ))
+    : hiragana;
   const validMeaning = meaning
     && meaning.length <= MAX_MEANING_LENGTH
     && !/[<>\u0000-\u001f]/u.test(meaning);
-  const validHiragana = typeof hiragana === 'string' && HIRAGANA_PATTERN.test(hiragana);
+  const validHiragana = typeof normalizedHiragana === 'string' && HIRAGANA_PATTERN.test(normalizedHiragana);
 
-  if (!validMeaning || (lookup.hasKanji && !validHiragana) || (!lookup.hasKanji && hiragana !== null)) {
+  if (!validMeaning || (lookup.hasKanji && !validHiragana) || (!lookup.hasKanji && normalizedHiragana !== null && !validHiragana)) {
     throw new DictionaryLookupError('MODEL_RESPONSE_INVALID');
   }
 
   return {
     term: lookup.term,
     meaning,
-    hiragana: lookup.hasKanji ? hiragana : null,
+    hiragana: normalizedHiragana,
   };
 }
 

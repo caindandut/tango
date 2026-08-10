@@ -17,6 +17,13 @@ test('accepts kana-only terms', () => {
   assert.equal(validateLookupInput({ term: 'かりる', sentence: '本をかりる。' }).hasKanji, false);
 });
 
+test('accepts numbers and punctuation in Japanese example sentences', () => {
+  assert.equal(
+    validateLookupInput({ term: '旅行', sentence: '3人のグループで旅行をする。' }).sentence,
+    '3人のグループで旅行をする。',
+  );
+});
+
 test('rejects empty, oversized, and non-Japanese terms', () => {
   assert.throws(() => validateLookupInput({ term: ' ', sentence: '本を借りる。' }), /TERM_INVALID/);
   assert.throws(() => validateLookupInput({ term: 'あ'.repeat(81), sentence: '本を借りる。' }), /TERM_INVALID/);
@@ -31,6 +38,17 @@ test('parses a valid Gemini result and keeps hiragana only for kanji terms', () 
   assert.deepEqual(
     parseLookupResponse('{"meaning":"mượn","hiragana":null}', { term: 'かりる', hasKanji: false }),
     { term: 'かりる', meaning: 'mượn', hiragana: null },
+  );
+});
+
+test('accepts fenced JSON and hiragana readings for kana terms', () => {
+  assert.deepEqual(
+    parseLookupResponse('```json\n{"meaning":"bạn cùng lớp","hiragana":"くらすめーと"}\n```', { term: 'クラスメート', hasKanji: false }),
+    { term: 'クラスメート', meaning: 'bạn cùng lớp', hiragana: 'くらすめーと' },
+  );
+  assert.equal(
+    parseLookupResponse('{"meaning":"bạn cùng lớp","hiragana":"クラスメート"}', { term: 'クラスメート', hasKanji: false }).hiragana,
+    'くらすめーと',
   );
 });
 
