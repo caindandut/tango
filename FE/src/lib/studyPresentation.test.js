@@ -58,3 +58,10 @@ test('hides meaning for Kanji vocabulary when the setting is disabled before ans
     false,
   );
 });
+
+test('reveals meaning for Kanji vocabulary after an incorrect reading answer', () => {
+  assert.equal(
+    shouldShowMeaning(false, { kanji: '埋まる', hiragana: 'うまる' }, { isCorrect: false }),
+    true,
+  );
+});

@@ -5,11 +5,11 @@ function isKanaOnlyVocabulary(currentWord) {
 }
 
 export function shouldShowMeaning(showMeaning, currentWord, checkResult) {
-  return showMeaning || isKanaOnlyVocabulary(currentWord) || checkResult?.isCorrect === true;
+  return showMeaning || isKanaOnlyVocabulary(currentWord) || checkResult != null;
 }
 
 export function shouldShowQuizMeaning(showMeaning, checkResult, currentWord) {
-  return shouldShowMeaning(showMeaning, currentWord, checkResult);
+  return showMeaning || isKanaOnlyVocabulary(currentWord) || checkResult?.isCorrect === true;
 }
 
 export function getKanaInputMode(currentWord) {
