@@ -7,6 +7,8 @@ import HiraganaInput from '@/components/study/HiraganaInput';
 import VocabularyExamples from '@/components/study/VocabularyExamples';
 import {
   getReadingCorrectAnswer,
+  getKanaInputMode,
+  shouldShowMeaning,
   shouldShowQuizMeaning,
 } from '@/lib/studyPresentation';
 
@@ -139,7 +141,9 @@ export default function StudyPage() {
     previousWord,
     resetSession,
   } = useStudySession();
-  const isQuizMeaningVisible = shouldShowQuizMeaning(showMeaning, checkResult);
+  const isQuizMeaningVisible = shouldShowQuizMeaning(showMeaning, checkResult, currentWord);
+  const isReadingMeaningVisible = shouldShowMeaning(showMeaning, currentWord, checkResult);
+  const kanaInputMode = getKanaInputMode(currentWord);
   const readingCorrectAnswer = getReadingCorrectAnswer(checkResult, currentWord);
 
   // Start session on mount
@@ -793,7 +797,7 @@ export default function StudyPage() {
                 <h2 lang="ja" className="kanji-display mb-2">{currentWord.kanji}</h2>
                 <div className="h-7 flex items-center justify-center">
                   <p className={`meaning-text transition-all duration-300 ${
-                    showMeaning || (checkResult && checkResult.isCorrect)
+                    isReadingMeaningVisible
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 -translate-y-1 pointer-events-none'
                   }`}>
@@ -830,6 +834,7 @@ export default function StudyPage() {
                         onFocus={handleInputFocus}
                         onBlur={handleInputBlur}
                         placeholder="Gõ romaji (vd: toshokan → としょかん)"
+                        kanaMode={kanaInputMode}
                         disabled={!!checkResult}
                       />
                     </div>

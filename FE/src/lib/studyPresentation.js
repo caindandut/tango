@@ -1,5 +1,19 @@
-export function shouldShowQuizMeaning(showMeaning, checkResult) {
-  return showMeaning || checkResult?.isCorrect === true;
+import { isKatakana } from 'wanakana';
+
+function isKanaOnlyVocabulary(currentWord) {
+  return Boolean(currentWord) && !/[一-龯々]/u.test(currentWord.kanji?.trim() || '');
+}
+
+export function shouldShowMeaning(showMeaning, currentWord, checkResult) {
+  return showMeaning || isKanaOnlyVocabulary(currentWord) || checkResult?.isCorrect === true;
+}
+
+export function shouldShowQuizMeaning(showMeaning, checkResult, currentWord) {
+  return shouldShowMeaning(showMeaning, currentWord, checkResult);
+}
+
+export function getKanaInputMode(currentWord) {
+  return isKatakana(currentWord?.hiragana?.trim() || '') ? 'toKatakana' : 'toHiragana';
 }
 
 export function getReadingCorrectAnswer(checkResult, currentWord) {
