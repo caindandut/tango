@@ -7,6 +7,7 @@ const migrationPath = path.join(
   __dirname,
   '../prisma/migrations/20260810120000_add_vocabulary_examples/migration.sql',
 );
+const renderConfigPath = path.join(__dirname, '../render.yaml');
 
 test('vocabulary examples migration is safe when the column already exists', () => {
   const migration = fs.readFileSync(migrationPath, 'utf8');
@@ -14,5 +15,14 @@ test('vocabulary examples migration is safe when the column already exists', () 
   assert.match(
     migration,
     /ADD\s+COLUMN\s+IF\s+NOT\s+EXISTS\s+"examples"/i,
+  );
+});
+
+test('Render recovers a previously failed vocabulary migration before deploying', () => {
+  const renderConfig = fs.readFileSync(renderConfigPath, 'utf8');
+
+  assert.match(
+    renderConfig,
+    /prisma migrate resolve --rolled-back 20260810120000_add_vocabulary_examples/,
   );
 });
