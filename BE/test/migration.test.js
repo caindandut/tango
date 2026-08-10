@@ -2,6 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const { shouldMarkMigrationApplied } = require('../src/scripts/recoverVocabularyMigration');
 
 const migrationPath = path.join(
   __dirname,
@@ -18,11 +19,24 @@ test('vocabulary examples migration is safe when the column already exists', () 
   );
 });
 
-test('Render recovers a previously failed vocabulary migration before deploying', () => {
+test('Render runs the migration recovery check before deploying', () => {
   const renderConfig = fs.readFileSync(renderConfigPath, 'utf8');
 
   assert.match(
     renderConfig,
-    /prisma migrate resolve --rolled-back 20260810120000_add_vocabulary_examples/,
+    /node src\/scripts\/recoverVocabularyMigration\.js/,
   );
+});
+
+test('migration recovery applies only when the existing column is present', () => {
+  assert.equal(shouldMarkMigrationApplied({ columnExists: true, migration: null }), true);
+  assert.equal(shouldMarkMigrationApplied({
+    columnExists: true,
+    migration: { finished_at: null, rolled_back_at: null },
+  }), true);
+  assert.equal(shouldMarkMigrationApplied({ columnExists: false, migration: null }), false);
+  assert.equal(shouldMarkMigrationApplied({
+    columnExists: true,
+    migration: { finished_at: new Date(), rolled_back_at: null },
+  }), false);
 });
