@@ -4,9 +4,13 @@ const express = require('express');
 const cors = require('cors');
 const vocabularyRoutes = require('./routes/vocabulary');
 const studyRoutes = require('./routes/study');
+const dictionaryRoutes = require('./routes/dictionary');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+// Render forwards the visitor IP through one trusted reverse proxy.
+app.set('trust proxy', 1);
 
 // Middleware
 app.use(cors({
@@ -19,6 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use('/api/vocabulary', vocabularyRoutes);
 app.use('/api/study', studyRoutes);
+app.use('/api/dictionary', dictionaryRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
@@ -58,4 +63,3 @@ async function startServer() {
 }
 
 startServer();
-

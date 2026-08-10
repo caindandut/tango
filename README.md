@@ -26,4 +26,6 @@ cd BE && npm run dev
 - After the Render database is ready, run `npm run seed` once from the `BE` directory to load the 12 vocabulary lessons.
 
 ## Environment Variables
-For local development, create `BE/.env` with `DATABASE_URL`, then set `FE/.env` with `VITE_API_URL`.
+For local development, copy `BE/.env.example` to `BE/.env`, configure `DATABASE_URL`, `CLIENT_URL`, and a Google AI Studio `GEMINI_API_KEY`. Keep this key only in the backend environment; never add it to `FE/.env` or a `VITE_*` variable. Then set `FE/.env` with `VITE_API_URL`.
+
+On Render, set `GEMINI_API_KEY` as a secret environment variable for the backend service. The dictionary lookup uses Gemini's free-tier quota and is rate-limited per IP.

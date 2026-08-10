@@ -17,7 +17,7 @@ async function seedN3FromJson() {
           name: `${name} - Từ vựng N3 Mimikara`,
           totalWords: words.length,
           vocabularies: {
-            create: words.map(({ kanji, hiragana, meaning, examples }, index) => ({
+            create: words.map(({ kanji, hiragana, meaning, examples = [] }, index) => ({
               position: index + 1,
               kanji,
               hiragana,

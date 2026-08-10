@@ -7,7 +7,7 @@
     "start": "npm run seed && node src/app.js",
     "seed": "node src/scripts/seedN3FromJson.js",
     "validate:vocab": "node src/scripts/validateN3Vocabulary.js",
-
+    "test": "node --test",
     "prisma:generate": "npx prisma generate",
     "prisma:migrate": "npx prisma migrate dev",
     "prisma:deploy": "npx prisma migrate deploy"
@@ -17,6 +17,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@google/genai": "^2.16.0",
     "@prisma/adapter-pg": "^7.9.1",
     "@prisma/client": "^7.9.1",
     "cors": "^2.8.6",
