@@ -10,6 +10,7 @@ export default function VocabularyExamples({ examples = [] }) {
   const exampleIdPrefix = useId();
   const sectionRef = useRef(null);
   const selectionMadeRef = useRef(false);
+  const selectionRetryRef = useRef(null);
   const validExamples = Array.isArray(examples)
     ? examples.filter((example) => (
       typeof example?.japanese === 'string'
@@ -20,7 +21,8 @@ export default function VocabularyExamples({ examples = [] }) {
     : [];
 
   const toggleExample = (index) => {
-    if (selectionMadeRef.current) {
+    const selectedText = window.getSelection()?.toString().trim() || '';
+    if (selectionMadeRef.current || JAPANESE_TERM_PATTERN.test(selectedText)) {
       selectionMadeRef.current = false;
       return;
     }
@@ -61,24 +63,42 @@ export default function VocabularyExamples({ examples = [] }) {
     };
   }, [lookup]);
 
-  const handleSelection = (event, sentence) => {
+  const handleSelection = (target, sentence) => {
     const selection = window.getSelection();
     const term = selection?.toString().trim() || '';
     const range = selection?.rangeCount ? selection.getRangeAt(0) : null;
-    const target = event.currentTarget;
     const selectionIsInsideSentence = range
       && target.contains(range.startContainer)
       && target.contains(range.endContainer);
 
-    if (!selectionIsInsideSentence || !JAPANESE_TERM_PATTERN.test(term)) return;
+    if (!selectionIsInsideSentence || !JAPANESE_TERM_PATTERN.test(term)) return false;
 
     const rect = range.getBoundingClientRect();
-    if (!rect.width && !rect.height) return;
+    if (!rect.width && !rect.height) return false;
 
     selectionMadeRef.current = true;
     setLookup({ term, sentence, left: rect.left + rect.width / 2, top: rect.bottom + 8 });
     setLookupState({ status: 'idle', result: null, error: '' });
+    return true;
   };
+
+  const scheduleSelection = (target, sentence) => {
+    window.clearTimeout(selectionRetryRef.current);
+    let attempts = 0;
+
+    const checkSelection = () => {
+      if (handleSelection(target, sentence)) return;
+
+      attempts += 1;
+      if (attempts < 10) {
+        selectionRetryRef.current = window.setTimeout(checkSelection, 50);
+      }
+    };
+
+    selectionRetryRef.current = window.setTimeout(checkSelection, 0);
+  };
+
+  useEffect(() => () => window.clearTimeout(selectionRetryRef.current), []);
 
   const handleLookup = async (event) => {
     event.preventDefault();
@@ -131,8 +151,8 @@ export default function VocabularyExamples({ examples = [] }) {
                 <span
                   lang="ja"
                   className="vocabulary-examples__japanese min-w-0 flex-1 font-japanese text-lg font-medium leading-7 sm:text-xl"
-                  onMouseUp={(event) => handleSelection(event, example.japanese)}
-                  onTouchEnd={(event) => handleSelection(event, example.japanese)}
+                  onMouseUp={(event) => handleSelection(event.currentTarget, example.japanese)}
+                  onTouchEnd={(event) => scheduleSelection(event.currentTarget, example.japanese)}
                 >
                   {example.japanese}
                 </span>
