@@ -39,8 +39,8 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-4xl items-center justify-between gap-4 px-4 py-3 sm:px-8">
           <span className="text-sm font-extrabold tracking-tight">Tango N3</span>
           <nav aria-label="Khu vực học" className="flex items-center gap-1 rounded-xl border border-white/10 bg-white/[0.04] p-1">
-            <span className="rounded-lg bg-accent-orange px-3 py-2 text-xs font-bold text-white"><BookOpen className="mr-1.5 inline h-3.5 w-3.5" />Từ vựng</span>
-            <button type="button" onClick={() => navigate('/grammar')} className="rounded-lg px-3 py-2 text-xs font-bold text-primary-300 transition-colors hover:bg-white/10 hover:text-white"><Brain className="mr-1.5 inline h-3.5 w-3.5" />Ngữ pháp</button>
+            <span className="rounded-lg bg-accent-quizlet px-3 py-2 text-xs font-bold text-white"><BookOpen className="mr-1.5 inline h-3.5 w-3.5" />Từ vựng</span>
+            <button type="button" onClick={() => navigate('/grammar')} className="rounded-lg px-3 py-2 text-xs font-bold text-primary-300 transition-colors hover:bg-accent-quizlet/10 hover:text-white"><Brain className="mr-1.5 inline h-3.5 w-3.5" />Ngữ pháp</button>
           </nav>
         </div>
       </header>

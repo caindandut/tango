@@ -23,6 +23,7 @@ export default {
         accent: {
           orange: '#f97316',
           'orange-hover': '#ea580c',
+          quizlet: '#4255ff',
           green: '#22c55e',
           'green-dark': '#16a34a',
           red: '#ef4444',
