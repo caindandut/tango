@@ -61,11 +61,17 @@ describe('grammar components', () => {
     expect(structureRow).not.toHaveClass('rounded-lg');
   });
 
-  it('underlines the grammar title on the lesson card', () => {
-    render(<GrammarLessonView day={day} />);
+  it('underlines only the grammar portion of the lesson title', () => {
+    render(<GrammarLessonView day={{ ...day, grammarPoints: [{
+      ...day.grammarPoints[0],
+      titleJa: '会員だけしか',
+      structures: ['NだけしかVない'],
+    }] }} />);
 
-    const title = screen.getByRole('heading', { name: '書かれている' });
-    expect(title.querySelector('.grammar-underline')).toHaveTextContent('書かれている');
+    const title = screen.getByRole('heading', { name: '会員だけしか' });
+    const underline = title.querySelector('.grammar-underline');
+    expect(underline).toHaveTextContent('だけしか');
+    expect(underline).not.toHaveTextContent('会員');
   });
 
   it('shows one grammar point card at a time and advances to the next card', () => {
