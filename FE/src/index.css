@@ -29,6 +29,13 @@
 }
 
 @layer components {
+  .grammar-underline {
+    text-decoration-line: underline;
+    text-decoration-color: #f97316;
+    text-decoration-thickness: 0.14em;
+    text-underline-offset: 0.18em;
+  }
+
   /* Main study card */
   .study-card {
     @apply bg-card rounded-2xl p-8 mx-auto w-full max-w-2xl;

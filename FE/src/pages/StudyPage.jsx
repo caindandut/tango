@@ -46,7 +46,7 @@ export default function StudyPage() {
       startSession(setId, isShuffled);
     }
     return () => resetSession();
-  }, [resetSession, setId, startSession]);
+  }, [isShuffled, resetSession, setId, startSession]);
 
   // Focus input when word changes
   useEffect(() => {

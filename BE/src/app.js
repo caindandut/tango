@@ -5,6 +5,9 @@ const cors = require('cors');
 const vocabularyRoutes = require('./routes/vocabulary');
 const studyRoutes = require('./routes/study');
 const dictionaryRoutes = require('./routes/dictionary');
+const { createGrammarRouter } = require('./routes/grammar');
+const grammarCurriculum = require('./data/grammar/curriculum.json');
+const { createGrammarService } = require('./grammar/grammarService');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -24,6 +27,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/vocabulary', vocabularyRoutes);
 app.use('/api/study', studyRoutes);
 app.use('/api/dictionary', dictionaryRoutes);
+app.use('/api/grammar', createGrammarRouter({
+  service: createGrammarService(grammarCurriculum),
+}));
 
 // Health check
 app.get('/api/health', (req, res) => {

@@ -39,4 +39,20 @@ export const studyApi = {
   getResults: (sessionId) => api.get(`/study/session/${sessionId}/results`),
 };
 
+export const grammarApi = {
+  getWeeks: () => api.get('/grammar/weeks'),
+
+  getWeek: (weekNumber) => api.get(`/grammar/weeks/${weekNumber}`),
+
+  getDay: (weekNumber, dayNumber) => api.get(`/grammar/weeks/${weekNumber}/days/${dayNumber}`),
+
+  checkQuestion: (weekNumber, dayNumber, questionId, answerOptionId) =>
+    api.post(`/grammar/weeks/${weekNumber}/days/${dayNumber}/questions/${questionId}/check`, {
+      answerOptionId,
+    }),
+
+  gradeReview: (weekNumber, answers) =>
+    api.post(`/grammar/weeks/${weekNumber}/days/7/grade`, { answers }),
+};
+
 export default api;
