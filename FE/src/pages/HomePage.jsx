@@ -92,8 +92,8 @@ export default function HomePage() {
 
           <div className="flex items-center gap-2 sm:gap-4">
             <nav aria-label="Khu vực học" className="flex items-center gap-0.5 rounded-xl border border-white/10 bg-white/[0.04] p-1">
-              <button type="button" aria-current="page" className="rounded-lg bg-accent-orange px-3 py-2 text-xs font-bold text-white">Từ vựng</button>
-              <button type="button" onClick={() => navigate('/grammar')} className="rounded-lg px-2 py-2 text-xs font-bold text-primary-300 hover:bg-white/10 hover:text-white sm:px-3">Ngữ pháp</button>
+              <button type="button" aria-current="page" className="rounded-lg bg-accent-quizlet px-3 py-2 text-xs font-bold text-white">Từ vựng</button>
+              <button type="button" onClick={() => navigate('/grammar')} className="rounded-lg px-2 py-2 text-xs font-bold text-primary-300 hover:bg-accent-quizlet/10 hover:text-white sm:px-3">Ngữ pháp</button>
             </nav>
             <div className="hidden md:flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-lg bg-primary-900/60 border border-white/10 text-primary-300">
               <BookOpen className="w-3.5 h-3.5 text-accent-orange" />
