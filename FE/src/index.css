@@ -28,6 +28,13 @@
   }
 }
 
+.grammar-underline {
+  text-decoration-line: underline;
+  text-decoration-color: #fb923c;
+  text-decoration-thickness: 0.14em;
+  text-underline-offset: 0.18em;
+}
+
 @layer components {
   /* Main study card */
   .study-card {
