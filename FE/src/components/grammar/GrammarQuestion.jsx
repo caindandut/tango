@@ -26,16 +26,16 @@ export default function GrammarQuestion({
           const isCorrect = showResult && option.id === result?.correctOptionId;
           const isWrong = showResult && checked && !result?.isCorrect;
           return (
-            <label key={option.id} className={`flex cursor-pointer items-start gap-3 rounded-xl border px-4 py-3 text-left text-sm transition-colors ${checked ? 'border-accent-orange bg-accent-orange/10' : 'border-white/10 bg-white/[0.03] hover:border-white/30'} ${isCorrect ? 'border-emerald-400 bg-emerald-400/10' : ''} ${isWrong ? 'border-red-400 bg-red-400/10' : ''}`}>
+            <label key={option.id} className={`flex cursor-pointer items-start gap-3 rounded-xl border px-4 py-3 text-left text-sm transition-colors ${checked ? 'border-accent-quizlet bg-accent-quizlet/10' : 'border-white/10 bg-white/[0.03] hover:border-white/30'} ${isCorrect ? 'border-emerald-400 bg-emerald-400/10' : ''} ${isWrong ? 'border-red-400 bg-red-400/10' : ''}`}>
               <input
                 type="radio"
                 name={question.id}
                 value={option.id}
                 checked={checked}
                 onChange={() => onSelect(option.id)}
-                className="mt-1 h-4 w-4 accent-orange-500"
+                className="mt-1 h-4 w-4 accent-accent-quizlet"
               />
-              <span><span className="mr-2 font-bold text-accent-orange">{optionLabel(option.id)}.</span><span lang="ja">{option.text}</span></span>
+              <span><span className="mr-2 font-bold text-accent-quizlet">{optionLabel(option.id)}.</span><span lang="ja">{option.text}</span></span>
             </label>
           );
         })}
