@@ -27,9 +27,9 @@ export default function GrammarHomePage() {
               <Link
                 key={week.weekNumber}
                 to={`/grammar/weeks/${week.weekNumber}`}
-                className="group flex min-h-16 items-center gap-4 py-4 text-left transition-colors hover:text-accent-orange focus:outline-none focus-visible:bg-white/[0.04] focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent-orange"
+                className="group flex min-h-16 items-center gap-4 py-4 text-left transition-colors hover:text-accent-quizlet focus:outline-none focus-visible:bg-white/[0.04] focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent-quizlet"
               >
-                <span className="text-lg font-bold text-white transition-colors group-hover:text-accent-orange">{week.titleVi || `Tuần ${week.weekNumber}`}</span>
+                <span className="text-lg font-bold text-white transition-colors group-hover:text-accent-quizlet">{week.titleVi || `Tuần ${week.weekNumber}`}</span>
               </Link>
             ))}
           </div>

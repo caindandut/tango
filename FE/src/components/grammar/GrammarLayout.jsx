@@ -8,7 +8,7 @@ export default function GrammarLayout({ children, eyebrow = 'Soumatome N3 · 文
       <header className="sticky top-0 z-40 border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
           <Link to="/" className="flex items-center gap-3" aria-label="Về trang Từ vựng">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent-orange font-japanese text-xl font-bold text-slate-950">単</span>
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent-quizlet font-japanese text-xl font-bold text-slate-950">単</span>
             <span className="hidden text-sm font-extrabold tracking-tight sm:block">Tango N3</span>
           </Link>
           <nav aria-label="Khu vực học" className="flex items-center gap-1 rounded-xl border border-white/10 bg-white/[0.04] p-1">
@@ -23,7 +23,7 @@ export default function GrammarLayout({ children, eyebrow = 'Soumatome N3 · 文
       </header>
       <main>
         <div className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent-orange">{eyebrow}</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent-quizlet">{eyebrow}</p>
         </div>
         {children}
       </main>

@@ -24,6 +24,7 @@ export default {
           orange: '#f97316',
           'orange-hover': '#ea580c',
           quizlet: '#4255ff',
+          'quizlet-hover': '#3545d4',
           green: '#22c55e',
           'green-dark': '#16a34a',
           red: '#ef4444',
