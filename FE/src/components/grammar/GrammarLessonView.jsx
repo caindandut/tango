@@ -127,7 +127,7 @@ export default function GrammarLessonView({ day }) {
         </p>
         {point && (
           <article key={point.id} className="rounded-2xl border border-white/10 bg-slate-900/60 p-5 sm:p-6">
-            <h2 className="text-xl font-bold text-white" lang="ja">{point.titleJa}</h2>
+            <h2 className="text-xl font-bold text-white" lang="ja"><span className="grammar-underline">{point.titleJa}</span></h2>
             <div className="mt-4 space-y-3">
               <div><p className="text-[10px] font-bold uppercase tracking-wider text-accent-quizlet">Nghĩa</p><p className="mt-1 text-sm leading-6 text-primary-200">{point.meaningVi}</p></div>
               <div className="mt-4 overflow-hidden border border-white/10 bg-slate-950/40"><p className="bg-slate-950/80 px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-accent-quizlet">Cấu trúc</p><ul className="grammar-structures space-y-1 p-1.5 text-sm text-primary-100" lang="ja">{point.structures.map((structure) => <li key={structure} className="grammar-structure-row rounded-sm bg-slate-800/60 px-3 py-2.5 leading-6">{structure}</li>)}</ul></div>

@@ -61,6 +61,13 @@ describe('grammar components', () => {
     expect(structureRow).not.toHaveClass('rounded-lg');
   });
 
+  it('underlines the grammar title on the lesson card', () => {
+    render(<GrammarLessonView day={day} />);
+
+    const title = screen.getByRole('heading', { name: '書かれている' });
+    expect(title.querySelector('.grammar-underline')).toHaveTextContent('書かれている');
+  });
+
   it('shows one grammar point card at a time and advances to the next card', () => {
     const secondPoint = {
       ...day.grammarPoints[0],
