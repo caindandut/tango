@@ -46,6 +46,25 @@ describe('grammar components', () => {
     expect(screen.getAllByText('Được nói đến trên thế giới.').length).toBeGreaterThan(0);
   });
 
+  it('shows one grammar point card at a time and advances to the next card', () => {
+    const secondPoint = {
+      ...day.grammarPoints[0],
+      id: 'g2',
+      titleJa: 'ようだ',
+      examples: [{ ...day.grammarPoints[0].examples[0], id: 'e2' }],
+    };
+    render(<GrammarLessonView day={{ ...day, grammarPoints: [day.grammarPoints[0], secondPoint] }} />);
+
+    expect(screen.getByRole('heading', { name: '書かれている' })).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: 'ようだ' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Bắt đầu luyện tập' })).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: 'Tiếp theo' }));
+    expect(screen.queryByRole('heading', { name: '書かれている' })).not.toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'ようだ' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Bắt đầu luyện tập' })).toBeInTheDocument();
+  });
+
   it('locks the answer after checking and remembers it locally', async () => {
     render(<GrammarLessonView day={day} />);
     fireEvent.click(screen.getByRole('button', { name: /Bắt đầu luyện tập/i }));
