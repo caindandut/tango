@@ -2774,10 +2774,6 @@
                 {
                   "text": "30分だけここに車を（　）もらえませんか。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -2812,10 +2808,6 @@
               "promptSegments": [
                 {
                   "text": "どうして悪いところを（　）としないんですか。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -2852,10 +2844,6 @@
                 {
                   "text": "もっと話そうとしたら、電話が（　）。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -2890,10 +2878,6 @@
               "promptSegments": [
                 {
                   "text": "このグラフからもわかる（　）人口は減っています。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -2930,10 +2914,6 @@
                 {
                   "text": "新しい車が（　）ように貯金しています。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -2968,10 +2948,6 @@
               "promptSegments": [
                 {
                   "text": "この写真（　）ヘヤスタイルにしてください。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -3008,10 +2984,6 @@
                 {
                   "text": "ちゃんと世話をしないと、金魚は（　）よ。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -3046,10 +3018,6 @@
               "promptSegments": [
                 {
                   "text": "間に合わなくなってしまうよ。早く準備（　）！",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -3086,10 +3054,6 @@
                 {
                   "text": "みなさんの国でよく（　）日本人はだれですか。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -3124,10 +3088,6 @@
               "promptSegments": [
                 {
                   "text": "シャワーを（　）としたが、水が出なかった。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -3164,10 +3124,6 @@
                 {
                   "text": "折り紙を図（　）折ります。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -3202,10 +3158,6 @@
               "promptSegments": [
                 {
                   "text": "習った日本語はすぐに（　）しましょう。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -3242,10 +3194,6 @@
                 {
                   "text": "この牛乳はちょっとうすくて（　）。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -3281,10 +3229,6 @@
                 {
                   "text": "テレビ、見ないなら（　）。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -3319,10 +3263,6 @@
               "promptSegments": [
                 {
                   "text": "そこに（　）じゃまだから、向こうに行って。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -3609,10 +3549,6 @@
                 {
                   "text": "中のほうへ 21 が、行けませんでした。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -3648,10 +3584,6 @@
               "promptSegments": [
                 {
                   "text": "ドアのところに立っている人たちが 22 からです。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -3689,10 +3621,6 @@
                 {
                   "text": "「中に 23 ください」と言って、やっと入れました。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -3729,10 +3657,6 @@
                 {
                   "text": "混んでいるときは、 24 としてもなかなか降りられないので、",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -3767,10 +3691,6 @@
               "promptSegments": [
                 {
                   "text": "なるべく中へ 25 ようにしたほうがいいと思いました。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -6828,10 +6748,6 @@
                 {
                   "text": "このクラブには大人（　）入れません。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -6866,10 +6782,6 @@
               "promptSegments": [
                 {
                   "text": "祖父は私の名前を間違えて（　）います。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -6906,10 +6818,6 @@
                 {
                   "text": "商品に（　）お問い合わせはこちらにどうぞ。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -6944,10 +6852,6 @@
               "promptSegments": [
                 {
                   "text": "（　）ことは知っていたが、- 40℃とは驚いた。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -6984,10 +6888,6 @@
                 {
                   "text": "彼女はお茶（　）入れたことがないのだから、料理なんてできないでしょう。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -7022,10 +6922,6 @@
               "promptSegments": [
                 {
                   "text": "野球やサッカーを見る（　）好きです。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -7062,10 +6958,6 @@
                 {
                   "text": "よくかんでゆっくり（　）ように医者に言われた。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -7100,10 +6992,6 @@
               "promptSegments": [
                 {
                   "text": "だまっていないで、言いたいことを言って（　）。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -7140,10 +7028,6 @@
                 {
                   "text": "この洗濯機のいい点は音の（　）。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -7178,10 +7062,6 @@
               "promptSegments": [
                 {
                   "text": "管理人さん、上の階の人に夜遅く騒がない（　）ください。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -7218,10 +7098,6 @@
                 {
                   "text": "色は青が好きです。青（　）深みのある青です。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -7256,10 +7132,6 @@
               "promptSegments": [
                 {
                   "text": "注意書き（　）、この薬を飲むと眠くなるらしい。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -7296,10 +7168,6 @@
                 {
                   "text": "この事故（　）影響で、各線に遅れが出ています。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -7335,10 +7203,6 @@
                 {
                   "text": "明日のことは、明日にならないとわからない。（　）、生きている意味があるのかもしれない。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -7373,10 +7237,6 @@
               "promptSegments": [
                 {
                   "text": "この小学校は地域の人々に開放されている。（　）、地域全体で子どもたちを守り育てようとしているのである。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -7665,10 +7525,6 @@
                   "isGrammar": false
                 },
                 {
-                  "text": " ____ ",
-                  "isGrammar": false
-                },
-                {
                   "text": "[21] 世話がめんどうな...",
                   "isGrammar": false
                 }
@@ -7707,10 +7563,6 @@
                 {
                   "text": "...と思う人がいるかもしれないが、 [22] 。犬も...",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -7746,10 +7598,6 @@
               "promptSegments": [
                 {
                   "text": "...仕事 [23] 新聞を持ってくるとか...",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -7787,10 +7635,6 @@
                 {
                   "text": "...簡単なもので、仕事 [24] 遊びのように...",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -7826,10 +7670,6 @@
               "promptSegments": [
                 {
                   "text": "...不自由な人を助ける [25] 本当の仕事ができる...",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -10811,10 +10651,6 @@
                 {
                   "text": "あの子の靴、歩く（ ）音がしてかわいいですね。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -10849,10 +10685,6 @@
               "promptSegments": [
                 {
                   "text": "今、ちょっと手がはなないので、後にして（ ）んですが。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -10889,10 +10721,6 @@
                 {
                   "text": "一度もやったことがない（ ）、上手に踊れますね。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -10927,10 +10755,6 @@
               "promptSegments": [
                 {
                   "text": "旅行なんて今は無理です。（ ）、お金を貯めてからです。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -10967,10 +10791,6 @@
                 {
                   "text": "箱を開けた（ ）、中からネズミが出てきた。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -11005,10 +10825,6 @@
               "promptSegments": [
                 {
                   "text": "先生が黒板に書く字はていいね（ ）。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -11045,10 +10861,6 @@
                 {
                   "text": "あの人の名前は何度（ ）覚えられない。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -11083,10 +10895,6 @@
               "promptSegments": [
                 {
                   "text": "昔は海岸の近くに住んでいた。それで、よく貝を拾ったり（ ）。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -11123,10 +10931,6 @@
                 {
                   "text": "雨の中を、彼は傘を（ ）歩いている。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -11161,10 +10965,6 @@
               "promptSegments": [
                 {
                   "text": "彼はシャワーを浴びた（ ）シャツも洗った。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -11201,10 +11001,6 @@
                 {
                   "text": "友人（ ）、あなたに注意したい。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -11239,10 +11035,6 @@
               "promptSegments": [
                 {
                   "text": "あみだなに荷物を（ ）まま電車を降りてしまった。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -11279,10 +11071,6 @@
                 {
                   "text": "大変だ。台所の火が（ ）っぱなしだ。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -11318,10 +11106,6 @@
                 {
                   "text": "日本語が上手なのは10年もいるからなんですね。（ ）日本人と変わりませんね。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -11356,10 +11140,6 @@
               "promptSegments": [
                 {
                   "text": "彼なら、昨日国へ帰ったから、いま日本には（ ）。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -11646,10 +11426,6 @@
                 {
                   "text": "最近、妻は交差点名を渡のを 21 ようになった。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -11684,10 +11460,6 @@
               "promptSegments": [
                 {
                   "text": "止まる 22 ところで止まらない車が多くなったからだ。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -11725,10 +11497,6 @@
                 {
                   "text": "そして、私は車を運転する 23 怒るようになった。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -11765,10 +11533,6 @@
                 {
                   "text": "合図を 24 曲がるので、後ろの車はよく注意していないと危ない。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -11804,10 +11568,6 @@
               "promptSegments": [
                 {
                   "text": "車を運転する人はルールやマナーをきちんと 25 。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -14754,10 +14514,6 @@
                 {
                   "text": "友だちに泊まりに来たとき、ベッド（ ）ソファーに寝てもらった。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -14792,10 +14548,6 @@
               "promptSegments": [
                 {
                   "text": "車に乗せていただいた（ ）、電車に間に合いました。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -14832,10 +14584,6 @@
                 {
                   "text": "冗談でも、言われた人は傷つくことがある。だから、自分が言われていやだと思うことは他人にも（ ）。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -14870,10 +14618,6 @@
               "promptSegments": [
                 {
                   "text": "このケーキ、100円（ ）おいしいね。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -14910,10 +14654,6 @@
                 {
                   "text": "川があふれて家が流される（ ）雨が降った。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -14948,10 +14688,6 @@
               "promptSegments": [
                 {
                   "text": "「弱い犬（ ）よくほえる」と言います。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -14988,10 +14724,6 @@
                 {
                   "text": "洗濯機が壊れてしまったから、手で洗う（ ）。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -15026,10 +14758,6 @@
               "promptSegments": [
                 {
                   "text": "コーヒーと紅茶、お好きなのはどちらでした（ ）。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -15066,10 +14794,6 @@
                 {
                   "text": "先生の話では、来年から試験の形式が変わる（ ）。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -15104,10 +14828,6 @@
               "promptSegments": [
                 {
                   "text": "あの建物が完成するのに、いったい何年かかる（ ）。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -15144,10 +14864,6 @@
                 {
                   "text": "教えたことを生徒がどんどん覚えていくのを見ることほど、うれしい（ ）。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -15182,10 +14898,6 @@
               "promptSegments": [
                 {
                   "text": "できない（ ）できるなんて言わないほうがいいよ。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -15222,10 +14934,6 @@
                 {
                   "text": "体はともかく、頭は使えば使う（ ）よくなるらしい。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -15261,10 +14969,6 @@
                 {
                   "text": "また次回がんばればいいじゃない。がっかりする（ ）よ。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -15299,10 +15003,6 @@
               "promptSegments": [
                 {
                   "text": "こんな天気のいい日に、家の中で仕事（ ）したくない。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -15589,10 +15289,6 @@
                 {
                   "text": "各地で野生の動物から畑を守るにはどうしたらいいか、話し合われています。[ 21 ]、野生の動物に野菜や果物を食べられてしまって困っているからです。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -15627,10 +15323,6 @@
               "promptSegments": [
                 {
                   "text": "以前は山に木の果実、[ 22 ]、野生の動物の食べ物がたくさんあったのですが、",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -15667,10 +15359,6 @@
                 {
                   "text": "気候や人間の山に対するかかわり方などの環境の変化[ 23 ]、それが少なくなってしまいました。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -15706,10 +15394,6 @@
                 {
                   "text": "[ 24 ]動物たちは必要な食べ物を求めて、山から下りてくるようになったのです。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -15744,10 +15428,6 @@
               "promptSegments": [
                 {
                   "text": "荒れた農地が増え続けています。[ 25 ]、動物が畑に入りやすくなったのも原因の一つと言われています。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -18705,10 +18385,6 @@
                 {
                   "text": "今年の桜は、いつもの年に（ ）1週間早く咲いたそうだ。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -18743,10 +18419,6 @@
               "promptSegments": [
                 {
                   "text": "たとえお金をくれると（ ）、悪いことはしたくない。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -18783,10 +18455,6 @@
                 {
                   "text": "夜空には数え（ ）ほどの星がある。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -18821,10 +18489,6 @@
               "promptSegments": [
                 {
                   "text": "雑誌に紹介されている店が（ ）いいとは限らない。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -18861,10 +18525,6 @@
                 {
                   "text": "最近は女性（ ）男性も化粧をするようになった。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -18899,10 +18559,6 @@
               "promptSegments": [
                 {
                   "text": "思い出せない。やはりメモを（ ）。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -18939,10 +18595,6 @@
                 {
                   "text": "体育館（ ）入学式を行います。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -18977,10 +18629,6 @@
               "promptSegments": [
                 {
                   "text": "手が痛くなる（ ）漢字を書いて練習した。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -19017,10 +18665,6 @@
                 {
                   "text": "知らない人が（ ）友達のように話しかけてきた。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -19055,10 +18699,6 @@
               "promptSegments": [
                 {
                   "text": "「ペンキぬり（ ）注意」と書いてある。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -19095,10 +18735,6 @@
                 {
                   "text": "早く雪が解けて春に（ ）なあ。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -19133,10 +18769,6 @@
               "promptSegments": [
                 {
                   "text": "ほめられると（ ）うそでもうれしいものです。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -19173,10 +18805,6 @@
                 {
                   "text": "彼女は話し方がていねいなの（ ）動作がていねいでない。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -19212,10 +18840,6 @@
                 {
                   "text": "もう帰るんですか。もっとゆっくりしていけば（ ）。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -19250,10 +18874,6 @@
               "promptSegments": [
                 {
                   "text": "この商品は品質が（ ）はもちろんどれも手ごろだ。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -19535,10 +19155,6 @@
                 {
                   "text": "お隣のネコの名前はチビです。体はとても大きいです。 [21] 、名前を呼ばれたチビが走ってくる...",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -19573,10 +19189,6 @@
               "promptSegments": [
                 {
                   "text": "チビと名前がつけられました。 [22] 、大事に飼われて太ってしまったのです。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -19613,10 +19225,6 @@
                 {
                   "text": "今では「名前は『チビ』 [23] 、どんどん大きくなっちゃって...」と言われています。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -19652,10 +19260,6 @@
                 {
                   "text": "「… 24 クマだね。」などと言われています。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -19690,10 +19294,6 @@
               "promptSegments": [
                 {
                   "text": "25 、私の名前は雪子ですが、テニスが好きなので日に焼けて真っ黒です。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -22720,10 +22320,6 @@
                 {
                   "text": "娘の学校では、規則で携帯電話を学校に持って行ってはいけない（ ）。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -22758,10 +22354,6 @@
               "promptSegments": [
                 {
                   "text": "もう少しでお弁当を忘れて行く（ ）だった。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -22798,10 +22390,6 @@
                 {
                   "text": "手伝って（ ）けれど、それでは君のためにならない。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -22836,10 +22424,6 @@
               "promptSegments": [
                 {
                   "text": "試験を受けた（ ）、合格した。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -22876,10 +22460,6 @@
                 {
                   "text": "今夜は早く寝て、あした早く起きて（ ）。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -22914,10 +22494,6 @@
               "promptSegments": [
                 {
                   "text": "朝早く目が（ ）が、またすぐに寝てしまいました。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -22954,10 +22530,6 @@
                 {
                   "text": "彼の職場は（ ）女性とは縁がない。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -22992,10 +22564,6 @@
               "promptSegments": [
                 {
                   "text": "あなたがいくら許してやれといっても、彼を（ ）。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -23032,10 +22600,6 @@
                 {
                   "text": "両親が（ ）うちに、旅行に連れていきたい。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -23070,10 +22634,6 @@
               "promptSegments": [
                 {
                   "text": "これは古いから、もし（ ）またすぐ壊れると思いますよ。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -23110,10 +22670,6 @@
                 {
                   "text": "目の悪い彼女にあんな遠くの小さい文字が（ ）。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -23148,10 +22704,6 @@
               "promptSegments": [
                 {
                   "text": "旅行会社に聞いて（ ）ところ、安い切符が買えた。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -23188,10 +22740,6 @@
                 {
                   "text": "寒い（ ）。窓が少し開いているよ。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -23227,10 +22775,6 @@
                 {
                   "text": "眠い。（ ）10分寝かせて。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -23265,10 +22809,6 @@
               "promptSegments": [
                 {
                   "text": "どんなことがあっても、（ ）この箱を開けてはいけません。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -23543,10 +23083,6 @@
                 {
                   "text": "信号を守っていたのに車にひかれたことがある。それ以来、私は [ 21 ] 車も信号も...",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -23581,10 +23117,6 @@
               "promptSegments": [
                 {
                   "text": "...車も信号も信用しない [ 22 ] 。信号が青に...",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],
@@ -23621,10 +23153,6 @@
                 {
                   "text": "...信号が青に [ 23 ] うちに「もう行ける」と動き出す車...",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -23660,10 +23188,6 @@
                 {
                   "text": "...無理をする車。 [ 24 ] 1分とか30秒がどうして待てないのだろう。",
                   "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
-                  "isGrammar": false
                 }
               ],
               "options": [
@@ -23698,10 +23222,6 @@
               "promptSegments": [
                 {
                   "text": "...私には [ 25 ] 理解ができない。",
-                  "isGrammar": false
-                },
-                {
-                  "text": " ____ ",
                   "isGrammar": false
                 }
               ],

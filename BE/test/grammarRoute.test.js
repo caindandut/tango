@@ -5,6 +5,7 @@ const express = require('express');
 const { createGrammarRouter } = require('../src/routes/grammar');
 const { createGrammarService } = require('../src/grammar/grammarService');
 const { buildValidCurriculum } = require('./grammarValidator.test');
+const curriculum = require('../src/data/grammar/curriculum.json');
 
 async function request(router, path, { method = 'GET', body } = {}) {
   const app = express();
@@ -145,4 +146,14 @@ test('route rejects out-of-range params, duplicate submissions and unknown revie
   assert.equal(duplicate.body.error.code, 'DUPLICATE_ANSWER');
   assert.equal(unknown.status, 400);
   assert.equal(unknown.body.error.code, 'INVALID_QUESTION_ID');
+});
+
+test('review prompts do not append a second blank after the source blank', () => {
+  for (const week of curriculum.weeks) {
+    for (const question of week.days[6].questions) {
+      if (question.type === 'STAR_CHOICE') continue;
+      const lastSegment = question.promptSegments.at(-1);
+      assert.notEqual(lastSegment?.text, ' ____ ', `thừa gạch ở ${question.id}`);
+    }
+  }
 });

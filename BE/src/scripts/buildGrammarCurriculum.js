@@ -119,12 +119,12 @@ function splitPrompt(question) {
   return [text, ''];
 }
 
-function normalizePrompt(question, options, isStar) {
+function normalizePrompt(question, options, isStar, isReview) {
   const [before, rawAfter] = splitPrompt(question);
   const after = isStar ? rawAfter.trim() : trimOptionOverlap(rawAfter, options).trim();
   return [
     ...(before.trim() ? [{ text: before.trim(), isGrammar: false }] : []),
-    { text: isStar ? ' ____ ____ ★ ____ ' : ' ____ ', isGrammar: false },
+    ...(!isReview || isStar ? [{ text: isStar ? ' ____ ____ ★ ____ ' : ' ____ ', isGrammar: false }] : []),
     ...(after ? [{ text: after, isGrammar: false }] : []),
   ];
 }
@@ -194,7 +194,7 @@ function normalizeQuestion(question, context) {
   return {
     id: `w${context.weekNumber}d${context.dayNumber}-q${number}`,
     type,
-    promptSegments: normalizePrompt(question, options, isStar),
+    promptSegments: normalizePrompt(question, options, isStar, isReview),
     options,
     correctOptionId,
     explanationVi: nonEmpty(question.explanationVi) || 'Đáp án phù hợp với cấu trúc và ngữ cảnh của câu.',
