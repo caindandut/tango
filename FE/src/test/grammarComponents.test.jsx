@@ -74,6 +74,14 @@ describe('grammar components', () => {
     expect(underline).not.toHaveTextContent('会員');
   });
 
+  it('keeps the example translation switch compact', () => {
+    render(<GrammarLessonView day={day} />);
+
+    const translationSwitch = screen.getByRole('switch', { name: 'Hiện nghĩa ví dụ' });
+    expect(translationSwitch.closest('label')).toHaveClass('grammar-translation-toggle');
+    expect(screen.queryByText(/Mặc định tắt/)).not.toBeInTheDocument();
+  });
+
   it('shows one grammar point card at a time and advances to the next card', () => {
     const secondPoint = {
       ...day.grammarPoints[0],

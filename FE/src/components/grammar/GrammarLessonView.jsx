@@ -160,9 +160,12 @@ export default function GrammarLessonView({ day }) {
         </div>
       </section>
 
-      <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-accent-quizlet/25 bg-accent-quizlet/5 px-4 py-3">
-        <label className="flex cursor-pointer items-center gap-3 text-sm font-bold"><input type="checkbox" role="switch" aria-checked={showTranslations} aria-label="Hiện nghĩa ví dụ" checked={showTranslations} onChange={(event) => setShowTranslations(event.target.checked)} className="peer sr-only" /><span aria-hidden="true" className={`flex h-6 w-11 items-center rounded-full p-1 transition-colors ${showTranslations ? 'bg-accent-quizlet' : 'bg-primary-700'}`}><span className={`h-4 w-4 rounded-full bg-white transition-transform ${showTranslations ? 'translate-x-5' : ''}`} /></span><span><Eye className="mr-1.5 inline h-4 w-4 text-accent-quizlet" />Hiện nghĩa ví dụ</span></label>
-        <span className="text-xs text-primary-400">Mặc định tắt · áp dụng cho toàn bộ ví dụ</span>
+      <div className="flex justify-end">
+        <label className="grammar-translation-toggle inline-flex cursor-pointer items-center gap-2 rounded-lg border border-accent-quizlet/30 bg-accent-quizlet/5 px-2.5 py-1.5 text-xs font-bold text-primary-100 transition hover:border-accent-quizlet/60 hover:bg-accent-quizlet/10">
+          <input type="checkbox" role="switch" aria-checked={showTranslations} aria-label="Hiện nghĩa ví dụ" checked={showTranslations} onChange={(event) => setShowTranslations(event.target.checked)} className="peer sr-only" />
+          <span aria-hidden="true" className={`flex h-5 w-9 items-center rounded-full p-0.5 transition-colors peer-focus:ring-2 peer-focus:ring-accent-quizlet ${showTranslations ? 'bg-accent-quizlet' : 'bg-primary-700'}`}><span className={`h-4 w-4 rounded-full bg-white transition-transform ${showTranslations ? 'translate-x-4' : ''}`} /></span>
+          <span className="inline-flex items-center gap-1"><Eye className="h-3.5 w-3.5 text-accent-quizlet" />Hiện nghĩa</span>
+        </label>
       </div>
 
       {!grammarCompleted && <p className="rounded-xl border border-dashed border-accent-quizlet/30 bg-accent-quizlet/5 px-4 py-3 text-sm text-primary-300">Hãy xem hết các card ngữ pháp trước khi bắt đầu 7 câu luyện tập.</p>}
