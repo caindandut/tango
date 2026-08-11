@@ -46,6 +46,21 @@ describe('grammar components', () => {
     expect(screen.getAllByText('Được nói đến trên thế giới.').length).toBeGreaterThan(0);
   });
 
+  it('renders grammar structures as textbook-style rows', () => {
+    render(<GrammarLessonView day={{ ...day, grammarPoints: [{
+      ...day.grammarPoints[0],
+      structures: ['Nとして', 'としては', 'としても', 'としてのN'],
+    }] }} />);
+
+    const structureLabel = screen.getByText('Cấu trúc');
+    const structureList = structureLabel.nextElementSibling;
+    const structureRow = screen.getByText('としてのN').closest('li');
+
+    expect(structureList).toHaveClass('grammar-structures');
+    expect(structureRow).toHaveClass('grammar-structure-row');
+    expect(structureRow).not.toHaveClass('rounded-lg');
+  });
+
   it('shows one grammar point card at a time and advances to the next card', () => {
     const secondPoint = {
       ...day.grammarPoints[0],
