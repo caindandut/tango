@@ -6,6 +6,13 @@ import TextSegments from './TextSegments';
 import { grammarApi } from '@/lib/api';
 import { getDayProgress, updateGrammarDay } from '@/lib/grammarProgress';
 
+function formatParaphraseJa(paraphraseJa) {
+  const normalized = paraphraseJa.trimStart();
+  return normalized.startsWith('(=')
+    ? normalized.replace(/^\(=\s*/, '(')
+    : normalized.replace(/^=\s*/, '');
+}
+
 export default function GrammarLessonView({ day }) {
   const stored = getDayProgress(day.id);
   const lastGrammarPointIndex = Math.max(0, day.grammarPoints.length - 1);
@@ -134,7 +141,7 @@ export default function GrammarLessonView({ day }) {
               <div className="mt-4 overflow-hidden border border-white/10 bg-slate-950/40"><p className="bg-slate-950/80 px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-accent-quizlet">Cấu trúc</p><ul className="grammar-structures space-y-1 p-1.5 text-sm text-primary-100" lang="ja">{point.structures.map((structure) => <li key={structure} className="grammar-structure-row rounded-sm bg-slate-800/60 px-3 py-2.5 leading-6">{structure}</li>)}</ul></div>
               <div><p className="text-[10px] font-bold uppercase tracking-wider text-accent-quizlet">Cách dùng</p><p className="mt-1 text-sm leading-6 text-primary-300">{point.usageVi}</p></div>
             </div>
-            <div className="mt-5 border-t border-white/10 pt-4"><p className="text-xs font-bold text-primary-400">Ví dụ</p><div className="mt-3 space-y-4" lang="ja">{point.examples.map((example) => <div key={example.id}><p className="text-sm leading-7 text-primary-100"><TextSegments segments={example.segments} /> {example.paraphraseJa && <span className="text-primary-500">{example.paraphraseJa}</span>}</p>{showTranslations && <p className="mt-1 text-xs leading-5 text-accent-quizlet/90" lang="vi">{example.translationVi}</p>}</div>)}</div></div>
+            <div className="mt-5 border-t border-white/10 pt-4"><p className="text-xs font-bold text-primary-400">Ví dụ</p><div className="mt-3 space-y-4" lang="ja">{point.examples.map((example) => <div key={example.id}><p className="text-sm leading-7 text-primary-100"><TextSegments segments={example.segments} /> {example.paraphraseJa && <span className="text-primary-500">{formatParaphraseJa(example.paraphraseJa)}</span>}</p>{showTranslations && <p className="mt-1 text-xs leading-5 text-accent-quizlet/90" lang="vi">{example.translationVi}</p>}</div>)}</div></div>
           </article>
         )}
         <div className="flex flex-wrap items-center justify-between gap-3">

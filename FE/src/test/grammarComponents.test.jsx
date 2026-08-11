@@ -82,6 +82,17 @@ describe('grammar components', () => {
     expect(screen.queryByText(/Mặc định tắt/)).not.toBeInTheDocument();
   });
 
+  it('removes the equivalence marker from Japanese paraphrases', () => {
+    const example = {
+      ...day.grammarPoints[0].examples[0],
+      paraphraseJa: '(=実際は、受けなかったが)',
+    };
+    render(<GrammarLessonView day={{ ...day, grammarPoints: [{ ...day.grammarPoints[0], examples: [example] }] }} />);
+
+    expect(screen.getByText('(実際は、受けなかったが)')).toBeInTheDocument();
+    expect(screen.queryByText(/=/)).not.toBeInTheDocument();
+  });
+
   it('shows one grammar point card at a time and advances to the next card', () => {
     const secondPoint = {
       ...day.grammarPoints[0],
