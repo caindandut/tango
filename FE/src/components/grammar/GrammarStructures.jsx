@@ -60,7 +60,6 @@ export default function GrammarStructures({ structures = [] }) {
       <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
         {bracketGroup.base && <StructureRow className="shrink-0">{bracketGroup.base}</StructureRow>}
         <span className="inline-flex items-stretch gap-1">
-          <span aria-hidden="true" className="flex items-center text-2xl font-light leading-none text-accent-quizlet">[</span>
           <span className="flex flex-col gap-1">
             {bracketGroup.variants.map((structure) => (
               <StructureRow key={structure} className="grammar-structure-variant px-1">
@@ -68,6 +67,7 @@ export default function GrammarStructures({ structures = [] }) {
               </StructureRow>
             ))}
           </span>
+          <span aria-hidden="true" className="flex items-center text-2xl font-light leading-none text-accent-quizlet">]</span>
         </span>
         <span className="flex flex-col gap-1">
           {bracketGroup.suffixes.map((structure) => (

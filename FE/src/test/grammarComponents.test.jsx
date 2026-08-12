@@ -67,8 +67,8 @@ describe('grammar components', () => {
       structures: ['V/A/na/N普', 'naだな', 'Nだの', 'ふりをする'],
     }] }} />);
 
-    expect(screen.getByText('[', { selector: 'span' })).toBeInTheDocument();
-    expect(screen.queryByText(']', { selector: 'span' })).not.toBeInTheDocument();
+    expect(screen.getByText(']', { selector: 'span' })).toBeInTheDocument();
+    expect(screen.queryByText('[', { selector: 'span' })).not.toBeInTheDocument();
     expect(screen.getByText('naだな').closest('.grammar-structure-variant')).toBeInTheDocument();
     expect(screen.getByText('ふりをする').closest('.grammar-structure-suffix')).toBeInTheDocument();
   });
@@ -79,7 +79,7 @@ describe('grammar components', () => {
       structures: ['Vる', 'Vない', 'ようにする'],
     }] }} />);
 
-    expect(screen.getByText('[', { selector: 'span' })).toBeInTheDocument();
+    expect(screen.getByText(']', { selector: 'span' })).toBeInTheDocument();
     expect(screen.getByText('Vる').closest('.grammar-structure-variant')).toBeInTheDocument();
     expect(screen.getByText('ようにする').closest('.grammar-structure-suffix')).toBeInTheDocument();
   });
