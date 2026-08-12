@@ -61,6 +61,18 @@ describe('grammar components', () => {
     expect(structureRow).not.toHaveClass('rounded-lg');
   });
 
+  it('groups alternate grammar forms inside textbook square brackets', () => {
+    render(<GrammarLessonView day={{ ...day, grammarPoints: [{
+      ...day.grammarPoints[0],
+      structures: ['V/A/na/N普', 'naだな', 'Nだの', 'ふりをする'],
+    }] }} />);
+
+    expect(screen.getByText('[', { selector: 'span' })).toBeInTheDocument();
+    expect(screen.getByText(']', { selector: 'span' })).toBeInTheDocument();
+    expect(screen.getByText('naだな').closest('.grammar-structure-variant')).toBeInTheDocument();
+    expect(screen.getByText('ふりをする').closest('.grammar-structure-suffix')).toBeInTheDocument();
+  });
+
   it('underlines only the grammar portion of the lesson title', () => {
     render(<GrammarLessonView day={{ ...day, grammarPoints: [{
       ...day.grammarPoints[0],
