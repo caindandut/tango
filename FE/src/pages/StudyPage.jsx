@@ -1,10 +1,23 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { ArrowLeft, Layers, Lightbulb, Keyboard, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, Eye, EyeOff } from 'lucide-react';
-import { Toaster } from 'sonner';
+import { ArrowLeft, Layers, Lightbulb, Keyboard, ListChecks, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, Eye, EyeOff, Settings2, ChevronDown, Maximize2, Minimize2, LoaderCircle } from 'lucide-react';
+import { Toaster, toast } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
+import VocabularyExamples from '@/components/study/VocabularyExamples';
+import {
+  getReadingCorrectAnswer,
+  getKanaInputMode,
+  shouldShowMeaning,
+  shouldShowQuizMeaning,
+} from '@/lib/studyPresentation';
 import { getStudyShufflePreference } from '@/lib/studyProgress';
+
+const STUDY_MODE_OPTIONS = [
+  { value: 'reading', label: 'Cách đọc', icon: Keyboard },
+  { value: 'flashcard', label: 'Flashcard', icon: Layers },
+  { value: 'quiz', label: 'Trắc nghiệm', icon: ListChecks },
+];
 
 export default function StudyPage() {
   const { setId } = useParams();
@@ -16,13 +29,101 @@ export default function StudyPage() {
   );
   const [isFlashcardFlipped, setIsFlashcardFlipped] = useState(false);
   const [isShuffled, setIsShuffled] = useState(() => getStudyShufflePreference(setId));
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [isModeMenuOpen, setIsModeMenuOpen] = useState(false);
+  const [isFocusMode, setIsFocusMode] = useState(false);
+  const [isKeyboardOpen, setIsKeyboardOpen] = useState(false);
   const [showMeaning, setShowMeaning] = useState(() => {
     const saved = localStorage.getItem('tango_show_meaning');
     return saved !== null ? saved === 'true' : true;
   });
   const inputRef = useRef(null);
+  const vocabularyRef = useRef(null);
+  const inputFocusTimerRef = useRef(null);
+  const viewportResizeCleanupRef = useRef(null);
+  const settingsMenuRef = useRef(null);
+  const modeMenuRef = useRef(null);
+
+  const focusVocabulary = useCallback(() => {
+    vocabularyRef.current?.scrollIntoView({ behavior: 'auto', block: 'start' });
+  }, []);
+
+  const handleInputFocus = useCallback(() => {
+    if (!window.matchMedia('(max-width: 640px)').matches) return;
+
+    setIsKeyboardOpen(true);
+    window.clearTimeout(inputFocusTimerRef.current);
+    inputFocusTimerRef.current = window.setTimeout(() => {
+      focusVocabulary();
+    }, 350);
+
+    viewportResizeCleanupRef.current?.();
+    const viewport = window.visualViewport;
+    if (!viewport) return;
+
+    const handleViewportResize = () => {
+      focusVocabulary();
+      viewportResizeCleanupRef.current?.();
+    };
+
+    viewport.addEventListener('resize', handleViewportResize);
+    viewportResizeCleanupRef.current = () => {
+      viewport.removeEventListener('resize', handleViewportResize);
+      viewportResizeCleanupRef.current = null;
+    };
+
+    window.setTimeout(() => viewportResizeCleanupRef.current?.(), 1500);
+  }, [focusVocabulary]);
+
+  const handleInputBlur = useCallback(() => {
+    window.setTimeout(() => {
+      if (document.activeElement !== inputRef.current) {
+        setIsKeyboardOpen(false);
+        viewportResizeCleanupRef.current?.();
+      }
+    }, 200);
+  }, []);
+
+  useEffect(() => () => {
+    window.clearTimeout(inputFocusTimerRef.current);
+    viewportResizeCleanupRef.current?.();
+  }, []);
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      if (document.fullscreenEnabled) {
+        setIsFocusMode(Boolean(document.fullscreenElement));
+      }
+    };
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
+  }, []);
+
+  const handleToggleFocusMode = useCallback(async () => {
+    if (isFocusMode) {
+      setIsFocusMode(false);
+      if (document.fullscreenElement && document.exitFullscreen) {
+        await document.exitFullscreen();
+      }
+      return;
+    }
+
+    setIsFocusMode(true);
+    if (document.documentElement.requestFullscreen) {
+      try {
+        await document.documentElement.requestFullscreen();
+      } catch {
+        // iOS Safari may reject Fullscreen API requests; CSS focus mode remains active.
+      }
+    }
+  }, [isFocusMode]);
+
+  const activeMode = STUDY_MODE_OPTIONS.find((option) => option.value === studyMode) || STUDY_MODE_OPTIONS[0];
+  const ActiveModeIcon = activeMode.icon;
 
   const {
+    sessionId,
     currentWord,
     checkResult,
     hintsUsed,
@@ -34,20 +135,28 @@ export default function StudyPage() {
     results,
     error,
     startSession,
+    changeMode,
     checkAnswer,
     getHint,
     nextWord,
     previousWord,
     resetSession,
   } = useStudySession();
+  const isQuizMeaningVisible = shouldShowQuizMeaning(showMeaning, checkResult, currentWord);
+  const isReadingMeaningVisible = shouldShowMeaning(showMeaning, currentWord, checkResult);
+  const kanaInputMode = getKanaInputMode(currentWord);
+  const readingCorrectAnswer = getReadingCorrectAnswer(checkResult, currentWord);
 
   // Start session on mount
   useEffect(() => {
     if (setId) {
-      startSession(setId, isShuffled);
+      startSession(setId, isShuffled, studyMode);
     }
     return () => resetSession();
-  }, [isShuffled, resetSession, setId, startSession]);
+  // The initial route decides the first mode. Mode changes use changeMode so
+  // the current question and session progress are preserved.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [resetSession, setId, startSession]);
 
   // Focus input when word changes
   useEffect(() => {
@@ -77,10 +186,54 @@ export default function StudyPage() {
     await previousWord();
   }, [currentWord, isLoading, previousWord]);
 
-  const handleModeChange = (mode) => {
+  const handleModeChange = async (mode) => {
+    if (mode === studyMode || !sessionId) return;
+
+    const previousMode = studyMode;
     setStudyMode(mode);
+    setInputValue('');
     setIsFlashcardFlipped(false);
+
+    try {
+      await changeMode(mode);
+    } catch {
+      setStudyMode(previousMode);
+      toast.error('Không thể chuyển chế độ học');
+    }
   };
+
+  const handleSelectMode = async (mode) => {
+    setIsModeMenuOpen(false);
+    await handleModeChange(mode);
+  };
+
+  useEffect(() => {
+    if (!isSettingsOpen && !isModeMenuOpen) return undefined;
+
+    const handleMenuDismiss = (event) => {
+      if (event.key === 'Escape') {
+        setIsSettingsOpen(false);
+        setIsModeMenuOpen(false);
+        return;
+      }
+
+      if (event.type === 'mousedown') {
+        if (isSettingsOpen && !settingsMenuRef.current?.contains(event.target)) {
+          setIsSettingsOpen(false);
+        }
+        if (isModeMenuOpen && !modeMenuRef.current?.contains(event.target)) {
+          setIsModeMenuOpen(false);
+        }
+      }
+    };
+
+    window.addEventListener('mousedown', handleMenuDismiss);
+    window.addEventListener('keydown', handleMenuDismiss);
+    return () => {
+      window.removeEventListener('mousedown', handleMenuDismiss);
+      window.removeEventListener('keydown', handleMenuDismiss);
+    };
+  }, [isModeMenuOpen, isSettingsOpen]);
 
   useEffect(() => {
     setIsFlashcardFlipped(false);
@@ -90,12 +243,12 @@ export default function StudyPage() {
   // window so Enter still advances when the feedback/Next button is shown.
   useEffect(() => {
     const handleGlobalKeyDown = (e) => {
-      if (studyMode !== 'reading' || e.key !== 'Enter' || e.isComposing || !currentWord || isCompleted) return;
+      if (!['reading', 'quiz'].includes(studyMode) || e.key !== 'Enter' || e.isComposing || !currentWord || isCompleted) return;
 
       e.preventDefault();
       if (checkResult) {
         handleNext();
-      } else {
+      } else if (studyMode === 'reading') {
         handleCheck();
       }
     };
@@ -103,6 +256,27 @@ export default function StudyPage() {
     window.addEventListener('keydown', handleGlobalKeyDown);
     return () => window.removeEventListener('keydown', handleGlobalKeyDown);
   }, [checkResult, currentWord, isCompleted, handleCheck, handleNext, studyMode]);
+
+  const handleQuizSelect = useCallback((option) => {
+    if (studyMode !== 'quiz' || checkResult || isChecking || !option) return;
+    checkAnswer(option, 0);
+  }, [checkAnswer, checkResult, isChecking, studyMode]);
+
+  useEffect(() => {
+    const handleQuizKeyDown = (event) => {
+      if (studyMode !== 'quiz' || !currentWord || isCompleted || checkResult) return;
+      if (event.target instanceof HTMLElement && event.target.closest('button')) return;
+
+      const optionNumber = Number(event.key);
+      if (optionNumber >= 1 && optionNumber <= 4) {
+        event.preventDefault();
+        handleQuizSelect(currentWord.quizOptions?.[optionNumber - 1]);
+      }
+    };
+
+    window.addEventListener('keydown', handleQuizKeyDown);
+    return () => window.removeEventListener('keydown', handleQuizKeyDown);
+  }, [checkResult, currentWord, handleQuizSelect, isCompleted, studyMode]);
 
   useEffect(() => {
     const handleFlashcardKeyDown = (event) => {
@@ -130,6 +304,10 @@ export default function StudyPage() {
     setIsShuffled(nextState);
     setInputValue('');
     setIsFlashcardFlipped(false);
+    if (setId) {
+      resetSession();
+      startSession(setId, nextState, studyMode);
+    }
   };
 
   const handleToggleMeaning = () => {
@@ -143,7 +321,7 @@ export default function StudyPage() {
   const handleRestartStudy = () => {
     resetSession();
     if (setId) {
-      startSession(setId, isShuffled);
+      startSession(setId, isShuffled, studyMode);
       setInputValue('');
     }
   };
@@ -170,10 +348,11 @@ export default function StudyPage() {
   // Loading state
   if (isLoading && !currentWord) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="study-page min-h-screen flex items-center justify-center px-6">
         <div className="text-center">
-          <div className="w-16 h-16 mx-auto mb-4 rounded-full border-4 border-accent-orange border-t-transparent animate-spin" />
-          <p className="text-primary-400">Đang tải bộ từ vựng...</p>
+          <div className="w-14 h-14 mx-auto mb-5 rounded-full border-4 border-indigo-400/30 border-t-indigo-400 animate-spin" />
+          <p className="text-slate-300 text-sm font-medium">Đang tải bộ từ vựng...</p>
+          <p className="text-slate-500 text-xs mt-2">Chuẩn bị bài học cho bạn</p>
         </div>
       </div>
     );
@@ -182,11 +361,32 @@ export default function StudyPage() {
   // Error state
   if (error && !currentWord) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="study-page min-h-screen flex items-center justify-center px-6">
         <div className="text-center">
-          <p className="text-accent-red text-lg mb-4">{error}</p>
+          <button onClick={handleRestartStudy} className="btn-check mb-4 max-w-xs mx-auto">
+            Thử lại
+          </button>
+          <p className="text-rose-400 text-lg mb-4">{error}</p>
           <button onClick={() => navigate('/')} className="btn-hint">
             Quay lại trang chủ
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // Empty state: the session returned no word to study.
+  if (!isLoading && !currentWord && !isCompleted) {
+    return (
+      <div className="study-page min-h-screen flex items-center justify-center px-4 py-8 sm:px-6">
+        <div className="w-full max-w-md rounded-2xl border border-white/10 bg-slate-900/80 p-6 text-center shadow-2xl shadow-black/20 sm:p-8" role="status">
+          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500/10 text-indigo-300">
+            <Layers className="h-6 w-6" aria-hidden="true" />
+          </div>
+          <h1 className="text-lg font-semibold text-white">Chưa có từ vựng để học</h1>
+          <p className="mt-2 text-sm leading-6 text-slate-400">Bài học này hiện chưa có dữ liệu. Hãy quay lại và chọn bài khác.</p>
+          <button type="button" onClick={() => navigate('/')} className="btn-check mt-6">
+            Về trang chủ
           </button>
         </div>
       </div>
@@ -196,14 +396,14 @@ export default function StudyPage() {
   // Completed - Results screen
   if (isCompleted && results) {
     return (
-      <div className="min-h-screen flex flex-col">
+      <div className="study-page min-h-screen flex flex-col">
         <Toaster position="top-right" theme="dark" />
 
-        <header className="py-6 px-8">
+        <header className="py-4 sm:py-6 px-4 sm:px-8">
           <div className="max-w-2xl mx-auto">
             <button
               onClick={() => navigate('/')}
-              className="flex items-center gap-2 text-primary-400 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-slate-500 hover:text-indigo-600 transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
               <span className="text-sm">Trang chủ</span>
@@ -211,29 +411,29 @@ export default function StudyPage() {
           </div>
         </header>
 
-        <div className="flex-1 flex items-center justify-center px-8 pb-12">
+        <div className="flex-1 flex items-center justify-center px-4 sm:px-8 pb-8 sm:pb-12">
           <div className="w-full max-w-lg animate-scale-in">
             <div className="text-center mb-8">
               <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-accent-orange to-yellow-500 flex items-center justify-center">
                 <Trophy className="w-10 h-10 text-white" />
               </div>
               <h2 className="text-3xl font-bold mb-2">Hoàn thành!</h2>
-              <p className="text-primary-400">{results.setName}</p>
+              <p className="text-slate-500">{results.setName}</p>
             </div>
 
             <div className="study-card mb-6">
               <div className="grid grid-cols-3 gap-4 text-center mb-6">
                 <div>
                   <p className="text-3xl font-bold text-accent-green">{results.correctCount}</p>
-                  <p className="text-sm text-primary-400">Đúng</p>
+                  <p className="text-sm text-slate-500">Đúng</p>
                 </div>
                 <div>
                   <p className="text-3xl font-bold text-accent-red">{results.wrongCount}</p>
-                  <p className="text-sm text-primary-400">Sai</p>
+                  <p className="text-sm text-slate-500">Sai</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-accent-orange">{results.accuracy}%</p>
-                  <p className="text-sm text-primary-400">Chính xác</p>
+                  <p className="text-3xl font-bold text-indigo-600">{results.accuracy}%</p>
+                  <p className="text-sm text-slate-500">Chính xác</p>
                 </div>
               </div>
 
@@ -255,14 +455,14 @@ export default function StudyPage() {
                 </h3>
                 <div className="space-y-3 max-h-60 overflow-y-auto">
                   {results.wrongAnswers.map((item, idx) => (
-                    <div key={idx} className="flex items-center justify-between bg-primary-800/50 rounded-lg p-3">
+                    <div key={idx} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 bg-slate-50 border border-slate-200 rounded-lg p-3">
                       <div>
                         <span className="font-japanese font-medium">{item.kanji}</span>
-                        <span className="text-primary-400 text-sm ml-2">({item.meaning})</span>
+                        <span className="text-slate-500 text-sm ml-2">({item.meaning})</span>
                       </div>
-                      <div className="text-right">
-                        <span className="text-accent-green font-japanese text-sm">{item.hiragana}</span>
-                        <span className="text-accent-red font-japanese text-xs block line-through">
+                      <div className="text-left sm:text-right">
+                      <span className="text-emerald-600 font-japanese text-sm">{item.hiragana}</span>
+                      <span className="text-red-600 font-japanese text-xs block line-through">
                           {item.userAnswer}
                         </span>
                       </div>
@@ -272,7 +472,7 @@ export default function StudyPage() {
               </div>
             )}
 
-            <div className="flex gap-3">
+            <div className="flex flex-col sm:flex-row gap-3">
               <button onClick={handleRestartStudy} className="btn-check flex-1 flex items-center justify-center gap-2">
                 <RotateCcw className="w-4 h-4" />
                 Học lại
@@ -289,90 +489,164 @@ export default function StudyPage() {
 
   // Main study interface
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className={`study-page min-h-screen flex flex-col ${isFocusMode ? 'focus-mode' : ''} ${isKeyboardOpen ? 'keyboard-open' : ''}`}>
       <Toaster position="top-right" theme="dark" />
 
       {/* Header */}
-      <header className="py-4 px-4 sm:px-8">
-        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+      <header className="study-header py-3 sm:py-4 px-3 sm:px-8">
+        <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
           <button
             onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-primary-400 hover:text-white transition-colors"
+            className="flex items-center gap-2 text-slate-500 hover:text-indigo-600 transition-colors shrink-0"
           >
             <ArrowLeft className="w-4 h-4" />
             <span className="text-sm">Thoát</span>
           </button>
 
-          <div className="flex flex-wrap items-center justify-end gap-3">
-            {/* Meaning Toggle Button (Bật/Tắt Hiển thị Nghĩa) */}
-            {studyMode === 'reading' && (
+          <div className="flex items-center justify-end gap-2">
+            <div className="relative" ref={settingsMenuRef}>
               <button
                 type="button"
-                onClick={handleToggleMeaning}
-                className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-2 border ${
-                  showMeaning
-                    ? 'bg-accent-orange/20 border-accent-orange text-accent-orange shadow-sm shadow-accent-orange/20'
-                    : 'bg-primary-900/60 border-white/10 text-primary-400 hover:text-white hover:border-white/20'
+                onClick={() => {
+                  setIsSettingsOpen((open) => !open);
+                  setIsModeMenuOpen(false);
+                }}
+                className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-xs font-semibold transition-all sm:px-3.5 ${
+                  isSettingsOpen
+                    ? 'border-indigo-400 bg-indigo-500/20 text-indigo-300'
+                    : 'border-white/10 bg-slate-900 text-slate-300 hover:border-indigo-400 hover:text-white'
                 }`}
-                title={showMeaning ? 'Đang bật hiển thị nghĩa (Nhấn để tắt)' : 'Đang tắt hiển thị nghĩa (Nhấn để bật)'}
+                aria-expanded={isSettingsOpen}
+                aria-haspopup="menu"
               >
-                {showMeaning ? (
-                  <Eye className="w-3.5 h-3.5 text-accent-orange" />
-                ) : (
-                  <EyeOff className="w-3.5 h-3.5 text-primary-400" />
-                )}
-                <span>
-                  Nghĩa: <strong className={showMeaning ? 'text-accent-orange' : 'text-primary-300'}>{showMeaning ? 'Bật' : 'Tắt'}</strong>
-                </span>
+                <Settings2 className="h-4 w-4" />
+                <span className="hidden sm:inline">Cài đặt</span>
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform ${isSettingsOpen ? 'rotate-180' : ''}`} />
               </button>
-            )}
 
-            {/* Shuffle Toggle Button (Bật/Tắt Xáo trộn) */}
-            <button
-              type="button"
-              onClick={handleToggleShuffle}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-2 border ${
-                isShuffled
-                  ? 'bg-accent-orange/20 border-accent-orange text-accent-orange shadow-sm shadow-accent-orange/20'
-                  : 'bg-primary-900/60 border-white/10 text-primary-400 hover:text-white hover:border-white/20'
-              }`}
-              title={isShuffled ? 'Đang bật xáo trộn (Nhấn để tắt)' : 'Đang tắt xáo trộn (Nhấn để bật)'}
-            >
-              <Shuffle className={`w-3.5 h-3.5 ${isShuffled ? 'text-accent-orange' : 'text-primary-400'}`} />
-              <span>Xáo trộn: <strong className={isShuffled ? 'text-accent-orange' : 'text-primary-300'}>{isShuffled ? 'Bật' : 'Tắt'}</strong></span>
-            </button>
+              {isSettingsOpen && (
+                <div className="absolute right-0 top-full z-50 mt-2 w-64 rounded-2xl border border-white/10 bg-slate-900/95 p-2 shadow-xl shadow-black/30 backdrop-blur-xl" role="menu">
+                  <p className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">Cài đặt học</p>
+                  <button
+                    type="button"
+                    onClick={handleToggleMeaning}
+                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-slate-200 transition-colors hover:bg-white/5"
+                    role="menuitem"
+                    aria-pressed={showMeaning}
+                  >
+                    <span className="flex items-center gap-2.5">
+                      {showMeaning ? <Eye className="h-4 w-4 text-indigo-600" /> : <EyeOff className="h-4 w-4 text-slate-400" />}
+                      Hiển thị nghĩa
+                    </span>
+                    <span className={`text-xs font-bold ${showMeaning ? 'text-indigo-600' : 'text-slate-400'}`}>{showMeaning ? 'Bật' : 'Tắt'}</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleToggleShuffle}
+                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-slate-200 transition-colors hover:bg-white/5"
+                    role="menuitem"
+                    aria-pressed={isShuffled}
+                  >
+                    <span className="flex items-center gap-2.5">
+                      <Shuffle className={`h-4 w-4 ${isShuffled ? 'text-indigo-600' : 'text-slate-400'}`} />
+                      Xáo trộn từ
+                    </span>
+                    <span className={`text-xs font-bold ${isShuffled ? 'text-indigo-600' : 'text-slate-400'}`}>{isShuffled ? 'Bật' : 'Tắt'}</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsSettingsOpen(false);
+                      handleToggleFocusMode();
+                    }}
+                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-slate-200 transition-colors hover:bg-white/5"
+                    role="menuitem"
+                    aria-pressed={isFocusMode}
+                  >
+                    <span className="flex items-center gap-2.5">
+                      {isFocusMode ? <Minimize2 className="h-4 w-4 text-indigo-600" /> : <Maximize2 className="h-4 w-4 text-slate-400" />}
+                      Toàn màn hình
+                    </span>
+                    <span className={`text-xs font-bold ${isFocusMode ? 'text-indigo-600' : 'text-slate-400'}`}>{isFocusMode ? 'Bật' : 'Tắt'}</span>
+                  </button>
+                </div>
+              )}
+            </div>
 
-            {/* Study Mode Toggle */}
-            <div className="flex items-center gap-2" role="tablist" aria-label="Chế độ học">
+            <div className="relative" ref={modeMenuRef}>
               <button
-                onClick={() => handleModeChange('reading')}
-                className={`toggle-btn flex-1 sm:flex-none flex items-center justify-center gap-1.5 ${studyMode === 'reading' ? 'active' : ''}`}
-                aria-selected={studyMode === 'reading'}
-                role="tab"
+                type="button"
+                onClick={() => {
+                  setIsModeMenuOpen((open) => !open);
+                  setIsSettingsOpen(false);
+                }}
+                className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-xs font-semibold transition-all sm:px-3.5 ${
+                  isModeMenuOpen
+                    ? 'border-indigo-400 bg-indigo-500/20 text-indigo-300'
+                    : 'border-white/10 bg-slate-900 text-slate-300 hover:border-indigo-400 hover:text-white'
+                }`}
+                aria-expanded={isModeMenuOpen}
+                aria-haspopup="menu"
               >
-                <Keyboard className="w-3.5 h-3.5" /> Cách đọc
+                <ActiveModeIcon className="h-4 w-4 text-indigo-600" />
+                <span>{activeMode.label}</span>
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform ${isModeMenuOpen ? 'rotate-180' : ''}`} />
               </button>
-              <button
-                onClick={() => handleModeChange('flashcard')}
-                className={`toggle-btn flex-1 sm:flex-none flex items-center justify-center gap-1.5 ${studyMode === 'flashcard' ? 'active' : ''}`}
-                aria-selected={studyMode === 'flashcard'}
-                role="tab"
-              >
-                <Layers className="w-3.5 h-3.5" /> Flashcard
-              </button>
+
+              {isModeMenuOpen && (
+                <div className="absolute right-0 top-full z-50 mt-2 w-52 rounded-2xl border border-white/10 bg-slate-900/95 p-2 shadow-xl shadow-black/30 backdrop-blur-xl" role="menu">
+                  <p className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">Chế độ học</p>
+                  {STUDY_MODE_OPTIONS.map(({ value, label, icon: ModeIcon }) => (
+                    <button
+                      key={value}
+                      type="button"
+                      onClick={() => handleSelectMode(value)}
+                      className={`flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm transition-colors ${
+                        studyMode === value
+                          ? 'bg-indigo-500/20 text-indigo-300'
+                          : 'text-slate-200 hover:bg-white/5'
+                      }`}
+                      role="menuitemradio"
+                      aria-checked={studyMode === value}
+                    >
+                      <span className="flex items-center gap-2.5">
+                        <ModeIcon className="h-4 w-4" />
+                        {label}
+                      </span>
+                      {studyMode === value && <Check className="h-4 w-4" />}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
       </header>
 
       {/* Main study area */}
-      <div className="flex-1 flex items-center justify-center px-4 sm:px-8 pb-6">
-        <div className="w-full max-w-2xl">
+      <div className="study-main flex-1 flex items-center justify-center px-3 py-3 sm:px-8 sm:py-6">
+        <div className="w-full max-w-3xl">
           {currentWord && (
-            <div className="animate-fade-in">
+            <div className={`animate-fade-in ${studyMode === 'flashcard' ? '' : 'study-card !max-w-3xl'}`}>
+              {error && (
+                <div className="mb-4 flex flex-col gap-3 rounded-xl border border-rose-400/25 bg-rose-500/10 px-4 py-3 text-sm text-rose-100 sm:flex-row sm:items-center sm:justify-between" role="alert">
+                  <span>{error}</span>
+                  <button type="button" onClick={handleRestartStudy} className="shrink-0 rounded-lg border border-rose-300/30 px-3 py-2 text-xs font-semibold text-rose-100 transition hover:bg-rose-500/20">
+                    Thử lại bài học
+                  </button>
+                </div>
+              )}
+              {isLoading && (
+                <span className="sr-only" role="status" aria-live="polite">Đang chuyển sang từ tiếp theo</span>
+              )}
+              {currentWord.isReviewRound && studyMode !== 'flashcard' && (
+                <div className="mb-4 rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-3 text-center text-sm text-indigo-700">
+                  Ôn lại {currentWord.reviewRoundSize} từ đã trả lời sai
+                </div>
+              )}
               {studyMode === 'flashcard' ? (
                 <div>
-                  <div className="flex items-center justify-between mb-3 text-sm text-primary-400">
+                  <div className="flex items-center justify-between mb-3 text-sm text-slate-500">
                     <span>Ôn tập flashcard</span>
                     <span>{isFlashcardFlipped ? 'Mặt sau' : 'Mặt trước'}</span>
                   </div>
@@ -384,15 +658,15 @@ export default function StudyPage() {
                     aria-label={isFlashcardFlipped ? 'Lật về mặt trước' : 'Lật sang mặt sau'}
                   >
                     <span className="flashcard-face flashcard-front study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
-                      <span className="text-xs uppercase tracking-widest text-accent-orange font-semibold mb-8">Từ vựng</span>
+                      <span className="text-xs uppercase tracking-widest text-indigo-600 font-semibold mb-8">Từ vựng</span>
                       <span lang="ja" className="kanji-display">{currentWord.kanji?.trim() || currentWord.hiragana}</span>
-                      <span className="text-primary-500 text-xs mt-10">Nhấn để lật thẻ</span>
+                      <span className="text-slate-400 text-xs mt-10">Nhấn để lật thẻ</span>
                     </span>
                     <span className="flashcard-face flashcard-back study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
-                      <span className="text-xs uppercase tracking-widest text-accent-green font-semibold mb-8">Nghĩa & cách đọc</span>
-                      <span className="font-japanese text-primary-200 text-xl sm:text-2xl text-center mb-5">{currentWord.meaning}</span>
-                      <span lang="ja" className="hiragana-result text-accent-green">{currentWord.hiragana}</span>
-                      <span className="text-primary-500 text-xs mt-10">Nhấn để xem lại từ vựng</span>
+                      <span className="text-xs uppercase tracking-widest text-emerald-600 font-semibold mb-8">Nghĩa & cách đọc</span>
+                      <span className="text-slate-700 text-xl sm:text-2xl text-center mb-5">{currentWord.meaning}</span>
+                      <span lang="ja" className="hiragana-result text-emerald-600">{currentWord.hiragana}</span>
+                      <span className="text-slate-400 text-xs mt-10">Nhấn để xem lại từ vựng</span>
                     </span>
                   </button>
 
@@ -415,23 +689,116 @@ export default function StudyPage() {
                       disabled={isLoading}
                       className="btn-check text-sm sm:text-base flex items-center justify-center gap-1 sm:gap-2"
                     >
-                      {currentWord.currentIndex + 1 === currentWord.totalWords ? 'Hoàn thành' : 'Tiếp'}
-                      <ChevronRight className="w-4 h-4" />
+                      {isLoading ? (
+                        <>
+                          <LoaderCircle className="h-4 w-4 animate-spin" aria-hidden="true" />
+                          <span>Đang tải</span>
+                        </>
+                      ) : (
+                        <>
+                          {currentWord.currentIndex + 1 === currentWord.totalWords ? 'Hoàn thành' : 'Tiếp'}
+                          <ChevronRight className="w-4 h-4" />
+                        </>
+                      )}
                     </button>
                   </div>
 
-                  <p className="text-center text-xs sm:text-sm text-primary-500 mt-5">
-                    Dùng <kbd className="px-1.5 py-0.5 rounded bg-primary-700 text-primary-300 font-mono mx-1">Space</kbd> để lật · <kbd className="px-1.5 py-0.5 rounded bg-primary-700 text-primary-300 font-mono mx-1">← →</kbd> để chuyển thẻ
+                  <p className="hidden sm:block text-center text-xs sm:text-sm text-slate-400 mt-6">
+                    Dùng <kbd className="px-1.5 py-0.5 rounded bg-slate-200 text-slate-600 font-mono mx-1">Space</kbd> để lật · <kbd className="px-1.5 py-0.5 rounded bg-slate-200 text-slate-600 font-mono mx-1">← →</kbd> để chuyển thẻ
                   </p>
+                </div>
+              ) : studyMode === 'quiz' ? (
+                <div>
+                  <div className="text-center mb-6">
+                    <p className="text-xs uppercase tracking-widest text-indigo-600 font-semibold mb-4">
+                      Chọn cách đọc đúng
+                    </p>
+                    <h2 lang="ja" className="kanji-display mb-2">{currentWord.kanji}</h2>
+                    <p
+                      className={`meaning-text transition-all duration-300 ${
+                        isQuizMeaningVisible
+                          ? 'opacity-100 translate-y-0'
+                          : 'opacity-0 -translate-y-1 pointer-events-none'
+                      }`}
+                      aria-hidden={!isQuizMeaningVisible}
+                    >
+                      {currentWord.meaning}
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-5" role="radiogroup" aria-label="Các đáp án cách đọc">
+                    {(currentWord.quizOptions || []).map((option, index) => {
+                      const isCorrectOption = checkResult && option === checkResult.correctAnswer;
+                      const isSelectedWrong = checkResult && option === checkResult.userAnswer && !checkResult.isCorrect;
+                      const stateClass = isCorrectOption
+                        ? 'border-emerald-400 bg-emerald-500/20 text-emerald-300'
+                        : isSelectedWrong
+                          ? 'border-red-400 bg-red-500/20 text-red-300'
+                          : checkResult
+                            ? 'border-white/10 bg-primary-900/40 text-primary-500 opacity-70'
+                            : 'border-white/15 bg-primary-900/60 text-white hover:border-indigo-400 hover:bg-indigo-500/10';
+
+                      return (
+                        <button
+                          key={`${option}-${index}`}
+                          type="button"
+                          onClick={() => handleQuizSelect(option)}
+                          disabled={!!checkResult || isChecking}
+                          className={`min-h-16 rounded-xl border-2 px-2 sm:px-4 py-3 text-base sm:text-lg font-japanese font-semibold transition-all ${stateClass}`}
+                          role="radio"
+                          aria-checked={checkResult?.userAnswer === option}
+                        >
+                          <span className="mr-3 text-sm font-sans opacity-60">{index + 1}.</span>
+                          {option}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {checkResult ? (
+                    <div className="animate-fade-in space-y-4">
+                      <div className={`py-3.5 px-6 rounded-xl text-center font-semibold text-lg ${
+                        checkResult.isCorrect ? 'result-correct' : 'result-wrong'
+                      }`}>
+                        <div className="flex items-center justify-center gap-2">
+                          {checkResult.isCorrect ? <Check className="w-5 h-5" /> : <X className="w-5 h-5" />}
+                          <span>{checkResult.isCorrect ? 'Chính xác!' : 'Sai rồi!'}</span>
+                        </div>
+                      </div>
+                      {checkResult && <VocabularyExamples examples={currentWord.examples} />}
+                      <button
+                        type="button"
+                        onClick={handleNext}
+                        disabled={isLoading}
+                        className="btn-check w-full flex items-center justify-center gap-2"
+                      >
+                        {isLoading ? (
+                          <>
+                            <LoaderCircle className="h-5 w-5 animate-spin" aria-hidden="true" />
+                            Đang tải
+                          </>
+                        ) : (
+                          <>
+                            Tiếp theo
+                            <ChevronRight className="w-5 h-5" />
+                          </>
+                        )}
+                      </button>
+                    </div>
+                  ) : (
+                    <p className="hidden sm:block text-center text-sm text-slate-400 mt-6">
+                      Nhấn <kbd className="px-2 py-0.5 rounded bg-slate-200 text-slate-600 text-xs font-mono mx-1">1–4</kbd> để chọn đáp án
+                    </p>
+                  )}
                 </div>
               ) : (
                 <>
               {/* Kanji Display */}
-              <div className="text-center mb-6">
+              <div ref={vocabularyRef} className="study-vocabulary scroll-mt-16 text-center mb-6">
                 <h2 lang="ja" className="kanji-display mb-2">{currentWord.kanji}</h2>
                 <div className="h-7 flex items-center justify-center">
                   <p className={`meaning-text transition-all duration-300 ${
-                    showMeaning || (checkResult && checkResult.isCorrect)
+                    isReadingMeaningVisible
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 -translate-y-1 pointer-events-none'
                   }`}>
@@ -444,9 +811,9 @@ export default function StudyPage() {
               <div className="text-center mb-6 h-14 flex items-center justify-center">
                 {checkResult ? (
                   <p lang="ja" className={`hiragana-result transition-all duration-300 ${
-                    checkResult.isCorrect ? 'text-accent-green' : 'text-accent-red'
+                    checkResult.isCorrect ? 'text-emerald-600' : 'text-red-600'
                   }`}>
-                    {checkResult.correctAnswer}
+                    {readingCorrectAnswer}
                   </p>
                 ) : (
                   <div className="flex items-center justify-center gap-1 flex-wrap">
@@ -465,7 +832,10 @@ export default function StudyPage() {
                         ref={inputRef}
                         value={inputValue}
                         onChange={setInputValue}
+                        onFocus={handleInputFocus}
+                        onBlur={handleInputBlur}
                         placeholder="Gõ romaji (vd: toshokan → としょかん)"
+                        kanaMode={kanaInputMode}
                         disabled={!!checkResult}
                       />
                     </div>
@@ -512,30 +882,54 @@ export default function StudyPage() {
                             </>
                           )}
                         </div>
+                        {!checkResult.isCorrect && (
+                          <div className="mt-2 space-y-1 text-left text-sm font-medium">
+                            <p>
+                              <span className="text-red-200/75">Đã nhập:</span>{' '}
+                              <span lang="ja" className="font-japanese text-red-100">{checkResult.userAnswer || '—'}</span>
+                            </p>
+                            <p>
+                              <span className="text-red-200/75">Đáp án:</span>{' '}
+                              <span lang="ja" className="font-japanese font-semibold text-white">{readingCorrectAnswer}</span>
+                            </p>
+                          </div>
+                        )}
                         {checkResult.isCorrect && !showMeaning && (
-                          <p className="text-sm font-medium text-white/90 mt-0.5 animate-fade-in">
-                            Nghĩa: <span className="font-japanese text-accent-green font-semibold">{currentWord.meaning}</span>
+                          <p className="text-sm font-medium text-slate-600 mt-0.5 animate-fade-in">
+                            Nghĩa: <span className="text-emerald-600 font-semibold">{currentWord.meaning}</span>
                           </p>
                         )}
                       </div>
                     </div>
 
+                    {checkResult && <VocabularyExamples examples={currentWord.examples} />}
+
                     {/* Next Button */}
                     <button
                       type="button"
                       onClick={handleNext}
+                      disabled={isLoading}
                       className="btn-check w-full flex items-center justify-center gap-2"
                     >
-                      Tiếp theo
-                      <ChevronRight className="w-5 h-5" />
+                      {isLoading ? (
+                        <>
+                          <LoaderCircle className="h-5 w-5 animate-spin" aria-hidden="true" />
+                          Đang tải
+                        </>
+                      ) : (
+                        <>
+                          Tiếp theo
+                          <ChevronRight className="w-5 h-5" />
+                        </>
+                      )}
                     </button>
                   </div>
                 )}
               </div>
 
               {/* Enter shortcut hint */}
-              <p className="text-center text-sm text-primary-500">
-                Nhấn <kbd className="px-2 py-0.5 rounded bg-primary-700 text-primary-300 text-xs font-mono mx-1">Enter</kbd> để {checkResult ? 'tiếp theo' : 'kiểm tra'}
+              <p className="hidden sm:block text-center text-sm text-slate-400 mt-6">
+                Nhấn <kbd className="px-2 py-0.5 rounded bg-slate-200 text-slate-600 text-xs font-mono mx-1">Enter</kbd> để {checkResult ? 'tiếp theo' : 'kiểm tra'}
               </p>
                 </>
               )}
@@ -546,19 +940,26 @@ export default function StudyPage() {
 
       {/* Progress Bar (bottom) */}
       {currentWord && (
-        <div className="px-4 sm:px-8 pb-4">
+        <div className="study-progress px-4 sm:px-8 pb-4">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm font-medium text-primary-400">
+              <span className="text-sm font-medium text-slate-600">
                 {currentWord.currentIndex + 1} / {currentWord.totalWords}
               </span>
-              {studyMode === 'reading' && (
-                <span className="text-xs text-primary-500">
+              {studyMode !== 'flashcard' && (
+                <span className="text-xs text-slate-400">
                   ✓ {currentWord.correctCount || 0} &nbsp; ✗ {currentWord.wrongCount || 0}
                 </span>
               )}
             </div>
-            <div className="progress-bar-container">
+            <div
+              className="progress-bar-container"
+              role="progressbar"
+              aria-label="Tiến độ bài học"
+              aria-valuemin="0"
+              aria-valuemax={currentWord.totalWords}
+              aria-valuenow={currentWord.currentIndex + 1}
+            >
               <div
                 className="progress-bar-fill"
                 style={{ width: `${((currentWord.currentIndex + 1) / currentWord.totalWords) * 100}%` }}

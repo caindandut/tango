@@ -19,7 +19,7 @@ export function useStudySession() {
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
 
-  const startSession = useCallback(async (setId, shuffle = false) => {
+  const startSession = useCallback(async (setId, shuffle = false, mode = 'reading') => {
     setIsLoading(true);
     setError(null);
     studyConfigRef.current = { setId, shuffle };
@@ -31,7 +31,10 @@ export function useStudySession() {
         try {
           const resumedSession = await studyApi.getSession(savedProgress.sessionId);
           if (!resumedSession.data.isCompleted) {
-            data = resumedSession.data;
+            if (resumedSession.data.mode && resumedSession.data.mode !== mode) {
+              await studyApi.changeMode(savedProgress.sessionId, mode);
+            }
+            data = { ...resumedSession.data, mode };
           } else {
             clearStudyProgress(setId, shuffle);
           }
@@ -42,7 +45,7 @@ export function useStudySession() {
       }
 
       if (!data) {
-        const startedSession = await studyApi.startSession(setId, shuffle);
+        const startedSession = await studyApi.startSession(setId, shuffle, mode);
         data = startedSession.data;
         saveStudyProgress(setId, shuffle, { sessionId: data.sessionId });
       }
@@ -70,11 +73,12 @@ export function useStudySession() {
     }
   }, []);
 
-  const checkAnswer = useCallback(async (answer) => {
+  const checkAnswer = useCallback(async (answer, answerHintsUsed = hintsUsed) => {
     if (!sessionId || isChecking) return;
     setIsChecking(true);
+    setError(null);
     try {
-      const { data } = await studyApi.checkAnswer(sessionId, answer, hintsUsed);
+      const { data } = await studyApi.checkAnswer(sessionId, answer, answerHintsUsed);
       setCheckResult(data);
 
       // Update current word counts
@@ -92,9 +96,29 @@ export function useStudySession() {
     }
   }, [sessionId, hintsUsed, isChecking, currentWord]);
 
+  const changeMode = useCallback(async (mode) => {
+    if (!sessionId) return;
+
+    setIsLoading(true);
+    setError(null);
+    try {
+      await studyApi.changeMode(sessionId, mode);
+      const { data: wordData } = await studyApi.getCurrentWord(sessionId);
+      setCurrentWord(wordData);
+      setTotalChars(wordData.hiraganaLength);
+      setCheckResult(null);
+    } catch (err) {
+      setError(err.response?.data?.error || 'Failed to change study mode');
+      throw err;
+    } finally {
+      setIsLoading(false);
+    }
+  }, [sessionId]);
+
   const getHint = useCallback(async () => {
     if (!sessionId) return;
     const nextReveal = hintsUsed + 1;
+    setError(null);
     try {
       const { data } = await studyApi.getHint(sessionId, nextReveal);
       setHintText(data.hint);
@@ -108,6 +132,7 @@ export function useStudySession() {
   const nextWord = useCallback(async () => {
     if (!sessionId) return;
     setIsLoading(true);
+    setError(null);
     try {
       const { data: nextData } = await studyApi.nextWord(sessionId);
 
@@ -143,6 +168,7 @@ export function useStudySession() {
   const previousWord = useCallback(async () => {
     if (!sessionId || !currentWord || currentWord.currentIndex <= 0) return;
     setIsLoading(true);
+    setError(null);
     try {
       await studyApi.previousWord(sessionId);
       const { data: wordData } = await studyApi.getCurrentWord(sessionId);
@@ -193,6 +219,7 @@ export function useStudySession() {
     results,
     error,
     startSession,
+    changeMode,
     checkAnswer,
     getHint,
     nextWord,

@@ -11,6 +11,7 @@ export default defineConfig({
     alias: { '@': path.resolve(__dirname, './src') },
   },
   test: {
+    include: ['src/test/**/*.{test,spec}.{js,jsx}'],
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.js'],
   },
