@@ -4,6 +4,7 @@ import { ArrowLeft, Layers, Lightbulb, Keyboard, ChevronRight, RotateCcw, Trophy
 import { Toaster } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
+import { getStudyShufflePreference } from '@/lib/studyProgress';
 
 export default function StudyPage() {
   const { setId } = useParams();
@@ -14,7 +15,7 @@ export default function StudyPage() {
     location.pathname.startsWith('/flashcards/') ? 'flashcard' : 'reading',
   );
   const [isFlashcardFlipped, setIsFlashcardFlipped] = useState(false);
-  const [isShuffled, setIsShuffled] = useState(false);
+  const [isShuffled, setIsShuffled] = useState(() => getStudyShufflePreference(setId));
   const [showMeaning, setShowMeaning] = useState(() => {
     const saved = localStorage.getItem('tango_show_meaning');
     return saved !== null ? saved === 'true' : true;
@@ -129,10 +130,6 @@ export default function StudyPage() {
     setIsShuffled(nextState);
     setInputValue('');
     setIsFlashcardFlipped(false);
-    if (setId) {
-      resetSession();
-      startSession(setId, nextState);
-    }
   };
 
   const handleToggleMeaning = () => {

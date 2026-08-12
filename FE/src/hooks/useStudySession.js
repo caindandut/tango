@@ -1,10 +1,12 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import { studyApi } from '@/lib/api';
+import { clearStudyProgress, getStudyProgress, saveStudyProgress } from '@/lib/studyProgress';
 
 /**
  * Custom hook to manage the entire study session flow
  */
 export function useStudySession() {
+  const studyConfigRef = useRef(null);
   const [sessionId, setSessionId] = useState(null);
   const [currentWord, setCurrentWord] = useState(null);
   const [checkResult, setCheckResult] = useState(null);
@@ -20,8 +22,31 @@ export function useStudySession() {
   const startSession = useCallback(async (setId, shuffle = false) => {
     setIsLoading(true);
     setError(null);
+    studyConfigRef.current = { setId, shuffle };
     try {
-      const { data } = await studyApi.startSession(setId, shuffle);
+      const savedProgress = getStudyProgress(setId, shuffle);
+      let data;
+
+      if (savedProgress?.sessionId) {
+        try {
+          const resumedSession = await studyApi.getSession(savedProgress.sessionId);
+          if (!resumedSession.data.isCompleted) {
+            data = resumedSession.data;
+          } else {
+            clearStudyProgress(setId, shuffle);
+          }
+        } catch (resumeError) {
+          if (resumeError.response?.status !== 404) throw resumeError;
+          clearStudyProgress(setId, shuffle);
+        }
+      }
+
+      if (!data) {
+        const startedSession = await studyApi.startSession(setId, shuffle);
+        data = startedSession.data;
+        saveStudyProgress(setId, shuffle, { sessionId: data.sessionId });
+      }
+
       setSessionId(data.sessionId);
       setIsCompleted(false);
       setResults(null);
@@ -33,6 +58,11 @@ export function useStudySession() {
       setHintText('');
       setTotalChars(wordRes.data.hiraganaLength);
       setCheckResult(null);
+      saveStudyProgress(setId, shuffle, {
+        sessionId: data.sessionId,
+        currentIndex: wordRes.data.currentIndex,
+        totalWords: wordRes.data.totalWords,
+      });
     } catch (err) {
       setError(err.response?.data?.error || 'Failed to start session');
     } finally {
@@ -90,6 +120,14 @@ export function useStudySession() {
         const { data: wordData } = await studyApi.getCurrentWord(sessionId);
         setCurrentWord(wordData);
         setTotalChars(wordData.hiraganaLength);
+        const config = studyConfigRef.current;
+        if (config) {
+          saveStudyProgress(config.setId, config.shuffle, {
+            sessionId,
+            currentIndex: wordData.currentIndex,
+            totalWords: wordData.totalWords,
+          });
+        }
       }
 
       setCheckResult(null);
@@ -110,6 +148,14 @@ export function useStudySession() {
       const { data: wordData } = await studyApi.getCurrentWord(sessionId);
       setCurrentWord(wordData);
       setTotalChars(wordData.hiraganaLength);
+      const config = studyConfigRef.current;
+      if (config) {
+        saveStudyProgress(config.setId, config.shuffle, {
+          sessionId,
+          currentIndex: wordData.currentIndex,
+          totalWords: wordData.totalWords,
+        });
+      }
       setCheckResult(null);
       setHintsUsed(0);
       setHintText('');
