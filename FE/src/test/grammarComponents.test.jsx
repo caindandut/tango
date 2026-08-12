@@ -73,6 +73,17 @@ describe('grammar components', () => {
     expect(screen.getByText('ふりをする').closest('.grammar-structure-suffix')).toBeInTheDocument();
   });
 
+  it('groups verb forms before the grammar ending inside square brackets', () => {
+    render(<GrammarLessonView day={{ ...day, grammarPoints: [{
+      ...day.grammarPoints[0],
+      structures: ['Vる', 'Vない', 'ようにする'],
+    }] }} />);
+
+    expect(screen.getByText('[', { selector: 'span' })).toBeInTheDocument();
+    expect(screen.getByText('Vる').closest('.grammar-structure-variant')).toBeInTheDocument();
+    expect(screen.getByText('ようにする').closest('.grammar-structure-suffix')).toBeInTheDocument();
+  });
+
   it('underlines only the grammar portion of the lesson title', () => {
     render(<GrammarLessonView day={{ ...day, grammarPoints: [{
       ...day.grammarPoints[0],
