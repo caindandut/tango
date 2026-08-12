@@ -68,7 +68,7 @@ describe('grammar components', () => {
     }] }} />);
 
     expect(screen.getByText('[', { selector: 'span' })).toBeInTheDocument();
-    expect(screen.getByText(']', { selector: 'span' })).toBeInTheDocument();
+    expect(screen.queryByText(']', { selector: 'span' })).not.toBeInTheDocument();
     expect(screen.getByText('naだな').closest('.grammar-structure-variant')).toBeInTheDocument();
     expect(screen.getByText('ふりをする').closest('.grammar-structure-suffix')).toBeInTheDocument();
   });
