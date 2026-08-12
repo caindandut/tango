@@ -68,7 +68,6 @@ export default function GrammarStructures({ structures = [] }) {
               </StructureRow>
             ))}
           </span>
-          <span aria-hidden="true" className="flex items-center text-2xl font-light leading-none text-accent-quizlet">]</span>
         </span>
         <span className="flex flex-col gap-1">
           {bracketGroup.suffixes.map((structure) => (
