@@ -3,6 +3,12 @@ const LESSON_QUESTION_COUNTS = Object.freeze({
   STAR_CHOICE: 2,
 });
 
+// Trang bài tập 25 của bản PDF chỉ có 4 câu chọn đáp án và 2 câu sắp xếp.
+// Giữ ngoại lệ theo đúng nguồn; không tự tạo câu thứ bảy để đủ schema cũ.
+const SOURCE_ALIGNED_LESSON_COUNTS = Object.freeze({
+  w1d6: Object.freeze({ BINARY_CHOICE: 4, STAR_CHOICE: 2 }),
+});
+
 const REVIEW_QUESTION_COUNTS = Object.freeze({
   REVIEW_CHOICE: 15,
   STAR_CHOICE: 5,
@@ -153,10 +159,14 @@ function validateLessonDay(day, path, seenIds, issues) {
 
   const questions = Array.isArray(day.questions) ? day.questions : [];
   const counts = countQuestionTypes(questions);
-  if (questions.length !== 7
-    || counts.BINARY_CHOICE !== LESSON_QUESTION_COUNTS.BINARY_CHOICE
-    || counts.STAR_CHOICE !== LESSON_QUESTION_COUNTS.STAR_CHOICE) {
-    issues.push(`${path} phải có đúng 5 BINARY_CHOICE và 2 STAR_CHOICE.`);
+  const expected = day.id === 'w1d6' && questions.length === 6
+    ? SOURCE_ALIGNED_LESSON_COUNTS.w1d6
+    : LESSON_QUESTION_COUNTS;
+  const expectedTotal = expected.BINARY_CHOICE + expected.STAR_CHOICE;
+  if (questions.length !== expectedTotal
+    || counts.BINARY_CHOICE !== expected.BINARY_CHOICE
+    || counts.STAR_CHOICE !== expected.STAR_CHOICE) {
+    issues.push(`${path} phải có đúng ${expected.BINARY_CHOICE} BINARY_CHOICE và ${expected.STAR_CHOICE} STAR_CHOICE theo PDF.`);
   }
   questions.forEach((question, index) =>
     validateQuestion(question, `${path}.questions[${index}]`, seenIds, issues));

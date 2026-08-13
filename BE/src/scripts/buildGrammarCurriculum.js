@@ -29,47 +29,8 @@ const REVIEW_STAR_ORDERS = Object.freeze({
   6: ['BADC', 'BDAC', 'DBCA', 'CBAD', 'ABDC'],
 });
 
-// Một số ô giải thích ở bản scan chỉ ghi công thức/ghi chú tiếng Nhật.
-// Các nghĩa dưới đây được đối chiếu với ví dụ Nhật–Việt ngay trên trang đó.
-const GRAMMAR_POINT_OVERRIDES = Object.freeze({
-  'w1d2-g1': { meaningVi: 'Phải đi ngủ thôi; dạng nói rút gọn của “phải ngủ”.', usageVi: 'Dùng trong hội thoại thân mật với Vないと (いけない).', },
-  'w1d2-g2': { meaningVi: 'Đã lỡ ăn mất rồi.', usageVi: 'Cách nói hội thoại rút gọn của Vてしまう, thường diễn tả tiếc nuối hoặc hoàn tất.', },
-  'w1d2-g3': { meaningVi: 'Viết sẵn nhé; làm trước.', usageVi: 'Cách nói hội thoại rút gọn của Vておく.', },
-  'w1d3-g1': { titleJa: '女みたいだ', meaningVi: 'Giống như phụ nữ/con gái.', usageVi: 'V/A/na/N + みたいだ; cách nói hội thoại hơn ようだ.', },
-  'w1d3-g2': { meaningVi: 'Mang đặc trưng của mùa xuân; đúng kiểu mùa xuân.', usageVi: 'N + らしい để nói một đặc điểm tiêu biểu của người/vật/sự việc đó.', },
-  'w1d3-g3': { meaningVi: 'Có vẻ như người lớn; mang dáng vẻ chững chạc.', usageVi: 'N + っぽい để nói có vẻ mang tính chất hoặc dáng vẻ của N.', },
-  'w3d3-g1': { meaningVi: 'Đã định làm; đã có dự định làm.', usageVi: 'Vる/Vない + つもりだった để nói về dự định trong quá khứ.', },
-  'w3d3-g2': { meaningVi: 'Chắc là không ở nhà.', usageVi: 'V/A/na/N + はずだ để suy đoán có căn cứ; はずがない là phủ định mạnh.', },
-  'w3d3-g3': { meaningVi: 'Nên/phải bảo vệ.', usageVi: 'Vる/naである/Aである + べきだ để nói nghĩa vụ hoặc điều nên làm.', },
-  'w3d3-g4': { meaningVi: 'Hồi tưởng về việc thường đã làm trong quá khứ.', usageVi: 'Vた + ものだ để hồi tưởng hoặc nhắc lại một việc thường làm trước đây.', },
-  'w3d4-g1': { meaningVi: 'Nhân tiện; tiện thể.', usageVi: 'Nの/Vる + ついでに để làm thêm việc khác nhân một dịp hoặc hành động.', },
-  'w3d4-g2': { meaningVi: 'Mỗi khi; cứ mỗi lần.', usageVi: 'Nの/Vる/Vた + たびに để nói việc lặp lại mỗi khi có sự việc xảy ra.', },
-  'w3d4-g3': { meaningVi: 'Ngay khi; vừa mới... thì...', usageVi: 'Vた + とたん(に) để nói sự việc xảy ra ngay sau một hành động.', },
-  'w3d4-g4': { meaningVi: 'Đang lúc; đúng lúc đang làm...', usageVi: 'Nの/Vている + 最中に để nói một sự việc xảy ra giữa lúc một việc khác đang diễn ra.', },
-  'w4d4-g4': { meaningVi: 'Biết bao vui sướng; không biết vui đến nhường nào.', usageVi: 'Vる/Aい/naな/Nの + ことか để nhấn mạnh cảm xúc hoặc mức độ.', },
-  'w5d1-g1': { titleJa: '勉強はもちろん', meaningVi: 'Không những học giỏi mà còn làm tốt việc khác.', usageVi: 'N1はもちろん、N2も để nói N1 là điều hiển nhiên và N2 cũng vậy.', },
-  'w5d1-g2': { meaningVi: 'Không chỉ... mà còn...', usageVi: 'V/A/na/N + ばかりか…(も), tương đương ばかりでなく…(も).', },
-  'w5d1-g3': { meaningVi: 'So với; so sánh với.', usageVi: 'Nに比べて hoặc mệnh đề + のに比べ để so sánh hai đối tượng/sự việc.', },
-  'w5d1-g4': { meaningVi: 'Đối với; đối lập với.', usageVi: 'Nに対して để nói đối tượng hướng tới hoặc sự tương phản; có thể dùng に対する + N.', },
-  'w5d3-g1': { meaningVi: 'Ước gì; giá mà...', usageVi: 'V/A/na/N + といいなあ để bày tỏ mong ước.', },
-  'w5d3-g2': { meaningVi: 'Giá mà đã...; hối tiếc vì đã không...', usageVi: 'Vば/Vなければ/Vたら/Vなかったら + よかった để bày tỏ hối tiếc.', },
-  'w5d3-g3': { meaningVi: 'Đáng lẽ bạn cũng nên...; tiếc là bạn đã không...', usageVi: 'Vば〜のに hoặc Vたら〜のに để bày tỏ sự tiếc nuối hoặc trách nhẹ.', },
-  'w5d3-g4': { meaningVi: 'Ước gì...; không biết có... không nhỉ?', usageVi: 'Vないかなあ để bày tỏ mong muốn hoặc băn khoăn.', },
-  'w5d4-g4': { meaningVi: 'Tại/ở Osaka; trong phạm vi Osaka.', usageVi: 'Nにおいて là cách nói trang trọng hơn で, dùng cho địa điểm, thời gian hoặc lĩnh vực.', },
-});
-
 function nonEmpty(value) {
   return typeof value === 'string' && value.trim() ? value.trim() : null;
-}
-
-function hasNonVietnameseExplanation(value) {
-  return /[ぁ-んァ-ヶ一-龯]/u.test(value)
-    || /\b(?:expression|showing|when|used|indicates|refers|the action|a way|speaker|situation)\b/iu.test(value);
-}
-
-function selectVietnameseExplanation(point) {
-  const candidates = [point.usageVi, point.meaningVi].map(nonEmpty).filter(Boolean);
-  return candidates.find((value) => !hasNonVietnameseExplanation(value)) || candidates[0] || 'Xem cách dùng trong cấu trúc và ví dụ.';
 }
 
 function normalizeSegments(segments, { requireGrammar = false } = {}) {
@@ -139,20 +100,22 @@ function buildCorrectSentence(question, options, order) {
 
 function normalizeGrammarPoint(point, context, pointIndex, pointCount) {
   const id = `w${context.weekNumber}d${context.dayNumber}-g${pointIndex + 1}`;
-  const override = GRAMMAR_POINT_OVERRIDES[id] || {};
-  const explanationVi = override.meaningVi || selectVietnameseExplanation(point);
   const onSecondPage = pointIndex === pointCount - 1;
   const pdfPage = onSecondPage ? context.exercisePdfPage : context.contentPdfPage;
+  if (!nonEmpty(point.titleJa) || !nonEmpty(point.meaningVi) || !nonEmpty(point.usageVi)
+    || !Array.isArray(point.structures) || point.structures.length === 0) {
+    throw new Error(`Thiếu nội dung ngữ pháp đã được kiểm duyệt cho ${id}.`);
+  }
   return {
     id,
-    titleJa: override.titleJa || nonEmpty(point.titleJa) || `Mẫu ngữ pháp ${pointIndex + 1}`,
-    meaningVi: explanationVi,
+    titleJa: nonEmpty(point.titleJa),
+    meaningVi: nonEmpty(point.meaningVi),
     structures: (point.structures || []).map(nonEmpty).filter(Boolean),
-    usageVi: override.usageVi || explanationVi,
+    usageVi: nonEmpty(point.usageVi),
     examples: (point.examples || []).map((example, exampleIndex) => ({
       id: `w${context.weekNumber}d${context.dayNumber}-g${pointIndex + 1}-e${exampleIndex + 1}`,
       segments: normalizeSegments(example.segments, { requireGrammar: true }),
-      translationVi: nonEmpty(example.translationVi) || 'Chưa có bản dịch.',
+      translationVi: nonEmpty(example.translationVi),
       ...(nonEmpty(example.paraphraseJa) ? { paraphraseJa: nonEmpty(example.paraphraseJa) } : {}),
     })),
     source: {

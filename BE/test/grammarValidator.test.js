@@ -120,6 +120,14 @@ test('validator accepts a complete six-week curriculum', () => {
   assert.doesNotThrow(() => validateGrammarCurriculum(curriculum));
 });
 
+test('validator accepts the PDF-aligned six-question lesson w1d6', () => {
+  const curriculum = buildValidCurriculum();
+  const day = curriculum.weeks[0].days[5];
+  day.id = 'w1d6';
+  day.questions = day.questions.filter((question) => question.id !== 'w1d6-q5');
+  assert.doesNotThrow(() => validateGrammarCurriculum(curriculum));
+});
+
 test('validator rejects a lesson with the wrong exercise distribution', () => {
   const curriculum = buildValidCurriculum();
   curriculum.weeks[0].days[0].questions.pop();

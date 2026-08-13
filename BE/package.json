@@ -8,6 +8,8 @@
     "seed": "node src/scripts/seedN3FromJson.js",
     "validate:vocab": "node src/scripts/validateN3Vocabulary.js",
     "validate:grammar": "node src/scripts/validateGrammarData.js",
+    "grammar:review": "node src/scripts/reviewGrammarCurriculum.js",
+    "grammar:publish": "node src/scripts/publishGrammarReview.js",
     "test": "node --test",
     "prisma:generate": "npx prisma generate",
     "prisma:migrate": "npx prisma migrate dev",
