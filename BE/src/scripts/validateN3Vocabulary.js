@@ -26,6 +26,10 @@ function validateN3Vocabulary(data) {
         throw new Error(`${lessonName}[${index}].kanji must be a string`);
       }
 
+      if (typeof word.hanVietMeaning !== 'string') {
+        throw new Error(`${lessonName}[${index}].hanVietMeaning must be a string`);
+      }
+
       if (!Array.isArray(word.examples)) {
         throw new Error(`${lessonName}[${index}].examples must be an array`);
       }
