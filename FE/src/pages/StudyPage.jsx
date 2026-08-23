@@ -11,6 +11,11 @@ import {
   shouldShowMeaning,
   shouldShowQuizMeaning,
 } from '@/lib/studyPresentation';
+import {
+  HAN_VIET_MEANING_STORAGE_KEY,
+  readBooleanSetting,
+  writeBooleanSetting,
+} from '@/lib/studyDisplaySettings';
 import { getStudyShufflePreference } from '@/lib/studyProgress';
 
 const STUDY_MODE_OPTIONS = [
@@ -33,10 +38,12 @@ export default function StudyPage() {
   const [isModeMenuOpen, setIsModeMenuOpen] = useState(false);
   const [isFocusMode, setIsFocusMode] = useState(false);
   const [isKeyboardOpen, setIsKeyboardOpen] = useState(false);
-  const [showMeaning, setShowMeaning] = useState(() => {
-    const saved = localStorage.getItem('tango_show_meaning');
-    return saved !== null ? saved === 'true' : true;
-  });
+  const [showMeaning, setShowMeaning] = useState(() => (
+    readBooleanSetting(localStorage, 'tango_show_meaning', true)
+  ));
+  const [showHanVietMeaning, setShowHanVietMeaning] = useState(() => (
+    readBooleanSetting(localStorage, HAN_VIET_MEANING_STORAGE_KEY, true)
+  ));
   const inputRef = useRef(null);
   const vocabularyRef = useRef(null);
   const inputFocusTimerRef = useRef(null);
@@ -144,6 +151,10 @@ export default function StudyPage() {
   } = useStudySession();
   const isQuizMeaningVisible = shouldShowQuizMeaning(showMeaning, checkResult, currentWord);
   const isReadingMeaningVisible = shouldShowMeaning(showMeaning, currentWord, checkResult);
+  const isQuizHanVietMeaningVisible = Boolean(currentWord?.hanVietMeaning?.trim())
+    && shouldShowQuizMeaning(showHanVietMeaning, checkResult, currentWord);
+  const isReadingHanVietMeaningVisible = Boolean(currentWord?.hanVietMeaning?.trim())
+    && shouldShowMeaning(showHanVietMeaning, currentWord, checkResult);
   const kanaInputMode = getKanaInputMode(currentWord);
   const readingCorrectAnswer = getReadingCorrectAnswer(checkResult, currentWord);
 
@@ -313,7 +324,15 @@ export default function StudyPage() {
   const handleToggleMeaning = () => {
     setShowMeaning((prev) => {
       const next = !prev;
-      localStorage.setItem('tango_show_meaning', String(next));
+      writeBooleanSetting(localStorage, 'tango_show_meaning', next);
+      return next;
+    });
+  };
+
+  const handleToggleHanVietMeaning = () => {
+    setShowHanVietMeaning((prev) => {
+      const next = !prev;
+      writeBooleanSetting(localStorage, HAN_VIET_MEANING_STORAGE_KEY, next);
       return next;
     });
   };
@@ -459,6 +478,9 @@ export default function StudyPage() {
                       <div>
                         <span className="font-japanese font-medium">{item.kanji}</span>
                         <span className="text-slate-500 text-sm ml-2">({item.meaning})</span>
+                        {showHanVietMeaning && item.hanVietMeaning?.trim() && (
+                          <span className="text-slate-400 text-sm ml-2">({item.hanVietMeaning})</span>
+                        )}
                       </div>
                       <div className="text-left sm:text-right">
                       <span className="text-emerald-600 font-japanese text-sm">{item.hiragana}</span>
@@ -539,6 +561,19 @@ export default function StudyPage() {
                       Hiển thị nghĩa
                     </span>
                     <span className={`text-xs font-bold ${showMeaning ? 'text-indigo-600' : 'text-slate-400'}`}>{showMeaning ? 'Bật' : 'Tắt'}</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleToggleHanVietMeaning}
+                    className="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm text-slate-200 transition-colors hover:bg-white/5"
+                    role="menuitem"
+                    aria-pressed={showHanVietMeaning}
+                  >
+                    <span className="flex items-center gap-2.5">
+                      {showHanVietMeaning ? <Eye className="h-4 w-4 text-indigo-600" /> : <EyeOff className="h-4 w-4 text-slate-400" />}
+                      Hiển thị nghĩa Hán–Việt
+                    </span>
+                    <span className={`text-xs font-bold ${showHanVietMeaning ? 'text-indigo-600' : 'text-slate-400'}`}>{showHanVietMeaning ? 'Bật' : 'Tắt'}</span>
                   </button>
                   <button
                     type="button"
@@ -664,7 +699,10 @@ export default function StudyPage() {
                     </span>
                     <span className="flashcard-face flashcard-back study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
                       <span className="text-xs uppercase tracking-widest text-emerald-600 font-semibold mb-8">Nghĩa & cách đọc</span>
-                      <span className="text-slate-700 text-xl sm:text-2xl text-center mb-5">{currentWord.meaning}</span>
+                      <span className="text-slate-700 text-xl sm:text-2xl text-center mb-3">{currentWord.meaning}</span>
+                      {showHanVietMeaning && currentWord.hanVietMeaning?.trim() && (
+                        <span className="text-slate-500 text-base sm:text-lg text-center mb-3">Hán–Việt: {currentWord.hanVietMeaning}</span>
+                      )}
                       <span lang="ja" className="hiragana-result text-emerald-600">{currentWord.hiragana}</span>
                       <span className="text-slate-400 text-xs mt-10">Nhấn để xem lại từ vựng</span>
                     </span>
@@ -724,6 +762,18 @@ export default function StudyPage() {
                     >
                       {currentWord.meaning}
                     </p>
+                    {currentWord.hanVietMeaning?.trim() && (
+                      <p
+                        className={`text-sm font-semibold text-slate-500 transition-all duration-300 ${
+                          isQuizHanVietMeaningVisible
+                            ? 'opacity-100 translate-y-0'
+                            : 'opacity-0 -translate-y-1 pointer-events-none'
+                        }`}
+                        aria-hidden={!isQuizHanVietMeaningVisible}
+                      >
+                        Hán–Việt: {currentWord.hanVietMeaning}
+                      </p>
+                    )}
                   </div>
 
                   <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-5" role="radiogroup" aria-label="Các đáp án cách đọc">
@@ -796,7 +846,7 @@ export default function StudyPage() {
               {/* Kanji Display */}
               <div ref={vocabularyRef} className="study-vocabulary scroll-mt-16 text-center mb-6">
                 <h2 lang="ja" className="kanji-display mb-2">{currentWord.kanji}</h2>
-                <div className="h-7 flex items-center justify-center">
+                <div className="min-h-7 flex flex-col items-center justify-center gap-1">
                   <p className={`meaning-text transition-all duration-300 ${
                     isReadingMeaningVisible
                       ? 'opacity-100 translate-y-0'
@@ -804,6 +854,15 @@ export default function StudyPage() {
                   }`}>
                     {currentWord.meaning}
                   </p>
+                  {currentWord.hanVietMeaning?.trim() && (
+                    <p className={`text-sm font-semibold text-slate-500 transition-all duration-300 ${
+                      isReadingHanVietMeaningVisible
+                        ? 'opacity-100 translate-y-0'
+                        : 'opacity-0 -translate-y-1 pointer-events-none'
+                    }`} aria-hidden={!isReadingHanVietMeaningVisible}>
+                      Hán–Việt: {currentWord.hanVietMeaning}
+                    </p>
+                  )}
                 </div>
               </div>
 
