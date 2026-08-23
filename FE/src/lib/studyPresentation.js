@@ -12,6 +12,20 @@ export function shouldShowQuizMeaning(showMeaning, checkResult, currentWord) {
   return showMeaning || isKanaOnlyVocabulary(currentWord) || checkResult?.isCorrect === true;
 }
 
+export function getStudyMeaningLines({ meaning, hanVietMeaning, showHanVietMeaning }) {
+  const lines = [];
+
+  if (showHanVietMeaning && typeof hanVietMeaning === 'string' && hanVietMeaning.trim()) {
+    lines.push({ type: 'hanViet', value: hanVietMeaning });
+  }
+
+  if (typeof meaning === 'string' && meaning.trim()) {
+    lines.push({ type: 'meaning', value: meaning });
+  }
+
+  return lines;
+}
+
 export function getKanaInputMode(currentWord) {
   return isKatakana(currentWord?.hiragana?.trim() || '') ? 'toKatakana' : 'toHiragana';
 }

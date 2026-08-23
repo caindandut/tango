@@ -9,6 +9,7 @@ import {
   getReadingCorrectAnswer,
   getKanaInputMode,
   shouldShowMeaning,
+  getStudyMeaningLines,
   shouldShowQuizMeaning,
 } from '@/lib/studyPresentation';
 import {
@@ -477,10 +478,18 @@ export default function StudyPage() {
                     <div key={idx} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 bg-slate-50 border border-slate-200 rounded-lg p-3">
                       <div>
                         <span className="font-japanese font-medium">{item.kanji}</span>
-                        <span className="text-slate-500 text-sm ml-2">({item.meaning})</span>
-                        {showHanVietMeaning && item.hanVietMeaning?.trim() && (
-                          <span className="text-slate-400 text-sm ml-2">({item.hanVietMeaning})</span>
-                        )}
+                        {getStudyMeaningLines({
+                          meaning: item.meaning,
+                          hanVietMeaning: item.hanVietMeaning,
+                          showHanVietMeaning,
+                        }).map((line) => (
+                          <span
+                            key={line.type}
+                            className={line.type === 'hanViet' ? 'text-slate-400 text-sm ml-2' : 'text-slate-500 text-sm ml-2'}
+                          >
+                            ({line.value})
+                          </span>
+                        ))}
                       </div>
                       <div className="text-left sm:text-right">
                       <span className="text-emerald-600 font-japanese text-sm">{item.hiragana}</span>
@@ -699,10 +708,18 @@ export default function StudyPage() {
                     </span>
                     <span className="flashcard-face flashcard-back study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
                       <span className="text-xs uppercase tracking-widest text-emerald-600 font-semibold mb-8">Nghĩa & cách đọc</span>
-                      <span className="text-slate-700 text-xl sm:text-2xl text-center mb-3">{currentWord.meaning}</span>
-                      {showHanVietMeaning && currentWord.hanVietMeaning?.trim() && (
-                        <span className="text-slate-500 text-base sm:text-lg text-center mb-3">Hán–Việt: {currentWord.hanVietMeaning}</span>
-                      )}
+                      {getStudyMeaningLines({
+                        meaning: currentWord.meaning,
+                        hanVietMeaning: currentWord.hanVietMeaning,
+                        showHanVietMeaning,
+                      }).map((line) => (
+                        <span
+                          key={line.type}
+                          className={line.type === 'hanViet' ? 'text-slate-500 text-base sm:text-lg text-center mb-3' : 'text-slate-700 text-xl sm:text-2xl text-center mb-3'}
+                        >
+                          {line.value}
+                        </span>
+                      ))}
                       <span lang="ja" className="hiragana-result text-emerald-600">{currentWord.hiragana}</span>
                       <span className="text-slate-400 text-xs mt-10">Nhấn để xem lại từ vựng</span>
                     </span>
@@ -752,28 +769,30 @@ export default function StudyPage() {
                       Chọn cách đọc đúng
                     </p>
                     <h2 lang="ja" className="kanji-display mb-2">{currentWord.kanji}</h2>
-                    <p
-                      className={`meaning-text transition-all duration-300 ${
-                        isQuizMeaningVisible
-                          ? 'opacity-100 translate-y-0'
-                          : 'opacity-0 -translate-y-1 pointer-events-none'
-                      }`}
-                      aria-hidden={!isQuizMeaningVisible}
-                    >
-                      {currentWord.meaning}
-                    </p>
-                    {currentWord.hanVietMeaning?.trim() && (
-                      <p
-                        className={`text-sm font-semibold text-slate-500 transition-all duration-300 ${
-                          isQuizHanVietMeaningVisible
-                            ? 'opacity-100 translate-y-0'
-                            : 'opacity-0 -translate-y-1 pointer-events-none'
-                        }`}
-                        aria-hidden={!isQuizHanVietMeaningVisible}
-                      >
-                        Hán–Việt: {currentWord.hanVietMeaning}
-                      </p>
-                    )}
+                    {getStudyMeaningLines({
+                      meaning: currentWord.meaning,
+                      hanVietMeaning: currentWord.hanVietMeaning,
+                      showHanVietMeaning,
+                    }).map((line) => {
+                      const isHanVietLine = line.type === 'hanViet';
+                      const isVisible = isHanVietLine
+                        ? isQuizHanVietMeaningVisible
+                        : isQuizMeaningVisible;
+
+                      return (
+                        <p
+                          key={line.type}
+                          className={[
+                            isHanVietLine ? 'text-sm font-semibold text-slate-500' : 'meaning-text',
+                            'transition-all duration-300',
+                            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1 pointer-events-none',
+                          ].join(' ')}
+                          aria-hidden={!isVisible}
+                        >
+                          {line.value}
+                        </p>
+                      );
+                    })}
                   </div>
 
                   <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-5" role="radiogroup" aria-label="Các đáp án cách đọc">
@@ -847,22 +866,30 @@ export default function StudyPage() {
               <div ref={vocabularyRef} className="study-vocabulary scroll-mt-16 text-center mb-6">
                 <h2 lang="ja" className="kanji-display mb-2">{currentWord.kanji}</h2>
                 <div className="min-h-7 flex flex-col items-center justify-center gap-1">
-                  <p className={`meaning-text transition-all duration-300 ${
-                    isReadingMeaningVisible
-                      ? 'opacity-100 translate-y-0'
-                      : 'opacity-0 -translate-y-1 pointer-events-none'
-                  }`}>
-                    {currentWord.meaning}
-                  </p>
-                  {currentWord.hanVietMeaning?.trim() && (
-                    <p className={`text-sm font-semibold text-slate-500 transition-all duration-300 ${
-                      isReadingHanVietMeaningVisible
-                        ? 'opacity-100 translate-y-0'
-                        : 'opacity-0 -translate-y-1 pointer-events-none'
-                    }`} aria-hidden={!isReadingHanVietMeaningVisible}>
-                      Hán–Việt: {currentWord.hanVietMeaning}
-                    </p>
-                  )}
+                  {getStudyMeaningLines({
+                    meaning: currentWord.meaning,
+                    hanVietMeaning: currentWord.hanVietMeaning,
+                    showHanVietMeaning,
+                  }).map((line) => {
+                    const isHanVietLine = line.type === 'hanViet';
+                    const isVisible = isHanVietLine
+                      ? isReadingHanVietMeaningVisible
+                      : isReadingMeaningVisible;
+
+                    return (
+                      <p
+                        key={line.type}
+                        className={[
+                          isHanVietLine ? 'text-sm font-semibold text-slate-500' : 'meaning-text',
+                          'transition-all duration-300',
+                          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1 pointer-events-none',
+                        ].join(' ')}
+                        aria-hidden={!isVisible}
+                      >
+                        {line.value}
+                      </p>
+                    );
+                  })}
                 </div>
               </div>
 
