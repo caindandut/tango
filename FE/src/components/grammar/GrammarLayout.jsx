@@ -1,4 +1,4 @@
-import { BookOpen, Brain, ChevronRight } from 'lucide-react';
+import { BookOpen, ChevronRight } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function GrammarLayout({ children, eyebrow = 'Soumatome N3 · 文法' }) {
@@ -14,9 +14,6 @@ export default function GrammarLayout({ children, eyebrow = 'Soumatome N3 · 文
           <nav aria-label="Khu vực học" className="flex items-center gap-1 rounded-xl border border-white/10 bg-white/[0.04] p-1">
             <Link to="/" className={`rounded-lg px-3 py-2 text-xs font-bold transition-colors ${location.pathname === '/' ? 'bg-accent-quizlet text-white' : 'text-primary-300 hover:bg-accent-quizlet/10 hover:text-white'}`}>
               <BookOpen className="mr-1.5 inline h-3.5 w-3.5" />Từ vựng
-            </Link>
-            <Link to="/grammar" className={`rounded-lg px-3 py-2 text-xs font-bold transition-colors ${location.pathname.startsWith('/grammar') ? 'bg-accent-quizlet text-white' : 'text-primary-300 hover:bg-accent-quizlet/10 hover:text-white'}`}>
-              <Brain className="mr-1.5 inline h-3.5 w-3.5" />Ngữ pháp
             </Link>
           </nav>
         </div>
