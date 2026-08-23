@@ -1,5 +1,6 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import { dictionaryApi } from '@/lib/api';
+import { getDictionaryLookupPosition } from '@/lib/dictionaryLookupPosition';
 
 const JAPANESE_TERM_PATTERN = /^[\u3041-\u3096\u30a1-\u30fa\u30fc\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\u3005\u3006\u30f6]+$/u;
 
@@ -77,7 +78,7 @@ export default function VocabularyExamples({ examples = [] }) {
     if (!rect.width && !rect.height) return false;
 
     selectionMadeRef.current = true;
-    setLookup({ term, sentence, left: rect.left + rect.width / 2, top: rect.bottom + 8 });
+    setLookup({ term, sentence, ...getDictionaryLookupPosition(rect, window.innerWidth) });
     setLookupState({ status: 'idle', result: null, error: '' });
     return true;
   };
