@@ -234,6 +234,7 @@ router.get('/session/:sessionId/current', async (req, res) => {
       kanji: vocab.kanji,
       hiragana: vocab.hiragana,
       meaning: vocab.meaning,
+      hanVietMeaning: vocab.hanVietMeaning,
       mode: session.mode,
       isReviewRound: session.currentIndex >= session.roundStartIndex && session.roundStartIndex > 0,
       reviewRoundSize: session.roundStartIndex > 0
@@ -517,6 +518,7 @@ router.get('/session/:sessionId/results', async (req, res) => {
         kanji: r.vocabulary.kanji,
         hiragana: r.vocabulary.hiragana,
         meaning: r.vocabulary.meaning,
+        hanVietMeaning: r.vocabulary.hanVietMeaning,
         userAnswer: r.userAnswer,
       }));
 

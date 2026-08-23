@@ -8,6 +8,10 @@ const migrationPath = path.join(
   __dirname,
   '../prisma/migrations/20260810120000_add_vocabulary_examples/migration.sql',
 );
+const hanVietMigrationPath = path.join(
+  __dirname,
+  '../prisma/migrations/20260823170000_add_han_viet_meaning/migration.sql',
+);
 const renderConfigPath = path.join(__dirname, '../render.yaml');
 
 test('vocabulary examples migration is safe when the column already exists', () => {
@@ -16,6 +20,15 @@ test('vocabulary examples migration is safe when the column already exists', () 
   assert.match(
     migration,
     /ADD\s+COLUMN\s+IF\s+NOT\s+EXISTS\s+"examples"/i,
+  );
+});
+
+test('Han-Viet migration adds a safe defaulted column', () => {
+  const migration = fs.readFileSync(hanVietMigrationPath, 'utf8');
+
+  assert.match(
+    migration,
+    /ADD\s+COLUMN\s+IF\s+NOT\s+EXISTS\s+\x22hanVietMeaning\x22\s+TEXT\s+NOT\s+NULL\s+DEFAULT\s+''/i,
   );
 });
 
