@@ -722,14 +722,14 @@ export default function StudyPage() {
                         </span>
                       ))}
                       <span lang="ja" className="hiragana-result text-emerald-600">{currentWord.hiragana}</span>
+
+                      <FlashcardExamples
+                        examples={currentWord.examples}
+                        isFlipped={isFlashcardFlipped}
+                      />
                       <span className="text-slate-400 text-xs mt-10">Nhấn để xem lại từ vựng</span>
                     </span>
                   </button>
-
-                  <FlashcardExamples
-                    examples={currentWord.examples}
-                    isFlipped={isFlashcardFlipped}
-                  />
 
                   <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-5">
                     <button
