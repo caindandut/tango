@@ -23,5 +23,6 @@ describe('FlashcardExamples', () => {
     expect(document.querySelector('.vocabulary-examples')).not.toBeInTheDocument();
     expect(document.querySelector('.flashcard-examples [lang="ja"]')).toHaveClass('text-base', 'sm:text-lg');
     expect(document.querySelector('.flashcard-examples [lang="ja"] + span')).toHaveClass('text-sm', 'sm:text-base');
+    expect(document.querySelectorAll('.flashcard-examples > span')[1]).not.toHaveClass('overflow-y-auto');
   });
 });
