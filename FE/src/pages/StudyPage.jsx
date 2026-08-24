@@ -707,7 +707,7 @@ export default function StudyPage() {
                       <span lang="ja" className="kanji-display">{currentWord.kanji?.trim() || currentWord.hiragana}</span>
                       <span className="text-slate-400 text-xs mt-10">Nhấn để lật thẻ</span>
                     </span>
-                    <span className="flashcard-face flashcard-back study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
+                    <span className="flashcard-face flashcard-back study-card flex flex-col items-center justify-start overflow-y-auto overscroll-contain !p-5 sm:!p-8">
                       <span className="text-xs uppercase tracking-widest text-emerald-600 font-semibold mb-8">Nghĩa & cách đọc</span>
                       {getStudyMeaningLines({
                         meaning: currentWord.meaning,

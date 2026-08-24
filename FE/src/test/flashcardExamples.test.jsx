@@ -21,5 +21,7 @@ describe('FlashcardExamples', () => {
     expect(screen.getByText('毎朝コーヒーを飲みます。')).toBeInTheDocument();
     expect(screen.getByText('Tôi uống cà phê mỗi sáng.')).toBeVisible();
     expect(document.querySelector('.vocabulary-examples')).not.toBeInTheDocument();
+    expect(document.querySelector('.flashcard-examples [lang="ja"]')).toHaveClass('text-base', 'sm:text-lg');
+    expect(document.querySelector('.flashcard-examples [lang="ja"] + span')).toHaveClass('text-sm', 'sm:text-base');
   });
 });

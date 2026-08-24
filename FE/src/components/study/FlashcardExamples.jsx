@@ -21,13 +21,13 @@ export default function FlashcardExamples({ examples = [], isFlipped }) {
         <span>Ví dụ</span>
         <span>{validExamples.length} câu</span>
       </span>
-      <span className="block max-h-24 space-y-2 overflow-y-auto pr-1 sm:max-h-28">
+      <span className="block max-h-36 space-y-2 overflow-y-auto pr-1 sm:max-h-44">
         {validExamples.map((example, index) => (
           <span key={example.japanese + index} className="block border-l-2 border-emerald-400/60 pl-3">
-            <span lang="ja" className="block font-japanese text-sm font-medium leading-6 text-slate-100">
+            <span lang="ja" className="block font-japanese text-base font-medium leading-7 text-slate-100 sm:text-lg">
               {example.japanese}
             </span>
-            <span className="mt-0.5 block text-xs leading-5 text-slate-300">
+            <span className="mt-0.5 block text-sm leading-6 text-slate-300 sm:text-base">
               {example.vietnamese}
             </span>
           </span>
