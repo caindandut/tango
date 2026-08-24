@@ -5,6 +5,7 @@ import { Toaster, toast } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
 import VocabularyExamples from '@/components/study/VocabularyExamples';
+import FlashcardExamples from '@/components/study/FlashcardExamples';
 import {
   getReadingCorrectAnswer,
   getKanaInputMode,
@@ -724,6 +725,11 @@ export default function StudyPage() {
                       <span className="text-slate-400 text-xs mt-10">Nhấn để xem lại từ vựng</span>
                     </span>
                   </button>
+
+                  <FlashcardExamples
+                    examples={currentWord.examples}
+                    isFlipped={isFlashcardFlipped}
+                  />
 
                   <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-5">
                     <button
