@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { getStudyMeaningLines } from '../lib/studyPresentation.js';
+import { getFlashcardNextLabel, getStudyMeaningLines } from '../lib/studyPresentation.js';
 
 describe('study meaning presentation', () => {
   it('places Han-Viet meaning before the Vietnamese meaning without a label', () => {
@@ -29,4 +29,9 @@ describe('study meaning presentation', () => {
       showHanVietMeaning: true,
     })).toEqual([{ type: 'meaning', value: 'Nữ giới' }]);
   });
+});
+
+it('keeps the flashcard next label stable while loading', () => {
+  expect(getFlashcardNextLabel(0, 2)).toBe('Tiếp');
+  expect(getFlashcardNextLabel(1, 2)).toBe('Hoàn thành');
 });

@@ -11,6 +11,7 @@ import {
   getKanaInputMode,
   shouldShowMeaning,
   getStudyMeaningLines,
+  getFlashcardNextLabel,
   shouldShowQuizMeaning,
 } from '@/lib/studyPresentation';
 import {
@@ -191,11 +192,13 @@ export default function StudyPage() {
 
   const handleFlashcardNext = useCallback(async () => {
     if (!currentWord || isLoading) return;
+    setIsFlashcardFlipped(false);
     await nextWord();
   }, [currentWord, isLoading, nextWord]);
 
   const handleFlashcardPrevious = useCallback(async () => {
     if (!currentWord || isLoading || currentWord.currentIndex === 0) return;
+    setIsFlashcardFlipped(false);
     await previousWord();
   }, [currentWord, isLoading, previousWord]);
 
@@ -698,8 +701,10 @@ export default function StudyPage() {
 
                   <button
                     type="button"
-                    className={`flashcard-scene w-full h-[18rem] sm:h-[24rem] text-left ${isFlashcardFlipped ? 'is-flipped' : ''}`}
+                    key={currentWord.id}
+                    className={`flashcard-scene flashcard-card-enter w-full h-[18rem] sm:h-[24rem] text-left ${isFlashcardFlipped ? 'is-flipped' : ''}`}
                     onClick={() => setIsFlashcardFlipped((flipped) => !flipped)}
+                    aria-busy={isLoading}
                     aria-label={isFlashcardFlipped ? 'Lật về mặt trước' : 'Lật sang mặt sau'}
                   >
                     <span className="flashcard-face flashcard-front study-card flex flex-col items-center justify-center !p-5 sm:!p-8">
@@ -750,17 +755,10 @@ export default function StudyPage() {
                       disabled={isLoading}
                       className="btn-check text-sm sm:text-base flex items-center justify-center gap-1 sm:gap-2"
                     >
-                      {isLoading ? (
-                        <>
-                          <LoaderCircle className="h-4 w-4 animate-spin" aria-hidden="true" />
-                          <span>Đang tải</span>
-                        </>
-                      ) : (
-                        <>
-                          {currentWord.currentIndex + 1 === currentWord.totalWords ? 'Hoàn thành' : 'Tiếp'}
-                          <ChevronRight className="w-4 h-4" />
-                        </>
-                      )}
+                      <>
+                        {getFlashcardNextLabel(currentWord.currentIndex, currentWord.totalWords)}
+                        <ChevronRight className="w-4 h-4" />
+                      </>
                     </button>
                   </div>
 

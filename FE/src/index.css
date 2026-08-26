@@ -590,3 +590,36 @@
     }
   }
 }
+
+.flashcard-card-enter {
+  animation: flashcard-card-enter 0.32s ease both;
+}
+
+.flashcard-scene[aria-busy="true"] {
+  opacity: 0.72;
+  transform: scale(0.985);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  cursor: progress;
+}
+
+@keyframes flashcard-card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flashcard-card-enter {
+    animation: none;
+  }
+
+  .flashcard-scene[aria-busy="true"] {
+    transition: none;
+  }
+}

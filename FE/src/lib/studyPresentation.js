@@ -33,3 +33,7 @@ export function getKanaInputMode(currentWord) {
 export function getReadingCorrectAnswer(checkResult, currentWord) {
   return checkResult?.correctAnswer || currentWord?.hiragana || '';
 }
+
+export function getFlashcardNextLabel(currentIndex, totalWords) {
+  return currentIndex + 1 === totalWords ? 'Hoàn thành' : 'Tiếp';
+}
