@@ -231,6 +231,7 @@ router.get('/session/:sessionId/current', async (req, res) => {
 
     res.json({
       id: vocab.id,
+      sourceNumber: vocab.sourceNumber,
       kanji: vocab.kanji,
       hiragana: vocab.hiragana,
       meaning: vocab.meaning,
@@ -249,6 +250,7 @@ router.get('/session/:sessionId/current', async (req, res) => {
       correctCount: session.correctCount,
       wrongCount: session.wrongCount,
       examples: Array.isArray(vocab.examples) ? vocab.examples : [],
+      relations: Array.isArray(vocab.relations) ? vocab.relations : [],
     });
   } catch (error) {
     console.error('Get current vocab error:', error);

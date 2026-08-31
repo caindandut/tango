@@ -11,7 +11,9 @@ const api = axios.create({
 
 // Vocabulary API
 export const vocabularyApi = {
-  getSets: () => api.get('/vocabulary/sets'),
+  getSets: (level) => api.get('/vocabulary/sets', {
+    params: level ? { level } : undefined,
+  }),
 
   getSet: (id) => api.get(`/vocabulary/sets/${id}`),
 

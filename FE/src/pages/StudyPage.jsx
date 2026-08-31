@@ -6,6 +6,7 @@ import useStudySession from '@/hooks/useStudySession';
 import HiraganaInput from '@/components/study/HiraganaInput';
 import VocabularyExamples from '@/components/study/VocabularyExamples';
 import FlashcardExamples from '@/components/study/FlashcardExamples';
+import VocabularyRelations from '@/components/study/VocabularyRelations';
 import {
   getReadingCorrectAnswer,
   getKanaInputMode,
@@ -730,6 +731,7 @@ export default function StudyPage() {
 
                       <FlashcardExamples
                         examples={currentWord.examples}
+                        relations={currentWord.relations}
                         isFlipped={isFlashcardFlipped}
                       />
                       <span className="text-slate-400 text-xs mt-10">Nhấn để xem lại từ vựng</span>
@@ -838,7 +840,12 @@ export default function StudyPage() {
                           <span>{checkResult.isCorrect ? 'Chính xác!' : 'Sai rồi!'}</span>
                         </div>
                       </div>
-                      {checkResult && <VocabularyExamples examples={currentWord.examples} />}
+                      {checkResult && (
+                        <>
+                          <VocabularyExamples examples={currentWord.examples} />
+                          <VocabularyRelations relations={currentWord.relations} />
+                        </>
+                      )}
                       <button
                         type="button"
                         onClick={handleNext}
@@ -992,7 +999,12 @@ export default function StudyPage() {
                       </div>
                     </div>
 
-                    {checkResult && <VocabularyExamples examples={currentWord.examples} />}
+                    {checkResult && (
+                      <>
+                        <VocabularyExamples examples={currentWord.examples} />
+                        <VocabularyRelations relations={currentWord.relations} />
+                      </>
+                    )}
 
                     {/* Next Button */}
                     <button

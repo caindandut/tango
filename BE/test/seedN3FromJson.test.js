@@ -2,23 +2,25 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const seedN3FromJson = require('../src/scripts/seedN3FromJson');
 
-test('startup seed skips reset when vocabulary already exists', async () => {
+test('startup seed creates missing N3 lessons without deleting existing N2 data', async () => {
   const calls = [];
   const tx = {
     $executeRaw: async () => calls.push('lock'),
     vocabularySet: {
-      count: async () => 1,
       findMany: async () => [],
-      deleteMany: async () => calls.push('delete'),
       create: async () => calls.push('create'),
+      deleteMany: async () => {
+        throw new Error('N3 seed must never delete N2 sets');
+      },
     },
   };
   const client = { $transaction: async (callback) => callback(tx) };
 
   const seeded = await seedN3FromJson({ client });
 
-  assert.equal(seeded, false);
-  assert.deepEqual(calls, ['lock']);
+  assert.equal(seeded, true);
+  assert.equal(calls[0], 'lock');
+  assert.equal(calls.filter((call) => call === 'create').length, 12);
 });
 
 test('startup seed backfills Han-Viet meanings without resetting existing vocabulary', async () => {
@@ -40,8 +42,8 @@ test('startup seed backfills Han-Viet meanings without resetting existing vocabu
   const tx = {
     $executeRaw: async () => {},
     vocabularySet: {
-      count: async () => existingSets.length,
       findMany: async () => existingSets,
+      update: async () => {},
       deleteMany: async () => { throw new Error('existing vocabulary must not be deleted'); },
       create: async () => { throw new Error('existing vocabulary must not be recreated'); },
     },

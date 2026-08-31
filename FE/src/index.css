@@ -35,6 +35,96 @@
   text-underline-offset: 0.18em;
 }
 
+.japanese-ruby {
+  ruby-position: over;
+  ruby-align: center;
+}
+
+.japanese-ruby__reading {
+  font-size: 0.52em;
+  line-height: 1;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.japanese-ruby u,
+.vocabulary-relations__japanese u {
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.15em;
+}
+
+.vocabulary-relations {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  padding: 0.875rem;
+  border: 1px solid #8ed8c4;
+  border-radius: 0.75rem;
+  background: #d9f3ec;
+  color: #12352f;
+  text-align: left;
+}
+
+.vocabulary-relations__group {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.625rem;
+}
+
+.vocabulary-relations__label {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid currentColor;
+  font-weight: 800;
+}
+
+.vocabulary-relations__items,
+.vocabulary-relations__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.vocabulary-relations__items {
+  gap: 0.625rem;
+}
+
+.vocabulary-relations__japanese {
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.vocabulary-relations__meaning {
+  color: #334155;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.vocabulary-relations--compact {
+  border-color: rgb(52 211 153 / 35%);
+  background: rgb(15 23 42 / 60%);
+  color: #f1f5f9;
+}
+
+.vocabulary-relations--compact .vocabulary-relations__meaning {
+  color: #cbd5e1;
+}
+
+@media (max-width: 360px) {
+  .vocabulary-relations__group {
+    grid-template-columns: 1.75rem minmax(0, 1fr);
+  }
+
+  .vocabulary-relations__label {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
 @layer components {
   /* Main study card */
   .study-card {

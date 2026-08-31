@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "level": "N2",
+  "source": {
+    "fileName": "minikara n2 bản dịch tiếng việt.pdf",
+    "sha256": "d609e077cb90958cb7b66946598e5e51d9ac023c362c8d8a988e3aa306ad26d6",
+    "pageCount": 361
+  },
+  "units": [
+    {
+      "unitNumber": 1,
+      "titleJa": "名詞A",
+      "rangeStart": 1,
+      "rangeEnd": 100,
+      "parts": [
+        {
+          "code": "N2-U01-P01",
+          "unitNumber": 1,
+          "partNumber": 1,
+          "title": "Phần 1: 1–50",
+          "rangeStart": 1,
+          "rangeEnd": 50,
+          "isSummary": false,
+          "words": []
+        },
+        {
+          "code": "N2-U01-P02",
+          "unitNumber": 1,
+          "partNumber": 2,
+          "title": "Phần 2: 51–100",
+          "rangeStart": 51,
+          "rangeEnd": 100,
+          "isSummary": false,
+          "words": []
+        }
+      ]
+    },
+    {
+      "unitNumber": 2,
+      "titleJa": "動詞A",
+      "rangeStart": 101,
+      "rangeEnd": 220,
+      "parts": [
+        {
+          "code": "N2-U02-P01",
+          "unitNumber": 2,
+          "partNumber": 1,
+          "title": "Phần 1: 101–160",
+          "rangeStart": 101,
+          "rangeEnd": 160,
+          "isSummary": false,
+          "words": []
+        },
+        {
+          "code": "N2-U02-P02",
+          "unitNumber": 2,
+          "partNumber": 2,
+          "title": "Phần 2: 161–220",
+          "rangeStart": 161,
+          "rangeEnd": 220,
+          "isSummary": false,
+          "words": []
+        }
+      ]
+    },
+    {
+      "unitNumber": 3,
+      "titleJa": "形容詞A",
+      "rangeStart": 221,
+      "rangeEnd": 270,
+      "parts": [
+        {
+          "code": "N2-U03-P01",
+          "unitNumber": 3,
+          "partNumber": 1,
+          "title": "Phần 1: 221–270",
+          "rangeStart": 221,
+          "rangeEnd": 270,
+          "isSummary": false,
+          "words": []
+        }
+      ]
+    },
+    {
+      "unitNumber": 4,
+      "titleJa": "名詞B",
+      "rangeStart": 271,
+      "rangeEnd": 460,
+      "parts": [
+        {
+          "code": "N2-U04-P01",
+          "unitNumber": 4,
+          "partNumber": 1,
+          "title": "Phần 1: 271–320",
+          "rangeStart": 271,
+          "rangeEnd": 320,
+          "isSummary": false,
+          "words": []
+        },
+        {
+          "code": "N2-U04-P02",
+          "unitNumber": 4,
+          "partNumber": 2,
+          "title": "Phần 2: 321–370",
+          "rangeStart": 321,
+          "rangeEnd": 370,
+          "isSummary": false,
+          "words": []
+        },
+        {
+          "code": "N2-U04-P03",
+          "unitNumber": 4,
+          "partNumber": 3,
+          "title": "まとめ1 複合動詞",
+          "rangeStart": 371,
+          "rangeEnd": 460,
+          "isSummary": true,
+          "words": []
+        }
+      ]
+    },
+    {
+      "unitNumber": 5,
+      "titleJa": "カタカナA",
+      "rangeStart": 461,
+      "rangeEnd": 510,
+      "parts": [
+        {
+          "code": "N2-U05-P01",
+          "unitNumber": 5,
+          "partNumber": 1,
+          "title": "Phần 1: 461–510",
+          "rangeStart": 461,
+          "rangeEnd": 510,
+          "isSummary": false,
+          "words": []
+        }
+      ]
+    },
+    {
+      "unitNumber": 6,
+      "titleJa": "副詞A＋接続詞",
+      "rangeStart": 511,
+      "rangeEnd": 580,
+      "parts": [
+        {
+          "code": "N2-U06-P01",
+          "unitNumber": 6,
+          "partNumber": 1,
+          "title": "Phần 1: 511–580",
+          "rangeStart": 511,
+          "rangeEnd": 580,
+          "isSummary": false,
+          "words": []
+        }
+      ]
+    },
+    {
+      "unitNumber": 7,
+      "titleJa": "名詞C",
+      "rangeStart": 581,
+      "rangeEnd": 680,
+      "parts": [
+        {
+          "code": "N2-U07-P01",
+          "unitNumber": 7,
+          "partNumber": 1,
+          "title": "Phần 1: 581–630",
+          "rangeStart": 581,
+          "rangeEnd": 630,
+          "isSummary": false,
+          "words": []
+        },
+        {
+          "code": "N2-U07-P02",
+          "unitNumber": 7,
+          "partNumber": 2,
+          "title": "Phần 2: 631–655",
+          "rangeStart": 631,
+          "rangeEnd": 655,
+          "isSummary": false,
+          "words": []
+        },
+        {
+          "code": "N2-U07-P03",
+          "unitNumber": 7,
+          "partNumber": 3,
+          "title": "まとめ2 同じ漢字を含む名詞",
+          "rangeStart": 656,
+          "rangeEnd": 680,
+          "isSummary": true,
+          "words": []
+        }
+      ]
+    },
+    {
+      "unitNumber": 8,
+      "titleJa": "動詞B",
+      "rangeStart": 681,
+      "rangeEnd": 790,
+      "parts": [
+        {
+          "code": "N2-U08-P01",
+          "unitNumber": 8,
+          "partNumber": 1,
+          "title": "Phần 1: 681–740",
+          "rangeStart": 681,
+          "rangeEnd": 740,
+          "isSummary": false,
+          "words": []
+        },
+        {
+          "code": "N2-U08-P02",
+          "unitNumber": 8,
+          "partNumber": 2,
+          "title": "Phần 2: 741–790",
+          "rangeStart": 741,
+          "rangeEnd": 790,
+          "isSummary": false,
+          "words": []
+        }
+      ]
+    },
+    {
+      "unitNumber": 9,
+      "titleJa": "カタカナB",
+      "rangeStart": 791,
+      "rangeEnd": 840,
+      "parts": [
+        {
+          "code": "N2-U09-P01",
+          "unitNumber": 9,
+          "partNumber": 1,
+          "title": "Phần 1: 791–840",
+          "rangeStart": 791,
+          "rangeEnd": 840,
+          "isSummary": false,
+          "words": []
+        }
+      ]
+    },
+    {
+      "unitNumber": 10,
+      "titleJa": "形容詞B",
+      "rangeStart": 841,
+      "rangeEnd": 890,
+      "parts": [
+        {
+          "code": "N2-U10-P01",
+          "unitNumber": 10,
+          "partNumber": 1,
+          "title": "Phần 1: 841–890",
+          "rangeStart": 841,
+          "rangeEnd": 890,
+          "isSummary": false,
+          "words": []
+        }
+      ]
+    },
+    {
+      "unitNumber": 11,
+      "titleJa": "名詞D",
+      "rangeStart": 891,
+      "rangeEnd": 990,
+      "parts": [
+        {
+          "code": "N2-U11-P01",
+          "unitNumber": 11,
+          "partNumber": 1,
+          "title": "Phần 1: 891–940",
+          "rangeStart": 891,
+          "rangeEnd": 940,
+          "isSummary": false,
+          "words": []
+        },
+        {
+          "code": "N2-U11-P02",
+          "unitNumber": 11,
+          "partNumber": 2,
+          "title": "Phần 2: 941–990",
+          "rangeStart": 941,
+          "rangeEnd": 990,
+          "isSummary": false,
+          "words": []
+        }
+      ]
+    },
+    {
+      "unitNumber": 12,
+      "titleJa": "動詞C",
+      "rangeStart": 991,
+      "rangeEnd": 1090,
+      "parts": [
+        {
+          "code": "N2-U12-P01",
+          "unitNumber": 12,
+          "partNumber": 1,
+          "title": "Phần 1: 991–1040",
+          "rangeStart": 991,
+          "rangeEnd": 1040,
+          "isSummary": false,
+          "words": []
+        },
+        {
+          "code": "N2-U12-P02",
+          "unitNumber": 12,
+          "partNumber": 2,
+          "title": "Phần 2: 1041–1090",
+          "rangeStart": 1041,
+          "rangeEnd": 1090,
+          "isSummary": false,
+          "words": []
+        }
+      ]
+    },
+    {
+      "unitNumber": 13,
+      "titleJa": "副詞B＋連体詞",
+      "rangeStart": 1091,
+      "rangeEnd": 1160,
+      "parts": [
+        {
+          "code": "N2-U13-P01",
+          "unitNumber": 13,
+          "partNumber": 1,
+          "title": "Phần 1: 1091–1160",
+          "rangeStart": 1091,
+          "rangeEnd": 1160,
+          "isSummary": false,
+          "words": []
+        }
+      ]
+    }
+  ],
+  "_instructions": "Điền thủ công đủ words theo từng ảnh page-XXX.png; giữ nguyên nghĩa, ví dụ, quan hệ, furigana và gạch chân. Xóa trường _instructions trước khi verify."
+}

@@ -51,13 +51,13 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal server error' });
 });
 
-const seedN3FromJson = require('./scripts/seedN3FromJson');
+const seedVocabulary = require('./scripts/seedVocabulary');
 
 // Seed database on server startup
 async function startServer() {
   try {
-    console.log('🔄 Syncing N3 vocabulary to Database...');
-    await seedN3FromJson();
+    console.log('🔄 Syncing published vocabulary to Database...');
+    await seedVocabulary();
   } catch (err) {
     console.error('⚠️ Failed to sync vocabulary on startup:', err);
   }
