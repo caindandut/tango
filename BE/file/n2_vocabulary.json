@@ -7800,7 +7800,7 @@
                     },
                     {
                       "japanese": "＿を閉める⇔開ける",
-                      "vietnamese": "Đóng van⇔Mở nút,",
+                      "vietnamese": "Đóng nút⇔Mở nút,",
                       "segments": [
                         {
                           "text": "＿",
@@ -7808,13 +7808,8 @@
                           "isUnderlined": true
                         },
                         {
-                          "text": "を閉める",
-                          "reading": "をしめる",
-                          "isUnderlined": false
-                        },
-                        {
-                          "text": "⇔開ける",
-                          "reading": "⇔あける",
+                          "text": "を閉める⇔開ける",
+                          "reading": "をしめる⇔あける",
                           "isUnderlined": false
                         }
                       ],
@@ -7867,6 +7862,106 @@
                         "pdfPage": 20,
                         "printedPage": 17
                       }
+                    },
+                    {
+                      "japanese": "水道＿",
+                      "vietnamese": "Van nước,",
+                      "segments": [
+                        {
+                          "text": "水道",
+                          "reading": "すいどう",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 20,
+                        "printedPage": 17
+                      }
+                    },
+                    {
+                      "japanese": "ガス＿",
+                      "vietnamese": "Van gas,",
+                      "segments": [
+                        {
+                          "text": "ガス",
+                          "reading": "ガス",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 20,
+                        "printedPage": 17
+                      }
+                    },
+                    {
+                      "japanese": "消火＿",
+                      "vietnamese": "Vòi nước cứu hỏa,",
+                      "segments": [
+                        {
+                          "text": "消火",
+                          "reading": "しょうか",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 20,
+                        "printedPage": 17
+                      }
+                    },
+                    {
+                      "japanese": "元＿",
+                      "vietnamese": "Van tổng (Gas, nước)",
+                      "segments": [
+                        {
+                          "text": "元",
+                          "reading": "もと",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 20,
+                        "printedPage": 17
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "ふた",
+                      "vietnamese": "Nắp, vung",
+                      "segments": [
+                        {
+                          "text": "ふた",
+                          "reading": "ふた",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 20,
+                        "printedPage": 17
+                      }
                     }
                   ]
                 },
@@ -7874,12 +7969,72 @@
                   "label": "関",
                   "items": [
                     {
-                      "japanese": "蓋",
-                      "vietnamese": "Nắp, vung",
+                      "japanese": "レバー",
+                      "vietnamese": "Cần gạt",
                       "segments": [
                         {
-                          "text": "蓋",
-                          "reading": "ふた",
+                          "text": "レバー",
+                          "reading": "レバー",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 20,
+                        "printedPage": 17
+                      }
+                    },
+                    {
+                      "japanese": "ノブ",
+                      "vietnamese": "Nấm vặn cửa",
+                      "segments": [
+                        {
+                          "text": "ノブ",
+                          "reading": "ノブ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 20,
+                        "printedPage": 17
+                      }
+                    },
+                    {
+                      "japanese": "ハンドル",
+                      "vietnamese": "Vô lăng",
+                      "segments": [
+                        {
+                          "text": "ハンドル",
+                          "reading": "ハンドル",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 20,
+                        "printedPage": 17
+                      }
+                    },
+                    {
+                      "japanese": "コック",
+                      "vietnamese": "Khóa van, vòi (Gas, ống nước, ...)",
+                      "segments": [
+                        {
+                          "text": "コック",
+                          "reading": "コック",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 20,
+                        "printedPage": 17
+                      }
+                    },
+                    {
+                      "japanese": "取っ手",
+                      "vietnamese": "Tay cầm",
+                      "segments": [
+                        {
+                          "text": "取っ手",
+                          "reading": "とって",
                           "isUnderlined": false
                         }
                       ],
@@ -58025,6 +58180,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "51a48ef3e8772ce8161a1881fe45b2b2b35fcf41f5e5b01b5a21adc36e03285e"
+    "candidateHash": "cc530d8c6f510dc15658226be08bbcf303049f12df09a17f3e378234cc7870c5"
   }
 }
