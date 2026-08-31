@@ -11014,8 +11014,8 @@
               "meaning": "Tổng",
               "examples": [
                 {
-                  "japanese": "東京23区の面積を合わせると、2,187km²になる。",
-                  "vietnamese": "Tổng diện tích 23 quận của Tokyo là 2187 km².",
+                  "japanese": "東京23区の面積を合計すると、2,187km²になる。",
+                  "vietnamese": "Tổng diện tích 23 quận của Tokyo là 2187 km2.",
                   "segments": [
                     {
                       "text": "東京23区の面積を",
@@ -11023,12 +11023,12 @@
                       "isUnderlined": false
                     },
                     {
-                      "text": "合わせる",
+                      "text": "合計",
                       "reading": "ごうけい",
                       "isUnderlined": true
                     },
                     {
-                      "text": "と、2,187km²になる。",
+                      "text": "すると、2,187km²になる。",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -11419,8 +11419,8 @@
               "meaning": "Chi tiêu",
               "examples": [
                 {
-                  "japanese": "今年は支出が多くて、お金が足りない。",
-                  "vietnamese": "Năm nay chi tiêu vượt quá thu nhập nên hết tiền.",
+                  "japanese": "今年は支出が収入を上回って赤字になった。",
+                  "vietnamese": "Năm nay chi tiêu vượt quá thu nhập nên bị lỗ.",
                   "segments": [
                     {
                       "text": "今年は",
@@ -11433,7 +11433,7 @@
                       "isUnderlined": true
                     },
                     {
-                      "text": "が多くて、お金が足りない。",
+                      "text": "が収入を上回って赤字になった。",
                       "reading": "ししゅつ",
                       "isUnderlined": false
                     }
@@ -12054,8 +12054,8 @@
                   }
                 },
                 {
-                  "japanese": "経費の無駄を減らせる。",
-                  "vietnamese": "Bị yêu cầu cắt giảm chi phí。",
+                  "japanese": "経費の削減が求められている。",
+                  "vietnamese": "Bị yêu cầu cắt giảm chi phí.",
                   "segments": [
                     {
                       "text": "経費",
@@ -12063,7 +12063,7 @@
                       "isUnderlined": true
                     },
                     {
-                      "text": "の無駄を減らせる。",
+                      "text": "の削減が求められている。",
                       "reading": "けいひ",
                       "isUnderlined": false
                     }
@@ -12254,11 +12254,11 @@
                   }
                 },
                 {
-                  "japanese": "今度の支出をチェックしているのだが、何度やっても勘定が合わない。",
-                  "vietnamese": "Tôi đang kiểm tra chi tiêu của tháng này nhưng dù tính bao nhiêu lần cũng không đúng。",
+                  "japanese": "今月の支出をチェックしているのだが、何度やっても勘定が合わない。",
+                  "vietnamese": "Tôi đang kiểm tra chi tiêu tháng này nhưng cho dù tính bao nhiêu lần vẫn không khớp.",
                   "segments": [
                     {
-                      "text": "今度の支出をチェックしているのだが、何度やっても",
+                      "text": "今月の支出をチェックしているのだが、何度やっても",
                       "reading": "かんじょう",
                       "isUnderlined": false
                     },
@@ -12413,9 +12413,9 @@
             },
             {
               "sourceNumber": 96,
-              "kanji": "要求",
-              "hiragana": "ようきゅう",
-              "hanVietMeaning": "YÊU CẦU",
+              "kanji": "請求",
+              "hiragana": "せいきゅう",
+              "hanVietMeaning": "THỈNH CẦU",
               "meaning": "Yêu cầu",
               "examples": [
                 {
@@ -12424,12 +12424,12 @@
                   "segments": [
                     {
                       "text": "大学に資料を",
-                      "reading": "ようきゅう",
+                      "reading": "せいきゅう",
                       "isUnderlined": false
                     },
                     {
                       "text": "請求",
-                      "reading": "ようきゅう",
+                      "reading": "せいきゅう",
                       "isUnderlined": true
                     },
                     {
@@ -12449,12 +12449,12 @@
                   "segments": [
                     {
                       "text": "彼は離婚するとき、1,000万円の慰謝料を",
-                      "reading": "ようきゅう",
+                      "reading": "せいきゅう",
                       "isUnderlined": false
                     },
                     {
                       "text": "請求",
-                      "reading": "ようきゅう",
+                      "reading": "せいきゅう",
                       "isUnderlined": true
                     },
                     {
@@ -12474,17 +12474,17 @@
                   "segments": [
                     {
                       "text": "今月は携帯電話をよく使ったので、",
-                      "reading": "ようきゅう",
+                      "reading": "せいきゅう",
                       "isUnderlined": false
                     },
                     {
                       "text": "請求",
-                      "reading": "ようきゅう",
+                      "reading": "せいきゅう",
                       "isUnderlined": true
                     },
                     {
                       "text": "がいつもの倍になった。",
-                      "reading": "ようきゅう",
+                      "reading": "せいきゅう",
                       "isUnderlined": false
                     }
                   ],
@@ -12807,6 +12807,31 @@
                     "pdfPage": 27,
                     "printedPage": 24
                   }
+                },
+                {
+                  "japanese": "会社は社員から新しい企画のアイデアを募集した。",
+                  "vietnamese": "Công ty đã tập hợp những ý tưởng cho bản kế hoạch mới từ nhân viên.",
+                  "segments": [
+                    {
+                      "text": "会社は社員から新しい企画のアイデアを",
+                      "reading": "ぼしゅう",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "募集",
+                      "reading": "ぼしゅう",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "した。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 28,
+                    "printedPage": 25
+                  }
                 }
               ],
               "relations": [],
@@ -12898,7 +12923,118 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿が高い⇔低い",
+                      "vietnamese": "Giá trị cao⇔Giá trị thấp",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "が高い⇔低い",
+                          "reading": "かち",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 28,
+                        "printedPage": 25
+                      }
+                    },
+                    {
+                      "japanese": "＿がある⇔ない",
+                      "vietnamese": "Có giá trị⇔Không có giá trị",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "がある⇔ない",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 28,
+                        "printedPage": 25
+                      }
+                    },
+                    {
+                      "japanese": "＿が上がる⇔下がる",
+                      "vietnamese": "Giá trị tăng lên⇔Giá trị giảm đi",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "が上がる⇔下がる",
+                          "reading": "かち",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 28,
+                        "printedPage": 25
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿観",
+                      "vietnamese": "Quan điểm phù hợp⇔Quan điểm không phù hợp",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "観",
+                          "reading": "かん",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 28,
+                        "printedPage": 25
+                      }
+                    },
+                    {
+                      "japanese": "価値観の相違から離婚することもあるそうだ。",
+                      "vietnamese": "(Ví dụ: Nghe nói cũng có trường hợp họ ly hôn do sự khác nhau trong quan điểm sống。)",
+                      "segments": [
+                        {
+                          "text": "価値観",
+                          "reading": "かちかん",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "の相違から離婚することもあるそうだ。",
+                          "reading": "かち",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 28,
+                        "printedPage": 25
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 28,
                 "printedPage": 25
@@ -57863,6 +57999,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "1a3bb14f7deb47a1b8091519db087e212d9bb23e9b437fd81b82f0aa1a7b78f8"
+    "candidateHash": "34fbda625b83f08235b0d23c6ec8b715e3c98f3b6aeae9213d76cd3cec5d2fbe"
   }
 }
