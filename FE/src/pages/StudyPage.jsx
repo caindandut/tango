@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Layers, Lightbulb, Keyboard, ListChecks, ChevronRight, RotateCcw, Trophy, X, Check, Shuffle, Eye, EyeOff, Settings2, ChevronDown, Maximize2, Minimize2, LoaderCircle } from 'lucide-react';
 import { Toaster, toast } from 'sonner';
 import useStudySession from '@/hooks/useStudySession';
@@ -32,11 +32,9 @@ const STUDY_MODE_OPTIONS = [
 export default function StudyPage() {
   const { setId } = useParams();
   const navigate = useNavigate();
-  const location = useLocation();
+
   const [inputValue, setInputValue] = useState('');
-  const [studyMode, setStudyMode] = useState(
-    location.pathname.startsWith('/flashcards/') ? 'flashcard' : 'reading',
-  );
+  const [studyMode, setStudyMode] = useState('flashcard');
   const [isFlashcardFlipped, setIsFlashcardFlipped] = useState(false);
   const [isShuffled, setIsShuffled] = useState(() => getStudyShufflePreference(setId));
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
