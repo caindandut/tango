@@ -67,7 +67,12 @@ test('N2 seed creates only N2 sets and never deletes existing N3 data', async ()
       },
     },
   };
-  const client = { $transaction: async (callback) => callback(tx) };
+  const client = {
+    $transaction: async (callback, options) => {
+      calls.push(['transaction-options', options]);
+      return callback(tx);
+    },
+  };
 
   await seedN2FromJson({
     client,
@@ -82,6 +87,9 @@ test('N2 seed creates only N2 sets and never deletes existing N3 data', async ()
   const wordCall = calls.find(([name]) => name === 'create-words')[1];
   assert.deepEqual(wordCall.data.map((word) => word.sourceNumber), [1, 2]);
   assert.ok(wordCall.data.every((word) => Array.isArray(word.relations)));
+  const transactionOptions = calls.find(([name]) => name === 'transaction-options')[1];
+  assert.equal(transactionOptions.maxWait, 30000);
+  assert.equal(transactionOptions.timeout, 120000);
 });
 
 test('N2 seed updates words in place on repeated runs to preserve study results', async () => {

@@ -6,6 +6,16 @@ const prisma = require('../lib/prisma');
 const { validateN2Vocabulary } = require('../vocabulary/validateN2Vocabulary');
 
 const DEFAULT_DATA_PATH = path.join(__dirname, '../../file/n2_vocabulary.json');
+// Prisma interactive transactions default to 5 seconds. A first deploy has
+// to upsert 22 sets and persist 1,160 JSON vocabulary records, so the default
+// is too short on Render's cold database connections.
+const DEFAULT_TRANSACTION_TIMEOUT_MS = 120000;
+const DEFAULT_TRANSACTION_MAX_WAIT_MS = 30000;
+
+function positiveInteger(value, fallback) {
+  const parsed = Number(value);
+  return Number.isInteger(parsed) && parsed > 0 ? parsed : fallback;
+}
 
 function setName(unit, part) {
   const unitLabel = `Unit ${String(unit.unitNumber).padStart(2, '0')} - ${unit.titleJa}`;
@@ -76,12 +86,22 @@ async function seedN2FromJson({
 } = {}) {
   const candidate = data || JSON.parse(fs.readFileSync(DEFAULT_DATA_PATH, 'utf8'));
   const validated = validator(candidate, { requireVerified: true });
+  const transactionOptions = {
+    maxWait: positiveInteger(
+      process.env.N2_SEED_TRANSACTION_MAX_WAIT_MS,
+      DEFAULT_TRANSACTION_MAX_WAIT_MS,
+    ),
+    timeout: positiveInteger(
+      process.env.N2_SEED_TRANSACTION_TIMEOUT_MS,
+      DEFAULT_TRANSACTION_TIMEOUT_MS,
+    ),
+  };
   await client.$transaction(async (tx) => {
     await tx.$executeRaw`SELECT pg_advisory_xact_lock(hashtext('tango-n2-vocabulary-seed'))`;
     for (const unit of validated.units) {
       for (const part of unit.parts) await syncPart(tx, unit, part);
     }
-  });
+  }, transactionOptions);
   console.log('✅ Successfully synced N2 Mimikara vocabulary without resetting N3 data');
   return true;
 }
@@ -90,6 +110,7 @@ module.exports = seedN2FromJson;
 module.exports.setName = setName;
 module.exports.syncPart = syncPart;
 module.exports.wordData = wordData;
+module.exports.positiveInteger = positiveInteger;
 
 if (require.main === module) {
   seedN2FromJson()
