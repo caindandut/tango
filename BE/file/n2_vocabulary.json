@@ -8504,7 +8504,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿者",
+                      "vietnamese": "Người dẫn chương trình",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "者",
+                          "reading": "しゃ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 21,
+                        "printedPage": 18
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 21,
                 "printedPage": 18
@@ -57999,6 +58025,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "34fbda625b83f08235b0d23c6ec8b715e3c98f3b6aeae9213d76cd3cec5d2fbe"
+    "candidateHash": "51a48ef3e8772ce8161a1881fe45b2b2b35fcf41f5e5b01b5a21adc36e03285e"
   }
 }
