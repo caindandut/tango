@@ -32,6 +32,17 @@ describe('N2 structured vocabulary rendering', () => {
     expect(container.querySelector('[dangerouslySetInnerHTML]')).not.toBeInTheDocument();
   });
 
+  it('renders a relation blank as one source glyph without a duplicate HTML underline', () => {
+    const { container } = render(
+      <JapaneseSegments
+        segments={[{ text: '＿', reading: '', isUnderlined: true }]}
+      />,
+    );
+
+    expect(container.textContent).toBe('＿');
+    expect(container.querySelectorAll('u')).toHaveLength(0);
+  });
+
   it('repairs a whole-sentence underline using the active vocabulary term', () => {
     const { container } = render(
       <JapaneseSegments
@@ -132,7 +143,7 @@ describe('N2 structured vocabulary rendering', () => {
     );
 
     const underlined = [...container.querySelectorAll('u')].map((node) => node.textContent);
-    expect(underlined).toContain('＿');
+    expect(container.textContent).toContain('＿');
     expect(underlined).toContain('はめる');
     expect(underlined).not.toContain('当てはめる');
     expect(underlined).not.toContain('（名）占い');

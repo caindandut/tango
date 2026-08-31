@@ -25,7 +25,11 @@ function splitRuns(text) {
 }
 
 function decorate(text, isUnderlined) {
-  return isUnderlined ? <u>{text}</u> : text;
+  // A relation blank is a literal full-width underscore from the source.
+  // It already contains its own horizontal stroke, so wrapping it in <u>
+  // would render a duplicate underline in the study card.
+  if (isUnderlined && !/^[＿_]+$/u.test(text)) return <u>{text}</u>;
+  return text;
 }
 
 function renderWithRuby(text, reading, isUnderlined, key) {
