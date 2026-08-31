@@ -6729,7 +6729,7 @@
                     },
                     {
                       "text": "を買いに行った。",
-                      "reading": "ざいりょう",
+                      "reading": "をかいにいった。",
                       "isUnderlined": false
                     }
                   ],
@@ -6754,7 +6754,7 @@
                     },
                     {
                       "text": "は、木・竹・土など、自然のものが多い。",
-                      "reading": "ざいりょう",
+                      "reading": "は、き・たけ・つちなど、しぜんのものがおおい。",
                       "isUnderlined": false
                     }
                   ],
@@ -6779,7 +6779,7 @@
                     },
                     {
                       "text": "が足りない。",
-                      "reading": "ざいりょう",
+                      "reading": "がたりない。",
                       "isUnderlined": false
                     }
                   ],
@@ -6800,7 +6800,7 @@
                         {
                           "text": "原料",
                           "reading": "げんりょう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -6815,7 +6815,7 @@
                         {
                           "text": "素材",
                           "reading": "そざい",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -6829,17 +6829,12 @@
                   "label": "合",
                   "items": [
                     {
-                      "japanese": "判断＿",
+                      "japanese": "判断",
                       "vietnamese": "Dữ liệu đánh giá",
                       "segments": [
                         {
                           "text": "判断",
                           "reading": "はんだん",
-                          "isUnderlined": false
-                        },
-                        {
-                          "text": "＿",
-                          "reading": "",
                           "isUnderlined": true
                         }
                       ],
@@ -6849,17 +6844,12 @@
                       }
                     },
                     {
-                      "japanese": "不安＿",
+                      "japanese": "不安",
                       "vietnamese": "Lý do bất an",
                       "segments": [
                         {
                           "text": "不安",
                           "reading": "ふあん",
-                          "isUnderlined": false
-                        },
-                        {
-                          "text": "＿",
-                          "reading": "",
                           "isUnderlined": true
                         }
                       ],
@@ -6899,7 +6889,7 @@
                     },
                     {
                       "text": "を拾った。",
-                      "reading": "いし",
+                      "reading": "をひろった。",
                       "isUnderlined": false
                     }
                   ],
@@ -6919,7 +6909,7 @@
                     },
                     {
                       "text": "につまずいて転んだ。",
-                      "reading": "いし",
+                      "reading": "につまずいてころんだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -6940,7 +6930,7 @@
                         {
                           "text": "土",
                           "reading": "つち",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -6955,7 +6945,7 @@
                         {
                           "text": "泥",
                           "reading": "どろ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -6970,7 +6960,7 @@
                         {
                           "text": "砂",
                           "reading": "すな",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -6985,7 +6975,7 @@
                         {
                           "text": "岩",
                           "reading": "いわ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -7014,17 +7004,17 @@
                   "segments": [
                     {
                       "text": "古新聞を",
-                      "reading": "ひも",
+                      "reading": "ふるしんぶんを",
                       "isUnderlined": false
                     },
                     {
                       "text": "ひも",
-                      "reading": "",
+                      "reading": "ひも",
                       "isUnderlined": true
                     },
                     {
                       "text": "で縛る。",
-                      "reading": "ひも",
+                      "reading": "でしばる。",
                       "isUnderlined": false
                     }
                   ],
@@ -7039,17 +7029,17 @@
                   "segments": [
                     {
                       "text": "靴の",
-                      "reading": "ひも",
+                      "reading": "くつの",
                       "isUnderlined": false
                     },
                     {
                       "text": "ひも",
-                      "reading": "",
+                      "reading": "ひも",
                       "isUnderlined": true
                     },
                     {
                       "text": "を結ぶ。",
-                      "reading": "ひも",
+                      "reading": "をむすぶ。",
                       "isUnderlined": false
                     }
                   ],
@@ -7140,7 +7130,7 @@
                         {
                           "text": "綱",
                           "reading": "つな",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -7155,7 +7145,7 @@
                         {
                           "text": "ロープ",
                           "reading": "ロープ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -7170,7 +7160,7 @@
                         {
                           "text": "縄",
                           "reading": "なわ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -7185,7 +7175,7 @@
                         {
                           "text": "鎖",
                           "reading": "くさり",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -7213,18 +7203,18 @@
                   "vietnamese": "Cửa hàng đó lúc nào cũng đông, vào cửa cần vé thứ tự.",
                   "segments": [
                     {
-                      "text": "あの店はいつも込んでいて、入るのに整理",
+                      "text": "あの店はいつも込んでいて、入るのに",
                       "reading": "けん",
                       "isUnderlined": false
                     },
                     {
-                      "text": "券",
-                      "reading": "けん",
+                      "text": "整理券",
+                      "reading": "せいりけん",
                       "isUnderlined": true
                     },
                     {
                       "text": "が必要だ。",
-                      "reading": "けん",
+                      "reading": "がひつようだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -7245,7 +7235,7 @@
                         {
                           "text": "入場券",
                           "reading": "にゅうじょうけん",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -7260,7 +7250,7 @@
                         {
                           "text": "整理券",
                           "reading": "せいりけん",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -7275,7 +7265,7 @@
                         {
                           "text": "券売機",
                           "reading": "けんばいき",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -7295,7 +7285,7 @@
                         {
                           "text": "チケット",
                           "reading": "チケット",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -7310,7 +7300,7 @@
                         {
                           "text": "切符",
                           "reading": "きっぷ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -7349,7 +7339,7 @@
                     },
                     {
                       "text": "を作る。",
-                      "reading": "めいぼ",
+                      "reading": "をつくる。",
                       "isUnderlined": false
                     }
                   ],
@@ -7424,7 +7414,7 @@
                   "segments": [
                     {
                       "text": "成績を",
-                      "reading": "ひょう",
+                      "reading": "せいせきを",
                       "isUnderlined": false
                     },
                     {
@@ -7434,7 +7424,7 @@
                     },
                     {
                       "text": "にする。",
-                      "reading": "",
+                      "reading": "にする。",
                       "isUnderlined": false
                     }
                   ],
@@ -7449,7 +7439,7 @@
                   "segments": [
                     {
                       "text": "学生の携帯の番号がこの",
-                      "reading": "ひょう",
+                      "reading": "がくせいのけいたいのばんごうがこの",
                       "isUnderlined": false
                     },
                     {
@@ -7459,7 +7449,7 @@
                     },
                     {
                       "text": "に載っている。",
-                      "reading": "ひょう",
+                      "reading": "にのっている。",
                       "isUnderlined": false
                     }
                   ],
@@ -7514,56 +7504,6 @@
                       }
                     }
                   ]
-                },
-                {
-                  "label": "関",
-                  "items": [
-                    {
-                      "japanese": "【予定／成績／統計／一覧…】表",
-                      "vietnamese": "Bảng (Dự định/thành tích/thống kê/danh sách...)",
-                      "segments": [
-                        {
-                          "text": "【予定／成績／統計／一覧…】表",
-                          "reading": "ひょう",
-                          "isUnderlined": false
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 20,
-                        "printedPage": 17
-                      }
-                    },
-                    {
-                      "japanese": "グラフ",
-                      "vietnamese": "Biểu đồ",
-                      "segments": [
-                        {
-                          "text": "グラフ",
-                          "reading": "グラフ",
-                          "isUnderlined": false
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 20,
-                        "printedPage": 17
-                      }
-                    },
-                    {
-                      "japanese": "リスト",
-                      "vietnamese": "Danh sách",
-                      "segments": [
-                        {
-                          "text": "リスト",
-                          "reading": "リスト",
-                          "isUnderlined": false
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 20,
-                        "printedPage": 17
-                      }
-                    }
-                  ]
                 }
               ],
               "source": {
@@ -7589,7 +7529,7 @@
                     },
                     {
                       "text": "に糸を通す。",
-                      "reading": "はり",
+                      "reading": "にいとをとおす。",
                       "isUnderlined": false
                     }
                   ],
@@ -7609,7 +7549,7 @@
                     },
                     {
                       "text": "で縫う。",
-                      "reading": "はり",
+                      "reading": "でぬう。",
                       "isUnderlined": false
                     }
                   ],
@@ -7634,7 +7574,7 @@
                     },
                     {
                       "text": "で人を刺す。",
-                      "reading": "はり",
+                      "reading": "でひとをさす。",
                       "isUnderlined": false
                     }
                   ],
@@ -7653,9 +7593,14 @@
                       "vietnamese": "Kim (Đồng hồ/tiêm/dập ghim,...)",
                       "segments": [
                         {
-                          "text": "【時計／注射／ホチキス…】の針",
+                          "text": "【時計／注射／ホチキス…】の",
                           "reading": "はり",
                           "isUnderlined": false
+                        },
+                        {
+                          "text": "針",
+                          "reading": "はり",
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -7694,7 +7639,7 @@
                     },
                     {
                       "text": "を抜く。",
-                      "reading": "せん",
+                      "reading": "をぬく。",
                       "isUnderlined": false
                     }
                   ],
@@ -7709,7 +7654,7 @@
                   "segments": [
                     {
                       "text": "風呂に",
-                      "reading": "せん",
+                      "reading": "ふろに",
                       "isUnderlined": false
                     },
                     {
@@ -7719,7 +7664,7 @@
                     },
                     {
                       "text": "をする。",
-                      "reading": "",
+                      "reading": "をする。",
                       "isUnderlined": false
                     }
                   ],
@@ -7734,7 +7679,7 @@
                   "segments": [
                     {
                       "text": "水道の",
-                      "reading": "せん",
+                      "reading": "すいどうの",
                       "isUnderlined": false
                     },
                     {
@@ -7744,7 +7689,7 @@
                     },
                     {
                       "text": "を閉める。",
-                      "reading": "せん",
+                      "reading": "をしめる。",
                       "isUnderlined": false
                     }
                   ],
@@ -8074,7 +8019,7 @@
                     },
                     {
                       "text": "で眼鏡がくもってしまった。",
-                      "reading": "ゆげ",
+                      "reading": "でめがねがくもってしまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -8089,7 +8034,7 @@
                   "segments": [
                     {
                       "text": "大浴場は",
-                      "reading": "ゆげ",
+                      "reading": "だいよくじょうは",
                       "isUnderlined": false
                     },
                     {
@@ -8099,7 +8044,7 @@
                     },
                     {
                       "text": "で向こうの方が見えなかった。",
-                      "reading": "ゆげ",
+                      "reading": "でむこうのほうがみえなかった。",
                       "isUnderlined": false
                     }
                   ],
@@ -8154,7 +8099,7 @@
                   "segments": [
                     {
                       "text": "私の部屋は南向きで",
-                      "reading": "ひあたり",
+                      "reading": "わたしのへやはみなみむきで",
                       "isUnderlined": false
                     },
                     {
@@ -8164,7 +8109,7 @@
                     },
                     {
                       "text": "がいい。",
-                      "reading": "",
+                      "reading": "がいい。",
                       "isUnderlined": false
                     }
                   ],
@@ -8185,7 +8130,7 @@
                         {
                           "text": "日当たり",
                           "reading": "ひあたり",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         },
                         {
                           "text": "がいい",
@@ -8224,7 +8169,7 @@
                   "segments": [
                     {
                       "text": "昨夜は一人でワイン一本を",
-                      "reading": "から",
+                      "reading": "さくやはひとりでワインいっぽんを",
                       "isUnderlined": false
                     },
                     {
@@ -8234,7 +8179,7 @@
                     },
                     {
                       "text": "にした。",
-                      "reading": "",
+                      "reading": "にした。",
                       "isUnderlined": false
                     }
                   ],
@@ -8255,7 +8200,7 @@
                         {
                           "text": "空っぽ",
                           "reading": "からっぽ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -8270,7 +8215,7 @@
                         {
                           "text": "空っぽの財布／本棚／部屋／頭…",
                           "reading": "からっぽのさいふ／ほんだな／へや／あたま…",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -8299,7 +8244,7 @@
                   "segments": [
                     {
                       "text": "地震で家が",
-                      "reading": "ななめ",
+                      "reading": "じしんでいえが",
                       "isUnderlined": false
                     },
                     {
@@ -8309,7 +8254,7 @@
                     },
                     {
                       "text": "に傾いた。",
-                      "reading": "ななめ",
+                      "reading": "にかたむいた。",
                       "isUnderlined": false
                     }
                   ],
@@ -8324,7 +8269,7 @@
                   "segments": [
                     {
                       "text": "壁にかかっているカレンダーが",
-                      "reading": "ななめ",
+                      "reading": "かべにかかっているカレンダーが",
                       "isUnderlined": false
                     },
                     {
@@ -8334,7 +8279,7 @@
                     },
                     {
                       "text": "になっている。",
-                      "reading": "",
+                      "reading": "になっている。",
                       "isUnderlined": false
                     }
                   ],
@@ -8354,7 +8299,7 @@
                     },
                     {
                       "text": "向かいの店は客がよく入っている。",
-                      "reading": "ななめ",
+                      "reading": "むかいのみせはきゃくがよくはいっている。",
                       "isUnderlined": false
                     }
                   ],
@@ -8374,7 +8319,7 @@
                     },
                     {
                       "text": "に線を引く。",
-                      "reading": "ななめ",
+                      "reading": "にせんをひく。",
                       "isUnderlined": false
                     }
                   ],
@@ -8400,7 +8345,7 @@
                         {
                           "text": "ご機嫌",
                           "reading": "ごきげん",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -8429,17 +8374,17 @@
                   "segments": [
                     {
                       "text": "会社に応募するにあたり、",
-                      "reading": "りれき",
+                      "reading": "かいしゃにおうぼするにあたり、",
                       "isUnderlined": false
                     },
                     {
-                      "text": "履歴",
-                      "reading": "りれき",
+                      "text": "履歴書",
+                      "reading": "りれきしょ",
                       "isUnderlined": true
                     },
                     {
-                      "text": "書を書いた。",
-                      "reading": "りれき",
+                      "text": "を書いた。",
+                      "reading": "をかいた。",
                       "isUnderlined": false
                     }
                   ],
@@ -8460,7 +8405,7 @@
                         {
                           "text": "履歴書",
                           "reading": "りれきしょ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -8475,7 +8420,7 @@
                         {
                           "text": "着信履歴",
                           "reading": "ちゃくしんりれき",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -8504,7 +8449,7 @@
                   "segments": [
                     {
                       "text": "うちの父は、釣りを",
-                      "reading": "どうらく",
+                      "reading": "うちのちちは、つりを",
                       "isUnderlined": false
                     },
                     {
@@ -8514,7 +8459,7 @@
                     },
                     {
                       "text": "として楽しんでいる。",
-                      "reading": "どうらく",
+                      "reading": "としてたのしんでいる。",
                       "isUnderlined": false
                     }
                   ],
@@ -8529,17 +8474,17 @@
                   "segments": [
                     {
                       "text": "「この辺は",
-                      "reading": "どうらく",
+                      "reading": "このへんは",
                       "isUnderlined": false
                     },
                     {
                       "text": "娯楽",
-                      "reading": "どうらく",
+                      "reading": "ごらく",
                       "isUnderlined": true
                     },
                     {
                       "text": "が少ないから、若い人は街へ出て行ってしまうんです」",
-                      "reading": "どうらく",
+                      "reading": "がすくないから、わかいひとはまちへでていってしまうんです",
                       "isUnderlined": false
                     }
                   ],
@@ -8614,7 +8559,7 @@
                   "segments": [
                     {
                       "text": "友人に結婚式の",
-                      "reading": "しかい",
+                      "reading": "ゆうじんにけっこんしきの",
                       "isUnderlined": false
                     },
                     {
@@ -8624,7 +8569,7 @@
                     },
                     {
                       "text": "を頼んだ。",
-                      "reading": "しかい",
+                      "reading": "をたのんだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -8639,7 +8584,7 @@
                   "segments": [
                     {
                       "text": "【会議／番組…】の",
-                      "reading": "しかい",
+                      "reading": "【かいぎ／ばんぐみ…】の",
                       "isUnderlined": false
                     },
                     {
@@ -8649,7 +8594,7 @@
                     },
                     {
                       "text": "をする。",
-                      "reading": "",
+                      "reading": "をする。",
                       "isUnderlined": false
                     }
                   ],
@@ -8704,7 +8649,7 @@
                   "segments": [
                     {
                       "text": "新入社員を",
-                      "reading": "かんげい",
+                      "reading": "しんにゅうしゃいんを",
                       "isUnderlined": false
                     },
                     {
@@ -8714,7 +8659,7 @@
                     },
                     {
                       "text": "する会が開かれた。",
-                      "reading": "かんげい",
+                      "reading": "するかいがひらかれた。",
                       "isUnderlined": false
                     }
                   ],
@@ -8729,7 +8674,7 @@
                   "segments": [
                     {
                       "text": "宇宙旅行をした人はどこへ行っても大",
-                      "reading": "かんげい",
+                      "reading": "うちゅうりょこうをしたひとはどこへいってもだい",
                       "isUnderlined": false
                     },
                     {
@@ -8739,7 +8684,7 @@
                     },
                     {
                       "text": "を受けた。",
-                      "reading": "かんげい",
+                      "reading": "をうけた。",
                       "isUnderlined": false
                     }
                   ],
@@ -8754,7 +8699,7 @@
                   "segments": [
                     {
                       "text": "「どんな意見を言ってくれても、議論はいつでも",
-                      "reading": "かんげい",
+                      "reading": "どんないけんをいってくれても、ぎろんはいつでも",
                       "isUnderlined": false
                     },
                     {
@@ -8764,7 +8709,7 @@
                     },
                     {
                       "text": "だ。」",
-                      "reading": "",
+                      "reading": "だ。",
                       "isUnderlined": false
                     }
                   ],
@@ -8785,7 +8730,7 @@
                         {
                           "text": "歓迎",
                           "reading": "かんげい",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         },
                         {
                           "text": "／ブーイングを受ける",
@@ -8810,7 +8755,7 @@
                         {
                           "text": "大歓迎",
                           "reading": "だいかんげい",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -8859,7 +8804,7 @@
                   "segments": [
                     {
                       "text": "【銀行／役所／病院…】の",
-                      "reading": "まどぐち",
+                      "reading": "【ぎんこう／やくしょ／びょういん…】の",
                       "isUnderlined": false
                     },
                     {
@@ -8869,7 +8814,7 @@
                     },
                     {
                       "text": "には大勢の人が並んでいた。",
-                      "reading": "まどぐち",
+                      "reading": "にはおおぜいのひとがならんでいた。",
                       "isUnderlined": false
                     }
                   ],
@@ -8884,7 +8829,7 @@
                   "segments": [
                     {
                       "text": "○○友好協会は、A国との文化交流の",
-                      "reading": "まどぐち",
+                      "reading": "○○ゆうこうきょうかいは、Aこくとのぶんかこうりゅうの",
                       "isUnderlined": false
                     },
                     {
@@ -8894,7 +8839,7 @@
                     },
                     {
                       "text": "となっている。",
-                      "reading": "",
+                      "reading": "となっている。",
                       "isUnderlined": false
                     }
                   ],
@@ -8923,7 +8868,7 @@
                   "segments": [
                     {
                       "text": "入学の",
-                      "reading": "てつづき",
+                      "reading": "にゅうがくの",
                       "isUnderlined": false
                     },
                     {
@@ -8933,7 +8878,7 @@
                     },
                     {
                       "text": "をする。",
-                      "reading": "",
+                      "reading": "をする。",
                       "isUnderlined": false
                     }
                   ],
@@ -8948,7 +8893,7 @@
                   "segments": [
                     {
                       "text": "正規の",
-                      "reading": "てつづき",
+                      "reading": "せいきの",
                       "isUnderlined": false
                     },
                     {
@@ -8958,7 +8903,7 @@
                     },
                     {
                       "text": "を経て商品を輸入した。",
-                      "reading": "てつづき",
+                      "reading": "をへてしょうひんをゆにゅうした。",
                       "isUnderlined": false
                     }
                   ],
@@ -8978,7 +8923,7 @@
                     },
                     {
                       "text": "には時間がかかる。",
-                      "reading": "てつづき",
+                      "reading": "にはじかんがかかる。",
                       "isUnderlined": false
                     }
                   ],
@@ -9007,7 +8952,7 @@
                   "segments": [
                     {
                       "text": "駅からうちまで、",
-                      "reading": "とほ",
+                      "reading": "えきからうちまで、",
                       "isUnderlined": false
                     },
                     {
@@ -9017,7 +8962,7 @@
                     },
                     {
                       "text": "10分です。",
-                      "reading": "とほ",
+                      "reading": "じゅっぷんです。",
                       "isUnderlined": false
                     }
                   ],
@@ -9032,7 +8977,7 @@
                   "segments": [
                     {
                       "text": "会社に",
-                      "reading": "とほ",
+                      "reading": "かいしゃに",
                       "isUnderlined": false
                     },
                     {
@@ -9042,7 +8987,7 @@
                     },
                     {
                       "text": "で通っている。",
-                      "reading": "とほ",
+                      "reading": "でかよっている。",
                       "isUnderlined": false
                     }
                   ],
@@ -9071,7 +9016,7 @@
                   "segments": [
                     {
                       "text": "日曜日の都心は",
-                      "reading": "ちゅうしゃ",
+                      "reading": "にちようびのとしんは",
                       "isUnderlined": false
                     },
                     {
@@ -9081,7 +9026,7 @@
                     },
                     {
                       "text": "するところがない。",
-                      "reading": "",
+                      "reading": "するところがない。",
                       "isUnderlined": false
                     }
                   ],
@@ -9095,13 +9040,13 @@
                   "vietnamese": "Bị bắt vì đỗ xe không đúng quy định.",
                   "segments": [
                     {
-                      "text": "駐車",
-                      "reading": "ちゅうしゃ",
+                      "text": "駐車違反",
+                      "reading": "ちゅうしゃいはん",
                       "isUnderlined": true
                     },
                     {
-                      "text": "違反で捕まった。",
-                      "reading": "ちゅうしゃ",
+                      "text": "で捕まった。",
+                      "reading": "でつかまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -9187,7 +9132,7 @@
                         {
                           "text": "停車",
                           "reading": "ていしゃ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9216,7 +9161,7 @@
                   "segments": [
                     {
                       "text": "【法律／規則…】に",
-                      "reading": "いはん",
+                      "reading": "【ほうりつ／きそく…】に",
                       "isUnderlined": false
                     },
                     {
@@ -9226,7 +9171,7 @@
                     },
                     {
                       "text": "する。",
-                      "reading": "",
+                      "reading": "する。",
                       "isUnderlined": false
                     }
                   ],
@@ -9312,7 +9257,7 @@
                         {
                           "text": "反する",
                           "reading": "はんする",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9351,7 +9296,7 @@
                     },
                     {
                       "text": "は９時まで営業している。",
-                      "reading": "へいじつ",
+                      "reading": "はくじまでえいぎょうしている。",
                       "isUnderlined": false
                     }
                   ],
@@ -9372,7 +9317,7 @@
                         {
                           "text": "土日",
                           "reading": "どにち",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9387,7 +9332,7 @@
                         {
                           "text": "週末",
                           "reading": "しゅうまつ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9402,7 +9347,7 @@
                         {
                           "text": "祝祭日",
                           "reading": "しゅくさいじつ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9417,7 +9362,7 @@
                         {
                           "text": "休日",
                           "reading": "きゅうじつ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9451,7 +9396,7 @@
                     },
                     {
                       "text": "を書く。",
-                      "reading": "ひづけ",
+                      "reading": "をかく。",
                       "isUnderlined": false
                     }
                   ],
@@ -9471,7 +9416,7 @@
                     },
                     {
                       "text": "のない書類は無効だ。",
-                      "reading": "ひづけ",
+                      "reading": "のないしょるいはむこうだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -9517,7 +9462,7 @@
                         {
                           "text": "日時",
                           "reading": "にちじ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9546,7 +9491,7 @@
                   "segments": [
                     {
                       "text": "朝晩は冷え込むが、",
-                      "reading": "にっちゅう",
+                      "reading": "あさばんはひえこむが、",
                       "isUnderlined": false
                     },
                     {
@@ -9556,7 +9501,7 @@
                     },
                     {
                       "text": "は穏やかな天気が続いている。",
-                      "reading": "にっちゅう",
+                      "reading": "はおだやかなてんきがつづいている。",
                       "isUnderlined": false
                     }
                   ],
@@ -9577,7 +9522,7 @@
                         {
                           "text": "夜間",
                           "reading": "やかん",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9606,7 +9551,7 @@
                   "segments": [
                     {
                       "text": "急な用事で、旅行の",
-                      "reading": "にってい",
+                      "reading": "きゅうなようじで、りょこうの",
                       "isUnderlined": false
                     },
                     {
@@ -9616,7 +9561,7 @@
                     },
                     {
                       "text": "を変えた。",
-                      "reading": "にってい",
+                      "reading": "をかえた。",
                       "isUnderlined": false
                     }
                   ],
@@ -9631,7 +9576,7 @@
                   "segments": [
                     {
                       "text": "仕事の",
-                      "reading": "にってい",
+                      "reading": "しごとの",
                       "isUnderlined": false
                     },
                     {
@@ -9641,7 +9586,7 @@
                     },
                     {
                       "text": "がぎっしり詰まっている。",
-                      "reading": "にってい",
+                      "reading": "がぎっしりつまっている。",
                       "isUnderlined": false
                     }
                   ],
@@ -9682,7 +9627,7 @@
                         {
                           "text": "予定",
                           "reading": "よてい",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9697,7 +9642,7 @@
                         {
                           "text": "スケジュール",
                           "reading": "スケジュール",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9726,7 +9671,7 @@
                   "segments": [
                     {
                       "text": "日光は東京から",
-                      "reading": "ひがえり",
+                      "reading": "にっこうはとうきょうから",
                       "isUnderlined": false
                     },
                     {
@@ -9736,7 +9681,7 @@
                     },
                     {
                       "text": "で行けます。",
-                      "reading": "ひがえり",
+                      "reading": "でいけます。",
                       "isUnderlined": false
                     }
                   ],
@@ -9751,17 +9696,17 @@
                   "segments": [
                     {
                       "text": "休みに",
-                      "reading": "ひがえり",
+                      "reading": "やすみに",
                       "isUnderlined": false
                     },
                     {
-                      "text": "日帰り",
-                      "reading": "ひがえり",
+                      "text": "日帰り旅行",
+                      "reading": "ひがえりりょこう",
                       "isUnderlined": true
                     },
                     {
-                      "text": "旅行をしよう。",
-                      "reading": "ひがえり",
+                      "text": "をしよう。",
+                      "reading": "をしよう。",
                       "isUnderlined": false
                     }
                   ],
@@ -9776,7 +9721,7 @@
                   "segments": [
                     {
                       "text": "福岡から東京まで",
-                      "reading": "ひがえり",
+                      "reading": "ふくおかからとうきょうまで",
                       "isUnderlined": false
                     },
                     {
@@ -9786,7 +9731,7 @@
                     },
                     {
                       "text": "で出張した。",
-                      "reading": "ひがえり",
+                      "reading": "でしゅっちょうした。",
                       "isUnderlined": false
                     }
                   ],
@@ -9832,7 +9777,7 @@
                         {
                           "text": "一泊二日",
                           "reading": "いっぱくふつか",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9847,7 +9792,7 @@
                         {
                           "text": "二泊三日",
                           "reading": "にはくみっか",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9876,7 +9821,7 @@
                   "segments": [
                     {
                       "text": "子どもたちが教室に",
-                      "reading": "じゅんじょ",
+                      "reading": "こどもたちがきょうしつに",
                       "isUnderlined": false
                     },
                     {
@@ -9886,7 +9831,7 @@
                     },
                     {
                       "text": "よく並んで入っていく。",
-                      "reading": "じゅんじょ",
+                      "reading": "よくならんではいっていく。",
                       "isUnderlined": false
                     }
                   ],
@@ -9901,7 +9846,7 @@
                   "segments": [
                     {
                       "text": "セットアップの",
-                      "reading": "",
+                      "reading": "セットアップの",
                       "isUnderlined": false
                     },
                     {
@@ -9911,7 +9856,7 @@
                     },
                     {
                       "text": "を間違えたのか、パソコンがうまく動かない。",
-                      "reading": "じゅんじょ",
+                      "reading": "をまちがえたのか、パソコンがうまくうごかない。",
                       "isUnderlined": false
                     }
                   ],
@@ -9957,7 +9902,7 @@
                         {
                           "text": "順番",
                           "reading": "じゅんばん",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -9986,7 +9931,7 @@
                   "segments": [
                     {
                       "text": "３月から４月は、うちの会社にとって忙しい",
-                      "reading": "じき",
+                      "reading": "さんがつからしがつは、うちのかいしゃにとっていそがしい",
                       "isUnderlined": false
                     },
                     {
@@ -9996,7 +9941,7 @@
                     },
                     {
                       "text": "だ。",
-                      "reading": "",
+                      "reading": "だ。",
                       "isUnderlined": false
                     }
                   ],
@@ -10011,7 +9956,7 @@
                   "segments": [
                     {
                       "text": "この計画は時間がかかるので、実行に移すのはまだ",
-                      "reading": "じき",
+                      "reading": "このけいかくはじかんがかかるので、じっこうにうつすのはまだ",
                       "isUnderlined": false
                     },
                     {
@@ -10021,7 +9966,7 @@
                     },
                     {
                       "text": "が早い。",
-                      "reading": "じき",
+                      "reading": "がはやい。",
                       "isUnderlined": false
                     }
                   ],
@@ -10036,7 +9981,7 @@
                   "segments": [
                     {
                       "text": "不況の今は、株を買うには",
-                      "reading": "じき",
+                      "reading": "ふきょうのいまは、かぶをかうには",
                       "isUnderlined": false
                     },
                     {
@@ -10046,7 +9991,7 @@
                     },
                     {
                       "text": "が悪い。",
-                      "reading": "じき",
+                      "reading": "がわるい。",
                       "isUnderlined": false
                     }
                   ],
@@ -10131,7 +10076,7 @@
                   "segments": [
                     {
                       "text": "駅前は昔は畑だったが、",
-                      "reading": "げんざい",
+                      "reading": "えきまえはむかしははただったが、",
                       "isUnderlined": false
                     },
                     {
@@ -10141,7 +10086,7 @@
                     },
                     {
                       "text": "は大きなショッピングセンターになっている。",
-                      "reading": "げんざい",
+                      "reading": "はおおきなショッピングセンターになっている。",
                       "isUnderlined": false
                     }
                   ],
@@ -10156,7 +10101,7 @@
                   "segments": [
                     {
                       "text": "（天気予報）「",
-                      "reading": "げんざい",
+                      "reading": "（てんきよほう）「",
                       "isUnderlined": false
                     },
                     {
@@ -10166,7 +10111,7 @@
                     },
                     {
                       "text": "、台風は時速40キロのスピードで進んでいます」",
-                      "reading": "げんざい",
+                      "reading": "、たいふうはじそくよんじゅっキロのスピードですすんでいます」",
                       "isUnderlined": false
                     }
                   ],
@@ -10187,7 +10132,7 @@
                         {
                           "text": "過去",
                           "reading": "かこ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10202,7 +10147,7 @@
                         {
                           "text": "未来",
                           "reading": "みらい",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10217,32 +10162,12 @@
                         {
                           "text": "今",
                           "reading": "いま",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
                         "pdfPage": 23,
                         "printedPage": 20
-                      }
-                    }
-                  ]
-                },
-                {
-                  "label": "合",
-                  "items": [
-                    {
-                      "japanese": "【時点・現在】",
-                      "vietnamese": "Thời điểm hiện tại\\\\n（例．午前９時現在、７月７日現在）",
-                      "segments": [
-                        {
-                          "text": "【時点・現在】",
-                          "reading": "げんざい",
-                          "isUnderlined": false
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 24,
-                        "printedPage": 21
                       }
                     }
                   ]
@@ -10266,7 +10191,7 @@
                   "segments": [
                     {
                       "text": "急病人が出たため、診察は",
-                      "reading": "りんじ",
+                      "reading": "きゅうびょうにんがでたため、しんさつは",
                       "isUnderlined": false
                     },
                     {
@@ -10276,7 +10201,7 @@
                     },
                     {
                       "text": "にこの家で行うことになった。",
-                      "reading": "りんじ",
+                      "reading": "にこのいえでおこなうことになった。",
                       "isUnderlined": false
                     }
                   ],
@@ -10297,7 +10222,7 @@
                         {
                           "text": "臨時ニュース",
                           "reading": "りんじニュース",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10312,7 +10237,7 @@
                         {
                           "text": "臨時列車",
                           "reading": "りんじれっしゃ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10327,7 +10252,7 @@
                         {
                           "text": "臨時停車",
                           "reading": "りんじていしゃ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10342,7 +10267,7 @@
                         {
                           "text": "臨時休業",
                           "reading": "りんじきゅうぎょう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10357,7 +10282,7 @@
                         {
                           "text": "臨時休校",
                           "reading": "りんじきゅうこう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10386,7 +10311,7 @@
                   "segments": [
                     {
                       "text": "旅行の",
-                      "reading": "ひよう",
+                      "reading": "りょこうの",
                       "isUnderlined": false
                     },
                     {
@@ -10396,7 +10321,7 @@
                     },
                     {
                       "text": "をためる。",
-                      "reading": "",
+                      "reading": "をためる。",
                       "isUnderlined": false
                     }
                   ],
@@ -10411,7 +10336,7 @@
                   "segments": [
                     {
                       "text": "子どもを育てるのには",
-                      "reading": "ひよう",
+                      "reading": "こどもをそだてるのには",
                       "isUnderlined": false
                     },
                     {
@@ -10421,7 +10346,7 @@
                     },
                     {
                       "text": "がかかる。",
-                      "reading": "",
+                      "reading": "がかかる。",
                       "isUnderlined": false
                     }
                   ],
@@ -10436,7 +10361,7 @@
                   "segments": [
                     {
                       "text": "新学期はいろいろと",
-                      "reading": "ひよう",
+                      "reading": "しんがっきはいろいろと",
                       "isUnderlined": false
                     },
                     {
@@ -10446,7 +10371,7 @@
                     },
                     {
                       "text": "がかさむ。",
-                      "reading": "",
+                      "reading": "がかさむ。",
                       "isUnderlined": false
                     }
                   ],
@@ -10461,7 +10386,7 @@
                   "segments": [
                     {
                       "text": "親が留学の",
-                      "reading": "ひよう",
+                      "reading": "おやがりゅうがくの",
                       "isUnderlined": false
                     },
                     {
@@ -10471,7 +10396,7 @@
                     },
                     {
                       "text": "を負担してくれる。",
-                      "reading": "ひよう",
+                      "reading": "をふたんしてくれる。",
                       "isUnderlined": false
                     }
                   ],
@@ -10577,7 +10502,7 @@
                         {
                           "text": "～費",
                           "reading": "～ひ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10592,7 +10517,7 @@
                         {
                           "text": "～金",
                           "reading": "～きん",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10607,7 +10532,7 @@
                         {
                           "text": "経費",
                           "reading": "けいひ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10636,7 +10561,7 @@
                   "segments": [
                     {
                       "text": "本はどこでも",
-                      "reading": "ていか",
+                      "reading": "ほんはどこでも",
                       "isUnderlined": false
                     },
                     {
@@ -10646,7 +10571,7 @@
                     },
                     {
                       "text": "で売られている。",
-                      "reading": "ていか",
+                      "reading": "でうられている。",
                       "isUnderlined": false
                     }
                   ],
@@ -10661,17 +10586,17 @@
                   "segments": [
                     {
                       "text": "日本のデパートは",
-                      "reading": "ていか",
+                      "reading": "にほんのデパートは",
                       "isUnderlined": false
                     },
                     {
-                      "text": "定価",
-                      "reading": "ていか",
+                      "text": "定価販売",
+                      "reading": "ていかはんばい",
                       "isUnderlined": true
                     },
                     {
-                      "text": "販売をしている。",
-                      "reading": "ていか",
+                      "text": "をしている。",
+                      "reading": "をしている。",
                       "isUnderlined": false
                     }
                   ],
@@ -10700,7 +10625,7 @@
                   "segments": [
                     {
                       "text": "「まとめて買うから、少し",
-                      "reading": "わりびき",
+                      "reading": "「まとめてかうから、すこし",
                       "isUnderlined": false
                     },
                     {
@@ -10710,7 +10635,7 @@
                     },
                     {
                       "text": "してください」",
-                      "reading": "",
+                      "reading": "してください」",
                       "isUnderlined": false
                     }
                   ],
@@ -10725,7 +10650,7 @@
                   "segments": [
                     {
                       "text": "「セール期間中は、全商品を30％",
-                      "reading": "わりびき",
+                      "reading": "「セールきかんちゅうは、ぜんしょうひんをさんじゅっパーセント",
                       "isUnderlined": false
                     },
                     {
@@ -10735,7 +10660,7 @@
                     },
                     {
                       "text": "します」",
-                      "reading": "",
+                      "reading": "します」",
                       "isUnderlined": false
                     }
                   ],
@@ -10756,7 +10681,7 @@
                         {
                           "text": "値引き",
                           "reading": "ねびき",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10771,7 +10696,7 @@
                         {
                           "text": "まける",
                           "reading": "まける",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10791,7 +10716,7 @@
                         {
                           "text": "割り引く",
                           "reading": "わりびく",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10820,17 +10745,17 @@
                   "segments": [
                     {
                       "text": "４個550円のりんごを、",
-                      "reading": "おまけ",
+                      "reading": "よんこごひゃくごじゅうえんのりんごを、",
                       "isUnderlined": false
                     },
                     {
                       "text": "おまけ",
-                      "reading": "",
+                      "reading": "おまけ",
                       "isUnderlined": true
                     },
                     {
                       "text": "してもらって500円で買った。",
-                      "reading": "おまけ",
+                      "reading": "してもらってごひゃくえんでかった。",
                       "isUnderlined": false
                     }
                   ],
@@ -10845,17 +10770,17 @@
                   "segments": [
                     {
                       "text": "子ども向けのお菓子には、よく",
-                      "reading": "おまけ",
+                      "reading": "こどもむけのおかしには、よく",
                       "isUnderlined": false
                     },
                     {
                       "text": "おまけ",
-                      "reading": "",
+                      "reading": "おまけ",
                       "isUnderlined": true
                     },
                     {
                       "text": "が付いている。",
-                      "reading": "おまけ",
+                      "reading": "がついている。",
                       "isUnderlined": false
                     }
                   ],
@@ -10876,7 +10801,7 @@
                         {
                           "text": "値引き",
                           "reading": "ねびき",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10891,7 +10816,7 @@
                         {
                           "text": "サービス",
                           "reading": "サービス",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -10940,26 +10865,6 @@
                       }
                     }
                   ]
-                },
-                {
-                  "label": "関",
-                  "items": [
-                    {
-                      "japanese": "景品",
-                      "vietnamese": "Tặng phẩm, quà tặng",
-                      "segments": [
-                        {
-                          "text": "景品",
-                          "reading": "けいひん",
-                          "isUnderlined": false
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 25,
-                        "printedPage": 22
-                      }
-                    }
-                  ]
                 }
               ],
               "source": {
@@ -10980,7 +10885,7 @@
                   "segments": [
                     {
                       "text": "「ただ今、",
-                      "reading": "むりょう",
+                      "reading": "「ただいま、",
                       "isUnderlined": false
                     },
                     {
@@ -10990,7 +10895,7 @@
                     },
                     {
                       "text": "で試供品をさしあげております」",
-                      "reading": "むりょう",
+                      "reading": "でしきょうひんをさしあげております」",
                       "isUnderlined": false
                     }
                   ],
@@ -11005,7 +10910,7 @@
                   "segments": [
                     {
                       "text": "６歳未満の子どもは入場",
-                      "reading": "むりょう",
+                      "reading": "ろくさいみまんのこどもはにゅうじょう",
                       "isUnderlined": false
                     },
                     {
@@ -11015,7 +10920,7 @@
                     },
                     {
                       "text": "だ。",
-                      "reading": "",
+                      "reading": "だ。",
                       "isUnderlined": false
                     }
                   ],
@@ -11036,7 +10941,7 @@
                         {
                           "text": "ただ",
                           "reading": "ただ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11056,7 +10961,7 @@
                         {
                           "text": "有料",
                           "reading": "ゆうりょう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11085,7 +10990,7 @@
                   "segments": [
                     {
                       "text": "彼は新車を買って、なんと",
-                      "reading": "げんきん",
+                      "reading": "かれはしんしゃをかって、なんと",
                       "isUnderlined": false
                     },
                     {
@@ -11095,7 +11000,7 @@
                     },
                     {
                       "text": "で支払ったそうだ。",
-                      "reading": "げんきん",
+                      "reading": "でしはらったそうだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -11136,7 +11041,7 @@
                         {
                           "text": "自動支払機（＝ATM）",
                           "reading": "じどうしはらいき（＝ATM）",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11156,7 +11061,7 @@
                         {
                           "text": "キャッシュ",
                           "reading": "キャッシュ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11171,7 +11076,7 @@
                         {
                           "text": "ローン",
                           "reading": "ローン",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11225,7 +11130,7 @@
                   "segments": [
                     {
                       "text": "食事代は、３人で",
-                      "reading": "ごうけい",
+                      "reading": "しょくじだいは、さんにんで",
                       "isUnderlined": false
                     },
                     {
@@ -11235,7 +11140,7 @@
                     },
                     {
                       "text": "１万円だった。",
-                      "reading": "ごうけい",
+                      "reading": "いちまんえんだった。",
                       "isUnderlined": false
                     }
                   ],
@@ -11256,7 +11161,7 @@
                         {
                           "text": "総",
                           "reading": "そう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11271,7 +11176,7 @@
                         {
                           "text": "計",
                           "reading": "けい",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11300,7 +11205,7 @@
                   "segments": [
                     {
                       "text": "彼は喫茶店を経営して",
-                      "reading": "しゅうにゅう",
+                      "reading": "かれはきっさてんをけいえいして",
                       "isUnderlined": false
                     },
                     {
@@ -11310,7 +11215,7 @@
                     },
                     {
                       "text": "を得ている。",
-                      "reading": "しゅうにゅう",
+                      "reading": "をえている。",
                       "isUnderlined": false
                     }
                   ],
@@ -11531,7 +11436,7 @@
                         {
                           "text": "支出",
                           "reading": "ししゅつ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11546,7 +11451,7 @@
                         {
                           "text": "年収",
                           "reading": "ねんしゅう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11561,7 +11466,7 @@
                         {
                           "text": "月収",
                           "reading": "げっしゅう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11576,7 +11481,7 @@
                         {
                           "text": "所得",
                           "reading": "しょとく",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11630,7 +11535,7 @@
                   "segments": [
                     {
                       "text": "予算オーバーだが、少し",
-                      "reading": "ししゅつ",
+                      "reading": "よさんオーバーだが、すこし",
                       "isUnderlined": false
                     },
                     {
@@ -11640,7 +11545,7 @@
                     },
                     {
                       "text": "を減らそう。",
-                      "reading": "ししゅつ",
+                      "reading": "をへらそう。",
                       "isUnderlined": false
                     }
                   ],
@@ -11706,7 +11611,7 @@
                         {
                           "text": "収入",
                           "reading": "しゅうにゅう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11735,7 +11640,7 @@
                   "segments": [
                     {
                       "text": "来年度の",
-                      "reading": "よさん",
+                      "reading": "らいねんどの",
                       "isUnderlined": false
                     },
                     {
@@ -11745,7 +11650,7 @@
                     },
                     {
                       "text": "を立てる。",
-                      "reading": "よさん",
+                      "reading": "をたてる。",
                       "isUnderlined": false
                     }
                   ],
@@ -11760,7 +11665,7 @@
                   "segments": [
                     {
                       "text": "車を買い替えたいのだが、",
-                      "reading": "よさん",
+                      "reading": "くるまをかいかえたいのだが、",
                       "isUnderlined": false
                     },
                     {
@@ -11770,7 +11675,7 @@
                     },
                     {
                       "text": "が足りない。",
-                      "reading": "よさん",
+                      "reading": "がたりない。",
                       "isUnderlined": false
                     }
                   ],
@@ -11841,7 +11746,7 @@
                         {
                           "text": "決算",
                           "reading": "けっさん",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -11870,7 +11775,7 @@
                   "segments": [
                     {
                       "text": "企業が",
-                      "reading": "りえき",
+                      "reading": "きぎょうが",
                       "isUnderlined": false
                     },
                     {
@@ -11880,7 +11785,7 @@
                     },
                     {
                       "text": "を追求するのは当然だ。",
-                      "reading": "りえき",
+                      "reading": "をついきゅうするのはとうぜんだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -11895,7 +11800,7 @@
                   "segments": [
                     {
                       "text": "政治家に国全体の",
-                      "reading": "りえき",
+                      "reading": "せいじかにくにぜんたいの",
                       "isUnderlined": false
                     },
                     {
@@ -11905,7 +11810,7 @@
                     },
                     {
                       "text": "を考えてもらいたい。",
-                      "reading": "りえき",
+                      "reading": "をかんがえてもらいたい。",
                       "isUnderlined": false
                     }
                   ],
@@ -12011,7 +11916,7 @@
                         {
                           "text": "損失",
                           "reading": "そんしつ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12026,7 +11931,7 @@
                         {
                           "text": "損害",
                           "reading": "そんがい",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12041,7 +11946,7 @@
                         {
                           "text": "不利益",
                           "reading": "ふりえき",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12061,7 +11966,7 @@
                         {
                           "text": "利害",
                           "reading": "りがい",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12090,7 +11995,7 @@
                   "segments": [
                     {
                       "text": "今月は支出が多く、",
-                      "reading": "あかじ",
+                      "reading": "こんげつはししゅつがおおく、",
                       "isUnderlined": false
                     },
                     {
@@ -12100,7 +12005,7 @@
                     },
                     {
                       "text": "になった。",
-                      "reading": "",
+                      "reading": "になった。",
                       "isUnderlined": false
                     }
                   ],
@@ -12186,7 +12091,7 @@
                         {
                           "text": "黒字",
                           "reading": "くろじ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12215,7 +12120,7 @@
                   "segments": [
                     {
                       "text": "広告宣伝に",
-                      "reading": "けいひ",
+                      "reading": "こうこくせんでんに",
                       "isUnderlined": false
                     },
                     {
@@ -12225,7 +12130,7 @@
                     },
                     {
                       "text": "をかけたので、売り上げが伸びた。",
-                      "reading": "けいひ",
+                      "reading": "をかけたので、うりあげがのびた。",
                       "isUnderlined": false
                     }
                   ],
@@ -12331,7 +12236,7 @@
                         {
                           "text": "削減",
                           "reading": "さくげん",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12371,7 +12276,7 @@
                         {
                           "text": "コスト",
                           "reading": "コスト",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12386,7 +12291,7 @@
                         {
                           "text": "費用",
                           "reading": "ひよう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12415,7 +12320,7 @@
                   "segments": [
                     {
                       "text": "（金／人数…）を",
-                      "reading": "かんじょう",
+                      "reading": "（かね／にんずう…）を",
                       "isUnderlined": false
                     },
                     {
@@ -12425,7 +12330,7 @@
                     },
                     {
                       "text": "する。",
-                      "reading": "",
+                      "reading": "する。",
                       "isUnderlined": false
                     }
                   ],
@@ -12501,7 +12406,7 @@
                         {
                           "text": "計算",
                           "reading": "けいさん",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12530,7 +12435,7 @@
                   "segments": [
                     {
                       "text": "隣の家の窓ガラスを割ってしまったので、修理代を",
-                      "reading": "べんしょう",
+                      "reading": "となりのいえのまどガラスをわってしまったので、しゅうりだいを",
                       "isUnderlined": false
                     },
                     {
@@ -12540,7 +12445,7 @@
                     },
                     {
                       "text": "した。",
-                      "reading": "",
+                      "reading": "した。",
                       "isUnderlined": false
                     }
                   ],
@@ -12561,7 +12466,7 @@
                         {
                           "text": "修理代",
                           "reading": "しゅうりだい",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12576,7 +12481,7 @@
                         {
                           "text": "賠償金",
                           "reading": "ばいしょうきん",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12686,7 +12591,7 @@
                         {
                           "text": "請求書",
                           "reading": "せいきゅうしょ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12706,7 +12611,7 @@
                         {
                           "text": "要求",
                           "reading": "ようきゅう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12740,7 +12645,7 @@
                     },
                     {
                       "text": "が悪くなると、倒産する会社が増える。",
-                      "reading": "けいき",
+                      "reading": "がわるくなると、とうさんするかいしゃがふえる。",
                       "isUnderlined": false
                     }
                   ],
@@ -12760,7 +12665,7 @@
                     },
                     {
                       "text": "が（回復する⇔後退する／低迷する／上向く…）。",
-                      "reading": "けいき",
+                      "reading": "が（かいふくする⇔こうたいする／ていめいする／うわむく…）。",
                       "isUnderlined": false
                     }
                   ],
@@ -12811,7 +12716,7 @@
                         {
                           "text": "好景気",
                           "reading": "こうけいき",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12826,7 +12731,7 @@
                         {
                           "text": "不景気",
                           "reading": "ふけいき",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12846,7 +12751,7 @@
                         {
                           "text": "経済状況",
                           "reading": "けいざいじょうきょう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12861,7 +12766,7 @@
                         {
                           "text": "好況",
                           "reading": "こうきょう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         },
                         {
                           "text": "⇔不況",
@@ -12895,7 +12800,7 @@
                   "segments": [
                     {
                       "text": "地域の被災者のために",
-                      "reading": "ぼきん",
+                      "reading": "ちいきのひさいしゃのために",
                       "isUnderlined": false
                     },
                     {
@@ -12905,7 +12810,7 @@
                     },
                     {
                       "text": "した。",
-                      "reading": "",
+                      "reading": "した。",
                       "isUnderlined": false
                     }
                   ],
@@ -12926,7 +12831,7 @@
                         {
                           "text": "共同募金",
                           "reading": "きょうどうぼきん",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12941,7 +12846,7 @@
                         {
                           "text": "街頭募金",
                           "reading": "がいとうぼきん",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -12970,7 +12875,7 @@
                   "segments": [
                     {
                       "text": "アルバイトを",
-                      "reading": "",
+                      "reading": "アルバイトを",
                       "isUnderlined": false
                     },
                     {
@@ -12980,7 +12885,7 @@
                     },
                     {
                       "text": "していたので、応募した。",
-                      "reading": "ぼしゅう",
+                      "reading": "していたので、おうぼした。",
                       "isUnderlined": false
                     }
                   ],
@@ -13015,7 +12920,28 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "募る",
+                      "vietnamese": "Chiêu mộ",
+                      "segments": [
+                        {
+                          "text": "募る",
+                          "reading": "つのる",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 28,
+                        "printedPage": 25
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 27,
                 "printedPage": 24
@@ -58180,6 +58106,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "cc530d8c6f510dc15658226be08bbcf303049f12df09a17f3e378234cc7870c5"
+    "candidateHash": "1beb7239a68a5f896870f73de5ee3961aa369e1539ea68471af50d953a1311d4"
   }
 }
