@@ -52,9 +52,14 @@ function relationSegments(item) {
   if (segments.length === 0) return segments;
   const japanese = typeof item?.japanese === 'string' ? item.japanese : '';
   const placeholder = japanese.match(PLACEHOLDER_PATTERN)?.[0];
+  const explicitTarget = typeof item?.target === 'string' ? item.target.trim() : '';
 
   // Formula blanks are the only underlined part; the suffix remains plain.
-  if (placeholder) return splitSegmentsAtTarget(segments, placeholder);
+  if (placeholder || explicitTarget) {
+    const target = placeholder || explicitTarget;
+    const reading = placeholder ? '' : item.reading || '';
+    return splitSegmentsAtTarget(segments, target, reading);
+  }
   if (segments.some((segment) => segment?.isUnderlined)) return segments;
   if (isExplanatoryRelation(japanese)) return segments;
 

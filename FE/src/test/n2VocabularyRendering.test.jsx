@@ -81,6 +81,13 @@ describe('N2 structured vocabulary rendering', () => {
               vietnamese: 'Vui vẻ',
               segments: [{ text: 'ごきげんな', reading: 'ごきげんな', isUnderlined: false }],
             },
+            {
+              japanese: '当てはめる',
+              vietnamese: 'Áp dụng',
+              target: 'はめる',
+              reading: 'はめる',
+              segments: [{ text: '当てはめる', reading: 'はめる', isUnderlined: false }],
+            },
           ],
         }]}
       />,
@@ -89,6 +96,8 @@ describe('N2 structured vocabulary rendering', () => {
     const underlined = [...container.querySelectorAll('u')].map((node) => node.textContent);
     expect(underlined).toContain('＿');
     expect(underlined).toContain('ごきげんな');
+    expect(underlined).toContain('はめる');
+    expect(underlined).not.toContain('当てはめる');
     expect(underlined).not.toContain('＿がいい');
   });
 
