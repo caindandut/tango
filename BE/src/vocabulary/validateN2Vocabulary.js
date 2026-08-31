@@ -60,7 +60,7 @@ function validateSegments(segments, path, issues, { requireUnderline = false } =
       hasUnderline = true;
     }
     // The printed part-of-speech marker is not vocabulary text and has no furigana.
-    if (typeof segment.text === 'string' && segment.text !== '\uFF08\u540D\uFF09' && KANJI_PATTERN.test(segment.text)
+    if (segment.isUnderlined === true && typeof segment.text === 'string' && segment.text !== '\uFF08\u540D\uFF09' && KANJI_PATTERN.test(segment.text)
       && (typeof segment.reading !== 'string' || !segment.reading.trim())) {
       issues.push(`${segmentPath} chứa kanji nhưng thiếu furigana.`);
     }
