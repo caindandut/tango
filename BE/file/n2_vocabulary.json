@@ -210,13 +210,18 @@
                   "label": "類",
                   "items": [
                     {
-                      "japanese": "一生",
+                      "japanese": "＿一生",
                       "vietnamese": "Cuộc đời",
                       "segments": [
                         {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
                           "text": "一生",
                           "reading": "いっしょう",
-                          "isUnderlined": true
+                          "isUnderlined": false
                         }
                       ],
                       "source": {
@@ -225,13 +230,18 @@
                       }
                     },
                     {
-                      "japanese": "生涯",
+                      "japanese": "＿生涯",
                       "vietnamese": "Cả đời người, sinh thời",
                       "segments": [
                         {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
                           "text": "生涯",
                           "reading": "しょうがい",
-                          "isUnderlined": true
+                          "isUnderlined": false
                         }
                       ],
                       "source": {
@@ -6799,12 +6809,17 @@
                   "label": "合",
                   "items": [
                     {
-                      "japanese": "判断",
+                      "japanese": "判断＿",
                       "vietnamese": "Dữ liệu đánh giá",
                       "segments": [
                         {
                           "text": "判断",
                           "reading": "はんだん",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
                           "isUnderlined": true
                         }
                       ],
@@ -6814,12 +6829,17 @@
                       }
                     },
                     {
-                      "japanese": "不安",
+                      "japanese": "不安＿",
                       "vietnamese": "Lý do bất an",
                       "segments": [
                         {
                           "text": "不安",
                           "reading": "ふあん",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
                           "isUnderlined": true
                         }
                       ],
@@ -56958,6 +56978,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "79cd1557bf6ff5a74f5d6a34cbd41cdb9f41859dddb73ccd875da21a76ca417e"
+    "candidateHash": "bd080ac271f490f9b918ef95c15eb610020ac8f9c9952af798991acfe6afae6c"
   }
 }

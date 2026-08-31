@@ -12,29 +12,6 @@ const validRelationGroups = (relations) => (
 );
 
 const PLACEHOLDER_PATTERN = /[\uFF3F_]/u;
-const EXPLANATORY_PATTERN = /^[\uFF08(].*[\uFF09)]$/u;
-
-function isExplanatoryRelation(japanese) {
-  return EXPLANATORY_PATTERN.test(japanese)
-    && (japanese.includes('\u4F8B') || japanese.endsWith('\u3002\uFF09'));
-}
-
-function inferImplicitTarget(japanese) {
-  const nounMarker = japanese.match(/^[\uFF08(][^\uFF09)]*[\uFF09)]/u);
-  if (nounMarker) return japanese.slice(nounMarker[0].length);
-
-  const bracketStart = japanese.search(/[\uFF08(]/u);
-  if (bracketStart > 0) return japanese.slice(0, bracketStart);
-
-  const separator = japanese.indexOf('\uFF0F');
-  if (separator > 0) {
-    const firstPhrase = japanese.slice(0, separator);
-    const noIndex = firstPhrase.indexOf('\u306E');
-    return (noIndex > 0 ? firstPhrase.slice(0, noIndex) : firstPhrase).trim();
-  }
-
-  return '';
-}
 
 function splitSegmentsAtTarget(segments, target, targetReading = '') {
   const targetIndex = segments.map((segment) => segment?.text || '').join('').indexOf(target);
@@ -53,14 +30,39 @@ function splitSegmentsAtTarget(segments, target, targetReading = '') {
     const parts = [];
     const localStart = Math.max(0, targetIndex - start);
     const localEnd = Math.min(text.length, targetIndex + target.length - start);
-    if (localStart > 0) parts.push({ text: text.slice(0, localStart), reading: '', isUnderlined: false });
+    if (localStart > 0) {
+      parts.push({
+        text: text.slice(0, localStart),
+        reading: localEnd === text.length ? segment.reading || '' : '',
+        isUnderlined: false,
+      });
+    }
     parts.push({
       text: text.slice(localStart, localEnd),
       reading: targetReading || segment.reading || '',
       isUnderlined: true,
     });
-    if (localEnd < text.length) parts.push({ text: text.slice(localEnd), reading: '', isUnderlined: false });
+    if (localEnd < text.length) {
+      parts.push({
+        text: text.slice(localEnd),
+        reading: segment.reading || '',
+        isUnderlined: false,
+      });
+    }
     return parts;
+  });
+}
+
+function underlinePlaceholders(segments) {
+  return segments.flatMap((segment) => {
+    const text = typeof segment?.text === 'string' ? segment.text : '';
+    if (!PLACEHOLDER_PATTERN.test(text)) return [{ ...segment, isUnderlined: false }];
+
+    return text.split(/([\uFF3F_])/u).filter(Boolean).map((part) => ({
+      text: part,
+      reading: PLACEHOLDER_PATTERN.test(part) ? '' : segment.reading || '',
+      isUnderlined: PLACEHOLDER_PATTERN.test(part),
+    }));
   });
 }
 
@@ -71,29 +73,17 @@ function relationSegments(item) {
   const placeholder = japanese.match(PLACEHOLDER_PATTERN)?.[0];
   const explicitTarget = typeof item?.target === 'string' ? item.target.trim() : '';
 
-  if (placeholder || explicitTarget) {
-    const target = placeholder || explicitTarget;
-    const reading = placeholder ? '' : item.reading || '';
-    return splitSegmentsAtTarget(segments, target, reading);
-  }
+  if (explicitTarget) return splitSegmentsAtTarget(segments, explicitTarget, item.reading || '');
+  if (placeholder) return underlinePlaceholders(segments);
 
-  const implicitTarget = inferImplicitTarget(japanese);
-  if (implicitTarget) {
-    const reading = segments.find((segment) => segment?.reading)?.reading || '';
-    return splitSegmentsAtTarget(segments, implicitTarget, reading);
-  }
-  if (segments.some((segment) => segment?.isUnderlined)) return segments;
-  if (isExplanatoryRelation(japanese)) return segments;
-
-  const bracketEnd = japanese.lastIndexOf('\u3011');
-  const bracketTarget = bracketEnd >= 0 ? japanese.slice(bracketEnd + 1).replace(/^\u306E/u, '') : '';
-  if (bracketEnd >= 0 && !bracketTarget) return segments;
-  if (bracketTarget) {
-    const reading = segments.find((segment) => segment?.reading)?.reading || '';
-    return splitSegmentsAtTarget(segments, bracketTarget, reading);
-  }
-
-  return segments.map((segment) => ({ ...segment, isUnderlined: true }));
+  // Relation terms are printed in bold in the source, not underlined. The
+  // extraction data historically reused isUnderlined for bold terms, which
+  // produced the extra lines visible in the UI. Only literal blanks and an
+  // explicitly verified target are underlineable here.
+  return segments.map((segment) => ({
+    ...segment,
+    isUnderlined: false,
+  }));
 }
 
 export default function VocabularyRelations({ relations = [], compact = false }) {
@@ -102,16 +92,16 @@ export default function VocabularyRelations({ relations = [], compact = false })
 
   return (
     <span
-      className={`vocabulary-relations ${compact ? 'vocabulary-relations--compact' : ''}`}
+      className={'vocabulary-relations ' + (compact ? 'vocabulary-relations--compact' : '')}
       role='region'
-      aria-label='CÃ¡c má»¥c liÃªn quan'
+      aria-label='Các mục liên quan'
     >
       {groups.map((group, groupIndex) => (
-        <span className='vocabulary-relations__group' key={`${group.label}-${groupIndex}`}>
+        <span className='vocabulary-relations__group' key={group.label + '-' + groupIndex}>
           <span className='vocabulary-relations__label'>{group.label}</span>
           <span className='vocabulary-relations__items'>
             {group.items.map((item, itemIndex) => (
-              <span className='vocabulary-relations__item' key={`${item.japanese}-${itemIndex}`}>
+              <span className='vocabulary-relations__item' key={item.japanese + '-' + itemIndex}>
                 <span lang='ja' className='vocabulary-relations__japanese font-japanese'>
                   <JapaneseSegments segments={relationSegments(item)} fallbackText={item.japanese} />
                 </span>

@@ -57,7 +57,7 @@ describe('N2 structured vocabulary rendering', () => {
     expect(container.querySelector('rt')).toHaveTextContent('にんげん');
   });
 
-  it('renders every relation label, literal blank and exact Vietnamese text', () => {
+  it('renders every relation label and the literal blank safely', () => {
     render(<VocabularyRelations relations={relations} />);
 
     expect(screen.getByText('連')).toBeInTheDocument();
@@ -65,7 +65,45 @@ describe('N2 structured vocabulary rendering', () => {
     expect(screen.getByText(/＿/)).toBeInTheDocument();
   });
 
-  it('underlines only relation placeholders and restores omitted lexical underlines', () => {
+  it('does not underline bold relation terms as if they were source underlines', () => {
+    const { container } = render(
+      <VocabularyRelations
+        relations={[{
+          label: '関',
+          items: [
+            {
+              japanese: '原料',
+              vietnamese: 'Nguyên liệu',
+              segments: [{ text: '原料', reading: 'げんりょう', isUnderlined: true }],
+            },
+            {
+              japanese: '素材',
+              vietnamese: 'Chất liệu',
+              segments: [{ text: '素材', reading: 'そざい', isUnderlined: true }],
+            },
+          ],
+        }, {
+          label: '合',
+          items: [
+            {
+              japanese: '判断',
+              vietnamese: 'Dữ liệu đánh giá',
+              segments: [{ text: '判断', reading: 'はんだん', isUnderlined: true }],
+            },
+            {
+              japanese: '不安',
+              vietnamese: 'Lý do bất an',
+              segments: [{ text: '不安', reading: 'ふあん', isUnderlined: true }],
+            },
+          ],
+        }]}
+      />,
+    );
+
+    expect(container.querySelectorAll('u')).toHaveLength(0);
+  });
+
+  it('underlines only explicit targets and literal blanks', () => {
     const { container } = render(
       <VocabularyRelations
         relations={[{
@@ -75,11 +113,6 @@ describe('N2 structured vocabulary rendering', () => {
               japanese: '＿がいい',
               vietnamese: 'Tâm trạng tốt',
               segments: [{ text: '＿がいい', reading: 'きげん', isUnderlined: false }],
-            },
-            {
-              japanese: 'ごきげんな',
-              vietnamese: 'Vui vẻ',
-              segments: [{ text: 'ごきげんな', reading: 'ごきげんな', isUnderlined: false }],
             },
             {
               japanese: '当てはめる',
@@ -93,16 +126,6 @@ describe('N2 structured vocabulary rendering', () => {
               vietnamese: 'Bói',
               segments: [{ text: '（名）占い', reading: 'うらない', isUnderlined: true }],
             },
-            {
-              japanese: '空っぽの財布／本棚／部屋',
-              vietnamese: 'Trống rỗng',
-              segments: [{ text: '空っぽの財布／本棚／部屋', reading: 'からっぽのさいふ／ほんだな／へや', isUnderlined: true }],
-            },
-            {
-              japanese: '（例．星占い）',
-              vietnamese: 'Ví dụ',
-              segments: [{ text: '（例．星占い）', reading: '（れい．ほしうらない）', isUnderlined: false }],
-            },
           ],
         }]}
       />,
@@ -110,15 +133,9 @@ describe('N2 structured vocabulary rendering', () => {
 
     const underlined = [...container.querySelectorAll('u')].map((node) => node.textContent);
     expect(underlined).toContain('＿');
-    expect(underlined).toContain('ごきげんな');
     expect(underlined).toContain('はめる');
     expect(underlined).not.toContain('当てはめる');
-    expect(underlined.some((value) => value.includes('占') && value.includes('い'))).toBe(true);
     expect(underlined).not.toContain('（名）占い');
-    expect(underlined.some((value) => value.includes('空') && value.includes('ぽ'))).toBe(true);
-    expect(underlined).not.toContain('空っぽの財布／本棚／部屋');
-    expect(underlined).not.toContain('（例．星占い）');
-    expect(underlined).not.toContain('＿がいい');
   });
 
   it('keeps N3 string examples as a fallback', () => {
