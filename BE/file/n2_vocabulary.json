@@ -26048,9 +26048,19 @@
                   "vietnamese": "Pwmng lên khỏi ghế.",
                   "segments": [
                     {
-                      "text": "いすから立ち上がる。",
-                      "reading": "ちあ",
+                      "text": "いすから",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "立ち上がる",
+                      "reading": "たちあがる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26073,13 +26083,43 @@
               "meaning": "Nhảy lên, bay lên",
               "examples": [
                 {
-                  "japanese": "上。",
-                  "vietnamese": "Nhảy lên, bay lên",
+                  "japanese": "飛び上がって喜ぶ。",
+                  "vietnamese": "Nhảy lên trong hạnh phúc.",
                   "segments": [
                     {
-                      "text": "上。",
-                      "reading": "びあ",
+                      "text": "飛び上がって",
+                      "reading": "とびあがる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "喜ぶ。",
+                      "reading": "とびあがる",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 110,
+                    "printedPage": 107
+                  }
+                },
+                {
+                  "japanese": "驚いて飛び上がった。",
+                  "vietnamese": "Giật bắn mình.",
+                  "segments": [
+                    {
+                      "text": "驚いて",
+                      "reading": "とびあがる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "飛び上がった",
+                      "reading": "とびあがる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26103,12 +26143,47 @@
               "examples": [
                 {
                   "japanese": "水面に浮かび上がる。",
-                  "vietnamese": "Nồi lên trên mặt nước",
+                  "vietnamese": "Nổi lên trên mặt nước",
                   "segments": [
                     {
-                      "text": "水面に浮かび上がる。",
-                      "reading": "うか",
+                      "text": "水面に",
+                      "reading": "うかびあがる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "浮かび上がる",
+                      "reading": "うかびあがる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 110,
+                    "printedPage": 107
+                  }
+                },
+                {
+                  "japanese": "Aが容疑者として浮かび上がった。",
+                  "vietnamese": "A đã hiện ra như một kẻ tình nghi.",
+                  "segments": [
+                    {
+                      "text": "Aが容疑者として",
+                      "reading": "うかびあがる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "浮かび上がった",
+                      "reading": "うかびあがる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26131,37 +26206,42 @@
               "meaning": "Nhảy lên, bay cuộn lên",
               "examples": [
                 {
+                  "japanese": "（砂／ほこり…）が舞い上がる。",
+                  "vietnamese": "{Cát/ Bụi…} bay lên.",
+                  "segments": [
+                    {
+                      "text": "（砂／ほこり…）が",
+                      "reading": "まいあがる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "舞い上がる",
+                      "reading": "まいあがる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 110,
+                    "printedPage": 107
+                  }
+                },
+                {
                   "japanese": "女の子から告白されて、彼は舞い上がった。",
                   "vietnamese": "Amh ấy nhảy cẵng lên vì được cô bé tỏ tình.",
                   "segments": [
                     {
-                      "text": "女の子から",
-                      "reading": "おんなのこから",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "告白",
-                      "reading": "こくはく",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "されて、",
-                      "reading": "",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "彼",
-                      "reading": "かれ",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "は",
-                      "reading": "",
+                      "text": "女の子から告白されて、彼は",
+                      "reading": "まいあがる",
                       "isUnderlined": false
                     },
                     {
                       "text": "舞い上がった",
-                      "reading": "まいあがった",
+                      "reading": "まいあがる",
                       "isUnderlined": true
                     },
                     {
@@ -26190,13 +26270,23 @@
               "meaning": "Bốc cháy, bùng cháy",
               "examples": [
                 {
-                  "japanese": "上。",
+                  "japanese": "火が燃え上がる。",
                   "vietnamese": "Bốc cháy, bùng cháy",
                   "segments": [
                     {
-                      "text": "上。",
-                      "reading": "ごい",
+                      "text": "火が",
+                      "reading": "もえあがる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "燃え上がる",
+                      "reading": "もえあがる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26219,13 +26309,48 @@
               "meaning": "Tăng lên, nổi lên, phấn khích lên, sội",
               "examples": [
                 {
-                  "japanese": "上。",
-                  "vietnamese": "Tăng lên, nổi lên, phấn khích lên, sội",
+                  "japanese": "筋肉が盛り上がっている。",
+                  "vietnamese": "Cơ bắp đang nở ra (cuồn cuộn)",
                   "segments": [
                     {
-                      "text": "上。",
-                      "reading": "りあ",
+                      "text": "筋肉が",
+                      "reading": "もりあがる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "盛り上がっている",
+                      "reading": "もりあがる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 110,
+                    "printedPage": 107
+                  }
+                },
+                {
+                  "japanese": "パーティーが盛り上がる。",
+                  "vietnamese": "Bữa tiệc trở nên sôi động.",
+                  "segments": [
+                    {
+                      "text": "パーティーが",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "盛り上がる",
+                      "reading": "もりあがる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26249,12 +26374,47 @@
               "examples": [
                 {
                   "japanese": "歓声が沸き上がる。",
-                  "vietnamese": "Những tiếng hoan hô vang lên rầm rộ。",
+                  "vietnamese": "Những tiếng hoan hô vang lên rầm rộ.",
                   "segments": [
                     {
-                      "text": "歓声が沸き上がる。",
+                      "text": "歓声が",
+                      "reading": "わきあがる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "沸き上がる",
                       "reading": "わきあがる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 110,
+                    "printedPage": 107
+                  }
+                },
+                {
+                  "japanese": "（悲しみ／怒り…）が沸き上がってくる。",
+                  "vietnamese": "{Nỗi buồn/ Sự tức giận…} phát ra một cách mãnh liệt.",
+                  "segments": [
+                    {
+                      "text": "（悲しみ／怒り…）が",
+                      "reading": "わきあがる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "沸き上がってくる",
+                      "reading": "わきあがる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26277,13 +26437,18 @@
               "meaning": "Tươi sáng lên",
               "examples": [
                 {
-                  "japanese": "上。",
+                  "japanese": "晴れ上がった秋空。",
                   "vietnamese": "Tươi sáng lên",
                   "segments": [
                     {
-                      "text": "上。",
-                      "reading": "ごい",
+                      "text": "晴れ上がった",
+                      "reading": "はれあがる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "秋空。",
+                      "reading": "はれあがる",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26306,13 +26471,23 @@
               "meaning": "Run lên, run bắn",
               "examples": [
                 {
-                  "japanese": "{寒さ⁄.)chえ上がる。",
+                  "japanese": "寒さに震え上がる。",
                   "vietnamese": "Runlên cầm cập trong {cái lạnh/ sự sợ hãi ...}.",
                   "segments": [
                     {
-                      "text": "{寒さ⁄.)chえ上がる。",
-                      "reading": "ふる",
+                      "text": "寒さに",
+                      "reading": "ふるえあがる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "震え上がる",
+                      "reading": "ふるえあがる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26335,13 +26510,23 @@
               "meaning": "Corúm lại, chùn lại",
               "examples": [
                 {
-                  "japanese": "{寒さZ3.)に縮み上がる。",
+                  "japanese": "寒さに縮み上がる。",
                   "vietnamese": "Corúm lại trong {cái lạnh/ sự sợ hãi ...}",
                   "segments": [
                     {
-                      "text": "{寒さZ3.)に縮み上がる。",
-                      "reading": "ちぢみ",
+                      "text": "寒さに",
+                      "reading": "ちぢみあがる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "縮み上がる",
+                      "reading": "ちぢみあがる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26364,13 +26549,23 @@
               "meaning": "Khôcần,khôcạmkhông",
               "examples": [
                 {
-                  "japanese": "る。",
+                  "japanese": "池が干上がる。",
                   "vietnamese": "Khôcần,khôcạmkhông",
                   "segments": [
                     {
-                      "text": "る。",
-                      "reading": "る",
+                      "text": "池が",
+                      "reading": "ひあがる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "干上がる",
+                      "reading": "ひあがる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26393,13 +26588,18 @@
               "meaning": "Hoànthành,làmxongmấuxong",
               "examples": [
                 {
-                  "japanese": "料理ができ上がった。",
+                  "japanese": "出来上がる。",
                   "vietnamese": "Thac ăn đã được nấu xong.",
                   "segments": [
                     {
-                      "text": "料理ができ上がった。",
-                      "reading": "でき",
+                      "text": "出来上がる",
+                      "reading": "できあがる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26426,9 +26626,19 @@
                   "vietnamese": "Nâng hành lý nặng lên。",
                   "segments": [
                     {
-                      "text": "重い荷物を持ち上げる。",
+                      "text": "重い荷物を",
+                      "reading": "もちあげる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "持ち上げる",
                       "reading": "もちあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26455,9 +26665,19 @@
                   "vietnamese": "Nhin lên bầu trời.",
                   "segments": [
                     {
-                      "text": "空を見上げる。",
-                      "reading": "みあ",
+                      "text": "空を",
+                      "reading": "みあげる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "見上げる",
+                      "reading": "みあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26480,13 +26700,23 @@
               "meaning": "Giác lên,chất đống",
               "examples": [
                 {
-                  "japanese": "上。",
+                  "japanese": "資料を積み上げる。",
                   "vietnamese": "Giác lên,chất đống",
                   "segments": [
                     {
-                      "text": "上。",
-                      "reading": "つみ",
+                      "text": "資料を",
+                      "reading": "つみあげる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "積み上げる",
+                      "reading": "つみあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26509,13 +26739,23 @@
               "meaning": "Phóng bắn",
               "examples": [
                 {
-                  "japanese": "{ロケットノ花火)を打ち上げる。",
+                  "japanese": "（ロケット／花火）を打ち上げる。",
                   "vietnamese": "Phóng bắn (tên lửa/ pháo hoa}.",
                   "segments": [
                     {
-                      "text": "{ロケットノ花火)を打ち上げる。",
-                      "reading": "うち",
+                      "text": "（ロケット／花火）を",
+                      "reading": "うちあげる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "打ち上げる",
+                      "reading": "うちあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26542,9 +26782,19 @@
                   "vietnamese": "Khei động máy tính.",
                   "segments": [
                     {
-                      "text": "コンピューターを立ち上げる。",
-                      "reading": "ちあ",
+                      "text": "コンピューターを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "立ち上げる",
+                      "reading": "たちあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26571,9 +26821,19 @@
                   "vietnamese": "Kết thúc,làm tròn lên",
                   "segments": [
                     {
-                      "text": "今日は仕事を3時で切り上げよう。",
-                      "reading": "きり",
+                      "text": "今日は仕事を3時で",
+                      "reading": "きりあげる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "切り上げよう",
+                      "reading": "きりあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26596,13 +26856,23 @@
               "meaning": "Tiến hành sớm, làm sớm hơn",
               "examples": [
                 {
-                  "japanese": "{時間ノ予定/順位.…)】を繰り上げる。",
+                  "japanese": "（時間／予定／順位…）を繰り上げる。",
                   "vietnamese": "Làm sớm hơn (thời gian/ dự định...)/ Làm tăng số",
                   "segments": [
                     {
-                      "text": "{時間ノ予定/順位.…)】を繰り上げる。",
-                      "reading": "くり",
+                      "text": "（時間／予定／順位…）を",
+                      "reading": "くりあげる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "繰り上げる",
+                      "reading": "くりあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26625,13 +26895,23 @@
               "meaning": "Đánh bóng làm cho láng bóng",
               "examples": [
                 {
-                  "japanese": "上。",
+                  "japanese": "靴を磨き上げる。",
                   "vietnamese": "Đánh bóng làm cho láng bóng",
                   "segments": [
                     {
-                      "text": "上。",
-                      "reading": "みがき",
+                      "text": "靴を",
+                      "reading": "みがきあげる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "磨き上げる",
+                      "reading": "みがきあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26654,13 +26934,23 @@
               "meaning": "Rèn luyện xong, rèn giữa",
               "examples": [
                 {
-                  "japanese": "きた。",
+                  "japanese": "選手たちを鍛え上げる。",
                   "vietnamese": "Rèn luyện xong, rèn giữa",
                   "segments": [
                     {
-                      "text": "きた。",
-                      "reading": "きた",
+                      "text": "選手たちを",
+                      "reading": "きたえあげる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "鍛え上げる",
+                      "reading": "きたえあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26687,9 +26977,19 @@
                   "vietnamese": "Đã viết xong báo cáo.",
                   "segments": [
                     {
-                      "text": "レポートを書き上げた。",
-                      "reading": "る",
+                      "text": "レポートを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "書き上げた",
+                      "reading": "かきあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26716,9 +27016,19 @@
                   "vietnamese": "Nuôi dạy con cái nên người。",
                   "segments": [
                     {
-                      "text": "子どもを立派に育て上げる。",
+                      "text": "子どもを立派に",
+                      "reading": "そだてあげる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "育て上げる",
                       "reading": "そだてあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26741,13 +27051,23 @@
               "meaning": "Đọclên",
               "examples": [
                 {
-                  "japanese": "あげ。",
+                  "japanese": "卒業生の名前を読み上げる。",
                   "vietnamese": "Đọclên",
                   "segments": [
                     {
-                      "text": "あげ。",
-                      "reading": "よみ",
+                      "text": "卒業生の名前を",
+                      "reading": "よみあげる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "読み上げる",
+                      "reading": "よみあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26770,13 +27090,23 @@
               "meaning": "Đếm, liệt kê",
               "examples": [
                 {
-                  "japanese": "火店を数え上げる。",
+                  "japanese": "欠点を数え上げる。",
                   "vietnamese": "Tôi sẽ liệt kê những khuyết điểm",
                   "segments": [
                     {
-                      "text": "火店を数え上げる。",
-                      "reading": "あげ",
+                      "text": "欠点を",
+                      "reading": "かぞえあげる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "数え上げる",
+                      "reading": "かぞえあげる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26799,13 +27129,18 @@
               "meaning": "Ném ra, bỏ cuộc",
               "examples": [
                 {
-                  "japanese": "足を投げ出して座る。",
+                  "japanese": "投げ出す。",
                   "vietnamese": "Ngei duỗi chân.",
                   "segments": [
                     {
-                      "text": "足を投げ出して座る。",
-                      "reading": "す",
+                      "text": "投げ出す",
+                      "reading": "なげだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26828,13 +27163,18 @@
               "meaning": "Thực hiện, đưa ra, mang ra",
               "examples": [
                 {
-                  "japanese": "この本は図書館から持ち出さないでください。",
+                  "japanese": "持ち出す。",
                   "vietnamese": "Xin đừng mang quyền sách này ra khỏi thư",
                   "segments": [
                     {
-                      "text": "この本は図書館から持ち出さないでください。",
-                      "reading": "す",
+                      "text": "持ち出す",
+                      "reading": "もちだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26857,13 +27197,23 @@
               "meaning": "Đuổi đi, đuổi ra",
               "examples": [
                 {
-                  "japanese": "入ってきた下を追り出す。",
+                  "japanese": "入ってきた鳥を追い出す。",
                   "vietnamese": "Buổi những con côn trùng đã bay vào ra ngoài.",
                   "segments": [
                     {
-                      "text": "入ってきた下を追り出す。",
-                      "reading": "す",
+                      "text": "入ってきた鳥を",
+                      "reading": "おいだす",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "追い出す",
+                      "reading": "おいだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26886,13 +27236,18 @@
               "meaning": "Phóng ra, qugngra",
               "examples": [
                 {
-                  "japanese": "子どもは学校から帰ってくると、かばんをほうり出して遊びに行った。",
+                  "japanese": "放り出す。",
                   "vietnamese": "Đứa trẻ sau khi đi",
                   "segments": [
                     {
-                      "text": "子どもは学校から帰ってくると、かばんをほうり出して遊びに行った。",
-                      "reading": "ほう",
+                      "text": "放り出す",
+                      "reading": "ほうりだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26919,9 +27274,19 @@
                   "vietnamese": "Ngan hàng cho vay tiền.",
                   "segments": [
                     {
-                      "text": "銀行が金を貸し出す。",
-                      "reading": "す",
+                      "text": "銀行が金を",
+                      "reading": "かしだす",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "貸し出す",
+                      "reading": "かしだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26944,13 +27309,23 @@
               "meaning": "Lắng nghe, nghe được",
               "examples": [
                 {
-                  "japanese": "出す。",
+                  "japanese": "相手から情報を聞き出す。",
                   "vietnamese": "Lắng nghe, nghe được",
                   "segments": [
                     {
-                      "text": "出す。",
-                      "reading": "きき",
+                      "text": "相手から情報を",
+                      "reading": "ききだす",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "聞き出す",
+                      "reading": "ききだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -26973,13 +27348,18 @@
               "meaning": "Dẫn mangra II",
               "examples": [
                 {
-                  "japanese": "嫌がる娘をむりやり連れ出して病院へ行った。",
+                  "japanese": "連れ出す。",
                   "vietnamese": "Dg dẫn con gái tới bệnh viện mặc dù nó không",
                   "segments": [
                     {
-                      "text": "嫌がる娘をむりやり連れ出して病院へ行った。",
-                      "reading": "つれ",
+                      "text": "連れ出す",
+                      "reading": "つれだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27002,13 +27382,18 @@
               "meaning": "Lôi ra, kéo ra, rút ra",
               "examples": [
                 {
-                  "japanese": "出す。",
+                  "japanese": "引っ張り出す。",
                   "vietnamese": "Lôi ra, kéo ra, rút ra",
                   "segments": [
                     {
-                      "text": "出す。",
-                      "reading": "ひっ",
+                      "text": "引っ張り出す",
+                      "reading": "ひっぱりだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27035,9 +27420,19 @@
                   "vietnamese": "Chay khỏi ngôi nhà đang bắc cháy.",
                   "segments": [
                     {
-                      "text": "燃えている家の中から逃げ出す。",
-                      "reading": "だす",
+                      "text": "燃えている家の中から",
+                      "reading": "にげだす",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "逃げ出す",
+                      "reading": "にげだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27060,13 +27455,18 @@
               "meaning": "Phi ra, bay ra, trồi lên, nhảy vào, bỏ di",
               "examples": [
                 {
-                  "japanese": "親とけんかして家を飛び出した。",
+                  "japanese": "飛び出す。",
                   "vietnamese": "Sau khi cãi nhau với bố mẹ, tôi đã lao ra khói nhà.",
                   "segments": [
                     {
-                      "text": "親とけんかして家を飛び出した。",
-                      "reading": "す",
+                      "text": "飛び出す",
+                      "reading": "とびだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27089,13 +27489,18 @@
               "meaning": "Phát hiện ra, tìm ra, tìm thấy",
               "examples": [
                 {
-                  "japanese": "邊方不明になっていたペットを探し出した。",
+                  "japanese": "見つけ出す。",
                   "vietnamese": "Pg tìm được thú nuôi bị lạc.",
                   "segments": [
                     {
-                      "text": "邊方不明になっていたペットを探し出した。",
-                      "reading": "みつ",
+                      "text": "見つけ出す",
+                      "reading": "みつけだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27118,13 +27523,18 @@
               "meaning": "Tìm hiểu ra, khám phá ra",
               "examples": [
                 {
-                  "japanese": "迷子になっていたペットを探し出した。",
+                  "japanese": "探し出す。",
                   "vietnamese": "Đã tìm được thú nuôi bị lạc。",
                   "segments": [
                     {
-                      "text": "迷子になっていたペットを探し出した。",
+                      "text": "探し出す",
                       "reading": "さがしだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27147,13 +27557,18 @@
               "meaning": "Viếtra,viếxuống II",
               "examples": [
                 {
-                  "japanese": "今日の予定をノートに書き出した。",
+                  "japanese": "書き出す。",
                   "vietnamese": "Tôi đã viết vào số những dự định của ngày hôm nay.",
                   "segments": [
                     {
-                      "text": "今日の予定をノートに書き出した。",
-                      "reading": "きだ",
+                      "text": "書き出す",
+                      "reading": "かきだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27176,13 +27591,23 @@
               "meaning": "Bay vào, nhảy vào",
               "examples": [
                 {
-                  "japanese": "プブールに飛び込む。",
+                  "japanese": "プールに飛び込む。",
                   "vietnamese": "Lao xuống bể bơi.",
                   "segments": [
                     {
-                      "text": "プブールに飛び込む。",
-                      "reading": "ぴこ",
+                      "text": "プールに",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "飛び込む",
+                      "reading": "とびこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27215,7 +27640,7 @@
                     },
                     {
                       "text": "駆け込んだ",
-                      "reading": "かけこんだ",
+                      "reading": "かけこむ",
                       "isUnderlined": true
                     },
                     {
@@ -27248,9 +27673,19 @@
                   "vietnamese": "Chen ngang vào hàng。",
                   "segments": [
                     {
-                      "text": "列に割り込む。",
+                      "text": "列に",
+                      "reading": "わりこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "割り込む",
                       "reading": "わりこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27273,13 +27708,23 @@
               "meaning": "Cắm vào, chiếu vào, chèn vào",
               "examples": [
                 {
-                  "japanese": "太陽の光が部屋いっぱいに差し込んでいる。",
+                  "japanese": "日の光が部屋いっぱいに差し込んでいる。",
                   "vietnamese": "Ánh sáng mặt trời đang chiếu khắp phòng。",
                   "segments": [
                     {
-                      "text": "太陽の光が部屋いっぱいに差し込んでいる。",
+                      "text": "日の光が部屋いっぱいに",
+                      "reading": "さしこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "差し込んでいる",
                       "reading": "さしこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27302,13 +27747,23 @@
               "meaning": "Thấm vào trong, thấm qua",
               "examples": [
                 {
-                  "japanese": "雨が土にしみ込む。",
+                  "japanese": "雨が土に染み込む。",
                   "vietnamese": "Mua thắm vào đắt.",
                   "segments": [
                     {
-                      "text": "雨が土にしみ込む。",
-                      "reading": "みこ",
+                      "text": "雨が土に",
+                      "reading": "しみこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "染み込む",
+                      "reading": "しみこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27331,13 +27786,18 @@
               "meaning": "II",
               "examples": [
                 {
-                  "japanese": "秘書は客を応援室に通すと、買へ引っ込んだ。",
+                  "japanese": "引っ込む。",
                   "vietnamese": "Saukhi đẫn khách đến phòng tiếp khách, thư kí",
                   "segments": [
                     {
-                      "text": "秘書は客を応援室に通すと、買へ引っ込んだ。",
-                      "reading": "ひっ",
+                      "text": "引っ込む",
+                      "reading": "ひっこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27360,13 +27820,23 @@
               "meaning": "Dồn vào, nhét vào, nhồi nhét",
               "examples": [
                 {
-                  "japanese": "かばんに荷物を誇め込む。",
+                  "japanese": "かばんに荷物を詰め込む。",
                   "vietnamese": "Nhet hành lý vào trong túi xách.",
                   "segments": [
                     {
-                      "text": "かばんに荷物を誇め込む。",
-                      "reading": "つめ",
+                      "text": "かばんに荷物を",
+                      "reading": "つめこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "詰め込む",
+                      "reading": "つめこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27393,9 +27863,19 @@
                   "vietnamese": "Không nhai mà nuốt chwng luôn thức ăn.",
                   "segments": [
                     {
-                      "text": "食べ物をかまずに飲み込む。",
-                      "reading": "ごい",
+                      "text": "食べ物をかまずに",
+                      "reading": "のみこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "飲み込む",
+                      "reading": "のみこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27418,13 +27898,23 @@
               "meaning": "Mang vào, đưa vào trong, chuyển vào trong",
               "examples": [
                 {
-                  "japanese": "込む。",
+                  "japanese": "引っ越しの荷物を部屋に運び込む。",
                   "vietnamese": "Mang vào, đưa vào trong, chuyển vào trong",
                   "segments": [
                     {
-                      "text": "込む。",
-                      "reading": "こび",
+                      "text": "引っ越しの荷物を部屋に",
+                      "reading": "はこびこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "運び込む",
+                      "reading": "はこびこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27451,9 +27941,19 @@
                   "vietnamese": "Nhap dữ liệu vào máy tính.",
                   "segments": [
                     {
-                      "text": "パソコンにデータを打ち込む。",
-                      "reading": "うち",
+                      "text": "パソコンにデータを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "打ち込む",
+                      "reading": "うちこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27515,13 +28015,23 @@
               "meaning": "Lôi kéo vào, dẫn vào",
               "examples": [
                 {
-                  "japanese": "友人を前の道に引き込む。",
+                  "japanese": "友人を悪の道に引き込む。",
                   "vietnamese": "Lôi kéo bạn thân vào con đường tội lỗi.",
                   "segments": [
                     {
-                      "text": "友人を前の道に引き込む。",
-                      "reading": "ひき",
+                      "text": "友人を悪の道に",
+                      "reading": "ひきこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "引き込む",
+                      "reading": "ひきこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27548,9 +28058,19 @@
                   "vietnamese": "Ghi lại cảm tưởng vào vở.",
                   "segments": [
                     {
-                      "text": "ノートに感想を書き込む。",
-                      "reading": "こむ",
+                      "text": "ノートに感想を",
+                      "reading": "かきこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "書き込む",
+                      "reading": "かきこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27577,9 +28097,19 @@
                   "vietnamese": "Dính vào vụ tại nạn nên đã bị thương.",
                   "segments": [
                     {
-                      "text": "事故に巻き込まれてけがをした。",
-                      "reading": "まき",
+                      "text": "事故に",
+                      "reading": "まきこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "巻き込まれてけがをした",
+                      "reading": "まきこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27602,13 +28132,23 @@
               "meaning": "Đma,lùa, dồn, thúc bách",
               "examples": [
                 {
-                  "japanese": "込む。",
+                  "japanese": "羊の群れを囲いに追い込む。",
                   "vietnamese": "Đma,lùa, dồn, thúc bách",
                   "segments": [
                     {
-                      "text": "込む。",
-                      "reading": "いと",
+                      "text": "羊の群れを囲いに",
+                      "reading": "おいこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "追い込む",
+                      "reading": "おいこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27631,13 +28171,23 @@
               "meaning": "Mời gọi, lôi kéo",
               "examples": [
                 {
-                  "japanese": "ある国では、赤は運を呼び込むめ色だと言われている。",
+                  "japanese": "ある国では、赤は運を呼び込む色だと言われている。",
                   "vietnamese": "Có một đắt nước mà ở nơi đó, màu đỏ được",
                   "segments": [
                     {
-                      "text": "ある国では、赤は運を呼び込むめ色だと言われている。",
-                      "reading": "よび",
+                      "text": "ある国では、赤は運を",
+                      "reading": "よびこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "呼び込む",
+                      "reading": "よびこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "色だと言われている。",
+                      "reading": "よびこむ",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27660,13 +28210,18 @@
               "meaning": "Ngồi), ngồi mãi",
               "examples": [
                 {
-                  "japanese": "良き。",
+                  "japanese": "座り込む。",
                   "vietnamese": "Ngồi), ngồi mãi",
                   "segments": [
                     {
-                      "text": "良き。",
-                      "reading": "すわ",
+                      "text": "座り込む",
+                      "reading": "すわりこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27689,13 +28244,18 @@
               "meaning": "Ngủ say, ngủ suốt (nằm liệt giường)",
               "examples": [
                 {
-                  "japanese": "病気で1週間寝込んだ。",
+                  "japanese": "寝込む。",
                   "vietnamese": "Vibi bệnh nên tôi đã nằm ngủ liệt giường suốt một tuần liền.",
                   "segments": [
                     {
-                      "text": "病気で1週間寝込んだ。",
-                      "reading": "こむ",
+                      "text": "寝込む",
+                      "reading": "ねこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27718,13 +28278,18 @@
               "meaning": "Nói chuyện (say sưa)",
               "examples": [
                 {
-                  "japanese": "友人と電話で3時間ゃ話し込んだ。",
+                  "japanese": "話し込む。",
                   "vietnamese": "Tôi đã nói chuyện điện thoại với bạn thân 3 tiếng liền.",
                   "segments": [
                     {
-                      "text": "友人と電話で3時間ゃ話し込んだ。",
-                      "reading": "む",
+                      "text": "話し込む",
+                      "reading": "はなしこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27751,9 +28316,19 @@
                   "vietnamese": "Khi không vui thì mẹ sẽ im lặng.",
                   "segments": [
                     {
-                      "text": "母は不機嫌になると黙り込む。",
-                      "reading": "まり",
+                      "text": "母は不機嫌になると",
+                      "reading": "だまりこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "黙り込む",
+                      "reading": "だまりこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27776,13 +28351,18 @@
               "meaning": "Ở/ Trọ lại qua đêm",
               "examples": [
                 {
-                  "japanese": "病院に泊まり込んで看病する。",
+                  "japanese": "泊まり込む。",
                   "vietnamese": "Ở lại viện qua đêm chăm người bệnh.",
                   "segments": [
                     {
-                      "text": "病院に泊まり込んで看病する。",
-                      "reading": "まり",
+                      "text": "泊まり込む",
+                      "reading": "とまりこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27809,9 +28389,19 @@
                   "vietnamese": "Khi trở thành đồ đệ thì sẽ sống trong nhà của sư phụ.",
                   "segments": [
                     {
-                      "text": "弟子になって、師匠の家に住み込む。",
-                      "reading": "すみ",
+                      "text": "弟子になって、師匠の家に",
+                      "reading": "すみこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "住み込む",
+                      "reading": "すみこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27834,13 +28424,23 @@
               "meaning": "Ninh ,hầm (đồ ăn)",
               "examples": [
                 {
-                  "japanese": "煮込む。",
+                  "japanese": "牛肉を煮込む。",
                   "vietnamese": "Ninh ,hầm (đồ ăn)",
                   "segments": [
                     {
-                      "text": "煮込む。",
-                      "reading": "こむ",
+                      "text": "牛肉を",
+                      "reading": "にこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "煮込む",
+                      "reading": "にこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27867,9 +28467,19 @@
                   "vietnamese": "Tiêu thụ sản phẩm mới.",
                   "segments": [
                     {
-                      "text": "新製品を売り込む。",
-                      "reading": "うり",
+                      "text": "新製品を",
+                      "reading": "うりこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "売り込む",
+                      "reading": "うりこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27892,13 +28502,18 @@
               "meaning": "Nhờ vả, yêu cầu khẩn thiết",
               "examples": [
                 {
-                  "japanese": "頭を下げて先輩に頼み込んだ。",
+                  "japanese": "頼み込む。",
                   "vietnamese": "Dacmi đầu xuống để nhờ vả đàn anh,",
                   "segments": [
                     {
-                      "text": "頭を下げて先輩に頼み込んだ。",
-                      "reading": "みこ",
+                      "text": "頼み込む",
+                      "reading": "たのみこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27921,13 +28536,23 @@
               "meaning": "Huấn luyện, dạy bảo",
               "examples": [
                 {
-                  "japanese": "込。",
+                  "japanese": "教師に技術を教え込む。",
                   "vietnamese": "Huấn luyện, dạy bảo",
                   "segments": [
                     {
-                      "text": "込。",
-                      "reading": "とむ",
+                      "text": "教師に技術を",
+                      "reading": "おしえこむ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "教え込む",
+                      "reading": "おしえこむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27950,13 +28575,23 @@
               "meaning": "Bàn bạc, thảo luận",
               "examples": [
                 {
-                  "japanese": "合う。",
+                  "japanese": "問題について話し合う。",
                   "vietnamese": "Bàn bạc, thảo luận",
                   "segments": [
                     {
-                      "text": "合う。",
-                      "reading": "あう",
+                      "text": "問題について",
+                      "reading": "はなしあう",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "話し合う",
+                      "reading": "はなしあう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -27979,13 +28614,18 @@
               "meaning": "Tranh luận, cãi cọ",
               "examples": [
                 {
-                  "japanese": "言いたいことを言い合って、最後に仲置りした。",
+                  "japanese": "言い合う。",
                   "vietnamese": "Đã nói ra điều muốn tranh luận và hoà giải được.",
                   "segments": [
                     {
-                      "text": "言いたいことを言い合って、最後に仲置りした。",
-                      "reading": "いい",
+                      "text": "言い合う",
+                      "reading": "いいあう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28008,13 +28648,18 @@
               "meaning": "Tâm sự, hàn huyên, trò chuyện với nhau",
               "examples": [
                 {
-                  "japanese": ">しぶりに会った友人と深夜まで語り合った。",
+                  "japanese": "語り合う。",
                   "vietnamese": "Tôi đa tâm sự cùng người bạn thân lâu rồi mới",
                   "segments": [
                     {
-                      "text": ">しぶりに会った友人と深夜まで語り合った。",
-                      "reading": "りあ",
+                      "text": "語り合う",
+                      "reading": "かたりあう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28037,13 +28682,18 @@
               "meaning": "Nhìn nhau, nhìn thẳng vào mắt nhau",
               "examples": [
                 {
-                  "japanese": "合う。",
+                  "japanese": "見つめ合う。",
                   "vietnamese": "Nhìn nhau, nhìn thẳng vào mắt nhau",
                   "segments": [
                     {
-                      "text": "合う。",
-                      "reading": "つめ",
+                      "text": "見つめ合う",
+                      "reading": "みつめあう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28066,13 +28716,18 @@
               "meaning": "Đối mặt",
               "examples": [
                 {
-                  "japanese": "粗手と向かい合って座る。",
+                  "japanese": "向かい合う。",
                   "vietnamese": "ら 並ん で 座る 。",
                   "segments": [
                     {
-                      "text": "粗手と向かい合って座る。",
-                      "reading": "むか",
+                      "text": "向かい合う",
+                      "reading": "むかいあう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28095,13 +28750,23 @@
               "meaning": "Giúp đỡ lẫn nhau, hợp tác",
               "examples": [
                 {
-                  "japanese": "合う。",
+                  "japanese": "困ったときは助け合う。",
                   "vietnamese": "Giúp đỡ lẫn nhau, hợp tác",
                   "segments": [
                     {
-                      "text": "合う。",
-                      "reading": "すけ",
+                      "text": "困ったときは",
+                      "reading": "たすけあう",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "助け合う",
+                      "reading": "たすけあう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28124,13 +28789,18 @@
               "meaning": "Chia đều, chia sẽ",
               "examples": [
                 {
-                  "japanese": "一つのパンをみんなで分け合って食べた。",
+                  "japanese": "分け合う。",
                   "vietnamese": "Đã cùng mọi người chia đều một chiếc bánh cho mọi",
                   "segments": [
                     {
-                      "text": "一つのパンをみんなで分け合って食べた。",
-                      "reading": "わけ",
+                      "text": "分け合う",
+                      "reading": "わけあう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28153,13 +28823,18 @@
               "meaning": "Cùng đóng góp, cùng góp phần",
               "examples": [
                 {
-                  "japanese": "見弟でお金を出し合って、両親にプレゼントをした。",
+                  "japanese": "出し合う。",
                   "vietnamese": "Anh em đã cùng góp tiền mua quà tặng",
                   "segments": [
                     {
-                      "text": "見弟でお金を出し合って、両親にプレゼントをした。",
-                      "reading": "あう",
+                      "text": "出し合う",
+                      "reading": "だしあう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28182,13 +28857,23 @@
               "meaning": "Sắp xếp, bố trí, thỏa thuận, dàn xếp",
               "examples": [
                 {
-                  "japanese": "申し合わせる。",
+                  "japanese": "会議の内容は秘密にすることを申し合わせた。",
                   "vietnamese": "Sắp xếp, bố trí, thỏa thuận, dàn xếp。",
                   "segments": [
                     {
-                      "text": "申し合わせる。",
+                      "text": "会議の内容は秘密にすることを",
+                      "reading": "もうしあわせる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "申し合わせた",
                       "reading": "もうしあわせる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28215,9 +28900,19 @@
                   "vietnamese": "Tôi đã rũ bạn cùng lớp, bàn bạc và đi núi",
                   "segments": [
                     {
-                      "text": "クラスメートたちと誘い合わせて富士山に行った。",
-                      "reading": "さそ",
+                      "text": "クラスメートたちと",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "誘い合わせて",
+                      "reading": "さそいあわせる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "富士山に行った。",
+                      "reading": "さそいあわせる",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28240,13 +28935,18 @@
               "meaning": "Bên cạnh nhau, đặt cạnh nhau",
               "examples": [
                 {
-                  "japanese": "新幹線でたまたま隣り合わせた人と友だちになった。",
+                  "japanese": "待ち合わせる。",
                   "vietnamese": "Thinh thoảng đã kết bạn với người ngồi",
                   "segments": [
                     {
-                      "text": "新幹線でたまたま隣り合わせた人と友だちになった。",
-                      "reading": "りあ",
+                      "text": "待ち合わせる",
+                      "reading": "まちあわせる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28273,9 +28973,19 @@
                   "vietnamese": "Lắp ghép các bộ phận với nhau và tạo ra những mô hình",
                   "segments": [
                     {
-                      "text": "部品を組み合わせてプラモデルを作る。",
-                      "reading": "くみ",
+                      "text": "部品を",
+                      "reading": "くみあわせる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "組み合わせてプラモデルを",
+                      "reading": "くみあわせる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "作る。",
+                      "reading": "くみあわせる",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28298,13 +29008,18 @@
               "meaning": "Đóng gói, đóng hộp",
               "examples": [
                 {
-                  "japanese": "せる。",
+                  "japanese": "詰め合わせる。",
                   "vietnamese": "Đóng gói, đóng hộp",
                   "segments": [
                     {
-                      "text": "せる。",
-                      "reading": "つめ",
+                      "text": "詰め合わせる",
+                      "reading": "つめあわせる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28327,13 +29042,18 @@
               "meaning": "Phủ lên, đặt chồng lên, xếp lớp",
               "examples": [
                 {
-                  "japanese": "せる。",
+                  "japanese": "重ね合わせる。",
                   "vietnamese": "Phủ lên, đặt chồng lên, xếp lớp",
                   "segments": [
                     {
-                      "text": "せる。",
-                      "reading": "あわ",
+                      "text": "重ね合わせる",
+                      "reading": "かさねあわせる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28356,13 +29076,18 @@
               "meaning": "Tình cờ có mặt, tình cờ gặp",
               "examples": [
                 {
-                  "japanese": "わせ。",
+                  "japanese": "居合わせる。",
                   "vietnamese": "Tình cờ có mặt, tình cờ gặp",
                   "segments": [
                     {
-                      "text": "わせ。",
-                      "reading": "いあ",
+                      "text": "居合わせる",
+                      "reading": "いあわせる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28389,9 +29114,19 @@
                   "vietnamese": "Tôi da gap",
                   "segments": [
                     {
-                      "text": "バスで小鐵がなくて困っていたら、乗り合わせていた人が200円貸してくれた。",
-                      "reading": "りあ",
+                      "text": "バスで小鐵がなくて困っていたら、",
+                      "reading": "のりあわせる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "乗り合わせていた",
+                      "reading": "のりあわせる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "人が200円貸してくれた。",
+                      "reading": "のりあわせる",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28414,13 +29149,18 @@
               "meaning": "Tình cừ mang theo, có",
               "examples": [
                 {
-                  "japanese": "せる。",
+                  "japanese": "持ち合わせる。",
                   "vietnamese": "Tình cừ mang theo, có",
                   "segments": [
                     {
-                      "text": "せる。",
-                      "reading": "ちあ",
+                      "text": "持ち合わせる",
+                      "reading": "もちあわせる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28443,13 +29183,18 @@
               "meaning": "Hỏi hỏi thăm",
               "examples": [
                 {
-                  "japanese": "せる。",
+                  "japanese": "問い合わせる。",
                   "vietnamese": "Hỏi hỏi thăm",
                   "segments": [
                     {
-                      "text": "せる。",
-                      "reading": "いあ",
+                      "text": "問い合わせる",
+                      "reading": "といあわせる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28482,7 +29227,7 @@
                     },
                     {
                       "text": "照らし合わせて",
-                      "reading": "てらしあわせて",
+                      "reading": "てらしあわせる",
                       "isUnderlined": true
                     },
                     {
@@ -28511,13 +29256,18 @@
               "meaning": "Hỏi lại nghe lại",
               "examples": [
                 {
-                  "japanese": "聞こえなかったので聞き置した。",
+                  "japanese": "聞き直す。",
                   "vietnamese": "Vi không nghe rõ nên đã hỏi lại.",
                   "segments": [
                     {
-                      "text": "聞こえなかったので聞き置した。",
-                      "reading": "きき",
+                      "text": "聞き直す",
+                      "reading": "ききなおす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28540,13 +29290,18 @@
               "meaning": "Làm lại",
               "examples": [
                 {
-                  "japanese": "湊験がうまくいかなかったので、初めみからやり置した。",
+                  "japanese": "やり直す。",
                   "vietnamese": "Vì thí nghiệm không được thuận lợi nên",
                   "segments": [
                     {
-                      "text": "湊験がうまくいかなかったので、初めみからやり置した。",
-                      "reading": "りな",
+                      "text": "やり直す",
+                      "reading": "やりなおす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28569,13 +29324,23 @@
               "meaning": "Gọi lại",
               "examples": [
                 {
-                  "japanese": "直。",
+                  "japanese": "電話をかけ直す。",
                   "vietnamese": "Gọi lại",
                   "segments": [
                     {
-                      "text": "直。",
-                      "reading": "ごい",
+                      "text": "電話を",
+                      "reading": "かけなおす",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "かけ直す",
+                      "reading": "かけなおす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28598,13 +29363,18 @@
               "meaning": "Quay trở lại",
               "examples": [
                 {
-                  "japanese": "す。",
+                  "japanese": "出直す。",
                   "vietnamese": "Quay trở lại",
                   "segments": [
                     {
-                      "text": "す。",
-                      "reading": "す",
+                      "text": "出直す",
+                      "reading": "でなおす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28627,13 +29397,23 @@
               "meaning": "Cầm lại chuyển biến tốt lên",
               "examples": [
                 {
-                  "japanese": "落としそうになった荷物を持ち置す。",
+                  "japanese": "落としそうになった荷物を持ち直す。",
                   "vietnamese": "Camlai hành lý sắp rơi.",
                   "segments": [
                     {
-                      "text": "落としそうになった荷物を持ち置す。",
-                      "reading": "ちな",
+                      "text": "落としそうになった荷物を",
+                      "reading": "もちなおす",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "持ち直す",
+                      "reading": "もちなおす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28656,13 +29436,23 @@
               "meaning": "Suy nghĩ lại, xem xét lại",
               "examples": [
                 {
-                  "japanese": "仕事を療めるつもゃりだったが、考え置したはうがいいと言われた。",
+                  "japanese": "仕事を辞めるつもりだったが、考え直したほうがいいと言われた。",
                   "vietnamese": "DPa định nghị việc rồi, nhưng",
                   "segments": [
                     {
-                      "text": "仕事を療めるつもゃりだったが、考え置したはうがいいと言われた。",
-                      "reading": "えな",
+                      "text": "仕事を辞めるつもりだったが、",
+                      "reading": "かんがえなおす",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "考え直したほうがいいと",
+                      "reading": "かんがえなおす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "言われた。",
+                      "reading": "かんがえなおす",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28685,13 +29475,18 @@
               "meaning": "Thay đổi suy nghĩ, thay đối ý định",
               "examples": [
                 {
-                  "japanese": "直す。",
+                  "japanese": "思い直す。",
                   "vietnamese": "Thay đổi suy nghĩ, thay đối ý định",
                   "segments": [
                     {
-                      "text": "直す。",
-                      "reading": "なおす",
+                      "text": "思い直す",
+                      "reading": "おもいなおす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -56998,6 +57793,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "d6902d767f939ec5d9ea5bf4dc8f43992008f921c0ff7a921777b7a6c2dd5131"
+    "candidateHash": "93039a37a0d87a34b1fcecb53f1decf3f3946af06dbe51eabc1edf0cb6c431c7"
   }
 }
