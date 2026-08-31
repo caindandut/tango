@@ -35,6 +35,12 @@ function wordData(word, position) {
   };
 }
 
+function hasWordChanged(existing, desired) {
+  return Object.entries(desired).some(([key, value]) => (
+    JSON.stringify(existing?.[key]) !== JSON.stringify(value)
+  ));
+}
+
 async function syncPart(tx, unit, part) {
   const metadata = {
     code: part.code,
@@ -56,7 +62,17 @@ async function syncPart(tx, unit, part) {
   });
   const existingWords = await tx.vocabulary.findMany({
     where: { setId: set.id },
-    select: { id: true, position: true },
+    select: {
+      id: true,
+      position: true,
+      sourceNumber: true,
+      kanji: true,
+      hiragana: true,
+      meaning: true,
+      hanVietMeaning: true,
+      examples: true,
+      relations: true,
+    },
     orderBy: { position: 'asc' },
   });
   const words = part.words.map((word, index) => wordData(word, index + 1));
@@ -72,6 +88,7 @@ async function syncPart(tx, unit, part) {
     throw new Error(`${part.code} có số từ hiện hữu không khớp; seed dừng để bảo toàn kết quả học.`);
   }
   for (const [index, word] of words.entries()) {
+    if (!hasWordChanged(existingWords[index], word)) continue;
     await tx.vocabulary.update({
       where: { id: existingWords[index].id },
       data: word,
@@ -110,6 +127,7 @@ module.exports = seedN2FromJson;
 module.exports.setName = setName;
 module.exports.syncPart = syncPart;
 module.exports.wordData = wordData;
+module.exports.hasWordChanged = hasWordChanged;
 module.exports.positiveInteger = positiveInteger;
 
 if (require.main === module) {
