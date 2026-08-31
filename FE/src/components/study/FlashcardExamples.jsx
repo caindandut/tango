@@ -23,17 +23,17 @@ export default function FlashcardExamples({ examples = [], relations = [], isFli
     >
       {validExamples.length > 0 && (
         <>
-          <span className='mb-2 flex items-center justify-between gap-2 text-xs font-bold uppercase tracking-[0.14em] text-emerald-300'>
+          <span className='mb-2 flex items-center justify-between gap-2 text-sm font-bold uppercase tracking-[0.14em] text-emerald-300 sm:text-base'>
             <span>Ví dụ</span>
             <span>{validExamples.length} câu</span>
           </span>
           <span className='block space-y-2'>
             {validExamples.map((example, index) => (
               <span key={example.japanese + index} className='block border-l-2 border-emerald-400/60 pl-3'>
-                <span lang='ja' className='block font-japanese text-base font-medium leading-7 text-slate-100 sm:text-lg'>
+                <span lang='ja' className='block font-japanese text-base font-medium leading-7 text-slate-100 sm:text-lg text-xl sm:text-2xl'>
                   <JapaneseSegments segments={example.segments} fallbackText={example.japanese} />
                 </span>
-                <span className='mt-0.5 block text-sm leading-6 text-slate-300 sm:text-base'>
+                <span className='mt-1 block text-sm leading-6 text-slate-300 sm:text-base text-base sm:text-lg sm:leading-8'>
                   {example.vietnamese}
                 </span>
               </span>
