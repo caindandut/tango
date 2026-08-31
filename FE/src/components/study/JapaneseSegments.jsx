@@ -46,16 +46,14 @@ function renderWithRuby(text, reading, isUnderlined, key) {
   const normalizedReading = normalizeKana(reading);
   let readingCursor = 0;
 
-  return (
-    <Fragment key={key}>
-      {runs.map((run, runIndex) => {
+  const renderedRuns = runs.map((run, runIndex) => {
         if (!run.isKanji) {
           const normalizedRun = normalizeKana(run.text);
           if (KANA_PATTERN.test(run.text)) {
             const markerIndex = normalizedReading.indexOf(normalizedRun, readingCursor);
             if (markerIndex >= readingCursor) readingCursor = markerIndex + normalizedRun.length;
           }
-          return <Fragment key={`${key}-plain-${runIndex}`}>{decorate(run.text, isUnderlined)}</Fragment>;
+          return <Fragment key={`${key}-plain-${runIndex}`}>{run.text}</Fragment>;
         }
 
         const nextKanaRun = runs.slice(runIndex + 1).find((candidate) => (
@@ -69,17 +67,19 @@ function renderWithRuby(text, reading, isUnderlined, key) {
         const rubyReading = reading.slice(readingCursor, readingEnd);
         readingCursor = readingEnd;
 
-        if (!rubyReading) return <Fragment key={`${key}-kanji-${runIndex}`}>{decorate(run.text, isUnderlined)}</Fragment>;
+        if (!rubyReading) return <Fragment key={`${key}-kanji-${runIndex}`}>{run.text}</Fragment>;
 
         return (
           <ruby key={`${key}-kanji-${runIndex}`} className='japanese-ruby'>
-            {decorate(run.text, isUnderlined)}
+            {run.text}
             <rt className='japanese-ruby__reading'>{rubyReading}</rt>
           </ruby>
         );
-      })}
-    </Fragment>
-  );
+      });
+
+  return isUnderlined
+    ? <u key={key}>{renderedRuns}</u>
+    : <Fragment key={key}>{renderedRuns}</Fragment>;
 }
 
 function findTarget(fullText, targetText, targetReading) {

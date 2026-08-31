@@ -88,6 +88,21 @@ describe('N2 structured vocabulary rendering', () => {
               reading: 'はめる',
               segments: [{ text: '当てはめる', reading: 'はめる', isUnderlined: false }],
             },
+            {
+              japanese: '（名）占い',
+              vietnamese: 'Bói',
+              segments: [{ text: '（名）占い', reading: 'うらない', isUnderlined: true }],
+            },
+            {
+              japanese: '空っぽの財布／本棚／部屋',
+              vietnamese: 'Trống rỗng',
+              segments: [{ text: '空っぽの財布／本棚／部屋', reading: 'からっぽのさいふ／ほんだな／へや', isUnderlined: true }],
+            },
+            {
+              japanese: '（例．星占い）',
+              vietnamese: 'Ví dụ',
+              segments: [{ text: '（例．星占い）', reading: '（れい．ほしうらない）', isUnderlined: false }],
+            },
           ],
         }]}
       />,
@@ -98,6 +113,11 @@ describe('N2 structured vocabulary rendering', () => {
     expect(underlined).toContain('ごきげんな');
     expect(underlined).toContain('はめる');
     expect(underlined).not.toContain('当てはめる');
+    expect(underlined.some((value) => value.includes('占') && value.includes('い'))).toBe(true);
+    expect(underlined).not.toContain('（名）占い');
+    expect(underlined.some((value) => value.includes('空') && value.includes('ぽ'))).toBe(true);
+    expect(underlined).not.toContain('空っぽの財布／本棚／部屋');
+    expect(underlined).not.toContain('（例．星占い）');
     expect(underlined).not.toContain('＿がいい');
   });
 

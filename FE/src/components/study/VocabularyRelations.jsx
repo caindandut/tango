@@ -19,6 +19,23 @@ function isExplanatoryRelation(japanese) {
     && (japanese.includes('\u4F8B') || japanese.endsWith('\u3002\uFF09'));
 }
 
+function inferImplicitTarget(japanese) {
+  const nounMarker = japanese.match(/^[\uFF08(][^\uFF09)]*[\uFF09)]/u);
+  if (nounMarker) return japanese.slice(nounMarker[0].length);
+
+  const bracketStart = japanese.search(/[\uFF08(]/u);
+  if (bracketStart > 0) return japanese.slice(0, bracketStart);
+
+  const separator = japanese.indexOf('\uFF0F');
+  if (separator > 0) {
+    const firstPhrase = japanese.slice(0, separator);
+    const noIndex = firstPhrase.indexOf('\u306E');
+    return (noIndex > 0 ? firstPhrase.slice(0, noIndex) : firstPhrase).trim();
+  }
+
+  return '';
+}
+
 function splitSegmentsAtTarget(segments, target, targetReading = '') {
   const targetIndex = segments.map((segment) => segment?.text || '').join('').indexOf(target);
   if (targetIndex < 0) return segments;
@@ -54,16 +71,20 @@ function relationSegments(item) {
   const placeholder = japanese.match(PLACEHOLDER_PATTERN)?.[0];
   const explicitTarget = typeof item?.target === 'string' ? item.target.trim() : '';
 
-  // Formula blanks are the only underlined part; the suffix remains plain.
   if (placeholder || explicitTarget) {
     const target = placeholder || explicitTarget;
     const reading = placeholder ? '' : item.reading || '';
     return splitSegmentsAtTarget(segments, target, reading);
   }
+
+  const implicitTarget = inferImplicitTarget(japanese);
+  if (implicitTarget) {
+    const reading = segments.find((segment) => segment?.reading)?.reading || '';
+    return splitSegmentsAtTarget(segments, implicitTarget, reading);
+  }
   if (segments.some((segment) => segment?.isUnderlined)) return segments;
   if (isExplanatoryRelation(japanese)) return segments;
 
-  // For bracketed notes, underline the lexical term after the usage list.
   const bracketEnd = japanese.lastIndexOf('\u3011');
   const bracketTarget = bracketEnd >= 0 ? japanese.slice(bracketEnd + 1).replace(/^\u306E/u, '') : '';
   if (bracketEnd >= 0 && !bracketTarget) return segments;
@@ -72,7 +93,6 @@ function relationSegments(item) {
     return splitSegmentsAtTarget(segments, bracketTarget, reading);
   }
 
-  // Missing flags are transcription omissions: restore the visible lexical item.
   return segments.map((segment) => ({ ...segment, isUnderlined: true }));
 }
 
@@ -84,7 +104,7 @@ export default function VocabularyRelations({ relations = [], compact = false })
     <span
       className={`vocabulary-relations ${compact ? 'vocabulary-relations--compact' : ''}`}
       role='region'
-      aria-label='Các mục liên quan'
+      aria-label='CÃ¡c má»¥c liÃªn quan'
     >
       {groups.map((group, groupIndex) => (
         <span className='vocabulary-relations__group' key={`${group.label}-${groupIndex}`}>
