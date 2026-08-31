@@ -230,14 +230,9 @@
                       }
                     },
                     {
-                      "japanese": "＿生涯",
+                      "japanese": "生涯",
                       "vietnamese": "Cả đời người, sinh thời",
                       "segments": [
-                        {
-                          "text": "＿",
-                          "reading": "",
-                          "isUnderlined": true
-                        },
                         {
                           "text": "生涯",
                           "reading": "しょうがい",
@@ -56978,6 +56973,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "bd080ac271f490f9b918ef95c15eb610020ac8f9c9952af798991acfe6afae6c"
+    "candidateHash": "468e486a4fad2b2abf00fab7b17fd40eada93735aa8c18bf32c355f9e2160113"
   }
 }
