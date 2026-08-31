@@ -65,6 +65,33 @@ describe('N2 structured vocabulary rendering', () => {
     expect(screen.getByText(/＿/)).toBeInTheDocument();
   });
 
+  it('underlines only relation placeholders and restores omitted lexical underlines', () => {
+    const { container } = render(
+      <VocabularyRelations
+        relations={[{
+          label: 'relation',
+          items: [
+            {
+              japanese: '＿がいい',
+              vietnamese: 'Tâm trạng tốt',
+              segments: [{ text: '＿がいい', reading: 'きげん', isUnderlined: false }],
+            },
+            {
+              japanese: 'ごきげんな',
+              vietnamese: 'Vui vẻ',
+              segments: [{ text: 'ごきげんな', reading: 'ごきげんな', isUnderlined: false }],
+            },
+          ],
+        }]}
+      />,
+    );
+
+    const underlined = [...container.querySelectorAll('u')].map((node) => node.textContent);
+    expect(underlined).toContain('＿');
+    expect(underlined).toContain('ごきげんな');
+    expect(underlined).not.toContain('＿がいい');
+  });
+
   it('keeps N3 string examples as a fallback', () => {
     render(<JapaneseSegments fallbackText='毎朝コーヒーを飲みます。' />);
     expect(screen.getByText('毎朝コーヒーを飲みます。')).toBeInTheDocument();
