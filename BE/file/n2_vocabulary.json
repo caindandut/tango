@@ -210,14 +210,9 @@
                   "label": "類",
                   "items": [
                     {
-                      "japanese": "＿一生",
+                      "japanese": "一生",
                       "vietnamese": "Cuộc đời",
                       "segments": [
-                        {
-                          "text": "＿",
-                          "reading": "",
-                          "isUnderlined": true
-                        },
                         {
                           "text": "一生",
                           "reading": "いっしょう",
@@ -56973,6 +56968,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "468e486a4fad2b2abf00fab7b17fd40eada93735aa8c18bf32c355f9e2160113"
+    "candidateHash": "620fe57fad09b1eb17211c8c81a5419aae5060d8fd4e63a770c886e9a49081ea"
   }
 }

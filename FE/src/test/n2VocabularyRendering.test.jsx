@@ -43,20 +43,21 @@ describe('N2 structured vocabulary rendering', () => {
     expect(container.querySelectorAll('u')).toHaveLength(0);
   });
 
-  it('matches the PDF paired relation row: only the first item has a blank glyph', () => {
+  it('matches the verified relation row without an extra placeholder', () => {
     const { container } = render(
       <VocabularyRelations
         relations={[{
           label: '類',
           items: [
-            { japanese: '＿一生', vietnamese: 'Cuộc đời', segments: [{ text: '＿一生', reading: 'いっしょう', isUnderlined: false }] },
+            { japanese: '一生', vietnamese: 'Cuộc đời', segments: [{ text: '一生', reading: 'いっしょう', isUnderlined: false }] },
             { japanese: '生涯', vietnamese: 'Cả đời người, sinh thời', segments: [{ text: '生涯', reading: 'しょうがい', isUnderlined: false }] },
           ],
         }]}
       />,
     );
 
-    expect(container.textContent).toContain('＿一生');
+    expect(container.textContent).toContain('一生');
+    expect(container.textContent).not.toContain('＿一生');
     expect(container.textContent).toContain('生涯');
     expect(container.querySelectorAll('u')).toHaveLength(0);
   });
