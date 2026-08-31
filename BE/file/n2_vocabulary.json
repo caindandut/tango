@@ -13603,9 +13603,14 @@
                       "vietnamese": "Sự mong ước, lời nguyện cầu",
                       "segments": [
                         {
-                          "text": "（名）お願い",
-                          "reading": "ねがう",
+                          "text": "（名）",
+                          "reading": "",
                           "isUnderlined": false
+                        },
+                        {
+                          "text": "お願い",
+                          "reading": "おねがい",
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -16010,9 +16015,19 @@
                   "vietnamese": "(Ví dụ: Cuộc cãi vã này do mình tạo ra thì chỉ còn cách tự mình giải quyết được。)",
                   "segments": [
                     {
-                      "text": "このけんかは自分でまいた種だから自分で刈るしかない。",
-                      "reading": "このけんかはじぶんでまいたたねだからじぶんでかるしかない。",
+                      "text": "このけんかは",
+                      "reading": "このけんかは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "自分でまいた種",
+                      "reading": "じぶんでまいたたね",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "だから自分で刈るしかない。",
+                      "reading": "だからじぶんでかるしかない。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17383,22 +17398,67 @@
                   }
                 },
                 {
-                  "japanese": "車に酔って、好きな人に告白した。",
-                  "vietnamese": "Bằng vì say rượu, tôi đã tỏ tình với người mình thích。",
+                  "japanese": "酔った勢いで、好きな人に告白した。",
+                  "vietnamese": "Bằng sự can đảm khi say rượu, tôi đã tỏ tình với người mình thích。",
                   "segments": [
                     {
-                      "text": "車に",
-                      "reading": "くるまに",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "酔って",
-                      "reading": "よって",
+                      "text": "酔った勢いで、",
+                      "reading": "よったいきおいで、",
                       "isUnderlined": true
                     },
                     {
-                      "text": "、好きな人に告白した。",
-                      "reading": "、すきなひとにこくはくした。",
+                      "text": "好きな人に告白した。",
+                      "reading": "すきなひとにこくはくした。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 41,
+                    "printedPage": 38
+                  }
+                },
+                {
+                  "japanese": "観客はその歌手のすばらしい歌に酔っていた。",
+                  "vietnamese": "Khán giả đã say mê bài hát tuyệt vời của ca sĩ đó。",
+                  "segments": [
+                    {
+                      "text": "観客はその歌手のすばらしい歌に",
+                      "reading": "かんきゃくはそのかしゅのすばらしいうたに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "酔っていた",
+                      "reading": "よっていた",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 41,
+                    "printedPage": 38
+                  }
+                },
+                {
+                  "japanese": "彼は成功に酔った。",
+                  "vietnamese": "Anh ấy đã say mê trong thành công。",
+                  "segments": [
+                    {
+                      "text": "彼は成功に",
+                      "reading": "かれはせいこうに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "酔った",
+                      "reading": "よった",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
                       "isUnderlined": false
                     }
                   ],
@@ -17417,7 +17477,12 @@
                       "vietnamese": "Say men,",
                       "segments": [
                         {
-                          "text": "（名）酔い",
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "酔い",
                           "reading": "よい",
                           "isUnderlined": true
                         }
@@ -17428,12 +17493,12 @@
                       }
                     },
                     {
-                      "japanese": "（名）酔い止め",
-                      "vietnamese": "Thuốc chống say",
+                      "japanese": "＿が回る",
+                      "vietnamese": "Say mềm",
                       "segments": [
                         {
-                          "text": "（名）酔い止め",
-                          "reading": "よいどめ",
+                          "text": "＿が回る",
+                          "reading": "＿がまわる",
                           "isUnderlined": true
                         }
                       ],
@@ -17443,12 +17508,122 @@
                       }
                     },
                     {
+                      "japanese": "＿が覚める",
+                      "vietnamese": "Tỉnh rượu",
+                      "segments": [
+                        {
+                          "text": "＿が覚める",
+                          "reading": "＿がさめる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    },
+                    {
+                      "japanese": "うっとりする",
+                      "vietnamese": "Mê mẩn, say mê",
+                      "segments": [
+                        {
+                          "text": "うっとりする",
+                          "reading": "うっとりする",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
                       "japanese": "二日酔い",
-                      "vietnamese": "Say rượu nhẹ",
+                      "vietnamese": "Nhức đầu vì say rượu từ hôm trước",
                       "segments": [
                         {
                           "text": "二日酔い",
                           "reading": "ふつかよい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    },
+                    {
+                      "japanese": "酔っぱらう",
+                      "vietnamese": "Say rượu",
+                      "segments": [
+                        {
+                          "text": "酔っぱらう",
+                          "reading": "よっぱらう",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    },
+                    {
+                      "japanese": "酔っぱらい",
+                      "vietnamese": "Người say",
+                      "segments": [
+                        {
+                          "text": "酔っぱらい",
+                          "reading": "よっぱらい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    },
+                    {
+                      "japanese": "乗り物酔い",
+                      "vietnamese": "Say tàu xe",
+                      "segments": [
+                        {
+                          "text": "乗り物酔い",
+                          "reading": "のりものよい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    },
+                    {
+                      "japanese": "船酔い",
+                      "vietnamese": "Say sóng",
+                      "segments": [
+                        {
+                          "text": "船酔い",
+                          "reading": "ふなよい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    },
+                    {
+                      "japanese": "酔い止め（の薬）",
+                      "vietnamese": "Thuốc chống say tàu xe",
+                      "segments": [
+                        {
+                          "text": "酔い止め（の薬）",
+                          "reading": "よいどめ（のくすり）",
                           "isUnderlined": true
                         }
                       ],
@@ -17473,13 +17648,48 @@
               "meaning": "Nôn, phun, nói ra",
               "examples": [
                 {
-                  "japanese": "悪いものを食べたのか、胃の中のものを全部吐いた。",
+                  "japanese": "息を吸って吐く。",
+                  "vietnamese": "Hít vào thở ra.",
+                  "segments": [
+                    {
+                      "text": "息を吸って",
+                      "reading": "いきをすって",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "吐く",
+                      "reading": "はく",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 41,
+                    "printedPage": 38
+                  }
+                },
+                {
+                  "japanese": "悪いものを食べたのか、胃の中のものを全部吐いてしまった。",
                   "vietnamese": "Không biết có phải do ăn đồ ôi thiu hay không mà tôi đã nôn hết tất cả ra ngoài rồi。",
                   "segments": [
                     {
-                      "text": "悪いものを食べたのか、胃の中のものを全部吐いた。",
-                      "reading": "はく",
+                      "text": "悪いものを食べたのか、胃の中のものを全部",
+                      "reading": "わるいものをたべたのか、いのなかのものをぜんぶ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "吐いて",
+                      "reading": "はいて",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "しまった。",
+                      "reading": "しまった。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17488,7 +17698,88 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "対",
+                  "items": [
+                    {
+                      "japanese": "吸う",
+                      "vietnamese": "Hít vào",
+                      "segments": [
+                        {
+                          "text": "吸う",
+                          "reading": "すう",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "①②吐き出す",
+                      "vietnamese": "Phun ra (例。火山が煙を吐き出している。) (Ví dụ: Núi lửa đang phun trào.)",
+                      "segments": [
+                        {
+                          "text": "①②",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "吐き出す",
+                          "reading": "はきだす",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "慣",
+                  "items": [
+                    {
+                      "japanese": "弱音を吐く",
+                      "vietnamese": "Than phiền",
+                      "segments": [
+                        {
+                          "text": "弱音を吐く",
+                          "reading": "よわねをはく",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    },
+                    {
+                      "japanese": "本音を吐く",
+                      "vietnamese": "Nói ra những lời chân thành (từ trái tim)",
+                      "segments": [
+                        {
+                          "text": "本音を吐く",
+                          "reading": "ほんねをはく",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 41,
                 "printedPage": 38
@@ -17503,12 +17794,47 @@
               "examples": [
                 {
                   "japanese": "体の調子が悪いので医者に診てもらおう。",
-                  "vietnamese": "Vico thể một mỏi nên tôi dự định đi khám bác sĩ.",
+                  "vietnamese": "Vì cơ thể mệt mỏi nên tôi dự định đi khám bác sĩ.",
                   "segments": [
                     {
-                      "text": "体の調子が悪いので医者に診てもらおう。",
+                      "text": "体の調子が悪いので医者に",
+                      "reading": "からだのちょうしがわるいのでいしゃに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "診てもらおう",
+                      "reading": "みてもらおう",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 42,
+                    "printedPage": 39
+                  }
+                },
+                {
+                  "japanese": "医者が患者を診る。",
+                  "vietnamese": "Bác sĩ khám cho bệnh nhân.",
+                  "segments": [
+                    {
+                      "text": "医者が患者を",
+                      "reading": "いしゃがかんじゃを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "診る",
                       "reading": "みる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17517,7 +17843,28 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "診察する",
+                      "vietnamese": "Khám bệnh",
+                      "segments": [
+                        {
+                          "text": "診察する",
+                          "reading": "しんさつする",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 42,
                 "printedPage": 39
@@ -17535,9 +17882,44 @@
                   "vietnamese": "Tất cả mọi người đã đến thăm người bạn đang nhập viện.",
                   "segments": [
                     {
-                      "text": "入院中の友だちをみんなで見舞った。",
-                      "reading": "う",
+                      "text": "入院中の友だちをみんなで",
+                      "reading": "にゅういんちゅうのともだちをみんなで",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "見舞った",
+                      "reading": "みまった",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 42,
+                    "printedPage": 39
+                  }
+                },
+                {
+                  "japanese": "ここはたびたび台風に見舞われる地域だ。",
+                  "vietnamese": "Đây là khu vực thường xuyên bị ảnh hưởng bởi bão.",
+                  "segments": [
+                    {
+                      "text": "ここはたびたび台風に",
+                      "reading": "ここはたびたびたいふうに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "見舞われる",
+                      "reading": "みまわれる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "地域だ。",
+                      "reading": "ちいきだ。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17546,7 +17928,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "（名）見舞い",
+                      "vietnamese": "Sự thăm hỏi",
+                      "segments": [
+                        {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "見舞い",
+                          "reading": "みまい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 42,
                 "printedPage": 39
@@ -17561,12 +17969,47 @@
               "examples": [
                 {
                   "japanese": "会社に勤める。",
-                  "vietnamese": "Lam việc ở công ty.",
+                  "vietnamese": "Làm việc ở công ty.",
                   "segments": [
                     {
-                      "text": "会社に勤める。",
-                      "reading": "つと",
+                      "text": "会社に",
+                      "reading": "かいしゃに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "勤める",
+                      "reading": "つとめる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 42,
+                    "printedPage": 39
+                  }
+                },
+                {
+                  "japanese": "定年まで無事に勤め上げた。",
+                  "vietnamese": "Làm việc yên ổn đến lúc nghỉ hưu.",
+                  "segments": [
+                    {
+                      "text": "定年まで無事に",
+                      "reading": "ていねんまでぶじに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "勤め上げた",
+                      "reading": "つとめあげた",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17575,7 +18018,113 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "勤め先",
+                      "vietnamese": "Cơ quan, nơi làm việc",
+                      "segments": [
+                        {
+                          "text": "勤め先",
+                          "reading": "つとめさき",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    },
+                    {
+                      "japanese": "勤め口",
+                      "vietnamese": "Vị trí làm việc",
+                      "segments": [
+                        {
+                          "text": "勤め口",
+                          "reading": "つとめぐち",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    },
+                    {
+                      "japanese": "勤め人",
+                      "vietnamese": "Nhân viên công sở",
+                      "segments": [
+                        {
+                          "text": "勤め人",
+                          "reading": "つとめにん",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    },
+                    {
+                      "japanese": "＿上げる",
+                      "vietnamese": "Hết nhiệm kì làm việc",
+                      "segments": [
+                        {
+                          "text": "＿上げる",
+                          "reading": "＿あげる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "勤める",
+                      "vietnamese": "Làm việc",
+                      "segments": [
+                        {
+                          "text": "勤める",
+                          "reading": "つとめる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    },
+                    {
+                      "japanese": "（名）勤め",
+                      "vietnamese": "Công việc（例。「お勤めはどちらですか」） (Ví dụ: “Công việc của bạn là gì?”)",
+                      "segments": [
+                        {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "勤め",
+                          "reading": "つとめ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 42,
                 "printedPage": 39
@@ -17590,12 +18139,97 @@
               "examples": [
                 {
                   "japanese": "大学時代はアルバイトで学費を稼いだ。",
-                  "vietnamese": "Thoi đại học tôi đã kiểm tiền để trang trải học phí bằng",
+                  "vietnamese": "Thời đại học tôi đã kiếm tiền để trang trải học phí bằng công việc làm thêm.",
                   "segments": [
                     {
-                      "text": "大学時代はアルバイトで学費を稼いだ。",
-                      "reading": "ぐ",
+                      "text": "大学時代はアルバイトで学費を",
+                      "reading": "だいがくじだいはアルバイトでがくひを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "稼いだ",
+                      "reading": "かせいだ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 42,
+                    "printedPage": 39
+                  }
+                },
+                {
+                  "japanese": "１日１万円稼ぐのは大変だ。",
+                  "vietnamese": "Kiếm 1 vạn yên 1 ngày rất vất vả.",
+                  "segments": [
+                    {
+                      "text": "１日１万円",
+                      "reading": "いちにちいちまんえん",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "稼ぐ",
+                      "reading": "かせぐ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "のは大変だ。",
+                      "reading": "のはたいへんだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 42,
+                    "printedPage": 39
+                  }
+                },
+                {
+                  "japanese": "読解は苦手なので、日本語能力試験では、聴解で点を稼ごうと思う。",
+                  "vietnamese": "Vì kém phần đọc hiểu nên tôi định sẽ kiếm điểm phần nghe hiểu trong kì thi năng lực tiếng Nhật.",
+                  "segments": [
+                    {
+                      "text": "読解は苦手なので、日本語能力試験では、聴解で",
+                      "reading": "どっかいはにがてなので、にほんごのうりょくしけんでは、ちょうかいで",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "点を稼ごう",
+                      "reading": "てんをかせごう",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "と思う。",
+                      "reading": "とおもう。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 42,
+                    "printedPage": 39
+                  }
+                },
+                {
+                  "japanese": "出演者の到着が遅れ、その間、司会者が話をして時間を稼いだ。",
+                  "vietnamese": "Trong lúc chờ người biểu diễn đến muộn, người dẫn chương trình đã câu giờ bằng cách kể vài câu chuyện.",
+                  "segments": [
+                    {
+                      "text": "出演者の到着が遅れ、その間、司会者が話をして",
+                      "reading": "しゅつえんしゃのとうちゃくがおくれ、そのあいだ、しかいしゃがはなしをして",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "時間を稼いだ",
+                      "reading": "じかんをかせいだ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17604,7 +18238,73 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "出稼ぎ",
+                      "vietnamese": "Làm việc xa nhà",
+                      "segments": [
+                        {
+                          "text": "出稼ぎ",
+                          "reading": "でかせぎ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "点を＿",
+                      "vietnamese": "Kiếm điểm",
+                      "segments": [
+                        {
+                          "text": "点を",
+                          "reading": "てんを",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    },
+                    {
+                      "japanese": "時間を＿",
+                      "vietnamese": "Câu giờ",
+                      "segments": [
+                        {
+                          "text": "時間を",
+                          "reading": "じかんを",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 42,
                 "printedPage": 39
@@ -17619,12 +18319,47 @@
               "examples": [
                 {
                   "japanese": "買い物の代金をカードで支払う。",
-                  "vietnamese": "Thanh toán tiền mua hàng bằng thẻ,",
+                  "vietnamese": "Thanh toán tiền mua hàng bằng thẻ.",
                   "segments": [
                     {
-                      "text": "買い物の代金をカードで支払う。",
-                      "reading": "ごい",
+                      "text": "買い物の代金をカードで",
+                      "reading": "かいもののだいきんをカードで",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "支払う",
+                      "reading": "しはらう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 43,
+                    "printedPage": 40
+                  }
+                },
+                {
+                  "japanese": "給料は銀行振り込みで支払われる。",
+                  "vietnamese": "Tiền lương được thanh toán bằng cách chuyển khoản ngân hàng.",
+                  "segments": [
+                    {
+                      "text": "給料は銀行振り込みで",
+                      "reading": "きゅうりょうはぎんこうふりこみで",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "支払われる",
+                      "reading": "しはらわれる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17633,7 +18368,48 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "払う",
+                      "vietnamese": "Trả tiền",
+                      "segments": [
+                        {
+                          "text": "払う",
+                          "reading": "はらう",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 43,
+                        "printedPage": 40
+                      }
+                    },
+                    {
+                      "japanese": "（名）支払い",
+                      "vietnamese": "Sự thanh toán, chi trả",
+                      "segments": [
+                        {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "支払い",
+                          "reading": "しはらい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 43,
+                        "printedPage": 40
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 43,
                 "printedPage": 40
@@ -17647,13 +18423,73 @@
               "meaning": "Tiếp nhận, hiểu",
               "examples": [
                 {
+                  "japanese": "着払いの荷物を、代金を払って受け取った。",
+                  "vietnamese": "Trả tiền cước rồi nhận đồ của dịch vụ giao hàng tận nhà.",
+                  "segments": [
+                    {
+                      "text": "着払いの荷物を、代金を払って",
+                      "reading": "ちゃくばらいのにもつを、だいきんをはらって",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "受け取った",
+                      "reading": "うけとった",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 43,
+                    "printedPage": 40
+                  }
+                },
+                {
                   "japanese": "大学から合格通知を受け取った。",
                   "vietnamese": "Tôi đã nhận được giấy báo trúng tuyển từ trường đại học.",
                   "segments": [
                     {
-                      "text": "大学から合格通知を受け取った。",
-                      "reading": "うけ",
+                      "text": "大学から合格通知を",
+                      "reading": "だいがくからごうかくつうちを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "受け取った",
+                      "reading": "うけとった",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 43,
+                    "printedPage": 40
+                  }
+                },
+                {
+                  "japanese": "「上司からの注意は、自分への期待だと受け取ることにしている。」",
+                  "vietnamese": "Tôi hiểu sự nhắc nhở của cấp trên là sự kỳ vọng vào tôi.",
+                  "segments": [
+                    {
+                      "text": "「上司からの注意は、自分への期待だと",
+                      "reading": "「じょうしからのちゅういは、じぶんへのきたいだと",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "受け取る",
+                      "reading": "うけとる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "ことにしている。」",
+                      "reading": "ことにしている。」",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17662,7 +18498,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "（名）受け取り",
+                      "vietnamese": "Nhận, tiếp nhận",
+                      "segments": [
+                        {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "受け取り",
+                          "reading": "うけとり",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 43,
+                        "printedPage": 40
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 43,
                 "printedPage": 40
@@ -17680,9 +18542,19 @@
                   "vietnamese": "Tôi đã nộp tiền học phí kỳ này ở ngân hàng.",
                   "segments": [
                     {
-                      "text": "今期の授業料を銀行に払い込んだ。",
-                      "reading": "らい",
+                      "text": "今期の授業料を銀行に",
+                      "reading": "こんきのじゅぎょうりょうをぎんこうに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "払い込んだ",
+                      "reading": "はらいこんだ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17691,7 +18563,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "（名）払い込み",
+                      "vietnamese": "Thanh toán — Phiếu thanh toán",
+                      "segments": [
+                        {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "払い込み",
+                          "reading": "はらいこみ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 43,
+                        "printedPage": 40
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 43,
                 "printedPage": 40
@@ -17706,12 +18604,47 @@
               "examples": [
                 {
                   "japanese": "電話会社は過大請求額を利用者の口座に払い戻した。",
-                  "vietnamese": "Công ty viễn thông đã hoàn trả số tiền",
+                  "vietnamese": "Công ty viễn thông đã hoàn trả số tiền thừa vào tài khoản của khách hàng.",
                   "segments": [
                     {
-                      "text": "電話会社は過大請求額を利用者の口座に払い戻した。",
-                      "reading": "らい",
+                      "text": "電話会社は過大請求額を利用者の口座に",
+                      "reading": "でんわがいしゃはかだいせいきゅうがくをりようしゃのこうざに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "払い戻した",
+                      "reading": "はらいもどした",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 43,
+                    "printedPage": 40
+                  }
+                },
+                {
+                  "japanese": "（例。コンサートが中止になったのでチケット代の払い戻しが行われた。）",
+                  "vietnamese": "(Ví dụ: Do buổi hòa nhạc bị hoãn nên ban tổ chức đã tiến hành hoàn trả tiền vé.)",
+                  "segments": [
+                    {
+                      "text": "（例。コンサートが中止になったのでチケット代の",
+                      "reading": "（れい。コンサートがちゅうしになったのでチケットだいの",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "払い戻し",
+                      "reading": "はらいもどし",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "が行われた。）",
+                      "reading": "がおこなわれた。）",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17720,7 +18653,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "（名）払い戻し",
+                      "vietnamese": "Hoàn trả",
+                      "segments": [
+                        {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "払い戻し",
+                          "reading": "はらいもどし",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 43,
+                        "printedPage": 40
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 43,
                 "printedPage": 40
@@ -17738,9 +18697,69 @@
                   "vietnamese": "Rút tiền phí sinh hoạt từ ngân hàng.",
                   "segments": [
                     {
-                      "text": "銀行から生活費を引き出した。",
-                      "reading": "ひき",
+                      "text": "銀行から生活費を",
+                      "reading": "ぎんこうからせいかつひを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "引き出した",
+                      "reading": "ひきだした",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 43,
+                    "printedPage": 40
+                  }
+                },
+                {
+                  "japanese": "スポンサーから資金を引き出すのに成功した。",
+                  "vietnamese": "Tôi đã thành công trong việc kêu gọi vốn từ nhà tài trợ.",
+                  "segments": [
+                    {
+                      "text": "スポンサーから資金を",
+                      "reading": "スポンサーからしきんを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "引き出す",
+                      "reading": "ひきだす",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "のに成功した。",
+                      "reading": "のにせいこうした。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 43,
+                    "printedPage": 40
+                  }
+                },
+                {
+                  "japanese": "コーチは選手の才能を引き出した。",
+                  "vietnamese": "Huấn luyện viên khai thác được tài năng của các tuyển thủ.",
+                  "segments": [
+                    {
+                      "text": "コーチは選手の才能を",
+                      "reading": "コーチはせんしゅのさいのうを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "引き出した",
+                      "reading": "ひきだした",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17749,7 +18768,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "（名）引き出し",
+                      "vietnamese": "Ngăn kéo",
+                      "segments": [
+                        {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "引き出し",
+                          "reading": "ひきだし",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 43,
+                        "printedPage": 40
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 43,
                 "printedPage": 40
@@ -17759,17 +18804,52 @@
               "sourceNumber": 156,
               "kanji": "儲かる",
               "hiragana": "もうかる",
-              "hanVietMeaning": "N2",
-              "meaning": "も うか る ガ が る も うか る Sinh lời",
+              "hanVietMeaning": "TRỮ",
+              "meaning": "Sinh lời",
               "examples": [
                 {
                   "japanese": "株で100万円もうかった。",
                   "vietnamese": "Đã lời 100 vạn yên từ cổ phiếu.",
                   "segments": [
                     {
-                      "text": "株で100万円もうかった。",
-                      "reading": "うか",
+                      "text": "株で100万円",
+                      "reading": "かぶでひゃくまんえん",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "もうかった",
+                      "reading": "もうかった",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 43,
+                    "printedPage": 40
+                  }
+                },
+                {
+                  "japanese": "この商売はもうかる。",
+                  "vietnamese": "Việc buôn bán này sẽ sinh ra lợi nhuận.",
+                  "segments": [
+                    {
+                      "text": "この商売は",
+                      "reading": "このしょうばいは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "もうかる",
+                      "reading": "もうかる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17793,12 +18873,72 @@
               "examples": [
                 {
                   "japanese": "彼は株で100万円もうけた。",
-                  "vietnamese": "Anh ấy kiếm được 100 vạn yên nhờ cỏ phiều.",
+                  "vietnamese": "Anh ấy kiếm được 100 vạn yên nhờ cổ phiếu.",
                   "segments": [
                     {
-                      "text": "彼は株で100万円もうけた。",
-                      "reading": "うけ",
+                      "text": "彼は株で100万円",
+                      "reading": "かれはかぶでひゃくまんえん",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "もうけた",
+                      "reading": "もうけた",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 44,
+                    "printedPage": 41
+                  }
+                },
+                {
+                  "japanese": "事業でもうけた金を市に寄付した。",
+                  "vietnamese": "Tôi đã ủng hộ cho thành phố khoản tiền kiếm lời từ dự án.",
+                  "segments": [
+                    {
+                      "text": "事業で",
+                      "reading": "じぎょうで",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "もうけた",
+                      "reading": "もうけた",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "金を市に寄付した。",
+                      "reading": "かねをしにきふした。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 44,
+                    "printedPage": 41
+                  }
+                },
+                {
+                  "japanese": "結婚して子どもを３人もうけた。",
+                  "vietnamese": "Tôi đã kết hôn và có 3 đứa con.",
+                  "segments": [
+                    {
+                      "text": "結婚して子どもを３人",
+                      "reading": "けっこんしてこどもをさんにん",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "もうけた",
+                      "reading": "もうけた",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17807,7 +18947,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "（名）もうけ",
+                      "vietnamese": "Lợi nhuận",
+                      "segments": [
+                        {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "もうけ",
+                          "reading": "もうけ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 44,
+                        "printedPage": 41
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 44,
                 "printedPage": 41
@@ -17826,7 +18992,7 @@
                   "segments": [
                     {
                       "text": "景気が",
-                      "reading": "おちこむ",
+                      "reading": "けいきが",
                       "isUnderlined": false
                     },
                     {
@@ -17836,7 +19002,7 @@
                     },
                     {
                       "text": "、失業率が上がった。",
-                      "reading": "おちこむ",
+                      "reading": "、しつぎょうりつがあがった。",
                       "isUnderlined": false
                     }
                   ],
@@ -17939,9 +19105,44 @@
                   "vietnamese": "Nghe nói đĩa CD này đã bán được 1 triệu bản.",
                   "segments": [
                     {
-                      "text": "このCDは100万枚売れたそうだ。",
-                      "reading": "うれ",
+                      "text": "このCDは100万枚",
+                      "reading": "このCDはひゃくまんまい",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "売れた",
+                      "reading": "うれた",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "そうだ。",
+                      "reading": "そうだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 44,
+                    "printedPage": 41
+                  }
+                },
+                {
+                  "japanese": "その新商品は飛ぶように売れた。",
+                  "vietnamese": "Sản phẩm mới đó bán chạy như bay (rất đắt hàng).",
+                  "segments": [
+                    {
+                      "text": "その新商品は飛ぶように",
+                      "reading": "そのしんしょうひんはとぶように",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "売れた",
+                      "reading": "うれた",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17950,7 +19151,43 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "売れ行き",
+                      "vietnamese": "Tình trạng buôn bán (例。この商品は売れ行きがいい。) (Ví dụ: Sản phẩm này bán chạy.)",
+                      "segments": [
+                        {
+                          "text": "売れ行き",
+                          "reading": "うれゆき",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 44,
+                        "printedPage": 41
+                      }
+                    },
+                    {
+                      "japanese": "売れっ子",
+                      "vietnamese": "Người được yêu thích",
+                      "segments": [
+                        {
+                          "text": "売れっ子",
+                          "reading": "うれっこ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 44,
+                        "printedPage": 41
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 44,
                 "printedPage": 41
@@ -17964,13 +19201,23 @@
               "meaning": "Bán hết sạch",
               "examples": [
                 {
-                  "japanese": "そのコンサートのチケットは1時間で売り切れたそうだ。",
-                  "vietnamese": "Nsghe nói ve của buổi hòa nhạc đó",
+                  "japanese": "そのコンサートのチケットは１時間で売り切れたそうだ。",
+                  "vietnamese": "Nghe nói vé của buổi hòa nhạc đó đã bán hết sạch trong vòng 1 tiếng.",
                   "segments": [
                     {
-                      "text": "そのコンサートのチケットは1時間で売り切れたそうだ。",
-                      "reading": "うり",
+                      "text": "そのコンサートのチケットは１時間で",
+                      "reading": "そのコンサートのチケットはいちじかんで",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "売り切れた",
+                      "reading": "うりきれた",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "そうだ。",
+                      "reading": "そうだ。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -17979,7 +19226,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "（名）売り切れ",
+                      "vietnamese": "Sự bán hết, cháy hàng",
+                      "segments": [
+                        {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "売り切れ",
+                          "reading": "うりきれ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 44,
+                        "printedPage": 41
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 44,
                 "printedPage": 41
@@ -58106,6 +59379,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "1beb7239a68a5f896870f73de5ee3961aa369e1539ea68471af50d953a1311d4"
+    "candidateHash": "7581f37131bb70fdec52ae9a0290fc3fdd060531764eb6934dcf04f765312510"
   }
 }
