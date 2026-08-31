@@ -1,5 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { getFlashcardNextLabel, getStudyMeaningLines } from '../lib/studyPresentation.js';
+import { getFlashcardNextLabel, getStudyMeaningLines, isKatakanaVocabulary } from '../lib/studyPresentation.js';
+
+describe('Katakana vocabulary presentation', () => {
+  it('detects Katakana headwords without treating hiragana as Katakana', () => {
+    expect(isKatakanaVocabulary({ kanji: 'アンテナ' })).toBe(true);
+    expect(isKatakanaVocabulary({ kanji: '人生' })).toBe(false);
+    expect(isKatakanaVocabulary({ kanji: 'いわゆる' })).toBe(false);
+  });
+});
 
 describe('study meaning presentation', () => {
   it('places Han-Viet meaning before the Vietnamese meaning without a label', () => {

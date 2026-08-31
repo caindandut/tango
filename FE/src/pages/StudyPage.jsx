@@ -14,6 +14,7 @@ import {
   getStudyMeaningLines,
   getFlashcardNextLabel,
   shouldShowQuizMeaning,
+  isKatakanaVocabulary,
 } from '@/lib/studyPresentation';
 import {
   HAN_VIET_MEANING_STORAGE_KEY,
@@ -729,10 +730,13 @@ export default function StudyPage() {
                       ))}
                       <span lang="ja" className="hiragana-result text-emerald-600">{currentWord.hiragana}</span>
 
+                      <span lang='ja' className='flashcard-reading-visible'>{!isKatakanaVocabulary(currentWord) && currentWord.hiragana}</span>
                       <FlashcardExamples
                         examples={currentWord.examples}
                         relations={currentWord.relations}
                         isFlipped={isFlashcardFlipped}
+                        targetText={currentWord.kanji}
+                        targetReading={currentWord.hiragana}
                       />
                       <span className="text-slate-400 text-xs mt-10">Nhấn để xem lại từ vựng</span>
                     </span>
@@ -842,7 +846,11 @@ export default function StudyPage() {
                       </div>
                       {checkResult && (
                         <>
-                          <VocabularyExamples examples={currentWord.examples} />
+                          <VocabularyExamples
+                            examples={currentWord.examples}
+                            targetText={currentWord.kanji}
+                            targetReading={currentWord.hiragana}
+                          />
                           <VocabularyRelations relations={currentWord.relations} />
                         </>
                       )}
@@ -1001,7 +1009,11 @@ export default function StudyPage() {
 
                     {checkResult && (
                       <>
-                        <VocabularyExamples examples={currentWord.examples} />
+                        <VocabularyExamples
+                          examples={currentWord.examples}
+                          targetText={currentWord.kanji}
+                          targetReading={currentWord.hiragana}
+                        />
                         <VocabularyRelations relations={currentWord.relations} />
                       </>
                     )}

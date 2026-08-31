@@ -5,7 +5,7 @@ import JapaneseSegments from '@/components/study/JapaneseSegments';
 
 const JAPANESE_TERM_PATTERN = /^[\u3041-\u3096\u30a1-\u30fa\u30fc\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\u3005\u3006\u30f6]+$/u;
 
-export default function VocabularyExamples({ examples = [] }) {
+export default function VocabularyExamples({ examples = [], targetText = '', targetReading = '' }) {
   const [openExamples, setOpenExamples] = useState(() => new Set());
   const [lookup, setLookup] = useState(null);
   const [lookupState, setLookupState] = useState({ status: 'idle', result: null, error: '' });
@@ -156,7 +156,12 @@ export default function VocabularyExamples({ examples = [] }) {
                   onMouseUp={(event) => handleSelection(event.currentTarget, example.japanese)}
                   onTouchEnd={(event) => scheduleSelection(event.currentTarget, example.japanese)}
                 >
-                  <JapaneseSegments segments={example.segments} fallbackText={example.japanese} />
+                  <JapaneseSegments
+                    segments={example.segments}
+                    fallbackText={example.japanese}
+                    targetText={targetText}
+                    targetReading={targetReading}
+                  />
                 </span>
                 <span className="vocabulary-examples__chevron" aria-hidden="true">
                   {openExamples.has(index) ? '⌃' : '⌄'}

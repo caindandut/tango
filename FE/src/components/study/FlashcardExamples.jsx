@@ -8,7 +8,13 @@ const isValidExample = (example) => (
   && example.vietnamese.trim()
 );
 
-export default function FlashcardExamples({ examples = [], relations = [], isFlipped }) {
+export default function FlashcardExamples({
+  examples = [],
+  relations = [],
+  isFlipped,
+  targetText = '',
+  targetReading = '',
+}) {
   if (!isFlipped) return null;
 
   const validExamples = Array.isArray(examples) ? examples.filter(isValidExample) : [];
@@ -31,7 +37,12 @@ export default function FlashcardExamples({ examples = [], relations = [], isFli
             {validExamples.map((example, index) => (
               <span key={example.japanese + index} className='block border-l-2 border-emerald-400/60 pl-3'>
                 <span lang='ja' className='block font-japanese text-base font-medium leading-7 text-slate-100 sm:text-lg text-xl sm:text-2xl'>
-                  <JapaneseSegments segments={example.segments} fallbackText={example.japanese} />
+                  <JapaneseSegments
+                    segments={example.segments}
+                    fallbackText={example.japanese}
+                    targetText={targetText}
+                    targetReading={targetReading}
+                  />
                 </span>
                 <span className='mt-1 block text-sm leading-6 text-slate-300 sm:text-base text-base sm:text-lg sm:leading-8'>
                   {example.vietnamese}

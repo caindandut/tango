@@ -32,6 +32,31 @@ describe('N2 structured vocabulary rendering', () => {
     expect(container.querySelector('[dangerouslySetInnerHTML]')).not.toBeInTheDocument();
   });
 
+  it('repairs a whole-sentence underline using the active vocabulary term', () => {
+    const { container } = render(
+      <JapaneseSegments
+        segments={[{ text: '幸せな人生を送る。', reading: 'しあわせなじんせいをおくる。', isUnderlined: true }]}
+        targetText='人生'
+        targetReading='じんせい'
+      />,
+    );
+
+    expect(container.querySelector('u')).toHaveTextContent('人生');
+    expect(container.querySelector('u')).not.toHaveTextContent('幸せな');
+  });
+
+  it('places furigana only above Kanji in a mixed phrase', () => {
+    const { container } = render(
+      <JapaneseSegments
+        segments={[{ text: '人間ができている', reading: 'にんげんができている', isUnderlined: true }]}
+      />,
+    );
+
+    expect(container.querySelector('ruby')).toHaveTextContent('人間');
+    expect(container.querySelector('ruby')).not.toHaveTextContent('ができている');
+    expect(container.querySelector('rt')).toHaveTextContent('にんげん');
+  });
+
   it('renders every relation label, literal blank and exact Vietnamese text', () => {
     render(<VocabularyRelations relations={relations} />);
 

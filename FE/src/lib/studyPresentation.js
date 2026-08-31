@@ -1,7 +1,16 @@
 import { isKatakana } from 'wanakana';
 
+const KANJI_PATTERN = /[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]/u;
+const KATAKANA_PATTERN = /^[\s\u30a0-\u30ffー・]+$/u;
+
 function isKanaOnlyVocabulary(currentWord) {
-  return Boolean(currentWord) && !/[一-龯々]/u.test(currentWord.kanji?.trim() || '');
+  return Boolean(currentWord) && !KANJI_PATTERN.test(currentWord.kanji?.trim() || '');
+}
+
+export function isKatakanaVocabulary(currentWord) {
+  const headword = currentWord?.kanji?.trim() || '';
+  return Boolean(headword) && KATAKANA_PATTERN.test(headword)
+    && /[\u30a1-\u30fa]/u.test(headword);
 }
 
 export function shouldShowMeaning(showMeaning, currentWord, checkResult) {
@@ -20,10 +29,36 @@ export function getStudyMeaningLines({ meaning, hanVietMeaning, showHanVietMeani
   }
 
   if (typeof meaning === 'string' && meaning.trim()) {
-    lines.push({ type: 'meaning', value: meaning });
+    lines.push(...splitKatakanaMeaning(meaning));
   }
 
   return lines;
+}
+
+function splitKatakanaMeaning(meaning) {
+  const value = meaning.trim();
+  const englishStart = value.search(/[A-Za-z]/u);
+  if (englishStart <= 0) return [{ type: 'meaning', value: meaning }];
+
+  const headwordLine = value.slice(0, englishStart).trim();
+  if (!/^[\s_＿\u30a0-\u30ffー・]+$/u.test(headwordLine)) {
+    return [{ type: 'meaning', value: meaning }];
+  }
+
+  const remainder = value.slice(englishStart).trim();
+  const vietnameseStart = remainder.search(/\s+(?=[A-ZÀ-ÝĐ][a-zà-ỹđ])/u);
+  if (vietnameseStart < 0) {
+    return [
+      { type: 'meaning', value: headwordLine },
+      { type: 'meaning', value: remainder },
+    ];
+  }
+
+  return [
+    { type: 'meaning', value: headwordLine },
+    { type: 'meaning', value: remainder.slice(0, vietnameseStart).trim() },
+    { type: 'meaning', value: remainder.slice(vietnameseStart).trim() },
+  ].filter((line) => line.value);
 }
 
 export function getKanaInputMode(currentWord) {
