@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { getFlashcardNextLabel, getStudyMeaningLines, isKatakanaVocabulary } from '../lib/studyPresentation.js';
+import { getFlashcardNextLabel, getStudyMeaningLines, isKatakanaVocabulary, shouldShowHanVietMeaning } from '../lib/studyPresentation.js';
 
 describe('Katakana vocabulary presentation', () => {
   it('detects Katakana headwords without treating hiragana as Katakana', () => {
@@ -10,6 +10,11 @@ describe('Katakana vocabulary presentation', () => {
 });
 
 describe('study meaning presentation', () => {
+  it('keeps Han-Viet hidden when the setting is off even after answering', () => {
+    expect(shouldShowHanVietMeaning(false, { isCorrect: true }, { hanVietMeaning: '\u004e\u1eef T\u00cdNH' })).toBe(false);
+    expect(shouldShowHanVietMeaning(true, null, { hanVietMeaning: '\u004e\u1eef T\u00cdNH' })).toBe(true);
+  });
+
   it('places Han-Viet meaning before the Vietnamese meaning without a label', () => {
     const lines = getStudyMeaningLines({
       meaning: 'Nữ giới',

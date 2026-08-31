@@ -17,6 +17,11 @@ export function shouldShowMeaning(showMeaning, currentWord, checkResult) {
   return showMeaning || isKanaOnlyVocabulary(currentWord) || checkResult != null;
 }
 
+export function shouldShowHanVietMeaning(showHanVietMeaning, _checkResult, currentWord) {
+  return Boolean(showHanVietMeaning && typeof currentWord?.hanVietMeaning === 'string'
+    && currentWord.hanVietMeaning.trim());
+}
+
 export function shouldShowQuizMeaning(showMeaning, checkResult, currentWord) {
   return showMeaning || isKanaOnlyVocabulary(currentWord) || checkResult?.isCorrect === true;
 }

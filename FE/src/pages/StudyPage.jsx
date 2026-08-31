@@ -14,6 +14,7 @@ import {
   getStudyMeaningLines,
   getFlashcardNextLabel,
   shouldShowQuizMeaning,
+  shouldShowHanVietMeaning,
   isKatakanaVocabulary,
 } from '@/lib/studyPresentation';
 import {
@@ -154,10 +155,8 @@ export default function StudyPage() {
   } = useStudySession();
   const isQuizMeaningVisible = shouldShowQuizMeaning(showMeaning, checkResult, currentWord);
   const isReadingMeaningVisible = shouldShowMeaning(showMeaning, currentWord, checkResult);
-  const isQuizHanVietMeaningVisible = Boolean(currentWord?.hanVietMeaning?.trim())
-    && shouldShowQuizMeaning(showHanVietMeaning, checkResult, currentWord);
-  const isReadingHanVietMeaningVisible = Boolean(currentWord?.hanVietMeaning?.trim())
-    && shouldShowMeaning(showHanVietMeaning, currentWord, checkResult);
+  const isQuizHanVietMeaningVisible = shouldShowHanVietMeaning(showHanVietMeaning, checkResult, currentWord);
+  const isReadingHanVietMeaningVisible = shouldShowHanVietMeaning(showHanVietMeaning, checkResult, currentWord);
   const kanaInputMode = getKanaInputMode(currentWord);
   const readingCorrectAnswer = getReadingCorrectAnswer(checkResult, currentWord);
 
