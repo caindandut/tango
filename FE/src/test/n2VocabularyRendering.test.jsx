@@ -168,6 +168,27 @@ describe('N2 structured vocabulary rendering', () => {
     expect(underlined).not.toContain('（名）占い');
   });
 
+  it('renders the corrected まいあがる example with per-kanji furigana', () => {
+    const { container } = render(
+      <JapaneseSegments
+        segments={[
+          { text: '女の子から', reading: 'おんなのこから', isUnderlined: false },
+          { text: '告白', reading: 'こくはく', isUnderlined: false },
+          { text: 'されて、', reading: '', isUnderlined: false },
+          { text: '彼', reading: 'かれ', isUnderlined: false },
+          { text: 'は', reading: '', isUnderlined: false },
+          { text: '舞い上がった', reading: 'まいあがった', isUnderlined: true },
+          { text: '。', reading: '', isUnderlined: false },
+        ]}
+      />,
+    );
+
+    expect(container.textContent).toContain('女おんなの子こから告白こくはくされて、彼かれは舞まい上あがった。');
+    expect(container.querySelectorAll('rt')).toHaveLength(6);
+    expect(container.querySelector('u')).toHaveTextContent('舞まい上あがった');
+    expect(container.querySelector('u')).not.toHaveTextContent('彼は');
+  });
+
   it('keeps N3 string examples as a fallback', () => {
     render(<JapaneseSegments fallbackText='毎朝コーヒーを飲みます。' />);
     expect(screen.getByText('毎朝コーヒーを飲みます。')).toBeInTheDocument();

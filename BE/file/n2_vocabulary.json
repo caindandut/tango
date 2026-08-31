@@ -26135,9 +26135,39 @@
                   "vietnamese": "Amh ấy nhảy cẵng lên vì được cô bé tỏ tình.",
                   "segments": [
                     {
-                      "text": "女の子から告白されて、彼は舞い上がった。",
-                      "reading": "いあ",
+                      "text": "女の子から",
+                      "reading": "おんなのこから",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "告白",
+                      "reading": "こくはく",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "されて、",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "彼",
+                      "reading": "かれ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "舞い上がった",
+                      "reading": "まいあがった",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -56968,6 +56998,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "620fe57fad09b1eb17211c8c81a5419aae5060d8fd4e63a770c886e9a49081ea"
+    "candidateHash": "d6902d767f939ec5d9ea5bf4dc8f43992008f921c0ff7a921777b7a6c2dd5131"
   }
 }
