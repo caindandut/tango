@@ -43659,14 +43659,9 @@
                   "vietnamese": "Nhảy lên trong hạnh phúc.",
                   "segments": [
                     {
-                      "text": "飛び上がって",
+                      "text": "飛び上がって喜ぶ。",
                       "reading": "とびあがる",
                       "isUnderlined": true
-                    },
-                    {
-                      "text": "喜ぶ。",
-                      "reading": "とびあがる",
-                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -43679,19 +43674,9 @@
                   "vietnamese": "Giật bắn mình.",
                   "segments": [
                     {
-                      "text": "驚いて",
-                      "reading": "とびあがる",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "飛び上がった",
+                      "text": "驚いて飛び上がった。",
                       "reading": "とびあがる",
                       "isUnderlined": true
-                    },
-                    {
-                      "text": "。",
-                      "reading": "",
-                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -43719,7 +43704,7 @@
                   "segments": [
                     {
                       "text": "水面に",
-                      "reading": "うかびあがる",
+                      "reading": "",
                       "isUnderlined": false
                     },
                     {
@@ -43743,19 +43728,9 @@
                   "vietnamese": "A đã hiện ra như một kẻ tình nghi.",
                   "segments": [
                     {
-                      "text": "Aが容疑者として",
-                      "reading": "うかびあがる",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "浮かび上がった",
+                      "text": "Aが容疑者として浮かび上がった。",
                       "reading": "うかびあがる",
                       "isUnderlined": true
-                    },
-                    {
-                      "text": "。",
-                      "reading": "",
-                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -43783,7 +43758,7 @@
                   "segments": [
                     {
                       "text": "（砂／ほこり…）が",
-                      "reading": "まいあがる",
+                      "reading": "",
                       "isUnderlined": false
                     },
                     {
@@ -43807,19 +43782,9 @@
                   "vietnamese": "Amh ấy nhảy cẵng lên vì được cô bé tỏ tình.",
                   "segments": [
                     {
-                      "text": "女の子から告白されて、彼は",
-                      "reading": "まいあがる",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "舞い上がった",
+                      "text": "女の子から告白されて、彼は舞い上がった。",
                       "reading": "まいあがる",
                       "isUnderlined": true
-                    },
-                    {
-                      "text": "。",
-                      "reading": "",
-                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -43885,19 +43850,9 @@
                   "vietnamese": "Cơ bắp đang nở ra (cuồn cuộn)",
                   "segments": [
                     {
-                      "text": "筋肉が",
-                      "reading": "もりあがる",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "盛り上がっている",
+                      "text": "筋肉が盛り上がっている。",
                       "reading": "もりあがる",
                       "isUnderlined": true
-                    },
-                    {
-                      "text": "。",
-                      "reading": "",
-                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -43950,7 +43905,7 @@
                   "segments": [
                     {
                       "text": "歓声が",
-                      "reading": "わきあがる",
+                      "reading": "",
                       "isUnderlined": false
                     },
                     {
@@ -43975,7 +43930,7 @@
                   "segments": [
                     {
                       "text": "（悲しみ／怒り…）が",
-                      "reading": "わきあがる",
+                      "reading": "",
                       "isUnderlined": false
                     },
                     {
@@ -44628,7 +44583,7 @@
                   "segments": [
                     {
                       "text": "卒業生の名前を",
-                      "reading": "そつぎょうせいのなまえを",
+                      "reading": "よみあげる",
                       "isUnderlined": false
                     },
                     {
@@ -45816,17 +45771,12 @@
               "meaning": "Ngủ say, ngủ suốt (nằm liệt giường)",
               "examples": [
                 {
-                  "japanese": "病気で1週間寝込んだ。",
+                  "japanese": "寝込む。",
                   "vietnamese": "Vì bị bệnh nên tôi đã nằm ngủ liệt giường suốt một tuần liền.",
                   "segments": [
                     {
-                      "text": "病気で1週間",
-                      "reading": "びょうきでいっしゅうかん",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "寝込んだ",
-                      "reading": "ねこんだ",
+                      "text": "寝込む",
+                      "reading": "ねこむ",
                       "isUnderlined": true
                     },
                     {
@@ -46901,22 +46851,22 @@
               "meaning": "Gọi lại",
               "examples": [
                 {
-                  "japanese": "（電話をかけたが、相手がいなかったとき）「またあとでかけ直します」",
+                  "japanese": "電話をかけ直す。",
                   "vietnamese": "（Khi đã gọi điện thoại rồi nhưng người cần gặp không có ở đó）“Tôi sẽ gọi lại sau”",
                   "segments": [
                     {
-                      "text": "（電話をかけたが、相手がいなかったとき）「またあとで",
-                      "reading": "（でんわをかけたが、あいてがいなかったとき）「またあとで",
+                      "text": "電話を",
+                      "reading": "かけなおす",
                       "isUnderlined": false
                     },
                     {
-                      "text": "かけ直します",
-                      "reading": "かけなおします",
+                      "text": "かけ直す",
+                      "reading": "かけなおす",
                       "isUnderlined": true
                     },
                     {
-                      "text": "」",
-                      "reading": "」",
+                      "text": "。",
+                      "reading": "",
                       "isUnderlined": false
                     }
                   ],
@@ -46940,21 +46890,16 @@
               "meaning": "Quay trở lại",
               "examples": [
                 {
-                  "japanese": "（もう一度来る必要があるとき）「改めて出直してまいります」",
+                  "japanese": "出直す。",
                   "vietnamese": "（Khi mà đến lần một lần nữa）“Xin phép, tôi sẽ quay lại một lần nữa”",
                   "segments": [
                     {
-                      "text": "（もう一度来る必要があるとき）「改めて",
-                      "reading": "（もういちどくるひつようがあるとき）「あらためて",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "出直してまいります",
-                      "reading": "でなおしてまいります",
+                      "text": "出直す",
+                      "reading": "でなおす",
                       "isUnderlined": true
                     },
                     {
-                      "text": "」",
+                      "text": "。",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -46965,21 +46910,16 @@
                   }
                 },
                 {
-                  "japanese": "（地震で何もかも失った。また一から出直した。）",
+                  "japanese": "出直す。",
                   "vietnamese": "（Ví dụ: Vì động đất nên đã mất tất cả mọi thứ. Lại quay trở lại từ đầu.）",
                   "segments": [
                     {
-                      "text": "（地震で何もかも失った。また一から",
-                      "reading": "（じしんでなにもかもうしなった。またいちから",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "出直した",
-                      "reading": "でなおした",
+                      "text": "出直す",
+                      "reading": "でなおす",
                       "isUnderlined": true
                     },
                     {
-                      "text": "。）",
+                      "text": "。",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -84998,6 +84938,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "a5a7ef61613ab3d9f5601c00183318bae872f6a4f2436a1905767cc40ba040b1"
+    "candidateHash": "9cb5d9e11e94afc7783ab0bf356a685cce79afb2b847fa588ae1e88161f42e37"
   }
 }
