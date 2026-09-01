@@ -32,13 +32,16 @@ test('Han-Viet migration adds a safe defaulted column', () => {
   );
 });
 
-test('Render runs the migration recovery check before deploying', () => {
+test('Render build stays independent of database availability', () => {
   const renderConfig = fs.readFileSync(renderConfigPath, 'utf8');
 
-  assert.match(
-    renderConfig,
-    /node src\/scripts\/recoverVocabularyMigration\.js/,
-  );
+  const buildCommand = renderConfig
+    .match(/buildCommand:\s*(.+)/)?.[1] || '';
+
+  assert.match(buildCommand, /npm install/);
+  assert.match(buildCommand, /prisma generate/);
+  assert.doesNotMatch(buildCommand, /recoverVocabularyMigration/);
+  assert.doesNotMatch(buildCommand, /prisma migrate deploy/);
 });
 
 test('migration recovery applies only when the existing column is present', () => {

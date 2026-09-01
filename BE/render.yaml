@@ -2,7 +2,7 @@ services:
   - type: web
     name: tango-api
     runtime: node
-    buildCommand: npm install && npx prisma generate && node src/scripts/recoverVocabularyMigration.js && npx prisma migrate deploy
+    buildCommand: npm install && npx prisma generate
     startCommand: node src/app.js
     envVars:
       - key: DATABASE_URL
