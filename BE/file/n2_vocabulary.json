@@ -63625,22 +63625,93 @@
               "meaning": "う まく 答え られ な か っ た 。",
               "examples": [
                 {
-                  "japanese": "突然。",
-                  "vietnamese": "う まく 答え られ な か っ た 。",
+                  "japanese": "国際連合を略して国連と言う。",
+                  "vietnamese": "Liên Hợp Quốc viết tắt là Quốc Liên (Liên Hợp Quốc).",
                   "segments": [
                     {
-                      "text": "突然。",
-                      "reading": "ごい",
+                      "text": "国際連合を",
+                      "reading": "こくさいれんごうを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "略して",
+                      "reading": "りゃくして",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "国連と言う。",
+                      "reading": "こくれんという。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 314,
-                    "printedPage": 311
+                    "pdfPage": 315,
+                    "printedPage": 312
+                  }
+                },
+                {
+                  "japanese": "詳しい話は略して、結論だけ報告する。",
+                  "vietnamese": "Rút gọn câu chuyện chi tiết, chỉ báo cáo kết luận.",
+                  "segments": [
+                    {
+                      "text": "詳しい話は",
+                      "reading": "くわしいはなしは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "略して",
+                      "reading": "りゃくして",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、結論だけ報告する。",
+                      "reading": "けつろんだけほうこくする。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 315,
+                    "printedPage": 312
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "＿省略する",
+                      "vietnamese": "Giản lược",
+                      "segments": [
+                        {
+                          "text": "＿省略する",
+                          "reading": "しょうりゃくする",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 315,
+                        "printedPage": 312
+                      }
+                    },
+                    {
+                      "japanese": "＿縮める",
+                      "vietnamese": "Rút ngắn",
+                      "segments": [
+                        {
+                          "text": "＿縮める",
+                          "reading": "ちぢめる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 315,
+                        "printedPage": 312
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 314,
                 "printedPage": 311
@@ -63654,18 +63725,203 @@
               "meaning": "方 が いい ぃ い 。",
               "examples": [
                 {
-                  "japanese": "女。",
-                  "vietnamese": "方 が いい ぃ い 。",
+                  "japanese": "後ろのランナーが前のランナーにだんだん迫ってきた。",
+                  "vietnamese": "Người chạy phía sau dần dần tiến sát người chạy phía trước.",
                   "segments": [
                     {
-                      "text": "女。",
-                      "reading": "ごい",
+                      "text": "後ろのランナーが前のランナーにだんだん",
+                      "reading": "うしろのらんなーがまえのらんなーにだんだん",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "迫ってきた",
+                      "reading": "せまってきた",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 314,
-                    "printedPage": 311
+                    "pdfPage": 315,
+                    "printedPage": 312
+                  }
+                },
+                {
+                  "japanese": "「ゴール地点…」が迫る。",
+                  "vietnamese": "Tiến sát đến gần/ địa điểm mục tiêu...",
+                  "segments": [
+                    {
+                      "text": "「ゴール地点…」が",
+                      "reading": "ごーるちてんが",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "迫る",
+                      "reading": "せまる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 315,
+                    "printedPage": 312
+                  }
+                },
+                {
+                  "japanese": "締結の日が目前に迫った。",
+                  "vietnamese": "Ngày cuối cùng đến gần trước mắt.",
+                  "segments": [
+                    {
+                      "text": "締結の日が目前に",
+                      "reading": "ていけつのひがもくぜんに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "迫った",
+                      "reading": "せまった",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 315,
+                    "printedPage": 312
+                  }
+                },
+                {
+                  "japanese": "「締め切り／期限／死期…」が迫る。",
+                  "vietnamese": "{Hạn cuối/ kì hạn/ lúc chết...} tiến gần.",
+                  "segments": [
+                    {
+                      "text": "「締め切り／期限／死期…」が",
+                      "reading": "しめきり／きげん／しきが",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "迫る",
+                      "reading": "せまる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 315,
+                    "printedPage": 312
+                  }
+                },
+                {
+                  "japanese": "「危険／敵…」が迫る。",
+                  "vietnamese": "{Nguy hiểm/ kẻ địch ...} đang đến gần. (cận kề)",
+                  "segments": [
+                    {
+                      "text": "「危険／敵…」が",
+                      "reading": "きけん／てきが",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "迫る",
+                      "reading": "せまる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 315,
+                    "printedPage": 312
+                  }
+                },
+                {
+                  "japanese": "大会で世界記録に迫るタイムが出た。",
+                  "vietnamese": "Thời điểm tốt để tiến gần kỉ lục thế giới tại đại hội đã xuất hiện.",
+                  "segments": [
+                    {
+                      "text": "大会で世界記録に",
+                      "reading": "たいかいでせかいきろくに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "迫る",
+                      "reading": "せまる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "タイムが出た。",
+                      "reading": "たいむがでた。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 315,
+                    "printedPage": 312
+                  }
+                },
+                {
+                  "japanese": "この会社は新しいが、すでに業界トップの大手に迫る勢いだ。",
+                  "vietnamese": "Công ty này tuy mới nhưng đã có lực làm đối đầu với công ty lớn đứng đầu trong ngành.",
+                  "segments": [
+                    {
+                      "text": "この会社は新しいが、すでに業界トップの大手に",
+                      "reading": "このかいしゃはあたらしいが、すでにぎょうかいとっぷのおおてに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "迫る",
+                      "reading": "せまる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "勢いだ。",
+                      "reading": "いきおいだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 315,
+                    "printedPage": 312
+                  }
+                },
+                {
+                  "japanese": "話が核心に迫ってきた。",
+                  "vietnamese": "Câu chuyện đã tới gần trọng tâm.",
+                  "segments": [
+                    {
+                      "text": "話が核心に",
+                      "reading": "はなしがかくしんに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "迫ってきた",
+                      "reading": "せまってきた",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 315,
+                    "printedPage": 312
                   }
                 }
               ],
@@ -68627,6 +68883,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "cf8d721a11a21a5a55ff9bad73a8d95136f96ffb5e8a8845bd0cd1471e687783"
+    "candidateHash": "64e848e8f90b5d39cb12af94e96527a4df7b6dbf07eaeb2c2ca6a4bf46eba044"
   }
 }
