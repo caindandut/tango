@@ -54369,25 +54369,246 @@
               "kanji": "たっぷり",
               "hiragana": "たっぷり",
               "hanVietMeaning": "",
-              "meaning": "た っ ぷり Nhiều, đủ, đầy đủ, đầy, tràn đầy",
+              "meaning": "Nhiều, đủ, đầy đủ, đầy, tràn đầy",
               "examples": [
                 {
-                  "japanese": "時間はたっぷりあるから、急がなくてるもいい。",
-                  "vietnamese": "Vì vẫn còn nhiều thời gian, nên không cần",
+                  "japanese": "時間はたっぷりあるから、急がなくてもいい。",
+                  "vietnamese": "Vì vẫn còn nhiều thời gian, nên không cần phải vội.",
                   "segments": [
                     {
-                      "text": "時間はたっぷりあるから、急がなくてるもいい。",
-                      "reading": "ぷり",
+                      "text": "時間は",
+                      "reading": "じかんは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "たっぷりある",
+                      "reading": "たっぷりある",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "から、急がなくてもいい。",
+                      "reading": "から、いそがなくてもいい。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
                     "pdfPage": 146,
                     "printedPage": 143
                   }
+                },
+                {
+                  "japanese": "たっぷり寝たら、疲れが取れた。",
+                  "vietnamese": "Đã khỏe lại sau khi ngủ đủ giấc.",
+                  "segments": [
+                    {
+                      "text": "たっぷり寝たら",
+                      "reading": "たっぷりねたら",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、疲れが取れた。",
+                      "reading": "、つかれがとれた。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 146,
+                    "printedPage": 143
+                  }
+                },
+                {
+                  "japanese": "栄養たっぷりの料理。",
+                  "vietnamese": "Những món ăn đầy đủ dinh dưỡng.",
+                  "segments": [
+                    {
+                      "text": "栄養",
+                      "reading": "えいよう",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "たっぷりの料理",
+                      "reading": "たっぷりのりょうり",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 147,
+                    "printedPage": 144
+                  }
+                },
+                {
+                  "japanese": "今日はたっぷり15分はかかる。",
+                  "vietnamese": "Từ nhà tôi đến ga thì dù nhanh vội như thế nào thì cũng phải mất trên 15 phút.",
+                  "segments": [
+                    {
+                      "text": "うちから駅までどんなに急いでも、",
+                      "reading": "うちからえきまでどんなにいそいでも、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "たっぷり15分はかかる",
+                      "reading": "たっぷりじゅうごふんはかかる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 147,
+                    "printedPage": 144
+                  }
+                },
+                {
+                  "japanese": "「たっぷりした」私はぴったりした服より、たっぷりした服の方が好きだ。",
+                  "vietnamese": "Từ 「たっぷりした」: Tôi thích quần áo rộng hơn là quần áo vừa vặn.",
+                  "segments": [
+                    {
+                      "text": "「たっぷりした」私はぴったりした服より、",
+                      "reading": "「たっぷりした」わたしはぴったりしたふくより、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "たっぷりした服",
+                      "reading": "たっぷりしたふく",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "の方が好きだ。",
+                      "reading": "のほうがすきだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 147,
+                    "printedPage": 144
+                  }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "愛情＿",
+                      "vietnamese": "Đong đầy yêu thương",
+                      "segments": [
+                        {
+                          "text": "愛情＿",
+                          "reading": "あいじょう＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 147,
+                        "printedPage": 144
+                      }
+                    },
+                    {
+                      "japanese": "栄養＿",
+                      "vietnamese": "Đầy đủ dinh dưỡng",
+                      "segments": [
+                        {
+                          "text": "栄養＿",
+                          "reading": "えいよう＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 147,
+                        "printedPage": 144
+                      }
+                    },
+                    {
+                      "japanese": "自信＿",
+                      "vietnamese": "Tràn đầy niềm tin",
+                      "segments": [
+                        {
+                          "text": "自信＿",
+                          "reading": "じしん＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 147,
+                        "printedPage": 144
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "たくさん",
+                      "vietnamese": "Nhiều, đầy, đủ",
+                      "segments": [
+                        {
+                          "text": "たくさん",
+                          "reading": "たくさん",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 147,
+                        "printedPage": 144
+                      }
+                    },
+                    {
+                      "japanese": "いっぱい",
+                      "vietnamese": "Nhiều, đầy, đủ",
+                      "segments": [
+                        {
+                          "text": "いっぱい",
+                          "reading": "いっぱい",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 147,
+                        "printedPage": 144
+                      }
+                    },
+                    {
+                      "japanese": "十分",
+                      "vietnamese": "Đủ",
+                      "segments": [
+                        {
+                          "text": "十分",
+                          "reading": "じゅうぶん",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 147,
+                        "printedPage": 144
+                      }
+                    },
+                    {
+                      "japanese": "ゆったりした",
+                      "vietnamese": "Lững thững, rộng, lớn",
+                      "segments": [
+                        {
+                          "text": "ゆったりした",
+                          "reading": "ゆったりした",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 147,
+                        "printedPage": 144
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 146,
                 "printedPage": 143
@@ -54398,16 +54619,51 @@
               "kanji": "できるだけ",
               "hiragana": "できるだけ",
               "hanVietMeaning": "",
-              "meaning": "で きる だ け Trong khả năng, cố gắng hết sức, hết khả năng có thể",
+              "meaning": "Trong khả năng, cố gắng hết sức, hết khả năng có thể",
               "examples": [
                 {
-                  "japanese": "子どもには、できるだけのことはしてやりたい。",
-                  "vietnamese": "Muốn làm tắt cả điều có thể dành cho con.",
+                  "japanese": "「できるだけ早くお返事ください」",
+                  "vietnamese": "“Xin hãy trả lời nhanh nhất có thể”",
                   "segments": [
                     {
-                      "text": "子どもには、できるだけのことはしてやりたい。",
-                      "reading": "きる",
+                      "text": "「",
+                      "reading": "「",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "できるだけ早く",
+                      "reading": "できるだけはやく",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "お返事ください」",
+                      "reading": "おへんじください」",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 147,
+                    "printedPage": 144
+                  }
+                },
+                {
+                  "japanese": "子どもには、できるだけのことはしてやりたい。",
+                  "vietnamese": "Muốn làm tất cả điều có thể dành cho con.",
+                  "segments": [
+                    {
+                      "text": "子どもには、",
+                      "reading": "こどもには、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "できるだけのことはしてやりたい",
+                      "reading": "できるだけのことはしてやりたい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -54416,7 +54672,28 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "なるべく",
+                      "vietnamese": "Nếu có thể thì ...",
+                      "segments": [
+                        {
+                          "text": "なるべく",
+                          "reading": "なるべく",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 147,
+                        "printedPage": 144
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 147,
                 "printedPage": 144
@@ -89520,6 +89797,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "30e9c2c7691e9e008c2c0563320e503b3a3a4c279a3a2c0290792b246ca1ca81"
+    "candidateHash": "e2ce8a9fa5893a28d4dc3a7312f666bebafb5e230752d473d61a58a2b7a9ee1e"
   }
 }
