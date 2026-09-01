@@ -34758,12 +34758,22 @@
               "examples": [
                 {
                   "japanese": "試合でひどい反則をすると失格になる。",
-                  "vietnamese": "Trong trận đầu mà phạm lỗi nặng thì sẽ mắt quyền thi",
+                  "vietnamese": "Trong trận đấu mà phạm lỗi nặng thì sẽ mất quyền thi đấu.",
                   "segments": [
                     {
-                      "text": "試合でひどい反則をすると失格になる。",
-                      "reading": "ごい",
+                      "text": "試合でひどい反則をすると",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "失格",
+                      "reading": "しっかく",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "になる。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34787,12 +34797,17 @@
               "examples": [
                 {
                   "japanese": "余暇を利用して本を読む。",
-                  "vietnamese": "Đọc sách vào thời gian rảnh。",
+                  "vietnamese": "Đọc sách vào thời gian rảnh.",
                   "segments": [
                     {
-                      "text": "余暇を利用して本を読む。",
+                      "text": "余暇",
                       "reading": "よか",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "を利用して本を読む。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34816,12 +34831,22 @@
               "examples": [
                 {
                   "japanese": "最近は季節の行事を行わない家庭も多い。",
-                  "vietnamese": "Gan đây có nhiều gia đình không tổ chức các dip",
+                  "vietnamese": "Gần đây có nhiều gia đình không tổ chức các dịp lễ theo mùa.",
                   "segments": [
                     {
-                      "text": "最近は季節の行事を行わない家庭も多い。",
-                      "reading": "ぎょ",
+                      "text": "最近は季節の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "行事",
+                      "reading": "ぎょうじ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "を行わない家庭も多い。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34845,12 +34870,22 @@
               "examples": [
                 {
                   "japanese": "若者には高い理想を持ってもらいたい。",
-                  "vietnamese": "Tôi muốn giới trẻ luôn mạng trong mình lý tưởng cao",
+                  "vietnamese": "Tôi muốn giới trẻ luôn mang trong mình lý tưởng cao đẹp.",
                   "segments": [
                     {
-                      "text": "若者には高い理想を持ってもらいたい。",
-                      "reading": "う",
+                      "text": "若者には高い",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "理想",
+                      "reading": "りそう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "を持ってもらいたい。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34874,12 +34909,22 @@
               "examples": [
                 {
                   "japanese": "理想と現実は違う。",
-                  "vietnamese": "Hien thực và lý tưởng khác nhau.",
+                  "vietnamese": "Hiện thực và lý tưởng khác nhau.",
                   "segments": [
                     {
-                      "text": "理想と現実は違う。",
-                      "reading": "げん",
+                      "text": "理想と",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "現実",
+                      "reading": "げんじつ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "は違う。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34903,12 +34948,22 @@
               "examples": [
                 {
                   "japanese": "日本では、戦争を体験したことのない世代が増えている。",
-                  "vietnamese": "Ở Nhật Bản thế hệ chưa từng trải",
+                  "vietnamese": "Ở Nhật Bản, thế hệ chưa từng trải qua chiến tranh đang tăng lên.",
                   "segments": [
                     {
-                      "text": "日本では、戦争を体験したことのない世代が増えている。",
-                      "reading": "いけ",
+                      "text": "日本では、戦争を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "体験",
+                      "reading": "たいけん",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "したことのない世代が増えている。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34996,12 +35051,22 @@
               "examples": [
                 {
                   "japanese": "このダイヤモンドは、写真で見ると大きく見えるが、実物はずっと小さい。",
-                  "vietnamese": "Viên kim cương",
+                  "vietnamese": "Viên kim cương này nhìn qua ảnh thì thấy to nhưng thực tế lại nhỏ hơn nhiều.",
                   "segments": [
                     {
-                      "text": "このダイヤモンドは、写真で見ると大きく見えるが、実物はずっと小さい。",
-                      "reading": "ごい",
+                      "text": "このダイヤモンドは、写真で見ると大きく見えるが、",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "実物",
+                      "reading": "じつぶつ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "はずっと小さい。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -67407,6 +67472,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "eb3a75778d1fb901e9ef597aa4c2df2054133d17c429eaf200d3594db4fb09cd"
+    "candidateHash": "724e2cf4e38527efae1a3acea01df6f93692f1ae6cd3ff679a82bf807349a94b"
   }
 }
