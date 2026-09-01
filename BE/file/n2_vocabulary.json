@@ -50160,16 +50160,51 @@
               "kanji": "増大",
               "hiragana": "ぞうだい",
               "hanVietMeaning": "TĂNG ĐẠI",
-              "meaning": "Mở rộỘng,tăng lên",
+              "meaning": "Mở rộng, tăng lên",
               "examples": [
                 {
-                  "japanese": "大。",
-                  "vietnamese": "Mở rộỘng,tăng lên",
+                  "japanese": "時が経つとともに、不安が増大した。",
+                  "vietnamese": "Thời gian trôi qua, nỗi bất an cũng tăng lên.",
                   "segments": [
                     {
-                      "text": "大。",
-                      "reading": "ぞう",
+                      "text": "時が経つとともに、不安が",
+                      "reading": "ときがたつとともに、ふあんが",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "増大した",
+                      "reading": "ぞうだいした",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 182,
+                    "printedPage": 179
+                  }
+                },
+                {
+                  "japanese": "（不満／生産量…）が増大する。",
+                  "vietnamese": "{Bất mãn/ Sản lượng...} tăng lên.",
+                  "segments": [
+                    {
+                      "text": "（不満／生産量…）が",
+                      "reading": "（ふまん／せいさんりょう…）が",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "増大する",
+                      "reading": "ぞうだいする",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -50178,7 +50213,68 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "対",
+                  "items": [
+                    {
+                      "japanese": "減少",
+                      "vietnamese": "Giảm xuống",
+                      "segments": [
+                        {
+                          "text": "減少",
+                          "reading": "げんしょう",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 182,
+                        "printedPage": 179
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "増加する",
+                      "vietnamese": "Tăng lên",
+                      "segments": [
+                        {
+                          "text": "増加する",
+                          "reading": "ぞうかする",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 182,
+                        "printedPage": 179
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "増す",
+                      "vietnamese": "Tăng",
+                      "segments": [
+                        {
+                          "text": "増す",
+                          "reading": "ます",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 182,
+                        "printedPage": 179
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 182,
                 "printedPage": 179
@@ -51871,13 +51967,48 @@
               "meaning": "Cho vào, thu hoạch, áp dụng",
               "examples": [
                 {
-                  "japanese": "入れ。",
-                  "vietnamese": "Cho vào, thu hoạch, áp dụng",
+                  "japanese": "洗濯物を取り入れる。",
+                  "vietnamese": "Tôi thu đồ giặt vào.",
                   "segments": [
                     {
-                      "text": "入れ。",
-                      "reading": "れる",
+                      "text": "洗濯物を",
+                      "reading": "せんたくものを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "取り入れる",
+                      "reading": "とりいれる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 196,
+                    "printedPage": 193
+                  }
+                },
+                {
+                  "japanese": "会社は消費者の意見を取り入れて、容器を改良した。",
+                  "vietnamese": "Công ty đã tiếp thu ý kiến người tiêu dùng và cải tiến hộp đựng sản phẩm.",
+                  "segments": [
+                    {
+                      "text": "会社は消費者の意見を",
+                      "reading": "かいしゃはしょうひしゃのいけんを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "取り入れて",
+                      "reading": "とりいれて",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、容器を改良した。",
+                      "reading": "、ようきをかいりょうした。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -52354,13 +52485,73 @@
               "meaning": "Kết thúc, hoàn thành",
               "examples": [
                 {
-                  "japanese": "仕上。",
-                  "vietnamese": "Kết thúc, hoàn thành",
+                  "japanese": "「この仕事は月末までに仕上げてください」",
+                  "vietnamese": "“Hãy hoàn thành công việc này trước cuối tháng!”",
                   "segments": [
                     {
-                      "text": "仕上。",
-                      "reading": "あげ",
+                      "text": "「この仕事は月末までに",
+                      "reading": "「このしごとはげつまつまでに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "仕上げてください",
+                      "reading": "しあげてください",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "」",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 199,
+                    "printedPage": 196
+                  }
+                },
+                {
+                  "japanese": "【作品／論文…】を仕上げる。",
+                  "vietnamese": "Hoàn thành {tác phẩm/ luận văn...}",
+                  "segments": [
+                    {
+                      "text": "【作品／論文…】を",
+                      "reading": "【さくひん／ろんぶん…】を",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "仕上げる",
+                      "reading": "しあげる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 199,
+                    "printedPage": 196
+                  }
+                },
+                {
+                  "japanese": "苦労して、いい作品に仕上げた。",
+                  "vietnamese": "Tôi đã làm việc vất vả và hoàn thành một tác phẩm tốt/ hay.",
+                  "segments": [
+                    {
+                      "text": "苦労して、いい作品に",
+                      "reading": "くろうして、いいさくひんに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "仕上げた",
+                      "reading": "しあげた",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -52369,7 +52560,58 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "終える",
+                      "vietnamese": "Kết thúc",
+                      "segments": [
+                        {
+                          "text": "終える",
+                          "reading": "おえる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 199,
+                        "printedPage": 196
+                      }
+                    },
+                    {
+                      "japanese": "完成させる",
+                      "vietnamese": "Buộc phải hoàn thành",
+                      "segments": [
+                        {
+                          "text": "完成させる",
+                          "reading": "かんせいさせる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 199,
+                        "printedPage": 196
+                      }
+                    },
+                    {
+                      "japanese": "（名）仕上げ",
+                      "vietnamese": "Sự hoàn thiện（例。最後の仕上げをする。） (Ví dụ: Thực hiện bước hoàn thiện cuối cùng.)",
+                      "segments": [
+                        {
+                          "text": "（名）仕上げ",
+                          "reading": "（めい）しあげ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 199,
+                        "printedPage": 196
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 199,
                 "printedPage": 196
@@ -54593,13 +54835,48 @@
               "meaning": "Nhạt phai nhòa, nhạt nhòa, thưa bớt",
               "examples": [
                 {
-                  "japanese": "まる。",
-                  "vietnamese": "Nhạt phai nhòa, nhạt nhòa, thưa bớt",
+                  "japanese": "氷がとけてジュースが薄まった。",
+                  "vietnamese": "Đá tan ra nên vị nước trái cây nhạt đi.",
                   "segments": [
                     {
-                      "text": "まる。",
-                      "reading": "うす",
+                      "text": "氷がとけてジュースが",
+                      "reading": "こおりがとけてジュースが",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "薄まった",
+                      "reading": "うすまった",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 216,
+                    "printedPage": 213
+                  }
+                },
+                {
+                  "japanese": "【味／色／濃度…】が薄まった。",
+                  "vietnamese": "Hương vị nhạt đi/ Màu sắc phai nhạt/ Nồng độ loãng.",
+                  "segments": [
+                    {
+                      "text": "【味／色／濃度…】が",
+                      "reading": "【あじ／いろ／のうど…】が",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "薄まった",
+                      "reading": "うすまった",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -73777,6 +74054,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "6fa7b5cb6ac5f3d8123134b2d334b6cca17d005eb6d38125b8c9e56439b01971"
+    "candidateHash": "c0bae3de6efb5f70f07f1906c4e59e371965a857aeec37a606d66b2881a2a80e"
   }
 }
