@@ -35128,13 +35128,48 @@
               "meaning": "Thực thi, thực hiện",
               "examples": [
                 {
-                  "japanese": "実施。",
-                  "vietnamese": "じ っ し 。 > 実施 え ル (THUC THD Thực thi, thực hiện",
+                  "japanese": "会議は予定どおり実施された。",
+                  "vietnamese": "Đại hội đã được thực hiện theo kế hoạch.",
                   "segments": [
                     {
-                      "text": "実施。",
-                      "reading": "ごい",
+                      "text": "会議は予定どおり",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "実施",
+                      "reading": "じっし",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "された。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 102,
+                    "printedPage": 99
+                  }
+                },
+                {
+                  "japanese": "健康診断を実施する。",
+                  "vietnamese": "Tiến hành kiểm tra sức khỏe.",
+                  "segments": [
+                    {
+                      "text": "健康診断を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "実施",
+                      "reading": "じっし",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -67482,6 +67517,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "2c4861ef3a910713d539009067e657d4405aa27f5b20137578095965f420e817"
+    "candidateHash": "a8b0b6a58786f5a1ceb71d00a31e02f63663f592dddbc29298250f58bd292ceb"
   }
 }
