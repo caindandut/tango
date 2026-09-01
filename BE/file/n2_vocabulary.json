@@ -43437,13 +43437,23 @@
               "meaning": "Trước mỗi việc gì đó",
               "examples": [
                 {
-                  "japanese": "ンタビューの相手に、事前に質問を伝えておいた。",
-                  "vietnamese": "Tôi đã truyền đạt câu hỏi đến đối tượng",
+                  "japanese": "インタビューの相手に、事前に質問を伝えておいた。",
+                  "vietnamese": "Tôi đã truyền đạt câu hỏi đến đối tượng phỏng vấn từ trước.",
                   "segments": [
                     {
-                      "text": "ンタビューの相手に、事前に質問を伝えておいた。",
-                      "reading": "ごい",
+                      "text": "インタビューの相手に、",
+                      "reading": "いんたびゅーのあいてに、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "事前に",
+                      "reading": "じぜんに",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "質問を伝えておいた。",
+                      "reading": "しつもんをつたえておいた。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69599,6 +69609,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "2851447e06cf6672997e9387419bc889bed8a10c58fa09dff8f52d1bbefd18f1"
+    "candidateHash": "b6d74a215c4d07e809bc7da3fa0c965237f2d1dde4a5a59843da357f847129c0"
   }
 }
