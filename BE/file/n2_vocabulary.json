@@ -60496,13 +60496,73 @@
               "meaning": "スル (QUAN LÝ) Quản lý",
               "examples": [
                 {
-                  "japanese": "私の仕事はゴビルプノ尾車場/公園.…】の管理だ。",
-                  "vietnamese": "Công việc của tôi là quản lý {tòa nhà/ bãi",
+                  "japanese": "私の仕事は「ビル／駐車場／公園…」の管理だ。",
+                  "vietnamese": "Công việc của tôi là quản lý {tòa nhà/ bãi đỗ xe/ công viên...}.",
                   "segments": [
                     {
-                      "text": "私の仕事はゴビルプノ尾車場/公園.…】の管理だ。",
-                      "reading": "ごい",
+                      "text": "私の仕事は「ビル／駐車場／公園…」の",
+                      "reading": "わたしのしごとは「びる／ちゅうしゃじょう／こうえん…」の",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "管理",
+                      "reading": "かんり",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "だ。",
+                      "reading": "だ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 284,
+                    "printedPage": 281
+                  }
+                },
+                {
+                  "japanese": "弁護士に財産の管理を頼んでいる。",
+                  "vietnamese": "Nhờ luật sư quản lý tài sản.",
+                  "segments": [
+                    {
+                      "text": "弁護士に財産の",
+                      "reading": "べんごしにざいさんの",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "管理",
+                      "reading": "かんり",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "を頼んでいる。",
+                      "reading": "をたのんでいる。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 284,
+                    "printedPage": 281
+                  }
+                },
+                {
+                  "japanese": "健康管理も仕事のうちだと思う。",
+                  "vietnamese": "Tôi nghĩ rằng quản lý sức khỏe cũng là một phần của công việc.",
+                  "segments": [
+                    {
+                      "text": "健康",
+                      "reading": "けんこう",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "管理",
+                      "reading": "かんり",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "も仕事のうちだと思う。",
+                      "reading": "もしごとのうちだとおもう。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -60511,7 +60571,98 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿人",
+                      "vietnamese": "Người quản lý",
+                      "segments": [
+                        {
+                          "text": "＿人",
+                          "reading": "かんりにん",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 284,
+                        "printedPage": 281
+                      }
+                    },
+                    {
+                      "japanese": "＿職",
+                      "vietnamese": "Việc quản lý",
+                      "segments": [
+                        {
+                          "text": "＿職",
+                          "reading": "かんりしょく",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 284,
+                        "printedPage": 281
+                      }
+                    },
+                    {
+                      "japanese": "＿会社",
+                      "vietnamese": "Công ty quản lý",
+                      "segments": [
+                        {
+                          "text": "＿会社",
+                          "reading": "かんりがいしゃ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 284,
+                        "printedPage": 281
+                      }
+                    },
+                    {
+                      "japanese": "品質＿",
+                      "vietnamese": "Quản lý chất lượng",
+                      "segments": [
+                        {
+                          "text": "品質",
+                          "reading": "ひんしつ",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "かんり",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 284,
+                        "printedPage": 281
+                      }
+                    },
+                    {
+                      "japanese": "健康＿",
+                      "vietnamese": "Quản lý sức khỏe",
+                      "segments": [
+                        {
+                          "text": "健康",
+                          "reading": "けんこう",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "かんり",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 284,
+                        "printedPage": 281
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 284,
                 "printedPage": 281
@@ -69609,6 +69760,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "b6d74a215c4d07e809bc7da3fa0c965237f2d1dde4a5a59843da357f847129c0"
+    "candidateHash": "a1ebd63b40612b17f437bc661d6a97fbf8ae2c8d0e11ab31889bdbb9dee866e2"
   }
 }
