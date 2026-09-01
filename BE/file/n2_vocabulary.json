@@ -55845,12 +55845,47 @@
               "examples": [
                 {
                   "japanese": "私が駅に着いたとき、終電はすでに出た後だった。",
-                  "vietnamese": "Tôi đến nhà ga ngay sau khi chuyến tàu",
+                  "vietnamese": "Tôi đến nhà ga ngay sau khi chuyến tàu cuối rời đi.",
                   "segments": [
                     {
-                      "text": "私が駅に着いたとき、終電はすでに出た後だった。",
-                      "reading": "すでに",
+                      "text": "私が駅に着いたとき、終電は",
+                      "reading": "わたしがえきについたとき、しゅうでんは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "すでに出た後だった",
+                      "reading": "すでにでたあとだった",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 151,
+                    "printedPage": 148
+                  }
+                },
+                {
+                  "japanese": "彼女が出会ったとき、彼はすでに結婚していたそうだ。",
+                  "vietnamese": "Khi gặp lại cô ấy, thì anh ấy hình như đã kết hôn rồi.",
+                  "segments": [
+                    {
+                      "text": "彼女が出会ったとき、彼は",
+                      "reading": "かのじょがであったとき、かれは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "すでに結婚していた",
+                      "reading": "すでにけっこんしていた",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "そうだ。",
+                      "reading": "そうだ。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -55859,7 +55894,48 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "もう",
+                      "vietnamese": "Rồi",
+                      "segments": [
+                        {
+                          "text": "もう",
+                          "reading": "もう",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 151,
+                        "printedPage": 148
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "対",
+                  "items": [
+                    {
+                      "japanese": "いまだに、まだ",
+                      "vietnamese": "Chưa; ngay cả bây giờ vẫn chưa",
+                      "segments": [
+                        {
+                          "text": "いまだに、まだ",
+                          "reading": "いまだに、まだ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 151,
+                        "printedPage": 148
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 151,
                 "printedPage": 148
@@ -89874,6 +89950,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "0db9345389bd3d2bc6677fa7c6d64fa7fb43af2de08ba39f538e355b45ff0ed3"
+    "candidateHash": "212f12242fb3e63a586e354906e38a3fbbd9160a71b7d90aae8c1df92db0ae73"
   }
 }
