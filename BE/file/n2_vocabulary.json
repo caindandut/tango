@@ -59096,13 +59096,23 @@
               "meaning": "Ô nhiễm",
               "examples": [
                 {
-                  "japanese": "メル。",
-                  "vietnamese": "Ô nhiễm",
+                  "japanese": "工場排水で地下水が汚染された。",
+                  "vietnamese": "Nguồn nước ngầm bị ô nhiễm do nước thải của các nhà máy.",
                   "segments": [
                     {
-                      "text": "メル。",
-                      "reading": "せん",
+                      "text": "工場排水で地下水が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "汚染された",
+                      "reading": "おせんされた",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -68617,6 +68627,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "fb41d08ffb170e9b3a31f19a33d938e9a61644187dabd2f72cae5b4135cbc684"
+    "candidateHash": "cf8d721a11a21a5a55ff9bad73a8d95136f96ffb5e8a8845bd0cd1471e687783"
   }
 }
