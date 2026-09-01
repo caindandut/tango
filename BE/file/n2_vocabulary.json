@@ -35083,19 +35083,29 @@
             },
             {
               "sourceNumber": 354,
-              "kanji": "告げる",
-              "hiragana": "つげる",
-              "hanVietMeaning": "CÁO",
-              "meaning": "Thông báo, báo cho biết",
+              "kanji": "実現",
+              "hiragana": "じつげん",
+              "hanVietMeaning": "THỰC HIỆN",
+              "meaning": "Thực hiện",
               "examples": [
                 {
                   "japanese": "その計画は実現不可能だ。",
-                  "vietnamese": "Ke hoạch này không khả thi.",
+                  "vietnamese": "Kế hoạch này không khả thi.",
                   "segments": [
                     {
-                      "text": "その計画は実現不可能だ。",
-                      "reading": "つげ",
+                      "text": "その計画は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "実現",
+                      "reading": "じつげん",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "不可能だ。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -67472,6 +67482,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "724e2cf4e38527efae1a3acea01df6f93692f1ae6cd3ff679a82bf807349a94b"
+    "candidateHash": "2c4861ef3a910713d539009067e657d4405aa27f5b20137578095965f420e817"
   }
 }
