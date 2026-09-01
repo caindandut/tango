@@ -42481,13 +42481,48 @@
               "meaning": "Dần dần",
               "examples": [
                 {
-                  "japanese": "冬奉を過ぎると、日はしだいに長くなる。",
-                  "vietnamese": "Khi qua đông chí, thì ngày dẫn dần sẽ dài hơn.",
+                  "japanese": "冬至を過ぎると、日はしだいに長くなる。",
+                  "vietnamese": "Khi qua đông chí, ngày dần dần sẽ dài hơn.",
                   "segments": [
                     {
-                      "text": "冬奉を過ぎると、日はしだいに長くなる。",
-                      "reading": "ごい",
+                      "text": "冬至を過ぎると、日は",
+                      "reading": "とうじをすぎると、ひは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "しだいに",
+                      "reading": "しだいに",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "長くなる。",
+                      "reading": "ながくなる。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 147,
+                    "printedPage": 144
+                  }
+                },
+                {
+                  "japanese": "景気は次第に良くなっているようだ。",
+                  "vietnamese": "Hình như tình hình kinh tế đang dần tốt lên.",
+                  "segments": [
+                    {
+                      "text": "景気は",
+                      "reading": "けいきは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "次第に",
+                      "reading": "しだいに",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "良くなっているようだ。",
+                      "reading": "よくなっているようだ。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -42496,7 +42531,63 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "徐々に",
+                      "vietnamese": "Từ từ",
+                      "segments": [
+                        {
+                          "text": "徐々に",
+                          "reading": "じょじょに",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 147,
+                        "printedPage": 144
+                      }
+                    },
+                    {
+                      "japanese": "少しずつ",
+                      "vietnamese": "Từng chút một",
+                      "segments": [
+                        {
+                          "text": "少しずつ",
+                          "reading": "すこしずつ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 147,
+                        "printedPage": 144
+                      }
+                    },
+                    {
+                      "japanese": "だんだん（会話的な表現）",
+                      "vietnamese": "Dần dần (dùng trong hội thoại)",
+                      "segments": [
+                        {
+                          "text": "だんだん",
+                          "reading": "だんだん",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "（会話的な表現）",
+                          "reading": "かいわてきなひょうげん",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 147,
+                        "printedPage": 144
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 147,
                 "printedPage": 144
@@ -69437,6 +69528,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "4f9696c452e8b5dbf73a50f28d29b218009c9333f65671f2b313d2528631bf62"
+    "candidateHash": "09eb57acf3902d842357a2d841b43c793b845eefe821687818f6281a9abf3af7"
   }
 }
