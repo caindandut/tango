@@ -33723,7 +33723,7 @@
               "sourceNumber": 321,
               "kanji": "普段",
               "hiragana": "ふだん",
-              "hanVietMeaning": "PHODOAN",
+              "hanVietMeaning": "PHỔ ĐOẠN",
               "meaning": "Bình thường",
               "examples": [
                 {
@@ -33807,7 +33807,7 @@
               "sourceNumber": 322,
               "kanji": "日常",
               "hiragana": "にちじょう",
-              "hanVietMeaning": "NHẬTTHƯỜNG",
+              "hanVietMeaning": "NHẬT THƯỜNG",
               "meaning": "Hằng ngày",
               "examples": [
                 {
@@ -33836,8 +33836,8 @@
               "sourceNumber": 323,
               "kanji": "一般",
               "hiragana": "いっぱん",
-              "hanVietMeaning": "NHAT BAN",
-              "meaning": "Tổng quan, công chúng, thông thường, phố biến",
+              "hanVietMeaning": "NHẤT BAN",
+              "meaning": "Tổng quan, công chúng, thông thường, phổ biến",
               "examples": [
                 {
                   "japanese": "これは一般の店では手に入らない薬だ。",
@@ -33866,7 +33866,7 @@
               "kanji": "常識",
               "hiragana": "じょうしき",
               "hanVietMeaning": "THƯỜNG THỨC",
-              "meaning": "Kiến thức phố thông, ý thức cơ bản",
+              "meaning": "Kiến thức phổ thông, ý thức cơ bản",
               "examples": [
                 {
                   "japanese": "ミスをしたらきちんと責任をとるのが社会人のTừ識だ。",
@@ -33894,8 +33894,8 @@
               "sourceNumber": 325,
               "kanji": "ことわざ",
               "hiragana": "ことわざ",
-              "hanVietMeaning": "N2",
-              "meaning": "と と わざ Tục ngữ, thành ngữ",
+              "hanVietMeaning": "",
+              "meaning": "Tục ngữ, thành ngữ",
               "examples": [
                 {
                   "japanese": "ことわざには教訓が含まれていることが多い。",
@@ -33953,7 +33953,7 @@
               "kanji": "義務",
               "hiragana": "ぎむ",
               "hanVietMeaning": "NGHĨA VỤ",
-              "meaning": "Nghĩa vụ, bỗn phận",
+              "meaning": "Nghĩa vụ, bổn phận",
               "examples": [
                 {
                   "japanese": "親には子どもに教育を受けさせる義務がある。",
@@ -33981,8 +33981,8 @@
               "sourceNumber": 328,
               "kanji": "きっかけ",
               "hiragana": "きっかけ",
-              "hanVietMeaning": "N2",
-              "meaning": "きっ か け Lý do, động cơ, cơ hội, bắt đầu",
+              "hanVietMeaning": "",
+              "meaning": "Lý do, động cơ, cơ hội, bắt đầu",
               "examples": [
                 {
                   "japanese": "けんかのきっかけは、つまらないことだった。",
@@ -34010,7 +34010,7 @@
               "sourceNumber": 329,
               "kanji": "行動",
               "hiragana": "こうどう",
-              "hanVietMeaning": "の メル (HÀNH ĐỘNG",
+              "hanVietMeaning": "HÀNH ĐỘNG",
               "meaning": "Hành động",
               "examples": [
                 {
@@ -34068,8 +34068,8 @@
               "sourceNumber": 331,
               "kanji": "提出",
               "hiragana": "ていしゅつ",
-              "hanVietMeaning": "ĐÈ XUẤT",
-              "meaning": "ĐỀ xuất, nộp, trình bày",
+              "hanVietMeaning": "ĐỀ XUẤT",
+              "meaning": "Đề xuất, nộp, trình bày",
               "examples": [
                 {
                   "japanese": "願書の提出は10月31日までだ。",
@@ -34157,7 +34157,7 @@
               "sourceNumber": 332,
               "kanji": "期限",
               "hiragana": "きげん",
-              "hanVietMeaning": "KiHAN",
+              "hanVietMeaning": "KỲ HẠN",
               "meaning": "Thời hạn, giới hạn",
               "examples": [
                 {
@@ -34186,7 +34186,7 @@
               "sourceNumber": 333,
               "kanji": "延期",
               "hiragana": "えんき",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "DIÊN KỲ",
               "meaning": "Trì hoãn",
               "examples": [
                 {
@@ -34279,7 +34279,7 @@
               "sourceNumber": 335,
               "kanji": "短縮",
               "hiragana": "たんしゅく",
-              "hanVietMeaning": "ĐOÁN SÚC",
+              "hanVietMeaning": "ĐOẢN SÚC",
               "meaning": "Rút ngắn",
               "examples": [
                 {
@@ -34308,7 +34308,7 @@
               "sourceNumber": 336,
               "kanji": "映像",
               "hiragana": "えいぞう",
-              "hanVietMeaning": "ANH TƯỢNG",
+              "hanVietMeaning": "ÁNH TƯỢNG",
               "meaning": "Hình ảnh",
               "examples": [
                 {
@@ -34347,8 +34347,8 @@
               "sourceNumber": 337,
               "kanji": "撮影",
               "hiragana": "さつえい",
-              "hanVietMeaning": "TOÁTẢNH",
-              "meaning": "Quay phim chụp ảnh",
+              "hanVietMeaning": "TOÁT ẢNH",
+              "meaning": "Quay phim, chụp ảnh",
               "examples": [
                 {
                   "japanese": "プロのカメラマンに稼写真を撮影してもらった。",
@@ -34376,7 +34376,7 @@
               "sourceNumber": 338,
               "kanji": "背景",
               "hiragana": "はいけい",
-              "hanVietMeaning": "BÓICÁNH",
+              "hanVietMeaning": "BỐI CẢNH",
               "meaning": "Bối cảnh",
               "examples": [
                 {
@@ -34405,8 +34405,8 @@
               "sourceNumber": 339,
               "kanji": "独立",
               "hiragana": "どくりつ",
-              "hanVietMeaning": "POCLAP",
-              "meaning": "Độclập",
+              "hanVietMeaning": "ĐỘC LẬP",
+              "meaning": "Độc lập",
               "examples": [
                 {
                   "japanese": "アメリカはイギリスから独立した。",
@@ -34434,7 +34434,7 @@
               "sourceNumber": 340,
               "kanji": "応募",
               "hiragana": "おうぼ",
-              "hanVietMeaning": "HAUBO",
+              "hanVietMeaning": "ỨNG MỘ",
               "meaning": "Ứng cử",
               "examples": [
                 {
@@ -34463,8 +34463,8 @@
               "sourceNumber": 341,
               "kanji": "支持",
               "hiragana": "しじ",
-              "hanVietMeaning": "CHITRÌ",
-              "meaning": "HỖ trợ, ủng hộ",
+              "hanVietMeaning": "CHI TRÌ",
+              "meaning": "Hỗ trợ, ủng hộ",
               "examples": [
                 {
                   "japanese": "私は首相を支持している。",
@@ -34578,8 +34578,8 @@
             {
               "sourceNumber": 345,
               "kanji": "配布／配付",
-              "hiragana": "はいふ",
-              "hanVietMeaning": "PHOIBO/ PHOI PHÓ",
+              "hiragana": "はいふ／はいふ",
+              "hanVietMeaning": "PHỐI BỐ/PHỐI PHÓ",
               "meaning": "Phân phát, cung cấp",
               "examples": [
                 {
@@ -34666,7 +34666,7 @@
               "sourceNumber": 348,
               "kanji": "行事",
               "hiragana": "ぎょうじ",
-              "hanVietMeaning": "HANHSU",
+              "hanVietMeaning": "HÀNH SỰ",
               "meaning": "Sự kiện",
               "examples": [
                 {
@@ -34724,7 +34724,7 @@
               "sourceNumber": 350,
               "kanji": "現実",
               "hiragana": "げんじつ",
-              "hanVietMeaning": "HIEN THỰC",
+              "hanVietMeaning": "HIỆN THỰC",
               "meaning": "Hiện thực, thực tại",
               "examples": [
                 {
@@ -34753,7 +34753,7 @@
               "sourceNumber": 351,
               "kanji": "体験",
               "hiragana": "たいけん",
-              "hanVietMeaning": "THẺ NGHIỆM",
+              "hanVietMeaning": "THỂ NGHIỆM",
               "meaning": "Trải nghiệm, kinh nghiệm",
               "examples": [
                 {
@@ -34783,7 +34783,7 @@
               "kanji": "空想",
               "hiragana": "くうそう",
               "hanVietMeaning": "KHÔNG TƯỞNG",
-              "meaning": "Mơ mộng, không thực tế, ao tưởng",
+              "meaning": "Mơ mộng, không thực tế, ảo tưởng",
               "examples": [
                 {
                   "japanese": "弟は空想ばかりして、現実を見ようとしない。",
@@ -34847,7 +34847,7 @@
               "kanji": "実物",
               "hiragana": "じつぶつ",
               "hanVietMeaning": "THỰC VẬT",
-              "meaning": "ĐỒ thật vật thật",
+              "meaning": "Đồ thật, vật thật",
               "examples": [
                 {
                   "japanese": "このダイヤモンドは、写真で見ると大きく見えるが、実物はずっと小さい。",
@@ -34875,8 +34875,8 @@
               "sourceNumber": 354,
               "kanji": "告げる",
               "hiragana": "つげる",
-              "hanVietMeaning": "THỰC HIỆN",
-              "meaning": "Thực hiện",
+              "hanVietMeaning": "CÁO",
+              "meaning": "Thông báo, báo cho biết",
               "examples": [
                 {
                   "japanese": "その計画は実現不可能だ。",
@@ -34904,8 +34904,8 @@
               "sourceNumber": 355,
               "kanji": "実施",
               "hiragana": "じっし",
-              "hanVietMeaning": "N2",
-              "meaning": "じ っ し 。 > 実施 え ル (THUC THD Thực thi, thực hiện",
+              "hanVietMeaning": "THỰC THI",
+              "meaning": "Thực thi, thực hiện",
               "examples": [
                 {
                   "japanese": "実施。",
@@ -34962,7 +34962,7 @@
               "sourceNumber": 357,
               "kanji": "全体",
               "hiragana": "ぜんたい",
-              "hanVietMeaning": "TOAN THẺ",
+              "hanVietMeaning": "TOÀN THỂ",
               "meaning": "Toàn thể, tất cả",
               "examples": [
                 {
@@ -34991,7 +34991,7 @@
               "sourceNumber": 358,
               "kanji": "部分",
               "hiragana": "ぶぶん",
-              "hanVietMeaning": "BỘ PHAN",
+              "hanVietMeaning": "BỘ PHẬN",
               "meaning": "Bộ phận",
               "examples": [
                 {
@@ -35020,7 +35020,7 @@
               "sourceNumber": 359,
               "kanji": "統一",
               "hiragana": "とういつ",
-              "hanVietMeaning": "THONG NHẤT",
+              "hanVietMeaning": "THỐNG NHẤT",
               "meaning": "Thống nhất",
               "examples": [
                 {
@@ -35049,7 +35049,7 @@
               "sourceNumber": 360,
               "kanji": "拡大",
               "hiragana": "かくだい",
-              "hanVietMeaning": "KHUÉCH ĐẠI",
+              "hanVietMeaning": "KHUẾCH ĐẠI",
               "meaning": "Khuếch đại, mở rộng",
               "examples": [
                 {
@@ -35290,7 +35290,7 @@
               "kanji": "脇",
               "hiragana": "わき",
               "hanVietMeaning": "HIẾP",
-              "meaning": "Hông,nách, bên lề (đường ...), bên rìa (đường...)",
+              "meaning": "Hông, nách, bên lề (đường...), bên rìa (đường...)",
               "examples": [
                 {
                   "japanese": "体温計をわきの下にはさんで熱を測る。",
@@ -35347,7 +35347,7 @@
               "sourceNumber": 367,
               "kanji": "移動",
               "hiragana": "いどう",
-              "hanVietMeaning": "DIĐỘNG",
+              "hanVietMeaning": "DI ĐỘNG",
               "meaning": "Sự di chuyển, sự di động",
               "examples": [
                 {
@@ -35405,8 +35405,8 @@
               "sourceNumber": 369,
               "kanji": "低下",
               "hiragana": "ていか",
-              "hanVietMeaning": "ĐÊHẠ",
-              "meaning": "Sựgiảm,sựkémdisựsuygiim II",
+              "hanVietMeaning": "ĐÊ HẠ",
+              "meaning": "Sự giảm, sự kém đi, sự suy giảm",
               "examples": [
                 {
                   "japanese": "高く内ば登るほど、気温は低下する。",
@@ -67262,6 +67262,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "0ba44d6f342e2fa7928e06d95c38b0b583d2e79cbe76bd6dba2fccaeff96117f"
+    "candidateHash": "1fcc7128391852822e048da05d4026609c1a57fcd5a30efe48a03d670de3ef0d"
   }
 }
