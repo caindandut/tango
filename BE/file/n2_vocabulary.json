@@ -68632,18 +68632,53 @@
               "meaning": "練習 熱心 だ 。",
               "examples": [
                 {
-                  "japanese": "b・c・dからーつ選びなさい。",
-                  "vietnamese": "練習 熱心 だ 。",
+                  "japanese": "この仕事、できたら今日中にお願いします。",
+                  "vietnamese": "Nếu có thể làm ơn hãy xong việc này trong ngày hôm nay.",
                   "segments": [
                     {
-                      "text": "b・c・dからーつ選びなさい。",
-                      "reading": "あの",
+                      "text": "この仕事、",
+                      "reading": "このしごと、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "できたら",
+                      "reading": "できたら",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "今日中にお願いします。",
+                      "reading": "きょうじゅうにおねがいします。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 347,
-                    "printedPage": 344
+                    "pdfPage": 341,
+                    "printedPage": 338
+                  }
+                },
+                {
+                  "japanese": "将来、できれば自分の店を持ちたい。",
+                  "vietnamese": "Nếu có thể trong tương lai muốn mở cửa hàng của riêng mình.",
+                  "segments": [
+                    {
+                      "text": "将来、",
+                      "reading": "しょうらい、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "できれば",
+                      "reading": "できれば",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "自分の店を持ちたい。",
+                      "reading": "じぶんのみせをもちたい。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 341,
+                    "printedPage": 338
                   }
                 }
               ],
@@ -69271,6 +69306,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "b47bfd87753aa43e325bf76b1f7b57a0adb59106a6bb9177d018bd82c12d4898"
+    "candidateHash": "8e4f3e77fbcd31b9d5a09c93dd2ae3eac33f262e940d61592679d05ec4850575"
   }
 }
