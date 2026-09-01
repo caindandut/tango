@@ -74,53 +74,18 @@
                   "vietnamese": "Câu chuyện của người có kinh nghiệm sống phong phú thật thú vị.",
                   "segments": [
                     {
-                      "text": "人生経験",
-                      "reading": "じんせいけいけん",
+                      "text": "人生",
+                      "reading": "じんせい",
                       "isUnderlined": true
                     },
                     {
-                      "text": "が",
-                      "reading": "",
+                      "text": "経験",
+                      "reading": "けいけん",
                       "isUnderlined": false
                     },
                     {
-                      "text": "豊富",
-                      "reading": "ほうふ",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "な",
-                      "reading": "",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "人",
-                      "reading": "ひと",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "の",
-                      "reading": "",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "話",
-                      "reading": "はなし",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "は",
-                      "reading": "",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "面白い",
-                      "reading": "おもしろい",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "。",
-                      "reading": "",
+                      "text": "が豊富な人の話は面白い。",
+                      "reading": "がほうふなひとのはなしはおもしろい。",
                       "isUnderlined": false
                     }
                   ],
@@ -79267,6 +79232,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "5b78b67948e6dfd306db2ea249ed71b0508ad8a419dfc4a9c8337e166ff95181"
+    "candidateHash": "f02bda3e648041c8ef17bd611e0b65fc0504a0438bf6afe65004104e39810577"
   }
 }
