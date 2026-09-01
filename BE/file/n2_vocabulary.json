@@ -52457,18 +52457,28 @@
             {
               "sourceNumber": 502,
               "kanji": "レクリエーション",
-              "hiragana": "れくりえーしょん",
+              "hiragana": "レクリエーション",
               "hanVietMeaning": "",
-              "meaning": "レク リエ ーション rocreafion Giải lao, giải trí, tiêu khiển",
+              "meaning": "Giải lao, giải trí, tiêu khiển",
               "examples": [
                 {
-                  "japanese": "合宿では、勉強だけではなくレクリェーション%$行われる。",
-                  "vietnamese": "Ở trại huấn luyện, không chỉ",
+                  "japanese": "合宿では、勉強だけではなくレクリエーションも行われる。",
+                  "vietnamese": "Ở trại huấn luyện, không chỉ học mà các trò chơi giải trí cũng được tổ chức.",
                   "segments": [
                     {
-                      "text": "合宿では、勉強だけではなくレクリェーション%$行われる。",
-                      "reading": "レク",
+                      "text": "合宿では、勉強だけではなく",
+                      "reading": "がっしゅくでは、べんきょうだけではなく",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "レクリエーションも行われる",
+                      "reading": "レクリエーションもおこなわれる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -52477,7 +52487,28 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿活動",
+                      "vietnamese": "Hoạt động giải trí",
+                      "segments": [
+                        {
+                          "text": "＿活動",
+                          "reading": "＿かつどう",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 140,
                 "printedPage": 137
@@ -52486,27 +52517,27 @@
             {
               "sourceNumber": 503,
               "kanji": "レジャー",
-              "hiragana": "れじゃー",
+              "hiragana": "レジャー",
               "hanVietMeaning": "",
-              "meaning": "レジャー leisure Thời gian ranh, thời gian rỗi rãi, lúc nhàn hạ",
+              "meaning": "Thời gian rảnh, thời gian rỗi rãi, lúc nhàn hạ",
               "examples": [
                 {
-                  "japanese": "休みに海外へレジャーに出かける。",
+                  "japanese": "休みに海外レジャーに出かける。",
                   "vietnamese": "Vào kì nghỉ, tôi có thời gian rảnh đi ra nước ngoài.",
                   "segments": [
                     {
-                      "text": "休みに海外へ",
-                      "reading": "れじゃー",
+                      "text": "休みに海外",
+                      "reading": "やすみにかいがい",
                       "isUnderlined": false
                     },
                     {
-                      "text": "レジャー",
-                      "reading": "れじゃー",
+                      "text": "レジャーに出かける",
+                      "reading": "レジャーにでかける",
                       "isUnderlined": true
                     },
                     {
-                      "text": "に出かける。",
-                      "reading": "れじゃー",
+                      "text": "。",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -52516,7 +52547,93 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿産業",
+                      "vietnamese": "Dịch vụ giải trí",
+                      "segments": [
+                        {
+                          "text": "＿産業",
+                          "reading": "＿さんぎょう",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    },
+                    {
+                      "japanese": "＿施設",
+                      "vietnamese": "Công trình vui chơi giải trí",
+                      "segments": [
+                        {
+                          "text": "＿施設",
+                          "reading": "＿しせつ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    },
+                    {
+                      "japanese": "＿スポット",
+                      "vietnamese": "Địa điểm thư giãn, giải trí (thiên nhiên)",
+                      "segments": [
+                        {
+                          "text": "＿スポット",
+                          "reading": "＿スポット",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    },
+                    {
+                      "japanese": "＿活動",
+                      "vietnamese": "Hoạt động giải trí",
+                      "segments": [
+                        {
+                          "text": "＿活動",
+                          "reading": "＿かつどう",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "余暇",
+                      "vietnamese": "Thời gian rỗi, lúc rỗi rãi, lúc rảnh rỗi",
+                      "segments": [
+                        {
+                          "text": "余暇",
+                          "reading": "よか",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 140,
                 "printedPage": 137
@@ -52525,18 +52642,53 @@
             {
               "sourceNumber": 504,
               "kanji": "ガイド",
-              "hiragana": "がいど",
+              "hiragana": "ガイド（ヲ）スル",
               "hanVietMeaning": "",
-              "meaning": "ガイ ド 。 ッ ガイ ド (の スル guide Hướng dẫn viên, hướng dẫn du lịch",
+              "meaning": "Hướng dẫn viên, hướng dẫn du lịch",
               "examples": [
                 {
                   "japanese": "旅行会社でガイドをしている。",
                   "vietnamese": "Tôi đang làm hướng dẫn viên tại công ty du lịch.",
                   "segments": [
                     {
-                      "text": "旅行会社でガイドをしている。",
-                      "reading": "ガイ",
+                      "text": "旅行会社で",
+                      "reading": "りょこうがいしゃで",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ガイドをしている",
+                      "reading": "ガイドをしている",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 140,
+                    "printedPage": 137
+                  }
+                },
+                {
+                  "japanese": "現地の人に観光地をガイドしてもらった。",
+                  "vietnamese": "Được người dân bản địa chỉ cho các địa điểm tham quan.",
+                  "segments": [
+                    {
+                      "text": "現地の人に観光地を",
+                      "reading": "げんちのひとにかんこうちを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ガイドしてもらった",
+                      "reading": "ガイドしてもらった",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -52545,7 +52697,93 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "観光＿",
+                      "vietnamese": "Hướng dẫn viên du lịch",
+                      "segments": [
+                        {
+                          "text": "観光＿",
+                          "reading": "かんこう＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    },
+                    {
+                      "japanese": "バス＿",
+                      "vietnamese": "Hướng dẫn viên xe bus",
+                      "segments": [
+                        {
+                          "text": "バス＿",
+                          "reading": "バス＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    },
+                    {
+                      "japanese": "通訳＿",
+                      "vietnamese": "Hướng dẫn viên phiên dịch",
+                      "segments": [
+                        {
+                          "text": "通訳＿",
+                          "reading": "つうやく＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    },
+                    {
+                      "japanese": "＿ブック",
+                      "vietnamese": "Sách hướng dẫn du lịch",
+                      "segments": [
+                        {
+                          "text": "＿ブック",
+                          "reading": "＿ブック",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "案内",
+                      "vietnamese": "Giới thiệu, hướng dẫn, chỉ đường, giải thích",
+                      "segments": [
+                        {
+                          "text": "案内",
+                          "reading": "あんない",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 140,
                 "printedPage": 137
@@ -52554,8 +52792,8 @@
             {
               "sourceNumber": 505,
               "kanji": "シーズン",
-              "hiragana": "しーずん",
-              "hanVietMeaning": "thể thao ...",
+              "hiragana": "シーズン",
+              "hanVietMeaning": "",
               "meaning": "Mùa (thể thao ...), thời vụ",
               "examples": [
                 {
@@ -52564,17 +52802,17 @@
                   "segments": [
                     {
                       "text": "日本では12月から2月にかけてが受験の",
-                      "reading": "しーずん",
+                      "reading": "にほんではじゅうにがつからにがつにかけてがじゅけんの",
                       "isUnderlined": false
                     },
                     {
-                      "text": "シーズン",
-                      "reading": "シーズン",
+                      "text": "シーズンだ",
+                      "reading": "シーズンだ",
                       "isUnderlined": true
                     },
                     {
-                      "text": "だ。",
-                      "reading": "",
+                      "text": "。",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -52589,17 +52827,17 @@
                   "segments": [
                     {
                       "text": "この海岸は、",
-                      "reading": "しーずん",
+                      "reading": "このかいがんは、",
                       "isUnderlined": false
                     },
                     {
-                      "text": "シーズン中",
-                      "reading": "シーズンちゅう",
+                      "text": "シーズン中は",
+                      "reading": "シーズンちゅうは",
                       "isUnderlined": true
                     },
                     {
-                      "text": "は海水浴客で混雑する。",
-                      "reading": "しーずん",
+                      "text": "海水浴客で混雑する。",
+                      "reading": "かいすいよくきゃくでこんざつする。",
                       "isUnderlined": false
                     }
                   ],
@@ -52609,7 +52847,93 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "【名詞】＋シーズン",
+                      "vietnamese": "【Danh từ】＋シーズン (Ví dụ: mùa thu, mùa du lịch giải trí)",
+                      "segments": [
+                        {
+                          "text": "【名詞】＋シーズン",
+                          "reading": "【めいし】＋シーズン",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    },
+                    {
+                      "japanese": "＿オフ、オフ＿",
+                      "vietnamese": "Sự qua mùa, trái mùa",
+                      "segments": [
+                        {
+                          "text": "＿オフ、オフ＿",
+                          "reading": "＿オフ、オフ＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "季節",
+                      "vietnamese": "Mùa/ thời vụ",
+                      "segments": [
+                        {
+                          "text": "季節",
+                          "reading": "きせつ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    },
+                    {
+                      "japanese": "時期",
+                      "vietnamese": "Thời kỳ/ mùa (thể thao)",
+                      "segments": [
+                        {
+                          "text": "時期",
+                          "reading": "じき",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    },
+                    {
+                      "japanese": "最盛期",
+                      "vietnamese": "Thời kì hoàng kim",
+                      "segments": [
+                        {
+                          "text": "最盛期",
+                          "reading": "さいせいき",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 140,
                 "printedPage": 137
@@ -52618,18 +52942,28 @@
             {
               "sourceNumber": 506,
               "kanji": "ダイヤ",
-              "hiragana": "だいや",
+              "hiragana": "ダイヤ",
               "hanVietMeaning": "",
-              "meaning": "Lịch tàu, lịch trình",
+              "meaning": "Giờ tàu chạy, bảng giờ tàu chạy, lịch trình tàu",
               "examples": [
                 {
-                  "japanese": "列車のダイヤが乱れている。",
-                  "vietnamese": "Lịch tàu đang bị rối loạn。",
+                  "japanese": "事故で列車のダイヤが乱れたが、数時間後に復旧した。",
+                  "vietnamese": "Vì tai nạn mà giờ tàu chạy đã bị xáo trộn, nhưng sau vài giờ đã được phục hồi lại.",
                   "segments": [
                     {
-                      "text": "列車のダイヤが乱れている。",
-                      "reading": "だいや",
+                      "text": "事故で列車の",
+                      "reading": "じこでれっしゃの",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ダイヤが乱れた",
+                      "reading": "ダイヤがみだれた",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "が、数時間後に復旧した。",
+                      "reading": "が、すうじかんごにふっきゅうした。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -52638,7 +52972,93 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿が乱れる",
+                      "vietnamese": "Xáo trộn giờ tàu chạy",
+                      "segments": [
+                        {
+                          "text": "＿が乱れる",
+                          "reading": "＿がみだれる",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 140,
+                        "printedPage": 137
+                      }
+                    },
+                    {
+                      "japanese": "＿に乱れが出る",
+                      "vietnamese": "Xáo trộn lịch trình",
+                      "segments": [
+                        {
+                          "text": "＿に乱れが出る",
+                          "reading": "＿にみだれがでる",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    },
+                    {
+                      "japanese": "＿が復旧する",
+                      "vietnamese": "Giờ tàu chạy được phục hồi",
+                      "segments": [
+                        {
+                          "text": "＿が復旧する",
+                          "reading": "＿がふっきゅうする",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    },
+                    {
+                      "japanese": "＿を組む",
+                      "vietnamese": "Thiết lập giờ tàu chạy",
+                      "segments": [
+                        {
+                          "text": "＿を組む",
+                          "reading": "＿をくむ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "臨時＿",
+                      "vietnamese": "Lịch trình tàu chạy tạm thời",
+                      "segments": [
+                        {
+                          "text": "臨時＿",
+                          "reading": "りんじ＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 140,
                 "printedPage": 137
@@ -52647,18 +53067,28 @@
             {
               "sourceNumber": 507,
               "kanji": "ウィークデー",
-              "hiragana": "うぃーくでー",
-              "hanVietMeaning": "s",
+              "hiragana": "ウィークデー",
+              "hanVietMeaning": "",
               "meaning": "Ngày thường, ngày trong tuần",
               "examples": [
                 {
-                  "japanese": "この道路はウィークデーは渋滞するが、休日はがらがらだ。",
-                  "vietnamese": "Con đường này, ngày thường",
+                  "japanese": "この道路はウィークデーは混雑するが、休日はがらがらだ。",
+                  "vietnamese": "Con đường này, ngày thường thì tắc, ngày nghỉ thì vắng.",
                   "segments": [
                     {
-                      "text": "この道路はウィークデーは渋滞するが、休日はがらがらだ。",
-                      "reading": "ウツ",
+                      "text": "この道路は",
+                      "reading": "このどうろは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ウィークデーは混雑する",
+                      "reading": "ウィークデーはこんざつする",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "が、休日はがらがらだ。",
+                      "reading": "が、きゅうじつはがらがらだ。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -52667,7 +53097,78 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "対",
+                  "items": [
+                    {
+                      "japanese": "ウィークエンド",
+                      "vietnamese": "Ngày cuối tuần",
+                      "segments": [
+                        {
+                          "text": "ウィークエンド",
+                          "reading": "ウィークエンド",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    },
+                    {
+                      "japanese": "週末",
+                      "vietnamese": "Cuối tuần",
+                      "segments": [
+                        {
+                          "text": "週末",
+                          "reading": "しゅうまつ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    },
+                    {
+                      "japanese": "休日",
+                      "vietnamese": "Ngày nghỉ",
+                      "segments": [
+                        {
+                          "text": "休日",
+                          "reading": "きゅうじつ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "平日",
+                      "vietnamese": "Ngày thường, hàng ngày",
+                      "segments": [
+                        {
+                          "text": "平日",
+                          "reading": "へいじつ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 141,
                 "printedPage": 138
@@ -52676,18 +53177,103 @@
             {
               "sourceNumber": 508,
               "kanji": "サービス",
-              "hiragana": "さーびす",
-              "hanVietMeaning": "7",
-              "meaning": "スル service; spending much time (with ones family); serve",
+              "hiragana": "サービス（ヲ）スル",
+              "hanVietMeaning": "",
+              "meaning": "Dịch vụ, khuyến mãi, phục vụ",
               "examples": [
                 {
-                  "japanese": "あのレストランはサービスがよくない。",
-                  "vietnamese": "Dich vụ của cửa hàng đó không tốt.",
+                  "japanese": "「当社はお客様に喜ばれるサービスを心がけております」",
+                  "vietnamese": "“Công ty của chúng tôi đang nỗ lực tận tâm nhằm tạo ra những dịch vụ làm hài lòng khách hàng”",
                   "segments": [
                     {
-                      "text": "あのレストランはサービスがよくない。",
-                      "reading": "サー",
+                      "text": "「当社はお客様に喜ばれる",
+                      "reading": "「とうしゃはおきゃくさまによろこばれる",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "サービスを心がけております",
+                      "reading": "サービスをこころがけております",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "」",
+                      "reading": "」",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 141,
+                    "printedPage": 138
+                  }
+                },
+                {
+                  "japanese": "あのレストランはサービスがよくない。",
+                  "vietnamese": "Dịch vụ của cửa hàng đó không tốt.",
+                  "segments": [
+                    {
+                      "text": "あのレストランは",
+                      "reading": "あのレストランは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "サービスがよくない",
+                      "reading": "サービスがよくない",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 141,
+                    "printedPage": 138
+                  }
+                },
+                {
+                  "japanese": "「ビールを5本お買い上げの方に、もう1本サービスいたします」",
+                  "vietnamese": "“Đối với những vị mua 5 chai bia trở lên sẽ được khuyến mãi thêm 1 chai nữa”",
+                  "segments": [
+                    {
+                      "text": "「ビールを5本お買い上げの方に、もう1本",
+                      "reading": "「ビールをごほんおかいあげのかたに、もういっぽん",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "サービスいたします",
+                      "reading": "サービスいたします",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "」",
+                      "reading": "」",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 141,
+                    "printedPage": 138
+                  }
+                },
+                {
+                  "japanese": "ふだん仕事であまり家にいないので、休日は家族にサービスするようにしている。",
+                  "vietnamese": "Do công việc nên phần lớn tôi không ở nhà, vì vậy tôi cố gắng quan tâm đến gia đình mình vào những ngày nghỉ.",
+                  "segments": [
+                    {
+                      "text": "ふだん仕事であまり家にいないので、休日は家族に",
+                      "reading": "ふだんしごとであまりいえにいないので、きゅうじつはかぞくに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "サービスする",
+                      "reading": "サービスする",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "ようにしている。",
+                      "reading": "ようにしている。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -52696,7 +53282,173 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿がいい⇔悪い",
+                      "vietnamese": "Dịch vụ tốt⇔Dịch vụ tồi",
+                      "segments": [
+                        {
+                          "text": "＿がいい⇔悪い",
+                          "reading": "＿がいい⇔わるい",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "アフター＿",
+                      "vietnamese": "Dịch vụ hậu mãi (sau khi bán hàng)",
+                      "segments": [
+                        {
+                          "text": "アフター＿",
+                          "reading": "アフター＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    },
+                    {
+                      "japanese": "介護＿",
+                      "vietnamese": "14h vụ chăm sóc điều dưỡng",
+                      "segments": [
+                        {
+                          "text": "介護＿",
+                          "reading": "かいご＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    },
+                    {
+                      "japanese": "＿業",
+                      "vietnamese": "Ngành dịch vụ",
+                      "segments": [
+                        {
+                          "text": "＿業",
+                          "reading": "＿ぎょう",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    },
+                    {
+                      "japanese": "家族＿",
+                      "vietnamese": "Phục vụ gia đình",
+                      "segments": [
+                        {
+                          "text": "家族＿",
+                          "reading": "かぞく＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    },
+                    {
+                      "japanese": "＿精神",
+                      "vietnamese": "Tinh thần/ Lòng hiếu khách",
+                      "segments": [
+                        {
+                          "text": "＿精神",
+                          "reading": "＿せいしん",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    },
+                    {
+                      "japanese": "＿残業",
+                      "vietnamese": "Làm thêm giờ không lương",
+                      "segments": [
+                        {
+                          "text": "＿残業",
+                          "reading": "＿ざんぎょう",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    },
+                    {
+                      "japanese": "エース",
+                      "vietnamese": "Phát bóng ăn điểm tuyệt đối",
+                      "segments": [
+                        {
+                          "text": "エース",
+                          "reading": "エース",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "おまけ",
+                      "vietnamese": "Khuyến mại, đồ tặng thêm",
+                      "segments": [
+                        {
+                          "text": "おまけ",
+                          "reading": "おまけ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    },
+                    {
+                      "japanese": "①③奉仕",
+                      "vietnamese": "Sự phục vụ, sự lao động",
+                      "segments": [
+                        {
+                          "text": "①③奉仕",
+                          "reading": "①③ほうし",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 141,
+                        "printedPage": 138
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 141,
                 "printedPage": 138
@@ -52705,47 +53457,103 @@
             {
               "sourceNumber": 509,
               "kanji": "アルコール",
-              "hiragana": "あるこーる",
+              "hiragana": "アルコール",
               "hanVietMeaning": "",
-              "meaning": "_ アル コー ル aloohol Cồn,rượu",
+              "meaning": "Cồn, rượu",
               "examples": [
                 {
                   "japanese": "注射の前にアルコールで消毒する。",
                   "vietnamese": "Trước khi tiêm sẽ được khử trùng bằng cồn.",
                   "segments": [
                     {
-                      "text": "注射の前にアルコールで消毒する。",
-                      "reading": "アル",
+                      "text": "注射の前に",
+                      "reading": "ちゅうしゃのまえに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "アルコールで消毒する",
+                      "reading": "アルコールでしょうどくする",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
                     "pdfPage": 141,
                     "printedPage": 138
                   }
-                }
-              ],
-              "relations": [],
-              "source": {
-                "pdfPage": 141,
-                "printedPage": 138
-              }
-            },
-            {
-              "sourceNumber": 510,
-              "kanji": "デコレーション",
-              "hiragana": "でこれーしょん",
-              "hanVietMeaning": "",
-              "meaning": "Sự trang hoàng",
-              "examples": [
+                },
                 {
-                  "japanese": "部屋をデコレーションする。",
-                  "vietnamese": "Trang hoàng căn phòng。",
+                  "japanese": "ワインはアルコール度数が10%前後だ。",
+                  "vietnamese": "Rượu vang có nồng độ cồn là khoảng trên dưới 10%.",
                   "segments": [
                     {
-                      "text": "部屋をデコレーションする。",
-                      "reading": "でこれーしょん",
+                      "text": "ワインは",
+                      "reading": "ワインは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "アルコール度数が10%前後だ",
+                      "reading": "アルコールどすうがじゅっぱーせんとぜんごだ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 141,
+                    "printedPage": 138
+                  }
+                },
+                {
+                  "japanese": "私はアルコールに弱くて、ビール一杯で顔が真っ赤になる。",
+                  "vietnamese": "Tôi có tửu lượng kém, chỉ 1 cốc bia thôi là mặt sẽ đỏ lên rồi.",
+                  "segments": [
+                    {
+                      "text": "私は",
+                      "reading": "わたしは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "アルコールに弱くて",
+                      "reading": "アルコールによわくて",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、ビール一杯で顔が真っ赤になる。",
+                      "reading": "、ビールいっぱいでかおがまっかになる。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 141,
+                    "printedPage": 138
+                  }
+                },
+                {
+                  "japanese": "父はふだんは無口だが、アルコールが入るとよくしゃべる。",
+                  "vietnamese": "Bố tôi thường ít nói, nhưng cứ uống rượu vào thì lại nói rất nhiều.",
+                  "segments": [
+                    {
+                      "text": "父はふだんは無口だが、",
+                      "reading": "ちちはふだんはむくちだが、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "アルコールが入ると",
+                      "reading": "アルコールがはいると",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "よくしゃべる。",
+                      "reading": "よくしゃべる。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -52754,7 +53562,143 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿に強い⇔弱い",
+                      "vietnamese": "Tửu lượng cao⇔Tửu lượng thấp",
+                      "segments": [
+                        {
+                          "text": "＿に強い⇔弱い",
+                          "reading": "＿につよい⇔よわい",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 142,
+                        "printedPage": 139
+                      }
+                    },
+                    {
+                      "japanese": "＿が入る",
+                      "vietnamese": "Uống rượu vào",
+                      "segments": [
+                        {
+                          "text": "＿が入る",
+                          "reading": "＿がはいる",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 142,
+                        "printedPage": 139
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "酒",
+                      "vietnamese": "Rượu",
+                      "segments": [
+                        {
+                          "text": "酒",
+                          "reading": "さけ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 142,
+                        "printedPage": 139
+                      }
+                    }
+                  ]
+                }
+              ],
+              "source": {
+                "pdfPage": 141,
+                "printedPage": 138
+              }
+            },
+            {
+              "sourceNumber": 510,
+              "kanji": "デコレーション",
+              "hiragana": "デコレーション（ヲ）スル",
+              "hanVietMeaning": "",
+              "meaning": "Sự trang hoàng",
+              "examples": [
+                {
+                  "japanese": "12月になると、多くの店がクリスマスのデコレーションをする。",
+                  "vietnamese": "Cứ đến tháng 12 sẽ có rất nhiều cửa hàng trang trí giáng sinh.",
+                  "segments": [
+                    {
+                      "text": "12月になると、多くの店がクリスマスの",
+                      "reading": "じゅうにがつになると、おおくのみせがクリスマスの",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "デコレーションをする",
+                      "reading": "デコレーションをする",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 142,
+                    "printedPage": 139
+                  }
+                }
+              ],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿ケーキ",
+                      "vietnamese": "Bánh kem",
+                      "segments": [
+                        {
+                          "text": "＿ケーキ",
+                          "reading": "＿ケーキ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 142,
+                        "printedPage": 139
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "飾り付け（ヲ）スル",
+                      "vietnamese": "Trang trí",
+                      "segments": [
+                        {
+                          "text": "飾り付け（ヲ）スル",
+                          "reading": "かざりつけ（ヲ）スル",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 142,
+                        "printedPage": 139
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 142,
                 "printedPage": 139
@@ -88302,6 +89246,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "078e0aceb6d89fe18fd7e1fa77cd5bfa65869dc97ca2e94aedd34fb2b30c873d"
+    "candidateHash": "e450375ba08251e139d1c3bd902443f6d515e0ecdb75456a7d1427999930c619"
   }
 }
