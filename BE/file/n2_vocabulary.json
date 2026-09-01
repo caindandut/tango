@@ -43685,13 +43685,63 @@
               "meaning": "いき な り Bất ngờ, thình Hình, đột ngột",
               "examples": [
                 {
-                  "japanese": "ノックゃもせずにいきなり部屋に入るのは失礼だ。",
-                  "vietnamese": "Không gõ cửa mà bắt ngờ đi vào phòng",
+                  "japanese": "ノックもせずにいきなり部屋に入るのは失礼だ。",
+                  "vietnamese": "Không gõ cửa mà bất ngờ đi vào phòng là điều thất lễ.",
                   "segments": [
                     {
-                      "text": "ノックゃもせずにいきなり部屋に入るのは失礼だ。",
-                      "reading": "いき",
+                      "text": "ノックもせずに",
+                      "reading": "のっくもせずに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "いきなり",
+                      "reading": "いきなり",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "部屋に入るのは失礼だ。",
+                      "reading": "へやにはいるのはしつれいだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 153,
+                    "printedPage": 150
+                  }
+                },
+                {
+                  "japanese": "いきなり道に飛び出すと、危ない。",
+                  "vietnamese": "Nếu bất ngờ lao xuống đường thì sẽ rất nguy hiểm.",
+                  "segments": [
+                    {
+                      "text": "いきなり",
+                      "reading": "いきなり",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "道に飛び出すと、危ない。",
+                      "reading": "みちにとびだすと、あぶない。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 153,
+                    "printedPage": 150
+                  }
+                },
+                {
+                  "japanese": "いきなり質問されて答えられなかった。",
+                  "vietnamese": "Bị hỏi bất ngờ, nên đã không thể trả lời được.",
+                  "segments": [
+                    {
+                      "text": "いきなり",
+                      "reading": "いきなり",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "質問されて答えられなかった。",
+                      "reading": "しつもんされてこたえられなかった。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -43700,7 +43750,28 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "急に／突然",
+                      "vietnamese": "Đột nhiên/ đột ngột",
+                      "segments": [
+                        {
+                          "text": "急に／突然",
+                          "reading": "きゅうに／とつぜん",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 153,
+                        "printedPage": 150
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 153,
                 "printedPage": 150
@@ -69528,6 +69599,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "09eb57acf3902d842357a2d841b43c793b845eefe821687818f6281a9abf3af7"
+    "candidateHash": "2851447e06cf6672997e9387419bc889bed8a10c58fa09dff8f52d1bbefd18f1"
   }
 }
