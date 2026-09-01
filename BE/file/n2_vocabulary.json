@@ -32897,13 +32897,43 @@
               "meaning": "Làm khô",
               "examples": [
                 {
-                  "japanese": "天候。",
-                  "vietnamese": "Thời tiết",
+                  "japanese": "草を乾燥させて家畜のえさにする。",
+                  "vietnamese": "Phơi khô cỏ, làm thức ăn cho gia súc.",
                   "segments": [
                     {
-                      "text": "天候。",
-                      "reading": "こう",
+                      "text": "草を",
+                      "reading": "くさを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "乾燥させて",
+                      "reading": "かんそうさせて",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "家畜のえさにする。",
+                      "reading": "かちくのえさにする。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 88,
+                    "printedPage": 85
+                  }
+                },
+                {
+                  "japanese": "乾燥した「空気／肌…」",
+                  "vietnamese": "{Không khí/ da...} khô",
+                  "segments": [
+                    {
+                      "text": "乾燥した",
+                      "reading": "かんそうした",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "「空気／肌…」",
+                      "reading": "くうき／はだ",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -32912,7 +32942,48 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "乾く",
+                      "vietnamese": "Kho",
+                      "segments": [
+                        {
+                          "text": "乾く",
+                          "reading": "かわく",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 88,
+                        "printedPage": 85
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "が湿る",
+                      "vietnamese": "Ẩm",
+                      "segments": [
+                        {
+                          "text": "が湿る",
+                          "reading": "がしめる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 88,
+                        "printedPage": 85
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 88,
                 "printedPage": 85
@@ -70001,6 +70072,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "0436c38fa01dabd54e680b606a6d1ea3c6a0b8cdfb1ba6b2f21514125a0d8c31"
+    "candidateHash": "1b8d36ed5b0966971f8b3fcda2e5cbd4de07386a9327bd62cb82e9effa54a6bd"
   }
 }
