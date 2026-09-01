@@ -34969,9 +34969,14 @@
                       "vietnamese": "Có được sự hỗ trợ, ủng hộ",
                       "segments": [
                         {
-                          "text": "＿を得る",
+                          "text": "＿を",
                           "reading": "",
                           "isUnderlined": true
+                        },
+                        {
+                          "text": "得る",
+                          "reading": "える",
+                          "isUnderlined": false
                         }
                       ],
                       "source": {
@@ -70269,6 +70274,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "e74723fdee464fe437ae284cf2a7d89ebceca1aa90f42cce4fb29c4e1bce8eda"
+    "candidateHash": "c8b3ae0b7261fccfe4ce61d2dc4b90f522353969c80385e84693da08faf24adc"
   }
 }
