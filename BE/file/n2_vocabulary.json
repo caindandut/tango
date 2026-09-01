@@ -54442,7 +54442,7 @@
                   }
                 },
                 {
-                  "japanese": "今日はたっぷり15分はかかる。",
+                  "japanese": "うちから駅までどんなに急いでも、たっぷり15分はかかる。",
                   "vietnamese": "Từ nhà tôi đến ga thì dù nhanh vội như thế nào thì cũng phải mất trên 15 phút.",
                   "segments": [
                     {
@@ -89797,6 +89797,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "e2ce8a9fa5893a28d4dc3a7312f666bebafb5e230752d473d61a58a2b7a9ee1e"
+    "candidateHash": "4a944da742e810af8778ce4f22d2eb8edf739dc1586f9e804fc7588290be8298"
   }
 }
