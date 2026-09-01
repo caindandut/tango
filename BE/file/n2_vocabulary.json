@@ -39839,12 +39839,12 @@
                   "segments": [
                     {
                       "text": "隣の家との",
-                      "reading": "",
+                      "reading": "さかい",
                       "isUnderlined": false
                     },
                     {
                       "text": "境",
-                      "reading": "さかい",
+                      "reading": "境",
                       "isUnderlined": true
                     },
                     {
@@ -39864,12 +39864,12 @@
                   "segments": [
                     {
                       "text": "秋分の日を",
-                      "reading": "",
+                      "reading": "さかい",
                       "isUnderlined": false
                     },
                     {
                       "text": "境",
-                      "reading": "さかい",
+                      "reading": "境",
                       "isUnderlined": true
                     },
                     {
@@ -39989,12 +39989,12 @@
                   "segments": [
                     {
                       "text": "彼女の話の",
-                      "reading": "",
+                      "reading": "なかば",
                       "isUnderlined": false
                     },
                     {
                       "text": "半ば",
-                      "reading": "なかば",
+                      "reading": "半ば",
                       "isUnderlined": true
                     },
                     {
@@ -40014,12 +40014,12 @@
                   "segments": [
                     {
                       "text": "試験ができなかったので、合格は",
-                      "reading": "",
+                      "reading": "なかば",
                       "isUnderlined": false
                     },
                     {
                       "text": "半ば",
-                      "reading": "なかば",
+                      "reading": "半ば",
                       "isUnderlined": true
                     },
                     {
@@ -84814,6 +84814,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "4cba71accd9e7549dadd10068c2e481c4ee2670e3d552b20ae70d087c2e8405e"
+    "candidateHash": "aad25f5c9a8ce2196d4af64e3d5d6d2130177862738078424530e7f34a206019"
   }
 }
