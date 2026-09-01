@@ -62988,12 +62988,22 @@
               "examples": [
                 {
                   "japanese": "あんなことを言った彼の本心を問いたい。",
-                  "vietnamese": "Muenheily do thật sự mà anh ấy đã nói ra điều như",
+                  "vietnamese": "Muốn hỏi lý do thật sự mà anh ấy đã nói ra điều như thế.",
                   "segments": [
                     {
-                      "text": "あんなことを言った彼の本心を問いたい。",
-                      "reading": "ごい",
+                      "text": "あんなことを言った彼の本心を",
+                      "reading": "あんなことをいったかれのほんしんを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "問いたい",
+                      "reading": "といたい",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -63002,7 +63012,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "「真意／安否／民意…」を問う",
+                      "vietnamese": "Hỏi ý nghĩa thật sự/ sự an nguy/ dân ý...",
+                      "segments": [
+                        {
+                          "text": "「真意／安否／民意…」を",
+                          "reading": "しんい／あんぴ／みんいを",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "問う",
+                          "reading": "とう",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 306,
+                        "printedPage": 303
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 306,
                 "printedPage": 303
@@ -69401,6 +69437,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "fc770c3629ef2c66d916aede706d9ba79e61d16d44b4aedb7a63ef971355f2a9"
+    "candidateHash": "4f9696c452e8b5dbf73a50f28d29b218009c9333f65671f2b313d2528631bf62"
   }
 }
