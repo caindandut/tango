@@ -66918,18 +66918,53 @@
               "meaning": "た 」",
               "examples": [
                 {
-                  "japanese": "鈴木。",
-                  "vietnamese": "た 」",
+                  "japanese": "怪しいと思っていたが、案の定、彼が犯人だった。",
+                  "vietnamese": "Tôi đã nghi ngờ rồi, quả nhiên anh ta là phạm nhân.",
                   "segments": [
                     {
-                      "text": "鈴木。",
-                      "reading": "いま",
+                      "text": "怪しいと思っていたが、",
+                      "reading": "あやしいとおもっていたが、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "案の定",
+                      "reading": "あんのじょう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、彼が犯人だった。",
+                      "reading": "、かれがはんにんだった。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 329,
-                    "printedPage": 326
+                    "pdfPage": 335,
+                    "printedPage": 332
+                  }
+                },
+                {
+                  "japanese": "勝つのは難しいと予想していたが、結果は案の定だった。",
+                  "vietnamese": "Dự đoán việc chiến thắng sẽ là khó khăn, quả nhiên kết quả là như vậy.",
+                  "segments": [
+                    {
+                      "text": "勝つのは難しいと予想していたが、結果は",
+                      "reading": "かつのはむずかしいとよそうしていたが、けっかは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "案の定",
+                      "reading": "あんのじょう",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "だった。",
+                      "reading": "だった。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 335,
+                    "printedPage": 332
                   }
                 }
               ],
@@ -67138,18 +67173,78 @@
               "meaning": "」",
               "examples": [
                 {
-                  "japanese": "心配。",
-                  "vietnamese": "」",
+                  "japanese": "有名ブランド品だけあって、さすがに高い。",
+                  "vietnamese": "Chỉ có đồ của các hãng nổi tiếng nên quả nhiên là đắt.",
                   "segments": [
                     {
-                      "text": "心配。",
-                      "reading": "いし",
+                      "text": "有名ブランド品だけあって、",
+                      "reading": "ゆうめいぶらんどひんだけあって、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "さすがに",
+                      "reading": "さすがに",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "高い。",
+                      "reading": "たかい。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 329,
-                    "printedPage": 326
+                    "pdfPage": 335,
+                    "printedPage": 332
+                  }
+                },
+                {
+                  "japanese": "調子が悪くても優勝するとは、中野選手はさすがだ。",
+                  "vietnamese": "Vẫn chiến thắng mặc dù tình trạng cơ thể không tốt quả đúng là vận động viên Nakano.",
+                  "segments": [
+                    {
+                      "text": "調子が悪くても優勝するとは、",
+                      "reading": "ちょうしがわるくてもゆうしょうするとは、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "中野選手はさすがだ",
+                      "reading": "なかのせんしゅはさすがだ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 335,
+                    "printedPage": 332
+                  }
+                },
+                {
+                  "japanese": "「あんなに難しい問題が解けたんですか。さすがですね」",
+                  "vietnamese": "“Bài toán (câu hỏi) khó như thế mà cũng giải được à? Tuyệt đấy”",
+                  "segments": [
+                    {
+                      "text": "「あんなに難しい問題が解けたんですか。",
+                      "reading": "あんなにむずかしいもんだいがとけたんですか。",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "さすがですね",
+                      "reading": "さすがですね",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "」",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 335,
+                    "printedPage": 332
                   }
                 }
               ],
@@ -69306,6 +69401,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "8e4f3e77fbcd31b9d5a09c93dd2ae3eac33f262e940d61592679d05ec4850575"
+    "candidateHash": "fc770c3629ef2c66d916aede706d9ba79e61d16d44b4aedb7a63ef971355f2a9"
   }
 }
