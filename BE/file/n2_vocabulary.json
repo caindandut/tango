@@ -35065,12 +35065,47 @@
               "examples": [
                 {
                   "japanese": "先日の選挙で、知り合いが市長に当選した。",
-                  "vietnamese": "Trong cuộc bầu cử hôm trước, người quen của tôi",
+                  "vietnamese": "Trong cuộc bầu cử hôm trước, người quen của tôi đã trúng cử chức thị trưởng.",
                   "segments": [
                     {
-                      "text": "先日の選挙で、知り合いが市長に当選した。",
-                      "reading": "ごい",
+                      "text": "先日の選挙で、知り合いが市長に",
+                      "reading": "せんじつのせんきょで、しりあいがしちょうに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "当選した",
+                      "reading": "とうせんした",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 99,
+                    "printedPage": 96
+                  }
+                },
+                {
+                  "japanese": "宝くじに当選し、賞金100万円を手に入れた。",
+                  "vietnamese": "Trúng xổ số, tôi nhận được 100 vạn yên.",
+                  "segments": [
+                    {
+                      "text": "宝くじに",
+                      "reading": "たからくじに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "当選し",
+                      "reading": "とうせんし",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、賞金100万円を手に入れた。",
+                      "reading": "、しょうきんひゃくまんえんをてにいれた。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -70274,6 +70309,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "c8b3ae0b7261fccfe4ce61d2dc4b90f522353969c80385e84693da08faf24adc"
+    "candidateHash": "10c8cc216ab8bd30b2347e46083f16d3c990b67bac8ba36f64c3b03b89ab028e"
   }
 }
