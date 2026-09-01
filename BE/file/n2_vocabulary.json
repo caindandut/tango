@@ -60953,13 +60953,63 @@
               "meaning": "Chính xác, rõ ràng",
               "examples": [
                 {
-                  "japanese": "きか。",
-                  "vietnamese": "Chính xác, rõ ràng",
+                  "japanese": "上司は部下に的確な指示を与えることが大切だ。",
+                  "vietnamese": "Việc cấp trên đưa ra những chỉ thị rõ ràng cho cấp dưới là điều quan trọng.",
                   "segments": [
                     {
-                      "text": "きか。",
-                      "reading": "きか",
+                      "text": "上司は部下に",
+                      "reading": "じょうしはぶかに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "的確な指示を与える",
+                      "reading": "てきかくなしじをあたえる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "ことが大切だ。",
+                      "reading": "ことがたいせつだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 257,
+                    "printedPage": 254
+                  }
+                },
+                {
+                  "japanese": "的確な【判断／評価／方法…】",
+                  "vietnamese": "{Phán đoán/ đánh giá/ phương pháp...} chính xác",
+                  "segments": [
+                    {
+                      "text": "的確な【判断／評価／方法…】",
+                      "reading": "てきかくな【はんだん／ひょうか／ほうほう…】",
+                      "isUnderlined": true
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 257,
+                    "printedPage": 254
+                  }
+                },
+                {
+                  "japanese": "状況を的確に把握する。",
+                  "vietnamese": "Nắm chính xác tình hình",
+                  "segments": [
+                    {
+                      "text": "状況を",
+                      "reading": "じょうきょうを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "的確に把握する",
+                      "reading": "てきかくにはあくする",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -60968,7 +61018,83 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "的確さ",
+                      "vietnamese": "Sự chính xác",
+                      "segments": [
+                        {
+                          "text": "的確さ",
+                          "reading": "てきかくさ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 257,
+                        "printedPage": 254
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "対",
+                  "items": [
+                    {
+                      "japanese": "不的確",
+                      "vietnamese": "Không chính xác",
+                      "segments": [
+                        {
+                          "text": "不的確",
+                          "reading": "ふてきかく",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 257,
+                        "printedPage": 254
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "確実な",
+                      "vietnamese": "Xác thực",
+                      "segments": [
+                        {
+                          "text": "確実な",
+                          "reading": "かくじつな",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 257,
+                        "printedPage": 254
+                      }
+                    },
+                    {
+                      "japanese": "正確な",
+                      "vietnamese": "Chính xác",
+                      "segments": [
+                        {
+                          "text": "正確な",
+                          "reading": "せいかくな",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 257,
+                        "printedPage": 254
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 257,
                 "printedPage": 254
@@ -61114,12 +61240,37 @@
               "meaning": "Cụ thể, chỉ tiết, rạch roi",
               "examples": [
                 {
-                  "japanese": "な。",
-                  "vietnamese": "Cụ thể, chỉ tiết, rạch roi",
+                  "japanese": "「わかりにくいので、もっと具体的に説明してください」",
+                  "vietnamese": "“Vì tôi thấy khó hiểu nên xin hãy giải thích một cách cụ thể hơn.”",
                   "segments": [
                     {
-                      "text": "な。",
-                      "reading": "な",
+                      "text": "「わかりにくいので、もっと",
+                      "reading": "「わかりにくいので、もっと",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "具体的に説明してください",
+                      "reading": "ぐたいてきにせつめいしてください",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "」",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 258,
+                    "printedPage": 255
+                  }
+                },
+                {
+                  "japanese": "具体的な【話／例／計画／方法…】",
+                  "vietnamese": "{Câu chuyện/ ví dụ/ kế hoạch/ phương pháp...} cụ thể",
+                  "segments": [
+                    {
+                      "text": "具体的な【話／例／計画／方法…】",
+                      "reading": "ぐたいてきな【はなし／れい／けいかく／ほうほう…】",
                       "isUnderlined": true
                     }
                   ],
@@ -61129,7 +61280,93 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "具体性",
+                      "vietnamese": "Tính cụ thể（例。彼の話は具体性に欠ける） (Ví dụ: Câu chuyện của anh ta thiếu tính chi tiết, cụ thể)",
+                      "segments": [
+                        {
+                          "text": "具体性",
+                          "reading": "ぐたいせい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 258,
+                        "printedPage": 255
+                      }
+                    },
+                    {
+                      "japanese": "具体例",
+                      "vietnamese": "Ví dụ cụ thể",
+                      "segments": [
+                        {
+                          "text": "具体例",
+                          "reading": "ぐたいれい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 258,
+                        "printedPage": 255
+                      }
+                    },
+                    {
+                      "japanese": "具体案",
+                      "vietnamese": "Phản ánh cụ thể",
+                      "segments": [
+                        {
+                          "text": "具体案",
+                          "reading": "ぐたいあん",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 258,
+                        "printedPage": 255
+                      }
+                    },
+                    {
+                      "japanese": "具体化する",
+                      "vietnamese": "Cụ thể hóa",
+                      "segments": [
+                        {
+                          "text": "具体化する",
+                          "reading": "ぐたいかする",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 258,
+                        "printedPage": 255
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "対",
+                  "items": [
+                    {
+                      "japanese": "抽象的な",
+                      "vietnamese": "Mang tính trừu tượng",
+                      "segments": [
+                        {
+                          "text": "抽象的な",
+                          "reading": "ちゅうしょうてきな",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 258,
+                        "printedPage": 255
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 258,
                 "printedPage": 255
@@ -74054,6 +74291,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "c0bae3de6efb5f70f07f1906c4e59e371965a857aeec37a606d66b2881a2a80e"
+    "candidateHash": "af2b0429e5dddcfd0b59d73913b174fcefd5e0ffec950f34c8cd33c64455e670"
   }
 }
