@@ -37004,30 +37004,15 @@
               ],
               "relations": [
                 {
-                  "label": "連",
+                  "label": "合",
                   "items": [
                     {
-                      "japanese": "＿がある⇔＿がない",
+                      "japanese": "勢いがある⇔ない",
                       "vietnamese": "Có tinh thần⇔Không có tinh thần",
                       "segments": [
                         {
-                          "text": "＿がある⇔＿がない",
-                          "reading": "＿がある⇔＿がない",
-                          "isUnderlined": true
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 87,
-                        "printedPage": 84
-                      }
-                    },
-                    {
-                      "japanese": "＿がつく",
-                      "vietnamese": "Sinh lực tràn trề",
-                      "segments": [
-                        {
-                          "text": "＿がつく",
-                          "reading": "＿がつく",
+                          "text": "勢いがある⇔ない",
+                          "reading": "いきおいがある⇔ない",
                           "isUnderlined": true
                         }
                       ],
@@ -37042,7 +37027,7 @@
                       "segments": [
                         {
                           "text": "＿をつける",
-                          "reading": "＿をつける",
+                          "reading": "",
                           "isUnderlined": true
                         }
                       ],
@@ -37052,32 +37037,12 @@
                       }
                     },
                     {
-                      "japanese": "＿がいい",
-                      "vietnamese": "Tinh thần tốt",
+                      "japanese": "＿づく",
+                      "vietnamese": "Sinh lực tràn trề",
                       "segments": [
                         {
-                          "text": "＿がいい",
-                          "reading": "＿がいい",
-                          "isUnderlined": true
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 87,
-                        "printedPage": 84
-                      }
-                    }
-                  ]
-                },
-                {
-                  "label": "合",
-                  "items": [
-                    {
-                      "japanese": "＿よく",
-                      "vietnamese": "Mạnh mẽ",
-                      "segments": [
-                        {
-                          "text": "＿よく",
-                          "reading": "＿よく",
+                          "text": "＿づく",
+                          "reading": "",
                           "isUnderlined": true
                         }
                       ],
@@ -37491,17 +37456,17 @@
                   "segments": [
                     {
                       "text": "草を",
-                      "reading": "かん",
+                      "reading": "くさを",
                       "isUnderlined": false
                     },
                     {
                       "text": "乾燥させて",
-                      "reading": "乾燥させて",
+                      "reading": "かんそうさせて",
                       "isUnderlined": true
                     },
                     {
                       "text": "家畜のえさにする。",
-                      "reading": "",
+                      "reading": "かちくのえさにする。",
                       "isUnderlined": false
                     }
                   ],
@@ -37511,17 +37476,17 @@
                   }
                 },
                 {
-                  "japanese": "乾燥した（空気／肌…）",
+                  "japanese": "乾燥した「空気／肌…」",
                   "vietnamese": "{Không khí/ da...} khô",
                   "segments": [
                     {
                       "text": "乾燥した",
-                      "reading": "乾燥した",
+                      "reading": "かんそうした",
                       "isUnderlined": true
                     },
                     {
-                      "text": "（空気／肌…）",
-                      "reading": "した",
+                      "text": "「空気／肌…」",
+                      "reading": "くうき／はだ",
                       "isUnderlined": false
                     }
                   ],
@@ -37537,7 +37502,7 @@
                   "items": [
                     {
                       "japanese": "乾く",
-                      "vietnamese": "Khô",
+                      "vietnamese": "Kho",
                       "segments": [
                         {
                           "text": "乾く",
@@ -37556,12 +37521,12 @@
                   "label": "関",
                   "items": [
                     {
-                      "japanese": "湿る",
+                      "japanese": "が湿る",
                       "vietnamese": "Ẩm",
                       "segments": [
                         {
-                          "text": "湿る",
-                          "reading": "しめる",
+                          "text": "が湿る",
+                          "reading": "がしめる",
                           "isUnderlined": true
                         }
                       ],
@@ -38276,48 +38241,7 @@
                   }
                 }
               ],
-              "relations": [
-                {
-                  "label": "類",
-                  "items": [
-                    {
-                      "japanese": "支援（する）",
-                      "vietnamese": "Chi viện",
-                      "segments": [
-                        {
-                          "text": "支援（する）",
-                          "reading": "しえん（する）",
-                          "isUnderlined": true
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 89,
-                        "printedPage": 86
-                      }
-                    }
-                  ]
-                },
-                {
-                  "label": "関",
-                  "items": [
-                    {
-                      "japanese": "救援（する）",
-                      "vietnamese": "Cứu viện (Ví dụ: Yêu cầu cứu viện. Gửi vật tư cứu trợ.)",
-                      "segments": [
-                        {
-                          "text": "救援（する）",
-                          "reading": "きゅうえん（する）",
-                          "isUnderlined": true
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 89,
-                        "printedPage": 86
-                      }
-                    }
-                  ]
-                }
-              ],
+              "relations": [],
               "source": {
                 "pdfPage": 89,
                 "printedPage": 86
@@ -39316,103 +39240,88 @@
               "meaning": "Phân biệt, khác biệt",
               "examples": [
                 {
-                  "japanese": "差別のない社会をつくりたい。",
-                  "vietnamese": "Tôi muốn xây dựng một xã hội không có sự phân biệt đối xử.",
+                  "japanese": "レポートを書くときは、事実と意見を区別して書かなければならない。",
+                  "vietnamese": "Khi viết báo cáo phải tách biệt giữa ý kiến chủ quan và sự thực khách quan.",
                   "segments": [
                     {
-                      "text": "差別のない",
-                      "reading": "差別のない",
+                      "text": "レポートを書くときは、事実と意見を",
+                      "reading": "れぽーとをかくときは、じじつといけんを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "区別して",
+                      "reading": "くべつして",
                       "isUnderlined": true
                     },
                     {
-                      "text": "社会をつくりたい。",
-                      "reading": "い",
+                      "text": "書かなければならない。",
+                      "reading": "かかなければならない。",
                       "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 91,
-                    "printedPage": 88
+                    "pdfPage": 90,
+                    "printedPage": 87
                   }
                 },
                 {
-                  "japanese": "新製品の開発にあたっては、他との差別化が必要だ。",
-                  "vietnamese": "Khi phát triển sản phẩm mới, cần có sự khác biệt hóa với sản phẩm khác.",
+                  "japanese": "あの双子はとてもよく似ていて、区別がつかない。",
+                  "vietnamese": "Hai đứa trẻ sinh đôi đó rất giống nhau, không thể phân biệt được.",
                   "segments": [
                     {
-                      "text": "新製品の開発にあたっては、他との",
-                      "reading": "さべつか",
+                      "text": "あの双子はとてもよく似ていて、",
+                      "reading": "あのふたごはとてもよくにていて、",
                       "isUnderlined": false
                     },
                     {
-                      "text": "差別化",
-                      "reading": "差別化",
+                      "text": "区別がつかない",
+                      "reading": "くべつがつかない",
                       "isUnderlined": true
                     },
                     {
-                      "text": "が必要だ。",
+                      "text": "。",
                       "reading": "",
                       "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 91,
-                    "printedPage": 88
+                    "pdfPage": 90,
+                    "printedPage": 87
                   }
                 }
               ],
               "relations": [
                 {
-                  "label": "合",
+                  "label": "連",
                   "items": [
                     {
-                      "japanese": "無＿な",
-                      "vietnamese": "Không phân biệt",
+                      "japanese": "＿がつく",
+                      "vietnamese": "Để phân biệt",
                       "segments": [
                         {
-                          "text": "無＿な",
-                          "reading": "む＿な",
+                          "text": "＿がつく",
+                          "reading": "",
                           "isUnderlined": true
                         }
                       ],
                       "source": {
-                        "pdfPage": 91,
-                        "printedPage": 88
+                        "pdfPage": 90,
+                        "printedPage": 87
                       }
                     },
                     {
-                      "japanese": "＿化する",
-                      "vietnamese": "Riêng biệt hóa",
+                      "japanese": "＿をつける",
+                      "vietnamese": "Cho biết sự khác biệt",
                       "segments": [
                         {
-                          "text": "＿化する",
-                          "reading": "＿かする",
+                          "text": "＿をつける",
+                          "reading": "",
                           "isUnderlined": true
                         }
                       ],
                       "source": {
-                        "pdfPage": 91,
-                        "printedPage": 88
-                      }
-                    }
-                  ]
-                },
-                {
-                  "label": "関",
-                  "items": [
-                    {
-                      "japanese": "区別",
-                      "vietnamese": "Phân biệt",
-                      "segments": [
-                        {
-                          "text": "区別",
-                          "reading": "くべつ",
-                          "isUnderlined": true
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 91,
-                        "printedPage": 88
+                        "pdfPage": 90,
+                        "printedPage": 87
                       }
                     }
                   ]
@@ -51328,30 +51237,15 @@
               ],
               "relations": [
                 {
-                  "label": "類",
+                  "label": "合",
                   "items": [
                     {
-                      "japanese": "急に",
-                      "vietnamese": "Gấp/ nhanh",
-                      "segments": [
-                        {
-                          "text": "急に",
-                          "reading": "きゅうに",
-                          "isUnderlined": true
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 153,
-                        "printedPage": 150
-                      }
-                    },
-                    {
-                      "japanese": "突然",
+                      "japanese": "急に／突然",
                       "vietnamese": "Đột nhiên/ đột ngột",
                       "segments": [
                         {
-                          "text": "突然",
-                          "reading": "とつぜん",
+                          "text": "急に／突然",
+                          "reading": "きゅうに／とつぜん",
                           "isUnderlined": true
                         }
                       ],
@@ -80173,7 +80067,7 @@
                   "segments": [
                     {
                       "text": "有名ブランド品だけあって、",
-                      "reading": "ゆうめいブランドひんだけあって、",
+                      "reading": "ゆうめいぶらんどひんだけあって、",
                       "isUnderlined": false
                     },
                     {
@@ -80208,7 +80102,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "。",
+                      "reading": "",
                       "isUnderlined": false
                     }
                   ],
@@ -80223,7 +80117,7 @@
                   "segments": [
                     {
                       "text": "「あんなに難しい問題が解けたんですか。",
-                      "reading": "「あんなにむずかしいもんだいがとけたんですか。",
+                      "reading": "あんなにむずかしいもんだいがとけたんですか。",
                       "isUnderlined": false
                     },
                     {
@@ -80233,57 +80127,7 @@
                     },
                     {
                       "text": "」",
-                      "reading": "」",
-                      "isUnderlined": false
-                    }
-                  ],
-                  "source": {
-                    "pdfPage": 335,
-                    "printedPage": 332
-                  }
-                },
-                {
-                  "japanese": "この問題は難しくて、さすがの西川さんにもできなかったそうだ。",
-                  "vietnamese": "Câu hỏi (bài toán) này khó quá, có vẻ ngay cả giáo sư Nishikawa cũng không làm được.",
-                  "segments": [
-                    {
-                      "text": "この問題は難しくて、",
-                      "reading": "このもんだいはむずかしくて、",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "さすがの西川さんにも",
-                      "reading": "さすがのにしかわさんにも",
-                      "isUnderlined": true
-                    },
-                    {
-                      "text": "できなかったそうだ。",
-                      "reading": "できなかったそうだ。",
-                      "isUnderlined": false
-                    }
-                  ],
-                  "source": {
-                    "pdfPage": 335,
-                    "printedPage": 332
-                  }
-                },
-                {
-                  "japanese": "辛い物好きの私でも、さすがにこのカレーは食べられなかった。",
-                  "vietnamese": "Ngay cả người thích đồ cay như tôi quả nhiên cũng không thể ăn hết được món cà ri đỏ.",
-                  "segments": [
-                    {
-                      "text": "辛い物好きの私でも、",
-                      "reading": "からいものずきのわたしでも、",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "さすがに",
-                      "reading": "さすがに",
-                      "isUnderlined": true
-                    },
-                    {
-                      "text": "このカレーは食べられなかった。",
-                      "reading": "このカレーはたべられなかった。",
+                      "reading": "",
                       "isUnderlined": false
                     }
                   ],
@@ -81542,12 +81386,12 @@
               "meaning": "Nhanh chóng, lập tức, đột nhiên",
               "examples": [
                 {
-                  "japanese": "私がコーヒーをこぼすと、店員がさっとふいてくれた。",
+                  "japanese": "私がコピーをこぼすと、店員がさっとふいてくれた。",
                   "vietnamese": "Khi tôi làm đổ cà phê, nhân viên đã lập tức lau đi.",
                   "segments": [
                     {
-                      "text": "私がコーヒーをこぼすと、店員が",
-                      "reading": "わたしがコーヒーをこぼすと、てんいんが",
+                      "text": "私がコピーをこぼすと、店員が",
+                      "reading": "わたしがこーひーをこぼすと、てんいんが",
                       "isUnderlined": false
                     },
                     {
@@ -81572,7 +81416,7 @@
                   "segments": [
                     {
                       "text": "「ほうれん草は",
-                      "reading": "「ほうれんそうは",
+                      "reading": "ほうれんそうは",
                       "isUnderlined": false
                     },
                     {
@@ -81582,7 +81426,7 @@
                     },
                     {
                       "text": "ゆでて、水に取ってください」",
-                      "reading": "ゆでて、みずにとってください」",
+                      "reading": "ゆでて、みずにとってください",
                       "isUnderlined": false
                     }
                   ],
@@ -81632,7 +81476,7 @@
               "examples": [
                 {
                   "japanese": "彼女はすっと立ち上がって、部屋を出て行った。",
-                  "vietnamese": "Cô ấy đứng thẳng dậy và ra khỏi phòng rồi đi mất.",
+                  "vietnamese": "Cô ấy đứng thẳng dậy và rời khỏi phòng rồi đi mất.",
                   "segments": [
                     {
                       "text": "彼女は",
@@ -81661,7 +81505,7 @@
                   "segments": [
                     {
                       "text": "このガムをかむと、口の中が",
-                      "reading": "このガムをかむと、くちのなかが",
+                      "reading": "このがむをかむと、くちのなかが",
                       "isUnderlined": false
                     },
                     {
@@ -82504,21 +82348,6 @@
                 {
                   "label": "関",
                   "items": [
-                    {
-                      "japanese": "一緒に",
-                      "vietnamese": "Cùng với",
-                      "segments": [
-                        {
-                          "text": "一緒に",
-                          "reading": "いっしょに",
-                          "isUnderlined": true
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 340,
-                        "printedPage": 337
-                      }
-                    },
                     {
                       "japanese": "同時に",
                       "vietnamese": "Đồng thời",
@@ -84814,6 +84643,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "aad25f5c9a8ce2196d4af64e3d5d6d2130177862738078424530e7f34a206019"
+    "candidateHash": "0bcf359b97aa4ac8e907e2729136512ba270e8a300bd815970733661f2563a1c"
   }
 }
