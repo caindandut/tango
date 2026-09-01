@@ -56178,13 +56178,48 @@
               "meaning": "Ngay lập tức, không chần chừ",
               "examples": [
                 {
-                  "japanese": "新しいレストランができたので、さっそく行ってみた。",
-                  "vietnamese": "Vì nhà hàng mới đã xây xong nên",
+                  "japanese": "新しいレストランができたので、早速行ってみた。",
+                  "vietnamese": "Vì nhà hàng mới đã xây xong nên tôi thử đến ngay lập tức.",
                   "segments": [
                     {
-                      "text": "新しいレストランができたので、さっそく行ってみた。",
-                      "reading": "さっ",
+                      "text": "新しいレストランができたので、",
+                      "reading": "あたらしいレストランができたので、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "早速行ってみた",
+                      "reading": "さっそくいってみた",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 153,
+                    "printedPage": 150
+                  }
+                },
+                {
+                  "japanese": "ボーナスが出たので、早速新しい靴とスーツを買った。",
+                  "vietnamese": "Vì được thưởng nên ngay lập tức đã đi mua áo vest và giày mới.",
+                  "segments": [
+                    {
+                      "text": "ボーナスが出たので、",
+                      "reading": "ボーナスがでたので、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "早速新しい靴とスーツを買った",
+                      "reading": "さっそくあたらしいくつとスーツをかった",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -56324,12 +56359,47 @@
               "examples": [
                 {
                   "japanese": "鈴木さんは常に努力をおこたらない、すばらしい学生だ。",
-                  "vietnamese": "Suzuki thường không quên việc",
+                  "vietnamese": "Suzuki thường không quên việc nỗ lực, đúng là một học sinh tuyệt vời.",
                   "segments": [
                     {
-                      "text": "鈴木さんは常に努力をおこたらない、すばらしい学生だ。",
-                      "reading": "つね",
+                      "text": "鈴木さんは",
+                      "reading": "すずきさんは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "常に努力をおこたらない",
+                      "reading": "つねにどりょくをおこたらない",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、すばらしい学生だ。",
+                      "reading": "、すばらしいがくせいだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 153,
+                    "printedPage": 150
+                  }
+                },
+                {
+                  "japanese": "「お客様には常に笑顔で接するように注意してください」",
+                  "vietnamese": "“Hãy chú ý để lúc nào cũng tiếp xúc với khách hàng bằng khuôn mặt vui cười cho tôi”",
+                  "segments": [
+                    {
+                      "text": "「お客様には",
+                      "reading": "「おきゃくさまには",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "常に笑顔で接するように",
+                      "reading": "つねにえがおでせっするように",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "注意してください」",
+                      "reading": "ちゅういしてください」",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -56353,12 +56423,47 @@
               "examples": [
                 {
                   "japanese": "妹は体が弱くて、たえず風邪をひいている。",
-                  "vietnamese": "Em gái tôi thể trạng yếu đuối nên liên tục bị",
+                  "vietnamese": "Em gái tôi thể trạng yếu đuối nên liên tục bị cảm.",
                   "segments": [
                     {
-                      "text": "妹は体が弱くて、たえず風邪をひいている。",
-                      "reading": "たえず",
+                      "text": "妹は体が弱くて、",
+                      "reading": "いもうとはからだがよわくて、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "たえず風邪をひいている",
+                      "reading": "たえずかぜをひいている",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 153,
+                    "printedPage": 150
+                  }
+                },
+                {
+                  "japanese": "うちの前の道路はたえず車が走っている。",
+                  "vietnamese": "Con đường trước nhà tôi xe chạy không ngớt.",
+                  "segments": [
+                    {
+                      "text": "うちの前の道路は",
+                      "reading": "うちのまえのどうろは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "たえず車が走っている",
+                      "reading": "たえずくるまがはしっている",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -56431,7 +56536,43 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "しょっちゅう",
+                      "vietnamese": "Thường xuyên, hay",
+                      "segments": [
+                        {
+                          "text": "しょっちゅう",
+                          "reading": "しょっちゅう",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 153,
+                        "printedPage": 150
+                      }
+                    },
+                    {
+                      "japanese": "たびたび",
+                      "vietnamese": "Thường xuyên, lặp đi lặp lại, nhiều lần",
+                      "segments": [
+                        {
+                          "text": "たびたび",
+                          "reading": "たびたび",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 153,
+                        "printedPage": 150
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 153,
                 "printedPage": 150
@@ -89950,6 +90091,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "212f12242fb3e63a586e354906e38a3fbbd9160a71b7d90aae8c1df92db0ae73"
+    "candidateHash": "fdb52112a73f1439f0e30d1204793ee207cb64a8359add29d38427d49ce2bf78"
   }
 }
