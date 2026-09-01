@@ -7,13 +7,24 @@ datasource db {
 }
 
 model VocabularySet {
-  id          String       @id @default(uuid())
+  id          String         @id @default(uuid())
+  code        String?        @unique
   name        String
+  level       String         @default("N3")
+  unitNumber  Int?
+  unitTitle   String         @default("")
+  partNumber  Int            @default(1)
+  partTitle   String         @default("")
+  rangeStart  Int?
+  rangeEnd    Int?
+  isSummary   Boolean        @default(false)
   totalWords  Int
-  createdAt   DateTime     @default(now())
-  updatedAt   DateTime     @updatedAt
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
   vocabularies Vocabulary[]
   sessions    StudySession[]
+
+  @@index([level, unitNumber, partNumber])
 }
 
 model Vocabulary {
@@ -21,12 +32,17 @@ model Vocabulary {
   position  Int           @default(0)
   kanji     String
   hiragana  String
-  meaning   String
+  meaning        String
+  hanVietMeaning String        @default("")
+  examples       Json          @default("[]")
+  relations      Json          @default("[]")
+  sourceNumber   Int?
   setId     String
   set       VocabularySet @relation(fields: [setId], references: [id], onDelete: Cascade)
   results   StudyResult[]
 
   @@index([setId])
+  @@index([setId, sourceNumber])
 }
 
 model StudySession {
@@ -38,6 +54,7 @@ model StudySession {
   correctCount Int           @default(0)
   wrongCount   Int           @default(0)
   currentIndex Int           @default(0)
+  roundStartIndex Int        @default(0)
   shuffledOrder Int[]
   quizOptions  Json?
   isCompleted  Boolean       @default(false)

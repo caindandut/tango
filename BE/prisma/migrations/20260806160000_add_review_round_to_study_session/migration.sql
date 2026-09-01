@@ -1,0 +1,2 @@
+ALTER TABLE "StudySession"
+ADD COLUMN "roundStartIndex" INTEGER NOT NULL DEFAULT 0;

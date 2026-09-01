@@ -4,9 +4,16 @@ const express = require('express');
 const cors = require('cors');
 const vocabularyRoutes = require('./routes/vocabulary');
 const studyRoutes = require('./routes/study');
+const dictionaryRoutes = require('./routes/dictionary');
+const { createGrammarRouter } = require('./routes/grammar');
+const grammarCurriculum = require('./data/grammar/curriculum.json');
+const { createGrammarService } = require('./grammar/grammarService');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+// Render forwards the visitor IP through one trusted reverse proxy.
+app.set('trust proxy', 1);
 
 // Middleware
 app.use(cors({
@@ -19,6 +26,10 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use('/api/vocabulary', vocabularyRoutes);
 app.use('/api/study', studyRoutes);
+app.use('/api/dictionary', dictionaryRoutes);
+app.use('/api/grammar', createGrammarRouter({
+  service: createGrammarService(grammarCurriculum),
+}));
 
 // Health check
 app.get('/api/health', (req, res) => {
@@ -40,13 +51,13 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal server error' });
 });
 
-const seedN3FromJson = require('./scripts/seedN3FromJson');
+const seedVocabulary = require('./scripts/seedVocabulary');
 
 // Seed database on server startup
 async function startServer() {
   try {
-    console.log('🔄 Syncing N3 vocabulary to Database...');
-    await seedN3FromJson();
+    console.log('🔄 Syncing published vocabulary to Database...');
+    await seedVocabulary();
   } catch (err) {
     console.error('⚠️ Failed to sync vocabulary on startup:', err);
   }
@@ -58,4 +69,3 @@ async function startServer() {
 }
 
 startServer();
-

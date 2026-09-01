@@ -104,6 +104,7 @@ router.post('/start/:setId', async (req, res) => {
         setId: set.id,
         mode,
         totalWords: set.vocabularies.length,
+        roundStartIndex: 0,
         shuffledOrder,
         ...(quizOptions ? { quizOptions } : {}),
       },
@@ -141,6 +142,7 @@ router.get('/session/:sessionId', async (req, res) => {
       mode: session.mode,
       totalWords: session.totalWords,
       currentIndex: session.currentIndex,
+      roundStartIndex: session.roundStartIndex,
       correctCount: session.correctCount,
       wrongCount: session.wrongCount,
       isCompleted: session.isCompleted,
@@ -229,10 +231,16 @@ router.get('/session/:sessionId/current', async (req, res) => {
 
     res.json({
       id: vocab.id,
+      sourceNumber: vocab.sourceNumber,
       kanji: vocab.kanji,
       hiragana: vocab.hiragana,
       meaning: vocab.meaning,
+      hanVietMeaning: vocab.hanVietMeaning,
       mode: session.mode,
+      isReviewRound: session.currentIndex >= session.roundStartIndex && session.roundStartIndex > 0,
+      reviewRoundSize: session.roundStartIndex > 0
+        ? session.totalWords - session.roundStartIndex
+        : 0,
       ...(session.mode === 'quiz'
         ? { quizOptions: getSessionQuizOptions(session, session.set.vocabularies) }
         : {}),
@@ -241,6 +249,8 @@ router.get('/session/:sessionId/current', async (req, res) => {
       totalWords: session.totalWords,
       correctCount: session.correctCount,
       wrongCount: session.wrongCount,
+      examples: Array.isArray(vocab.examples) ? vocab.examples : [],
+      relations: Array.isArray(vocab.relations) ? vocab.relations : [],
     });
   } catch (error) {
     console.error('Get current vocab error:', error);
@@ -351,6 +361,17 @@ router.post('/session/:sessionId/next', async (req, res) => {
   try {
     const session = await prisma.studySession.findUnique({
       where: { id: req.params.sessionId },
+      include: {
+        results: {
+          orderBy: [
+            { answeredAt: 'desc' },
+            { id: 'desc' },
+          ],
+        },
+        set: {
+          include: { vocabularies: { orderBy: { position: 'asc' } } },
+        },
+      },
     });
 
     if (!session) {
@@ -358,7 +379,59 @@ router.post('/session/:sessionId/next', async (req, res) => {
     }
 
     const nextIndex = session.currentIndex + 1;
-    const isCompleted = nextIndex >= session.totalWords;
+    const reachedRoundEnd = nextIndex >= session.totalWords;
+
+    if (reachedRoundEnd && session.mode !== 'flashcard') {
+      const roundIndexes = session.shuffledOrder.slice(session.roundStartIndex);
+      const roundVocabIds = new Set(
+        roundIndexes.map((vocabIndex) => session.set.vocabularies[vocabIndex]?.id).filter(Boolean),
+      );
+      const latestResultByVocab = new Map();
+
+      session.results.forEach((result) => {
+        if (roundVocabIds.has(result.vocabId) && !latestResultByVocab.has(result.vocabId)) {
+          latestResultByVocab.set(result.vocabId, result);
+        }
+      });
+
+      const failedIndexes = roundIndexes.filter((vocabIndex) => {
+        const vocab = session.set.vocabularies[vocabIndex];
+        return vocab && latestResultByVocab.get(vocab.id)?.isCorrect === false;
+      });
+
+      if (failedIndexes.length > 0) {
+        const reviewOrder = generateShuffledOrder(failedIndexes.length)
+          .map((index) => failedIndexes[index]);
+        const totalWords = session.totalWords + reviewOrder.length;
+        const reviewQuizOptions = session.mode === 'quiz'
+          ? generateQuizOptions(session.set.vocabularies, reviewOrder)
+          : null;
+
+        await prisma.studySession.update({
+          where: { id: session.id },
+          data: {
+            currentIndex: nextIndex,
+            totalWords,
+            roundStartIndex: nextIndex,
+            shuffledOrder: [...session.shuffledOrder, ...reviewOrder],
+            ...(reviewQuizOptions
+              ? { quizOptions: [...(session.quizOptions || []), ...reviewQuizOptions] }
+              : {}),
+            isCompleted: false,
+          },
+        });
+
+        return res.json({
+          currentIndex: nextIndex,
+          isCompleted: false,
+          isReviewRound: true,
+          reviewCount: reviewOrder.length,
+          totalWords,
+        });
+      }
+    }
+
+    const isCompleted = reachedRoundEnd;
 
     await prisma.studySession.update({
       where: { id: session.id },
@@ -371,6 +444,7 @@ router.post('/session/:sessionId/next', async (req, res) => {
     res.json({
       currentIndex: nextIndex,
       isCompleted,
+      isReviewRound: false,
       totalWords: session.totalWords,
     });
   } catch (error) {
@@ -417,6 +491,10 @@ router.get('/session/:sessionId/results', async (req, res) => {
       where: { id: req.params.sessionId },
       include: {
         results: {
+          orderBy: [
+            { answeredAt: 'desc' },
+            { id: 'desc' },
+          ],
           include: {
             vocabulary: true,
           },
@@ -429,12 +507,20 @@ router.get('/session/:sessionId/results', async (req, res) => {
       return res.status(404).json({ error: 'Session not found' });
     }
 
-    const wrongAnswers = session.results
-      .filter(r => !r.isCorrect)
+    const latestResultByVocab = new Map();
+    session.results.forEach((result) => {
+      if (!latestResultByVocab.has(result.vocabId)) {
+        latestResultByVocab.set(result.vocabId, result);
+      }
+    });
+
+    const wrongAnswers = Array.from(latestResultByVocab.values())
+      .filter((result) => !result.isCorrect)
       .map(r => ({
         kanji: r.vocabulary.kanji,
         hiragana: r.vocabulary.hiragana,
         meaning: r.vocabulary.meaning,
+        hanVietMeaning: r.vocabulary.hanVietMeaning,
         userAnswer: r.userAnswer,
       }));
 

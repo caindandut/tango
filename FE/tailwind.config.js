@@ -23,6 +23,8 @@ export default {
         accent: {
           orange: '#f97316',
           'orange-hover': '#ea580c',
+          quizlet: '#4255ff',
+          'quizlet-hover': '#3545d4',
           green: '#22c55e',
           'green-dark': '#16a34a',
           red: '#ef4444',
@@ -36,7 +38,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        japanese: ['"Meiryo"', 'sans-serif'],
+        japanese: ['"Gen Jyuu Gothic-Regular"', 'Arial', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.3s ease-out',

@@ -1,0 +1,1 @@
+ALTER TABLE "Vocabulary" ADD COLUMN "examples" JSONB NOT NULL DEFAULT '[]';

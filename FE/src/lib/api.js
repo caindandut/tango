@@ -11,7 +11,9 @@ const api = axios.create({
 
 // Vocabulary API
 export const vocabularyApi = {
-  getSets: () => api.get('/vocabulary/sets'),
+  getSets: (level) => api.get('/vocabulary/sets', {
+    params: level ? { level } : undefined,
+  }),
 
   getSet: (id) => api.get(`/vocabulary/sets/${id}`),
 
@@ -40,6 +42,20 @@ export const studyApi = {
   previousWord: (sessionId) => api.post(`/study/session/${sessionId}/previous`),
 
   getResults: (sessionId) => api.get(`/study/session/${sessionId}/results`),
+};
+
+export const dictionaryApi = {
+  lookup: (term, sentence) => api.post('/dictionary/lookup', { term, sentence }),
+};
+
+export const grammarApi = {
+  getWeeks: () => api.get('/grammar/weeks'),
+  getWeek: (weekNumber) => api.get(`/grammar/weeks/${weekNumber}`),
+  getDay: (weekNumber, dayNumber) => api.get(`/grammar/weeks/${weekNumber}/days/${dayNumber}`),
+  checkQuestion: (weekNumber, dayNumber, questionId, answerOptionId) =>
+    api.post(`/grammar/weeks/${weekNumber}/days/${dayNumber}/questions/${questionId}/check`, { answerOptionId }),
+  gradeReview: (weekNumber, answers) =>
+    api.post(`/grammar/weeks/${weekNumber}/days/7/grade`, { answers }),
 };
 
 export default api;
