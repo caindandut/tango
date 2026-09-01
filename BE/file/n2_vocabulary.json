@@ -33013,23 +33013,23 @@
                   "segments": [
                     {
                       "text": "「中村さんは３回続けて宝くじに当たったそうだ。なんて",
-                      "reading": "うん",
+                      "reading": "「なかむらさんはさんかいつづけてたからくじにあたったそうだ。なんて",
                       "isUnderlined": false
                     },
                     {
-                      "text": "運",
-                      "reading": "うん",
+                      "text": "運のいい",
+                      "reading": "うんのいい",
                       "isUnderlined": true
                     },
                     {
-                      "text": "のいい人だろう」",
-                      "reading": "うん",
+                      "text": "人だろう」",
+                      "reading": "ひとだろう」",
                       "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 80,
-                    "printedPage": 77
+                    "pdfPage": 81,
+                    "printedPage": 78
                   }
                 },
                 {
@@ -33038,7 +33038,7 @@
                   "segments": [
                     {
                       "text": "駅に着くと、",
-                      "reading": "うん",
+                      "reading": "えきにつくと、",
                       "isUnderlined": false
                     },
                     {
@@ -33048,22 +33048,22 @@
                     },
                     {
                       "text": "電車は出たばかりで、30分も待たなければならなかった。",
-                      "reading": "うん",
+                      "reading": "でんしゃはでたばかりで、30ぷんもまたなければならなかった。",
                       "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 80,
-                    "printedPage": 77
+                    "pdfPage": 81,
+                    "printedPage": 78
                   }
                 },
                 {
                   "japanese": "「できるだけのことはした。あとは運を天に任せよう」",
-                  "vietnamese": "“Những việc có thể làm tôi đã làm, còn lại phó mặc số phận cho ông trời thôi”",
+                  "vietnamese": "“Những việc có thể làm thì tôi đã làm, còn lại phó mặc số phận cho ông trời thôi”",
                   "segments": [
                     {
                       "text": "「できるだけのことはした。あとは",
-                      "reading": "",
+                      "reading": "「できるだけのことはした。あとは",
                       "isUnderlined": false
                     },
                     {
@@ -33073,13 +33073,13 @@
                     },
                     {
                       "text": "を天に任せよう」",
-                      "reading": "うん",
+                      "reading": "をてんにまかせよう」",
                       "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 80,
-                    "printedPage": 77
+                    "pdfPage": 81,
+                    "printedPage": 78
                   }
                 }
               ],
@@ -33088,55 +33088,49 @@
                   "label": "連",
                   "items": [
                     {
-                      "japanese": "運がいい⇔悪い",
+                      "japanese": "＿がいい⇔＿悪い",
                       "vietnamese": "May mắn ⇔ Xui xẻo",
-                      "target": "運がいい",
-                      "reading": "うんがいい",
-                      "source": {
-                        "pdfPage": 80,
-                        "printedPage": 77
-                      },
                       "segments": [
                         {
-                          "text": "運がいい⇔悪い",
-                          "reading": "うん",
-                          "isUnderlined": false
+                          "text": "＿がいい⇔＿悪い",
+                          "reading": "＿がいい⇔＿わるい",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
                     },
                     {
-                      "japanese": "運がある⇔ない",
+                      "japanese": "＿がある⇔＿がない",
                       "vietnamese": "May mắn ⇔ Đen đủi",
-                      "target": "運がある",
-                      "reading": "うんがある",
-                      "source": {
-                        "pdfPage": 80,
-                        "printedPage": 77
-                      },
                       "segments": [
                         {
-                          "text": "運がある⇔ない",
-                          "reading": "うん",
-                          "isUnderlined": false
+                          "text": "＿がある⇔＿がない",
+                          "reading": "＿がある⇔＿がない",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
                     },
                     {
-                      "japanese": "運が向く",
+                      "japanese": "＿が向く",
                       "vietnamese": "Vận may đến",
-                      "target": "運が向く",
-                      "reading": "うんがむく",
-                      "source": {
-                        "pdfPage": 80,
-                        "printedPage": 77
-                      },
                       "segments": [
                         {
-                          "text": "運が向く",
-                          "reading": "うん",
-                          "isUnderlined": false
+                          "text": "＿が向く",
+                          "reading": "＿がむく",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
                     }
                   ]
                 },
@@ -33146,36 +33140,32 @@
                     {
                       "japanese": "幸運（な）⇔不運（な）",
                       "vietnamese": "May mắn ⇔ Không may mắn",
-                      "target": "幸運",
-                      "reading": "こううん",
-                      "source": {
-                        "pdfPage": 80,
-                        "printedPage": 77
-                      },
                       "segments": [
                         {
                           "text": "幸運（な）⇔不運（な）",
-                          "reading": "うん",
-                          "isUnderlined": false
+                          "reading": "こううん（な）⇔ふうん（な）",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
                     },
                     {
-                      "japanese": "良く⇔悪く",
+                      "japanese": "＿良く⇔＿悪く",
                       "vietnamese": "Số đỏ ⇔ Số đen",
-                      "target": "良く",
-                      "reading": "よく",
-                      "source": {
-                        "pdfPage": 80,
-                        "printedPage": 77
-                      },
                       "segments": [
                         {
-                          "text": "良く⇔悪く",
-                          "reading": "うん",
-                          "isUnderlined": false
+                          "text": "＿良く⇔＿悪く",
+                          "reading": "＿よく⇔＿わるく",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
                     }
                   ]
                 }
@@ -33193,13 +33183,48 @@
               "meaning": "Trực giác, linh cảm",
               "examples": [
                 {
-                  "japanese": "「中村さんは3回続けて宝くじに当たったそうだ。",
-                  "vietnamese": "な ん て 運 の いい 人 だ ろう 」\"Anh Nakamura",
+                  "japanese": "母は勘がよくて、うそをついてもすぐばれてしまう。",
+                  "vietnamese": "Trực giác của mẹ tôi rất tốt, cho dù có nói dối thì cũng ngay lập tức bị phát hiện.",
                   "segments": [
                     {
-                      "text": "「中村さんは3回続けて宝くじに当たったそうだ。",
-                      "reading": "うん",
+                      "text": "母は",
+                      "reading": "ははは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "勘がよくて",
+                      "reading": "かんがよくて",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、うそをついてもすぐばれてしまう。",
+                      "reading": "、うそをついてもすぐばれてしまう。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 81,
+                    "printedPage": 78
+                  }
+                },
+                {
+                  "japanese": "わからなくて、勘で選んだ答えが合っていた。",
+                  "vietnamese": "Vì không biết nên đã trả lời theo linh cảm vậy mà lại đúng.",
+                  "segments": [
+                    {
+                      "text": "わからなくて、",
+                      "reading": "わからなくて、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "勘で",
+                      "reading": "かんで",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "選んだ答えが合っていた。",
+                      "reading": "えらんだこたえがあっていた。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -33208,7 +33233,128 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿がいい⇔＿が悪い",
+                      "vietnamese": "Linh cảm tốt⇔Linh cảm xấu",
+                      "segments": [
+                        {
+                          "text": "＿がいい⇔＿が悪い",
+                          "reading": "＿がいい⇔＿がわるい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    },
+                    {
+                      "japanese": "＿が当たる⇔＿がはずれる",
+                      "vietnamese": "Đúng với linh cảm ⇔ Khác với linh cảm",
+                      "segments": [
+                        {
+                          "text": "＿が当たる⇔＿がはずれる",
+                          "reading": "＿があたる⇔＿がはずれる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    },
+                    {
+                      "japanese": "＿が働く",
+                      "vietnamese": "Trực giác hoạt động",
+                      "segments": [
+                        {
+                          "text": "＿が働く",
+                          "reading": "＿がはたらく",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    },
+                    {
+                      "japanese": "＿を働かせる",
+                      "vietnamese": "Sử dụng trực giác",
+                      "segments": [
+                        {
+                          "text": "＿を働かせる",
+                          "reading": "＿をはたらかせる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    },
+                    {
+                      "japanese": "＿が鋭い⇔＿が鈍い",
+                      "vietnamese": "Trực giác nhạy bén ⇔ Trực giác kém",
+                      "segments": [
+                        {
+                          "text": "＿が鋭い⇔＿が鈍い",
+                          "reading": "＿がするどい⇔＿がにぶい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "勘違い",
+                      "vietnamese": "Linh cảm sai",
+                      "segments": [
+                        {
+                          "text": "勘違い",
+                          "reading": "かんちがい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "第六感",
+                      "vietnamese": "Giác quan thứ sáu",
+                      "segments": [
+                        {
+                          "text": "第六感",
+                          "reading": "だいろっかん",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 81,
                 "printedPage": 78
@@ -33222,13 +33368,48 @@
               "meaning": "Cảm giác, linh cảm, trực giác",
               "examples": [
                 {
-                  "japanese": "母は勘がよくて、うそをついてるもすぐばれてしまう。",
-                  "vietnamese": "Tmuc giác của mẹ tôi rất tốt, cho dù có nói",
+                  "japanese": "冷えて、手足の感覚がなくなってしまった。",
+                  "vietnamese": "Chân tay bị mất cảm giác vì bị lạnh.",
                   "segments": [
                     {
-                      "text": "母は勘がよくて、うそをついてるもすぐばれてしまう。",
-                      "reading": "ん",
+                      "text": "冷えて、手足の",
+                      "reading": "ひえて、てあしの",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "感覚が",
+                      "reading": "かんかくが",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "なくなってしまった。",
+                      "reading": "なくなってしまった。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 81,
+                    "printedPage": 78
+                  }
+                },
+                {
+                  "japanese": "あの作曲家は70歳の今も、若々しい感覚で音楽を作り続けている。",
+                  "vietnamese": "Người nhạc sĩ đó tuy bây giờ đã 70 tuổi nhưng vẫn tiếp tục sáng tác những bài hát mang cảm giác trẻ trung, đầy sức sống.",
+                  "segments": [
+                    {
+                      "text": "あの作曲家は70歳の今も、若々しい",
+                      "reading": "あのさっきょくかは70さいのいまも、わかわかしい",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "感覚で",
+                      "reading": "かんかくで",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "音楽を作り続けている。",
+                      "reading": "おんがくをつくりつづけている。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -33237,7 +33418,208 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "視覚",
+                      "vietnamese": "Thị giác",
+                      "segments": [
+                        {
+                          "text": "視覚",
+                          "reading": "しかく",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    },
+                    {
+                      "japanese": "聴覚",
+                      "vietnamese": "Thính giác",
+                      "segments": [
+                        {
+                          "text": "聴覚",
+                          "reading": "ちょうかく",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    },
+                    {
+                      "japanese": "嗅覚",
+                      "vietnamese": "Khứu giác",
+                      "segments": [
+                        {
+                          "text": "嗅覚",
+                          "reading": "きゅうかく",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    },
+                    {
+                      "japanese": "味覚",
+                      "vietnamese": "Vị giác",
+                      "segments": [
+                        {
+                          "text": "味覚",
+                          "reading": "みかく",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    },
+                    {
+                      "japanese": "触覚",
+                      "vietnamese": "Xúc giác",
+                      "segments": [
+                        {
+                          "text": "触覚",
+                          "reading": "しょっかく",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    },
+                    {
+                      "japanese": "五感",
+                      "vietnamese": "Năm giác quan",
+                      "segments": [
+                        {
+                          "text": "五感",
+                          "reading": "ごかん",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿が新しい⇔＿が古い",
+                      "vietnamese": "Cảm giác mới ⇔ Cảm giác cũ",
+                      "segments": [
+                        {
+                          "text": "＿が新しい⇔＿が古い",
+                          "reading": "＿があたらしい⇔＿がふるい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "バランス＿",
+                      "vietnamese": "Cân bằng cảm xúc",
+                      "segments": [
+                        {
+                          "text": "バランス＿",
+                          "reading": "バランス＿",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    },
+                    {
+                      "japanese": "色彩＿",
+                      "vietnamese": "Sắc thái cảm xúc",
+                      "segments": [
+                        {
+                          "text": "色彩＿",
+                          "reading": "しきさい＿",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    },
+                    {
+                      "japanese": "金銭＿",
+                      "vietnamese": "Cảm giác quý trọng đồng tiền",
+                      "segments": [
+                        {
+                          "text": "金銭＿",
+                          "reading": "きんせん＿",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    },
+                    {
+                      "japanese": "＿的な",
+                      "vietnamese": "cảm tính",
+                      "segments": [
+                        {
+                          "text": "＿的な",
+                          "reading": "＿てきな",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "①②＿が鋭い⇔＿鈍い",
+                      "vietnamese": "Giác quan nhạy bén ⇔ Giác quan kém nhạy bén",
+                      "segments": [
+                        {
+                          "text": "①②＿が鋭い⇔＿鈍い",
+                          "reading": "①②＿がするどい⇔＿にぶい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 81,
+                        "printedPage": 78
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 81,
                 "printedPage": 78
@@ -33356,18 +33738,13 @@
                   "label": "連",
                   "items": [
                     {
-                      "japanese": "_が鋭い⇔鈍い",
+                      "japanese": "＿が鋭い⇔＿鈍い",
                       "vietnamese": "Thần kinh nhạy bén ⇔ Thần kinh kém nhạy bén",
                       "segments": [
                         {
-                          "text": "_が鋭い",
-                          "reading": "がするどい",
+                          "text": "＿が鋭い⇔＿鈍い",
+                          "reading": "＿がするどい⇔＿にぶい",
                           "isUnderlined": true
-                        },
-                        {
-                          "text": "⇔鈍い",
-                          "reading": "⇔にぶい",
-                          "isUnderlined": false
                         }
                       ],
                       "source": {
@@ -33376,12 +33753,12 @@
                       }
                     },
                     {
-                      "japanese": "_が細かい",
+                      "japanese": "＿が細かい",
                       "vietnamese": "Thần kinh yếu (nhạy cảm)",
                       "segments": [
                         {
-                          "text": "_が細かい",
-                          "reading": "がこまかい",
+                          "text": "＿が細かい",
+                          "reading": "＿がこまかい",
                           "isUnderlined": true
                         }
                       ],
@@ -33391,18 +33768,13 @@
                       }
                     },
                     {
-                      "japanese": "_が細い⇔太い",
+                      "japanese": "＿が細い⇔＿太い",
                       "vietnamese": "Thần kinh quá nhạy cảm ⇔ Thần kinh vững",
                       "segments": [
                         {
-                          "text": "_が細い",
-                          "reading": "がほそい",
+                          "text": "＿が細い⇔＿太い",
+                          "reading": "＿がほそい⇔＿ふとい",
                           "isUnderlined": true
-                        },
-                        {
-                          "text": "⇔太い",
-                          "reading": "⇔ふとい",
-                          "isUnderlined": false
                         }
                       ],
                       "source": {
@@ -33411,12 +33783,12 @@
                       }
                     },
                     {
-                      "japanese": "_にこたえる",
+                      "japanese": "＿にこたえる",
                       "vietnamese": "Làm căng thẳng thần kinh",
                       "segments": [
                         {
-                          "text": "_にこたえる",
-                          "reading": "にこたえる",
+                          "text": "＿にこたえる",
+                          "reading": "＿にこたえる",
                           "isUnderlined": true
                         }
                       ],
@@ -33426,12 +33798,12 @@
                       }
                     },
                     {
-                      "japanese": "_に障る",
+                      "japanese": "＿に障る",
                       "vietnamese": "Tổn thương (ảnh hưởng)",
                       "segments": [
                         {
-                          "text": "_に障る",
-                          "reading": "にさわる",
+                          "text": "＿に障る",
+                          "reading": "＿にさわる",
                           "isUnderlined": true
                         }
                       ],
@@ -33441,12 +33813,12 @@
                       }
                     },
                     {
-                      "japanese": "_を集中する／させる",
+                      "japanese": "＿を集中する／させる",
                       "vietnamese": "Tập trung tinh thần",
                       "segments": [
                         {
-                          "text": "_を集中する／させる",
-                          "reading": "をしゅうちゅうする／させる",
+                          "text": "＿を集中する／させる",
+                          "reading": "＿をしゅうちゅうする／させる",
                           "isUnderlined": true
                         }
                       ],
@@ -33456,12 +33828,12 @@
                       }
                     },
                     {
-                      "japanese": "_を逆なでする",
+                      "japanese": "＿を逆なでする",
                       "vietnamese": "Chọc tức",
                       "segments": [
                         {
-                          "text": "_を逆なでする",
-                          "reading": "をさかなでする",
+                          "text": "＿を逆なでする",
+                          "reading": "＿をさかなでする",
                           "isUnderlined": true
                         }
                       ],
@@ -33476,12 +33848,12 @@
                   "label": "合",
                   "items": [
                     {
-                      "japanese": "質な",
+                      "japanese": "繊細な",
                       "vietnamese": "Nóng nảy",
                       "segments": [
                         {
-                          "text": "質な",
-                          "reading": "しつな",
+                          "text": "繊細な",
+                          "reading": "せんさいな",
                           "isUnderlined": true
                         }
                       ],
@@ -33506,12 +33878,12 @@
                       }
                     },
                     {
-                      "japanese": "無_な",
+                      "japanese": "無神経な",
                       "vietnamese": "vô cảm (例. 人の気持ちを考えないで言いたいことを言うのは無神経だ。)",
                       "segments": [
                         {
-                          "text": "無_な",
-                          "reading": "む_な",
+                          "text": "無神経な",
+                          "reading": "むしんけいな",
                           "isUnderlined": true
                         }
                       ],
@@ -33536,13 +33908,73 @@
               "meaning": "Trí nhớ, ký ức",
               "examples": [
                 {
-                  "japanese": "貝歯が痛いので神経を抜いた。",
-                  "vietnamese": "Vi răng sâu đau nên đã lây tủy đi rôi.",
+                  "japanese": "そのときのことは全く記憶にない。",
+                  "vietnamese": "Tôi hoàn toàn không nhớ gì về chuyện lúc đó.",
                   "segments": [
                     {
-                      "text": "貝歯が痛いので神経を抜いた。",
-                      "reading": "けい",
+                      "text": "そのときのことは全く",
+                      "reading": "そのときのことはまったく",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "記憶にない",
+                      "reading": "きおくにない",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 82,
+                    "printedPage": 79
+                  }
+                },
+                {
+                  "japanese": "少女は事故の前のことを記憶していなかった。",
+                  "vietnamese": "Cô bé đó không nhớ gì về những việc xảy ra trước khi tai nạn.",
+                  "segments": [
+                    {
+                      "text": "少女は事故の前のことを",
+                      "reading": "しょうじょはじこのまえのことを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "記憶していなかった",
+                      "reading": "きおくしていなかった",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 82,
+                    "printedPage": 79
+                  }
+                },
+                {
+                  "japanese": "佐藤選手が金メダルを取ったことは、まだ記憶に新しい。",
+                  "vietnamese": "Việc tuyển thủ Sato giành được huy chương vàng vẫn còn vẹn nguyên trong ký ức.",
+                  "segments": [
+                    {
+                      "text": "佐藤選手が金メダルを取ったことは、まだ",
+                      "reading": "さとうせんしゅがきんメダルをとったことは、まだ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "記憶に新しい",
+                      "reading": "きおくにあたらしい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -33551,7 +33983,78 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿にない",
+                      "vietnamese": "Không nhớ",
+                      "segments": [
+                        {
+                          "text": "＿にない",
+                          "reading": "＿にない",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 82,
+                        "printedPage": 79
+                      }
+                    },
+                    {
+                      "japanese": "＿に新しい",
+                      "vietnamese": "Ký ức vẹn nguyên",
+                      "segments": [
+                        {
+                          "text": "＿に新しい",
+                          "reading": "＿にあたらしい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 82,
+                        "printedPage": 79
+                      }
+                    },
+                    {
+                      "japanese": "＿に残る",
+                      "vietnamese": "Còn nhớ/ sót lại trong ký ức",
+                      "segments": [
+                        {
+                          "text": "＿に残る",
+                          "reading": "＿にのこる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 82,
+                        "printedPage": 79
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿喪失",
+                      "vietnamese": "Đãng trí, mất trí nhớ",
+                      "segments": [
+                        {
+                          "text": "＿喪失",
+                          "reading": "＿そうしつ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 82,
+                        "printedPage": 79
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 82,
                 "printedPage": 79
@@ -33565,13 +34068,98 @@
               "meaning": "Tình trạng, trạng thái",
               "examples": [
                 {
-                  "japanese": "しばらく様子を見る。",
-                  "vietnamese": "Theo dõi tình trạng một thời gian。",
+                  "japanese": "手術を受けた母のことが心配で、何度も様子を見に行った。",
+                  "vietnamese": "Vì lo lắng cho người mẹ vừa mới phẫu thuật nên tôi đã đến xem tình trạng sức khỏe của mẹ nhiều lần.",
                   "segments": [
                     {
-                      "text": "しばらく様子を見る。",
-                      "reading": "ようす",
+                      "text": "手術を受けた母のことが心配で、何度も",
+                      "reading": "しゅじゅつをうけたははのことがしんぱいで、なんども",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "様子を見に行った",
+                      "reading": "ようすをみにいった",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 82,
+                    "printedPage": 79
+                  }
+                },
+                {
+                  "japanese": "10年ぶりに帰省したら、街の様子がすっかり変わっていた。",
+                  "vietnamese": "Về quê sau 10 năm xa cách, quang cảnh đường phố đã thay đổi hoàn toàn.",
+                  "segments": [
+                    {
+                      "text": "10年ぶりに帰省したら、街の",
+                      "reading": "10ねんぶりにきせいしたら、まちの",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "様子が",
+                      "reading": "ようすが",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "すっかり変わっていた。",
+                      "reading": "すっかりかわっていた。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 82,
+                    "printedPage": 79
+                  }
+                },
+                {
+                  "japanese": "姉は目撃した事故の様子を細かく語った。",
+                  "vietnamese": "Chị gái tôi đã kể lại chi tiết tình tiết vụ tai nạn mà chị ấy đã chứng kiến.",
+                  "segments": [
+                    {
+                      "text": "姉は目撃した事故の",
+                      "reading": "あねはもくげきしたじこの",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "様子を",
+                      "reading": "ようすを",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "細かく語った。",
+                      "reading": "こまかくかたった。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 82,
+                    "printedPage": 79
+                  }
+                },
+                {
+                  "japanese": "父は最近疲れている様子だ。",
+                  "vietnamese": "Dạo gần đây bố tôi thể trạng thường mệt mỏi.",
+                  "segments": [
+                    {
+                      "text": "父は最近疲れている",
+                      "reading": "ちちはさいきんつかれている",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "様子だ",
+                      "reading": "ようすだ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -33580,7 +34168,43 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "状態",
+                      "vietnamese": "Trạng thái",
+                      "segments": [
+                        {
+                          "text": "状態",
+                          "reading": "じょうたい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 82,
+                        "printedPage": 79
+                      }
+                    },
+                    {
+                      "japanese": "状況",
+                      "vietnamese": "Tình trạng",
+                      "segments": [
+                        {
+                          "text": "状況",
+                          "reading": "じょうきょう",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 82,
+                        "printedPage": 79
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 82,
                 "printedPage": 79
@@ -80690,6 +81314,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "561d642b8cd32047aace0057f1257b5a240a932e489a35967eb26b4f1bf7d270"
+    "candidateHash": "fdfd8b5e9e828a075bee90ce5991882d43b79205ee07d4721d9af53fd5accb6c"
   }
 }
