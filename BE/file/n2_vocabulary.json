@@ -53732,12 +53732,22 @@
               "examples": [
                 {
                   "japanese": "世界で最も面積の広い国はロシアである。",
-                  "vietnamese": "Trên thế giới, nước có diện tích lớn nhất là Nga。",
+                  "vietnamese": "Trên thế giới, nước có diện tích lớn nhất là Nga.",
                   "segments": [
                     {
-                      "text": "世界で最も面積の広い国はロシアである。",
-                      "reading": "もっとも",
+                      "text": "世界で",
+                      "reading": "せかいで",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "最も面積の広い",
+                      "reading": "もっともめんせきのひろい",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "国はロシアである。",
+                      "reading": "くにはロシアである。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -53746,7 +53756,28 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "一番",
+                      "vietnamese": "Số một, nhất",
+                      "segments": [
+                        {
+                          "text": "一番",
+                          "reading": "いちばん",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 145,
+                        "printedPage": 142
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 145,
                 "printedPage": 142
@@ -53757,16 +53788,101 @@
               "kanji": "ほぼ",
               "hiragana": "ほぼ",
               "hanVietMeaning": "",
-              "meaning": "ほぼ Khoảng áng chừng, gần như, coi như, phần lớn",
+              "meaning": "Khoảng, áng chừng, gần như, coi như, phần lớn",
               "examples": [
                 {
-                  "japanese": "新しいビルはほほ完成した。",
-                  "vietnamese": "Toa nhà mới gần như đã được hoàn thành rồi.",
+                  "japanese": "新しいビルはほぼ完成した。",
+                  "vietnamese": "Tòa nhà mới gần như đã được hoàn thành rồi.",
                   "segments": [
                     {
-                      "text": "新しいビルはほほ完成した。",
-                      "reading": "ほぼ",
+                      "text": "新しいビルは",
+                      "reading": "あたらしいビルは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ほぼ完成した",
+                      "reading": "ほぼかんせいした",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 145,
+                    "printedPage": 142
+                  }
+                },
+                {
+                  "japanese": "イベント会場の準備はほぼ終わった。",
+                  "vietnamese": "Việc chuẩn bị cho hội trường của sự kiện coi như đã xong.",
+                  "segments": [
+                    {
+                      "text": "イベント会場の準備は",
+                      "reading": "イベントかいじょうのじゅんびは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ほぼ終わった",
+                      "reading": "ほぼおわった",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 145,
+                    "printedPage": 142
+                  }
+                },
+                {
+                  "japanese": "式はほぼ予定通り進行している。",
+                  "vietnamese": "Buổi lễ phần lớn đã được tiến hành theo như dự định.",
+                  "segments": [
+                    {
+                      "text": "式は",
+                      "reading": "しきは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ほぼ予定通り進行している",
+                      "reading": "ほぼよていどおりしんこうしている",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 145,
+                    "printedPage": 142
+                  }
+                },
+                {
+                  "japanese": "客席はほぼ満員だった。",
+                  "vietnamese": "Ghế khán giả gần như đã chật ních người.",
+                  "segments": [
+                    {
+                      "text": "客席は",
+                      "reading": "きゃくせきは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ほぼ満員だった",
+                      "reading": "ほぼまんいんだった",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -53779,7 +53895,8 @@
               "source": {
                 "pdfPage": 145,
                 "printedPage": 142
-              }
+              },
+              "note": "「だいたい→ほとんど→おおよそ→ほぼ」の順にかたい表現になる。 Thứ tự biểu hiện mức độ trang trọng của từ: 「だいたい→ほとんど→おおよそ→ほぼ」"
             },
             {
               "sourceNumber": 513,
@@ -53789,13 +53906,48 @@
               "meaning": "Tương đối, như là, khá, tương đương",
               "examples": [
                 {
-                  "japanese": "相当難しい問題だ。",
-                  "vietnamese": "Đó là một vấn đề tương đối khó。",
+                  "japanese": "彼の表情からすると、相当強く叱られたようだ。",
+                  "vietnamese": "Nhìn vào biểu hiện của anh ta thì có vẻ như là vừa bị mắng khá gay gắt.",
                   "segments": [
                     {
-                      "text": "相当難しい問題だ。",
-                      "reading": "そうとう",
+                      "text": "彼の表情からすると、",
+                      "reading": "かれのひょうじょうからすると、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "相当強く叱られた",
+                      "reading": "そうとうつよくしかられた",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "ようだ。",
+                      "reading": "ようだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 145,
+                    "printedPage": 142
+                  }
+                },
+                {
+                  "japanese": "今期は相当【な／の】赤字になりそうだ。",
+                  "vietnamese": "Quý này lỗ tương đối nhiều.",
+                  "segments": [
+                    {
+                      "text": "今期は",
+                      "reading": "こんきは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "相当【な／の】赤字になりそうだ",
+                      "reading": "そうとう【な／の】あかじになりそうだ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -53804,7 +53956,48 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "かなり",
+                      "vietnamese": "Tương đối, khá là",
+                      "segments": [
+                        {
+                          "text": "かなり",
+                          "reading": "かなり",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 145,
+                        "printedPage": 142
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "【動】が相当する",
+                      "vietnamese": "(Động từ) Làm tương đương",
+                      "segments": [
+                        {
+                          "text": "【動】が相当する",
+                          "reading": "【どう】がそうとうする",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 145,
+                        "printedPage": 142
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 145,
                 "printedPage": 142
@@ -53818,13 +54011,73 @@
               "meaning": "Trong tỷ lệ, so với, tương đối",
               "examples": [
                 {
-                  "japanese": "今日は割と暖かい。",
-                  "vietnamese": "Hôm nay tương đối ấm áp。",
+                  "japanese": "道が込んでるかと思ったら、わりにすいていた。",
+                  "vietnamese": "Cứ nghĩ là đường sẽ đông, mà hóa ra lại tương đối vắng.",
                   "segments": [
                     {
-                      "text": "今日は割と暖かい。",
-                      "reading": "わりに／わりと／わりあい（に／と）",
+                      "text": "道が込んでるかと思ったら、",
+                      "reading": "みちがこんでるかとおもったら、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "わりにすいていた",
+                      "reading": "わりにすいていた",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 145,
+                    "printedPage": 142
+                  }
+                },
+                {
+                  "japanese": "今日はわりと暖かい。",
+                  "vietnamese": "Hôm nay tương đối ấm áp.",
+                  "segments": [
+                    {
+                      "text": "今日は",
+                      "reading": "きょうは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "わりと暖かい",
+                      "reading": "わりとあたたかい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 145,
+                    "printedPage": 142
+                  }
+                },
+                {
+                  "japanese": "今回のレポートはわりあい良くかけたと思う。",
+                  "vietnamese": "Tôi nghĩ bài báo cáo lần này tốt hơn so với các lần trước.",
+                  "segments": [
+                    {
+                      "text": "今回のレポートは",
+                      "reading": "こんかいのレポートは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "わりあい良くかけた",
+                      "reading": "わりあいよくかけた",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "と思う。",
+                      "reading": "とおもう。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -53833,7 +54086,28 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "比較的",
+                      "vietnamese": "Tính so sánh",
+                      "segments": [
+                        {
+                          "text": "比較的",
+                          "reading": "ひかくてき",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 145,
+                        "printedPage": 142
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 145,
                 "printedPage": 142
@@ -89246,6 +89520,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "e450375ba08251e139d1c3bd902443f6d515e0ecdb75456a7d1427999930c619"
+    "candidateHash": "30e9c2c7691e9e008c2c0563320e503b3a3a4c279a3a2c0290792b246ca1ca81"
   }
 }
