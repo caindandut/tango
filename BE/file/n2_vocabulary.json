@@ -33579,12 +33579,47 @@
               "examples": [
                 {
                   "japanese": "レポートを書くときは、事実と意見を区別して書かなければならない。",
-                  "vietnamese": "Phân biệt",
+                  "vietnamese": "Khi viết báo cáo phải tách biệt giữa ý kiến chủ quan và sự thực khách quan.",
                   "segments": [
                     {
-                      "text": "レポートを書くときは、事実と意見を区別して書かなければならない。",
-                      "reading": "くべ",
+                      "text": "レポートを書くときは、事実と意見を",
+                      "reading": "れぽーとをかくときは、じじつといけんを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "区別して",
+                      "reading": "くべつして",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "書かなければならない。",
+                      "reading": "かかなければならない。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 90,
+                    "printedPage": 87
+                  }
+                },
+                {
+                  "japanese": "あの双子はとてもよく似ていて、区別がつかない。",
+                  "vietnamese": "Hai đứa trẻ sinh đôi đó rất giống nhau, không thể phân biệt được.",
+                  "segments": [
+                    {
+                      "text": "あの双子はとてもよく似ていて、",
+                      "reading": "あのふたごはとてもよくにていて、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "区別がつかない",
+                      "reading": "くべつがつかない",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -33593,7 +33628,43 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿がつく",
+                      "vietnamese": "Để phân biệt",
+                      "segments": [
+                        {
+                          "text": "＿がつく",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 90,
+                        "printedPage": 87
+                      }
+                    },
+                    {
+                      "japanese": "＿をつける",
+                      "vietnamese": "Cho biết sự khác biệt",
+                      "segments": [
+                        {
+                          "text": "＿をつける",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 90,
+                        "printedPage": 87
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 90,
                 "printedPage": 87
@@ -70107,6 +70178,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "a869cd2c76a21b0a474f43217ccff706a8ff238ec85e23d7e5c273421212ff41"
+    "candidateHash": "a286ea0a1725aefa723c7dcc40cf879a857689d9a7ee43519278caf216d61842"
   }
 }
