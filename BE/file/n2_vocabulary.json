@@ -34914,9 +34914,44 @@
                   "vietnamese": "Tôi đang hỗ trợ thủ tướng.",
                   "segments": [
                     {
-                      "text": "私は首相を支持している。",
-                      "reading": "ごい",
+                      "text": "私は首相を",
+                      "reading": "わたしはしゅしょうを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "支持している",
+                      "reading": "しじしている",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 99,
+                    "printedPage": 96
+                  }
+                },
+                {
+                  "japanese": "高橋氏の意見は多くの支持を得た。",
+                  "vietnamese": "Ý kiến của Takahashi đã nhận được nhiều sự ủng hộ.",
+                  "segments": [
+                    {
+                      "text": "高橋氏の意見は多くの",
+                      "reading": "たかはししのいけんはおおくの",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "支持",
+                      "reading": "しじ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "を得た。",
+                      "reading": "をえた。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34925,7 +34960,63 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿を得る",
+                      "vietnamese": "Có được sự hỗ trợ, ủng hộ",
+                      "segments": [
+                        {
+                          "text": "＿を得る",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 99,
+                        "printedPage": 96
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿者",
+                      "vietnamese": "Người hỗ trợ, ủng hộ",
+                      "segments": [
+                        {
+                          "text": "＿者",
+                          "reading": "しじしゃ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 99,
+                        "printedPage": 96
+                      }
+                    },
+                    {
+                      "japanese": "＿不",
+                      "vietnamese": "Không ủng hộ",
+                      "segments": [
+                        {
+                          "text": "＿不",
+                          "reading": "しじふ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 99,
+                        "printedPage": 96
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 99,
                 "printedPage": 96
@@ -70178,6 +70269,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "a286ea0a1725aefa723c7dcc40cf879a857689d9a7ee43519278caf216d61842"
+    "candidateHash": "e74723fdee464fe437ae284cf2a7d89ebceca1aa90f42cce4fb29c4e1bce8eda"
   }
 }
