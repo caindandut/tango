@@ -55085,17 +55085,17 @@
                   "segments": [
                     {
                       "text": "1月になると、寒さは",
-                      "reading": "いちだんと",
+                      "reading": "いちがつになると、さむさは",
                       "isUnderlined": false
                     },
                     {
-                      "text": "一段と",
-                      "reading": "いちだんと",
+                      "text": "一段と厳しくなった",
+                      "reading": "いちだんときびしくなった",
                       "isUnderlined": true
                     },
                     {
-                      "text": "厳しくなった。",
-                      "reading": "いちだんと",
+                      "text": "。",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -55110,17 +55110,17 @@
                   "segments": [
                     {
                       "text": "「今日はまた、",
-                      "reading": "いちだんと",
+                      "reading": "「きょうはまた、",
                       "isUnderlined": false
                     },
                     {
-                      "text": "一段と",
-                      "reading": "いちだんと",
+                      "text": "一段とお美しいですね",
+                      "reading": "いちだんとおうつくしいですね",
                       "isUnderlined": true
                     },
                     {
-                      "text": "お美しいですね」",
-                      "reading": "いちだんと",
+                      "text": "」",
+                      "reading": "」",
                       "isUnderlined": false
                     }
                   ],
@@ -55145,11 +55145,16 @@
               "examples": [
                 {
                   "japanese": "より良い未来を築くために、みんなで力を合わせましょう。",
-                  "vietnamese": "Mọi người hãy cũng nhau hợp sức",
+                  "vietnamese": "Mọi người hãy cùng nhau hợp sức để tạo dựng một tương lai tốt đẹp hơn.",
                   "segments": [
                     {
+                      "text": "",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
                       "text": "より良い未来を築くために、みんなで力を合わせましょう。",
-                      "reading": "より",
+                      "reading": "よりよいみらいをきずくために、みんなでちからをあわせましょう。",
                       "isUnderlined": true
                     }
                   ],
@@ -55159,7 +55164,43 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "さらに",
+                      "vietnamese": "Thêm vào đó",
+                      "segments": [
+                        {
+                          "text": "さらに",
+                          "reading": "さらに",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 148,
+                        "printedPage": 145
+                      }
+                    },
+                    {
+                      "japanese": "もっと",
+                      "vietnamese": "Hơn nữa",
+                      "segments": [
+                        {
+                          "text": "もっと",
+                          "reading": "もっと",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 148,
+                        "printedPage": 145
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 148,
                 "printedPage": 145
@@ -55177,8 +55218,38 @@
                   "vietnamese": "Cuối cùng thì tôi cũng đã từ chối sau nhiều lần suy nghĩ.",
                   "segments": [
                     {
-                      "text": "いろいろ考えて、結局断ることにした。",
-                      "reading": "けっ",
+                      "text": "いろいろ考えて、",
+                      "reading": "いろいろかんがえて、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "結局断ることにした",
+                      "reading": "けっきょくことわることにした",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 148,
+                    "printedPage": 145
+                  }
+                },
+                {
+                  "japanese": "「結局／結局のところ」、何が言いたいのですか？",
+                  "vietnamese": "“Rốt cuộc thì cậu muốn nói gì?”",
+                  "segments": [
+                    {
+                      "text": "「結局／結局のところ」、",
+                      "reading": "「けっきょく／けっきょくのところ」、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "何が言いたいのですか？",
+                      "reading": "なにがいいたいのですか？",
                       "isUnderlined": true
                     }
                   ],
@@ -55207,7 +55278,7 @@
                   "segments": [
                     {
                       "text": "5年かかって、",
-                      "reading": "ようやく",
+                      "reading": "ごねんかかって、",
                       "isUnderlined": false
                     },
                     {
@@ -55217,7 +55288,7 @@
                     },
                     {
                       "text": "橋が完成した。",
-                      "reading": "ようやく",
+                      "reading": "はしがかんせいした。",
                       "isUnderlined": false
                     }
                   ],
@@ -55232,7 +55303,7 @@
                   "segments": [
                     {
                       "text": "60歳を過ぎて、",
-                      "reading": "ようやく",
+                      "reading": "ろくじゅっさいをすぎて、",
                       "isUnderlined": false
                     },
                     {
@@ -55242,7 +55313,7 @@
                     },
                     {
                       "text": "暮らしにも少し余裕ができた。",
-                      "reading": "ようやく",
+                      "reading": "くらしにもすこしよゆうができた。",
                       "isUnderlined": false
                     }
                   ],
@@ -55256,23 +55327,34 @@
               "source": {
                 "pdfPage": 148,
                 "printedPage": 145
-              }
+              },
+              "note": "長い時間がかかったことに使う。 Hay sử dụng cho những việc tiêu tốn thời gian dài."
             },
             {
               "sourceNumber": 529,
               "kanji": "再び",
               "hiragana": "ふたたび",
               "hanVietMeaning": "TÁI",
-              "meaning": "ふた た び 再び (TAD Lại thêm lần nữa",
+              "meaning": "Lại, thêm lần nữa",
               "examples": [
                 {
-                  "japanese": "1年目は不合格だったので、翌年ýび受験し、今度は合格した。",
-                  "vietnamese": "Vì năm thứ nhất đã không",
+                  "japanese": "1年目は不合格だったので、翌年再び受験し、今度は合格した。",
+                  "vietnamese": "Vì năm thứ nhất đã không đỗ, nên tôi dự thi vào năm tiếp theo và lần này đã đỗ.",
                   "segments": [
                     {
-                      "text": "1年目は不合格だったので、翌年ýび受験し、今度は合格した。",
-                      "reading": "ふた",
+                      "text": "1年目は不合格だったので、翌年",
+                      "reading": "いちねんめはふごうかくだったので、よくねん",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "再び受験し",
+                      "reading": "ふたたびじゅけんし",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、今度は合格した。",
+                      "reading": "、こんどはごうかくした。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89797,6 +89879,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "4a944da742e810af8778ce4f22d2eb8edf739dc1586f9e804fc7588290be8298"
+    "candidateHash": "d125a9d815205c44780c00045add0273995dd17a9685af762d45806538747089"
   }
 }
