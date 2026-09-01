@@ -34245,9 +34245,19 @@
                   "vietnamese": "Tôi được gia hạn thời hạn trả tiền.",
                   "segments": [
                     {
-                      "text": "支払いの期限を延ばしてもらった。",
-                      "reading": "ごい",
+                      "text": "支払いの",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "期限",
+                      "reading": "きげん",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "を延ばしてもらった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34335,12 +34345,22 @@
               "examples": [
                 {
                   "japanese": "会議を一時間延長する。",
-                  "vietnamese": "Kéo dài cuộc họp thêm một tiếng。",
+                  "vietnamese": "Kéo dài cuộc họp thêm một tiếng.",
                   "segments": [
                     {
-                      "text": "会議を一時間延長する。",
+                      "text": "会議を一時間",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "延長",
                       "reading": "えんちょう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34364,12 +34384,22 @@
               "examples": [
                 {
                   "japanese": "冬は動物園の営業時間が短縮される。",
-                  "vietnamese": "Vao mùa đông thì thời gian mở cửa của sở thú rút ngắn",
+                  "vietnamese": "Vào mùa đông thì thời gian mở cửa của sở thú rút ngắn.",
                   "segments": [
                     {
-                      "text": "冬は動物園の営業時間が短縮される。",
-                      "reading": "メル",
+                      "text": "冬は動物園の営業時間が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "短縮",
+                      "reading": "たんしゅく",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "される。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -67342,6 +67372,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "b54bf0dcf63ac69f260aea50d593e2ff4c26a536fa0644e81223651ae77c89e2"
+    "candidateHash": "d48c943f102bb17bdf61a04460df50a21f92a86ba805ae8f19b5ecd519498c62"
   }
 }
