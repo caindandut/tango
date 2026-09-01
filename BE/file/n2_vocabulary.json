@@ -31586,7 +31586,7 @@
               "sourceNumber": 271,
               "kanji": "運",
               "hiragana": "うん",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "VẬN",
               "meaning": "Số, vận mệnh",
               "examples": [
                 {
@@ -31771,8 +31771,8 @@
               "sourceNumber": 272,
               "kanji": "勘",
               "hiragana": "かん",
-              "hanVietMeaning": "VAN",
-              "meaning": "Số vận mệnh",
+              "hanVietMeaning": "KHÁM",
+              "meaning": "Trực giác, linh cảm",
               "examples": [
                 {
                   "japanese": "「中村さんは3回続けて宝くじに当たったそうだ。",
@@ -31800,8 +31800,8 @@
               "sourceNumber": 273,
               "kanji": "感覚",
               "hiragana": "かんかく",
-              "hanVietMeaning": "KHÁM",
-              "meaning": ". Cảm giác, linh cảm, trực giác",
+              "hanVietMeaning": "CẢM GIÁC",
+              "meaning": "Cảm giác, linh cảm, trực giác",
               "examples": [
                 {
                   "japanese": "母は勘がよくて、うそをついてるもすぐばれてしまう。",
@@ -31829,8 +31829,8 @@
               "sourceNumber": 274,
               "kanji": "神経",
               "hiragana": "しんけい",
-              "hanVietMeaning": "CAM GIÁC",
-              "meaning": "Cảm giác",
+              "hanVietMeaning": "THẦN KINH",
+              "meaning": "Thần kinh, nhạy cảm",
               "examples": [
                 {
                   "japanese": "冷えて、手足の感覚がなくなってしまった。",
@@ -31858,8 +31858,8 @@
               "sourceNumber": 275,
               "kanji": "記憶",
               "hiragana": "きおく",
-              "hanVietMeaning": "THAN KINH",
-              "meaning": "Thần kinh, nhạy cảm",
+              "hanVietMeaning": "KÝ ỨC",
+              "meaning": "Trí nhớ, ký ức",
               "examples": [
                 {
                   "japanese": "貝歯が痛いので神経を抜いた。",
@@ -31916,8 +31916,8 @@
               "sourceNumber": 277,
               "kanji": "雰囲気",
               "hiragana": "ふんいき",
-              "hanVietMeaning": "N2",
-              "meaning": "ふん いき 雰囲気 PHAN VI KHÍ) Bầu không khí, tâm trạng",
+              "hanVietMeaning": "PHÂN VI KHÍ",
+              "meaning": "Bầu không khí, tâm trạng",
               "examples": [
                 {
                   "japanese": "この店は雰囲気がいい。",
@@ -31945,8 +31945,8 @@
               "sourceNumber": 278,
               "kanji": "魅力",
               "hiragana": "みりょく",
-              "hanVietMeaning": "MILUC",
-              "meaning": "Quyến rũ hấp dẫn",
+              "hanVietMeaning": "MỊ LỰC",
+              "meaning": "Quyến rũ, hấp dẫn",
               "examples": [
                 {
                   "japanese": "初めて歌舞伎を見て、その魅力に引かれた。",
@@ -31974,7 +31974,7 @@
               "sourceNumber": 279,
               "kanji": "機嫌",
               "hiragana": "きげん",
-              "hanVietMeaning": "CƠHIÈM",
+              "hanVietMeaning": "CƠ HIỀM",
               "meaning": "Tâm trạng, sắc mặt",
               "examples": [
                 {
@@ -32206,8 +32206,8 @@
               "sourceNumber": 280,
               "kanji": "関心",
               "hiragana": "かんしん",
-              "hanVietMeaning": "N2",
-              "meaning": "か ん し ん _ 関心 (OUAN TAMD Quan tâm",
+              "hanVietMeaning": "QUAN TÂM",
+              "meaning": "Quan tâm",
               "examples": [
                 {
                   "japanese": "私はスポーツにはあまり関心がない。",
@@ -32322,8 +32322,8 @@
               "sourceNumber": 284,
               "kanji": "意識",
               "hiragana": "いしき",
-              "hanVietMeaning": "BẢN KHÍ",
-              "meaning": "Nghiêm túc",
+              "hanVietMeaning": "Ý THỨC",
+              "meaning": "Ý thức, nhận thức",
               "examples": [
                 {
                   "japanese": "あの学生はやっと本気になって勉強し始めた。",
@@ -32351,8 +32351,8 @@
               "sourceNumber": 285,
               "kanji": "感激",
               "hiragana": "かんげき",
-              "hanVietMeaning": "ÝTHỨC",
-              "meaning": "Ythwc,nhan thức",
+              "hanVietMeaning": "CẢM KÍCH",
+              "meaning": "Cảm kích",
               "examples": [
                 {
                   "japanese": "頭を打って意識を失った。",
@@ -32380,8 +32380,8 @@
               "sourceNumber": 286,
               "kanji": "同情",
               "hiragana": "どうじょう",
-              "hanVietMeaning": "CẢM KÍCH",
-              "meaning": "Cảm kích",
+              "hanVietMeaning": "ĐỒNG TÌNH",
+              "meaning": "Đồng cảm, cảm thông",
               "examples": [
                 {
                   "japanese": "めったに人をほめない教授にほめられて、感激した。",
@@ -32409,8 +32409,8 @@
               "sourceNumber": 287,
               "kanji": "同意",
               "hiragana": "どうい",
-              "hanVietMeaning": "DÒNG TÌNH",
-              "meaning": "Đồng cảm, cảm thông",
+              "hanVietMeaning": "ĐỒNG Ý",
+              "meaning": "Đồng ý",
               "examples": [
                 {
                   "japanese": "苦しんでいる人る々に同情する。",
@@ -32438,8 +32438,8 @@
               "sourceNumber": 288,
               "kanji": "同感",
               "hiragana": "どうかん",
-              "hanVietMeaning": "ĐÒNG Ý",
-              "meaning": "Đồng ý",
+              "hanVietMeaning": "ĐỒNG CẢM",
+              "meaning": "Đồng tình, đồng cảm",
               "examples": [
                 {
                   "japanese": "大勢の人が私の意見に同意してくれた。",
@@ -32467,8 +32467,8 @@
               "sourceNumber": 289,
               "kanji": "対立",
               "hiragana": "たいりつ",
-              "hanVietMeaning": "5ONG CẢM",
-              "meaning": "Đồng tình, đồng cảm",
+              "hanVietMeaning": "ĐỐI LẬP",
+              "meaning": "Đối lập",
               "examples": [
                 {
                   "japanese": "中山さんの話に私る同感した。",
@@ -32496,8 +32496,8 @@
               "sourceNumber": 290,
               "kanji": "主張",
               "hiragana": "しゅちょう",
-              "hanVietMeaning": "ĐÓILẬP",
-              "meaning": "Đốilập",
+              "hanVietMeaning": "CHỦ TRƯƠNG",
+              "meaning": "Chủ trương, ý kiến",
               "examples": [
                 {
                   "japanese": "国会は与党と野党の対立が激しくなった。",
@@ -32525,8 +32525,8 @@
               "sourceNumber": 291,
               "kanji": "要求",
               "hiragana": "ようきゅう",
-              "hanVietMeaning": "CHỦTRƯƠNG",
-              "meaning": "Chủ trương, ý kiến",
+              "hanVietMeaning": "YÊU CẦU",
+              "meaning": "Yêu cầu",
               "examples": [
                 {
                   "japanese": "会議で自分の主張を堂々と述べた。",
@@ -32554,8 +32554,8 @@
               "sourceNumber": 292,
               "kanji": "得",
               "hiragana": "とく",
-              "hanVietMeaning": "YÊU CAU",
-              "meaning": "Yêu cầu",
+              "hanVietMeaning": "ĐẮC",
+              "meaning": "Lãi, lợi nhuận",
               "examples": [
                 {
                   "japanese": "労働組合に賃金の値上げを要求した。",
@@ -32583,8 +32583,8 @@
               "sourceNumber": 293,
               "kanji": "損",
               "hiragana": "そん",
-              "hanVietMeaning": "ĐẮC",
-              "meaning": "Lãi lợi nhuận",
+              "hanVietMeaning": "TỔN",
+              "meaning": "Tổn thất, lỗ",
               "examples": [
                 {
                   "japanese": "株を買ったらすぐに値上がりして得をした。",
@@ -32612,8 +32612,8 @@
               "sourceNumber": 294,
               "kanji": "勝負",
               "hiragana": "しょうぶ",
-              "hanVietMeaning": "TON",
-              "meaning": "Tổn thất, lỗ",
+              "hanVietMeaning": "THẮNG PHỤ",
+              "meaning": "Trận đấu, cạnh tranh",
               "examples": [
                 {
                   "japanese": "株が下がって損をした。",
@@ -32641,8 +32641,8 @@
               "sourceNumber": 295,
               "kanji": "勢い",
               "hiragana": "いきおい",
-              "hanVietMeaning": "Z7",
-              "meaning": "スル (THÁNG PHỤ) Trận đấu, cạnh tranh",
+              "hanVietMeaning": "THẾ",
+              "meaning": "Thế, đà, khí thế",
               "examples": [
                 {
                   "japanese": "どちらがテストでいい点を取るか、友だちと勝負をした。",
@@ -32670,8 +32670,8 @@
               "sourceNumber": 296,
               "kanji": "爆発",
               "hiragana": "ばくはつ",
-              "hanVietMeaning": "THÉ",
-              "meaning": "Mạnh mẽ, tràn trề, tỉnh thần",
+              "hanVietMeaning": "BẠO PHÁT",
+              "meaning": "Nổ",
               "examples": [
                 {
                   "japanese": "蛇口をひねると、勢いよく水が出てきた。",
@@ -32699,8 +32699,8 @@
               "sourceNumber": 297,
               "kanji": "災害",
               "hiragana": "さいがい",
-              "hanVietMeaning": "BỌC PHÁT",
-              "meaning": "Nổ",
+              "hanVietMeaning": "TAI HẠI",
+              "meaning": "Thảm họa",
               "examples": [
                 {
                   "japanese": "ガスタンクが爆発して大きな被害が出た。",
@@ -32728,8 +32728,8 @@
               "sourceNumber": 298,
               "kanji": "天候",
               "hiragana": "てんこう",
-              "hanVietMeaning": "TAIHẠI",
-              "meaning": "Thảm họa",
+              "hanVietMeaning": "THIÊN HẬU",
+              "meaning": "Thời tiết",
               "examples": [
                 {
                   "japanese": "地震や火事などの災害にあったときのために、保険に入っておこう。",
@@ -32757,8 +32757,8 @@
               "sourceNumber": 299,
               "kanji": "乾燥",
               "hiragana": "かんそう",
-              "hanVietMeaning": "THIÊN HẬU",
-              "meaning": "Thời tiết",
+              "hanVietMeaning": "CAN TÁO",
+              "meaning": "Làm khô",
               "examples": [
                 {
                   "japanese": "天候。",
@@ -32786,8 +32786,8 @@
               "sourceNumber": 300,
               "kanji": "観測",
               "hiragana": "かんそく",
-              "hanVietMeaning": "CAN TÁO",
-              "meaning": "Làm khô",
+              "hanVietMeaning": "QUAN TRẮC",
+              "meaning": "Quan trắc, đo đạc, khảo sát, quan sát",
               "examples": [
                 {
                   "japanese": "草を乾燥させて家畜のえさにする。",
@@ -32815,8 +32815,8 @@
               "sourceNumber": 301,
               "kanji": "遭難",
               "hiragana": "そうなん",
-              "hanVietMeaning": "z",
-              "meaning": "z~„ (QUAN TRAC) Quan trắc, đo đạc, khảo sát, quan sát",
+              "hanVietMeaning": "TAO NAN",
+              "meaning": "Gặp nạn",
               "examples": [
                 {
                   "japanese": "{星/雲の様子.…}を観測する。",
@@ -32844,8 +32844,8 @@
               "sourceNumber": 302,
               "kanji": "発生",
               "hiragana": "はっせい",
-              "hanVietMeaning": "TAONAN",
-              "meaning": "Gặp nạn",
+              "hanVietMeaning": "PHÁT SINH",
+              "meaning": "Phát sinh, xảy ra",
               "examples": [
                 {
                   "japanese": "船が遭難する。",
@@ -32873,8 +32873,8 @@
               "sourceNumber": 303,
               "kanji": "登場",
               "hiragana": "とうじょう",
-              "hanVietMeaning": "PHAT SINH",
-              "meaning": "Phát sinh, xảy ra",
+              "hanVietMeaning": "ĐĂNG TRƯỜNG",
+              "meaning": "Xuất hiện",
               "examples": [
                 {
                   "japanese": "事故が発生し、電車がストップした。",
@@ -32902,8 +32902,8 @@
               "sourceNumber": 304,
               "kanji": "回復",
               "hiragana": "かいふく",
-              "hanVietMeaning": "ĐĂNG TRƯỜNG",
-              "meaning": "Xuất hiện",
+              "hanVietMeaning": "HỒI PHỤC",
+              "meaning": "Hồi phục",
               "examples": [
                 {
                   "japanese": "とこの話には二人の母が登場する。",
@@ -32931,8 +32931,8 @@
               "sourceNumber": 305,
               "kanji": "援助",
               "hiragana": "えんじょ",
-              "hanVietMeaning": "HÒIPHỤC",
-              "meaning": "Hồi phục",
+              "hanVietMeaning": "VIỆN TRỢ",
+              "meaning": "Viện trợ, giúp đỡ, hỗ trợ",
               "examples": [
                 {
                   "japanese": "いふ。",
@@ -32960,8 +32960,8 @@
               "sourceNumber": 306,
               "kanji": "保険",
               "hiragana": "ほけん",
-              "hanVietMeaning": "メル (VIỆN TRỢ",
-              "meaning": "Viện trợ, giúp đỡ, hỗ trợ",
+              "hanVietMeaning": "BẢO HIỂM",
+              "meaning": "Bảo hiểm",
               "examples": [
                 {
                   "japanese": "親戚の接助で大学を卒業できた。",
@@ -32989,8 +32989,8 @@
               "sourceNumber": 307,
               "kanji": "追加",
               "hiragana": "ついか",
-              "hanVietMeaning": "BẢO HIẾM",
-              "meaning": "Bãohim",
+              "hanVietMeaning": "TRUY GIA",
+              "meaning": "Thêm vào",
               "examples": [
                 {
                   "japanese": "子どもが生まれたので、生命保険に入った。",
@@ -33018,8 +33018,8 @@
               "sourceNumber": 308,
               "kanji": "応用",
               "hiragana": "おうよう",
-              "hanVietMeaning": "TRUY GIA",
-              "meaning": "Thêm vào",
+              "hanVietMeaning": "ỨNG DỤNG",
+              "meaning": "Ứng dụng",
               "examples": [
                 {
                   "japanese": "飲み会でビールを道加する。",
@@ -33047,7 +33047,7 @@
               "sourceNumber": 309,
               "kanji": "解答",
               "hiragana": "かいとう",
-              "hanVietMeaning": "UNG DUNG",
+              "hanVietMeaning": "GIẢI ĐÁP/HỒI ĐÁP",
               "meaning": "Trả lời, giải đáp",
               "examples": [
                 {
@@ -33136,7 +33136,7 @@
               "sourceNumber": 310,
               "kanji": "結論",
               "hiragana": "けつろん",
-              "hanVietMeaning": "GIẢI ĐÁP/ HÒI ĐÁP",
+              "hanVietMeaning": "KẾT LUẬN",
               "meaning": "Kết luận",
               "examples": [
                 {
@@ -33175,7 +33175,7 @@
               "sourceNumber": 311,
               "kanji": "案",
               "hiragana": "あん",
-              "hanVietMeaning": "KÉT LUẬN",
+              "hanVietMeaning": "ÁN",
               "meaning": "Đề án, kế hoạch, ý tưởng",
               "examples": [
                 {
@@ -33239,7 +33239,7 @@
               "sourceNumber": 312,
               "kanji": "集中",
               "hiragana": "しゅうちゅう",
-              "hanVietMeaning": "ÁN",
+              "hanVietMeaning": "TẬP TRUNG",
               "meaning": "Tập trung",
               "examples": [
                 {
@@ -33303,8 +33303,8 @@
               "sourceNumber": 313,
               "kanji": "区別",
               "hiragana": "くべつ",
-              "hanVietMeaning": "TẬPTRUNG",
-              "meaning": "Tập trung",
+              "hanVietMeaning": "KHU BIỆT",
+              "meaning": "Phân biệt",
               "examples": [
                 {
                   "japanese": "人口は大都市に集中している。",
@@ -33332,8 +33332,8 @@
               "sourceNumber": 314,
               "kanji": "差別",
               "hiragana": "さべつ",
-              "hanVietMeaning": "の メル (KHUBIỆT",
-              "meaning": "Phân biệt",
+              "hanVietMeaning": "SAI BIỆT",
+              "meaning": "Phân biệt, khác biệt",
               "examples": [
                 {
                   "japanese": "レポートを書くときは、事実と意見を区別して書かなければならない。",
@@ -33361,8 +33361,8 @@
               "sourceNumber": 315,
               "kanji": "中間",
               "hiragana": "ちゅうかん",
-              "hanVietMeaning": "SAIBIỆT",
-              "meaning": "Phân biệt, khác biệt",
+              "hanVietMeaning": "TRUNG GIAN",
+              "meaning": "Ở giữa",
               "examples": [
                 {
                   "japanese": "つ。",
@@ -33390,8 +33390,8 @@
               "sourceNumber": 316,
               "kanji": "逆",
               "hiragana": "ぎゃく",
-              "hanVietMeaning": "TRUNG GIAN",
-              "meaning": "Ở giữa",
+              "hanVietMeaning": "NGHỊCH",
+              "meaning": "Đảo ngược, ngược lại",
               "examples": [
                 {
                   "japanese": "名古屋は東京と大阪の中間にある。",
@@ -33419,8 +33419,8 @@
               "sourceNumber": 317,
               "kanji": "よそ",
               "hiragana": "よそ",
-              "hanVietMeaning": "N2",
-              "meaning": "よそ Chỗ khác,nơi khác",
+              "hanVietMeaning": "",
+              "meaning": "Chỗ khác, nơi khác",
               "examples": [
                 {
                   "japanese": "方言はよその土地の人にはわかりにくい。",
@@ -33448,8 +33448,8 @@
               "sourceNumber": 318,
               "kanji": "外",
               "hiragana": "ほか",
-              "hanVietMeaning": "Ngoại",
-              "meaning": "Khác ngoài ra",
+              "hanVietMeaning": "NGOẠI",
+              "meaning": "Khác, ngoài ra",
               "examples": [
                 {
                   "japanese": "外。",
@@ -33477,8 +33477,8 @@
               "sourceNumber": 319,
               "kanji": "境",
               "hiragana": "さかい",
-              "hanVietMeaning": "CANH",
-              "meaning": "Ranh gioi,bien giới, giới hạn, ngăn cách",
+              "hanVietMeaning": "CẢNH",
+              "meaning": "Ranh giới, biên giới, giới hạn, ngăn cách",
               "examples": [
                 {
                   "japanese": "隣の家との境には堺がある。",
@@ -67085,6 +67085,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "c25ae2b6959c206fa0210d8838e9e27498f8bfb0594af19663f36ee9290fc0fd"
+    "candidateHash": "98ce3b1b5ade2be2a8fc84daaa90d3ad7f6f3b02648c0d2a450736c006ca5f76"
   }
 }
