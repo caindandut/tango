@@ -33142,13 +33142,48 @@
               "meaning": "Viện trợ, giúp đỡ, hỗ trợ",
               "examples": [
                 {
-                  "japanese": "いふ。",
-                  "vietnamese": "Hồi phục",
+                  "japanese": "親戚の援助で大学を卒業できた。",
+                  "vietnamese": "Tôi đã tốt nghiệp đại học nhờ vào sự giúp đỡ của người thân.",
                   "segments": [
                     {
-                      "text": "いふ。",
-                      "reading": "いふ",
+                      "text": "親戚の",
+                      "reading": "しんせきの",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "援助",
+                      "reading": "えんじょ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "で大学を卒業できた。",
+                      "reading": "でだいがくをそつぎょうできた。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 89,
+                    "printedPage": 86
+                  }
+                },
+                {
+                  "japanese": "発展途上国へは経済的な援助だけではなく、技術援助も大切だ。",
+                  "vietnamese": "Không chỉ viện trợ về kinh tế, viện trợ kĩ thuật cũng quan trọng đối với các nước đang phát triển.",
+                  "segments": [
+                    {
+                      "text": "発展途上国へは経済的な",
+                      "reading": "はってんとじょうこくへはけいざいてきな",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "援助",
+                      "reading": "えんじょ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "だけではなく、技術援助も大切だ。",
+                      "reading": "だけではなく、ぎじゅつえんじょもたいせつだ。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -70072,6 +70107,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "1b8d36ed5b0966971f8b3fcda2e5cbd4de07386a9327bd62cb82e9effa54a6bd"
+    "candidateHash": "a869cd2c76a21b0a474f43217ccff706a8ff238ec85e23d7e5c273421212ff41"
   }
 }
