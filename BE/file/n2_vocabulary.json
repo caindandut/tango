@@ -29786,7 +29786,7 @@
               "sourceNumber": 246,
               "kanji": "とんでもない",
               "hiragana": "とんでもない",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "",
               "meaning": "Lố bịch, không thể tin được, kinh khủng",
               "examples": [
                 {
@@ -29795,7 +29795,7 @@
                   "segments": [
                     {
                       "text": "「このリンゴが3,000円！",
-                      "reading": "",
+                      "reading": "「このリンゴがさんぜんえん！",
                       "isUnderlined": false
                     },
                     {
@@ -29805,7 +29805,7 @@
                     },
                     {
                       "text": "値段だ」",
-                      "reading": "",
+                      "reading": "ねだんだ」",
                       "isUnderlined": false
                     }
                   ],
@@ -29825,7 +29825,7 @@
                     },
                     {
                       "text": "ことになった。会社が倒産した。",
-                      "reading": "",
+                      "reading": "ことになった。かいしゃがとうさんした。",
                       "isUnderlined": false
                     }
                   ],
@@ -29840,7 +29840,7 @@
                   "segments": [
                     {
                       "text": "息子が",
-                      "reading": "",
+                      "reading": "むすこが",
                       "isUnderlined": false
                     },
                     {
@@ -29850,7 +29850,7 @@
                     },
                     {
                       "text": "ことをして警察に捕まった。",
-                      "reading": "",
+                      "reading": "ことをしてけいさつにつかまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -29865,7 +29865,7 @@
                   "segments": [
                     {
                       "text": "「お礼だなんて",
-                      "reading": "",
+                      "reading": "「おれいだなんて",
                       "isUnderlined": false
                     },
                     {
@@ -29875,7 +29875,7 @@
                     },
                     {
                       "text": "。当然のことをしたまでです」",
-                      "reading": "",
+                      "reading": "。とうぜんのことをしたまでです」",
                       "isUnderlined": false
                     }
                   ],
@@ -29890,7 +29890,7 @@
                   "segments": [
                     {
                       "text": "「あの人って有名な学者だよね」「",
-                      "reading": "",
+                      "reading": "「あのひとってゆうめいながくしゃだよね」「",
                       "isUnderlined": false
                     },
                     {
@@ -29900,7 +29900,7 @@
                     },
                     {
                       "text": "。テレビにばかり出ていて、今ではすっかりタレントだよ」",
-                      "reading": "",
+                      "reading": "。テレビにばかりでていて、いまではすっかりタレントだよ」",
                       "isUnderlined": false
                     }
                   ],
@@ -29914,13 +29914,23 @@
               "source": {
                 "pdfPage": 71,
                 "printedPage": 68
-              }
+              },
+              "notes": [
+                {
+                  "japanese": "※会話的な言葉。",
+                  "vietnamese": "Dùng trong văn nói.",
+                  "source": {
+                    "pdfPage": 71,
+                    "printedPage": 68
+                  }
+                }
+              ]
             },
             {
               "sourceNumber": 247,
               "kanji": "くだらない",
               "hiragana": "くだらない",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "",
               "meaning": "くだ ら な い Vô vị, tầm phào",
               "examples": [
                 {
@@ -29929,7 +29939,7 @@
                   "segments": [
                     {
                       "text": "この番組はまったく",
-                      "reading": "",
+                      "reading": "このばんぐみはまったく",
                       "isUnderlined": false
                     },
                     {
@@ -29939,7 +29949,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -30020,7 +30030,7 @@
               "sourceNumber": 248,
               "kanji": "ばかばかしい",
               "hiragana": "ばかばかしい",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "",
               "meaning": "Không thực tế, ngu ngốc, vớ vẩn",
               "examples": [
                 {
@@ -30029,7 +30039,7 @@
                   "segments": [
                     {
                       "text": "この番組は",
-                      "reading": "",
+                      "reading": "このばんぐみは",
                       "isUnderlined": false
                     },
                     {
@@ -30039,7 +30049,7 @@
                     },
                     {
                       "text": "が、おもしろいのでつい見てしまう。",
-                      "reading": "",
+                      "reading": "が、おもしろいのでついみてしまう。",
                       "isUnderlined": false
                     }
                   ],
@@ -30054,7 +30064,7 @@
                   "segments": [
                     {
                       "text": "「",
-                      "reading": "",
+                      "reading": "「",
                       "isUnderlined": false
                     },
                     {
@@ -30064,7 +30074,7 @@
                     },
                     {
                       "text": "。そんな話は聞いたことがない」",
-                      "reading": "",
+                      "reading": "。そんなはなしはきいたことがない」",
                       "isUnderlined": false
                     }
                   ],
@@ -30079,7 +30089,7 @@
                   "segments": [
                     {
                       "text": "安い給料でこんなに働くなんて、",
-                      "reading": "",
+                      "reading": "やすいきゅうりょうでこんなにはたらくなんて、",
                       "isUnderlined": false
                     },
                     {
@@ -30089,7 +30099,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -30150,7 +30160,7 @@
               "sourceNumber": 249,
               "kanji": "でたらめな",
               "hiragana": "でたらめな",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "",
               "meaning": "Làm bừa",
               "examples": [
                 {
@@ -30159,17 +30169,17 @@
                   "segments": [
                     {
                       "text": "テストで答えを",
-                      "reading": "",
+                      "reading": "テストでこたえを",
                       "isUnderlined": false
                     },
                     {
-                      "text": "でたらめ",
-                      "reading": "でたらめな",
+                      "text": "でたらめに",
+                      "reading": "でたらめに",
                       "isUnderlined": true
                     },
                     {
-                      "text": "に書いたら、偶然合っていた。",
-                      "reading": "",
+                      "text": "書いたら、偶然合っていた。",
+                      "reading": "かいたら、ぐうぜんあっていた。",
                       "isUnderlined": false
                     }
                   ],
@@ -30189,7 +30199,7 @@
                     },
                     {
                       "text": "話をする。",
-                      "reading": "",
+                      "reading": "はなしをする。",
                       "isUnderlined": false
                     }
                   ],
@@ -30250,7 +30260,7 @@
               "sourceNumber": 250,
               "kanji": "だらしない",
               "hiragana": "だらしない",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "",
               "meaning": "Lôi thôi, luộm thuộm",
               "examples": [
                 {
@@ -30259,7 +30269,7 @@
                   "segments": [
                     {
                       "text": "彼は",
-                      "reading": "",
+                      "reading": "かれは",
                       "isUnderlined": false
                     },
                     {
@@ -30269,7 +30279,7 @@
                     },
                     {
                       "text": "。部屋もきたないし、時間に遅れるし、借りたものもすぐなくす。",
-                      "reading": "",
+                      "reading": "。へやもきたないし、じかんにおくれるし、かりたものもすぐなくす。",
                       "isUnderlined": false
                     }
                   ],
@@ -30345,7 +30355,7 @@
               "sourceNumber": 251,
               "kanji": "ずうずうしい",
               "hiragana": "ずうずうしい",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "",
               "meaning": "Trơ trẽn",
               "examples": [
                 {
@@ -30354,17 +30364,17 @@
                   "segments": [
                     {
                       "text": "レジの列に",
-                      "reading": "",
+                      "reading": "レジのれつに",
                       "isUnderlined": false
                     },
                     {
                       "text": "ずうずうしく",
-                      "reading": "ずうずうしい",
+                      "reading": "ずうずうしく",
                       "isUnderlined": true
                     },
                     {
                       "text": "割り込む人がいる。",
-                      "reading": "",
+                      "reading": "わりこむひとがいる。",
                       "isUnderlined": false
                     }
                   ],
@@ -30405,8 +30415,8 @@
               "sourceNumber": 252,
               "kanji": "ずるい",
               "hiragana": "ずるい",
-              "hanVietMeaning": "N2",
-              "meaning": "ずる い Ranh mãnh, gian xảo, lầu cá, bất công",
+              "hanVietMeaning": "",
+              "meaning": "Ranh mãnh, gian xảo, láu cá, bất công",
               "examples": [
                 {
                   "japanese": "他の人が必死に働いているのに、自分だけ楽をしようなんて、ずるい考えだ。",
@@ -30414,7 +30424,7 @@
                   "segments": [
                     {
                       "text": "他の人が必死に働いているのに、自分だけ楽をしようなんて、",
-                      "reading": "",
+                      "reading": "ほかのひとがひっしにはたらいているのに、じぶんだけらくをしようなんて、",
                       "isUnderlined": false
                     },
                     {
@@ -30424,7 +30434,7 @@
                     },
                     {
                       "text": "考えだ。",
-                      "reading": "",
+                      "reading": "かんがえだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -30439,7 +30449,7 @@
                   "segments": [
                     {
                       "text": "友だちからプレゼントをもらって、「",
-                      "reading": "",
+                      "reading": "ともだちからプレゼントをもらって、「",
                       "isUnderlined": false
                     },
                     {
@@ -30449,7 +30459,7 @@
                     },
                     {
                       "text": "！」",
-                      "reading": "",
+                      "reading": "！」",
                       "isUnderlined": false
                     }
                   ],
@@ -30499,7 +30509,7 @@
                   "segments": [
                     {
                       "text": "わが子はかわいいが、反抗的な態度をとると",
-                      "reading": "",
+                      "reading": "わがこはかわいいが、はんこうてきなたいどをとると",
                       "isUnderlined": false
                     },
                     {
@@ -30509,7 +30519,7 @@
                     },
                     {
                       "text": "ときもある。",
-                      "reading": "",
+                      "reading": "ときもある。",
                       "isUnderlined": false
                     }
                   ],
@@ -30524,7 +30534,7 @@
                   "segments": [
                     {
                       "text": "彼女は",
-                      "reading": "",
+                      "reading": "かのじょは",
                       "isUnderlined": false
                     },
                     {
@@ -30534,7 +30544,7 @@
                     },
                     {
                       "text": "ほど才能がある。",
-                      "reading": "",
+                      "reading": "ほどさいのうがある。",
                       "isUnderlined": false
                     }
                   ],
@@ -30585,7 +30595,7 @@
                   "segments": [
                     {
                       "text": "父を殺した犯人が",
-                      "reading": "",
+                      "reading": "ちちをころしたはんにんが",
                       "isUnderlined": false
                     },
                     {
@@ -30595,7 +30605,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -30629,7 +30639,7 @@
                     },
                     {
                       "text": "山道を登る。",
-                      "reading": "",
+                      "reading": "やまみちをのぼる。",
                       "isUnderlined": false
                     }
                   ],
@@ -30719,7 +30729,7 @@
                   "segments": [
                     {
                       "text": "子どもは",
-                      "reading": "",
+                      "reading": "こどもは",
                       "isUnderlined": false
                     },
                     {
@@ -30729,7 +30739,82 @@
                     },
                     {
                       "text": "経験を乗り越えて成長する。",
+                      "reading": "けいけんをのりこえてせいちょうする。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 73,
+                    "printedPage": 70
+                  }
+                },
+                {
+                  "japanese": "花粉症なので、春は本当につらい。",
+                  "vietnamese": "Vì bị dị ứng phấn hoa nên mùa xuân thật khổ sở.",
+                  "segments": [
+                    {
+                      "text": "花粉症なので、春は本当に",
+                      "reading": "かふんしょうなので、はるはほんとうに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "つらい",
+                      "reading": "つらい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
                       "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 73,
+                    "printedPage": 70
+                  }
+                },
+                {
+                  "japanese": "どんなにつらくても、最後までがんばるつもりだ。",
+                  "vietnamese": "Dù có vất vả thế nào tôi cũng sẽ cố gắng đến cùng.",
+                  "segments": [
+                    {
+                      "text": "どんなに",
+                      "reading": "どんなに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "つらくても",
+                      "reading": "つらくても",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、最後までがんばるつもりだ。",
+                      "reading": "、さいごまでがんばるつもりだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 73,
+                    "printedPage": 70
+                  }
+                },
+                {
+                  "japanese": "いらいらして、つい子どもにつらく当たってしまった。",
+                  "vietnamese": "Tôi trong lúc bực bội đã lỡ đánh con rất đau",
+                  "segments": [
+                    {
+                      "text": "いらいらして、つい子どもに",
+                      "reading": "いらいらして、ついこどもに",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "つらく当たって",
+                      "reading": "つらくあたって",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "しまった。",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -30790,7 +30875,7 @@
               "sourceNumber": 257,
               "kanji": "きつい",
               "hiragana": "きつい",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "",
               "meaning": "きつ い Chật cứng, mệt möi, gò bó, khó chịu, nghiêm khắc",
               "examples": [
                 {
@@ -30799,16 +30884,141 @@
                   "segments": [
                     {
                       "text": "太ってしまってズボンが",
-                      "reading": "",
+                      "reading": "ふとってしまってズボンが",
                       "isUnderlined": false
                     },
                     {
-                      "text": "きつく",
+                      "text": "きつくなった",
+                      "reading": "きつくなった",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 73,
+                    "printedPage": 70
+                  }
+                },
+                {
+                  "japanese": "「靴／服／スケジュール…」がきつい。",
+                  "vietnamese": "Giày/ quần áo chật chội, lịch trình dày đặc.",
+                  "segments": [
+                    {
+                      "text": "「靴／服／スケジュール…」が",
+                      "reading": "「くつ／ふく／スケジュール…」が",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "きつい",
                       "reading": "きつい",
                       "isUnderlined": true
                     },
                     {
-                      "text": "なった。",
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 73,
+                    "printedPage": 70
+                  }
+                },
+                {
+                  "japanese": "ほどけないように荷物をきつくしばった。",
+                  "vietnamese": "Tôi đã buộc chặt hành lý để không bị tuột ra.",
+                  "segments": [
+                    {
+                      "text": "ほどけないように荷物を",
+                      "reading": "ほどけないようにもつを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "きつくしばった",
+                      "reading": "きつくしばった",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 73,
+                    "printedPage": 70
+                  }
+                },
+                {
+                  "japanese": "肉体労働などのきつい仕事は、今人気がない。",
+                  "vietnamese": "Công việc khổ cực như lao động chân tay hiện nay không còn được ưa chuộng nữa.",
+                  "segments": [
+                    {
+                      "text": "肉体労働などの",
+                      "reading": "にくたいろうどうなどの",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "きつい",
+                      "reading": "きつい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "仕事は、今人気がない。",
+                      "reading": "しごとは、いまにんきがない。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 73,
+                    "printedPage": 70
+                  }
+                },
+                {
+                  "japanese": "運動不足で階段を上るのがきつい。",
+                  "vietnamese": "Do thiếu vận động nên leo cầu thang cũng khó khăn.",
+                  "segments": [
+                    {
+                      "text": "運動不足で階段を上るのが",
+                      "reading": "うんどうぶそくでかいだんをのぼるのが",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "きつい",
+                      "reading": "きつい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 73,
+                    "printedPage": 70
+                  }
+                },
+                {
+                  "japanese": "先生が学生をきつく注意した。",
+                  "vietnamese": "Giáo viên nhắc nhở học sinh rất nghiêm khắc.",
+                  "segments": [
+                    {
+                      "text": "先生が学生を",
+                      "reading": "せんせいががくせいを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "きつく注意した",
+                      "reading": "きつくちゅういした",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -30821,42 +31031,102 @@
               ],
               "relations": [
                 {
-                  "label": "類",
+                  "label": "対",
                   "items": [
                     {
-                      "japanese": "厳しい",
-                      "vietnamese": "Nghiêm khắc, khắt khe",
+                      "japanese": "緩い",
+                      "vietnamese": "Lỏng",
+                      "segments": [
+                        {
+                          "text": "緩い",
+                          "reading": "ゆるい",
+                          "isUnderlined": true
+                        }
+                      ],
                       "source": {
                         "pdfPage": 73,
                         "printedPage": 70
-                      },
-                      "segments": [
-                        {
-                          "text": "厳しい",
-                          "reading": "",
-                          "isUnderlined": false
-                        }
-                      ]
+                      }
                     }
                   ]
                 },
                 {
-                  "label": "関",
+                  "label": "類",
                   "items": [
                     {
                       "japanese": "きゅうくつな",
                       "vietnamese": "Chật, gò bó",
-                      "source": {
-                        "pdfPage": 73,
-                        "printedPage": 70
-                      },
                       "segments": [
                         {
                           "text": "きゅうくつな",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "きゅうくつな",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 73,
+                        "printedPage": 70
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "対",
+                  "items": [
+                    {
+                      "japanese": "緩い",
+                      "vietnamese": "Lỏng",
+                      "segments": [
+                        {
+                          "text": "緩い",
+                          "reading": "ゆるい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 73,
+                        "printedPage": 70
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "固い",
+                      "vietnamese": "Rắn chắc, cứng",
+                      "segments": [
+                        {
+                          "text": "固い",
+                          "reading": "かたい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 73,
+                        "printedPage": 70
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "辛い、苦しい",
+                      "vietnamese": "Mệt mỏi, Khổ cực",
+                      "segments": [
+                        {
+                          "text": "辛い、苦しい",
+                          "reading": "つらい、くるしい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 73,
+                        "printedPage": 70
+                      }
                     }
                   ]
                 }
@@ -30871,7 +31141,7 @@
               "kanji": "緩い",
               "hiragana": "ゆるい",
               "hanVietMeaning": "HOÃN",
-              "meaning": "Lông II",
+              "meaning": "Lỏng",
               "examples": [
                 {
                   "japanese": "やせてスカートがゆるくなった。",
@@ -30879,17 +31149,17 @@
                   "segments": [
                     {
                       "text": "やせてスカートが",
-                      "reading": "",
+                      "reading": "やせてスカートが",
                       "isUnderlined": false
                     },
                     {
                       "text": "ゆるく",
-                      "reading": "ゆるい",
+                      "reading": "ゆるく",
                       "isUnderlined": true
                     },
                     {
                       "text": "なった。",
-                      "reading": "",
+                      "reading": "なった。",
                       "isUnderlined": false
                     }
                   ],
@@ -30904,17 +31174,17 @@
                   "segments": [
                     {
                       "text": "靴ひもの結び方が",
-                      "reading": "",
+                      "reading": "くつひものむすびかたが",
                       "isUnderlined": false
                     },
                     {
-                      "text": "ゆるく",
-                      "reading": "ゆるい",
+                      "text": "ゆるくて",
+                      "reading": "ゆるくて",
                       "isUnderlined": true
                     },
                     {
-                      "text": "て、ほどけてしまった。",
-                      "reading": "",
+                      "text": "、ほどけてしまった。",
+                      "reading": "、ほどけてしまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -30925,11 +31195,11 @@
                 },
                 {
                   "japanese": "この道をまっすぐ行くと、ゆるいカーブがあります。",
-                  "vietnamese": "Cứ đi thẳng con đường này sẽ có một khúc cua thoải.",
+                  "vietnamese": "Cứ đi thẳng con đường này sẽ có 1 khúc cua thoải.",
                   "segments": [
                     {
                       "text": "この道をまっすぐ行くと、",
-                      "reading": "",
+                      "reading": "このみちをまっすぐいくと、",
                       "isUnderlined": false
                     },
                     {
@@ -30939,7 +31209,7 @@
                     },
                     {
                       "text": "カーブがあります。",
-                      "reading": "",
+                      "reading": "カーブがあります。",
                       "isUnderlined": false
                     }
                   ],
@@ -30951,22 +31221,42 @@
               ],
               "relations": [
                 {
+                  "label": "対",
+                  "items": [
+                    {
+                      "japanese": "きつい",
+                      "vietnamese": "Chật",
+                      "segments": [
+                        {
+                          "text": "きつい",
+                          "reading": "きつい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 74,
+                        "printedPage": 71
+                      }
+                    }
+                  ]
+                },
+                {
                   "label": "類",
                   "items": [
                     {
                       "japanese": "緩やかな",
                       "vietnamese": "Thoải mái, lỏng lẻo",
-                      "source": {
-                        "pdfPage": 74,
-                        "printedPage": 71
-                      },
                       "segments": [
                         {
                           "text": "緩やかな",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "ゆるやかな",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 74,
+                        "printedPage": 71
+                      }
                     }
                   ]
                 },
@@ -30974,19 +31264,19 @@
                   "label": "合",
                   "items": [
                     {
-                      "japanese": "ゆるさ",
+                      "japanese": "①〜③緩さ",
                       "vietnamese": "Sự lỏng lẻo",
+                      "segments": [
+                        {
+                          "text": "①〜③緩さ",
+                          "reading": "①〜③ゆるさ",
+                          "isUnderlined": true
+                        }
+                      ],
                       "source": {
                         "pdfPage": 74,
                         "printedPage": 71
-                      },
-                      "segments": [
-                        {
-                          "text": "ゆるさ",
-                          "reading": "",
-                          "isUnderlined": false
-                        }
-                      ]
+                      }
                     }
                   ]
                 }
@@ -31000,7 +31290,7 @@
               "sourceNumber": 259,
               "kanji": "鈍い",
               "hiragana": "にぶい",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "ĐỘN",
               "meaning": "Cùn, chậm chạp",
               "examples": [
                 {
@@ -31009,7 +31299,7 @@
                   "segments": [
                     {
                       "text": "このナイフは切れ味が",
-                      "reading": "",
+                      "reading": "このナイフはきれあじが",
                       "isUnderlined": false
                     },
                     {
@@ -31019,7 +31309,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -31029,12 +31319,12 @@
                   }
                 },
                 {
-                  "japanese": "佐藤さんは、今日は動作がにぶい。",
-                  "vietnamese": "Hôm nay động tác của anh Sato chậm chạp.",
+                  "japanese": "佐藤選手は、今日は動きがにぶい。",
+                  "vietnamese": "Tuyển thủ Sato hôm nay chuyển động chậm chạp.",
                   "segments": [
                     {
-                      "text": "佐藤さんは、今日は動作が",
-                      "reading": "",
+                      "text": "佐藤選手は、今日は動きが",
+                      "reading": "さとうせんしゅは、きょうはうごきが",
                       "isUnderlined": false
                     },
                     {
@@ -31044,7 +31334,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -31054,12 +31344,12 @@
                   }
                 },
                 {
-                  "japanese": "（脳／運動神経）がにぶい。",
-                  "vietnamese": "Trực giác kém/thần kinh vận động chậm chạp.",
+                  "japanese": "（脳／運動神経…）がにぶい。",
+                  "vietnamese": "Trực giác kém/ thần kinh vận động chậm chạp",
                   "segments": [
                     {
-                      "text": "（脳／運動神経）が",
-                      "reading": "",
+                      "text": "（脳／運動神経…）が",
+                      "reading": "（のう／うんどうしんけい…）が",
                       "isUnderlined": false
                     },
                     {
@@ -31069,7 +31359,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -31089,7 +31379,7 @@
                     },
                     {
                       "text": "痛み。",
-                      "reading": "",
+                      "reading": "いたみ。",
                       "isUnderlined": false
                     }
                   ],
@@ -31106,17 +31396,17 @@
                     {
                       "japanese": "①〜③鋭い",
                       "vietnamese": "Sắc bén, sắc sảo, nhạy bén",
-                      "source": {
-                        "pdfPage": 74,
-                        "printedPage": 71
-                      },
                       "segments": [
                         {
                           "text": "①〜③鋭い",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "①〜③するどい",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 74,
+                        "printedPage": 71
+                      }
                     }
                   ]
                 },
@@ -31124,19 +31414,19 @@
                   "label": "合",
                   "items": [
                     {
-                      "japanese": "①〜④鈍さ",
+                      "japanese": "①〜⑤鈍さ",
                       "vietnamese": "Sự chậm chạp, cùn",
+                      "segments": [
+                        {
+                          "text": "①〜⑤鈍さ",
+                          "reading": "①〜⑤にぶさ",
+                          "isUnderlined": true
+                        }
+                      ],
                       "source": {
                         "pdfPage": 74,
                         "printedPage": 71
-                      },
-                      "segments": [
-                        {
-                          "text": "①〜④鈍さ",
-                          "reading": "",
-                          "isUnderlined": false
-                        }
-                      ]
+                      }
                     }
                   ]
                 }
@@ -31154,12 +31444,12 @@
               "meaning": "Sắc bén, nhạy bén, đau nhói",
               "examples": [
                 {
-                  "japanese": "猫はするどい爪を持っている。",
-                  "vietnamese": "Con mèo có móng sắc nhọn.",
+                  "japanese": "熊はするどい爪を持っている。",
+                  "vietnamese": "Con gấu có móng sắc nhọn.",
                   "segments": [
                     {
-                      "text": "猫は",
-                      "reading": "",
+                      "text": "熊は",
+                      "reading": "くまは",
                       "isUnderlined": false
                     },
                     {
@@ -31169,7 +31459,7 @@
                     },
                     {
                       "text": "爪を持っている。",
-                      "reading": "",
+                      "reading": "つめをもっている。",
                       "isUnderlined": false
                     }
                   ],
@@ -31184,7 +31474,7 @@
                   "segments": [
                     {
                       "text": "彼は",
-                      "reading": "",
+                      "reading": "かれは",
                       "isUnderlined": false
                     },
                     {
@@ -31194,7 +31484,7 @@
                     },
                     {
                       "text": "目で私をにらんだ。",
-                      "reading": "",
+                      "reading": "めでわたしをにらんだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -31209,7 +31499,7 @@
                   "segments": [
                     {
                       "text": "ナイフで切られたような",
-                      "reading": "",
+                      "reading": "ナイフできられたような",
                       "isUnderlined": false
                     },
                     {
@@ -31219,7 +31509,32 @@
                     },
                     {
                       "text": "痛みを感じた。",
-                      "reading": "",
+                      "reading": "いたみをかんじた。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 74,
+                    "printedPage": 71
+                  }
+                },
+                {
+                  "japanese": "感受性が鋭い。",
+                  "vietnamese": "Năng lực cảm thụ nhạy bén.",
+                  "segments": [
+                    {
+                      "text": "感受性が",
+                      "reading": "かんじゅせいが",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "鋭い",
+                      "reading": "するどい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -31234,7 +31549,7 @@
                   "segments": [
                     {
                       "text": "彼の意見はいつも",
-                      "reading": "",
+                      "reading": "かれのいけんはいつも",
                       "isUnderlined": false
                     },
                     {
@@ -31244,7 +31559,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -31261,17 +31576,17 @@
                     {
                       "japanese": "①〜③鋭さ",
                       "vietnamese": "Sự sắc bén",
-                      "source": {
-                        "pdfPage": 74,
-                        "printedPage": 71
-                      },
                       "segments": [
                         {
                           "text": "①〜③鋭さ",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "①〜③するどさ",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 74,
+                        "printedPage": 71
+                      }
                     }
                   ]
                 },
@@ -31279,19 +31594,19 @@
                   "label": "対",
                   "items": [
                     {
-                      "japanese": "鈍い",
+                      "japanese": "②鈍い",
                       "vietnamese": "Cùn, chậm",
+                      "segments": [
+                        {
+                          "text": "②鈍い",
+                          "reading": "②にぶい",
+                          "isUnderlined": true
+                        }
+                      ],
                       "source": {
                         "pdfPage": 74,
                         "printedPage": 71
-                      },
-                      "segments": [
-                        {
-                          "text": "鈍い",
-                          "reading": "",
-                          "isUnderlined": false
-                        }
-                      ]
+                      }
                     }
                   ]
                 }
@@ -31985,21 +32300,21 @@
               "examples": [
                 {
                   "japanese": "政治の混乱を招いた首相の責任は重大だ。",
-                  "vietnamese": "Trách nhiệm của thủ tướng, người đã gây ra sự hỗn loạn chính trị, là rất lớn.",
+                  "vietnamese": "Trách nhiệm của thủ tướng - người gây ra sự hỗn loạn chính trị này là rất lớn.",
                   "segments": [
                     {
                       "text": "政治の混乱を招いた首相の責任は",
-                      "reading": "",
+                      "reading": "せいじのこんらんをまねいたしゅしょうのせきにんは",
                       "isUnderlined": false
                     },
                     {
-                      "text": "重大",
-                      "reading": "じゅうだいな",
+                      "text": "重大だ",
+                      "reading": "じゅうだいだ",
                       "isUnderlined": true
                     },
                     {
-                      "text": "だ。",
-                      "reading": "",
+                      "text": "。",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -32009,22 +32324,42 @@
                   }
                 },
                 {
-                  "japanese": "この問題はそれほど重大に考えなくていい。",
+                  "japanese": "この問題はそれほど重大に考えなくてよい。",
                   "vietnamese": "Vấn đề này không cần phải suy nghĩ nghiêm trọng đến mức đó.",
                   "segments": [
                     {
                       "text": "この問題はそれほど",
-                      "reading": "",
+                      "reading": "このもんだいはそれほど",
                       "isUnderlined": false
                     },
                     {
-                      "text": "重大",
+                      "text": "重大に",
+                      "reading": "じゅうだいに",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "考えなくてよい。",
+                      "reading": "かんがえなくてよい。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 77,
+                    "printedPage": 74
+                  }
+                },
+                {
+                  "japanese": "重大な（問題／ミス／責任／影響／発表…）",
+                  "vietnamese": "Vấn đề/ lỗi/ trách nhiệm nghiêm trọng, ảnh hưởng lớn lao, phát biểu trọng đại.",
+                  "segments": [
+                    {
+                      "text": "重大な",
                       "reading": "じゅうだいな",
                       "isUnderlined": true
                     },
                     {
-                      "text": "に考えなくていい。",
-                      "reading": "",
+                      "text": "（問題／ミス／責任／影響／発表…）",
+                      "reading": "（もんだい／ミス／せきにん／えいきょう／はっぴょう…）",
                       "isUnderlined": false
                     }
                   ],
@@ -32041,57 +32376,92 @@
                     {
                       "japanese": "重大さ",
                       "vietnamese": "Sự quan trọng",
-                      "source": {
-                        "pdfPage": 77,
-                        "printedPage": 74
-                      },
                       "segments": [
                         {
                           "text": "重大さ",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "じゅうだいさ",
+                          "isUnderlined": true
                         }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "label": "類",
-                  "items": [
-                    {
-                      "japanese": "深刻な",
-                      "vietnamese": "Nghiêm trọng",
+                      ],
                       "source": {
                         "pdfPage": 77,
                         "printedPage": 74
-                      },
+                      }
+                    },
+                    {
+                      "japanese": "重大問題",
+                      "vietnamese": "Vấn đề quan trọng",
                       "segments": [
                         {
-                          "text": "深刻な",
-                          "reading": "",
-                          "isUnderlined": false
+                          "text": "重大問題",
+                          "reading": "じゅうだいもんだい",
+                          "isUnderlined": true
                         }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "label": "対",
-                  "items": [
-                    {
-                      "japanese": "軽微な",
-                      "vietnamese": "Nhẹ, không đáng kể",
+                      ],
                       "source": {
                         "pdfPage": 77,
                         "printedPage": 74
-                      },
+                      }
+                    },
+                    {
+                      "japanese": "重大事件",
+                      "vietnamese": "Sự kiện trọng đại",
                       "segments": [
                         {
-                          "text": "軽微な",
-                          "reading": "",
-                          "isUnderlined": false
+                          "text": "重大事件",
+                          "reading": "じゅうだいじけん",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 77,
+                        "printedPage": 74
+                      }
+                    },
+                    {
+                      "japanese": "重大発表",
+                      "vietnamese": "Phát biểu trọng đại",
+                      "segments": [
+                        {
+                          "text": "重大発表",
+                          "reading": "じゅうだいはっぴょう",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 77,
+                        "printedPage": 74
+                      }
+                    },
+                    {
+                      "japanese": "責任重大な",
+                      "vietnamese": "Trách nhiệm quan trọng",
+                      "segments": [
+                        {
+                          "text": "責任重大な",
+                          "reading": "せきにんじゅうだいな",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 77,
+                        "printedPage": 74
+                      }
+                    },
+                    {
+                      "japanese": "重大視する",
+                      "vietnamese": "Coi trọng",
+                      "segments": [
+                        {
+                          "text": "重大視する",
+                          "reading": "じゅうだいしする",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 77,
+                        "printedPage": 74
+                      }
                     }
                   ]
                 }
@@ -32105,16 +32475,16 @@
               "sourceNumber": 268,
               "kanji": "深刻な",
               "hiragana": "しんこくな",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "THÂM KHẮC",
               "meaning": "Nghiêm trọng",
               "examples": [
                 {
                   "japanese": "猛暑によって深刻な水不足が起きた。",
-                  "vietnamese": "Tình trạng thiếu nước nghiêm trọng đã xảy ra do nắng nóng.",
+                  "vietnamese": "Tình trạng thiếu nước nghiêm trọng đã xảy ra do nắng nóng kéo dài.",
                   "segments": [
                     {
                       "text": "猛暑によって",
-                      "reading": "",
+                      "reading": "もうしょによって",
                       "isUnderlined": false
                     },
                     {
@@ -32124,7 +32494,7 @@
                     },
                     {
                       "text": "水不足が起きた。",
-                      "reading": "",
+                      "reading": "みずぶそくがおきた。",
                       "isUnderlined": false
                     }
                   ],
@@ -32134,22 +32504,137 @@
                   }
                 },
                 {
-                  "japanese": "若者の深刻な悩みを聞く。",
-                  "vietnamese": "Lắng nghe những nỗi phiền muộn nghiêm trọng của giới trẻ.",
+                  "japanese": "深刻な（事態／問題／被害／悩み／話…）",
+                  "vietnamese": "{Tình hình/ vấn đề/ thiệt hại/ nỗi buồn/ câu chuyện...} nghiêm trọng.",
                   "segments": [
-                    {
-                      "text": "若者の",
-                      "reading": "",
-                      "isUnderlined": false
-                    },
                     {
                       "text": "深刻な",
                       "reading": "しんこくな",
                       "isUnderlined": true
                     },
                     {
-                      "text": "悩みを聞く。",
-                      "reading": "",
+                      "text": "（事態／問題／被害／悩み／話…）",
+                      "reading": "（じたい／もんだい／ひがい／なやみ／はなし…）",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 77,
+                    "printedPage": 74
+                  }
+                },
+                {
+                  "japanese": "若者の活字離れが深刻になってきている。",
+                  "vietnamese": "Vấn đề mai một văn hóa đọc sách của giới trẻ hiện nay đang trở nên nghiêm trọng.",
+                  "segments": [
+                    {
+                      "text": "若者の活字離れが",
+                      "reading": "わかもののかつじばなれが",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "深刻になって",
+                      "reading": "しんこくになって",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "きている。",
+                      "reading": "きている。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 77,
+                    "printedPage": 74
+                  }
+                },
+                {
+                  "japanese": "地球温暖化の問題は深刻だ。",
+                  "vietnamese": "Trái đất nóng lên là vấn đề nghiêm trọng.",
+                  "segments": [
+                    {
+                      "text": "地球温暖化の問題は",
+                      "reading": "ちきゅうおんだんかのもんだいは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "深刻だ",
+                      "reading": "しんこくだ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 77,
+                    "printedPage": 74
+                  }
+                },
+                {
+                  "japanese": "彼はものごとをすぐ深刻に考える癖がある。",
+                  "vietnamese": "Anh ấy có tật xấu là hay nghiêm trọng hóa vấn đề.",
+                  "segments": [
+                    {
+                      "text": "彼はものごとをすぐ",
+                      "reading": "かれはものごとをすぐ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "深刻に",
+                      "reading": "しんこくに",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "考える癖がある。",
+                      "reading": "かんがえるくせがある。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 77,
+                    "printedPage": 74
+                  }
+                },
+                {
+                  "japanese": "深刻な（顔／表情／悩み…）",
+                  "vietnamese": "{Gương mặt/ nét mặt/ nỗi buồn...} nghiêm trọng",
+                  "segments": [
+                    {
+                      "text": "深刻な",
+                      "reading": "しんこくな",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "（顔／表情／悩み…）",
+                      "reading": "（かお／ひょうじょう／なやみ…）",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 77,
+                    "printedPage": 74
+                  }
+                },
+                {
+                  "japanese": "「子どもの反抗に悩んでいます」「あまり深刻にならず、ゆっくり見守りましょう」",
+                  "vietnamese": "“Tôi đang phiền não vì sự chống đối của bọn trẻ” “Đừng nghĩ nghiêm trọng quá, cứ từ từ theo sát tụi nhỏ.”",
+                  "segments": [
+                    {
+                      "text": "「子どもの反抗に悩んでいます」「あまり",
+                      "reading": "「こどものはんこうになやんでいます」「あまり",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "深刻にならず",
+                      "reading": "しんこくにならず",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、ゆっくり見守りましょう」",
+                      "reading": "、ゆっくりみまもりましょう」",
                       "isUnderlined": false
                     }
                   ],
@@ -32161,42 +32646,102 @@
               ],
               "relations": [
                 {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "事態に陥る",
+                      "vietnamese": "Rơi vào tình trạng nghiêm trọng",
+                      "segments": [
+                        {
+                          "text": "事態に陥る",
+                          "reading": "じたいにおちいる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 77,
+                        "printedPage": 74
+                      }
+                    }
+                  ]
+                },
+                {
                   "label": "合",
                   "items": [
                     {
                       "japanese": "深刻さ",
                       "vietnamese": "Độ nghiêm trọng",
-                      "source": {
-                        "pdfPage": 77,
-                        "printedPage": 74
-                      },
                       "segments": [
                         {
                           "text": "深刻さ",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "しんこくさ",
+                          "isUnderlined": true
                         }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "label": "連",
-                  "items": [
-                    {
-                      "japanese": "深刻に悩む",
-                      "vietnamese": "Rất phiền não",
+                      ],
                       "source": {
                         "pdfPage": 77,
                         "printedPage": 74
-                      },
+                      }
+                    },
+                    {
+                      "japanese": "深刻化",
+                      "vietnamese": "Nghiêm trọng hóa",
                       "segments": [
                         {
-                          "text": "深刻に悩む",
-                          "reading": "",
-                          "isUnderlined": false
+                          "text": "深刻化",
+                          "reading": "しんこくか",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 77,
+                        "printedPage": 74
+                      }
+                    },
+                    {
+                      "japanese": "深刻になる",
+                      "vietnamese": "Trở nên nghiêm trọng",
+                      "segments": [
+                        {
+                          "text": "深刻になる",
+                          "reading": "しんこくになる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 77,
+                        "printedPage": 74
+                      }
+                    },
+                    {
+                      "japanese": "深刻に受け止める",
+                      "vietnamese": "Tiếp nhận một cách nghiêm túc",
+                      "segments": [
+                        {
+                          "text": "深刻に受け止める",
+                          "reading": "しんこくにうけとめる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 77,
+                        "printedPage": 74
+                      }
+                    },
+                    {
+                      "japanese": "深刻さ",
+                      "vietnamese": "Sự nghiêm trọng",
+                      "segments": [
+                        {
+                          "text": "深刻さ",
+                          "reading": "しんこくさ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 77,
+                        "printedPage": 74
+                      }
                     }
                   ]
                 }
@@ -32214,22 +32759,87 @@
               "meaning": "Thoải mái, nhẹ nhõm",
               "examples": [
                 {
-                  "japanese": "深刻になっても問題は解決しない。もっと気楽に考えよう。",
-                  "vietnamese": "Dù có nghiêm trọng hóa thì vấn đề cũng không được giải quyết. Hãy suy nghĩ thoải mái hơn.",
+                  "japanese": "寮に住むより一人暮らしの方が、お金はかかるが気楽でいい。",
+                  "vietnamese": "Sống 1 mình tuy tốn kém nhưng thoải mái hơn trong kí túc xá.",
                   "segments": [
                     {
-                      "text": "深刻になっても問題は解決しない。もっと",
-                      "reading": "",
+                      "text": "寮に住むより一人暮らしの方が、お金はかかるが",
+                      "reading": "りょうにすむよりひとりぐらしのほうが、おかねはかかるが",
                       "isUnderlined": false
                     },
                     {
-                      "text": "気楽",
+                      "text": "気楽で",
+                      "reading": "きらくで",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "いい。",
+                      "reading": "いい。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 77,
+                    "printedPage": 74
+                  }
+                },
+                {
+                  "japanese": "深刻になっても問題は解決しない。もっと気楽に考えよう。",
+                  "vietnamese": "Dù có nghiêm trọng hóa thì vấn đề cũng không giải quyết được. Hãy suy nghĩ thoải mái hơn.",
+                  "segments": [
+                    {
+                      "text": "深刻になっても問題は解決しない。もっと",
+                      "reading": "しんこくになってももんだいはかいけつしない。もっと",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "気楽に",
+                      "reading": "きらくに",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "考えよう。",
+                      "reading": "かんがえよう。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 77,
+                    "printedPage": 74
+                  }
+                },
+                {
+                  "japanese": "気楽に（やる／いく／暮らす／生きる…）",
+                  "vietnamese": "{Làm/ đi/ sống...} 1 cách thoải mái",
+                  "segments": [
+                    {
+                      "text": "気楽に",
+                      "reading": "きらくに",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "（やる／いく／暮らす／生きる…）",
+                      "reading": "（やる／いく／くらす／いきる…）",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 77,
+                    "printedPage": 74
+                  }
+                },
+                {
+                  "japanese": "気楽な（暮らし／生き方…）",
+                  "vietnamese": "{Cuộc sống/ cách sống...} thoải mái",
+                  "segments": [
+                    {
+                      "text": "気楽な",
                       "reading": "きらくな",
                       "isUnderlined": true
                     },
                     {
-                      "text": "に考えよう。",
-                      "reading": "",
+                      "text": "（暮らし／生き方…）",
+                      "reading": "（くらし／いきかた…）",
                       "isUnderlined": false
                     }
                   ],
@@ -32241,42 +32851,22 @@
               ],
               "relations": [
                 {
-                  "label": "類",
+                  "label": "合",
                   "items": [
                     {
-                      "japanese": "のんきな",
-                      "vietnamese": "Thảnh thơi, vô tư",
+                      "japanese": "気楽さ",
+                      "vietnamese": "Sự thoải mái",
+                      "segments": [
+                        {
+                          "text": "気楽さ",
+                          "reading": "きらくさ",
+                          "isUnderlined": true
+                        }
+                      ],
                       "source": {
                         "pdfPage": 77,
                         "printedPage": 74
-                      },
-                      "segments": [
-                        {
-                          "text": "のんきな",
-                          "reading": "",
-                          "isUnderlined": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "label": "対",
-                  "items": [
-                    {
-                      "japanese": "深刻な",
-                      "vietnamese": "Nghiêm trọng",
-                      "source": {
-                        "pdfPage": 77,
-                        "printedPage": 74
-                      },
-                      "segments": [
-                        {
-                          "text": "深刻な",
-                          "reading": "",
-                          "isUnderlined": false
-                        }
-                      ]
+                      }
                     }
                   ]
                 }
@@ -32349,34 +32939,19 @@
                   "label": "類",
                   "items": [
                     {
-                      "japanese": "簡単な",
+                      "japanese": "簡単な、たやすい",
                       "vietnamese": "Dễ dàng",
+                      "segments": [
+                        {
+                          "text": "簡単な、たやすい",
+                          "reading": "かんたんな、たやすい",
+                          "isUnderlined": true
+                        }
+                      ],
                       "source": {
                         "pdfPage": 78,
                         "printedPage": 75
-                      },
-                      "segments": [
-                        {
-                          "text": "簡単な",
-                          "reading": "",
-                          "isUnderlined": false
-                        }
-                      ]
-                    },
-                    {
-                      "japanese": "手軽な",
-                      "vietnamese": "Dễ dàng",
-                      "source": {
-                        "pdfPage": 78,
-                        "printedPage": 75
-                      },
-                      "segments": [
-                        {
-                          "text": "手軽な",
-                          "reading": "",
-                          "isUnderlined": false
-                        }
-                      ]
+                      }
                     }
                   ]
                 },
@@ -32386,17 +32961,17 @@
                     {
                       "japanese": "①②安易さ",
                       "vietnamese": "Sự dễ dàng",
-                      "source": {
-                        "pdfPage": 78,
-                        "printedPage": 75
-                      },
                       "segments": [
                         {
                           "text": "①②安易さ",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "①②あんいさ",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 78,
+                        "printedPage": 75
+                      }
                     }
                   ]
                 }
@@ -80115,6 +80690,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "295713add691c64f8572f6325e4e7c1a0e3efa46d4b44abed9030ee4c26d643b"
+    "candidateHash": "561d642b8cd32047aace0057f1257b5a240a932e489a35967eb26b4f1bf7d270"
   }
 }
