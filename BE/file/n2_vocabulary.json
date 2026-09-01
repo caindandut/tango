@@ -60379,13 +60379,118 @@
               "meaning": "Triệt de",
               "examples": [
                 {
-                  "japanese": "指遵を徹底する。",
-                  "vietnamese": "Chi đạo triệt để.",
+                  "japanese": "指導を徹底する。",
+                  "vietnamese": "Chỉ đạo triệt để.",
                   "segments": [
                     {
-                      "text": "指遵を徹底する。",
-                      "reading": "ごい",
+                      "text": "指導を",
+                      "reading": "しどうを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "徹底する",
+                      "reading": "てっていする",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 283,
+                    "printedPage": 280
+                  }
+                },
+                {
+                  "japanese": "彼は徹底した無神論者だ。",
+                  "vietnamese": "Anh ta là người theo thuyết vô thần triệt để.",
+                  "segments": [
+                    {
+                      "text": "彼は",
+                      "reading": "かれは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "徹底した",
+                      "reading": "てっていした",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "無神論者だ。",
+                      "reading": "むしんろんしゃだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 283,
+                    "printedPage": 280
+                  }
+                },
+                {
+                  "japanese": "緊急時には連絡を徹底させることが重要だ。",
+                  "vietnamese": "Trong trường hợp khẩn cấp, việc quan trọng là luôn giữ liên lạc.",
+                  "segments": [
+                    {
+                      "text": "緊急時には連絡を",
+                      "reading": "きんきゅうじにはれんらくを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "徹底させる",
+                      "reading": "てっていさせる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "ことが重要だ。",
+                      "reading": "ことがじゅうようだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 283,
+                    "printedPage": 280
+                  }
+                },
+                {
+                  "japanese": "徹底的な検討をする。",
+                  "vietnamese": "Xem xét vấn đề một cách triệt để.",
+                  "segments": [
+                    {
+                      "text": "徹底的な",
+                      "reading": "てっていてきな",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "検討をする。",
+                      "reading": "けんとうをする。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 283,
+                    "printedPage": 280
+                  }
+                },
+                {
+                  "japanese": "この事故は徹底的な調査が必要だ。",
+                  "vietnamese": "Việc điều tra triệt để vụ tai nạn này là cần thiết.",
+                  "segments": [
+                    {
+                      "text": "この事故は",
+                      "reading": "このじこは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "徹底的な",
+                      "reading": "てっていてきな",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "調査が必要だ。",
+                      "reading": "ちょうさがひつようだ。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69760,6 +69865,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "a1ebd63b40612b17f437bc661d6a97fbf8ae2c8d0e11ab31889bdbb9dee866e2"
+    "candidateHash": "5b286124143fe0cd202a42964fcb8f6f979efb44296ef7563dc4650043872ced"
   }
 }
