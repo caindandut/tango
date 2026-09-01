@@ -51241,18 +51241,78 @@
             {
               "sourceNumber": 480,
               "kanji": "スタイル",
-              "hiragana": "すたいる",
+              "hiragana": "スタイル",
               "hanVietMeaning": "",
               "meaning": "Phong cách, thân hình, diện mạo",
               "examples": [
                 {
-                  "japanese": "彼女はスタイルがいい。",
-                  "vietnamese": "Cô ấy có dáng người đẹp。",
+                  "japanese": "彼女はとてもスタイルがいい。",
+                  "vietnamese": "Cô ấy có phong cách ăn mặc đẹp.",
                   "segments": [
                     {
-                      "text": "彼女はスタイルがいい。",
-                      "reading": "すたいる",
+                      "text": "彼女はとても",
+                      "reading": "かのじょはとても",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "スタイルがいい",
+                      "reading": "スタイルがいい",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 133,
+                    "printedPage": 130
+                  }
+                },
+                {
+                  "japanese": "結婚式にはフォーマルなスタイルで出席するのが普通だ。",
+                  "vietnamese": "Trong buổi lễ kết hôn, tham gia với một phong cách trang trọng là chuyện bình thường.",
+                  "segments": [
+                    {
+                      "text": "結婚式にはフォーマルな",
+                      "reading": "けっこんしきにはフォーマルな",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "スタイルで出席する",
+                      "reading": "スタイルでしゅっせきする",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "のが普通だ。",
+                      "reading": "のがふつうだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 133,
+                    "printedPage": 130
+                  }
+                },
+                {
+                  "japanese": "日本人の生活のスタイルは、50年前と比べて大きく変化した。",
+                  "vietnamese": "Phong cách sống của người Nhật so với 50 năm trước đã có sự biến đổi lớn.",
+                  "segments": [
+                    {
+                      "text": "日本人の生活の",
+                      "reading": "にほんじんのせいかつの",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "スタイルは",
+                      "reading": "スタイルは",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、50年前と比べて大きく変化した。",
+                      "reading": "、ごじゅうねんまえとくらべておおきくへんかした。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -51261,7 +51321,168 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿がいい⇔悪い",
+                      "vietnamese": "Có phong cách ⇔ Không phong cách",
+                      "segments": [
+                        {
+                          "text": "＿がいい",
+                          "reading": "＿がいい",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "⇔悪い",
+                          "reading": "⇔わるい",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "プロポーション",
+                      "vietnamese": "Cân đối, cân xứng",
+                      "segments": [
+                        {
+                          "text": "プロポーション",
+                          "reading": "プロポーション",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    },
+                    {
+                      "japanese": "身なり",
+                      "vietnamese": "Diện mạo/ ngoại hình",
+                      "segments": [
+                        {
+                          "text": "身なり",
+                          "reading": "みなり",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    },
+                    {
+                      "japanese": "服装",
+                      "vietnamese": "Trang phục",
+                      "segments": [
+                        {
+                          "text": "服装",
+                          "reading": "ふくそう",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    },
+                    {
+                      "japanese": "かっこう",
+                      "vietnamese": "Kiểu/ ngoại hình",
+                      "segments": [
+                        {
+                          "text": "かっこう",
+                          "reading": "かっこう",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    },
+                    {
+                      "japanese": "様式",
+                      "vietnamese": "Kiểu dáng, phong cách",
+                      "segments": [
+                        {
+                          "text": "様式",
+                          "reading": "ようしき",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "ヘア＿",
+                      "vietnamese": "Kiểu tóc",
+                      "segments": [
+                        {
+                          "text": "ヘア＿",
+                          "reading": "ヘア＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    },
+                    {
+                      "japanese": "ライフ＿",
+                      "vietnamese": "Phong cách sống",
+                      "segments": [
+                        {
+                          "text": "ライフ＿",
+                          "reading": "ライフ＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "スタイリスト",
+                      "vietnamese": "Nhà tạo mẫu thời trang",
+                      "segments": [
+                        {
+                          "text": "スタイリスト",
+                          "reading": "スタイリスト",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 133,
                 "printedPage": 130
@@ -51270,9 +51491,9 @@
             {
               "sourceNumber": 481,
               "kanji": "ウエスト",
-              "hiragana": "うえすと",
+              "hiragana": "ウエスト",
               "hanVietMeaning": "",
-              "meaning": "_ ウエスト waist Vòng hai, vòng co, eo, thắt lưng",
+              "meaning": "Vòng hai, vòng eo, eo, thắt lưng",
               "examples": [
                 {
                   "japanese": "最近太ってスカートのウエストがきつくなった。",
@@ -51280,17 +51501,17 @@
                   "segments": [
                     {
                       "text": "最近太ってスカートの",
-                      "reading": "うえすと",
+                      "reading": "さいきんふとってスカートの",
                       "isUnderlined": false
                     },
                     {
                       "text": "ウエスト",
-                      "reading": "うえすと",
+                      "reading": "ウエスト",
                       "isUnderlined": true
                     },
                     {
                       "text": "がきつくなった。",
-                      "reading": "",
+                      "reading": "がきつくなった。",
                       "isUnderlined": false
                     }
                   ],
@@ -51304,14 +51525,9 @@
                   "vietnamese": "Đo vòng eo.",
                   "segments": [
                     {
-                      "text": "ウエスト",
-                      "reading": "うえすと",
+                      "text": "ウエストを測る。",
+                      "reading": "ウエストをはかる。",
                       "isUnderlined": true
-                    },
-                    {
-                      "text": "を測る。",
-                      "reading": "うえすと",
-                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -51320,7 +51536,63 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "胴周り",
+                      "vietnamese": "Vòng eo",
+                      "segments": [
+                        {
+                          "text": "胴周り",
+                          "reading": "どうまわり",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "ヒップ",
+                      "vietnamese": "Vòng 3 (vòng mông)",
+                      "segments": [
+                        {
+                          "text": "ヒップ",
+                          "reading": "ヒップ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    },
+                    {
+                      "japanese": "バスト",
+                      "vietnamese": "Vòng 1 (vòng ngực)",
+                      "segments": [
+                        {
+                          "text": "バスト",
+                          "reading": "バスト",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 133,
                 "printedPage": 130
@@ -51329,27 +51601,248 @@
             {
               "sourceNumber": 482,
               "kanji": "カロリー",
-              "hiragana": "かろりー",
+              "hiragana": "カロリー",
               "hanVietMeaning": "",
-              "meaning": "カロ リー calore Năng lượng, calo",
+              "meaning": "Năng lượng, calo",
               "examples": [
                 {
-                  "japanese": "成人男性が1日に必要なカロリーは、1.800一2.000kcalぐらいと言われている。",
-                  "vietnamese": "Lượng calo",
+                  "japanese": "成人男性が1日に必要なカロリーは、1,800〜2,000 kcalぐらいと言われている。",
+                  "vietnamese": "Lượng calo cần thiết cho một người đàn ông trưởng thành trong một ngày được cho là khoảng 1,800〜2,000 calo.",
                   "segments": [
                     {
-                      "text": "成人男性が1日に必要なカロリーは、1.800一2.000kcalぐらいと言われている。",
-                      "reading": "カロ",
+                      "text": "成人男性が1日に必要な",
+                      "reading": "せいじんだんせいがいちにちにひつような",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "カロリーは",
+                      "reading": "カロリーは",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、1,800〜2,000 kcalぐらいと言われている。",
+                      "reading": "、せんはっぴゃく〜にせんキロカロリーぐらいといわれている。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
                     "pdfPage": 133,
                     "printedPage": 130
                   }
+                },
+                {
+                  "japanese": "昨日夕食でカロリーを取りすぎたので、今日は少し食事を控えよう。",
+                  "vietnamese": "Vì bữa tối hôm qua đã hấp thụ quá nhiều calo, nên hôm nay phải kiềm chế việc ăn lại một chút.",
+                  "segments": [
+                    {
+                      "text": "昨日夕食で",
+                      "reading": "きのうゆうしょくで",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "カロリーを取りすぎた",
+                      "reading": "カロリーをとりすぎた",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "ので、今日は少し食事を控えよう。",
+                      "reading": "ので、きょうはすこししょくじをひかえよう。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 133,
+                    "printedPage": 130
+                  }
+                },
+                {
+                  "japanese": "1カロリーは一定気圧で水1グラムの温度を1℃上げるのに必要な熱量だ。",
+                  "vietnamese": "1 calo là nhiệt lượng cần thiết để cho 1 gram nước ấm tăng thêm 1°C ở áp suất không khí.",
+                  "segments": [
+                    {
+                      "text": "1カロリーは一定気圧で水1グラムの温度を1℃上げるのに必要な",
+                      "reading": "いちカロリーはいっていきあつでみずいちグラムのおんどをいちどあげるのにひつような",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "熱量",
+                      "reading": "ねつりょう",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "だ。",
+                      "reading": "だ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 134,
+                    "printedPage": 131
+                  }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿を取る",
+                      "vietnamese": "Hấp thụ năng lượng",
+                      "segments": [
+                        {
+                          "text": "＿を取る",
+                          "reading": "＿をとる",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    },
+                    {
+                      "japanese": "＿を消費する",
+                      "vietnamese": "Tiêu tốn calo",
+                      "segments": [
+                        {
+                          "text": "＿を消費する",
+                          "reading": "＿をしょうひする",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    },
+                    {
+                      "japanese": "＿が高い⇔低い",
+                      "vietnamese": "Năng lượng cao ⇔ Năng lượng thấp",
+                      "segments": [
+                        {
+                          "text": "＿が高い",
+                          "reading": "＿がたかい",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "⇔低い",
+                          "reading": "⇔ひくい",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "高＿⇔低＿",
+                      "vietnamese": "Giàu năng lượng ⇔ Ít năng lượng",
+                      "segments": [
+                        {
+                          "text": "高＿",
+                          "reading": "こう＿",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "⇔低＿",
+                          "reading": "⇔てい＿",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    },
+                    {
+                      "japanese": "＿オーバー",
+                      "vietnamese": "Thừa chất (năng lượng hấp thụ vượt mức cho phép)",
+                      "segments": [
+                        {
+                          "text": "＿オーバー",
+                          "reading": "＿オーバー",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    },
+                    {
+                      "japanese": "＿コントロール",
+                      "vietnamese": "Kiểm soát năng lượng",
+                      "segments": [
+                        {
+                          "text": "＿コントロール",
+                          "reading": "＿コントロール",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    },
+                    {
+                      "japanese": "＿表示",
+                      "vietnamese": "Biểu đồ năng lượng",
+                      "segments": [
+                        {
+                          "text": "＿表示",
+                          "reading": "＿ひょうじ",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    },
+                    {
+                      "japanese": "＿計算",
+                      "vietnamese": "Tính toán lượng calo",
+                      "segments": [
+                        {
+                          "text": "＿計算",
+                          "reading": "＿けいさん",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "ダイエット",
+                      "vietnamese": "Giảm cân",
+                      "segments": [
+                        {
+                          "text": "ダイエット",
+                          "reading": "ダイエット",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 133,
+                        "printedPage": 130
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 133,
                 "printedPage": 130
@@ -87809,6 +88302,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "be4d943e32f77974367977197d339fe3184e3f7bf1dd411b03eda54efee3ca0a"
+    "candidateHash": "078e0aceb6d89fe18fd7e1fa77cd5bfa65869dc97ca2e94aedd34fb2b30c873d"
   }
 }
