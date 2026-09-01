@@ -68322,22 +68322,128 @@
               "meaning": "し た 。",
               "examples": [
                 {
-                  "japanese": "頭。",
-                  "vietnamese": "し た 。",
+                  "japanese": "毎年正月には、家族とともに祖父母の家に行くことになっている。",
+                  "vietnamese": "Hàng năm vào dịp tết nguyên đán, tôi cùng với gia đình sẽ đến nhà ông bà.",
                   "segments": [
                     {
-                      "text": "頭。",
-                      "reading": "ごい",
+                      "text": "毎年正月には、家族と",
+                      "reading": "まいとししょうがつには、かぞくと",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ともに",
+                      "reading": "ともに",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "祖父母の家に行くことになっている。",
+                      "reading": "そふぼのいえにいくことになっている。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 346,
-                    "printedPage": 343
+                    "pdfPage": 340,
+                    "printedPage": 337
+                  }
+                },
+                {
+                  "japanese": "子どもが生まれた。母子ともに順調だ。",
+                  "vietnamese": "Đứa trẻ đã được sinh ra. Mẹ tròn con vuông.",
+                  "segments": [
+                    {
+                      "text": "子どもが生まれた。母子",
+                      "reading": "こどもがうまれた。ぼし",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ともに",
+                      "reading": "ともに",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "順調だ。",
+                      "reading": "じゅんちょうだ。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 340,
+                    "printedPage": 337
+                  }
+                },
+                {
+                  "japanese": "娘が結婚した。うれしいとともに寂しくもある。",
+                  "vietnamese": "Con gái đã đi lấy chồng. Niềm vui đi đôi với nỗi buồn.",
+                  "segments": [
+                    {
+                      "text": "娘が結婚した。うれしいと",
+                      "reading": "むすめがけっこんした。うれしいと",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ともに",
+                      "reading": "ともに",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "寂しくもある。",
+                      "reading": "さびしくもある。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 340,
+                    "printedPage": 337
+                  }
+                },
+                {
+                  "japanese": "梅雨が明けるとともに、気温が急に高くなった。",
+                  "vietnamese": "Mùa mưa kết thúc cùng với nó là nhiệt độ tăng cao đột ngột.",
+                  "segments": [
+                    {
+                      "text": "梅雨が明けると",
+                      "reading": "つゆがあけると",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ともに",
+                      "reading": "ともに",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、気温が急に高くなった。",
+                      "reading": "、きおんがきゅうにたかくなった。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 340,
+                    "printedPage": 337
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "同時に",
+                      "vietnamese": "Đồng thời",
+                      "segments": [
+                        {
+                          "text": "同時に",
+                          "reading": "どうじに",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 340,
+                        "printedPage": 337
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 346,
                 "printedPage": 343
@@ -69165,6 +69271,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "b5b34de9ba3dae2b5b426e0f5a47675f29b119e2f28cb1af2b3aa43d902e014d"
+    "candidateHash": "b47bfd87753aa43e325bf76b1f7b57a0adb59106a6bb9177d018bd82c12d4898"
   }
 }
