@@ -34461,13 +34461,23 @@
               "meaning": "Quay phim, chụp ảnh",
               "examples": [
                 {
-                  "japanese": "プロのカメラマンに稼写真を撮影してもらった。",
-                  "vietnamese": "Tôi đã được chụp ảnh chân dung bởi thợ chụp",
+                  "japanese": "プロのカメラマンに記念写真を撮影してもらった。",
+                  "vietnamese": "Tôi đã được thợ chụp ảnh chụp cho một bức ảnh kỷ niệm.",
                   "segments": [
                     {
-                      "text": "プロのカメラマンに稼写真を撮影してもらった。",
-                      "reading": "えい",
+                      "text": "プロのカメラマンに記念写真を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "撮影",
+                      "reading": "さつえい",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "してもらった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34520,12 +34530,22 @@
               "examples": [
                 {
                   "japanese": "アメリカはイギリスから独立した。",
-                  "vietnamese": "My đã giành độc lập từ Anh.",
+                  "vietnamese": "Mỹ đã giành độc lập từ Anh.",
                   "segments": [
                     {
-                      "text": "アメリカはイギリスから独立した。",
-                      "reading": "どく",
+                      "text": "アメリカはイギリスから",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "独立",
+                      "reading": "どくりつ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "した。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34664,13 +34684,18 @@
               "meaning": "Bốc thăm, quay xổ số",
               "examples": [
                 {
-                  "japanese": "抽選に当たってテレビをゃ$らった。",
-                  "vietnamese": "Tôi đã bốc thăm trúng thưởng được tivi.",
+                  "japanese": "抽選に当たってテレビをもらった。",
+                  "vietnamese": "Tôi đã bốc thăm trúng được tivi.",
                   "segments": [
                     {
-                      "text": "抽選に当たってテレビをゃ$らった。",
-                      "reading": "ちゅ",
+                      "text": "抽選",
+                      "reading": "ちゅうせん",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "に当たってテレビをもらった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34694,12 +34719,22 @@
               "examples": [
                 {
                   "japanese": "駅前で通行人にちらしを配布する。",
-                  "vietnamese": "Phattoroi cho người đi đường trước nhà ga,",
+                  "vietnamese": "Phát tờ rơi cho người đi đường trước nhà ga.",
                   "segments": [
                     {
-                      "text": "駅前で通行人にちらしを配布する。",
-                      "reading": "いふ",
+                      "text": "駅前で通行人にちらしを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "配布",
+                      "reading": "はいふ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -67372,6 +67407,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "d48c943f102bb17bdf61a04460df50a21f92a86ba805ae8f19b5ecd519498c62"
+    "candidateHash": "eb3a75778d1fb901e9ef597aa4c2df2054133d17c429eaf200d3594db4fb09cd"
   }
 }
