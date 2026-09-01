@@ -8,10 +8,16 @@ test('startup seed creates missing N3 lessons without deleting existing N2 data'
     $executeRaw: async () => calls.push('lock'),
     vocabularySet: {
       findMany: async () => [],
-      create: async () => calls.push('create'),
+      create: async () => {
+        calls.push('create');
+        return { id: 'set-1' };
+      },
       deleteMany: async () => {
         throw new Error('N3 seed must never delete N2 sets');
       },
+    },
+    vocabulary: {
+      createMany: async ({ data }) => calls.push(['create-words', data]),
     },
   };
   const client = { $transaction: async (callback) => callback(tx) };
@@ -21,6 +27,9 @@ test('startup seed creates missing N3 lessons without deleting existing N2 data'
   assert.equal(seeded, true);
   assert.equal(calls[0], 'lock');
   assert.equal(calls.filter((call) => call === 'create').length, 12);
+  const wordCalls = calls.filter(([name]) => name === 'create-words');
+  assert.equal(wordCalls.length, 12);
+  assert.ok(wordCalls.every(([, words]) => words.every((word) => word.setId === 'set-1')));
 });
 
 test('startup seed backfills Han-Viet meanings without resetting existing vocabulary', async () => {
