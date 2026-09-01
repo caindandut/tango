@@ -33812,12 +33812,17 @@
               "examples": [
                 {
                   "japanese": "日常の業務を果たす。",
-                  "vietnamese": "Hoan thành nghĩa vụ hằng ngày.",
+                  "vietnamese": "Hoàn thành nghĩa vụ hàng ngày.",
                   "segments": [
                     {
-                      "text": "日常の業務を果たす。",
-                      "reading": "う",
+                      "text": "日常",
+                      "reading": "にちじょう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "の業務を果たす。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -33841,12 +33846,22 @@
               "examples": [
                 {
                   "japanese": "これは一般の店では手に入らない薬だ。",
-                  "vietnamese": "Pay là loại thuốc không mua được ở các hiệu thuốc",
+                  "vietnamese": "Đây là loại thuốc không mua được ở các hiệu thuốc thông thường.",
                   "segments": [
                     {
-                      "text": "これは一般の店では手に入らない薬だ。",
-                      "reading": "いっ",
+                      "text": "これは",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "一般",
+                      "reading": "いっぱん",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "の店では手に入らない薬だ。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -33869,13 +33884,23 @@
               "meaning": "Kiến thức phổ thông, ý thức cơ bản",
               "examples": [
                 {
-                  "japanese": "ミスをしたらきちんと責任をとるのが社会人のTừ識だ。",
-                  "vietnamese": "Gây ra lỗi mà nhận trách nhiệm đàng",
+                  "japanese": "ミスをしたらきちんと責任をとるのが社会人の常識だ。",
+                  "vietnamese": "Gây ra lỗi mà nhận trách nhiệm đàng hoàng là lẽ thường của người đi làm.",
                   "segments": [
                     {
-                      "text": "ミスをしたらきちんと責任をとるのが社会人のTừ識だ。",
-                      "reading": "じょう",
+                      "text": "ミスをしたらきちんと責任をとるのが社会人の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "常識",
+                      "reading": "じょうしき",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "だ。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -33899,12 +33924,17 @@
               "examples": [
                 {
                   "japanese": "ことわざには教訓が含まれていることが多い。",
-                  "vietnamese": "Tuc ngữ đa phần đều bao gồm cả giáo huấn,",
+                  "vietnamese": "Tục ngữ đa phần đều bao gồm cả giáo huấn.",
                   "segments": [
                     {
-                      "text": "ことわざには教訓が含まれていることが多い。",
-                      "reading": "わざ",
+                      "text": "ことわざ",
+                      "reading": "ことわざ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "には教訓が含まれていることが多い。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -67262,6 +67292,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "1fcc7128391852822e048da05d4026609c1a57fcd5a30efe48a03d670de3ef0d"
+    "candidateHash": "b00530379dea18417506a7f8611efc2da9561de6a3179144d15992628da07ac5"
   }
 }
