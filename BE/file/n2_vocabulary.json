@@ -33958,12 +33958,22 @@
               "examples": [
                 {
                   "japanese": "すべての国民には健康的な生活を送る権利がある。",
-                  "vietnamese": "Toàn bộ người dân đêu có quyên được sinh",
+                  "vietnamese": "Toàn bộ người dân đều có quyền được sinh sống khỏe mạnh.",
                   "segments": [
                     {
-                      "text": "すべての国民には健康的な生活を送る権利がある。",
-                      "reading": "けん",
+                      "text": "すべての国民には健康的な生活を送る",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "権利",
+                      "reading": "けんり",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "がある。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -33990,9 +34000,19 @@
                   "vietnamese": "Cha mẹ có nghĩa vụ giáo dục con cái.",
                   "segments": [
                     {
-                      "text": "親には子どもに教育を受けさせる義務がある。",
-                      "reading": "む",
+                      "text": "親には子どもに教育を受けさせる",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "義務",
+                      "reading": "ぎむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "がある。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34016,12 +34036,22 @@
               "examples": [
                 {
                   "japanese": "けんかのきっかけは、つまらないことだった。",
-                  "vietnamese": "Lydocainhaula chuyện chẳng đâu vào đâu cả.",
+                  "vietnamese": "Lý do cãi nhau là một chuyện chẳng đâu vào đâu cả.",
                   "segments": [
                     {
-                      "text": "けんかのきっかけは、つまらないことだった。",
-                      "reading": "きっ",
+                      "text": "けんかの",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "きっかけ",
+                      "reading": "きっかけ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "は、つまらないことだった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34045,12 +34075,22 @@
               "examples": [
                 {
                   "japanese": "彼の行動は、とても立派だった。",
-                  "vietnamese": "Hanh động của anh ấy thật là tuyệt vời.",
+                  "vietnamese": "Hành động của anh ấy thật là tuyệt vời.",
                   "segments": [
                     {
-                      "text": "彼の行動は、とても立派だった。",
-                      "reading": "こう",
+                      "text": "彼の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "行動",
+                      "reading": "こうどう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "は、とても立派だった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -34074,12 +34114,22 @@
               "examples": [
                 {
                   "japanese": "今は、文書の作成にはパソコンが使用されることが多い。",
-                  "vietnamese": "Ngày nay người ta viết văn bằng",
+                  "vietnamese": "Ngày nay người ta thường sử dụng máy tính để soạn thảo văn bản.",
                   "segments": [
                     {
-                      "text": "今は、文書の作成にはパソコンが使用されることが多い。",
-                      "reading": "よう",
+                      "text": "今は、文書の作成にはパソコンが",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "使用",
+                      "reading": "しよう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "されることが多い。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -67292,6 +67342,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "b00530379dea18417506a7f8611efc2da9561de6a3179144d15992628da07ac5"
+    "candidateHash": "b54bf0dcf63ac69f260aea50d593e2ff4c26a536fa0644e81223651ae77c89e2"
   }
 }
