@@ -10151,8 +10151,8 @@
               "meaning": "Lâm thời, tạm thời",
               "examples": [
                 {
-                  "japanese": "急病人が出たため、診察は臨時にこの家で行うことになった。",
-                  "vietnamese": "Vì có bệnh nhân cấp cứu nên tạm thời chẩn đoán tại nhà.",
+                  "japanese": "急病人が出たため、診察は臨時にこの駅で行うことになった。",
+                  "vietnamese": "Vì có bệnh nhân cấp cứu nên tạm thời chẩn đoán tại ga này.",
                   "segments": [
                     {
                       "text": "急病人が出たため、診察は",
@@ -10165,8 +10165,8 @@
                       "isUnderlined": true
                     },
                     {
-                      "text": "にこの家で行うことになった。",
-                      "reading": "にこのいえでおこなうことになった。",
+                      "text": "にこの駅で行うことになった。",
+                      "reading": "にこのえきでおこなうことになった。",
                       "isUnderlined": false
                     }
                   ],
@@ -11070,7 +11070,7 @@
                   "segments": [
                     {
                       "text": "東京23区の面積を",
-                      "reading": "ごうけい",
+                      "reading": "とうきょう23くのめんせきを",
                       "isUnderlined": false
                     },
                     {
@@ -11080,7 +11080,7 @@
                     },
                     {
                       "text": "すると、2,187km²になる。",
-                      "reading": "",
+                      "reading": "すると、2,187km²になる。",
                       "isUnderlined": false
                     }
                   ],
@@ -11475,7 +11475,7 @@
                   "segments": [
                     {
                       "text": "今年は",
-                      "reading": "ししゅつ",
+                      "reading": "ことしは",
                       "isUnderlined": false
                     },
                     {
@@ -11485,7 +11485,7 @@
                     },
                     {
                       "text": "が収入を上回って赤字になった。",
-                      "reading": "ししゅつ",
+                      "reading": "がしゅうにゅうをうわまわってあかじになった。",
                       "isUnderlined": false
                     }
                   ],
@@ -12115,7 +12115,7 @@
                     },
                     {
                       "text": "の削減が求められている。",
-                      "reading": "けいひ",
+                      "reading": "のさくげんがもとめられている。",
                       "isUnderlined": false
                     }
                   ],
@@ -12310,7 +12310,7 @@
                   "segments": [
                     {
                       "text": "今月の支出をチェックしているのだが、何度やっても",
-                      "reading": "かんじょう",
+                      "reading": "こんげつのししゅつをチェックしているのだが、なんどやっても",
                       "isUnderlined": false
                     },
                     {
@@ -12320,7 +12320,7 @@
                     },
                     {
                       "text": "が合わない。",
-                      "reading": "かんじょう",
+                      "reading": "があわない。",
                       "isUnderlined": false
                     }
                   ],
@@ -12475,7 +12475,7 @@
                   "segments": [
                     {
                       "text": "大学に資料を",
-                      "reading": "せいきゅう",
+                      "reading": "だいがくにしりょうを",
                       "isUnderlined": false
                     },
                     {
@@ -12485,7 +12485,7 @@
                     },
                     {
                       "text": "する。",
-                      "reading": "",
+                      "reading": "する。",
                       "isUnderlined": false
                     }
                   ],
@@ -12500,7 +12500,7 @@
                   "segments": [
                     {
                       "text": "彼は離婚するとき、1,000万円の慰謝料を",
-                      "reading": "せいきゅう",
+                      "reading": "かれはりこんするとき、いっせんまんえんのいしゃりょうを",
                       "isUnderlined": false
                     },
                     {
@@ -12510,7 +12510,7 @@
                     },
                     {
                       "text": "された。",
-                      "reading": "",
+                      "reading": "された。",
                       "isUnderlined": false
                     }
                   ],
@@ -12525,7 +12525,7 @@
                   "segments": [
                     {
                       "text": "今月は携帯電話をよく使ったので、",
-                      "reading": "せいきゅう",
+                      "reading": "こんげつはけいたいでんわをよくつかったので、",
                       "isUnderlined": false
                     },
                     {
@@ -12535,7 +12535,7 @@
                     },
                     {
                       "text": "がいつもの倍になった。",
-                      "reading": "せいきゅう",
+                      "reading": "がいつものばいになった。",
                       "isUnderlined": false
                     }
                   ],
@@ -12865,7 +12865,7 @@
                   "segments": [
                     {
                       "text": "会社は社員から新しい企画のアイデアを",
-                      "reading": "ぼしゅう",
+                      "reading": "かいしゃはしゃいんからあたらしいきかくのアイデアを",
                       "isUnderlined": false
                     },
                     {
@@ -12875,7 +12875,7 @@
                     },
                     {
                       "text": "した。",
-                      "reading": "",
+                      "reading": "した。",
                       "isUnderlined": false
                     }
                   ],
@@ -13261,7 +13261,7 @@
                   ]
                 },
                 {
-                  "label": "関",
+                  "label": "類",
                   "items": [
                     {
                       "japanese": "好く",
@@ -13277,7 +13277,12 @@
                         "pdfPage": 33,
                         "printedPage": 30
                       }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
                     {
                       "japanese": "好きな",
                       "vietnamese": "Thích",
@@ -13294,12 +13299,32 @@
                       }
                     },
                     {
-                      "japanese": "（好みも十人十色、人の好みはそれぞれ違う。）",
-                      "vietnamese": "(Ví dụ: Sở thích của mỗi người là khác nhau.)",
+                      "japanese": "（名）好み",
+                      "vietnamese": "Sở thích",
                       "segments": [
                         {
-                          "text": "（好みも十人十色、人の好みはそれぞれ違う。）",
-                          "reading": "（このみもじゅうにんといろ、ひとのこのみはそれぞれちがう。）",
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "好み",
+                          "reading": "このみ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 33,
+                        "printedPage": 30
+                      }
+                    },
+                    {
+                      "japanese": "（例．人の好みはそれぞれ違う。）",
+                      "vietnamese": "（Ví dụ: Sở thích của mỗi người là khác nhau。）",
+                      "segments": [
+                        {
+                          "text": "（例．人の好みはそれぞれ違う。）",
+                          "reading": "（れい．ひとのこのみはそれぞれちがう。）",
                           "isUnderlined": false
                         }
                       ],
@@ -13564,7 +13589,7 @@
                   "label": "連",
                   "items": [
                     {
-                      "japanese": "（名）お願い",
+                      "japanese": "（名）願い",
                       "vietnamese": "Sự mong ước, lời nguyện cầu",
                       "segments": [
                         {
@@ -13573,8 +13598,8 @@
                           "isUnderlined": false
                         },
                         {
-                          "text": "お願い",
-                          "reading": "おねがい",
+                          "text": "願い",
+                          "reading": "ねがい",
                           "isUnderlined": true
                         }
                       ],
@@ -13624,7 +13649,48 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "甘やかす",
+                      "vietnamese": "Nuông chiều",
+                      "segments": [
+                        {
+                          "text": "甘やかす",
+                          "reading": "あまやかす",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 34,
+                        "printedPage": 31
+                      }
+                    },
+                    {
+                      "japanese": "（名）甘え",
+                      "vietnamese": "Sự nũng nịu",
+                      "segments": [
+                        {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "甘え",
+                          "reading": "あまえ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 34,
+                        "printedPage": 31
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 33,
                 "printedPage": 30
@@ -13779,7 +13845,7 @@
               ],
               "relations": [
                 {
-                  "label": "連",
+                  "label": "関",
                   "items": [
                     {
                       "japanese": "気を失う",
@@ -13925,7 +13991,12 @@
                         "pdfPage": 34,
                         "printedPage": 31
                       }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "label": "慣",
+                  "items": [
                     {
                       "japanese": "目を＿",
                       "vietnamese": "Không tin vào mắt mình",
@@ -13945,25 +14016,25 @@
                         "pdfPage": 34,
                         "printedPage": 31
                       }
-                    }
-                  ]
-                },
-                {
-                  "label": "合",
-                  "items": [
+                    },
                     {
-                      "japanese": "①②疑い＿を持つ",
+                      "japanese": "（名）①②疑い＿を持つ",
                       "vietnamese": "Mang theo sự nghi ngờ",
                       "segments": [
                         {
-                          "text": "①②疑い",
-                          "reading": "うたがい",
+                          "text": "（名）①②疑い",
+                          "reading": "（めい）①②うたがい",
                           "isUnderlined": false
                         },
                         {
-                          "text": "＿を持つ",
-                          "reading": "＿をもつ",
+                          "text": "＿",
+                          "reading": "",
                           "isUnderlined": true
+                        },
+                        {
+                          "text": "を持つ",
+                          "reading": "をもつ",
+                          "isUnderlined": false
                         }
                       ],
                       "source": {
@@ -13973,12 +14044,12 @@
                     },
                     {
                       "japanese": "～がある⇔ない",
-                      "vietnamese": "Nghi ngờ⇔Không nghi ngờ",
+                      "vietnamese": "Nghi ngờ ⇔ Không nghi ngờ",
                       "segments": [
                         {
                           "text": "～がある",
                           "reading": "～がある",
-                          "isUnderlined": true
+                          "isUnderlined": false
                         },
                         {
                           "text": "⇔ない",
@@ -14091,9 +14162,14 @@
                       "vietnamese": "Đau khổ, nỗi đau",
                       "segments": [
                         {
-                          "text": "（名）苦しみ",
-                          "reading": "くるしむ",
+                          "text": "（名）",
+                          "reading": "",
                           "isUnderlined": false
+                        },
+                        {
+                          "text": "苦しみ",
+                          "reading": "くるしみ",
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -14171,9 +14247,14 @@
                       "vietnamese": "Nỗi buồn",
                       "segments": [
                         {
-                          "text": "（名）悲しみ",
-                          "reading": "かなしむ",
+                          "text": "（名）",
+                          "reading": "",
                           "isUnderlined": false
+                        },
+                        {
+                          "text": "悲しみ",
+                          "reading": "かなしみ",
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -14386,12 +14467,12 @@
                   }
                 },
                 {
-                  "japanese": "何度聞いても、父はうなずいてくれない。",
-                  "vietnamese": "Dù hỏi bao nhiêu lần nhưng bố vẫn không chịu đồng ý。",
+                  "japanese": "何度頼んでも、父はうなずいてくれない。",
+                  "vietnamese": "Dù năn nỉ bao nhiêu lần nhưng bố vẫn không chịu đồng ý。",
                   "segments": [
                     {
-                      "text": "何度聞いても、父は",
-                      "reading": "なんどきいても、ちちは",
+                      "text": "何度頼んでも、父は",
+                      "reading": "なんどたのんでも、ちちは",
                       "isUnderlined": false
                     },
                     {
@@ -14713,22 +14794,22 @@
               "meaning": "Ngồi xổm",
               "examples": [
                 {
-                  "japanese": "子どもが輪になって地面の上をしゃがんでいる。",
+                  "japanese": "子どもが道にしゃがんで地面の虫を見ている。",
                   "vietnamese": "Bọn trẻ ngồi xổm trên đường nhìn con sâu trên mặt đất。",
                   "segments": [
                     {
-                      "text": "子どもが輪になって地面の上を",
-                      "reading": "こどもがわになってじめんのうえを",
+                      "text": "子どもが道に",
+                      "reading": "こどもがみちに",
                       "isUnderlined": false
                     },
                     {
-                      "text": "しゃがんでいる",
-                      "reading": "しゃがんでいる",
+                      "text": "しゃがんで",
+                      "reading": "しゃがんで",
                       "isUnderlined": true
                     },
                     {
-                      "text": "。",
-                      "reading": "",
+                      "text": "地面の虫を見ている。",
+                      "reading": "じめんのむしをみている。",
                       "isUnderlined": false
                     }
                   ],
@@ -15663,7 +15744,7 @@
                   "items": [
                     {
                       "japanese": "気配り→＿をする、＿がある⇔ない",
-                      "vietnamese": "Quan tâm, có/không có sự quan tâm (例．あの人は気が利く。)",
+                      "vietnamese": "Quan tâm, có/không có sự quan tâm (例．あの人は気配りのある人だ。) (Ví dụ: Người kia là người tinh tế.)",
                       "segments": [
                         {
                           "text": "気配り→",
@@ -15671,13 +15752,23 @@
                           "isUnderlined": false
                         },
                         {
-                          "text": "＿をする",
+                          "text": "＿",
                           "reading": "",
                           "isUnderlined": true
                         },
                         {
-                          "text": "、＿がある⇔ない",
-                          "reading": "、＿がある⇔ない",
+                          "text": "をする、",
+                          "reading": "をする、",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "がある⇔ない",
+                          "reading": "がある⇔ない",
                           "isUnderlined": false
                         }
                       ],
@@ -16101,8 +16192,8 @@
                     }
                   ],
                   "source": {
-                    "pdfPage": 38,
-                    "printedPage": 35
+                    "pdfPage": 35,
+                    "printedPage": 32
                   }
                 },
                 {
@@ -16126,8 +16217,8 @@
                     }
                   ],
                   "source": {
-                    "pdfPage": 38,
-                    "printedPage": 35
+                    "pdfPage": 35,
+                    "printedPage": 32
                   }
                 },
                 {
@@ -16151,78 +16242,163 @@
                     }
                   ],
                   "source": {
-                    "pdfPage": 38,
-                    "printedPage": 35
+                    "pdfPage": 35,
+                    "printedPage": 32
+                  }
+                },
+                {
+                  "japanese": "山の高さを測る。",
+                  "vietnamese": "Đo độ cao của ngọn núi.",
+                  "segments": [
+                    {
+                      "text": "山の高さを",
+                      "reading": "やまのたかさを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "測る",
+                      "reading": "はかる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 35,
+                    "printedPage": 32
+                  }
+                },
+                {
+                  "japanese": "地熱を測る。",
+                  "vietnamese": "Đo địa nhiệt (nhiệt độ bên trong trái đất).",
+                  "segments": [
+                    {
+                      "text": "地熱を",
+                      "reading": "ちねつを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "測る",
+                      "reading": "はかる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 35,
+                    "printedPage": 32
+                  }
+                },
+                {
+                  "japanese": "水深を測る。",
+                  "vietnamese": "Đo mực nước (độ sâu).",
+                  "segments": [
+                    {
+                      "text": "水深を",
+                      "reading": "すいしんを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "測る",
+                      "reading": "はかる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 35,
+                    "printedPage": 32
+                  }
+                },
+                {
+                  "japanese": "荷物の重さを量る。",
+                  "vietnamese": "Đo cân nặng của hành lý.",
+                  "segments": [
+                    {
+                      "text": "荷物の重さを",
+                      "reading": "にもつのおもさを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "量る",
+                      "reading": "はかる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 36,
+                    "printedPage": 33
+                  }
+                },
+                {
+                  "japanese": "ダムの貯水量を量る。",
+                  "vietnamese": "Đo thể tích của đập nước.",
+                  "segments": [
+                    {
+                      "text": "ダムの貯水量を",
+                      "reading": "ダムのちょすいりょうを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "量る",
+                      "reading": "はかる",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 36,
+                    "printedPage": 33
                   }
                 }
               ],
               "relations": [
                 {
-                  "label": "関",
+                  "label": "類",
                   "items": [
                     {
-                      "japanese": "計器",
-                      "vietnamese": "Đồ đo, dụng cụ đo",
+                      "japanese": "計測する",
+                      "vietnamese": "Đo lường, đo đạc",
                       "segments": [
                         {
-                          "text": "計器",
-                          "reading": "けいき",
+                          "text": "計測する",
+                          "reading": "けいそくする",
                           "isUnderlined": true
                         }
                       ],
                       "source": {
-                        "pdfPage": 38,
-                        "printedPage": 35
+                        "pdfPage": 35,
+                        "printedPage": 32
                       }
-                    },
-                    {
-                      "japanese": "測る",
-                      "vietnamese": "Đo độ cao của ngọn núi",
-                      "segments": [
-                        {
-                          "text": "測る",
-                          "reading": "はかる",
-                          "isUnderlined": true
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 38,
-                        "printedPage": 35
-                      }
-                    },
-                    {
-                      "japanese": "地熱を測る",
-                      "vietnamese": "Đo địa nhiệt (nhiệt độ bên trong trái đất).",
-                      "segments": [
-                        {
-                          "text": "地熱を測る",
-                          "reading": "ちねつをはかる",
-                          "isUnderlined": true
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 38,
-                        "printedPage": 35
-                      }
-                    },
-                    {
-                      "japanese": "水深を測る",
-                      "vietnamese": "Đo mực nước (độ sâu).",
-                      "segments": [
-                        {
-                          "text": "水深を測る",
-                          "reading": "すいしんをはかる",
-                          "isUnderlined": true
-                        }
-                      ],
-                      "source": {
-                        "pdfPage": 38,
-                        "printedPage": 35
-                      }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
                     {
                       "japanese": "測定する",
-                      "vietnamese": "Đo lường, đo đạc",
+                      "vietnamese": "Đo lường",
                       "segments": [
                         {
                           "text": "測定する",
@@ -16231,8 +16407,28 @@
                         }
                       ],
                       "source": {
-                        "pdfPage": 38,
-                        "printedPage": 35
+                        "pdfPage": 35,
+                        "printedPage": 32
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "測量する",
+                      "vietnamese": "Đo lường",
+                      "segments": [
+                        {
+                          "text": "測量する",
+                          "reading": "そくりょうする",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 36,
+                        "printedPage": 33
                       }
                     }
                   ]
@@ -16241,7 +16437,25 @@
               "source": {
                 "pdfPage": 38,
                 "printedPage": 35
-              }
+              },
+              "notes": [
+                {
+                  "japanese": "※深さや高さなどを数値で表せるものを、やや大きい器械を使って調べるときに使うことが多い。",
+                  "vietnamese": "Thường sử dụng khi đo độ sâu, chiều cao bằng những máy móc lớn.",
+                  "source": {
+                    "pdfPage": 35,
+                    "printedPage": 32
+                  }
+                },
+                {
+                  "japanese": "※重さや量などをはかりを使って調べるときに使うことが多い。",
+                  "vietnamese": "Thường sử dụng khi đo cân nặng hay khối lượng.",
+                  "source": {
+                    "pdfPage": 36,
+                    "printedPage": 33
+                  }
+                }
+              ]
             },
             {
               "sourceNumber": 132,
@@ -17214,17 +17428,17 @@
               "meaning": "Đau, khổ",
               "examples": [
                 {
-                  "japanese": "【職／健康…】に悩む。",
-                  "vietnamese": "Đau (trong công việc, sức khỏe,...)",
+                  "japanese": "【歯／頭／足…】が痛む。",
+                  "vietnamese": "Đau (răng/ đầu/ chân,…).",
                   "segments": [
                     {
-                      "text": "【職／健康…】に",
-                      "reading": "【しょく／けんこう…】に",
+                      "text": "【歯／頭／足…】が",
+                      "reading": "【は／あたま／あし…】が",
                       "isUnderlined": false
                     },
                     {
-                      "text": "悩む",
-                      "reading": "なやむ",
+                      "text": "痛む",
+                      "reading": "いたむ",
                       "isUnderlined": true
                     },
                     {
@@ -17485,15 +17699,20 @@
               ],
               "relations": [
                 {
-                  "label": "関",
+                  "label": "連",
                   "items": [
                     {
                       "japanese": "（名）酔い",
-                      "vietnamese": "Nỗi đau",
+                      "vietnamese": "Say mềm",
                       "segments": [
                         {
-                          "text": "（名）酔い",
-                          "reading": "（めい）よい",
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "酔い",
+                          "reading": "よい",
                           "isUnderlined": true
                         }
                       ],
@@ -17503,13 +17722,18 @@
                       }
                     },
                     {
-                      "japanese": "（名）酔い止め",
-                      "vietnamese": "Thuốc chống say",
+                      "japanese": "＿が回る",
+                      "vietnamese": "Say mềm",
                       "segments": [
                         {
-                          "text": "（名）酔い止め",
-                          "reading": "（めい）よいどめ",
+                          "text": "＿",
+                          "reading": "",
                           "isUnderlined": true
+                        },
+                        {
+                          "text": "が回る",
+                          "reading": "がまわる",
+                          "isUnderlined": false
                         }
                       ],
                       "source": {
@@ -17517,13 +17741,68 @@
                         "printedPage": 38
                       }
                     },
+                    {
+                      "japanese": "＿が覚める",
+                      "vietnamese": "Tỉnh rượu",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "が覚める",
+                          "reading": "がさめる",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
                     {
                       "japanese": "二日酔い",
-                      "vietnamese": "Say rượu nhẹ",
+                      "vietnamese": "Nhức đầu vì say rượu từ hôm trước",
                       "segments": [
                         {
                           "text": "二日酔い",
                           "reading": "ふつかよい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    },
+                    {
+                      "japanese": "酔っぱらう",
+                      "vietnamese": "Say rượu (例．夫はぐでんぐでんに酔っぱらって帰ってきた。) (Ví dụ: Chồng tôi về trong tình trạng say mềm.)",
+                      "segments": [
+                        {
+                          "text": "酔っぱらう",
+                          "reading": "よっぱらう",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 41,
+                        "printedPage": 38
+                      }
+                    },
+                    {
+                      "japanese": "酔っぱらい",
+                      "vietnamese": "Người say (例．駅前で酔っぱらいが騒いでいる。) (Ví dụ: Tên say rượu gây ồn ào trước nhà ga.)",
+                      "segments": [
+                        {
+                          "text": "酔っぱらい",
+                          "reading": "よっぱらい",
                           "isUnderlined": true
                         }
                       ],
@@ -17580,7 +17859,7 @@
                   ]
                 },
                 {
-                  "label": "類",
+                  "label": "関",
                   "items": [
                     {
                       "japanese": "うっとりする",
@@ -17810,7 +18089,7 @@
               ],
               "relations": [
                 {
-                  "label": "関",
+                  "label": "類",
                   "items": [
                     {
                       "japanese": "診察する",
@@ -18050,15 +18329,15 @@
                   ]
                 },
                 {
-                  "label": "関",
+                  "label": "類",
                   "items": [
                     {
-                      "japanese": "勤める",
+                      "japanese": "勤務する",
                       "vietnamese": "Làm việc",
                       "segments": [
                         {
-                          "text": "勤める",
-                          "reading": "つとめる",
+                          "text": "勤務する",
+                          "reading": "きんむする",
                           "isUnderlined": true
                         }
                       ],
@@ -18066,7 +18345,12 @@
                         "pdfPage": 42,
                         "printedPage": 39
                       }
-                    },
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
                     {
                       "japanese": "（名）勤め",
                       "vietnamese": "Công việc（例。「お勤めはどちらですか」） (Ví dụ: “Công việc của bạn là gì?”)",
@@ -18080,6 +18364,41 @@
                           "text": "勤め",
                           "reading": "つとめ",
                           "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    },
+                    {
+                      "japanese": "→＿に出る、＿をやめる",
+                      "vietnamese": "Đi làm, Nghỉ việc",
+                      "segments": [
+                        {
+                          "text": "→",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "に出る、",
+                          "reading": "にでる、",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "をやめる",
+                          "reading": "をやめる",
+                          "isUnderlined": false
                         }
                       ],
                       "source": {
@@ -18204,6 +18523,51 @@
                 }
               ],
               "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "（名）稼ぎ",
+                      "vietnamese": "Thu nhập",
+                      "segments": [
+                        {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "稼ぎ",
+                          "reading": "かせぎ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    },
+                    {
+                      "japanese": "＿がいい⇔悪い",
+                      "vietnamese": "Thu nhập cao⇔Thu nhập thấp",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "がいい⇔悪い",
+                          "reading": "がいい⇔わるい",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 42,
+                        "printedPage": 39
+                      }
+                    }
+                  ]
+                },
                 {
                   "label": "合",
                   "items": [
@@ -18335,7 +18699,7 @@
               ],
               "relations": [
                 {
-                  "label": "関",
+                  "label": "類",
                   "items": [
                     {
                       "japanese": "払う",
@@ -18533,8 +18897,23 @@
                   "label": "関",
                   "items": [
                     {
-                      "japanese": "（名）払い込み",
-                      "vietnamese": "Thanh toán — Phiếu thanh toán",
+                      "japanese": "払う",
+                      "vietnamese": "Trả tiền",
+                      "segments": [
+                        {
+                          "text": "払う",
+                          "reading": "はらう",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 43,
+                        "printedPage": 40
+                      }
+                    },
+                    {
+                      "japanese": "（名）払い込み→用紙",
+                      "vietnamese": "Thanh toán → Phiếu thanh toán",
                       "segments": [
                         {
                           "text": "（名）",
@@ -18544,6 +18923,16 @@
                         {
                           "text": "払い込み",
                           "reading": "はらいこみ",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "→",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "用紙",
+                          "reading": "ようし",
                           "isUnderlined": true
                         }
                       ],
@@ -18739,7 +19128,7 @@
                   "items": [
                     {
                       "japanese": "（名）引き出し",
-                      "vietnamese": "Ngăn kéo",
+                      "vietnamese": "Ngăn kéo (例．机の引き出し) (Ví dụ: Ngăn kéo của cái bàn)",
                       "segments": [
                         {
                           "text": "（名）",
@@ -18833,7 +19222,7 @@
               "sourceNumber": 157,
               "kanji": "儲ける",
               "hiragana": "もうける",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "",
               "meaning": "$ も うけ る ッ も る う ける Kiếm lời, có con",
               "examples": [
                 {
@@ -18982,7 +19371,7 @@
                   "segments": [
                     {
                       "text": "業績／成績…が",
-                      "reading": "おちこむ",
+                      "reading": "ぎょうせき／せいせき…が",
                       "isUnderlined": false
                     },
                     {
@@ -19007,7 +19396,7 @@
                   "segments": [
                     {
                       "text": "仕事でミスをして",
-                      "reading": "おちこむ",
+                      "reading": "しごとでミスをして",
                       "isUnderlined": false
                     },
                     {
@@ -19032,7 +19421,7 @@
                   "segments": [
                     {
                       "text": "「そんなに",
-                      "reading": "",
+                      "reading": "「そんなに",
                       "isUnderlined": false
                     },
                     {
@@ -19042,7 +19431,7 @@
                     },
                     {
                       "text": "」",
-                      "reading": "",
+                      "reading": "」",
                       "isUnderlined": false
                     }
                   ],
@@ -19247,7 +19636,7 @@
                   "segments": [
                     {
                       "text": "磁石と磁石が",
-                      "reading": "",
+                      "reading": "じしゃくとじしゃくが",
                       "isUnderlined": false
                     },
                     {
@@ -19257,7 +19646,7 @@
                     },
                     {
                       "text": "離れない。",
-                      "reading": "",
+                      "reading": "はなれない。",
                       "isUnderlined": false
                     }
                   ],
@@ -19272,7 +19661,7 @@
                   "segments": [
                     {
                       "text": "靴の底にガムが",
-                      "reading": "",
+                      "reading": "くつのそこにガムが",
                       "isUnderlined": false
                     },
                     {
@@ -19282,7 +19671,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -19297,7 +19686,7 @@
                   "segments": [
                     {
                       "text": "3才の娘はいつも私に",
-                      "reading": "",
+                      "reading": "3さいのむすめはいつもわたしに",
                       "isUnderlined": false
                     },
                     {
@@ -19307,7 +19696,7 @@
                     },
                     {
                       "text": "離れようとしない。",
-                      "reading": "",
+                      "reading": "はなれようとしない。",
                       "isUnderlined": false
                     }
                   ],
@@ -19357,7 +19746,7 @@
                   "segments": [
                     {
                       "text": "机と机を",
-                      "reading": "",
+                      "reading": "つくえとつくえを",
                       "isUnderlined": false
                     },
                     {
@@ -19367,7 +19756,7 @@
                     },
                     {
                       "text": "並べた。",
-                      "reading": "",
+                      "reading": "ならべた。",
                       "isUnderlined": false
                     }
                   ],
@@ -19382,7 +19771,7 @@
                   "segments": [
                     {
                       "text": "ソファーが小さいので互いに体を",
-                      "reading": "",
+                      "reading": "ソファーがちいさいのでたがいにからだを",
                       "isUnderlined": false
                     },
                     {
@@ -19392,7 +19781,7 @@
                     },
                     {
                       "text": "座った。",
-                      "reading": "",
+                      "reading": "すわった。",
                       "isUnderlined": false
                     }
                   ],
@@ -19442,7 +19831,7 @@
                   "segments": [
                     {
                       "text": "液体にゼラチンを入れると",
-                      "reading": "",
+                      "reading": "えきたいにゼラチンをいれると",
                       "isUnderlined": false
                     },
                     {
@@ -19452,7 +19841,7 @@
                     },
                     {
                       "text": "ゼリーになる。",
-                      "reading": "",
+                      "reading": "ゼリーになる。",
                       "isUnderlined": false
                     }
                   ],
@@ -19467,7 +19856,7 @@
                   "segments": [
                     {
                       "text": "この町では、公共施設は駅の東側に",
-                      "reading": "",
+                      "reading": "このまちでは、こうきょうしせつはえきのひがしがわに",
                       "isUnderlined": false
                     },
                     {
@@ -19477,7 +19866,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -19492,7 +19881,7 @@
                   "segments": [
                     {
                       "text": "クラスでは同じ国の人同士で",
-                      "reading": "",
+                      "reading": "クラスではおなじくにのひとどうしで",
                       "isUnderlined": false
                     },
                     {
@@ -19502,7 +19891,7 @@
                     },
                     {
                       "text": "、いろいろな国の人と話すようにしましょう。",
-                      "reading": "",
+                      "reading": "、いろいろなくにのひととはなすようにしましょう。",
                       "isUnderlined": false
                     }
                   ],
@@ -19517,7 +19906,7 @@
                   "segments": [
                     {
                       "text": "基礎が",
-                      "reading": "",
+                      "reading": "きそが",
                       "isUnderlined": false
                     },
                     {
@@ -19527,7 +19916,7 @@
                     },
                     {
                       "text": "から、難しいことに挑戦した方がいい。",
-                      "reading": "",
+                      "reading": "から、むずかしいことにちょうせんしたほうがいい。",
                       "isUnderlined": false
                     }
                   ],
@@ -19602,7 +19991,7 @@
                   "segments": [
                     {
                       "text": "ジュースを",
-                      "reading": "",
+                      "reading": "ジュースを",
                       "isUnderlined": false
                     },
                     {
@@ -19612,7 +20001,7 @@
                     },
                     {
                       "text": "ゼリーを作った。",
-                      "reading": "",
+                      "reading": "ゼリーをつくった。",
                       "isUnderlined": false
                     }
                   ],
@@ -19627,17 +20016,17 @@
                   "segments": [
                     {
                       "text": "みんなの荷物を部屋の隅に",
-                      "reading": "",
+                      "reading": "みんなのにもつをへやのすみに",
                       "isUnderlined": false
                     },
                     {
                       "text": "固めて置いて",
-                      "reading": "かためて",
+                      "reading": "かためておいて",
                       "isUnderlined": true
                     },
                     {
                       "text": "おいた。",
-                      "reading": "",
+                      "reading": "おいた。",
                       "isUnderlined": false
                     }
                   ],
@@ -19647,12 +20036,12 @@
                   }
                 },
                 {
-                  "japanese": "「基礎／決心／結束／方針…」を固める。",
+                  "japanese": "{基礎／決心／結束／方針…}を固める。",
                   "vietnamese": "Củng cố {Nền tảng/ quyết tâm/ sự đoàn kết/ phương châm...}",
                   "segments": [
                     {
-                      "text": "「基礎／決心／結束／方針…」を",
-                      "reading": "",
+                      "text": "{基礎／決心／結束／方針…}を",
+                      "reading": "{きそ／けっしん／けっそく／ほうしん…}を",
                       "isUnderlined": false
                     },
                     {
@@ -19662,7 +20051,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -19672,12 +20061,12 @@
                   }
                 },
                 {
-                  "japanese": "「守り／国境…」を固める。",
+                  "japanese": "{守り／国境…}を固める。",
                   "vietnamese": "Củng cố vững chắc {Sự phòng thủ/ biên giới...}",
                   "segments": [
                     {
-                      "text": "「守り／国境…」を",
-                      "reading": "",
+                      "text": "{守り／国境…}を",
+                      "reading": "{まもり／こっきょう…}を",
                       "isUnderlined": false
                     },
                     {
@@ -19687,7 +20076,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -19702,7 +20091,7 @@
                   "segments": [
                     {
                       "text": "チームのメンバーをベテランで",
-                      "reading": "",
+                      "reading": "チームのメンバーをベテランで",
                       "isUnderlined": false
                     },
                     {
@@ -19712,7 +20101,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -19741,7 +20130,7 @@
                   "segments": [
                     {
                       "text": "洗濯したらセーターが",
-                      "reading": "",
+                      "reading": "せんたくしたらセーターが",
                       "isUnderlined": false
                     },
                     {
@@ -19751,7 +20140,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -19766,7 +20155,7 @@
                   "segments": [
                     {
                       "text": "年を取ると背が",
-                      "reading": "",
+                      "reading": "としをとるとせが",
                       "isUnderlined": false
                     },
                     {
@@ -19776,7 +20165,7 @@
                     },
                     {
                       "text": "くる。",
-                      "reading": "",
+                      "reading": "くる。",
                       "isUnderlined": false
                     }
                   ],
@@ -19886,7 +20275,7 @@
                   "segments": [
                     {
                       "text": "マラソンの世界記録が",
-                      "reading": "",
+                      "reading": "マラソンのせかいきろくが",
                       "isUnderlined": false
                     },
                     {
@@ -19896,7 +20285,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -19911,7 +20300,7 @@
                   "segments": [
                     {
                       "text": "トップとの差が",
-                      "reading": "",
+                      "reading": "トップとの差が",
                       "isUnderlined": false
                     },
                     {
@@ -19921,7 +20310,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -19971,7 +20360,7 @@
                   "segments": [
                     {
                       "text": "ズボンが長すぎたので少し丈を",
-                      "reading": "",
+                      "reading": "ズボンがながすぎたのですこしたけを",
                       "isUnderlined": false
                     },
                     {
@@ -19981,7 +20370,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -19996,7 +20385,7 @@
                   "segments": [
                     {
                       "text": "2位のランナーが1位との差を",
-                      "reading": "",
+                      "reading": "2いのランナーが1いとの差を",
                       "isUnderlined": false
                     },
                     {
@@ -20006,7 +20395,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20091,7 +20480,7 @@
                   "segments": [
                     {
                       "text": "台風で船が海に",
-                      "reading": "",
+                      "reading": "たいふうでふねがうみに",
                       "isUnderlined": false
                     },
                     {
@@ -20101,7 +20490,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20116,7 +20505,7 @@
                   "segments": [
                     {
                       "text": "ダムの建設で村が水に",
-                      "reading": "",
+                      "reading": "ダムのけんせつでむらがみずに",
                       "isUnderlined": false
                     },
                     {
@@ -20126,7 +20515,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20141,7 +20530,7 @@
                   "segments": [
                     {
                       "text": "太陽が",
-                      "reading": "",
+                      "reading": "たいようが",
                       "isUnderlined": false
                     },
                     {
@@ -20151,7 +20540,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20166,7 +20555,7 @@
                   "segments": [
                     {
                       "text": "地下水をくみ上げすぎて地盤が",
-                      "reading": "",
+                      "reading": "ちかすいをくみあげすぎてじばんが",
                       "isUnderlined": false
                     },
                     {
@@ -20176,7 +20565,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20301,7 +20690,7 @@
                   "segments": [
                     {
                       "text": "台風が船を海に",
-                      "reading": "",
+                      "reading": "たいふうがふねをうみに",
                       "isUnderlined": false
                     },
                     {
@@ -20311,7 +20700,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -20326,7 +20715,7 @@
                   "segments": [
                     {
                       "text": "このガラスは、水に",
-                      "reading": "",
+                      "reading": "このガラスは、みずに",
                       "isUnderlined": false
                     },
                     {
@@ -20336,7 +20725,7 @@
                     },
                     {
                       "text": "と見えなくなる。",
-                      "reading": "",
+                      "reading": "とみえなくなる。",
                       "isUnderlined": false
                     }
                   ],
@@ -20351,7 +20740,7 @@
                   "segments": [
                     {
                       "text": "ソファーに深く体を",
-                      "reading": "",
+                      "reading": "ソファーにふかくからだを",
                       "isUnderlined": false
                     },
                     {
@@ -20361,7 +20750,7 @@
                     },
                     {
                       "text": "座った。",
-                      "reading": "",
+                      "reading": "すわった。",
                       "isUnderlined": false
                     }
                   ],
@@ -20390,7 +20779,7 @@
                   "segments": [
                     {
                       "text": "電灯からひもが",
-                      "reading": "",
+                      "reading": "でんとうからひもが",
                       "isUnderlined": false
                     },
                     {
@@ -20400,7 +20789,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20415,7 +20804,7 @@
                   "segments": [
                     {
                       "text": "店のドアに「営業中」の札が",
-                      "reading": "",
+                      "reading": "みせのドアに「えいぎょうちゅう」のふだが",
                       "isUnderlined": false
                     },
                     {
@@ -20425,7 +20814,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20440,7 +20829,7 @@
                   "segments": [
                     {
                       "text": "壁にかけた絵の、右の方が少し",
-                      "reading": "",
+                      "reading": "かべにかけたえの、みぎのほうがすこし",
                       "isUnderlined": false
                     },
                     {
@@ -20450,7 +20839,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20505,7 +20894,7 @@
                   "segments": [
                     {
                       "text": "日差しが強いので、ブラインドを",
-                      "reading": "",
+                      "reading": "ひざしがつよいので、ブラインドを",
                       "isUnderlined": false
                     },
                     {
@@ -20515,7 +20904,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20530,7 +20919,7 @@
                   "segments": [
                     {
                       "text": "「すみません」と頭を",
-                      "reading": "",
+                      "reading": "「すみません」とあたまを",
                       "isUnderlined": false
                     },
                     {
@@ -20540,7 +20929,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20555,7 +20944,7 @@
                   "segments": [
                     {
                       "text": "窓のそばに風鈴を",
-                      "reading": "",
+                      "reading": "まどのそばにふうりんを",
                       "isUnderlined": false
                     },
                     {
@@ -20565,7 +20954,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20580,7 +20969,7 @@
                   "segments": [
                     {
                       "text": "店のドアに「本日休業」の札を",
-                      "reading": "",
+                      "reading": "みせのドアに「ほんじつきゅうぎょう」のふだを",
                       "isUnderlined": false
                     },
                     {
@@ -20590,7 +20979,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20605,7 +20994,7 @@
                   "segments": [
                     {
                       "text": "荷物を手で",
-                      "reading": "",
+                      "reading": "にもつをてで",
                       "isUnderlined": false
                     },
                     {
@@ -20615,7 +21004,7 @@
                     },
                     {
                       "text": "歩く。",
-                      "reading": "",
+                      "reading": "あるく。",
                       "isUnderlined": false
                     }
                   ],
@@ -20630,7 +21019,7 @@
                   "segments": [
                     {
                       "text": "肩からかばんを",
-                      "reading": "",
+                      "reading": "かたからかばんを",
                       "isUnderlined": false
                     },
                     {
@@ -20640,7 +21029,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20654,7 +21043,17 @@
               "source": {
                 "pdfPage": 49,
                 "printedPage": 46
-              }
+              },
+              "notes": [
+                {
+                  "japanese": "※③の意味では「提げる」と書くことが多い。",
+                  "vietnamese": "Từ “提げる” thường được sử dụng với nghĩa ③.",
+                  "source": {
+                    "pdfPage": 48,
+                    "printedPage": 45
+                  }
+                }
+              ]
             },
             {
               "sourceNumber": 172,
@@ -20679,7 +21078,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20754,7 +21153,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20884,7 +21283,7 @@
                   "segments": [
                     {
                       "text": "ボーリングの球を",
-                      "reading": "",
+                      "reading": "ボーリングのたまを",
                       "isUnderlined": false
                     },
                     {
@@ -20894,7 +21293,7 @@
                     },
                     {
                       "text": "ピンを倒す。",
-                      "reading": "",
+                      "reading": "ピンをたおす。",
                       "isUnderlined": false
                     }
                   ],
@@ -20909,7 +21308,7 @@
                   "segments": [
                     {
                       "text": "さいころを",
-                      "reading": "",
+                      "reading": "さいころを",
                       "isUnderlined": false
                     },
                     {
@@ -20919,7 +21318,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -20934,7 +21333,7 @@
                   "segments": [
                     {
                       "text": "手が当たってビールびんを",
-                      "reading": "",
+                      "reading": "てがあたってビールびんを",
                       "isUnderlined": false
                     },
                     {
@@ -20944,7 +21343,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -20959,7 +21358,7 @@
                   "segments": [
                     {
                       "text": "「荷物は適当にその辺に",
-                      "reading": "",
+                      "reading": "「にもつはてきとうにそのへんに",
                       "isUnderlined": false
                     },
                     {
@@ -20969,7 +21368,7 @@
                     },
                     {
                       "text": "おいてください」",
-                      "reading": "",
+                      "reading": "おいてください」",
                       "isUnderlined": false
                     }
                   ],
@@ -20998,7 +21397,7 @@
                   "segments": [
                     {
                       "text": "地震で塀が",
-                      "reading": "",
+                      "reading": "じしんでへいが",
                       "isUnderlined": false
                     },
                     {
@@ -21008,7 +21407,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -21023,7 +21422,7 @@
                   "segments": [
                     {
                       "text": "日が",
-                      "reading": "",
+                      "reading": "ひが",
                       "isUnderlined": false
                     },
                     {
@@ -21033,7 +21432,7 @@
                     },
                     {
                       "text": "と、気温も下がってきた。",
-                      "reading": "",
+                      "reading": "と、きおんもさがってきた。",
                       "isUnderlined": false
                     }
                   ],
@@ -21048,7 +21447,7 @@
                   "segments": [
                     {
                       "text": "議論するにつれ、人々の意見は反対に",
-                      "reading": "",
+                      "reading": "ぎろんするにつれ、ひとびとのいけんははんたいに",
                       "isUnderlined": false
                     },
                     {
@@ -21058,7 +21457,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21073,7 +21472,7 @@
                   "segments": [
                     {
                       "text": "経営の失敗により、会社が",
-                      "reading": "",
+                      "reading": "けいえいのしっぱいにより、かいしゃが",
                       "isUnderlined": false
                     },
                     {
@@ -21083,7 +21482,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21158,7 +21557,7 @@
                   "segments": [
                     {
                       "text": "あの子はわからないことがあると、首を",
-                      "reading": "",
+                      "reading": "あのこはわからないことがあると、くびを",
                       "isUnderlined": false
                     },
                     {
@@ -21168,7 +21567,7 @@
                     },
                     {
                       "text": "くせがある。",
-                      "reading": "",
+                      "reading": "くせがある。",
                       "isUnderlined": false
                     }
                   ],
@@ -21183,7 +21582,7 @@
                   "segments": [
                     {
                       "text": "びんを",
-                      "reading": "",
+                      "reading": "びんを",
                       "isUnderlined": false
                     },
                     {
@@ -21193,7 +21592,7 @@
                     },
                     {
                       "text": "中身を出した。",
-                      "reading": "",
+                      "reading": "なかみをだした。",
                       "isUnderlined": false
                     }
                   ],
@@ -21208,7 +21607,7 @@
                   "segments": [
                     {
                       "text": "彼は若いころから研究に情熱を",
-                      "reading": "",
+                      "reading": "かれはわかいころからけんきゅうにじょうねつを",
                       "isUnderlined": false
                     },
                     {
@@ -21218,7 +21617,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21268,7 +21667,7 @@
                   "segments": [
                     {
                       "text": "「この書類を書き終わったら、",
-                      "reading": "",
+                      "reading": "「このしょるいをかきおわったら、",
                       "isUnderlined": false
                     },
                     {
@@ -21278,7 +21677,7 @@
                     },
                     {
                       "text": "机の上に置いてください」",
-                      "reading": "",
+                      "reading": "つくえのうえにおいてください」",
                       "isUnderlined": false
                     }
                   ],
@@ -21368,7 +21767,7 @@
                   "segments": [
                     {
                       "text": "カードが",
-                      "reading": "",
+                      "reading": "カードが",
                       "isUnderlined": false
                     },
                     {
@@ -21378,7 +21777,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21393,7 +21792,7 @@
                   "segments": [
                     {
                       "text": "机に置いた紙が風で",
-                      "reading": "",
+                      "reading": "つくえにおいたかみがかぜで",
                       "isUnderlined": false
                     },
                     {
@@ -21403,7 +21802,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21432,7 +21831,7 @@
                   "segments": [
                     {
                       "text": "うちの子はすぐに部屋を",
-                      "reading": "",
+                      "reading": "うちのこはすぐにへやを",
                       "isUnderlined": false
                     },
                     {
@@ -21442,7 +21841,7 @@
                     },
                     {
                       "text": "しまう。",
-                      "reading": "",
+                      "reading": "しまう。",
                       "isUnderlined": false
                     }
                   ],
@@ -21457,7 +21856,7 @@
                   "segments": [
                     {
                       "text": "部屋に雑誌を",
-                      "reading": "",
+                      "reading": "へやにざっしを",
                       "isUnderlined": false
                     },
                     {
@@ -21467,7 +21866,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21496,7 +21895,7 @@
                   "segments": [
                     {
                       "text": "路上にごみが",
-                      "reading": "",
+                      "reading": "ろじょうにごみが",
                       "isUnderlined": false
                     },
                     {
@@ -21506,7 +21905,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21521,7 +21920,7 @@
                   "segments": [
                     {
                       "text": "夜空に星が",
-                      "reading": "",
+                      "reading": "よぞらにほしが",
                       "isUnderlined": false
                     },
                     {
@@ -21531,7 +21930,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21546,7 +21945,7 @@
                   "segments": [
                     {
                       "text": "彼の子孫は日本中に",
-                      "reading": "",
+                      "reading": "かれのしそんはにほんじゅうに",
                       "isUnderlined": false
                     },
                     {
@@ -21556,7 +21955,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21621,7 +22020,7 @@
                   "segments": [
                     {
                       "text": "キャベツを",
-                      "reading": "",
+                      "reading": "キャベツを",
                       "isUnderlined": false
                     },
                     {
@@ -21631,7 +22030,7 @@
                     },
                     {
                       "text": "いためる。",
-                      "reading": "",
+                      "reading": "いためる。",
                       "isUnderlined": false
                     }
                   ],
@@ -21646,7 +22045,7 @@
                   "segments": [
                     {
                       "text": "時計が時を",
-                      "reading": "",
+                      "reading": "とけいがときを",
                       "isUnderlined": false
                     },
                     {
@@ -21656,7 +22055,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21671,7 +22070,7 @@
                   "segments": [
                     {
                       "text": "石に文字を",
-                      "reading": "",
+                      "reading": "いしにもじを",
                       "isUnderlined": false
                     },
                     {
@@ -21681,7 +22080,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21696,7 +22095,7 @@
                   "segments": [
                     {
                       "text": "大きな岩を",
-                      "reading": "",
+                      "reading": "おおきないわを",
                       "isUnderlined": false
                     },
                     {
@@ -21706,7 +22105,7 @@
                     },
                     {
                       "text": "仏像を彫る。",
-                      "reading": "",
+                      "reading": "ぶつぞうをほる。",
                       "isUnderlined": false
                     }
                   ],
@@ -21721,7 +22120,7 @@
                   "segments": [
                     {
                       "text": "父の言葉を胸に",
-                      "reading": "",
+                      "reading": "ちちのことばをむねに",
                       "isUnderlined": false
                     },
                     {
@@ -21731,7 +22130,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21746,7 +22145,7 @@
                   "segments": [
                     {
                       "text": "祖母の顔には深いしわが",
-                      "reading": "",
+                      "reading": "そぼのかおにはふかいしわが",
                       "isUnderlined": false
                     },
                     {
@@ -21756,7 +22155,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21806,7 +22205,7 @@
                   "segments": [
                     {
                       "text": "コートが電車のドアに",
-                      "reading": "",
+                      "reading": "コートがでんしゃのドアに",
                       "isUnderlined": false
                     },
                     {
@@ -21816,7 +22215,7 @@
                     },
                     {
                       "text": "抜けない。",
-                      "reading": "",
+                      "reading": "ぬけない。",
                       "isUnderlined": false
                     }
                   ],
@@ -21831,7 +22230,7 @@
                   "segments": [
                     {
                       "text": "会社で上司と部下の間に",
-                      "reading": "",
+                      "reading": "かいしゃでじょうしとぶかのあいだに",
                       "isUnderlined": false
                     },
                     {
@@ -21841,7 +22240,7 @@
                     },
                     {
                       "text": "、彼は苦労しているようだ。",
-                      "reading": "",
+                      "reading": "、かれはくろうしているようだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -21870,7 +22269,7 @@
                   "segments": [
                     {
                       "text": "「電車のドアに",
-                      "reading": "",
+                      "reading": "「でんしゃのドアに",
                       "isUnderlined": false
                     },
                     {
@@ -21880,7 +22279,7 @@
                     },
                     {
                       "text": "ようにしてください」",
-                      "reading": "",
+                      "reading": "ようにしてください」",
                       "isUnderlined": false
                     }
                   ],
@@ -21895,7 +22294,7 @@
                   "segments": [
                     {
                       "text": "パンにハムと卵を",
-                      "reading": "",
+                      "reading": "パンにハムとたまごを",
                       "isUnderlined": false
                     },
                     {
@@ -21905,7 +22304,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -21920,7 +22319,7 @@
                   "segments": [
                     {
                       "text": "彼はすぐ人の話に横から口を",
-                      "reading": "",
+                      "reading": "かれはすぐひとのはなしによこからくちを",
                       "isUnderlined": false
                     },
                     {
@@ -21930,7 +22329,7 @@
                     },
                     {
                       "text": "ので困る。",
-                      "reading": "",
+                      "reading": "のでこまる。",
                       "isUnderlined": false
                     }
                   ],
@@ -21942,7 +22341,7 @@
               ],
               "relations": [
                 {
-                  "label": "関",
+                  "label": "慣",
                   "items": [
                     {
                       "japanese": "口を挟む",
@@ -21980,7 +22379,7 @@
                   "segments": [
                     {
                       "text": "箱が落ちて、中のケーキが",
-                      "reading": "",
+                      "reading": "はこがおちて、なかのケーキが",
                       "isUnderlined": false
                     },
                     {
@@ -21990,7 +22389,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -22005,7 +22404,7 @@
                   "segments": [
                     {
                       "text": "資金不足で計画が",
-                      "reading": "",
+                      "reading": "しきんぶそくでけいかくが",
                       "isUnderlined": false
                     },
                     {
@@ -22015,7 +22414,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -22030,7 +22429,7 @@
                   "segments": [
                     {
                       "text": "せっかくのチャンスが",
-                      "reading": "",
+                      "reading": "せっかくのチャンスが",
                       "isUnderlined": false
                     },
                     {
@@ -22040,7 +22439,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -22055,7 +22454,7 @@
                   "segments": [
                     {
                       "text": "会社が",
-                      "reading": "",
+                      "reading": "かいしゃが",
                       "isUnderlined": false
                     },
                     {
@@ -22065,7 +22464,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -22080,7 +22479,7 @@
                   "segments": [
                     {
                       "text": "会議で半日",
-                      "reading": "",
+                      "reading": "かいぎではんにち",
                       "isUnderlined": false
                     },
                     {
@@ -22090,7 +22489,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -22165,7 +22564,7 @@
                   "segments": [
                     {
                       "text": "ゆでたじゃがいもを",
-                      "reading": "",
+                      "reading": "ゆでたじゃがいもを",
                       "isUnderlined": false
                     },
                     {
@@ -22175,7 +22574,7 @@
                     },
                     {
                       "text": "サラダを作った。",
-                      "reading": "",
+                      "reading": "サラダをつくった。",
                       "isUnderlined": false
                     }
                   ],
@@ -22190,7 +22589,7 @@
                   "segments": [
                     {
                       "text": "空き缶やペットボトルは、",
-                      "reading": "",
+                      "reading": "あきかんやペットボトルは、",
                       "isUnderlined": false
                     },
                     {
@@ -22200,7 +22599,7 @@
                     },
                     {
                       "text": "からごみに出すとよい。",
-                      "reading": "",
+                      "reading": "からごみにだすとよい。",
                       "isUnderlined": false
                     }
                   ],
@@ -22215,7 +22614,7 @@
                   "segments": [
                     {
                       "text": "せっかくのチャンスを",
-                      "reading": "",
+                      "reading": "せっかくのチャンスを",
                       "isUnderlined": false
                     },
                     {
@@ -22225,7 +22624,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -22240,7 +22639,7 @@
                   "segments": [
                     {
                       "text": "彼は、経営力のなさから会社を",
-                      "reading": "",
+                      "reading": "かれは、けいえいりょくのなさからかいしゃを",
                       "isUnderlined": false
                     },
                     {
@@ -22250,7 +22649,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -22265,7 +22664,7 @@
                   "segments": [
                     {
                       "text": "友だちを待っている間、本屋で時間を",
-                      "reading": "",
+                      "reading": "ともだちをまっているあいだ、ほんやでじかんを",
                       "isUnderlined": false
                     },
                     {
@@ -22275,7 +22674,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -22382,7 +22781,7 @@
                   ]
                 },
                 {
-                  "label": "関",
+                  "label": "連",
                   "items": [
                     {
                       "japanese": "時間をつぶす",
@@ -22420,7 +22819,7 @@
                   "segments": [
                     {
                       "text": "木にぶつかって車が",
-                      "reading": "",
+                      "reading": "きにぶつかってくるまが",
                       "isUnderlined": false
                     },
                     {
@@ -22430,7 +22829,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -22445,7 +22844,7 @@
                   "segments": [
                     {
                       "text": "試験を受けても次々に落ちるので",
-                      "reading": "",
+                      "reading": "しけんをうけてもつぎつぎにおちるので",
                       "isUnderlined": false
                     },
                     {
@@ -22455,7 +22854,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -22505,7 +22904,7 @@
                   "segments": [
                     {
                       "text": "靴のひもが",
-                      "reading": "",
+                      "reading": "くつのひもが",
                       "isUnderlined": false
                     },
                     {
@@ -22515,7 +22914,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -22530,7 +22929,7 @@
                   "segments": [
                     {
                       "text": "彼女の冗談で、みんなの緊張が",
-                      "reading": "",
+                      "reading": "かのじょのじょうだんで、みんなのきんちょうが",
                       "isUnderlined": false
                     },
                     {
@@ -22540,7 +22939,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -22590,7 +22989,7 @@
                   "segments": [
                     {
                       "text": "荷物のひもを",
-                      "reading": "",
+                      "reading": "にもつのひもを",
                       "isUnderlined": false
                     },
                     {
@@ -22600,7 +22999,7 @@
                     },
                     {
                       "text": "中のものを出す。",
-                      "reading": "",
+                      "reading": "なかのものをだす。",
                       "isUnderlined": false
                     }
                   ],
@@ -22615,7 +23014,7 @@
                   "segments": [
                     {
                       "text": "彼女は結んであった髪をパラリと",
-                      "reading": "",
+                      "reading": "かのじょはむすんであったかみをパラリと",
                       "isUnderlined": false
                     },
                     {
@@ -22625,7 +23024,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -22640,7 +23039,7 @@
                   "segments": [
                     {
                       "text": "両国間のからまった糸を",
-                      "reading": "",
+                      "reading": "りょうこくかんのからまったいとを",
                       "isUnderlined": false
                     },
                     {
@@ -22650,7 +23049,7 @@
                     },
                     {
                       "text": "、友好関係を築く。",
-                      "reading": "",
+                      "reading": "、ゆうこうかんけいをきずく。",
                       "isUnderlined": false
                     }
                   ],
@@ -22665,7 +23064,7 @@
                   "segments": [
                     {
                       "text": "古い服を",
-                      "reading": "",
+                      "reading": "ふるいふくを",
                       "isUnderlined": false
                     },
                     {
@@ -22675,7 +23074,7 @@
                     },
                     {
                       "text": "縫い直す。",
-                      "reading": "",
+                      "reading": "ぬいなおす。",
                       "isUnderlined": false
                     }
                   ],
@@ -22687,7 +23086,7 @@
               ],
               "relations": [
                 {
-                  "label": "関",
+                  "label": "類",
                   "items": [
                     {
                       "japanese": "解く",
@@ -22725,7 +23124,7 @@
                   "segments": [
                     {
                       "text": "植木の花が",
-                      "reading": "",
+                      "reading": "うえきのはなが",
                       "isUnderlined": false
                     },
                     {
@@ -22735,7 +23134,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -22764,7 +23163,7 @@
                   "segments": [
                     {
                       "text": "病気が発生し、多くの木を",
-                      "reading": "",
+                      "reading": "びょうきがはっせいし、おおくのきを",
                       "isUnderlined": false
                     },
                     {
@@ -22774,7 +23173,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -22803,7 +23202,7 @@
                   "segments": [
                     {
                       "text": "生鮮な魚は",
-                      "reading": "",
+                      "reading": "せいせんなさかなは",
                       "isUnderlined": false
                     },
                     {
@@ -22813,7 +23212,7 @@
                     },
                     {
                       "text": "から、早く食べた方がいい。",
-                      "reading": "",
+                      "reading": "から、はやくたべたほうがいい。",
                       "isUnderlined": false
                     }
                   ],
@@ -22825,16 +23224,21 @@
               ],
               "relations": [
                 {
-                  "label": "名",
+                  "label": "関",
                   "items": [
                     {
-                      "japanese": "傷み",
+                      "japanese": "（名）傷み",
                       "vietnamese": "Sự hỏng, sự thiu",
                       "segments": [
                         {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
                           "text": "傷み",
                           "reading": "いたみ",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -22847,8 +23251,13 @@
                       "vietnamese": "Dễ hỏng",
                       "segments": [
                         {
-                          "text": "＿が早い",
+                          "text": "＿",
                           "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "が早い",
+                          "reading": "がはやい",
                           "isUnderlined": false
                         }
                       ],
@@ -22862,8 +23271,13 @@
                       "vietnamese": "Dở ban, rách nát",
                       "segments": [
                         {
-                          "text": "＿が激しい",
+                          "text": "＿",
                           "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "が激しい",
+                          "reading": "がはげしい",
                           "isUnderlined": false
                         }
                       ],
@@ -22893,7 +23307,7 @@
                   "segments": [
                     {
                       "text": "朝干した洗濯物がまだ",
-                      "reading": "",
+                      "reading": "あさほしたせんたくものがまだ",
                       "isUnderlined": false
                     },
                     {
@@ -22903,7 +23317,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -22918,7 +23332,7 @@
                   "segments": [
                     {
                       "text": "「空気／部屋／服／髪…」が",
-                      "reading": "",
+                      "reading": "「くうき／へや／ふく／かみ…」が",
                       "isUnderlined": false
                     },
                     {
@@ -22928,7 +23342,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23063,7 +23477,7 @@
                   "segments": [
                     {
                       "text": "水が",
-                      "reading": "",
+                      "reading": "みずが",
                       "isUnderlined": false
                     },
                     {
@@ -23073,7 +23487,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23088,7 +23502,7 @@
                   "segments": [
                     {
                       "text": "水道管が",
-                      "reading": "",
+                      "reading": "すいどうかんが",
                       "isUnderlined": false
                     },
                     {
@@ -23098,7 +23512,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23113,7 +23527,7 @@
                   "segments": [
                     {
                       "text": "冷凍庫の中でパンがかちかちに",
-                      "reading": "",
+                      "reading": "れいとうこのなかでパンがかちかちに",
                       "isUnderlined": false
                     },
                     {
@@ -23123,7 +23537,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23173,7 +23587,7 @@
                   "segments": [
                     {
                       "text": "寒さで手足がぶるぶる",
-                      "reading": "",
+                      "reading": "さむさでてあしがぶるぶる",
                       "isUnderlined": false
                     },
                     {
@@ -23183,7 +23597,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23198,7 +23612,7 @@
                   "segments": [
                     {
                       "text": "「恐怖／怒り…」に体が",
-                      "reading": "",
+                      "reading": "「きょうふ／いかり…」にからだが",
                       "isUnderlined": false
                     },
                     {
@@ -23208,7 +23622,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23223,7 +23637,7 @@
                   "segments": [
                     {
                       "text": "「喜び／期待／感動…」で胸が",
-                      "reading": "",
+                      "reading": "「よろこび／きたい／かんどう…」でむねが",
                       "isUnderlined": false
                     },
                     {
@@ -23233,7 +23647,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23248,7 +23662,7 @@
                   "segments": [
                     {
                       "text": "緊張で「声／手…」が",
-                      "reading": "",
+                      "reading": "きんちょうで「こえ／て…」が",
                       "isUnderlined": false
                     },
                     {
@@ -23258,7 +23672,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23273,7 +23687,7 @@
                   "segments": [
                     {
                       "text": "道路工事の振動で建物ががたがた",
-                      "reading": "",
+                      "reading": "どうろこうじのしんどうでたてものががたがた",
                       "isUnderlined": false
                     },
                     {
@@ -23283,7 +23697,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23353,7 +23767,7 @@
                   "segments": [
                     {
                       "text": "空に太陽が",
-                      "reading": "",
+                      "reading": "そらにたいようが",
                       "isUnderlined": false
                     },
                     {
@@ -23363,7 +23777,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23378,7 +23792,7 @@
                   "segments": [
                     {
                       "text": "優勝した選手の顔は喜びに",
-                      "reading": "",
+                      "reading": "ゆうしょうしたせんしゅのかおはよろこびに",
                       "isUnderlined": false
                     },
                     {
@@ -23388,7 +23802,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23438,7 +23852,7 @@
                   "segments": [
                     {
                       "text": "大雨で川の水が",
-                      "reading": "",
+                      "reading": "おおあめでかわのみずが",
                       "isUnderlined": false
                     },
                     {
@@ -23448,7 +23862,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23463,7 +23877,7 @@
                   "segments": [
                     {
                       "text": "悲しくて、目から涙が",
-                      "reading": "",
+                      "reading": "かなしくて、めからなみだが",
                       "isUnderlined": false
                     },
                     {
@@ -23473,7 +23887,7 @@
                     },
                     {
                       "text": "になった。",
-                      "reading": "",
+                      "reading": "になった。",
                       "isUnderlined": false
                     }
                   ],
@@ -23488,7 +23902,7 @@
                   "segments": [
                     {
                       "text": "祭りの前なので、町には観光客が",
-                      "reading": "",
+                      "reading": "まつりのまえなので、まちにはかんこうきゃくが",
                       "isUnderlined": false
                     },
                     {
@@ -23498,7 +23912,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23513,7 +23927,7 @@
                   "segments": [
                     {
                       "text": "大統領は自信に",
-                      "reading": "",
+                      "reading": "だいとうりょうはじしんに",
                       "isUnderlined": false
                     },
                     {
@@ -23523,7 +23937,7 @@
                     },
                     {
                       "text": "態度でスピーチをした。",
-                      "reading": "",
+                      "reading": "たいどでスピーチをした。",
                       "isUnderlined": false
                     }
                   ],
@@ -23552,7 +23966,7 @@
                   "segments": [
                     {
                       "text": "作り過ぎて料理が",
-                      "reading": "",
+                      "reading": "つくりすぎてりょうりが",
                       "isUnderlined": false
                     },
                     {
@@ -23562,7 +23976,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -23577,7 +23991,7 @@
                   "segments": [
                     {
                       "text": "10を3で割ると1",
-                      "reading": "",
+                      "reading": "10を3でわると1",
                       "isUnderlined": false
                     },
                     {
@@ -23587,7 +24001,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23602,7 +24016,7 @@
                   "segments": [
                     {
                       "text": "時間が",
-                      "reading": "",
+                      "reading": "じかんが",
                       "isUnderlined": false
                     },
                     {
@@ -23612,7 +24026,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23641,7 +24055,7 @@
                   "segments": [
                     {
                       "text": "彼女は背が高いので",
-                      "reading": "",
+                      "reading": "かのじょはせがたかいので",
                       "isUnderlined": false
                     },
                     {
@@ -23651,7 +24065,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23666,7 +24080,7 @@
                   "segments": [
                     {
                       "text": "この洋服は白いので汚れが",
-                      "reading": "",
+                      "reading": "このようふくはしろいのでよごれが",
                       "isUnderlined": false
                     },
                     {
@@ -23676,7 +24090,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23691,7 +24105,7 @@
                   "segments": [
                     {
                       "text": "彼は教室では",
-                      "reading": "",
+                      "reading": "かれはきょうしつでは",
                       "isUnderlined": false
                     },
                     {
@@ -23701,7 +24115,7 @@
                     },
                     {
                       "text": "存在だった。",
-                      "reading": "",
+                      "reading": "そんざいだった。",
                       "isUnderlined": false
                     }
                   ],
@@ -23716,7 +24130,7 @@
                   "segments": [
                     {
                       "text": "最近彼女は",
-                      "reading": "",
+                      "reading": "さいきんかのじょは",
                       "isUnderlined": false
                     },
                     {
@@ -23726,7 +24140,7 @@
                     },
                     {
                       "text": "日本語が上達した。",
-                      "reading": "",
+                      "reading": "にほんごがじょうたつした。",
                       "isUnderlined": false
                     }
                   ],
@@ -23740,7 +24154,17 @@
               "source": {
                 "pdfPage": 54,
                 "printedPage": 51
-              }
+              },
+              "notes": [
+                {
+                  "japanese": "※「目立って」は副詞的に使う。",
+                  "vietnamese": "Dùng với vai trò là phó từ.",
+                  "source": {
+                    "pdfPage": 54,
+                    "printedPage": 51
+                  }
+                }
+              ]
             },
             {
               "sourceNumber": 198,
@@ -23755,7 +24179,7 @@
                   "segments": [
                     {
                       "text": "このビルの屋上から町が",
-                      "reading": "",
+                      "reading": "このビルのおくじょうからまちが",
                       "isUnderlined": false
                     },
                     {
@@ -23765,7 +24189,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23780,7 +24204,7 @@
                   "segments": [
                     {
                       "text": "木の上からカラスが私を",
-                      "reading": "",
+                      "reading": "きのうえからカラスがわたしを",
                       "isUnderlined": false
                     },
                     {
@@ -23790,7 +24214,7 @@
                     },
                     {
                       "text": "いた。",
-                      "reading": "",
+                      "reading": "いた。",
                       "isUnderlined": false
                     }
                   ],
@@ -23840,7 +24264,7 @@
                   "segments": [
                     {
                       "text": "国と国とが領土をめぐって",
-                      "reading": "",
+                      "reading": "くにとくにとがりょうどをめぐって",
                       "isUnderlined": false
                     },
                     {
@@ -23850,7 +24274,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23865,7 +24289,7 @@
                   "segments": [
                     {
                       "text": "オリンピックでは各国が正々堂々と",
-                      "reading": "",
+                      "reading": "オリンピックではかっこくがせいせいどうどうと",
                       "isUnderlined": false
                     },
                     {
@@ -23875,7 +24299,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23890,7 +24314,7 @@
                   "segments": [
                     {
                       "text": "賃金をめぐって労働側と会社側が",
-                      "reading": "",
+                      "reading": "ちんぎんをめぐってろうどうがわとかいしゃがわが",
                       "isUnderlined": false
                     },
                     {
@@ -23900,7 +24324,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -23915,7 +24339,7 @@
                   "segments": [
                     {
                       "text": "裁判で",
-                      "reading": "",
+                      "reading": "さいばんで",
                       "isUnderlined": false
                     },
                     {
@@ -23925,7 +24349,7 @@
                     },
                     {
                       "text": "勝った。",
-                      "reading": "",
+                      "reading": "かった。",
                       "isUnderlined": false
                     }
                   ],
@@ -23940,7 +24364,7 @@
                   "segments": [
                     {
                       "text": "「悪／不正／困難／偏見／病気／眠気…」と",
-                      "reading": "",
+                      "reading": "「あく／ふせい／こんなん／へんけん／びょうき／ねむけ…」と",
                       "isUnderlined": false
                     },
                     {
@@ -23950,7 +24374,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24070,7 +24494,7 @@
                   "segments": [
                     {
                       "text": "試合に",
-                      "reading": "",
+                      "reading": "しあいに",
                       "isUnderlined": false
                     },
                     {
@@ -24080,7 +24504,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24095,7 +24519,7 @@
                   "segments": [
                     {
                       "text": "選挙で現職が新人に",
-                      "reading": "",
+                      "reading": "せんきょでげんしょくがしんじんに",
                       "isUnderlined": false
                     },
                     {
@@ -24105,7 +24529,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24135,13 +24559,18 @@
                       }
                     },
                     {
-                      "japanese": "破る",
+                      "japanese": "〈他〉破る",
                       "vietnamese": "Đánh bại (Ví dụ: Tôi đã đánh bại đối thủ mạnh và tiến vào vòng thứ 2.)",
                       "segments": [
                         {
+                          "text": "〈他〉",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
                           "text": "破る",
                           "reading": "やぶる",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -24170,7 +24599,7 @@
                   "segments": [
                     {
                       "text": "犯人は海外に",
-                      "reading": "",
+                      "reading": "はんにんはかいがいに",
                       "isUnderlined": false
                     },
                     {
@@ -24180,7 +24609,7 @@
                     },
                     {
                       "text": "らしい。",
-                      "reading": "",
+                      "reading": "らしい。",
                       "isUnderlined": false
                     }
                   ],
@@ -24195,7 +24624,7 @@
                   "segments": [
                     {
                       "text": "「つらいことから",
-                      "reading": "",
+                      "reading": "「つらいことから",
                       "isUnderlined": false
                     },
                     {
@@ -24205,7 +24634,7 @@
                     },
                     {
                       "text": "、立ち向かっていこう」",
-                      "reading": "",
+                      "reading": "、たちむかっていこう」",
                       "isUnderlined": false
                     }
                   ],
@@ -24234,7 +24663,7 @@
                   "segments": [
                     {
                       "text": "魚を釣ったが、小さいので",
-                      "reading": "",
+                      "reading": "さかなをつったが、ちいさいので",
                       "isUnderlined": false
                     },
                     {
@@ -24244,7 +24673,7 @@
                     },
                     {
                       "text": "やった。",
-                      "reading": "",
+                      "reading": "やった。",
                       "isUnderlined": false
                     }
                   ],
@@ -24259,7 +24688,7 @@
                   "segments": [
                     {
                       "text": "犯人を追いかけたが、混雑の中で",
-                      "reading": "",
+                      "reading": "はんにんをおいかけたが、こんざつのなかで",
                       "isUnderlined": false
                     },
                     {
@@ -24269,7 +24698,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -24284,7 +24713,7 @@
                   "segments": [
                     {
                       "text": "せっかくのチャンスを",
-                      "reading": "",
+                      "reading": "せっかくのチャンスを",
                       "isUnderlined": false
                     },
                     {
@@ -24294,7 +24723,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -24359,7 +24788,7 @@
                   "segments": [
                     {
                       "text": "忘れ物をしたのに気付いて、家に",
-                      "reading": "",
+                      "reading": "わすれものをしたのにきづいて、いえに",
                       "isUnderlined": false
                     },
                     {
@@ -24369,7 +24798,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24384,7 +24813,7 @@
                   "segments": [
                     {
                       "text": "「席に",
-                      "reading": "",
+                      "reading": "「せきに",
                       "isUnderlined": false
                     },
                     {
@@ -24394,7 +24823,7 @@
                     },
                     {
                       "text": "ください」",
-                      "reading": "",
+                      "reading": "ください」",
                       "isUnderlined": false
                     }
                   ],
@@ -24409,7 +24838,7 @@
                   "segments": [
                     {
                       "text": "サケは生まれた川に",
-                      "reading": "",
+                      "reading": "サケはうまれたかわに",
                       "isUnderlined": false
                     },
                     {
@@ -24419,7 +24848,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24429,12 +24858,12 @@
                   }
                 },
                 {
-                  "japanese": "「旅行／買い物／会社／学校／出発…」から戻る。",
+                  "japanese": "【旅行／買い物／会社／学校／出先…】から戻る。",
                   "vietnamese": "Đi {du lịch/ mua đồ/ làm/ học...} về.",
                   "segments": [
                     {
-                      "text": "「旅行／買い物／会社／学校／出発…」から",
-                      "reading": "",
+                      "text": "【旅行／買い物／会社／学校／出先…】から",
+                      "reading": "【りょこう／かいもの／かいしゃ／がっこう／でさき…】から",
                       "isUnderlined": false
                     },
                     {
@@ -24444,7 +24873,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24459,7 +24888,7 @@
                   "segments": [
                     {
                       "text": "記憶が",
-                      "reading": "",
+                      "reading": "きおくが",
                       "isUnderlined": false
                     },
                     {
@@ -24469,7 +24898,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24484,7 +24913,7 @@
                   "segments": [
                     {
                       "text": "意識が",
-                      "reading": "",
+                      "reading": "いしきが",
                       "isUnderlined": false
                     },
                     {
@@ -24494,7 +24923,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24509,7 +24938,7 @@
                   "segments": [
                     {
                       "text": "事故で乱れていたダイヤが正常に",
-                      "reading": "",
+                      "reading": "じこでみだれていたダイヤがせいじょうに",
                       "isUnderlined": false
                     },
                     {
@@ -24519,7 +24948,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24584,7 +25013,7 @@
                   "segments": [
                     {
                       "text": "「物を元にあった場所に",
-                      "reading": "",
+                      "reading": "「ものをもとにあったばしょに",
                       "isUnderlined": false
                     },
                     {
@@ -24594,7 +25023,7 @@
                     },
                     {
                       "text": "」",
-                      "reading": "",
+                      "reading": "」",
                       "isUnderlined": false
                     }
                   ],
@@ -24609,7 +25038,7 @@
                   "segments": [
                     {
                       "text": "「話を元に",
-                      "reading": "",
+                      "reading": "「はなしをもとに",
                       "isUnderlined": false
                     },
                     {
@@ -24619,7 +25048,7 @@
                     },
                     {
                       "text": "と、……」",
-                      "reading": "",
+                      "reading": "と、……」",
                       "isUnderlined": false
                     }
                   ],
@@ -24634,7 +25063,7 @@
                   "segments": [
                     {
                       "text": "計画を白紙に",
-                      "reading": "",
+                      "reading": "けいかくをはくしに",
                       "isUnderlined": false
                     },
                     {
@@ -24644,7 +25073,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24659,7 +25088,7 @@
                   "segments": [
                     {
                       "text": "「わかめ／しいたけ…」を水で",
-                      "reading": "",
+                      "reading": "「わかめ／しいたけ…」をみずで",
                       "isUnderlined": false
                     },
                     {
@@ -24669,7 +25098,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24684,7 +25113,7 @@
                   "segments": [
                     {
                       "text": "時計の針を",
-                      "reading": "",
+                      "reading": "とけいのはりを",
                       "isUnderlined": false
                     },
                     {
@@ -24694,7 +25123,7 @@
                     },
                     {
                       "text": "ものなら戻したい。",
-                      "reading": "",
+                      "reading": "ものならもどしたい。",
                       "isUnderlined": false
                     }
                   ],
@@ -24709,7 +25138,7 @@
                   "segments": [
                     {
                       "text": "車酔いで食べたものを全部",
-                      "reading": "",
+                      "reading": "くるまよいでたべたものをぜんぶ",
                       "isUnderlined": false
                     },
                     {
@@ -24719,7 +25148,7 @@
                     },
                     {
                       "text": "しまった。",
-                      "reading": "",
+                      "reading": "しまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -24789,7 +25218,7 @@
                   "segments": [
                     {
                       "text": "彼の薬指には指輪が",
-                      "reading": "",
+                      "reading": "かれのくすりゆびにはゆびわが",
                       "isUnderlined": false
                     },
                     {
@@ -24799,7 +25228,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24814,7 +25243,7 @@
                   "segments": [
                     {
                       "text": "「ボタン／手袋…」が",
-                      "reading": "",
+                      "reading": "「ボタン／てぶくろ…」が",
                       "isUnderlined": false
                     },
                     {
@@ -24824,7 +25253,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24839,7 +25268,7 @@
                   "segments": [
                     {
                       "text": "「型／鉢…」に",
-                      "reading": "",
+                      "reading": "「かた／はち…」に",
                       "isUnderlined": false
                     },
                     {
@@ -24849,7 +25278,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24864,7 +25293,7 @@
                   "segments": [
                     {
                       "text": "車のタイヤが溝に",
-                      "reading": "",
+                      "reading": "くるまのタイヤがみぞに",
                       "isUnderlined": false
                     },
                     {
@@ -24874,7 +25303,7 @@
                     },
                     {
                       "text": "動けなくなった。",
-                      "reading": "",
+                      "reading": "うごけなくなった。",
                       "isUnderlined": false
                     }
                   ],
@@ -24889,7 +25318,7 @@
                   "segments": [
                     {
                       "text": "「池／水たまり／穴…」に",
-                      "reading": "",
+                      "reading": "「いけ／みずたまり／あな…」に",
                       "isUnderlined": false
                     },
                     {
@@ -24899,7 +25328,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24914,7 +25343,7 @@
                   "segments": [
                     {
                       "text": "わなに",
-                      "reading": "",
+                      "reading": "わなに",
                       "isUnderlined": false
                     },
                     {
@@ -24924,7 +25353,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24939,7 +25368,7 @@
                   "segments": [
                     {
                       "text": "最近ゲームに",
-                      "reading": "",
+                      "reading": "さいきんゲームに",
                       "isUnderlined": false
                     },
                     {
@@ -24949,7 +25378,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -24999,7 +25428,7 @@
                   "segments": [
                     {
                       "text": "寒いので、上着のボタンを全部",
-                      "reading": "",
+                      "reading": "さむいので、うわぎのボタンをぜんぶ",
                       "isUnderlined": false
                     },
                     {
@@ -25009,7 +25438,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25024,7 +25453,7 @@
                   "segments": [
                     {
                       "text": "「手袋／指輪／キャップ…」を",
-                      "reading": "",
+                      "reading": "「てぶくろ／ゆびわ／キャップ…」を",
                       "isUnderlined": false
                     },
                     {
@@ -25034,7 +25463,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25049,7 +25478,7 @@
                   "segments": [
                     {
                       "text": "窓枠にガラスを",
-                      "reading": "",
+                      "reading": "まどわくにガラスを",
                       "isUnderlined": false
                     },
                     {
@@ -25059,7 +25488,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25074,7 +25503,7 @@
                   "segments": [
                     {
                       "text": "相手をわなに",
-                      "reading": "",
+                      "reading": "あいてをわなに",
                       "isUnderlined": false
                     },
                     {
@@ -25084,7 +25513,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25134,7 +25563,7 @@
                   "segments": [
                     {
                       "text": "「壊れやすいものですから、ていねいに",
-                      "reading": "",
+                      "reading": "「こわれやすいものですから、ていねいに",
                       "isUnderlined": false
                     },
                     {
@@ -25144,7 +25573,7 @@
                     },
                     {
                       "text": "」",
-                      "reading": "",
+                      "reading": "」",
                       "isUnderlined": false
                     }
                   ],
@@ -25159,7 +25588,7 @@
                   "segments": [
                     {
                       "text": "（書店で）「OO ありますか」「すみません、当店では",
-                      "reading": "",
+                      "reading": "（しょてんで）「OO ありますか」「すみません、とうてんでは",
                       "isUnderlined": false
                     },
                     {
@@ -25169,7 +25598,7 @@
                     },
                     {
                       "text": "」",
-                      "reading": "",
+                      "reading": "」",
                       "isUnderlined": false
                     }
                   ],
@@ -25184,7 +25613,7 @@
                   "segments": [
                     {
                       "text": "この雑誌で芸能ニュースを",
-                      "reading": "",
+                      "reading": "このざっしでげいのうニュースを",
                       "isUnderlined": false
                     },
                     {
@@ -25194,7 +25623,7 @@
                     },
                     {
                       "text": "ことはめったにない。",
-                      "reading": "",
+                      "reading": "ことはめったにない。",
                       "isUnderlined": false
                     }
                   ],
@@ -25209,7 +25638,7 @@
                   "segments": [
                     {
                       "text": "教師は学生を公平に",
-                      "reading": "",
+                      "reading": "きょうしはがくせいをこうへいに",
                       "isUnderlined": false
                     },
                     {
@@ -25219,7 +25648,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25234,7 +25663,7 @@
                   "segments": [
                     {
                       "text": "交通費の面では、中学生は大人として",
-                      "reading": "",
+                      "reading": "こうつうひのめんでは、ちゅうがくせいはおとなとして",
                       "isUnderlined": false
                     },
                     {
@@ -25244,7 +25673,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25259,7 +25688,7 @@
                   "segments": [
                     {
                       "text": "受験のために欠席した場合は、出席として",
-                      "reading": "",
+                      "reading": "じゅけんのためにけっせきしたばあいは、しゅっせきとして",
                       "isUnderlined": false
                     },
                     {
@@ -25269,7 +25698,7 @@
                     },
                     {
                       "text": "のがふつうだ。",
-                      "reading": "",
+                      "reading": "のがふつうだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -25281,16 +25710,21 @@
               ],
               "relations": [
                 {
-                  "label": "関",
+                  "label": "類",
                   "items": [
                     {
-                      "japanese": "取り扱う",
+                      "japanese": "①②取り扱う",
                       "vietnamese": "Xử lí, sử dụng",
                       "segments": [
                         {
+                          "text": "①②",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
                           "text": "取り扱う",
                           "reading": "とりあつかう",
-                          "isUnderlined": false
+                          "isUnderlined": true
                         }
                       ],
                       "source": {
@@ -25349,7 +25783,7 @@
                   "segments": [
                     {
                       "text": "将来は子どもの教育に",
-                      "reading": "",
+                      "reading": "しょうらいはこどものきょういくに",
                       "isUnderlined": false
                     },
                     {
@@ -25359,7 +25793,7 @@
                     },
                     {
                       "text": "仕事がしたい。",
-                      "reading": "",
+                      "reading": "しごとがしたい。",
                       "isUnderlined": false
                     }
                   ],
@@ -25374,7 +25808,7 @@
                   "segments": [
                     {
                       "text": "もうあの人とは",
-                      "reading": "",
+                      "reading": "もうあのひととは",
                       "isUnderlined": false
                     },
                     {
@@ -25384,7 +25818,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25399,7 +25833,7 @@
                   "segments": [
                     {
                       "text": "検査の結果、命に",
-                      "reading": "",
+                      "reading": "けんさのけっか、いのちに",
                       "isUnderlined": false
                     },
                     {
@@ -25409,7 +25843,7 @@
                     },
                     {
                       "text": "病気ではないことがわかった。",
-                      "reading": "",
+                      "reading": "びょうきではないことがわかった。",
                       "isUnderlined": false
                     }
                   ],
@@ -25421,7 +25855,7 @@
               ],
               "relations": [
                 {
-                  "label": "関",
+                  "label": "類",
                   "items": [
                     {
                       "japanese": "関係する、関係がある",
@@ -25484,7 +25918,7 @@
                   "segments": [
                     {
                       "text": "選手たちはゴールを",
-                      "reading": "",
+                      "reading": "せんしゅたちはゴールを",
                       "isUnderlined": false
                     },
                     {
@@ -25494,7 +25928,7 @@
                     },
                     {
                       "text": "走り出した。",
-                      "reading": "",
+                      "reading": "はしりだした。",
                       "isUnderlined": false
                     }
                   ],
@@ -25509,7 +25943,7 @@
                   "segments": [
                     {
                       "text": "彼は大学を",
-                      "reading": "",
+                      "reading": "かれはだいがくを",
                       "isUnderlined": false
                     },
                     {
@@ -25519,7 +25953,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25529,7 +25963,48 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "ねらう",
+                      "vietnamese": "Nhắm vào",
+                      "segments": [
+                        {
+                          "text": "ねらう",
+                          "reading": "ねらう",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 58,
+                        "printedPage": 55
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "目標",
+                      "vietnamese": "Mục tiêu",
+                      "segments": [
+                        {
+                          "text": "目標",
+                          "reading": "もくひょう",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 58,
+                        "printedPage": 55
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 57,
                 "printedPage": 54
@@ -25543,22 +26018,22 @@
               "meaning": "Xuất phát, rời",
               "examples": [
                 {
-                  "japanese": "8月末に飛行機でヨーロッパを発った。",
+                  "japanese": "8月末に飛行機でヨーロッパへ立つ予定だ。",
                   "vietnamese": "Tôi định rời đến Châu Âu bằng máy bay vào cuối tháng 8.",
                   "segments": [
                     {
-                      "text": "8月末に飛行機でヨーロッパを",
-                      "reading": "",
+                      "text": "8月末に飛行機でヨーロッパへ",
+                      "reading": "はちがつまつにひこうきでヨーロッパへ",
                       "isUnderlined": false
                     },
                     {
-                      "text": "発った",
-                      "reading": "たった",
+                      "text": "立つ",
+                      "reading": "たつ",
                       "isUnderlined": true
                     },
                     {
-                      "text": "。",
-                      "reading": "",
+                      "text": "予定だ。",
+                      "reading": "よていだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -25573,7 +26048,7 @@
                   "segments": [
                     {
                       "text": "10時30分の便で成田空港を",
-                      "reading": "",
+                      "reading": "じゅうじさんじゅっぷんのびんでなりたくうこうを",
                       "isUnderlined": false
                     },
                     {
@@ -25583,7 +26058,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25595,7 +26070,7 @@
               ],
               "relations": [
                 {
-                  "label": "関",
+                  "label": "類",
                   "items": [
                     {
                       "japanese": "出発する",
@@ -25633,7 +26108,7 @@
                   "segments": [
                     {
                       "text": "あの店はいつも客を笑顔で",
-                      "reading": "",
+                      "reading": "あのみせはいつもきゃくをえがおで",
                       "isUnderlined": false
                     },
                     {
@@ -25643,7 +26118,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25658,7 +26133,7 @@
                   "segments": [
                     {
                       "text": "優勝チームは拍手で",
-                      "reading": "",
+                      "reading": "ゆうしょうチームははくしゅで",
                       "isUnderlined": false
                     },
                     {
@@ -25668,7 +26143,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25683,7 +26158,7 @@
                   "segments": [
                     {
                       "text": "彼は妻を",
-                      "reading": "",
+                      "reading": "かれはつまを",
                       "isUnderlined": false
                     },
                     {
@@ -25693,7 +26168,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25708,7 +26183,7 @@
                   "segments": [
                     {
                       "text": "転校生を温かく",
-                      "reading": "",
+                      "reading": "てんこうせいをあたたかく",
                       "isUnderlined": false
                     },
                     {
@@ -25718,7 +26193,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25733,7 +26208,7 @@
                   "segments": [
                     {
                       "text": "田中氏を【学長／理事長／会長…】に",
-                      "reading": "",
+                      "reading": "たなかしを【がくちょう／りじちょう／かいちょう…】に",
                       "isUnderlined": false
                     },
                     {
@@ -25743,7 +26218,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25758,7 +26233,7 @@
                   "segments": [
                     {
                       "text": "【新年／春／誕生日／老い／死…】を",
-                      "reading": "",
+                      "reading": "【しんねん／はる／たんじょうび／おい／し…】を",
                       "isUnderlined": false
                     },
                     {
@@ -25768,7 +26243,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25784,7 +26259,7 @@
                   "items": [
                     {
                       "japanese": "迎え",
-                      "vietnamese": "Đón tiếp đón (Ví dụ: Xe tiếp đón đã đến.)",
+                      "vietnamese": "Sự tiếp đón (例．迎えの車が来た。) (Ví dụ: Xe tiếp đón đã đến.)",
                       "segments": [
                         {
                           "text": "迎え",
@@ -25818,7 +26293,7 @@
                   "segments": [
                     {
                       "text": "「",
-                      "reading": "",
+                      "reading": "「",
                       "isUnderlined": false
                     },
                     {
@@ -25828,7 +26303,7 @@
                     },
                     {
                       "text": "力を十分に発揮してください」",
-                      "reading": "",
+                      "reading": "ちからをじゅうぶんにはっきしてください」",
                       "isUnderlined": false
                     }
                   ],
@@ -25843,7 +26318,7 @@
                   "segments": [
                     {
                       "text": "彼は女性に",
-                      "reading": "",
+                      "reading": "かれはじょせいに",
                       "isUnderlined": false
                     },
                     {
@@ -25853,7 +26328,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25867,7 +26342,17 @@
               "source": {
                 "pdfPage": 58,
                 "printedPage": 55
-              }
+              },
+              "notes": [
+                {
+                  "japanese": "※②はひらがなで書く。",
+                  "vietnamese": "Với ý nghĩa thứ ②, viết bằng Hiragana.",
+                  "source": {
+                    "pdfPage": 58,
+                    "printedPage": 55
+                  }
+                }
+              ]
             },
             {
               "sourceNumber": 213,
@@ -25877,17 +26362,17 @@
               "meaning": "Ví, so sánh",
               "examples": [
                 {
-                  "japanese": "人生をよく旅にたとえる。",
+                  "japanese": "人生はよく旅にたとえられる。",
                   "vietnamese": "Đời người được ví như một chuyến đi.",
                   "segments": [
                     {
-                      "text": "人生をよく旅に",
-                      "reading": "",
+                      "text": "人生はよく",
+                      "reading": "じんせいはよく",
                       "isUnderlined": false
                     },
                     {
-                      "text": "たとえる",
-                      "reading": "たとえる",
+                      "text": "旅にたとえられる",
+                      "reading": "たびにたとえられる",
                       "isUnderlined": true
                     },
                     {
@@ -25902,12 +26387,12 @@
                   }
                 },
                 {
-                  "japanese": "恋人を大樹にたとえる。",
-                  "vietnamese": "Ví người yêu như một người trỗi cây.",
+                  "japanese": "恋人を太陽にたとえる。",
+                  "vietnamese": "Ví người yêu như mặt trời.",
                   "segments": [
                     {
-                      "text": "恋人を大樹に",
-                      "reading": "",
+                      "text": "恋人を太陽に",
+                      "reading": "こいびとをたいように",
                       "isUnderlined": false
                     },
                     {
@@ -25967,7 +26452,7 @@
                   "segments": [
                     {
                       "text": "できるだけ問題の解決に",
-                      "reading": "",
+                      "reading": "できるだけもんだいのかいけつに",
                       "isUnderlined": false
                     },
                     {
@@ -25977,7 +26462,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -25987,12 +26472,12 @@
                   }
                 },
                 {
-                  "japanese": "「心配ごとがあっても、努めて明るくふるまった。」",
+                  "japanese": "心配ごとがあっても、努めて明るくふるまった。",
                   "vietnamese": "Dù lo lắng, tôi đã cố tỏ ra vẻ tươi tỉnh.",
                   "segments": [
                     {
-                      "text": "「心配ごとがあっても、",
-                      "reading": "",
+                      "text": "心配ごとがあっても、",
+                      "reading": "しんぱいごとがあっても、",
                       "isUnderlined": false
                     },
                     {
@@ -26001,8 +26486,8 @@
                       "isUnderlined": true
                     },
                     {
-                      "text": "明るくふるまった。」",
-                      "reading": "",
+                      "text": "明るくふるまった。",
+                      "reading": "あかるくふるまった。",
                       "isUnderlined": false
                     }
                   ],
@@ -26031,7 +26516,7 @@
                   "segments": [
                     {
                       "text": "こんな難しい役が私に",
-                      "reading": "",
+                      "reading": "こんなむずかしいやくがわたしに",
                       "isUnderlined": false
                     },
                     {
@@ -26041,7 +26526,7 @@
                     },
                     {
                       "text": "だろうか。",
-                      "reading": "",
+                      "reading": "だろうか。",
                       "isUnderlined": false
                     }
                   ],
@@ -26056,7 +26541,7 @@
                   "segments": [
                     {
                       "text": "「役職／仕事…」が",
-                      "reading": "",
+                      "reading": "「やくしょく／しごと…」が",
                       "isUnderlined": false
                     },
                     {
@@ -26066,7 +26551,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -26095,7 +26580,7 @@
                   "segments": [
                     {
                       "text": "会議で議長を",
-                      "reading": "",
+                      "reading": "かいぎでぎちょうを",
                       "isUnderlined": false
                     },
                     {
@@ -26105,7 +26590,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -26115,12 +26600,12 @@
                   }
                 },
                 {
-                  "japanese": "4年間警察を務めた。",
-                  "vietnamese": "Tôi đã giữ cương vị thủ trưởng trong 4 năm.",
+                  "japanese": "4年間首相を務めた。",
+                  "vietnamese": "Tôi đã giữ cương vị thủ tướng trong 4 năm.",
                   "segments": [
                     {
-                      "text": "4年間警察を",
-                      "reading": "",
+                      "text": "4年間首相を",
+                      "reading": "よねんかんしゅしょうを",
                       "isUnderlined": false
                     },
                     {
@@ -26130,7 +26615,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -26145,12 +26630,27 @@
                   "label": "名",
                   "items": [
                     {
-                      "japanese": "務め",
-                      "vietnamese": "Hoàn thành nhiệm vụ (Ví dụ: Việc giáo dục trẻ nhỏ là nhiệm vụ của các bậc cha mẹ.)",
+                      "japanese": "務め→＿を果たす",
+                      "vietnamese": "Nhiệm vụ → Hoàn thành (thực hiện) nhiệm vụ (例．子どもの教育は親の務めだ。) (Ví dụ: Việc giáo dục trẻ nhỏ là nhiệm vụ của các bậc cha mẹ.)",
                       "segments": [
                         {
                           "text": "務め",
                           "reading": "つとめ",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "→",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "を果たす",
+                          "reading": "をはたす",
                           "isUnderlined": false
                         }
                       ],
@@ -26180,7 +26680,7 @@
                   "segments": [
                     {
                       "text": "仕事が忙しくなり、飛行機の予約を",
-                      "reading": "",
+                      "reading": "しごとがいそがしくなり、ひこうきのよやくを",
                       "isUnderlined": false
                     },
                     {
@@ -26190,7 +26690,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -26205,7 +26705,7 @@
                   "segments": [
                     {
                       "text": "「ただ今申し上げたことは",
-                      "reading": "",
+                      "reading": "「ただいまもうしあげたことは",
                       "isUnderlined": false
                     },
                     {
@@ -26215,7 +26715,7 @@
                     },
                     {
                       "text": "」",
-                      "reading": "",
+                      "reading": "」",
                       "isUnderlined": false
                     }
                   ],
@@ -26285,12 +26785,12 @@
               "meaning": "Hoàn thành, kết thúc",
               "examples": [
                 {
-                  "japanese": "今日は仕事を終えてから、映画を見に行きます。",
+                  "japanese": "今日は６時までに仕事を終えて退社するつもりだ。",
                   "vietnamese": "Hôm nay tôi định hoàn thành công việc và tan làm trước 6h.",
                   "segments": [
                     {
-                      "text": "今日は仕事を",
-                      "reading": "",
+                      "text": "今日は６時までに仕事を",
+                      "reading": "きょうはろくじまでにしごとを",
                       "isUnderlined": false
                     },
                     {
@@ -26299,8 +26799,8 @@
                       "isUnderlined": true
                     },
                     {
-                      "text": "から、映画を見に行きます。",
-                      "reading": "",
+                      "text": "退社するつもりだ。",
+                      "reading": "たいしゃするつもりだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -26310,12 +26810,12 @@
                   }
                 },
                 {
-                  "japanese": "新入社員は研修を終えると、各地の支店に配属された。",
+                  "japanese": "新入社員たちは研修を終えると、各地の支店に配属された。",
                   "vietnamese": "Những nhân viên mới sau khi kết thúc tập huấn được điều phối về chi nhánh các vùng.",
                   "segments": [
                     {
-                      "text": "新入社員は研修を",
-                      "reading": "",
+                      "text": "新入社員たちは研修を",
+                      "reading": "しんにゅうしゃいんたちはけんしゅうを",
                       "isUnderlined": false
                     },
                     {
@@ -26325,7 +26825,7 @@
                     },
                     {
                       "text": "、各地の支店に配属された。",
-                      "reading": "",
+                      "reading": "、かくちのしてんにはいぞくされた。",
                       "isUnderlined": false
                     }
                   ],
@@ -26340,7 +26840,7 @@
                   "segments": [
                     {
                       "text": "祖父は家族に見守られて90年の生涯を",
-                      "reading": "",
+                      "reading": "そふはかぞくにみまもられてきゅうじゅうねんのしょうがいを",
                       "isUnderlined": false
                     },
                     {
@@ -26350,7 +26850,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -26420,7 +26920,7 @@
                   "segments": [
                     {
                       "text": "意識不明の母に",
-                      "reading": "",
+                      "reading": "いしきふめいのははに",
                       "isUnderlined": false
                     },
                     {
@@ -26430,7 +26930,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -26440,12 +26940,12 @@
                   }
                 },
                 {
-                  "japanese": "祖師に呼びかけて、寄付金を集めた。",
+                  "japanese": "仲間に呼びかけて、寄付金を集めた。",
                   "vietnamese": "Kêu gọi bạn bè đồng nghiệp để quyên góp tiền.",
                   "segments": [
                     {
-                      "text": "祖師に",
-                      "reading": "",
+                      "text": "仲間に",
+                      "reading": "なかまに",
                       "isUnderlined": false
                     },
                     {
@@ -26455,7 +26955,7 @@
                     },
                     {
                       "text": "、寄付金を集めた。",
-                      "reading": "",
+                      "reading": "、きふきんをあつめた。",
                       "isUnderlined": false
                     }
                   ],
@@ -26470,7 +26970,7 @@
                   "segments": [
                     {
                       "text": "平和の大切さを世界に",
-                      "reading": "",
+                      "reading": "へいわのたいせつさをせかいに",
                       "isUnderlined": false
                     },
                     {
@@ -26480,7 +26980,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -26535,7 +27035,7 @@
                   "segments": [
                     {
                       "text": "学費を払っていなかったので、事務局に",
-                      "reading": "",
+                      "reading": "がくひをはらっていなかったので、じむきょくに",
                       "isUnderlined": false
                     },
                     {
@@ -26545,7 +27045,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -26560,7 +27060,7 @@
                   "segments": [
                     {
                       "text": "急ぎの用事だったので、学校に電話をして子どもを",
-                      "reading": "",
+                      "reading": "いそぎのようじだったので、がっこうにでんわをしてこどもを",
                       "isUnderlined": false
                     },
                     {
@@ -26570,7 +27070,7 @@
                     },
                     {
                       "text": "もらった。",
-                      "reading": "",
+                      "reading": "もらった。",
                       "isUnderlined": false
                     }
                   ],
@@ -26580,7 +27080,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "名",
+                  "items": [
+                    {
+                      "japanese": "（名）①②呼び出し",
+                      "vietnamese": "Cuộc gọi (例．「お客様のお呼び出しを申し上げます」・学校から呼び出しを受けた。) (Ví dụ: ・Nhận cuộc gọi của khách hàng・Tôi nhận được cuộc gọi/ giấy gọi từ trường.)",
+                      "segments": [
+                        {
+                          "text": "（名）①②",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "呼び出し",
+                          "reading": "よびだし",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 60,
+                        "printedPage": 57
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 59,
                 "printedPage": 56
@@ -79232,6 +79758,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "f02bda3e648041c8ef17bd611e0b65fc0504a0438bf6afe65004104e39810577"
+    "candidateHash": "78b4372d429a62afc88eac10345cacf2f8893ad2d4523b152fd13e091634f025"
   }
 }
