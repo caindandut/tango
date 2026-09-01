@@ -32645,13 +32645,98 @@
               "meaning": "Thế, đà, khí thế",
               "examples": [
                 {
-                  "japanese": "どちらがテストでいい点を取るか、友だちと勝負をした。",
-                  "vietnamese": "Tôi đã cá cược với bạn xem ai được",
+                  "japanese": "選手たちは、勢いで私の前を通り過ぎていった。",
+                  "vietnamese": "Các tuyển thủ tràn trề sức lực chạy vượt qua mặt tôi.",
                   "segments": [
                     {
-                      "text": "どちらがテストでいい点を取るか、友だちと勝負をした。",
-                      "reading": "ごい",
+                      "text": "選手たちは、",
+                      "reading": "せんしゅたちは、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "勢い",
+                      "reading": "いきおい",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "で私の前を通り過ぎていった。",
+                      "reading": "でわたしのまえをとおりすぎていった。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 87,
+                    "printedPage": 84
+                  }
+                },
+                {
+                  "japanese": "蛇口をひねると、勢いよく水が出てきた。",
+                  "vietnamese": "Vừa mở vòi nước cái là nước đã chảy ra xối xả.",
+                  "segments": [
+                    {
+                      "text": "蛇口をひねると、",
+                      "reading": "じゃぐちをひねると、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "勢いよく",
+                      "reading": "いきおいよく",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "水が出てきた。",
+                      "reading": "みずがでてきた。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 87,
+                    "printedPage": 84
+                  }
+                },
+                {
+                  "japanese": "明日の試合は、勢いのあるAチームが勝つと思う。",
+                  "vietnamese": "Trận thi đấu ngày mai tôi nghĩ đội A có khí thế sẽ chiến thắng.",
+                  "segments": [
+                    {
+                      "text": "明日の試合は、",
+                      "reading": "あしたのしあいは、",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "勢いのある",
+                      "reading": "いきおいのある",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "Aチームが勝つと思う。",
+                      "reading": "Aちーむがかつとおもう。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 87,
+                    "printedPage": 84
+                  }
+                },
+                {
+                  "japanese": "酔った勢いで上司に文句を言ってしまった。",
+                  "vietnamese": "Vì say bí tỉ mà tôi đã nói lời phàn nàn với cấp trên.",
+                  "segments": [
+                    {
+                      "text": "酔った",
+                      "reading": "よった",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "勢い",
+                      "reading": "いきおい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "で上司に文句を言ってしまった。",
+                      "reading": "でじょうしにもんくをいってしまった。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -32660,7 +32745,58 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "勢いがある⇔ない",
+                      "vietnamese": "Có tinh thần⇔Không có tinh thần",
+                      "segments": [
+                        {
+                          "text": "勢いがある⇔ない",
+                          "reading": "いきおいがある⇔ない",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 87,
+                        "printedPage": 84
+                      }
+                    },
+                    {
+                      "japanese": "＿をつける",
+                      "vietnamese": "Tạo khí thế",
+                      "segments": [
+                        {
+                          "text": "＿をつける",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 87,
+                        "printedPage": 84
+                      }
+                    },
+                    {
+                      "japanese": "＿づく",
+                      "vietnamese": "Sinh lực tràn trề",
+                      "segments": [
+                        {
+                          "text": "＿づく",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 87,
+                        "printedPage": 84
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 87,
                 "printedPage": 84
@@ -69865,6 +70001,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "5b286124143fe0cd202a42964fcb8f6f979efb44296ef7563dc4650043872ced"
+    "candidateHash": "0436c38fa01dabd54e680b606a6d1ea3c6a0b8cdfb1ba6b2f21514125a0d8c31"
   }
 }
