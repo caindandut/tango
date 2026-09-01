@@ -67728,18 +67728,78 @@
               "meaning": "Vốn dĩ",
               "examples": [
                 {
-                  "japanese": "元々。",
-                  "vietnamese": "Vốn dĩ",
+                  "japanese": "私がコピーをこぼすと、店員がさっとふいてくれた。",
+                  "vietnamese": "Khi tôi làm đổ cà phê, nhân viên đã lập tức lau đi.",
                   "segments": [
                     {
-                      "text": "元々。",
-                      "reading": "ごい",
+                      "text": "私がコピーをこぼすと、店員が",
+                      "reading": "わたしがこーひーをこぼすと、てんいんが",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "さっと",
+                      "reading": "さっと",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "ふいてくれた。",
+                      "reading": "ふいてくれた。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 344,
-                    "printedPage": 341
+                    "pdfPage": 338,
+                    "printedPage": 335
+                  }
+                },
+                {
+                  "japanese": "「ほうれん草はさっとゆでて、水に取ってください」",
+                  "vietnamese": "“Hãy luộc qua rau chân vịt rồi cho vào nước”",
+                  "segments": [
+                    {
+                      "text": "「ほうれん草は",
+                      "reading": "ほうれんそうは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "さっと",
+                      "reading": "さっと",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "ゆでて、水に取ってください」",
+                      "reading": "ゆでて、みずにとってください",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 338,
+                    "printedPage": 335
+                  }
+                },
+                {
+                  "japanese": "話を聞いて、彼の顔色がさっと変わった。",
+                  "vietnamese": "Sau khi nghe câu chuyện, sắc mặt anh ta lập tức thay đổi.",
+                  "segments": [
+                    {
+                      "text": "話を聞いて、彼の顔色が",
+                      "reading": "はなしをきいて、かれのかおいろが",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "さっと",
+                      "reading": "さっと",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "変わった。",
+                      "reading": "かわった。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 338,
+                    "printedPage": 335
                   }
                 }
               ],
@@ -67757,18 +67817,78 @@
               "meaning": "Vốn dĩ đúng ra thì , vốn có",
               "examples": [
                 {
-                  "japanese": "とこのビルは本来昨年完成の予定だったが、資金人不足でまだ完成していない。",
-                  "vietnamese": "Toa nhà",
+                  "japanese": "彼女はすっと立ち上がって、部屋を出て行った。",
+                  "vietnamese": "Cô ấy đứng thẳng dậy và rời khỏi phòng rồi đi mất.",
                   "segments": [
                     {
-                      "text": "とこのビルは本来昨年完成の予定だったが、資金人不足でまだ完成していない。",
-                      "reading": "ほん",
+                      "text": "彼女は",
+                      "reading": "かのじょは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "すっと",
+                      "reading": "すっと",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "立ち上がって、部屋を出て行った。",
+                      "reading": "たちあがって、へやをでていった。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 344,
-                    "printedPage": 341
+                    "pdfPage": 338,
+                    "printedPage": 335
+                  }
+                },
+                {
+                  "japanese": "このガムをかむと、口の中がすっとする。",
+                  "vietnamese": "Khi nhai kẹo cao su này trong miệng sẽ thấy thoải mái.",
+                  "segments": [
+                    {
+                      "text": "このガムをかむと、口の中が",
+                      "reading": "このがむをかむと、くちのなかが",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "すっと",
+                      "reading": "すっと",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "する。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 338,
+                    "printedPage": 335
+                  }
+                },
+                {
+                  "japanese": "言いたいことを言ったら、胸がすっとした。",
+                  "vietnamese": "Sau khi nói chuyện muốn nói, thấy thoải mái hẳn.",
+                  "segments": [
+                    {
+                      "text": "言いたいことを言ったら、胸が",
+                      "reading": "いいたいことをいったら、むねが",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "すっと",
+                      "reading": "すっと",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "した。",
+                      "reading": "した。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 338,
+                    "printedPage": 335
                   }
                 }
               ],
@@ -69045,6 +69165,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "f184546a435e3c9b428a5023e52c3667b8fd7c82c91fb45a805276d7147921dd"
+    "candidateHash": "b5b34de9ba3dae2b5b426e0f5a47675f29b119e2f28cb1af2b3aa43d902e014d"
   }
 }
