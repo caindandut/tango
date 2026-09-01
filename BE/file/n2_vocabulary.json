@@ -55148,11 +55148,6 @@
                   "vietnamese": "Mọi người hãy cùng nhau hợp sức để tạo dựng một tương lai tốt đẹp hơn.",
                   "segments": [
                     {
-                      "text": "",
-                      "reading": "",
-                      "isUnderlined": false
-                    },
-                    {
                       "text": "より良い未来を築くために、みんなで力を合わせましょう。",
                       "reading": "よりよいみらいをきずくために、みんなでちからをあわせましょう。",
                       "isUnderlined": true
@@ -89879,6 +89874,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "d125a9d815205c44780c00045add0273995dd17a9685af762d45806538747089"
+    "candidateHash": "0db9345389bd3d2bc6677fa7c6d64fa7fb43af2de08ba39f538e355b45ff0ed3"
   }
 }
