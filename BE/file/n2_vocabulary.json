@@ -27144,7 +27144,7 @@
                   "segments": [
                     {
                       "text": "病気の私の元へ来てくれたあなたの気持ちが",
-                      "reading": "",
+                      "reading": "びょうきのわたしのもとへきてくれたあなたのきもちが",
                       "isUnderlined": false
                     },
                     {
@@ -27154,7 +27154,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -27174,7 +27174,7 @@
                     },
                     {
                       "text": "ことに友だちに恵まれている。",
-                      "reading": "",
+                      "reading": "ことにともだちにめぐまれている。",
                       "isUnderlined": false
                     }
                   ],
@@ -27189,7 +27189,7 @@
                   "segments": [
                     {
                       "text": "給料が上がったのは",
-                      "reading": "",
+                      "reading": "きゅうりょうがあがったのは",
                       "isUnderlined": false
                     },
                     {
@@ -27199,7 +27199,7 @@
                     },
                     {
                       "text": "ことだ。",
-                      "reading": "",
+                      "reading": "ことだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -27214,7 +27214,7 @@
                   "segments": [
                     {
                       "text": "（店で）「あの人たちはコーヒーだけで5時間も店で読書している。",
-                      "reading": "",
+                      "reading": "（みせで）「あのひとたちはコーヒーだけでごじかんもみせでどくしょしている。",
                       "isUnderlined": false
                     },
                     {
@@ -27224,7 +27224,7 @@
                     },
                     {
                       "text": "ない客だ」",
-                      "reading": "",
+                      "reading": "ないきゃくだ」",
                       "isUnderlined": false
                     }
                   ],
@@ -27274,17 +27274,17 @@
                   "segments": [
                     {
                       "text": "ご迷惑をおかけして",
-                      "reading": "",
+                      "reading": "ごめいわくをおかけして",
                       "isUnderlined": false
                     },
                     {
-                      "text": "申し訳",
-                      "reading": "もうしわけ",
+                      "text": "申し訳ありませんでした",
+                      "reading": "もうしわけありませんでした",
                       "isUnderlined": true
                     },
                     {
-                      "text": "ありませんでした。",
-                      "reading": "",
+                      "text": "。",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -27325,7 +27325,7 @@
               "sourceNumber": 223,
               "kanji": "めでたい",
               "hiragana": "めでたい",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "",
               "meaning": "Vui, hạnh phúc",
               "examples": [
                 {
@@ -27334,7 +27334,7 @@
                   "segments": [
                     {
                       "text": "子どもたちの大学合格や結婚など、今年は",
-                      "reading": "",
+                      "reading": "こどもたちのだいがくごうかくやけっこんなど、ことしは",
                       "isUnderlined": false
                     },
                     {
@@ -27344,7 +27344,7 @@
                     },
                     {
                       "text": "ことが多かった。",
-                      "reading": "",
+                      "reading": "ことがおおかった。",
                       "isUnderlined": false
                     }
                   ],
@@ -27394,17 +27394,17 @@
                   "segments": [
                     {
                       "text": "いい友人に恵まれて",
-                      "reading": "",
+                      "reading": "いいゆうじんにめぐまれて",
                       "isUnderlined": false
                     },
                     {
-                      "text": "幸い",
-                      "reading": "さいわいな",
+                      "text": "幸いだ",
+                      "reading": "さいわいだ",
                       "isUnderlined": true
                     },
                     {
-                      "text": "だ。",
-                      "reading": "",
+                      "text": "。",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -27419,17 +27419,17 @@
                   "segments": [
                     {
                       "text": "「皆様のご意見をいただければ",
-                      "reading": "",
+                      "reading": "「みなさまのごいけんをいただければ",
                       "isUnderlined": false
                     },
                     {
-                      "text": "幸い",
-                      "reading": "さいわいな",
+                      "text": "幸いです",
+                      "reading": "さいわいです",
                       "isUnderlined": true
                     },
                     {
-                      "text": "です」",
-                      "reading": "",
+                      "text": "」",
+                      "reading": "」",
                       "isUnderlined": false
                     }
                   ],
@@ -27443,18 +27443,18 @@
                   "vietnamese": "Tôi đã gặp tai nạn giao thông nhưng may mắn là không bị thương.",
                   "segments": [
                     {
-                      "text": "交通事故に遭ったが、幸い（に／にも）／",
-                      "reading": "",
+                      "text": "交通事故に遭ったが、",
+                      "reading": "こうつうじこにあったが、",
                       "isUnderlined": false
                     },
                     {
-                      "text": "幸いな",
-                      "reading": "さいわいな",
+                      "text": "幸い（に／にも）／幸いな",
+                      "reading": "さいわい（に／にも）／さいわいな",
                       "isUnderlined": true
                     },
                     {
                       "text": "ことにけがはなかった。",
-                      "reading": "",
+                      "reading": "ことにけがはなかった。",
                       "isUnderlined": false
                     }
                   ],
@@ -27471,47 +27471,32 @@
                     {
                       "japanese": "幸せな",
                       "vietnamese": "Hạnh phúc",
-                      "source": {
-                        "pdfPage": 65,
-                        "printedPage": 62
-                      },
                       "segments": [
                         {
                           "text": "幸せな",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "しあわせな",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 65,
+                        "printedPage": 62
+                      }
                     },
                     {
                       "japanese": "幸福な",
                       "vietnamese": "Hạnh phúc",
-                      "source": {
-                        "pdfPage": 65,
-                        "printedPage": 62
-                      },
                       "segments": [
                         {
                           "text": "幸福な",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "こうふくな",
+                          "isUnderlined": true
                         }
-                      ]
-                    },
-                    {
-                      "japanese": "幸運な",
-                      "vietnamese": "May mắn",
+                      ],
                       "source": {
                         "pdfPage": 65,
                         "printedPage": 62
-                      },
-                      "segments": [
-                        {
-                          "text": "幸運な",
-                          "reading": "",
-                          "isUnderlined": false
-                        }
-                      ]
+                      }
                     }
                   ]
                 },
@@ -27519,19 +27504,44 @@
                   "label": "名",
                   "items": [
                     {
-                      "japanese": "幸い",
-                      "vietnamese": "May mắn",
+                      "japanese": "（名）幸い",
+                      "vietnamese": "May mắn (例．今後の幸いをお祈りしています。) (Ví dụ: “Cầu mong những điều may mắn sẽ đến trong tương lai”)",
+                      "segments": [
+                        {
+                          "text": "（名）",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "幸い",
+                          "reading": "さいわい",
+                          "isUnderlined": true
+                        }
+                      ],
                       "source": {
                         "pdfPage": 65,
                         "printedPage": 62
-                      },
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "幸運な、運がいい",
+                      "vietnamese": "May mắn",
                       "segments": [
                         {
-                          "text": "幸い",
-                          "reading": "",
-                          "isUnderlined": false
+                          "text": "幸運な、運がいい",
+                          "reading": "こううんな、うんがいい",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 65,
+                        "printedPage": 62
+                      }
                     }
                   ]
                 },
@@ -27540,18 +27550,18 @@
                   "items": [
                     {
                       "japanese": "幸いする",
-                      "vietnamese": "May mắn",
-                      "source": {
-                        "pdfPage": 65,
-                        "printedPage": 62
-                      },
+                      "vietnamese": "May mắn (例．交通事故に遭ったが、シートベルトをしていたのが幸いして、けがはなかった。) (Ví dụ: Tôi đã gặp tai nạn giao thông nhưng may là đã thắt dây an toàn nên không bị thương.)",
                       "segments": [
                         {
                           "text": "幸いする",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "さいわいする",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 65,
+                        "printedPage": 62
+                      }
                     }
                   ]
                 }
@@ -27574,7 +27584,7 @@
                   "segments": [
                     {
                       "text": "（国の両親／恋人／ふるさと…）が",
-                      "reading": "",
+                      "reading": "（くにのりょうしん／こいびと／ふるさと…）が",
                       "isUnderlined": false
                     },
                     {
@@ -27584,7 +27594,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -27599,7 +27609,7 @@
                   "segments": [
                     {
                       "text": "ビールが",
-                      "reading": "",
+                      "reading": "ビールが",
                       "isUnderlined": false
                     },
                     {
@@ -27609,7 +27619,7 @@
                     },
                     {
                       "text": "季節になった。",
-                      "reading": "",
+                      "reading": "きせつになった。",
                       "isUnderlined": false
                     }
                   ],
@@ -27638,7 +27648,7 @@
                   "segments": [
                     {
                       "text": "子どものころが",
-                      "reading": "",
+                      "reading": "こどものころが",
                       "isUnderlined": false
                     },
                     {
@@ -27648,7 +27658,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -27663,7 +27673,7 @@
                   "segments": [
                     {
                       "text": "家族と旅行したのは",
-                      "reading": "",
+                      "reading": "かぞくとりょこうしたのは",
                       "isUnderlined": false
                     },
                     {
@@ -27673,7 +27683,7 @@
                     },
                     {
                       "text": "思い出だ。",
-                      "reading": "",
+                      "reading": "おもいでだ。",
                       "isUnderlined": false
                     }
                   ],
@@ -27688,7 +27698,7 @@
                   "segments": [
                     {
                       "text": "アルバムを見ると学生時代を",
-                      "reading": "",
+                      "reading": "アルバムをみるとがくせいじだいを",
                       "isUnderlined": false
                     },
                     {
@@ -27698,7 +27708,7 @@
                     },
                     {
                       "text": "思い出す。",
-                      "reading": "",
+                      "reading": "おもいだす。",
                       "isUnderlined": false
                     }
                   ],
@@ -27732,7 +27742,7 @@
                     },
                     {
                       "text": "子どもが遊んでいる。",
-                      "reading": "",
+                      "reading": "こどもがあそんでいる。",
                       "isUnderlined": false
                     }
                   ],
@@ -27747,7 +27757,7 @@
                   "segments": [
                     {
                       "text": "彼は",
-                      "reading": "",
+                      "reading": "かれは",
                       "isUnderlined": false
                     },
                     {
@@ -27757,7 +27767,7 @@
                     },
                     {
                       "text": "が、考え方はしっかりしている。",
-                      "reading": "",
+                      "reading": "が、かんがえかたはしっかりしている。",
                       "isUnderlined": false
                     }
                   ],
@@ -27827,17 +27837,17 @@
                   "segments": [
                     {
                       "text": "初めて来日したときは、言葉もわからず知り合いもなく、とても",
-                      "reading": "",
+                      "reading": "はじめてらいにちしたときは、ことばもわからずしりあいもなく、とても",
                       "isUnderlined": false
                     },
                     {
-                      "text": "心細",
-                      "reading": "こころぼそい",
+                      "text": "心細かった",
+                      "reading": "こころぼそかった",
                       "isUnderlined": true
                     },
                     {
-                      "text": "かった。",
-                      "reading": "",
+                      "text": "。",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -27878,7 +27888,7 @@
               "sourceNumber": 229,
               "kanji": "可哀想な",
               "hiragana": "かわいそうな",
-              "hanVietMeaning": "N2",
+              "hanVietMeaning": "",
               "meaning": "か わい そう な Đáng thương",
               "examples": [
                 {
@@ -27887,17 +27897,17 @@
                   "segments": [
                     {
                       "text": "子どもを叱ったが、泣いているのを見て",
-                      "reading": "",
+                      "reading": "こどもをしかったが、ないているのをみて",
                       "isUnderlined": false
                     },
                     {
-                      "text": "かわいそう",
-                      "reading": "かわいそうな",
+                      "text": "かわいそうに",
+                      "reading": "かわいそうに",
                       "isUnderlined": true
                     },
                     {
-                      "text": "になった。",
-                      "reading": "",
+                      "text": "なった。",
+                      "reading": "なった。",
                       "isUnderlined": false
                     }
                   ],
@@ -27912,17 +27922,17 @@
                   "segments": [
                     {
                       "text": "「犬が",
-                      "reading": "",
+                      "reading": "「いぬが",
                       "isUnderlined": false
                     },
                     {
-                      "text": "かわいそう",
-                      "reading": "かわいそうな",
+                      "text": "かわいそうでしょう",
+                      "reading": "かわいそうでしょう",
                       "isUnderlined": true
                     },
                     {
-                      "text": "でしょう」「かわいそうに…」",
-                      "reading": "",
+                      "text": "」「かわいそうに…」",
+                      "reading": "」「かわいそうに…」",
                       "isUnderlined": false
                     }
                   ],
@@ -27951,17 +27961,17 @@
                   "segments": [
                     {
                       "text": "彼女は事故で大けがをしたそうだ。",
-                      "reading": "",
+                      "reading": "かのじょはじこでおおけがをしたそうだ。",
                       "isUnderlined": false
                     },
                     {
-                      "text": "気の毒",
-                      "reading": "きのどくな",
+                      "text": "気の毒に",
+                      "reading": "きのどくに",
                       "isUnderlined": true
                     },
                     {
-                      "text": "に…。",
-                      "reading": "",
+                      "text": "…。",
+                      "reading": "…。",
                       "isUnderlined": false
                     }
                   ],
@@ -27976,17 +27986,17 @@
                   "segments": [
                     {
                       "text": "彼は確かに失敗したが、あんなに非難されては",
-                      "reading": "",
+                      "reading": "かれはたしかにしっぱいしたが、あんなにひなんされては",
                       "isUnderlined": false
                     },
                     {
-                      "text": "気の毒",
-                      "reading": "きのどくな",
+                      "text": "気の毒だ",
+                      "reading": "きのどくだ",
                       "isUnderlined": true
                     },
                     {
-                      "text": "だ。",
-                      "reading": "",
+                      "text": "。",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -28015,7 +28025,7 @@
                   "segments": [
                     {
                       "text": "私は",
-                      "reading": "",
+                      "reading": "わたしは",
                       "isUnderlined": false
                     },
                     {
@@ -28025,7 +28035,7 @@
                     },
                     {
                       "text": "家に育った。",
-                      "reading": "",
+                      "reading": "いえにそだった。",
                       "isUnderlined": false
                     }
                   ],
@@ -28037,22 +28047,47 @@
               ],
               "relations": [
                 {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "心が＿",
+                      "vietnamese": "Hẹp hòi",
+                      "segments": [
+                        {
+                          "text": "心が",
+                          "reading": "こころが",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 67,
+                        "printedPage": 64
+                      }
+                    }
+                  ]
+                },
+                {
                   "label": "合",
                   "items": [
                     {
                       "japanese": "貧しさ",
                       "vietnamese": "Sự nghèo đói",
-                      "source": {
-                        "pdfPage": 67,
-                        "printedPage": 64
-                      },
                       "segments": [
                         {
                           "text": "貧しさ",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "まずしさ",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 67,
+                        "printedPage": 64
+                      }
                     }
                   ]
                 },
@@ -28062,32 +28097,32 @@
                     {
                       "japanese": "豊かな",
                       "vietnamese": "Phong phú, giàu có",
-                      "source": {
-                        "pdfPage": 67,
-                        "printedPage": 64
-                      },
                       "segments": [
                         {
                           "text": "豊かな",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "ゆたかな",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 67,
+                        "printedPage": 64
+                      }
                     },
                     {
                       "japanese": "裕福な",
                       "vietnamese": "Giàu có",
-                      "source": {
-                        "pdfPage": 67,
-                        "printedPage": 64
-                      },
                       "segments": [
                         {
                           "text": "裕福な",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "ゆうふくな",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 67,
+                        "printedPage": 64
+                      }
                     }
                   ]
                 },
@@ -28097,17 +28132,17 @@
                     {
                       "japanese": "貧乏な",
                       "vietnamese": "Bần cùng (nghèo)",
-                      "source": {
-                        "pdfPage": 67,
-                        "printedPage": 64
-                      },
                       "segments": [
                         {
                           "text": "貧乏な",
-                          "reading": "",
-                          "isUnderlined": false
+                          "reading": "びんぼうな",
+                          "isUnderlined": true
                         }
-                      ]
+                      ],
+                      "source": {
+                        "pdfPage": 67,
+                        "printedPage": 64
+                      }
                     }
                   ]
                 }
@@ -28130,17 +28165,17 @@
                   "segments": [
                     {
                       "text": "あと一つ問題ができていれば合格だったのに。",
-                      "reading": "",
+                      "reading": "あとひとつもんだいができていればごうかくだったのに。",
                       "isUnderlined": false
                     },
                     {
-                      "text": "惜しかっ",
-                      "reading": "おしい",
+                      "text": "惜しかった",
+                      "reading": "おしかった",
                       "isUnderlined": true
                     },
                     {
-                      "text": "た。",
-                      "reading": "",
+                      "text": "。",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -28155,7 +28190,7 @@
                   "segments": [
                     {
                       "text": "今までがんばったのだから、ここでやめるのは",
-                      "reading": "",
+                      "reading": "いままでがんばったのだから、ここでやめるのは",
                       "isUnderlined": false
                     },
                     {
@@ -28165,7 +28200,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -28180,7 +28215,7 @@
                   "segments": [
                     {
                       "text": "まだ使える物を捨てるのは",
-                      "reading": "",
+                      "reading": "まだつかえるものをすてるのは",
                       "isUnderlined": false
                     },
                     {
@@ -28190,7 +28225,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -28205,7 +28240,7 @@
                   "segments": [
                     {
                       "text": "時間が",
-                      "reading": "",
+                      "reading": "じかんが",
                       "isUnderlined": false
                     },
                     {
@@ -28215,7 +28250,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -28235,7 +28270,7 @@
                     },
                     {
                       "text": "人をなくした。",
-                      "reading": "",
+                      "reading": "ひとをなくした。",
                       "isUnderlined": false
                     }
                   ],
@@ -28307,7 +28342,7 @@
                   "segments": [
                     {
                       "text": "借金を返すには、休日も働くよりほかに",
-                      "reading": "",
+                      "reading": "しゃっきんをかえすには、きゅうじつもはたらくよりほかに",
                       "isUnderlined": false
                     },
                     {
@@ -28317,7 +28352,7 @@
                     },
                     {
                       "text": "。",
-                      "reading": "",
+                      "reading": "。",
                       "isUnderlined": false
                     }
                   ],
@@ -28332,7 +28367,7 @@
                   "segments": [
                     {
                       "text": "仕事が急に入ったので、",
-                      "reading": "",
+                      "reading": "しごとがきゅうにはいったので、",
                       "isUnderlined": false
                     },
                     {
@@ -28342,7 +28377,7 @@
                     },
                     {
                       "text": "休日も働いた。",
-                      "reading": "",
+                      "reading": "きゅうじつもはたらいた。",
                       "isUnderlined": false
                     }
                   ],
@@ -28356,9 +28391,19 @@
                   "vietnamese": "Chuyện cũng đã xong rồi, giờ có hối hận cũng không làm gì được.",
                   "segments": [
                     {
-                      "text": "終わった後で悔やんでもしかたがない。",
-                      "reading": "しかたない",
+                      "text": "終わった後で悔やんでも",
+                      "reading": "おわったあとでくやんでも",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "しかたがない",
+                      "reading": "しかたがない",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -28371,9 +28416,19 @@
                   "vietnamese": "“Cứ phân vân mãi như thế cũng chẳng có ích gì. Quyết định nhanh đi.”",
                   "segments": [
                     {
-                      "text": "「ぐずぐず迷っていてもしかたがない。早く決めよう」",
-                      "reading": "しかたない",
+                      "text": "「ぐずぐず迷っていても",
+                      "reading": "「ぐずぐずまよっていても",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "しかたがない",
+                      "reading": "しかたがない",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。早く決めよう」",
+                      "reading": "。はやくきめよう」",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -79758,6 +79813,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "78b4372d429a62afc88eac10345cacf2f8893ad2d4523b152fd13e091634f025"
+    "candidateHash": "18643d0b3d12e006b1de4083be111714bf7e4f76600a502c96f0a5500c8d9cc6"
   }
 }
