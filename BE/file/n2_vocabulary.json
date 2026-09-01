@@ -33481,13 +33481,48 @@
               "meaning": "Ranh giới, biên giới, giới hạn, ngăn cách",
               "examples": [
                 {
-                  "japanese": "隣の家との境には堺がある。",
-                  "vietnamese": "Cohangraongan cách (ranh giới) với nhà hàng xóm.",
+                  "japanese": "隣の家との境には塀がある。",
+                  "vietnamese": "Có hàng rào ngăn cách (ranh giới) với nhà hàng xóm.",
                   "segments": [
                     {
-                      "text": "隣の家との境には堺がある。",
-                      "reading": "さか",
+                      "text": "隣の家との",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "境",
+                      "reading": "さかい",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "には塀がある。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 92,
+                    "printedPage": 89
+                  }
+                },
+                {
+                  "japanese": "秋分の日を境に、急に涼しくなった。",
+                  "vietnamese": "Vào giáp ngày thu phân, trời đột nhiên trở nên mát mẻ.",
+                  "segments": [
+                    {
+                      "text": "秋分の日を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "境",
+                      "reading": "さかい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "に、急に涼しくなった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -33496,7 +33531,93 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿に接する",
+                      "vietnamese": "Tiếp giáp ranh giới",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "に接する",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 92,
+                        "printedPage": 89
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿目",
+                      "vietnamese": "Điểm giới hạn",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "目",
+                          "reading": "め",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 92,
+                        "printedPage": 89
+                      }
+                    },
+                    {
+                      "japanese": "境界",
+                      "vietnamese": "Ranh giới giữa các tỉnh",
+                      "segments": [
+                        {
+                          "text": "境界",
+                          "reading": "きょうかい",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 92,
+                        "printedPage": 89
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "慣",
+                  "items": [
+                    {
+                      "japanese": "生死の境をさまよう",
+                      "vietnamese": "Bán sống bán chết. (thành ngữ)",
+                      "segments": [
+                        {
+                          "text": "生死の境をさまよう",
+                          "reading": "せいしのさかいをさまよう",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 92,
+                        "printedPage": 89
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 92,
                 "printedPage": 89
@@ -33511,12 +33632,47 @@
               "examples": [
                 {
                   "japanese": "彼女の話の半ばはうそだ。",
-                  "vietnamese": "Nửa câu chuyện của cô ấy là nói dồi.",
+                  "vietnamese": "Nửa câu chuyện của cô ấy là nói dối.",
                   "segments": [
                     {
-                      "text": "彼女の話の半ばはうそだ。",
-                      "reading": "ば",
+                      "text": "彼女の話の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "半ば",
+                      "reading": "なかば",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "はうそだ。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 92,
+                    "printedPage": 89
+                  }
+                },
+                {
+                  "japanese": "試験ができなかったので、合格は半ばあきらめていた。",
+                  "vietnamese": "Vì không làm được bài thi nên tôi bỏ một nửa khả năng đỗ.",
+                  "segments": [
+                    {
+                      "text": "試験ができなかったので、合格は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "半ば",
+                      "reading": "なかば",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "あきらめていた。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -33525,7 +33681,28 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "半分",
+                      "vietnamese": "Một nửa",
+                      "segments": [
+                        {
+                          "text": "半分",
+                          "reading": "はんぶん",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 92,
+                        "printedPage": 89
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 92,
                 "printedPage": 89
@@ -67085,6 +67262,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "98ce3b1b5ade2be2a8fc84daaa90d3ad7f6f3b02648c0d2a450736c006ca5f76"
+    "candidateHash": "0ba44d6f342e2fa7928e06d95c38b0b583d2e79cbe76bd6dba2fccaeff96117f"
   }
 }
