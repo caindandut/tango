@@ -7,7 +7,6 @@ import HiraganaInput from '@/components/study/HiraganaInput';
 import VocabularyExamples from '@/components/study/VocabularyExamples';
 import FlashcardExamples from '@/components/study/FlashcardExamples';
 import VocabularyRelations from '@/components/study/VocabularyRelations';
-import KanjiWritingPad from '@/components/study/KanjiWritingPad';
 import {
   getReadingCorrectAnswer,
   getKanaInputMode,
@@ -1049,8 +1048,6 @@ export default function StudyPage() {
           )}
         </div>
       </div>
-
-      {currentWord && <KanjiWritingPad key={currentWord.id} currentWord={currentWord} />}
 
       {/* Progress Bar (bottom) */}
       {currentWord && (
