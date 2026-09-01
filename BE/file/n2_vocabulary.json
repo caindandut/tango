@@ -63968,13 +63968,48 @@
               "meaning": "わた っ た 。",
               "examples": [
                 {
-                  "japanese": "病室。",
-                  "vietnamese": "わた っ た 。",
+                  "japanese": "罪を犯したら、償わなければならない。",
+                  "vietnamese": "Nếu phạm tội thì phải bồi thường.",
                   "segments": [
                     {
-                      "text": "病室。",
-                      "reading": "ごい",
+                      "text": "罪を",
+                      "reading": "つみを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "犯したら",
+                      "reading": "おかしたら",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、償わなければならない。",
+                      "reading": "つぐなわなければならない。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 314,
+                    "printedPage": 311
+                  }
+                },
+                {
+                  "japanese": "「犯罪／過ち…」を犯す。",
+                  "vietnamese": "Phạm {tội/ lỗi...}.",
+                  "segments": [
+                    {
+                      "text": "「犯罪／過ち…」を",
+                      "reading": "はんざい／あやまちを",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "犯す",
+                      "reading": "おかす",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -64763,13 +64798,43 @@
               "meaning": "Vẫnđục II",
               "examples": [
                 {
-                  "japanese": "どる。",
-                  "vietnamese": "Vẫnđục II",
+                  "japanese": "台風で濁った川の水が激しく流れている。",
+                  "vietnamese": "Vì bão mà nước sông đục và chảy xiết.",
                   "segments": [
                     {
-                      "text": "どる。",
-                      "reading": "どる",
+                      "text": "台風で",
+                      "reading": "たいふうで",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "濁った",
+                      "reading": "にごった",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "川の水が激しく流れている。",
+                      "reading": "かわのみずがはげしくながれている。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 320,
+                    "printedPage": 317
+                  }
+                },
+                {
+                  "japanese": "濁った「声／音／…」",
+                  "vietnamese": "{Giọng/ âm thanh/ ...} đục/ mờ",
+                  "segments": [
+                    {
+                      "text": "濁った",
+                      "reading": "にごった",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "「声／音／…」",
+                      "reading": "こえ／おと",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -64778,7 +64843,48 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "対",
+                  "items": [
+                    {
+                      "japanese": "澄む",
+                      "vietnamese": "Trong, sạch",
+                      "segments": [
+                        {
+                          "text": "澄む",
+                          "reading": "すむ",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 320,
+                        "printedPage": 317
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "濁り",
+                      "vietnamese": "Đục",
+                      "segments": [
+                        {
+                          "text": "濁り",
+                          "reading": "にごり",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 320,
+                        "printedPage": 317
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 320,
                 "printedPage": 317
@@ -65134,13 +65240,48 @@
               "meaning": "Kémhơn",
               "examples": [
                 {
-                  "japanese": "ベテランのA選手は体力ではBẾT(2⁄4D]劣るが、テクニックで勝てるだろう。",
-                  "vietnamese": "Kémhơn",
+                  "japanese": "ベテランのA選手は体力ではB選手（に／より）劣るが、テクニックで勝てるだろう。",
+                  "vietnamese": "Tuyển thủ dày dạn kinh nghiệm A về thể lực thì kém hơn tuyển thủ B nhưng sẽ chiến thắng bằng kĩ thuật thôi.",
                   "segments": [
                     {
-                      "text": "ベテランのA選手は体力ではBẾT(2⁄4D]劣るが、テクニックで勝てるだろう。",
-                      "reading": "る",
+                      "text": "ベテランのA選手は体力ではB選手（に／より）",
+                      "reading": "べてらんのAせんしゅはたいりょくではBせんしゅに／より",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "劣る",
+                      "reading": "おとる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "が、テクニックで勝てるだろう。",
+                      "reading": "が、てくにっくでかてるだろう。",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 323,
+                    "printedPage": 320
+                  }
+                },
+                {
+                  "japanese": "子どもは劣らず大人も、このゲームに夢中になっている。",
+                  "vietnamese": "Người lớn hay không kém gì trẻ em cũng sẽ say mê trò chơi này.",
+                  "segments": [
+                    {
+                      "text": "子どもは",
+                      "reading": "こどもは",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "劣らず",
+                      "reading": "おとらず",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "大人も、このゲームに夢中になっている。",
+                      "reading": "おとなも、このげーむにむちゅうになっている。",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -65149,7 +65290,28 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "対",
+                  "items": [
+                    {
+                      "japanese": "勝る",
+                      "vietnamese": "Vượt trội hơn",
+                      "segments": [
+                        {
+                          "text": "勝る",
+                          "reading": "まさる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 323,
+                        "printedPage": 320
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 323,
                 "printedPage": 320
@@ -68883,6 +69045,6 @@
     "approved": true,
     "method": "manual-page-by-page",
     "issues": [],
-    "candidateHash": "64e848e8f90b5d39cb12af94e96527a4df7b6dbf07eaeb2c2ca6a4bf46eba044"
+    "candidateHash": "f184546a435e3c9b428a5023e52c3667b8fd7c82c91fb45a805276d7147921dd"
   }
 }
