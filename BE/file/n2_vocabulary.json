@@ -67586,13 +67586,23 @@
               "meaning": "Vắt, ép, vặn",
               "examples": [
                 {
-                  "japanese": "水にぬらしたタオルを終る。",
-                  "vietnamese": "V 計 khanuet",
+                  "japanese": "水にぬらしたタオルを絞る。",
+                  "vietnamese": "Vắt khăn đã làm ướt.",
                   "segments": [
                     {
-                      "text": "水にぬらしたタオルを終る。",
-                      "reading": "ぼる",
+                      "text": "水にぬらしたタオルを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "絞る",
+                      "reading": "しぼる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -68309,13 +68319,23 @@
               "meaning": "Bổ sung, đền bù",
               "examples": [
                 {
-                  "japanese": "ボーナスで毎月の赤字を3Ìう。",
+                  "japanese": "ボーナスで毎月の赤字を補う。",
                   "vietnamese": "Đền bù khoản lỗ hàng tháng bằng tiền thưởng.",
                   "segments": [
                     {
-                      "text": "ボーナスで毎月の赤字を3Ìう。",
-                      "reading": "う",
+                      "text": "ボーナスで毎月の赤字を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "補う",
+                      "reading": "おぎなう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -68945,13 +68965,23 @@
               "meaning": "Gặp, gặp phải",
               "examples": [
                 {
-                  "japanese": "自宅に友人を招いた。",
+                  "japanese": "交通事故に遭ってけがをした。",
                   "vietnamese": "Tôi đã mời bạn đến nhà.",
                   "segments": [
                     {
-                      "text": "自宅に友人を招いた。",
-                      "reading": "まね",
+                      "text": "交通事故に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "遭って",
+                      "reading": "あって",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "けがをした。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -68974,17 +69004,17 @@
               "meaning": "Mời, vẫy tay (gọi người tới), gây ra",
               "examples": [
                 {
-                  "japanese": "客を招く。",
-                  "vietnamese": "Mời khách。",
+                  "japanese": "自宅に友人を招いた。",
+                  "vietnamese": "Tôi đã mời bạn đến nhà.",
                   "segments": [
                     {
-                      "text": "客を",
+                      "text": "自宅に友人を",
                       "reading": "",
                       "isUnderlined": false
                     },
                     {
-                      "text": "招く",
-                      "reading": "まねく",
+                      "text": "招いた",
+                      "reading": "まねいた",
                       "isUnderlined": true
                     },
                     {
@@ -69017,9 +69047,19 @@
                   "vietnamese": "Ở trên núi, quần áo bị móc vào cây và bị rách.",
                   "segments": [
                     {
-                      "text": "山で服が木に引っかかって破れてしまった。",
+                      "text": "山で服が木に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "引っかかって",
                       "reading": "ひっかかる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "破れてしまった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69032,9 +69072,19 @@
                   "vietnamese": "Đầu tóc vì bị hư nên bị mắc vào ngón tay.",
                   "segments": [
                     {
-                      "text": "髪が傷んでいて、指に引っかかる。",
+                      "text": "髪が傷んでいて、指に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "引っかかる",
                       "reading": "ひっかかる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69047,9 +69097,19 @@
                   "vietnamese": "Tôi bị bắt xét nghiệm máu.",
                   "segments": [
                     {
-                      "text": "血液検査に引っかかった。",
+                      "text": "血液検査に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "引っかかった",
                       "reading": "ひっかかる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69062,9 +69122,19 @@
                   "vietnamese": "Thông tin này có gì đó vướng mắc. Hãy thử điều tra thêm một chút nữa xem.",
                   "segments": [
                     {
-                      "text": "この情報はなんだか引っかかる。もう少し調べてみよう。",
+                      "text": "この情報はなんだか",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "引っかかる",
                       "reading": "ひっかかる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。もう少し調べてみよう。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69077,9 +69147,19 @@
                   "vietnamese": "Bị lừa bởi một gã đàn ông xấu xa, cô ấy đã bị lấy mất toàn bộ tài sản của mình.",
                   "segments": [
                     {
-                      "text": "悪い男に引っかかって、彼女は全財産をとられてしまった。",
+                      "text": "悪い男に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "引っかかって",
                       "reading": "ひっかかる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、彼女は全財産をとられてしまった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69546,7 +69626,7 @@
               "kanji": "荒らす",
               "hiragana": "あらす",
               "hanVietMeaning": "HOANG",
-              "meaning": "Phá, tàn phá, làm lộn xộn",
+              "meaning": "Phá tan, phá hủy, làm lộn xộn",
               "examples": [
                 {
                   "japanese": "泥棒に入られ、部屋が荒らされた。",
@@ -70130,9 +70210,19 @@
                   "vietnamese": "Trai với mong đợi của bố mẹ, tôi đã không học",
                   "segments": [
                     {
-                      "text": "両親の期待に反して、大学に進学しなかった。",
-                      "reading": "する",
+                      "text": "両親の期待に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "反して",
+                      "reading": "はんして",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、大学に進学しなかった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -70832,9 +70922,19 @@
                   "vietnamese": "Trên thuyền, do hành khách ngồi lệch về một phía nên thân tàu đã bị nghiêng.",
                   "segments": [
                     {
-                      "text": "ボートで客が一方に片寄ったため、船体が傾いてしまった。",
-                      "reading": "よる",
+                      "text": "ボートで客が一方に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "片寄った",
+                      "reading": "かたよった",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "ため、船体が傾いてしまった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -71049,13 +71149,23 @@
               "meaning": "Trong vắt, trong suốt",
               "examples": [
                 {
-                  "japanese": "川の水が延き通っている。",
-                  "vietnamese": "Nuoc sông trong vắt.",
+                  "japanese": "川の水が透き通っている。",
+                  "vietnamese": "Nước sông trong vắt.",
                   "segments": [
                     {
-                      "text": "川の水が延き通っている。",
-                      "reading": "すき",
+                      "text": "川の水が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "透き通って",
+                      "reading": "すきとおって",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "いる。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -71117,13 +71227,23 @@
               "meaning": "Làm cho nguội, làm dịu đi, đàn áp, trấn áp",
               "examples": [
                 {
-                  "japanese": "司会者は弁がなしい場内を一言で静めた。",
-                  "vietnamese": "Nguoi dẫn chương trình đã làm cả hội trường im",
+                  "japanese": "司会者は騒がしい場内を一言で静めた。",
+                  "vietnamese": "Người dẫn chương trình đã làm cả hội trường im lặng chỉ bằng một câu nói.",
                   "segments": [
                     {
-                      "text": "司会者は弁がなしい場内を一言で静めた。",
-                      "reading": "め",
+                      "text": "司会者は騒がしい場内を一言で",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "静めた",
+                      "reading": "しずめた",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -71812,9 +71932,19 @@
                   "vietnamese": "Nêm nếm gia vị.",
                   "segments": [
                     {
-                      "text": "味を調える。",
+                      "text": "味を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "調える",
                       "reading": "ととのえる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -75140,9 +75270,14 @@
                   "vietnamese": "Do lạm phát nên giá cả đang tăng cao.",
                   "segments": [
                     {
-                      "text": "インフレで物価が上昇している。",
-                      "reading": "イン",
+                      "text": "インフレ",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "で物価が上昇している。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -75169,9 +75304,19 @@
                   "vietnamese": "Cuộc biểu tình đang diễn ra trên khắp cả nước",
                   "segments": [
                     {
-                      "text": "増税に抗議して、国のあちこちでデモが行われた。",
-                      "reading": "デモ",
+                      "text": "増税に抗議して、国のあちこちで",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "デモ",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "が行われた。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -97539,6 +97684,6 @@
     "issues": [
       "Manual audit continued through PDF page 172; remaining pages require review."
     ],
-    "candidateHash": "51e09fd42cb6b96257e92523a25be1c61b31fb5bada8682a92bbb9c44bdce074"
+    "candidateHash": "482ff7727d434dcdbda06746dd5effc41bccca22b8023ee324db96f0e9216777"
   }
 }
