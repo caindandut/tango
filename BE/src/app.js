@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const { execFileSync } = require('node:child_process');
 const express = require('express');
 const cors = require('cors');
 const vocabularyRoutes = require('./routes/vocabulary');
@@ -53,9 +54,21 @@ app.use((err, req, res, next) => {
 
 const seedVocabulary = require('./scripts/seedVocabulary');
 
-// Seed database on server startup
+function migrateDatabase() {
+  const prismaCommand = process.platform === 'win32' ? 'npx.cmd' : 'npx';
+
+  execFileSync(
+    prismaCommand,
+    ['--no-install', 'prisma', 'migrate', 'deploy'],
+    { stdio: 'inherit' },
+  );
+}
+
+// Apply schema changes before syncing published data.
 async function startServer() {
   try {
+    console.log('🔄 Applying database migrations...');
+    migrateDatabase();
     console.log('🔄 Syncing published vocabulary to Database...');
     await seedVocabulary();
   } catch (err) {

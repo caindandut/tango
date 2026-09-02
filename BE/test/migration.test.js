@@ -13,6 +13,7 @@ const hanVietMigrationPath = path.join(
   '../prisma/migrations/20260823170000_add_han_viet_meaning/migration.sql',
 );
 const renderConfigPath = path.join(__dirname, '../render.yaml');
+const appPath = path.join(__dirname, '../src/app.js');
 
 test('vocabulary examples migration is safe when the column already exists', () => {
   const migration = fs.readFileSync(migrationPath, 'utf8');
@@ -42,6 +43,17 @@ test('Render build stays independent of database availability', () => {
   assert.match(buildCommand, /prisma generate/);
   assert.doesNotMatch(buildCommand, /recoverVocabularyMigration/);
   assert.doesNotMatch(buildCommand, /prisma migrate deploy/);
+});
+
+test('Application applies Prisma migrations before startup seed', () => {
+  const appSource = fs.readFileSync(appPath, 'utf8');
+
+  const migrationIndex = appSource.search(/migrate.*deploy/);
+  const seedIndex = appSource.indexOf('await seedVocabulary');
+
+  assert.notEqual(migrationIndex, -1);
+  assert.notEqual(seedIndex, -1);
+  assert.ok(migrationIndex < seedIndex);
 });
 
 test('migration recovery applies only when the existing column is present', () => {

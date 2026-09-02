@@ -52,13 +52,12 @@ async function syncExistingN3Vocabulary(tx, lessons) {
     const metadata = n3SetMetadata(lessonName, words, lessonIndex);
     const set = setsByName.get(`${lessonName} - Từ vựng N3 Mimikara`);
     if (!set) {
-      await tx.vocabularySet.create({
-        data: {
-          ...metadata,
-          vocabularies: {
-            create: words.map(n3WordData),
-          },
-        },
+      const createdSet = await tx.vocabularySet.create({ data: metadata });
+      await tx.vocabulary.createMany({
+        data: words.map((word, index) => ({
+          ...n3WordData(word, index),
+          setId: createdSet.id,
+        })),
       });
       updated = true;
       continue;
