@@ -7724,30 +7724,40 @@
                   "label": "合",
                   "items": [
                     {
-                      "japanese": "判断",
+              "japanese": "判断＿",
                       "vietnamese": "Dữ liệu đánh giá",
-                      "segments": [
-                        {
-                          "text": "判断",
-                          "reading": "はんだん",
-                          "isUnderlined": true
-                        }
-                      ],
+                  "segments": [
+                    {
+                      "text": "判断",
+                      "reading": "はんだん",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "＿",
+                      "reading": "＿",
+                      "isUnderlined": true
+                    }
+                  ],
                       "source": {
                         "pdfPage": 19,
                         "printedPage": 16
                       }
                     },
                     {
-                      "japanese": "不安",
+              "japanese": "不安＿",
                       "vietnamese": "Lý do bất an",
-                      "segments": [
-                        {
-                          "text": "不安",
-                          "reading": "ふあん",
-                          "isUnderlined": true
-                        }
-                      ],
+                  "segments": [
+                    {
+                      "text": "不安",
+                      "reading": "ふあん",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "＿",
+                      "reading": "＿",
+                      "isUnderlined": true
+                    }
+                  ],
                       "source": {
                         "pdfPage": 19,
                         "printedPage": 16
@@ -8124,45 +8134,60 @@
                   "label": "合",
                   "items": [
                     {
-                      "japanese": "入場券",
+              "japanese": "入場＿",
                       "vietnamese": "Vé vào cửa",
-                      "segments": [
-                        {
-                          "text": "入場券",
-                          "reading": "にゅうじょうけん",
-                          "isUnderlined": true
-                        }
-                      ],
+                  "segments": [
+                    {
+                      "text": "入場",
+                      "reading": "にゅうじょう",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "＿",
+                      "reading": "＿",
+                      "isUnderlined": true
+                    }
+                  ],
                       "source": {
                         "pdfPage": 19,
                         "printedPage": 16
                       }
                     },
                     {
-                      "japanese": "整理券",
+              "japanese": "整理＿",
                       "vietnamese": "Vé thứ tự",
-                      "segments": [
-                        {
-                          "text": "整理券",
-                          "reading": "せいりけん",
-                          "isUnderlined": true
-                        }
-                      ],
+                  "segments": [
+                    {
+                      "text": "整理",
+                      "reading": "せいり",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "＿",
+                      "reading": "＿",
+                      "isUnderlined": true
+                    }
+                  ],
                       "source": {
                         "pdfPage": 19,
                         "printedPage": 16
                       }
                     },
                     {
-                      "japanese": "券売機",
+              "japanese": "＿売機",
                       "vietnamese": "Máy bán vé",
-                      "segments": [
-                        {
-                          "text": "券売機",
-                          "reading": "けんばいき",
-                          "isUnderlined": true
-                        }
-                      ],
+                  "segments": [
+                    {
+                      "text": "＿",
+                      "reading": "＿",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "売機",
+                      "reading": "ばいき",
+                      "isUnderlined": false
+                    }
+                  ],
                       "source": {
                         "pdfPage": 19,
                         "printedPage": 16
@@ -99851,6 +99876,6 @@
     "issues": [
       "Manual audit continued through PDF page 172; remaining pages require review."
     ],
-    "candidateHash": "72e3aa8bbc3de38aab931cfb32a126d9edcf9f9f91c4174f2978c89d18b49445"
+    "candidateHash": "a874a1ce6d249da4d816e6bd74ad4e174a8ee8e1ccdb31d392297959aacf4e21"
   }
 }
