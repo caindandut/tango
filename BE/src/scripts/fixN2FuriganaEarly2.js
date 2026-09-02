@@ -1,0 +1,16 @@
+const fs = require('fs');
+const path = require('path');
+const { computeCandidateHash } = require('../vocabulary/validateN2Vocabulary');
+const file = path.resolve(__dirname, '../../file/n2_vocabulary.json');
+const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+const words = data.units.flatMap((u) => u.parts.flatMap((p) => p.words));
+const by = new Map(words.map((w) => [w.sourceNumber, w]));
+const seg = (text, reading = '', isUnderlined = false) => ({ text, reading, isUnderlined });
+const w8 = by.get(8);
+w8.examples[1].segments = [seg('犬は'), seg('主人', 'しゅじん', true), seg('に'), seg('忠実', 'ちゅうじつ'), seg('だと言われる。')];
+const w10 = by.get(10);
+w10.examples[0].segments = [seg('（アナウンス）「'), seg('迷子', 'まいご', true), seg('の'), seg('お知らせ', 'おしらせ'), seg('をいたします」')];
+w10.examples[1].segments = [seg('東京駅は広くて', 'とうきょうえきはひろくて'), seg('迷子', 'まいご', true), seg('になりそうだ。')];
+data.verification.candidateHash = computeCandidateHash(data);
+fs.writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`);
+console.log('Added source furigana for examples 8 and 10.');

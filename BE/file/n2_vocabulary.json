@@ -1533,7 +1533,17 @@
                       "isUnderlined": true
                     },
                     {
-                      "text": "に忠実だと言われる。",
+                      "text": "に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "忠実",
+                      "reading": "ちゅうじつ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "だと言われる。",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -1773,7 +1783,17 @@
                       "isUnderlined": true
                     },
                     {
-                      "text": "のお知らせをいたします」",
+                      "text": "の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "お知らせ",
+                      "reading": "おしらせ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "をいたします」",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -1789,7 +1809,7 @@
                   "segments": [
                     {
                       "text": "東京駅は広くて",
-                      "reading": "",
+                      "reading": "とうきょうえきはひろくて",
                       "isUnderlined": false
                     },
                     {
@@ -99676,6 +99696,6 @@
     "issues": [
       "Manual audit continued through PDF page 172; remaining pages require review."
     ],
-    "candidateHash": "48778db4eeb4dd2cb0885df4befe672629e0f360f2449b20ef248e3108798ac9"
+    "candidateHash": "4831fe0bc506ea0ebfe8d023e5fb646f4be9bbb73792375e2f5a27be4d11a818"
   }
 }
