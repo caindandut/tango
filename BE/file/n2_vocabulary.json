@@ -57843,9 +57843,14 @@
                   "vietnamese": "Thi thoảng vào ngày nghỉ, tôi cũng muốn nghỉ ngơi thong thả.",
                   "segments": [
                     {
-                      "text": "たまの休みにはゆっくりしたい。",
-                      "reading": "たまに",
+                      "text": "たまの",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "休みにはゆっくりしたい。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -66619,9 +66624,19 @@
                   "vietnamese": "Tôi muốn có một cái gương có thể soi được toàn thân.",
                   "segments": [
                     {
-                      "text": "全身を映せる鏡がほしい。",
-                      "reading": "うつ",
+                      "text": "全身を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "映せる",
+                      "reading": "うつす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "鏡がほしい。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -66648,9 +66663,19 @@
                   "vietnamese": "Nuec ngập tới sàn nhà do mua lớn.",
                   "segments": [
                     {
-                      "text": "大雨で家の床まで水につかった。",
-                      "reading": "つか",
+                      "text": "大雨で家の床まで水に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "つかった",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -66677,9 +66702,19 @@
                   "vietnamese": "Nên ngâm trong nước giặt một lúc。",
                   "segments": [
                     {
-                      "text": "洗剤の液につけておくとよい。",
-                      "reading": "つける",
+                      "text": "洗剤の液に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "つけておくとよい",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -66898,9 +66933,19 @@
                   "vietnamese": "*Nhmmng cô gái biển cá",
                   "segments": [
                     {
-                      "text": "日本の「海女」は和合時間海に潜って買や魚を捕ることができる。",
-                      "reading": "ぐる",
+                      "text": "日本の「海女」は和合時間海に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "潜って",
+                      "reading": "もぐる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "買や魚を捕ることができる。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -67005,9 +67050,19 @@
                   "vietnamese": "Đứa bé chạy đuổi theo sau mẹ.",
                   "segments": [
                     {
-                      "text": "子どもは走って母親の後を追った。",
-                      "reading": "う",
+                      "text": "子どもは走って母親の後を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "追った",
+                      "reading": "おう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -67457,9 +67512,19 @@
                   "vietnamese": "Gotbmt chì bằng dao,",
                   "segments": [
                     {
-                      "text": "ナイフでをんぴっを削った。",
-                      "reading": "けず",
+                      "text": "ナイフでをんぴっを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "削った",
+                      "reading": "けずる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -67554,9 +67619,19 @@
                   "vietnamese": "Trgi đắt quay quanh mặt trời.",
                   "segments": [
                     {
-                      "text": "地球は太陽の周りを回っている。",
-                      "reading": "まわ",
+                      "text": "地球は太陽の周りを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "回っている",
+                      "reading": "まわる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -67583,9 +67658,19 @@
                   "vietnamese": "Xoay quả nắm và mở cửa",
                   "segments": [
                     {
-                      "text": "ドアの取っ手を回して開ける。",
-                      "reading": "まわ",
+                      "text": "ドアの取っ手を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "回して",
+                      "reading": "まわす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "開ける。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -68189,9 +68274,19 @@
                   "vietnamese": "Trái đất quay quanh mặt trời.",
                   "segments": [
                     {
-                      "text": "地球は太陽の周りを巡っている。",
-                      "reading": "めぐ",
+                      "text": "地球は太陽の周りを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "巡っている",
+                      "reading": "めぐる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -68286,9 +68381,19 @@
                   "vietnamese": "Viec phát hiện ra penicillin (thuốc kháng",
                   "segments": [
                     {
-                      "text": "ペニシリンの発見は、多くの人々の命を救った。",
-                      "reading": "すく",
+                      "text": "ペニシリンの発見は、多くの人々の命を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "救った",
+                      "reading": "すくう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -68425,9 +68530,19 @@
                   "vietnamese": "Tại toàn án, cô ấy đã bỏ sót một số chỉ tiết",
                   "segments": [
                     {
-                      "text": "彼女は裁判で大事なところを省いて証言した。",
-                      "reading": "ぷく",
+                      "text": "彼女は裁判で大事なところを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "省いて",
+                      "reading": "はぶく",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "証言した。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -68454,9 +68569,19 @@
                   "vietnamese": "Vì mắc lỗi lúc lái xe nên tôi đã gây ra tai nạn.",
                   "segments": [
                     {
-                      "text": "運転を誤って、事故を起としてしまった。",
-                      "reading": "あや",
+                      "text": "運転を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "誤って",
+                      "reading": "あやまる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、事故を起としてしまった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -68522,9 +68647,19 @@
                   "vietnamese": "Vì mùa xuân đã đến nên tôi cất quân áo mùa đông đi.",
                   "segments": [
                     {
-                      "text": "春になったので、ダ物をしまった。",
-                      "reading": "まう",
+                      "text": "春になったので、ダ物を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "しまった",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -68590,9 +68725,19 @@
                   "vietnamese": "Tôi mất tài sản trong trận động đất.",
                   "segments": [
                     {
-                      "text": "地震で財産を失った。",
-                      "reading": "うし",
+                      "text": "地震で財産を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "失った",
+                      "reading": "うしなう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -68658,9 +68803,19 @@
                   "vietnamese": "Hocsinh đó bị nhắc nhở mà còn lườm ngược",
                   "segments": [
                     {
-                      "text": "その学生は注意されて、逆に先生をにらんだ。",
-                      "reading": "らむ",
+                      "text": "その学生は注意されて、逆に先生を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "にらんだ",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69158,9 +69313,19 @@
                   "vietnamese": "Vi động đất, đường ray của đường sắt bi chệch ra.",
                   "segments": [
                     {
-                      "text": "地震で鉄道のレールがずれた。",
-                      "reading": "ずれ",
+                      "text": "地震で鉄道のレールが",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ずれた",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69187,9 +69352,19 @@
                   "vietnamese": "Tôi xê dịch bàn một chút để lau sàn nhà.",
                   "segments": [
                     {
-                      "text": "机を少しずらして床を掃除した。",
-                      "reading": "ずら",
+                      "text": "机を少し",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ずらして",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "床を掃除した。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69202,9 +69377,19 @@
                   "vietnamese": "Đội mũ lệch qua một bên.",
                   "segments": [
                     {
-                      "text": "帽子をななめにずらしてかぶった。",
-                      "reading": "ずら",
+                      "text": "帽子をななめに",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ずらしてかぶった",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69217,9 +69402,19 @@
                   "vietnamese": "Tôi đã hoãn dự định đi du lịch lại 1 tuần.",
                   "segments": [
                     {
-                      "text": "旅行の予定を1週間ずらした。",
-                      "reading": "ずら",
+                      "text": "旅行の予定を1週間",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ずらした",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69232,9 +69427,19 @@
                   "vietnamese": "“Xin hãy trả lời chính xác, không lạc khỏi vấn đề chính”.",
                   "segments": [
                     {
-                      "text": "「論点をずらさずに、きちんと答えてください」",
-                      "reading": "ずら",
+                      "text": "「論点を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ずらさずに",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、きちんと答えてください」",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69954,9 +70159,19 @@
                   "vietnamese": "Banh gạo nở phồng lên trên vi nướng.",
                   "segments": [
                     {
-                      "text": "網の上でもちがふくれている。",
-                      "reading": "ふく",
+                      "text": "網の上でもちが",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ふくれている",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -69983,9 +70198,19 @@
                   "vietnamese": "Nuhoa anh đào đã nở rộ.",
                   "segments": [
                     {
-                      "text": "桜のつぼみがふくらんだ。",
-                      "reading": "ふく",
+                      "text": "桜のつぼみが",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ふくらんだ",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -70126,9 +70351,19 @@
                   "vietnamese": "ち ei giày này có mũi nhọn.",
                   "segments": [
                     {
-                      "text": "この靴は先がとがっている。",
-                      "reading": "る",
+                      "text": "この靴は先が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "とがっている",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -70401,9 +70636,19 @@
                   "vietnamese": "Cô ấy cúi xuống rồi lẩm bẩm cái gì đó.",
                   "segments": [
                     {
-                      "text": "彼女は下を向いて、何かぶつぶつつぶやいていた。",
-                      "reading": "ぶつぶつつぶやいていた",
+                      "text": "彼女は下を向いて、何かぶつぶつ",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "つぶやいていた",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -70548,9 +70793,19 @@
                   "vietnamese": "Ở Nhật Bản, không chỉ trẻ con mới đọc truyện",
                   "segments": [
                     {
-                      "text": "日本では、マンガを読むのは子どもに限らない。",
-                      "reading": "ぎる",
+                      "text": "日本では、マンガを読むのは子どもに",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "限らない",
+                      "reading": "かぎる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -70592,9 +70847,19 @@
                   "vietnamese": "Cách suy nghĩ của người đó đang lệch lạc.",
                   "segments": [
                     {
-                      "text": "あの人の考え方は一方に偏っている。",
-                      "reading": "よる",
+                      "text": "あの人の考え方は一方に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "偏っている",
+                      "reading": "かたよる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -71408,9 +71673,19 @@
                   "vietnamese": "Mac quần áo chin chu, gọn gàng.",
                   "segments": [
                     {
-                      "text": "きちんと整った服装をする。",
-                      "reading": "う",
+                      "text": "きちんと",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "整った",
+                      "reading": "ととのう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "服装をする。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -71566,9 +71841,19 @@
                   "vietnamese": "Gúibọc,chedậy,chephủ,jbaoph II",
                   "segments": [
                     {
-                      "text": "事故現場は目を覆いたくなるような、ひどい状態だった。",
-                      "reading": "うぅ",
+                      "text": "事故現場は目を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "覆いたくなるような",
+                      "reading": "おおう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、ひどい状態だった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -72096,9 +72381,19 @@
                   "vietnamese": "Dauco ghen ty với hạnh phúc của người khác thì cũng",
                   "segments": [
                     {
-                      "text": "人の幸せをうらやんでもしかたがない。",
-                      "reading": "うら",
+                      "text": "人の幸せを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "うらやんでもしかたがない",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -75691,9 +75986,19 @@
                   "vietnamese": "Nguei đó thường không đúng giờ.",
                   "segments": [
                     {
-                      "text": "あの人は時間にルーズだ。",
-                      "reading": "ルー",
+                      "text": "あの人は時間に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ルーズだ",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -77166,9 +77471,19 @@
                   "vietnamese": "Trong công việc này, cần những kỹ năng đặc thù.",
                   "segments": [
                     {
-                      "text": "この仕事には特殊を技能が必要だ。",
-                      "reading": "くし",
+                      "text": "この仕事には",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "特殊を",
+                      "reading": "とくしゅな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "技能が必要だ。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -77515,9 +77830,19 @@
                   "vietnamese": "Day chuyền sản xuất của nhà máy được thiết kế",
                   "segments": [
                     {
-                      "text": "工場の生産ラインは合理的に作られている。",
-                      "reading": "うり",
+                      "text": "工場の生産ラインは",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "合理的に",
+                      "reading": "ごうりてきな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "作られている。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -78016,9 +78341,14 @@
                   "vietnamese": "Nói chuyện lịch sự／ăn tao nhã／ứng xử tinh tế…",
                   "segments": [
                     {
-                      "text": "上品に話す／食べる／ふるまう…。",
+                      "text": "上品に",
                       "reading": "じょうひんな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "話す／食べる／ふるまう…。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -78110,9 +78440,19 @@
                   "vietnamese": "Thưởng thức rượu ở mức độ vừa phải là tốt.",
                   "segments": [
                     {
-                      "text": "お酒は適度に楽しむのがよい。",
+                      "text": "お酒は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "適度に",
                       "reading": "てきどな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "楽しむのがよい。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -78139,9 +78479,19 @@
                   "vietnamese": "Cam giác lúc lái chiếc xe mới thật sang khoái.",
                   "segments": [
                     {
-                      "text": "新しい車の乗り心地は快適だ。",
-                      "reading": "いて",
+                      "text": "新しい車の乗り心地は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "快適だ",
+                      "reading": "かいてきな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -78236,9 +78586,19 @@
                   "vietnamese": "Con gái tôi vô cùng lanh lợi, hoạt bát.",
                   "segments": [
                     {
-                      "text": "うちの娘はとても活発だ。",
+                      "text": "うちの娘はとても",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "活発だ",
                       "reading": "かっぱつな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -78271,9 +78631,19 @@
                   "vietnamese": "Cuộc thảo luận đã diễn ra sôi nổi.",
                   "segments": [
                     {
-                      "text": "討論が活発に行われた。",
+                      "text": "討論が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "活発に",
                       "reading": "かっぱつな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "行われた。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -78286,9 +78656,19 @@
                   "vietnamese": "Gần đây, hoạt động của núi lửa đang trở nên mạnh mẽ.",
                   "segments": [
                     {
-                      "text": "最近、火山活動が活発になっている。",
+                      "text": "最近、火山活動が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "活発になっている",
                       "reading": "かっぱつな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -78504,9 +78884,19 @@
                   "vietnamese": "Nguyên nhân tai nạn chưa được làm rõ.",
                   "segments": [
                     {
-                      "text": "事故の原因は明らかではない。",
+                      "text": "事故の原因は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "明らかではない",
                       "reading": "あきらかな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -78519,9 +78909,19 @@
                   "vietnamese": "Anh ta rõ ràng đang nói dối.",
                   "segments": [
                     {
-                      "text": "彼は明らかにうそを言っている。",
+                      "text": "彼は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "明らかにうそを",
                       "reading": "あきらかな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "言っている。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -78534,9 +78934,19 @@
                   "vietnamese": "Việc sáp nhập công ty A và công ty B đã trở nên rõ ràng.",
                   "segments": [
                     {
-                      "text": "A社とB社が合併することが明らかになった。",
+                      "text": "A社とB社が合併することが",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "明らかになった",
                       "reading": "あきらかな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -78549,9 +78959,19 @@
                   "vietnamese": "Thủ tướng đã công bố rộng rãi việc mình bị ung thư.",
                   "segments": [
                     {
-                      "text": "首相は自分ががんであることを明らかにした。",
+                      "text": "首相は自分ががんであることを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "明らかにした",
                       "reading": "あきらかな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -78578,9 +78998,19 @@
                   "vietnamese": "Su việc ngày hôm đó là những kí ức mơ hồ,",
                   "segments": [
                     {
-                      "text": "あの日のことは記憶があいまいだ。",
-                      "reading": "あい",
+                      "text": "あの日のことは記憶が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "あいまいだ",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -78830,9 +79260,19 @@
                   "vietnamese": "Thu nhập của công ty được chia đều cho nhân viên.",
                   "segments": [
                     {
-                      "text": "会の4人は会員に平等に分配された。",
-                      "reading": "ぴょ",
+                      "text": "会の4人は会員に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "平等に",
+                      "reading": "びょうどうな",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "分配された。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -85761,9 +86201,19 @@
                   "vietnamese": "Khi còn nhỏ, tôi đã vẽ ước mơ tương lai lên giấy.",
                   "segments": [
                     {
-                      "text": "子どものころ、将来の夢を紙に描いた。",
+                      "text": "子どものころ、将来の夢を紙に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "描いた",
                       "reading": "えがく",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -85913,9 +86363,19 @@
                   "vietnamese": "Hanh lý làm tắc nghẽn cửa ra vào.",
                   "segments": [
                     {
-                      "text": "荷物で声日なふさがっている。",
-                      "reading": "ふさ",
+                      "text": "荷物で声日な",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ふさがっている",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -85942,9 +86402,19 @@
                   "vietnamese": "Vì bão mà cây to đồ chắn chặn lồi đi đường.",
                   "segments": [
                     {
-                      "text": "谷風で倒れた大木が道をふさいだ。",
-                      "reading": "ふさぐ",
+                      "text": "谷風で倒れた大木が道を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ふさいだ",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -86049,9 +86519,19 @@
                   "vietnamese": "Pueng đi của bão đã lệch về hướng bắc.",
                   "segments": [
                     {
-                      "text": "台風の進路が北にそれた。",
-                      "reading": "それ",
+                      "text": "台風の進路が北に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "それた",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -86078,9 +86558,19 @@
                   "vietnamese": "Con bão đã đổi hướng về phía bắc.",
                   "segments": [
                     {
-                      "text": "台風が進路を北にそらした。",
-                      "reading": "そら",
+                      "text": "台風が進路を北に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "そらした",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -86661,9 +87151,19 @@
                   "vietnamese": "Ngueibi hại đã thuật lại tình huống của vụ việc.",
                   "segments": [
                     {
-                      "text": "被害者が事件の状況を語った。",
-                      "reading": "る",
+                      "text": "被害者が事件の状況を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "語った",
+                      "reading": "かたる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -86690,9 +87190,19 @@
                   "vietnamese": "Anh ấy và cô ấy đã cùng hẹn ước về tương lai với nhau.",
                   "segments": [
                     {
-                      "text": "彼と彼女は将来を誓った仲だ。",
-                      "reading": "ちか",
+                      "text": "彼と彼女は将来を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "誓った",
+                      "reading": "ちかう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "仲だ。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -87152,9 +87662,19 @@
                   "vietnamese": "Ra khỏi nhà ga rồi đi bộ dọc theo đường ray.",
                   "segments": [
                     {
-                      "text": "上駅を出て線路に沿って歩いた。",
+                      "text": "上駅を出て線路に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "沿って",
                       "reading": "そう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "歩いた。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -88699,9 +89219,19 @@
                   "vietnamese": "Vì tai nạn nên đã mang vết thương lớn.",
                   "segments": [
                     {
-                      "text": "事故で大けがを負った。",
+                      "text": "事故で大けがを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "負った",
                       "reading": "おう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -88956,9 +89486,19 @@
                   "vietnamese": "Do bão nên nước sông tăng lên.",
                   "segments": [
                     {
-                      "text": "台風で川の水が増してきた。",
+                      "text": "台風で川の水が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "増してきた",
                       "reading": "ます",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89063,9 +89603,19 @@
                   "vietnamese": "Không khí trên núi thật trong lành.",
                   "segments": [
                     {
-                      "text": "山の空気は澄んでいる。",
+                      "text": "山の空気は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "澄んでいる",
                       "reading": "すむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89078,9 +89628,14 @@
                   "vietnamese": "{Nước／màu sắc／mắt／giọng／trái tim…} trong vắt, trong sáng.",
                   "segments": [
                     {
-                      "text": "澄んだ水／色／目／声／心…",
+                      "text": "澄んだ",
                       "reading": "すむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "水／色／目／声／心…",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89207,9 +89762,19 @@
                   "vietnamese": "Nhà chính trị gia bị hỏi những vấn đề hóc búa từ phóng viên nên đã nói ngập ngừng, mơ hồ.",
                   "segments": [
                     {
-                      "text": "記者に鋭い質問をされた政治家は言葉を濁した。",
+                      "text": "記者に鋭い質問をされた政治家は言葉を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "濁した",
                       "reading": "にごす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89222,9 +89787,19 @@
                   "vietnamese": "“Tôi hỏi anh ta về kế hoạch ngày mai ấy vậy mà anh ta cứ ngập ngừng mãi, không biết là có chuyện gì”.",
                   "segments": [
                     {
-                      "text": "「明日の予定を聞いたのに、彼は返事を濁した。何かあるのだろうか」",
+                      "text": "「明日の予定を聞いたのに、彼は返事を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "濁した",
                       "reading": "にごす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。何かあるのだろうか」",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89290,9 +89865,19 @@
                   "vietnamese": "Thiethai của cơn bão đã lan tới toàn vùng Kyushu.",
                   "segments": [
                     {
-                      "text": "人台風の被害は、九州地方全域に及んだ。",
-                      "reading": "よぶ",
+                      "text": "人台風の被害は、九州地方全域に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "及んだ",
+                      "reading": "およぶ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89501,9 +90086,19 @@
                   "vietnamese": "Năm nay lúa được mùa.",
                   "segments": [
                     {
-                      "text": "今年は稲がよく実っている。",
+                      "text": "今年は稲がよく",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "実っている",
                       "reading": "みのる",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89807,9 +90402,19 @@
                   "vietnamese": "Tuyển thủ mới làm hỗn loạn nhịp độ nửa sau trận đấu nên đã thua mất.",
                   "segments": [
                     {
-                      "text": "新人選手は後半ペースを乱して、負けてしまった。",
+                      "text": "新人選手は後半ペースを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "乱して",
                       "reading": "みだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、負けてしまった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89822,9 +90427,19 @@
                   "vietnamese": "Thông báo đó đã khiến tim cô ấy loạn nhịp.",
                   "segments": [
                     {
-                      "text": "その知らせは彼女の心を乱した。",
+                      "text": "その知らせは彼女の心を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "乱した",
                       "reading": "みだす",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89876,9 +90491,19 @@
                   "vietnamese": "Dây giày lỏng nên giày bị tuột ra.",
                   "segments": [
                     {
-                      "text": "靴ひもが緩んで、靴が脱げてしまった。",
+                      "text": "靴ひもが",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "緩んで",
                       "reading": "ゆるむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、靴が脱げてしまった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89916,9 +90541,19 @@
                   "vietnamese": "Sau khi kỳ thi kết thúc, vì không cẩn thận nên lại lỡ bị cảm.",
                   "segments": [
                     {
-                      "text": "試験が終わったら気が緩んで、風邪をひいてしまった。",
+                      "text": "試験が終わったら気が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "緩んで",
                       "reading": "ゆるむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、風邪をひいてしまった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89931,9 +90566,19 @@
                   "vietnamese": "Do mưa nên đất mềm, nguy hiểm do sạt lở có thể xảy ra.",
                   "segments": [
                     {
-                      "text": "雨で地盤が緩み、土砂崩れが起こる恐れがある。",
+                      "text": "雨で地盤が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "緩み",
                       "reading": "ゆるむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、土砂崩れが起こる恐れがある。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -89946,9 +90591,19 @@
                   "vietnamese": "Tháng 3 đã tới, cuối cùng cái lạnh cũng đã giảm bớt.",
                   "segments": [
                     {
-                      "text": "3月になって、ようやく寒さが緩んできた。",
+                      "text": "3月になって、ようやく寒さが",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "緩んできた",
                       "reading": "ゆるむ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -90014,9 +90669,19 @@
                   "vietnamese": "Do dính mưa nên xe dap bị gi sét.",
                   "segments": [
                     {
-                      "text": "雨にとぬれて自転車がさびてしまった。",
-                      "reading": "さび",
+                      "text": "雨にとぬれて自転車が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "さびてしまった",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -90225,9 +90890,19 @@
                   "vietnamese": "Vì làm việc cả ngày nên rất mệt.",
                   "segments": [
                     {
-                      "text": "一日中仕事をしてくたびれた。",
-                      "reading": "くたびれ",
+                      "text": "一日中仕事をして",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "くたびれた",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -90240,9 +90915,19 @@
                   "vietnamese": "Bộ vest này đã mặc được 10 năm rồi nên nó đã tả tơi.",
                   "segments": [
                     {
-                      "text": "このスーツは10年も着たので、かなりくたびれている。",
-                      "reading": "くたびれ",
+                      "text": "このスーツは10年も着たので、かなり",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "くたびれている",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -90387,9 +91072,19 @@
                   "vietnamese": "Cô ấy mim cười với tôi.",
                   "segments": [
                     {
-                      "text": "彼女は私ににっこりとほほえんだ。",
-                      "reading": "ほほ",
+                      "text": "彼女は私ににっこりと",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ほほえんだ",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -90416,9 +91111,19 @@
                   "vietnamese": "Em trai tôi giỏi việc trêu đùa làm người khác cười.",
                   "segments": [
                     {
-                      "text": "弟はほふざけて人を笑わせるのが得意だ。",
-                      "reading": "ふざけ",
+                      "text": "弟はほ",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ふざけて",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "人を笑わせるのが得意だ。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -90484,9 +91189,19 @@
                   "vietnamese": "Trong khi đang chân chừ",
                   "segments": [
                     {
-                      "text": "申し込みをためらっているうちに、締め切りが過ぎてしまった。",
-                      "reading": "ラッ",
+                      "text": "申し込みを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ためらっているうちに",
+                      "reading": "",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、締め切りが過ぎてしまった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -96824,6 +97539,6 @@
     "issues": [
       "Manual audit continued through PDF page 172; remaining pages require review."
     ],
-    "candidateHash": "092fd8f0b8a12949e9cd095a1429acf4452648a7dbc6524be8156258b6c937ec"
+    "candidateHash": "51e09fd42cb6b96257e92523a25be1c61b31fb5bada8682a92bbb9c44bdce074"
   }
 }
