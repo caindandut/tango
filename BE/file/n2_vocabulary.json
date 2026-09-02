@@ -57063,16 +57063,51 @@
               "kanji": "だが",
               "hiragana": "だが",
               "hanVietMeaning": "",
-              "meaning": "だ が Tuy nhiên",
+              "meaning": "Tuy nhiên",
               "examples": [
                 {
-                  "japanese": "必死に勉強した。",
-                  "vietnamese": "だ な が 、 不 合格 だ っ た 。 Đã cô gắng hết sức học tập. Tuy nhiên, lại trượt.",
+                  "japanese": "必死に勉強した。だが、不合格だった。",
+                  "vietnamese": "Đã cố gắng hết sức học tập. Tuy nhiên, lại trượt.",
                   "segments": [
                     {
                       "text": "必死に勉強した。",
-                      "reading": "が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "だが",
+                      "reading": "だが",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、不合格だった。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 157,
+                    "printedPage": 154
+                  }
+                },
+                {
+                  "japanese": "あの戦争は長く続くだろう。だが、私はあきらめない。",
+                  "vietnamese": "Cuộc chiến tranh đó có lẽ sẽ còn kéo dài. Tuy nhiên, tôi sẽ không bỏ cuộc.",
+                  "segments": [
+                    {
+                      "text": "あの戦争は長く続くだろう。",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "だが",
+                      "reading": "だが",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、私はあきらめない。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57100,7 +57135,7 @@
                   "segments": [
                     {
                       "text": "8時には到着する予定だった。",
-                      "reading": "ところが",
+                      "reading": "",
                       "isUnderlined": false
                     },
                     {
@@ -57110,7 +57145,7 @@
                     },
                     {
                       "text": "事故で渋滞し、9時過ぎになってしまった。",
-                      "reading": "ところが",
+                      "reading": "",
                       "isUnderlined": false
                     }
                   ],
@@ -57125,7 +57160,7 @@
                   "segments": [
                     {
                       "text": "Aチームが勝つだろうと思っていた。",
-                      "reading": "ところが",
+                      "reading": "",
                       "isUnderlined": false
                     },
                     {
@@ -57135,7 +57170,7 @@
                     },
                     {
                       "text": "、意外にもBチームが大差で勝った。",
-                      "reading": "ところが",
+                      "reading": "",
                       "isUnderlined": false
                     }
                   ],
@@ -57156,16 +57191,51 @@
               "kanji": "しかも",
               "hiragana": "しかも",
               "hanVietMeaning": "",
-              "meaning": "し か も Hơn thế nữa, ngoài ra",
+              "meaning": "Hơn thế nữa, ngoài ra",
               "examples": [
                 {
-                  "japanese": "このあたりの夏は気温が高く、しかゃ湿度も高い。",
-                  "vietnamese": "Maa hè ở vùng này có nhiệt độ cao,",
+                  "japanese": "このあたりの夏は気温が高く、しかも湿度も高い。",
+                  "vietnamese": "Mùa hè ở vùng này có nhiệt độ cao, hơn thế nữa độ ẩm cũng cao.",
                   "segments": [
                     {
-                      "text": "このあたりの夏は気温が高く、しかゃ湿度も高い。",
-                      "reading": "も",
+                      "text": "このあたりの夏は気温が高く、",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "しかも",
+                      "reading": "しかも",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "湿度も高い。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 157,
+                    "printedPage": 154
+                  }
+                },
+                {
+                  "japanese": "彼は英語が話せる。しかも、フランス語も話せる。",
+                  "vietnamese": "Anh ấy có thể nói tiếng Anh. Hơn thế nữa, còn có thể nói tiếng Pháp.",
+                  "segments": [
+                    {
+                      "text": "彼は英語が話せる。",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "しかも",
+                      "reading": "しかも",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、フランス語も話せる。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57185,16 +57255,51 @@
               "kanji": "すると",
               "hiragana": "すると",
               "hanVietMeaning": "",
-              "meaning": "する と Lập tức,trong trường hợp đó",
+              "meaning": "Lập tức, trong trường hợp đó",
               "examples": [
                 {
-                  "japanese": "カーテンを開けた。",
-                  "vietnamese": "する と 、 目 の 前 に 海 が 見 えた 。Me rèm cửa. Lập tức có thể nhìn thấy",
+                  "japanese": "カーテンを開けた。すると、目の前に海が見えた。",
+                  "vietnamese": "Mở rèm cửa. Lập tức có thể nhìn thấy biển trước mắt.",
                   "segments": [
                     {
                       "text": "カーテンを開けた。",
-                      "reading": "する",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "すると",
+                      "reading": "すると",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、目の前に海が見えた。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 157,
+                    "printedPage": 154
+                  }
+                },
+                {
+                  "japanese": "「この問題は難しいですね」「すると、私には解けないということですか」",
+                  "vietnamese": "“Vấn đề này khó nhỉ.” “Trong trường hợp đó, có nghĩa là tôi không thể giải được sao?”",
+                  "segments": [
+                    {
+                      "text": "「この問題は難しいですね」「",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "すると",
+                      "reading": "すると",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、私には解けないということですか」",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57214,16 +57319,26 @@
               "kanji": "なぜなら",
               "hiragana": "なぜなら",
               "hanVietMeaning": "",
-              "meaning": "な ぜ な ら Bởi vì, do",
+              "meaning": "Bởi vì, do",
               "examples": [
                 {
-                  "japanese": "—hなぜなら、泉の化石が見つかっているからだ。",
-                  "vietnamese": "な ぜ な ら Bởi vì, do",
+                  "japanese": "このあたりは禁煙だ。なぜなら、貝の化石が見つかっているからだ。",
+                  "vietnamese": "Khu vực này cấm hút thuốc. Bởi vì, hóa thạch sò đã được tìm thấy.",
                   "segments": [
                     {
-                      "text": "—hなぜなら、泉の化石が見つかっているからだ。",
-                      "reading": "ら",
+                      "text": "このあたりは禁煙だ。",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "なぜなら",
+                      "reading": "なぜなら",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、貝の化石が見つかっているからだ。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57232,7 +57347,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "なぜならと言うと",
+                      "vietnamese": "Bởi vì, do",
+                      "segments": [
+                        {
+                          "text": "なぜなら",
+                          "reading": "なぜなら",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "と言うと",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 157,
+                        "printedPage": 154
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 157,
                 "printedPage": 154
@@ -57246,13 +57387,23 @@
               "meaning": "Vì",
               "examples": [
                 {
-                  "japanese": "「どうして食べないの」「だって、嫌いなんだもん」",
-                  "vietnamese": "“Tại sao không ăn?” “Vì ghét thôi。”",
+                  "japanese": "「どうして食べないの？」「だって、嫌いなんだもん」",
+                  "vietnamese": "“Tại sao không ăn?” “Vì ghét thôi.”",
                   "segments": [
                     {
-                      "text": "「どうして食べないの」「だって、嫌いなんだもん」",
+                      "text": "「どうして食べないの？」「",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "だって",
                       "reading": "だって",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、嫌いなんだもん」",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57271,17 +57422,22 @@
               "sourceNumber": 573,
               "kanji": "要するに",
               "hiragana": "ようするに",
-              "hanVietMeaning": "YẾU",
+              "hanVietMeaning": "",
               "meaning": "Tóm lại",
               "examples": [
                 {
                   "japanese": "要するに実力がなかったのだ。",
-                  "vietnamese": "Tóm lại là không có thực lực。",
+                  "vietnamese": "Tóm lại là không có thực lực.",
                   "segments": [
                     {
-                      "text": "要するに実力がなかったのだ。",
+                      "text": "要するに",
                       "reading": "ようするに",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "実力がなかったのだ。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57301,16 +57457,26 @@
               "kanji": "すなわち",
               "hiragana": "すなわち",
               "hanVietMeaning": "",
-              "meaning": "すなわち Cú nghĩa là, nói một cách khác",
+              "meaning": "Có nghĩa là, nói một cách khác",
               "examples": [
                 {
-                  "japanese": "一郎君は妻の兄の子どもゅ、すなわち、おいに当たる。",
-                  "vietnamese": "Ichirou là một đứa con của anh trai",
+                  "japanese": "一郎君は妻の兄の子ども、すなわち、おいに当たる。",
+                  "vietnamese": "Ichirou là một đứa con của anh trai vợ tôi, nói một cách khác là cháu trai.",
                   "segments": [
                     {
-                      "text": "一郎君は妻の兄の子どもゅ、すなわち、おいに当たる。",
+                      "text": "一郎君は妻の兄の子ども、",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "すなわち",
                       "reading": "すなわち",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、おいに当たる。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57330,16 +57496,26 @@
               "kanji": "あるいは",
               "hiragana": "あるいは",
               "hanVietMeaning": "",
-              "meaning": "ある い は Hoặc là, có lẽ",
+              "meaning": "Hoặc là, có lẽ",
               "examples": [
                 {
-                  "japanese": "こらの書類にはサイン、あるいは印鑑が必要だ。",
-                  "vietnamese": "Tailieunay cần có chữ kí hoặc dần.",
+                  "japanese": "この書類にはサイン、あるいは印鑑が必要だ。",
+                  "vietnamese": "Tài liệu này cần có chữ kí hoặc dấu.",
                   "segments": [
                     {
-                      "text": "こらの書類にはサイン、あるいは印鑑が必要だ。",
-                      "reading": "ある",
+                      "text": "この書類にはサイン、",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "あるいは",
+                      "reading": "あるいは",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "印鑑が必要だ。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57359,16 +57535,26 @@
               "kanji": "さて",
               "hiragana": "さて",
               "hanVietMeaning": "",
-              "meaning": "さて Sauday,nao",
+              "meaning": "Sau đây, nào",
               "examples": [
                 {
-                  "japanese": "「とれで文法の説明を終わります。",
-                  "vietnamese": "さ て 、 次 は 聴 解 で す 」 Đến đây là kết thúc phần giải",
+                  "japanese": "「これで文法の説明を終わります。さて、次は聴解です」",
+                  "vietnamese": "“Đến đây là kết thúc phần giải thích ngữ pháp. Sau đây, tiếp theo là nghe hiểu.”",
                   "segments": [
                     {
-                      "text": "「とれで文法の説明を終わります。",
+                      "text": "「これで文法の説明を終わります。",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "さて",
                       "reading": "さて",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、次は聴解です」",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57388,16 +57574,76 @@
               "kanji": "では",
               "hiragana": "では",
               "hanVietMeaning": "",
-              "meaning": "で は Vậy thì, trong trường hợp đó",
+              "meaning": "Vậy thì, trong trường hợp đó",
               "examples": [
                 {
-                  "japanese": "「みなさん、お集りですね。",
-                  "vietnamese": "で は 、 出発 し まし ょ う 」Moi người, tập trung lại rồi nhị.",
+                  "japanese": "「みなさん、お集まりですね。では、出発しましょう」",
+                  "vietnamese": "“Mọi người, tập trung lại rồi nhỉ. Vậy thì, xuất phát thôi.”",
                   "segments": [
                     {
-                      "text": "「みなさん、お集りですね。",
-                      "reading": "は",
+                      "text": "「みなさん、お集まりですね。",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "では",
+                      "reading": "では",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、出発しましょう」",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 159,
+                    "printedPage": 156
+                  }
+                },
+                {
+                  "japanese": "「今日のテーマは江戸時代の文化についてです。では、佐藤先生、よろしくお願いします」",
+                  "vietnamese": "“Chủ đề của ngày hôm nay là về văn hóa thời Edo. Vậy thì, xin nhờ thầy Sato.”",
+                  "segments": [
+                    {
+                      "text": "「今日のテーマは江戸時代の文化についてです。",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "では",
+                      "reading": "では",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、佐藤先生、よろしくお願いします」",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 159,
+                    "printedPage": 156
+                  }
+                },
+                {
+                  "japanese": "「月曜日はちょっと……」「では、火曜日はどうですか」",
+                  "vietnamese": "“Thứ 2 thì e rằng…” “Vậy thì, thứ 3 có được không?”",
+                  "segments": [
+                    {
+                      "text": "「月曜日はちょっと……」「",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "では",
+                      "reading": "では",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、火曜日はどうですか」",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57417,16 +57663,51 @@
               "kanji": "ところで",
               "hiragana": "ところで",
               "hanVietMeaning": "",
-              "meaning": "と ころ で Nhân tiện, tiện đây .",
+              "meaning": "Nhân tiện, tiện đây",
               "examples": [
                 {
-                  "japanese": "「今日はお疲れ様でした。",
-                  "vietnamese": "と ころ で 、 今 上 晩 の ご 予定 は ?」",
+                  "japanese": "「今日はお疲れ様でした。ところで、今晩のご予定は？」",
+                  "vietnamese": "“Hôm nay, bạn đã vất vả rồi. Nhân tiện, tối nay bạn có dự định gì không?”",
                   "segments": [
                     {
                       "text": "「今日はお疲れ様でした。",
-                      "reading": "ころ",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ところで",
+                      "reading": "ところで",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、今晩のご予定は？」",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 159,
+                    "printedPage": 156
+                  }
+                },
+                {
+                  "japanese": "「いいえ、弟に聞いてみます。ところで、出発の前に食事をしていきませんか」",
+                  "vietnamese": "“Không, để tôi hỏi em trai tôi thử. Tiện đây, chúng ta ăn cơm trước khi xuất phát nhé?”",
+                  "segments": [
+                    {
+                      "text": "「いいえ、弟に聞いてみます。",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ところで",
+                      "reading": "ところで",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "、出発の前に食事をしていきませんか」",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57445,17 +57726,27 @@
               "sourceNumber": 579,
               "kanji": "そう言えば",
               "hiragana": "そういえば",
-              "hanVietMeaning": "NGÔN",
+              "hanVietMeaning": "",
               "meaning": "Nhắc mới nhớ",
               "examples": [
                 {
-                  "japanese": "「同窓会の会場、予約しました」「ありがとう。",
-                  "vietnamese": "そう 言え ば 、 山 口先 生 が 本 を 出さ れ た",
+                  "japanese": "「同窓会の会場、予約しました」「ありがとう。そう言えば、山口先生が本を出されたそうよ」",
+                  "vietnamese": "“Đã đặt hội trường họp mặt cựu học sinh rồi.” “Cảm ơn. Nhắc mới nhớ, nghe nói thầy Yamaguchi đã xuất bản sách.”",
                   "segments": [
                     {
                       "text": "「同窓会の会場、予約しました」「ありがとう。",
-                      "reading": "そう",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "そう言えば",
+                      "reading": "そういえば",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、山口先生が本を出されたそうよ」",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57475,16 +57766,26 @@
               "kanji": "ただ",
               "hiragana": "ただ",
               "hanVietMeaning": "",
-              "meaning": "た だ Chỉ, ven vẹn chỉ",
+              "meaning": "Chỉ, vẹn chỉ",
               "examples": [
                 {
-                  "japanese": "あのレストランは味もいいし、値段も安い。",
-                  "vietnamese": "た だ 、 場 所 が ちょ っ と 不便 だ 。 Nhà hàng đó",
+                  "japanese": "あのレストランは味もいいし、値段も安い。ただ、場所がちょっと不便だ。",
+                  "vietnamese": "Nhà hàng đó vừa ngon vừa rẻ. Chỉ có điều, địa điểm hơi bất tiện.",
                   "segments": [
                     {
                       "text": "あのレストランは味もいいし、値段も安い。",
-                      "reading": "だ",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ただ",
+                      "reading": "ただ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "、場所がちょっと不便だ。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57555,13 +57856,93 @@
               "meaning": "Hạt viên, gọi những quả nhỏ như (nho, cà chua bị, ...), tài năng",
               "examples": [
                 {
-                  "japanese": "ぶどうを一竹食べる。",
-                  "vietnamese": "An một quả nho.",
+                  "japanese": "ぶどうを一粒食べる。",
+                  "vietnamese": "Ăn một quả nho.",
                   "segments": [
                     {
-                      "text": "ぶどうを一竹食べる。",
-                      "reading": "つぶ",
+                      "text": "ぶどうを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "一粒",
+                      "reading": "ひとつぶ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "食べる。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 162,
+                    "printedPage": 159
+                  }
+                },
+                {
+                  "japanese": "イヤリングには真珠が一粒ついていた。",
+                  "vietnamese": "Mỗi bông tai có gắn một viên ngọc trai.",
+                  "segments": [
+                    {
+                      "text": "イヤリングには真珠が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "一粒",
+                      "reading": "ひとつぶ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "ついていた。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 162,
+                    "printedPage": 159
+                  }
+                },
+                {
+                  "japanese": "大粒の涙",
+                  "vietnamese": "Giọt nước mắt lớn",
+                  "segments": [
+                    {
+                      "text": "大粒",
+                      "reading": "おおつぶ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "の涙",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 162,
+                    "printedPage": 159
+                  }
+                },
+                {
+                  "japanese": "今年の新人社員は粒ぞろいだ（全員優秀だ）。",
+                  "vietnamese": "Người mới vào công ty năm nay đều xuất sắc (=Toàn bộ nhân viên đều xuất sắc).",
+                  "segments": [
+                    {
+                      "text": "今年の新人社員は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "粒ぞろい",
+                      "reading": "つぶぞろい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "だ（全員優秀だ）。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -57613,13 +57994,23 @@
               "meaning": "Sự trồng trọt",
               "examples": [
                 {
-                  "japanese": "このXIでは小麦を栽培している。",
-                  "vietnamese": "Canh đồng này đang trồng lúa mỹ.",
+                  "japanese": "この畑では小麦を栽培している。",
+                  "vietnamese": "Cánh đồng này đang trồng lúa mỳ.",
                   "segments": [
                     {
-                      "text": "このXIでは小麦を栽培している。",
-                      "reading": "さい",
+                      "text": "この畑では小麦を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "栽培",
+                      "reading": "さいばい",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "している。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -58531,8 +58922,8 @@
             },
             {
               "sourceNumber": 599,
-              "kanji": "人件費",
-              "hiragana": "じんけんひ",
+              "kanji": "人工",
+              "hiragana": "じんこう",
               "hanVietMeaning": "NHÂN CÔNG",
               "meaning": "Nhân tạo",
               "examples": [
@@ -58542,16 +58933,16 @@
                   "segments": [
                     {
                       "text": "このスキー場では",
-                      "reading": "このスキーじょうでは",
+                      "reading": "",
                       "isUnderlined": false
                     },
                     {
-                      "text": "人工の雪を降らせている",
-                      "reading": "じんこうのゆきをふらせている",
+                      "text": "人工",
+                      "reading": "じんこう",
                       "isUnderlined": true
                     },
                     {
-                      "text": "。",
+                      "text": "の雪を降らせている。",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -58566,17 +58957,12 @@
                   "vietnamese": "Kim cương nhân tạo được sử dụng trong công nghiệp.",
                   "segments": [
                     {
-                      "text": "人工ダイヤモンドは",
-                      "reading": "じんこうダイヤモンドは",
-                      "isUnderlined": false
-                    },
-                    {
-                      "text": "工業用に使われる",
-                      "reading": "こうぎょうようにつかわれる",
+                      "text": "人工",
+                      "reading": "じんこう",
                       "isUnderlined": true
                     },
                     {
-                      "text": "。",
+                      "text": "ダイヤモンドは工業用に使われる。",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -59164,7 +59550,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿役割",
+                      "vietnamese": "Chia sẻ trách nhiệm",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "役割",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 167,
+                        "printedPage": 164
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 167,
                 "printedPage": 164
@@ -59175,16 +59587,46 @@
               "kanji": "担当",
               "hiragana": "たんとう",
               "hanVietMeaning": "ĐẢM ĐƯƠNG",
-              "meaning": "pam nhận",
+              "meaning": "Đảm đương",
               "examples": [
                 {
                   "japanese": "会社で営業を担当している。",
                   "vietnamese": "Tôi đang phụ trách mảng kinh doanh trong công ty.",
                   "segments": [
                     {
-                      "text": "会社で営業を担当している。",
-                      "reading": "う",
+                      "text": "会社で営業を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "担当",
+                      "reading": "たんとう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "している。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 167,
+                    "printedPage": 164
+                  }
+                },
+                {
+                  "japanese": "担当の医師から検査結果の説明を受けた。",
+                  "vietnamese": "Tôi được bác sĩ phụ trách giải thích kết quả xét nghiệm.",
+                  "segments": [
+                    {
+                      "text": "担当",
+                      "reading": "たんとう",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "の医師から検査結果の説明を受けた。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -59203,17 +59645,52 @@
               "sourceNumber": 607,
               "kanji": "交代",
               "hiragana": "こうたい",
-              "hanVietMeaning": "GIAO THÉ/ GIÁO ĐẠI",
-              "meaning": "Thay đối",
+              "hanVietMeaning": "GIAO THẾ／GIÁO ĐẠI",
+              "meaning": "Thay đổi",
               "examples": [
                 {
                   "japanese": "首相が交代した。",
-                  "vietnamese": "Tha tướng đã thay đồi.",
+                  "vietnamese": "Thủ tướng đã thay đổi.",
                   "segments": [
                     {
-                      "text": "首相が交代した。",
-                      "reading": "こう",
+                      "text": "首相が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "交代",
+                      "reading": "こうたい",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "した。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 167,
+                    "printedPage": 164
+                  }
+                },
+                {
+                  "japanese": "サッカーではA選手がB選手に交代した。",
+                  "vietnamese": "Trong bóng đá, cầu thủ A đã được thay bằng cầu thủ B.",
+                  "segments": [
+                    {
+                      "text": "サッカーではA選手がB選手に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "交代",
+                      "reading": "こうたい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "した。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -59222,7 +59699,33 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "世代交代",
+                      "vietnamese": "Chuyển giao thế hệ (Sự thay thế của các thế hệ)",
+                      "segments": [
+                        {
+                          "text": "世代",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "交代",
+                          "reading": "こうたい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 167,
+                        "printedPage": 164
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 167,
                 "printedPage": 164
@@ -59233,7 +59736,7 @@
               "kanji": "代理",
               "hiragana": "だいり",
               "hanVietMeaning": "ĐẠI LÝ",
-              "meaning": "だ いり 。 代理 GAILD Đại diện",
+              "meaning": "Đại diện",
               "examples": [
                 {
                   "japanese": "父の代理で親戚の結婚式に出席した。",
@@ -59546,17 +60049,77 @@
               "sourceNumber": 611,
               "kanji": "予測",
               "hiragana": "よそく",
-              "hanVietMeaning": "PHÁN ĐOẠN",
-              "meaning": "Phán đoán",
+              "hanVietMeaning": "DỰ TRẮC",
+              "meaning": "Dự đoán, ước tính",
               "examples": [
                 {
-                  "japanese": "外見や肩書きで人を判断するのはよくない。",
-                  "vietnamese": "Vìecphan đoán một người bằng bề ngoài và chức",
+                  "japanese": "データに基づいて結果を予測する。",
+                  "vietnamese": "Dự đoán kết quả dựa vào dữ liệu.",
                   "segments": [
                     {
-                      "text": "外見や肩書きで人を判断するのはよくない。",
-                      "reading": "メシ",
+                      "text": "データに基づいて結果を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "予測",
+                      "reading": "よそく",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 168,
+                    "printedPage": 165
+                  }
+                },
+                {
+                  "japanese": "売り上げ予測がはずれた。",
+                  "vietnamese": "Dự đoán doanh thu bị lệch.",
+                  "segments": [
+                    {
+                      "text": "売り上げ",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "予測",
+                      "reading": "よそく",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "がはずれた。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 168,
+                    "printedPage": 165
+                  }
+                },
+                {
+                  "japanese": "客がどれぐらい来るか、予測がつかない。",
+                  "vietnamese": "Tôi không dự đoán được có bao nhiêu khách hàng sẽ đến.",
+                  "segments": [
+                    {
+                      "text": "客がどれぐらい来るか、",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "予測",
+                      "reading": "よそく",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "がつかない。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -59565,7 +60128,93 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿がつく⇔つかない",
+                      "vietnamese": "Dự đoán được ⇔ Không dự đoán được",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "がつく⇔つかない",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 168,
+                        "printedPage": 165
+                      }
+                    },
+                    {
+                      "japanese": "＿があたる⇔はずれる",
+                      "vietnamese": "Đúng như dự đoán ⇔ Ngoài dự đoán",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "があたる⇔はずれる",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 168,
+                        "printedPage": 165
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "予想",
+                      "vietnamese": "Dự đoán",
+                      "segments": [
+                        {
+                          "text": "予想",
+                          "reading": "よそう",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 168,
+                        "printedPage": 165
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "予測",
+                      "vietnamese": "Dự đoán trước／sự mong đợi",
+                      "segments": [
+                        {
+                          "text": "予測",
+                          "reading": "よそく",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 168,
+                        "printedPage": 165
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 168,
                 "printedPage": 165
@@ -59573,19 +60222,49 @@
             },
             {
               "sourceNumber": 612,
-              "kanji": "期待",
-              "hiragana": "きたい",
-              "hanVietMeaning": ">",
-              "meaning": "スメル (BÌNH GIÁ) Đánh giá, định giá",
+              "kanji": "予想",
+              "hiragana": "よそう",
+              "hanVietMeaning": "DỰ TƯỞNG",
+              "meaning": "Sự mong đợi",
               "examples": [
                 {
-                  "japanese": "この映画に対する世間のin価は高い。",
-                  "vietnamese": "Sự đánh giá của công chúng đối với bộ phim này cao.",
+                  "japanese": "今回の実験では、予想に反し、いいデータが得られなかった。",
+                  "vietnamese": "Trái với mong đợi, trong kỳ thực tập này tôi đã không thể lấy được dữ liệu tốt.",
                   "segments": [
                     {
-                      "text": "この映画に対する世間のin価は高い。",
-                      "reading": "ひょう",
+                      "text": "今回の実験では、",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "予想",
+                      "reading": "よそう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "に反し、いいデータが得られなかった。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 168,
+                    "printedPage": 165
+                  }
+                },
+                {
+                  "japanese": "予想外のことが起こって、仕事のスケジュールが大幅に遅れてしまった。",
+                  "vietnamese": "Những điều bất ngờ (trái với sự mong đợi) xảy ra nên lịch trình làm việc bị chậm trễ rất nhiều.",
+                  "segments": [
+                    {
+                      "text": "予想",
+                      "reading": "よそう",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "外のことが起こって、仕事のスケジュールが大幅に遅れてしまった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -59594,7 +60273,53 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿に反する",
+                      "vietnamese": "Trái với sự mong đợi",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "に反する",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 168,
+                        "printedPage": 165
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "類",
+                  "items": [
+                    {
+                      "japanese": "予想（する）",
+                      "vietnamese": "Dự đoán, sự báo trước",
+                      "segments": [
+                        {
+                          "text": "予想（する）",
+                          "reading": "よそう（する）",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 168,
+                        "printedPage": 165
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 168,
                 "printedPage": 165
@@ -59604,26 +60329,217 @@
               "sourceNumber": 613,
               "kanji": "判断",
               "hiragana": "はんだん",
-              "hanVietMeaning": "VÔ THỊ",
-              "meaning": "Phớtlờ",
+              "hanVietMeaning": "PHÁN ĐOÁN",
+              "meaning": "Phán đoán",
               "examples": [
                 {
-                  "japanese": "話しかけたのに無視された。",
-                  "vietnamese": "Tôi đã bắt chuyện nhưng bị phớt lờ.",
+                  "japanese": "外見や肩書きで人を判断するのはよくない。",
+                  "vietnamese": "Việc phán đoán một người bằng bề ngoài và chức vụ là không tốt.",
                   "segments": [
                     {
-                      "text": "話しかけたのに無視された。",
-                      "reading": "むし",
+                      "text": "外見や肩書きで人を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "判断",
+                      "reading": "はんだん",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "するのはよくない。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 169,
-                    "printedPage": 166
+                    "pdfPage": 168,
+                    "printedPage": 165
+                  }
+                },
+                {
+                  "japanese": "どちらが正しいか、判断がつかない。",
+                  "vietnamese": "Tôi không đoán được đâu là đúng.",
+                  "segments": [
+                    {
+                      "text": "どちらが正しいか、",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "判断",
+                      "reading": "はんだん",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "がつかない。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 168,
+                    "printedPage": 165
+                  }
+                },
+                {
+                  "japanese": "年を取ると判断力が衰えてくるものだ。",
+                  "vietnamese": "Khi có tuổi, năng lực phán đoán sẽ bị suy giảm.",
+                  "segments": [
+                    {
+                      "text": "年を取ると",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "判断",
+                      "reading": "はんだん",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "力が衰えてくるものだ。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 168,
+                    "printedPage": 165
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿がつく⇔つかない",
+                      "vietnamese": "Phán đoán được ⇔ Không thể phán đoán được",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "がつく⇔つかない",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 168,
+                        "printedPage": 165
+                      }
+                    },
+                    {
+                      "japanese": "＿を下す",
+                      "vietnamese": "Đưa ra phán đoán",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "を下す",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 168,
+                        "printedPage": 165
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿力",
+                      "vietnamese": "Năng lực phán đoán",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "力",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 168,
+                        "printedPage": 165
+                      }
+                    },
+                    {
+                      "japanese": "＿材料",
+                      "vietnamese": "Cơ sở đánh giá",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "材料",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 168,
+                        "printedPage": 165
+                      }
+                    },
+                    {
+                      "japanese": "自＿",
+                      "vietnamese": "Tự đánh giá",
+                      "segments": [
+                        {
+                          "text": "自",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 168,
+                        "printedPage": 165
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "考える",
+                      "vietnamese": "Suy nghĩ",
+                      "segments": [
+                        {
+                          "text": "考える",
+                          "reading": "かんがえる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 168,
+                        "printedPage": 165
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 169,
                 "printedPage": 166
@@ -59633,22 +60549,82 @@
               "sourceNumber": 614,
               "kanji": "評価",
               "hiragana": "ひょうか",
-              "hanVietMeaning": "YO ĐOẠN",
-              "meaning": "Không được phép",
+              "hanVietMeaning": "BÌNH GIÁ",
+              "meaning": "Đánh giá, định giá",
               "examples": [
                 {
-                  "japanese": "無断で人の物を使ってはいけない。",
-                  "vietnamese": "Không được sử đụng đồ của người khác khi chưa có sự cho",
+                  "japanese": "この映画に対する世間の評価は高い。",
+                  "vietnamese": "Sự đánh giá của công chúng đối với bộ phim này cao.",
                   "segments": [
                     {
-                      "text": "無断で人の物を使ってはいけない。",
-                      "reading": "むだ",
+                      "text": "この映画に対する世間の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "評価",
+                      "reading": "ひょうか",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "は高い。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 169,
-                    "printedPage": 166
+                    "pdfPage": 168,
+                    "printedPage": 165
+                  }
+                },
+                {
+                  "japanese": "成績を五段階で評価する。",
+                  "vietnamese": "Đánh giá thành tích dựa trên 5 cấp độ.",
+                  "segments": [
+                    {
+                      "text": "成績を五段階で",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "評価",
+                      "reading": "ひょうか",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 168,
+                    "printedPage": 165
+                  }
+                },
+                {
+                  "japanese": "地球温暖化についてのレポートは彼の評価を高めた。",
+                  "vietnamese": "Bản báo cáo đã đánh giá cao nhận định của anh ấy về sự nóng lên của trái đất.",
+                  "segments": [
+                    {
+                      "text": "地球温暖化についてのレポートは彼の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "評価",
+                      "reading": "ひょうか",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "を高めた。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 168,
+                    "printedPage": 165
                   }
                 }
               ],
@@ -59872,22 +60848,107 @@
               "sourceNumber": 616,
               "kanji": "無視",
               "hiragana": "むし",
-              "hanVietMeaning": "NẠP ĐÁC",
-              "meaning": "Hài lòng, hiểu",
+              "hanVietMeaning": "VÔ THỊ",
+              "meaning": "Phớt lờ",
               "examples": [
                 {
-                  "japanese": "会社のやり方には納得できない。",
-                  "vietnamese": "Teoi không thể hài lòng với cách làm việc của công ty.",
+                  "japanese": "話しかけたのに無視された。",
+                  "vietnamese": "Tôi đã bắt chuyện nhưng bị phớt lờ.",
                   "segments": [
                     {
-                      "text": "会社のやり方には納得できない。",
-                      "reading": "く",
+                      "text": "話しかけたのに",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "無視",
+                      "reading": "むし",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "された。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 170,
-                    "printedPage": 167
+                    "pdfPage": 169,
+                    "printedPage": 166
+                  }
+                },
+                {
+                  "japanese": "彼は私の意見を無視して、一人で何でも決めてしまう。",
+                  "vietnamese": "Anh ấy phớt lờ ý kiến của tôi và tự mình quyết định mọi thứ.",
+                  "segments": [
+                    {
+                      "text": "彼は私の意見を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "無視",
+                      "reading": "むし",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "して、一人で何でも決めてしまう。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 169,
+                    "printedPage": 166
+                  }
+                },
+                {
+                  "japanese": "交通事故の危険は無視も過小評価もできない。",
+                  "vietnamese": "Không thể coi thường hay đánh giá thấp sự nguy hiểm của tai nạn giao thông.",
+                  "segments": [
+                    {
+                      "text": "交通事故の危険は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "無視",
+                      "reading": "むし",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "も過小評価もできない。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 169,
+                    "printedPage": 166
+                  }
+                },
+                {
+                  "japanese": "地球温暖化は無視できない問題だ。",
+                  "vietnamese": "Sự nóng lên toàn cầu là một vấn đề không thể bỏ qua.",
+                  "segments": [
+                    {
+                      "text": "地球温暖化は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "無視",
+                      "reading": "むし",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "できない問題だ。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 169,
+                    "printedPage": 166
                   }
                 }
               ],
@@ -59901,26 +60962,77 @@
               "sourceNumber": 617,
               "kanji": "無断",
               "hiragana": "むだん",
-              "hanVietMeaning": "NGHIVAN",
-              "meaning": "Câu hỏi, nghi vấn",
+              "hanVietMeaning": "VÔ ĐOẠN",
+              "meaning": "Không được phép",
               "examples": [
                 {
-                  "japanese": "子どもはいろいろなことに疑問を持つ。",
-                  "vietnamese": "Tre em tò mò về mọi thứ.",
+                  "japanese": "無断で人の物を使ってはいけない。",
+                  "vietnamese": "Không được sử dụng đồ của người khác khi chưa có sự cho phép.",
                   "segments": [
                     {
-                      "text": "子どもはいろいろなことに疑問を持つ。",
-                      "reading": "ぎゃ",
+                      "text": "無断",
+                      "reading": "むだん",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "で人の物を使ってはいけない。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 170,
-                    "printedPage": 167
+                    "pdfPage": 169,
+                    "printedPage": 166
+                  }
+                },
+                {
+                  "japanese": "無断欠勤して上司に怒られた。",
+                  "vietnamese": "Tôi đã làm cấp trên tức giận vì nghỉ không phép.",
+                  "segments": [
+                    {
+                      "text": "無断",
+                      "reading": "むだん",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "欠勤して上司に怒られた。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 169,
+                    "printedPage": 166
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿欠勤",
+                      "vietnamese": "Nghỉ không phép",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "欠勤",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 169,
+                        "printedPage": 166
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 170,
                 "printedPage": 167
@@ -59930,17 +61042,77 @@
               "sourceNumber": 618,
               "kanji": "承知",
               "hiragana": "しょうち",
-              "hanVietMeaning": "THÔI TRÁC",
-              "meaning": "Sự phỏng đoán",
+              "hanVietMeaning": "THỪA TRI",
+              "meaning": "Đồng ý, hiểu",
               "examples": [
                 {
-                  "japanese": "相手の気持ちを推測する。",
-                  "vietnamese": "Tôi đoán cảm giác của đối phương.",
+                  "japanese": "「この仕事、明日までに頼みます」「承知しました」",
+                  "vietnamese": "“Nhờ cậu hoàn thành công việc này trước ngày mai nhé.” “Vâng, tôi đã nắm rõ.”",
                   "segments": [
                     {
-                      "text": "相手の気持ちを推測する。",
-                      "reading": "すい",
+                      "text": "「この仕事、明日までに頼みます」「",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "承知",
+                      "reading": "しょうち",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "しました」",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 170,
+                    "printedPage": 167
+                  }
+                },
+                {
+                  "japanese": "私の学力では合格は難しいと承知しているが、それでも受験したい。",
+                  "vietnamese": "Tôi biết là với học lực của mình thì đậu là khó khăn, nhưng tôi vẫn muốn thi.",
+                  "segments": [
+                    {
+                      "text": "私の学力では合格は難しいと",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "承知",
+                      "reading": "しょうち",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "しているが、それでも受験したい。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 170,
+                    "printedPage": 167
+                  }
+                },
+                {
+                  "japanese": "難しさを承知の上で、挑戦することにした。",
+                  "vietnamese": "Sau khi biết rõ các khó khăn, tôi quyết định sẽ thử thách bản thân mình.",
+                  "segments": [
+                    {
+                      "text": "難しさを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "承知",
+                      "reading": "しょうち",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "の上で、挑戦することにした。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -59949,7 +61121,28 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "わかる",
+                      "vietnamese": "Hiểu",
+                      "segments": [
+                        {
+                          "text": "わかる",
+                          "reading": "わかる",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 170,
+                        "printedPage": 167
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 170,
                 "printedPage": 167
@@ -60104,22 +61297,122 @@
               "sourceNumber": 620,
               "kanji": "疑問",
               "hiragana": "ぎもん",
-              "hanVietMeaning": "THAM KHẢO",
-              "meaning": "Tham khảo",
+              "hanVietMeaning": "NGHI VẤN",
+              "meaning": "Câu hỏi, nghi vấn",
               "examples": [
                 {
-                  "japanese": "いろいろな資料を参考にしてレポートを書いた。",
-                  "vietnamese": "Tôi đã tham khảo rất nhiều tài liệu rồi viết",
+                  "japanese": "子どもはいろいろなことに疑問を持つ。",
+                  "vietnamese": "Trẻ em tò mò về mọi thứ.",
                   "segments": [
                     {
-                      "text": "いろいろな資料を参考にしてレポートを書いた。",
-                      "reading": "さん",
+                      "text": "子どもはいろいろなことに",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "疑問",
+                      "reading": "ぎもん",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "を持つ。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 171,
-                    "printedPage": 168
+                    "pdfPage": 170,
+                    "printedPage": 167
+                  }
+                },
+                {
+                  "japanese": "疑問点を確認する。",
+                  "vietnamese": "Xác nhận điểm nghi vấn.",
+                  "segments": [
+                    {
+                      "text": "疑問",
+                      "reading": "ぎもん",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "点を確認する。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 170,
+                    "printedPage": 167
+                  }
+                },
+                {
+                  "japanese": "疑問に答える。",
+                  "vietnamese": "Trả lời câu hỏi.",
+                  "segments": [
+                    {
+                      "text": "疑問",
+                      "reading": "ぎもん",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "に答える。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 170,
+                    "printedPage": 167
+                  }
+                },
+                {
+                  "japanese": "そんなことができるかどうか疑問だ。",
+                  "vietnamese": "Tôi nghi ngờ liệu điều như vậy có thể làm được hay không.",
+                  "segments": [
+                    {
+                      "text": "そんなことができるかどうか",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "疑問",
+                      "reading": "ぎもん",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "だ。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 170,
+                    "printedPage": 167
+                  }
+                },
+                {
+                  "japanese": "政府の発表に疑問を抱いた。",
+                  "vietnamese": "Tôi đã nghi ngờ về thông báo của chính phủ.",
+                  "segments": [
+                    {
+                      "text": "政府の発表に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "疑問",
+                      "reading": "ぎもん",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "を抱いた。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 170,
+                    "printedPage": 167
                   }
                 }
               ],
@@ -60133,26 +61426,87 @@
               "sourceNumber": 621,
               "kanji": "推測",
               "hiragana": "すいそく",
-              "hanVietMeaning": "TRÌNH ĐỘ",
-              "meaning": "Trinh độ, mức độ",
+              "hanVietMeaning": "THÔI TRẮC",
+              "meaning": "Sự phỏng đoán",
               "examples": [
                 {
-                  "japanese": "彼女の学校は教育の程度が高い。",
-                  "vietnamese": "Trường của cô ây có trình độ đào tạo cao.",
+                  "japanese": "相手の気持ちを推測する。",
+                  "vietnamese": "Tôi đoán cảm giác của đối phương.",
                   "segments": [
                     {
-                      "text": "彼女の学校は教育の程度が高い。",
-                      "reading": "ど",
+                      "text": "相手の気持ちを",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "推測",
+                      "reading": "すいそく",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 171,
-                    "printedPage": 168
+                    "pdfPage": 170,
+                    "printedPage": 167
+                  }
+                },
+                {
+                  "japanese": "新聞記事は推測で記事を書いてはいけない。",
+                  "vietnamese": "Cơ quan báo chí không được viết bài dựa trên suy đoán.",
+                  "segments": [
+                    {
+                      "text": "新聞記事は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "推測",
+                      "reading": "すいそく",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "で記事を書いてはいけない。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 170,
+                    "printedPage": 167
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿がつく⇔つかない",
+                      "vietnamese": "Phỏng đoán có căn cứ ⇔ Không có căn cứ",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "がつく⇔つかない",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 170,
+                        "printedPage": 167
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 171,
                 "printedPage": 168
@@ -60162,17 +61516,52 @@
               "sourceNumber": 622,
               "kanji": "断定",
               "hiragana": "だんてい",
-              "hanVietMeaning": "BINH PHÁN",
-              "meaning": "Bình luận, đánh giá",
+              "hanVietMeaning": "ĐOẠN ĐỊNH",
+              "meaning": "Khẳng định, quả quyết",
               "examples": [
                 {
-                  "japanese": "犬統領就任演説は評判がよかった。",
-                  "vietnamese": "Bai diễn văn nhậm chức của tổng thống có những phản",
+                  "japanese": "相手の意見を断定する。",
+                  "vietnamese": "Khẳng định ý kiến của đối phương.",
                   "segments": [
                     {
-                      "text": "犬統領就任演説は評判がよかった。",
-                      "reading": "ひょう",
+                      "text": "相手の意見を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "断定",
+                      "reading": "だんてい",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 171,
+                    "printedPage": 168
+                  }
+                },
+                {
+                  "japanese": "私は何事も、断定的に考えるようにしている。",
+                  "vietnamese": "Dù trong bất kỳ chuyện gì, tôi đều cố gắng suy nghĩ một cách quả quyết.",
+                  "segments": [
+                    {
+                      "text": "私は何事も、",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "断定",
+                      "reading": "だんてい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "的に考えるようにしている。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -60181,7 +61570,53 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿的な",
+                      "vietnamese": "Tính quả quyết",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "的な",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 171,
+                        "printedPage": 168
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "否定",
+                      "vietnamese": "Phủ định",
+                      "segments": [
+                        {
+                          "text": "否定",
+                          "reading": "ひてい",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 171,
+                        "printedPage": 168
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 171,
                 "printedPage": 168
@@ -60191,26 +61626,152 @@
               "sourceNumber": 623,
               "kanji": "参考",
               "hiragana": "さんこう",
-              "hanVietMeaning": "PHÊ BÌNH",
-              "meaning": "Phê bình",
+              "hanVietMeaning": "THAM KHẢO",
+              "meaning": "Tham khảo",
               "examples": [
                 {
-                  "japanese": "新聞に新刊書の批評が載った。",
-                  "vietnamese": "Bai phê bình về cuốn sách mới đã được đăng trên báo.",
+                  "japanese": "いろいろな資料を参考にしてレポートを書いた。",
+                  "vietnamese": "Tôi đã tham khảo rất nhiều tài liệu rồi viết báo cáo.",
                   "segments": [
                     {
-                      "text": "新聞に新刊書の批評が載った。",
-                      "reading": "ひひ",
+                      "text": "いろいろな資料を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "参考",
+                      "reading": "さんこう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "にしてレポートを書いた。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 172,
-                    "printedPage": 169
+                    "pdfPage": 171,
+                    "printedPage": 168
+                  }
+                },
+                {
+                  "japanese": "留学を決めるとき、先輩のアドバイスが参考になった。",
+                  "vietnamese": "Khi quyết định đi du học, lời khuyên của những người đi trước đã trở nên đáng tham khảo.",
+                  "segments": [
+                    {
+                      "text": "留学を決めるとき、先輩のアドバイスが",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "参考",
+                      "reading": "さんこう",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "になった。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 171,
+                    "printedPage": 168
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿になる・＿する",
+                      "vietnamese": "Tham khảo・Dùng để tham khảo",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "になる・＿する",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 171,
+                        "printedPage": 168
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿資料",
+                      "vietnamese": "Tài liệu tham khảo",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "資料",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 171,
+                        "printedPage": 168
+                      }
+                    },
+                    {
+                      "japanese": "＿文献",
+                      "vietnamese": "Tài liệu tham khảo",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "文献",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 171,
+                        "printedPage": 168
+                      }
+                    },
+                    {
+                      "japanese": "＿人",
+                      "vietnamese": "Nhân chứng",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "人",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 171,
+                        "printedPage": 168
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 172,
                 "printedPage": 169
@@ -60220,26 +61781,182 @@
               "sourceNumber": 624,
               "kanji": "程度",
               "hiragana": "ていど",
-              "hanVietMeaning": "THÔI TIẾN",
-              "meaning": "Sự tiến cử",
+              "hanVietMeaning": "TRÌNH ĐỘ",
+              "meaning": "Trình độ, mức độ",
               "examples": [
                 {
-                  "japanese": "重役たちは、田中氏を次期社長に推薦した。",
-                  "vietnamese": "Ban Giám đốc đã tiền cử Ông Tanaka làm giám",
+                  "japanese": "彼女の学校は教育の程度が高い。",
+                  "vietnamese": "Trường của cô ấy có trình độ đào tạo cao.",
                   "segments": [
                     {
-                      "text": "重役たちは、田中氏を次期社長に推薦した。",
-                      "reading": "すい",
+                      "text": "彼女の学校は教育の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "程度",
+                      "reading": "ていど",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "が高い。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 172,
-                    "printedPage": 169
+                    "pdfPage": 171,
+                    "printedPage": 168
+                  }
+                },
+                {
+                  "japanese": "彼は程度の低い話ばかりしている。",
+                  "vietnamese": "Họ chỉ nói chuyện ở trình độ thấp.",
+                  "segments": [
+                    {
+                      "text": "彼は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "程度",
+                      "reading": "ていど",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "の低い話ばかりしている。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 171,
+                    "printedPage": 168
+                  }
+                },
+                {
+                  "japanese": "会話はある程度できるが、漢字は難しい。",
+                  "vietnamese": "Hội thoại thì tạm tạm, nhưng Hán tự thì khó.",
+                  "segments": [
+                    {
+                      "text": "会話はある",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "程度",
+                      "reading": "ていど",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "できるが、漢字は難しい。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 171,
+                    "printedPage": 168
+                  }
+                },
+                {
+                  "japanese": "この程度の点数では満足できない。",
+                  "vietnamese": "Với điểm số ở mức này tôi không thể hài lòng được.",
+                  "segments": [
+                    {
+                      "text": "この",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "程度",
+                      "reading": "ていど",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "の点数では満足できない。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 171,
+                    "printedPage": 168
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿が高い⇔低い",
+                      "vietnamese": "Trình độ cao ⇔ Trình độ thấp",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "が高い⇔低い",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 171,
+                        "printedPage": 168
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "ある＿",
+                      "vietnamese": "Tới mức độ nào đó, tạm tạm",
+                      "segments": [
+                        {
+                          "text": "ある",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 171,
+                        "printedPage": 168
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "レベル",
+                      "vietnamese": "Trình độ",
+                      "segments": [
+                        {
+                          "text": "レベル",
+                          "reading": "レベル",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 171,
+                        "printedPage": 168
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 172,
                 "printedPage": 169
@@ -60249,22 +61966,82 @@
               "sourceNumber": 625,
               "kanji": "評判",
               "hiragana": "ひょうばん",
-              "hanVietMeaning": "TÍNDỤNG",
-              "meaning": "Tin tưởng",
+              "hanVietMeaning": "BÌNH PHẨN",
+              "meaning": "Bình luận, đánh giá",
               "examples": [
                 {
-                  "japanese": "{人/人の言葉)を信用してお金を貸す。",
-                  "vietnamese": "Vitin tưởng {người khác/ lời của người khác} nên cho",
+                  "japanese": "大統領就任後の評判は悪かった。",
+                  "vietnamese": "Bài diễn văn nhậm chức của tổng thống có những phê phán tích cực (có bình luận bình luận?).",
                   "segments": [
                     {
-                      "text": "{人/人の言葉)を信用してお金を貸す。",
-                      "reading": "よう",
+                      "text": "大統領就任後の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "評判",
+                      "reading": "ひょうばん",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "は悪かった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 172,
-                    "printedPage": 169
+                    "pdfPage": 171,
+                    "printedPage": 168
+                  }
+                },
+                {
+                  "japanese": "新商品は使いにくいとの評判が悪く、売れなかった。",
+                  "vietnamese": "Vì có nhiều đánh giá xấu cho rằng sản phẩm mới khó sử dụng nên đã không bán được.",
+                  "segments": [
+                    {
+                      "text": "新商品は使いにくいとの",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "評判",
+                      "reading": "ひょうばん",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "が悪く、売れなかった。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 171,
+                    "printedPage": 168
+                  }
+                },
+                {
+                  "japanese": "このレストランはミシュランの三ツ星がついたと評判になった。",
+                  "vietnamese": "Nhà hàng này được đánh giá đạt 3 sao Michelin.",
+                  "segments": [
+                    {
+                      "text": "このレストランはミシュランの三ツ星がついたと",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "評判",
+                      "reading": "ひょうばん",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "になった。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 171,
+                    "printedPage": 168
                   }
                 }
               ],
@@ -60278,22 +62055,57 @@
               "sourceNumber": 626,
               "kanji": "批評",
               "hiragana": "ひひょう",
-              "hanVietMeaning": "TÍNLẠI",
-              "meaning": "Tin cậy, tín nhiệm",
+              "hanVietMeaning": "PHÊ BÌNH",
+              "meaning": "Phê bình",
               "examples": [
                 {
-                  "japanese": "彼は信頼できる指導者だ。",
-                  "vietnamese": "Ong ấy là một nhà lãnh đạo có thể tin cậy.",
+                  "japanese": "新聞に批評家の批評が載った。",
+                  "vietnamese": "Bài phê bình của nhà phê bình đã được đăng trên báo.",
                   "segments": [
                     {
-                      "text": "彼は信頼できる指導者だ。",
-                      "reading": "らい",
+                      "text": "新聞に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "批評",
+                      "reading": "ひひょう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "家の批評が載った。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 172,
-                    "printedPage": 169
+                    "pdfPage": 171,
+                    "printedPage": 168
+                  }
+                },
+                {
+                  "japanese": "先生は私の作文について何も批評しなかった。",
+                  "vietnamese": "Giáo viên đã không phê bình bất cứ điều gì về bài viết của tôi.",
+                  "segments": [
+                    {
+                      "text": "先生は私の作文について何も",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "批評",
+                      "reading": "ひひょう",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "しなかった。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 171,
+                    "printedPage": 168
                   }
                 }
               ],
@@ -60434,12 +62246,47 @@
               "examples": [
                 {
                   "japanese": "人の意見を尊重する。",
-                  "vietnamese": "Tôn trọng ý kiến của mọi người。",
+                  "vietnamese": "Tôn trọng ý kiến của mọi người.",
                   "segments": [
                     {
-                      "text": "人の意見を尊重する。",
+                      "text": "人の意見を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "尊重",
                       "reading": "そんちょう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 173,
+                    "printedPage": 170
+                  }
+                },
+                {
+                  "japanese": "（権利／プライバシー／人権…）を尊重する。",
+                  "vietnamese": "Tôn trọng (quyền lợi / sự riêng tư / nhân quyền…).",
+                  "segments": [
+                    {
+                      "text": "（権利／プライバシー／人権…）を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "尊重",
+                      "reading": "そんちょう",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -60448,7 +62295,103 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "連",
+                  "items": [
+                    {
+                      "japanese": "＿に応える⇔＿を裏切る",
+                      "vietnamese": "Đáp lại sự tín nhiệm ⇔ Phụ lòng tin",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "に応える⇔＿を裏切る",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 173,
+                        "printedPage": 170
+                      }
+                    },
+                    {
+                      "japanese": "＿をおく",
+                      "vietnamese": "Tin tưởng",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "をおく",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 173,
+                        "printedPage": 170
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "＿関係",
+                      "vietnamese": "Mối quan hệ tin tưởng lẫn nhau",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "関係",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 173,
+                        "printedPage": 170
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "関",
+                  "items": [
+                    {
+                      "japanese": "＿信用",
+                      "vietnamese": "Tin tưởng",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "信用",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 173,
+                        "printedPage": 170
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 173,
                 "printedPage": 170
@@ -61150,16 +63093,26 @@
               "kanji": "上昇",
               "hiragana": "じょうしょう",
               "hanVietMeaning": "THƯỢNG THĂNG",
-              "meaning": "Sự tăng lên -",
+              "meaning": "Sự tăng lên",
               "examples": [
                 {
-                  "japanese": "午後から気混が急激に上界した。",
-                  "vietnamese": "Nhiet độ đã tầng mạnh từ buổi chiều.",
+                  "japanese": "午後から気温が急激に上昇した。",
+                  "vietnamese": "Nhiệt độ đã tăng mạnh từ buổi chiều.",
                   "segments": [
                     {
-                      "text": "午後から気混が急激に上界した。",
-                      "reading": "じょう",
+                      "text": "午後から気温が急激に",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "上昇",
+                      "reading": "じょうしょう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "した。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -61243,16 +63196,26 @@
               "kanji": "事情",
               "hiragana": "じじょう",
               "hanVietMeaning": "SỰ TÌNH",
-              "meaning": "じじ ょ うぅ 事情 の ラロ) Hoàn cảnh",
+              "meaning": "Hoàn cảnh",
               "examples": [
                 {
                   "japanese": "彼女はヨーロッパの事情に詳しい。",
                   "vietnamese": "Cô ấy biết rõ tình hình của Châu Âu.",
                   "segments": [
                     {
-                      "text": "彼女はヨーロッパの事情に詳しい。",
-                      "reading": "じじ",
+                      "text": "彼女はヨーロッパの",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "事情",
+                      "reading": "じじょう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "に詳しい。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -61272,16 +63235,26 @@
               "kanji": "事態",
               "hiragana": "じたい",
               "hanVietMeaning": "SỰ THÁI",
-              "meaning": "じたい _ 事態 (SUTHAD Tình hình, tình huống",
+              "meaning": "Tình hình, tình huống",
               "examples": [
                 {
                   "japanese": "預金している銀行が倒産するという、大変な事態になった。",
-                  "vietnamese": "Tinh hình trở nên tồi tệ hơn khi",
+                  "vietnamese": "Tình hình trở nên tồi tệ hơn khi ngân hàng tôi gửi tiền bị phá sản.",
                   "segments": [
                     {
-                      "text": "預金している銀行が倒産するという、大変な事態になった。",
+                      "text": "預金している銀行が倒産するという、大変な",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "事態",
                       "reading": "じたい",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "になった。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -61301,7 +63274,7 @@
               "kanji": "障害",
               "hiragana": "しょうがい",
               "hanVietMeaning": "CHƯỚNG NGẠI",
-              "meaning": "_ し ょ うがい (CHUONG HAD Trở ngại",
+              "meaning": "Trở ngại",
               "examples": [
                 {
                   "japanese": "彼は目が見えないという障害を乗り越えて、ピアニストになった。",
@@ -61309,7 +63282,7 @@
                   "segments": [
                     {
                       "text": "彼は目が見えないという",
-                      "reading": "しょうがい",
+                      "reading": "",
                       "isUnderlined": false
                     },
                     {
@@ -61319,7 +63292,7 @@
                     },
                     {
                       "text": "を乗り越えて、ピアニストになった。",
-                      "reading": "しょうがい",
+                      "reading": "",
                       "isUnderlined": false
                     }
                   ],
@@ -61334,7 +63307,7 @@
                   "segments": [
                     {
                       "text": "独身なので、海外赴任に何の",
-                      "reading": "しょうがい",
+                      "reading": "",
                       "isUnderlined": false
                     },
                     {
@@ -61364,17 +63337,27 @@
               "sourceNumber": 651,
               "kanji": "福祉",
               "hiragana": "ふくし",
-              "hanVietMeaning": "PHÚC LỢI",
-              "meaning": "ふく し 福祉 (CHOCCHD Phúc lợi",
+              "hanVietMeaning": "PHÚC CHỈ",
+              "meaning": "Phúc lợi",
               "examples": [
                 {
                   "japanese": "大学で福祉について勉強した。",
                   "vietnamese": "Tôi đã học về phúc lợi ở trường đại học.",
                   "segments": [
                     {
-                      "text": "大学で福祉について勉強した。",
-                      "reading": "ふく",
+                      "text": "大学で",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "福祉",
+                      "reading": "ふくし",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "について勉強した。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -61383,7 +63366,53 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "社会福祉",
+                      "vietnamese": "Phúc lợi xã hội",
+                      "segments": [
+                        {
+                          "text": "社会",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "福祉",
+                          "reading": "ふくし",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 180,
+                        "printedPage": 177
+                      }
+                    },
+                    {
+                      "japanese": "介護＿",
+                      "vietnamese": "Điều dưỡng viên",
+                      "segments": [
+                        {
+                          "text": "介護",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 180,
+                        "printedPage": 177
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 180,
                 "printedPage": 177
@@ -61551,16 +63580,26 @@
               "kanji": "民族",
               "hiragana": "みんぞく",
               "hanVietMeaning": "DÂN TỘC",
-              "meaning": "みん ぞ く 民族 DANTOO) Dân tộc",
+              "meaning": "Dân tộc",
               "examples": [
                 {
-                  "japanese": "世算にはさまざまな民族が存在する。",
-                  "vietnamese": "Tren thể giới tồn tại rắt nhiều dân tộc.",
+                  "japanese": "世界にはさまざまな民族が存在する。",
+                  "vietnamese": "Trên thế giới tồn tại rất nhiều dân tộc.",
                   "segments": [
                     {
-                      "text": "世算にはさまざまな民族が存在する。",
-                      "reading": "みん",
+                      "text": "世界にはさまざまな",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "民族",
+                      "reading": "みんぞく",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "が存在する。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -61569,7 +63608,78 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "合",
+                  "items": [
+                    {
+                      "japanese": "少数＿",
+                      "vietnamese": "Dân tộc thiểu số",
+                      "segments": [
+                        {
+                          "text": "少数",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 181,
+                        "printedPage": 178
+                      }
+                    },
+                    {
+                      "japanese": "多民族国家",
+                      "vietnamese": "Nhà nước đa dân tộc",
+                      "segments": [
+                        {
+                          "text": "多",
+                          "reading": "",
+                          "isUnderlined": false
+                        },
+                        {
+                          "text": "民族",
+                          "reading": "みんぞく",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "国家",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 181,
+                        "printedPage": 178
+                      }
+                    },
+                    {
+                      "japanese": "＿意識",
+                      "vietnamese": "Ý thức dân tộc",
+                      "segments": [
+                        {
+                          "text": "＿",
+                          "reading": "",
+                          "isUnderlined": true
+                        },
+                        {
+                          "text": "意識",
+                          "reading": "",
+                          "isUnderlined": false
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 181,
+                        "printedPage": 178
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 181,
                 "printedPage": 178
@@ -61779,17 +63889,52 @@
               "sourceNumber": 658,
               "kanji": "増税",
               "hiragana": "ぞうぜい",
-              "hanVietMeaning": "TĂNG VIÊN",
-              "meaning": ". Tăng nhân lực",
+              "hanVietMeaning": "TĂNG THUẾ",
+              "meaning": "Tăng thuế",
               "examples": [
                 {
-                  "japanese": "アメリメカ大統領来日に当たり、区備員が増員された。",
-                  "vietnamese": "Khi tổng thống Mỹ viếng thăm Nhật",
+                  "japanese": "労働人口が減少し、政府は増税を考えているらしい。",
+                  "vietnamese": "Do dân số lao động giảm nên hình như chính phủ đang cân nhắc việc tăng thuế.",
                   "segments": [
                     {
-                      "text": "アメリメカ大統領来日に当たり、区備員が増員された。",
-                      "reading": "ぞう",
+                      "text": "労働人口が減少し、政府は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "増税",
+                      "reading": "ぞうぜい",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "を考えているらしい。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 182,
+                    "printedPage": 179
+                  }
+                },
+                {
+                  "japanese": "所得税が増税された。",
+                  "vietnamese": "Thuế thu nhập đã bị tăng lên.",
+                  "segments": [
+                    {
+                      "text": "所得税が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "増税",
+                      "reading": "ぞうぜい",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "された。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -61808,17 +63953,52 @@
               "sourceNumber": 659,
               "kanji": "増員",
               "hiragana": "ぞういん",
-              "hanVietMeaning": "GIẢM ĐIỂM",
-              "meaning": ". Giảm điểm",
+              "hanVietMeaning": "TĂNG VIÊN",
+              "meaning": "Tăng nhân lực",
               "examples": [
                 {
-                  "japanese": "漢字のテストで、送り仮名を間違えて減点された。",
-                  "vietnamese": "Trong bài kiểm tra kanji, tôi bị nhằm phiên",
+                  "japanese": "アメリカ大統領が来日するに当たり、警備員が増員された。",
+                  "vietnamese": "Khi tổng thống Mỹ viếng thăm Nhật Bản, số lượng nhân viên an ninh đã được tăng thêm.",
                   "segments": [
                     {
-                      "text": "漢字のテストで、送り仮名を間違えて減点された。",
-                      "reading": "げん",
+                      "text": "アメリカ大統領が来日するに当たり、警備員が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "増員",
+                      "reading": "ぞういん",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "された。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 182,
+                    "printedPage": 179
+                  }
+                },
+                {
+                  "japanese": "定員を増員する。",
+                  "vietnamese": "Tăng số ghế (số người quy định).",
+                  "segments": [
+                    {
+                      "text": "定員を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "増員",
+                      "reading": "ぞういん",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -61837,22 +64017,32 @@
               "sourceNumber": 660,
               "kanji": "減点",
               "hiragana": "げんてん",
-              "hanVietMeaning": "GIẢM THOÁI",
-              "meaning": "Suy thoái, suy giảm",
+              "hanVietMeaning": "GIẢM ĐIỂM",
+              "meaning": "Giảm điểm",
               "examples": [
                 {
-                  "japanese": "暑さのせいで食欲が減退した。",
-                  "vietnamese": "Do thời tiết nóng bức khiến cảm giác muốn ăn giảm đi.",
+                  "japanese": "漢字のテストで、送り仮名を間違えて減点された。",
+                  "vietnamese": "Trong bài kiểm tra kanji, tôi bị nhầm phiên âm chữ Hán nên đã bị trừ điểm.",
                   "segments": [
                     {
-                      "text": "暑さのせいで食欲が減退した。",
-                      "reading": "げん",
+                      "text": "漢字のテストで、送り仮名を間違えて",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "減点",
+                      "reading": "げんてん",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "された。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 183,
-                    "printedPage": 180
+                    "pdfPage": 182,
+                    "printedPage": 179
                   }
                 }
               ],
@@ -61866,7 +64056,7 @@
               "sourceNumber": 661,
               "kanji": "減退",
               "hiragana": "げんたい",
-              "hanVietMeaning": "GIẢM LUONG",
+              "hanVietMeaning": "GIẢM THOÁI",
               "meaning": "Suy thoái, suy giảm",
               "examples": [
                 {
@@ -61875,16 +64065,16 @@
                   "segments": [
                     {
                       "text": "暑さのせいで食欲が",
-                      "reading": "げんたい",
+                      "reading": "",
                       "isUnderlined": false
                     },
                     {
-                      "text": "減退した",
-                      "reading": "げんたいした",
+                      "text": "減退",
+                      "reading": "げんたい",
                       "isUnderlined": true
                     },
                     {
-                      "text": "。",
+                      "text": "した。",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -61895,7 +64085,28 @@
                   }
                 }
               ],
-              "relations": [],
+              "relations": [
+                {
+                  "label": "対",
+                  "items": [
+                    {
+                      "japanese": "増進",
+                      "vietnamese": "Tăng thêm",
+                      "segments": [
+                        {
+                          "text": "増進",
+                          "reading": "ぞうしん",
+                          "isUnderlined": true
+                        }
+                      ],
+                      "source": {
+                        "pdfPage": 183,
+                        "printedPage": 180
+                      }
+                    }
+                  ]
+                }
+              ],
               "source": {
                 "pdfPage": 183,
                 "printedPage": 180
@@ -61905,17 +64116,52 @@
               "sourceNumber": 662,
               "kanji": "減量",
               "hiragana": "げんりょう",
-              "hanVietMeaning": "KHAIPHÁT",
-              "meaning": "Phát triển",
+              "hanVietMeaning": "GIẢM LƯỢNG",
+              "meaning": "Giảm (trọng lượng, số lượng)",
               "examples": [
                 {
-                  "japanese": "資源を開発する。",
-                  "vietnamese": "Khai thác tài nguyên.",
+                  "japanese": "洗剤の中身が減量された。これは値上げと同じだ。",
+                  "vietnamese": "Khối lượng bột giặt bị giảm. Điều này cũng giống như việc tăng giá vậy.",
                   "segments": [
                     {
-                      "text": "資源を開発する。",
-                      "reading": "メル",
+                      "text": "洗剤の中身が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "減量",
+                      "reading": "げんりょう",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "された。これは値上げと同じだ。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 183,
+                    "printedPage": 180
+                  }
+                },
+                {
+                  "japanese": "ボクサーの加藤選手は試合前の減量に苦しんでいる。",
+                  "vietnamese": "Võ sĩ quyền anh Kato đang vất vả vì giảm cân trước trận đấu.",
+                  "segments": [
+                    {
+                      "text": "ボクサーの加藤選手は試合前の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "減量",
+                      "reading": "げんりょう",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "に苦しんでいる。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -61934,17 +64180,127 @@
               "sourceNumber": 663,
               "kanji": "開発",
               "hiragana": "かいはつ",
-              "hanVietMeaning": "KHAIPDIEM",
-              "meaning": "Me cửa hàng, khai trương",
+              "hanVietMeaning": "KHAI PHÁT",
+              "meaning": "Phát triển",
               "examples": [
                 {
-                  "japanese": "近所に新しいレストランが開店した。",
-                  "vietnamese": "Có một nhà hàng mới mở ở gần đây.",
+                  "japanese": "資源を開発する。",
+                  "vietnamese": "Khai thác tài nguyên.",
                   "segments": [
                     {
-                      "text": "近所に新しいレストランが開店した。",
-                      "reading": "いて",
+                      "text": "資源を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "開発",
+                      "reading": "かいはつ",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 183,
+                    "printedPage": 180
+                  }
+                },
+                {
+                  "japanese": "海辺を開発してリゾート地にする。",
+                  "vietnamese": "Khai thác khu vực bãi biển làm khu nghỉ dưỡng.",
+                  "segments": [
+                    {
+                      "text": "海辺を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "開発",
+                      "reading": "かいはつ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "してリゾート地にする。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 183,
+                    "printedPage": 180
+                  }
+                },
+                {
+                  "japanese": "駅前の再開発が行われている。",
+                  "vietnamese": "Nhà ga đang được tiến hành xây dựng lại.",
+                  "segments": [
+                    {
+                      "text": "駅前の再",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "開発",
+                      "reading": "かいはつ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "が行われている。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 183,
+                    "printedPage": 180
+                  }
+                },
+                {
+                  "japanese": "新薬の開発に成功した。",
+                  "vietnamese": "Thành công trong việc phát triển loại thuốc mới.",
+                  "segments": [
+                    {
+                      "text": "新薬の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "開発",
+                      "reading": "かいはつ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "に成功した。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 183,
+                    "printedPage": 180
+                  }
+                },
+                {
+                  "japanese": "新商品を開発する。",
+                  "vietnamese": "Phát triển sản phẩm mới.",
+                  "segments": [
+                    {
+                      "text": "新商品を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "開発",
+                      "reading": "かいはつ",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "する。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
@@ -61963,22 +64319,77 @@
               "sourceNumber": 664,
               "kanji": "開店",
               "hiragana": "かいてん",
-              "hanVietMeaning": "KHAINGHIỆP",
-              "meaning": "Khởi nghiệp",
+              "hanVietMeaning": "KHAI ĐIẾM",
+              "meaning": "Mở cửa hàng, khai trương",
               "examples": [
                 {
-                  "japanese": "近所に新しい書店が開業した。",
-                  "vietnamese": "Gan đây có một hiệu sách mới mở.",
+                  "japanese": "近所に新しいレストランが開店した。",
+                  "vietnamese": "Có một nhà hàng mới mở ở gần đây.",
                   "segments": [
                     {
-                      "text": "近所に新しい書店が開業した。",
-                      "reading": "う",
+                      "text": "近所に新しいレストランが",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "開店",
+                      "reading": "かいてん",
                       "isUnderlined": true
+                    },
+                    {
+                      "text": "した。",
+                      "reading": "",
+                      "isUnderlined": false
                     }
                   ],
                   "source": {
-                    "pdfPage": 184,
-                    "printedPage": 181
+                    "pdfPage": 183,
+                    "printedPage": 180
+                  }
+                },
+                {
+                  "japanese": "開店祝いに花束を贈った。",
+                  "vietnamese": "Tôi đã gửi tặng bó hoa nhân dịp chúc mừng khai trương cửa hàng.",
+                  "segments": [
+                    {
+                      "text": "開店",
+                      "reading": "かいてん",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "祝いに花束を贈った。",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 183,
+                    "printedPage": 180
+                  }
+                },
+                {
+                  "japanese": "「開店は10時です」",
+                  "vietnamese": "“Thời gian mở cửa là 10 giờ.”",
+                  "segments": [
+                    {
+                      "text": "「",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "開店",
+                      "reading": "かいてん",
+                      "isUnderlined": true
+                    },
+                    {
+                      "text": "は10時です」",
+                      "reading": "",
+                      "isUnderlined": false
+                    }
+                  ],
+                  "source": {
+                    "pdfPage": 183,
+                    "printedPage": 180
                   }
                 }
               ],
@@ -62120,8 +64531,8 @@
               "sourceNumber": 667,
               "kanji": "開放",
               "hiragana": "かいほう",
-              "hanVietMeaning": "BÉ TỎA",
-              "meaning": "Đóng cửa",
+              "hanVietMeaning": "KHAI PHÓNG",
+              "meaning": "Mở cửa",
               "examples": [
                 {
                   "japanese": "この公園の門は、夜間は閉鎖されている。",
@@ -62150,7 +64561,7 @@
               "kanji": "閉鎖",
               "hiragana": "へいさ",
               "hanVietMeaning": "BẾ TỎA",
-              "meaning": "みっ ぺい _ ッ > 密閉 < ぇ ん MAT BE) Kín",
+              "meaning": "Đóng cửa",
               "examples": [
                 {
                   "japanese": "和密閉された部屋の中で物を燃やすと、不完全燃焼を起ことす。",
@@ -62178,8 +64589,8 @@
               "sourceNumber": 669,
               "kanji": "密閉",
               "hiragana": "みっぺい",
-              "hanVietMeaning": "CẢI THIỆN",
-              "meaning": "Cải thiện, cải tiến",
+              "hanVietMeaning": "MẬT BẾ",
+              "meaning": "Kín",
               "examples": [
                 {
                   "japanese": "組合は待遇の改善を求めてストを行った。",
@@ -62207,8 +64618,8 @@
               "sourceNumber": 670,
               "kanji": "改善",
               "hiragana": "かいぜん",
-              "hanVietMeaning": "CẢILƯƠNG",
-              "meaning": "Cải tiến",
+              "hanVietMeaning": "CẢI THIỆN",
+              "meaning": "Cải thiện, cải tiến",
               "examples": [
                 {
                   "japanese": "その製品は改良を重ねることで、いっそう使いやすくなった。",
@@ -62237,7 +64648,7 @@
               "kanji": "改良",
               "hiragana": "かいりょう",
               "hanVietMeaning": "CẢI LƯƠNG",
-              "meaning": "Cải cách",
+              "meaning": "Cải tiến",
               "examples": [
                 {
                   "japanese": "その製品は改良を重ねることで、いっそう使いやすくなった。",
@@ -62331,8 +64742,8 @@
               "sourceNumber": 672,
               "kanji": "改革",
               "hiragana": "かいかく",
-              "hanVietMeaning": "CẢICHÍNH",
-              "meaning": "Sửa lại, sửa đổi",
+              "hanVietMeaning": "CẢI CÁCH",
+              "meaning": "Cải cách",
               "examples": [
                 {
                   "japanese": "4月から新幹線のダイヤが改正されるそうだ。",
@@ -62360,8 +64771,8 @@
               "sourceNumber": 673,
               "kanji": "改正",
               "hiragana": "かいせい",
-              "hanVietMeaning": "会 メ yt (CAT ĐỊNH",
-              "meaning": "Điều chỉnh, sửa đối",
+              "hanVietMeaning": "CẢI CHÍNH",
+              "meaning": "Sửa lại, sửa đổi",
               "examples": [
                 {
                   "japanese": "来年から消費税率が改定されることになった。",
@@ -62389,8 +64800,8 @@
               "sourceNumber": 674,
               "kanji": "改定",
               "hiragana": "かいてい",
-              "hanVietMeaning": "CẢITU",
-              "meaning": "Sửa chữa, tu bổ",
+              "hanVietMeaning": "CẢI ĐỊNH",
+              "meaning": "Điều chỉnh, sửa đổi",
               "examples": [
                 {
                   "japanese": "アパートが古くなったので、大規模な改修が行われることとになった。",
@@ -62418,8 +64829,8 @@
               "sourceNumber": 675,
               "kanji": "改修",
               "hiragana": "かいしゅう",
-              "hanVietMeaning": "NHẤT TRÍ",
-              "meaning": "Đồng ý, trùng hợp ngẫu nhiên",
+              "hanVietMeaning": "CẢI TU",
+              "meaning": "Sửa chữa, tu bổ",
               "examples": [
                 {
                   "japanese": "二人の意見が一致した。",
@@ -62447,8 +64858,8 @@
               "sourceNumber": 676,
               "kanji": "一致",
               "hiragana": "いっち",
-              "hanVietMeaning": "NHAT PHUONG",
-              "meaning": "Một chiều",
+              "hanVietMeaning": "NHẤT TRÍ",
+              "meaning": "Đồng ý, trùng hợp ngẫu nhiên",
               "examples": [
                 {
                   "japanese": "飛行機の中で乗客が一方に片寄ると危ない。",
@@ -62476,8 +64887,8 @@
               "sourceNumber": 677,
               "kanji": "一方",
               "hiragana": "いっぽう",
-              "hanVietMeaning": "NHẤT ĐỊNH",
-              "meaning": "On định, nhất định",
+              "hanVietMeaning": "NHẤT PHƯƠNG",
+              "meaning": "Một chiều",
               "examples": [
                 {
                   "japanese": "倉庫の中は一定の温度に保たれている。",
@@ -62505,7 +64916,7 @@
               "sourceNumber": 678,
               "kanji": "一定",
               "hiragana": "いってい",
-              "hanVietMeaning": "NHÁT NHÂN TIỀN",
+              "hanVietMeaning": "NHẤT ĐỊNH",
               "meaning": "Ổn định, nhất định",
               "examples": [
                 {
@@ -62594,8 +65005,8 @@
               "sourceNumber": 679,
               "kanji": "一人前",
               "hiragana": "いちにんまえ",
-              "hanVietMeaning": "NHÁT LƯU",
-              "meaning": "Hạng nhất",
+              "hanVietMeaning": "NHẤT NHÂN TIỀN",
+              "meaning": "Người lớn, người đã trưởng thành, người đã thành thạo",
               "examples": [
                 {
                   "japanese": "彼はまだ若いが、コックとしての腕は一流だ。",
@@ -62729,8 +65140,8 @@
               "sourceNumber": 683,
               "kanji": "浸かる",
               "hiragana": "つかる",
-              "hanVietMeaning": "TẨM",
-              "meaning": "つか る いい めい Ngập",
+              "hanVietMeaning": "",
+              "meaning": "Ngập",
               "examples": [
                 {
                   "japanese": "大雨で家の床まで水につかった。",
@@ -62959,8 +65370,8 @@
               "sourceNumber": 688,
               "kanji": "潜る",
               "hiragana": "もぐる",
-              "hanVietMeaning": "TIỀM",
-              "meaning": "Trốn,tránh ẩn dấu",
+              "hanVietMeaning": "",
+              "meaning": "Lặn, chui vào",
               "examples": [
                 {
                   "japanese": "日本の「海女」は和合時間海に潜って買や魚を捕ることができる。",
@@ -63018,7 +65429,7 @@
               "kanji": "背負う",
               "hiragana": "せおう",
               "hanVietMeaning": "BÓIPHỤ",
-              "meaning": "Cống vác đảm đương",
+              "meaning": "Cõng, vác, đảm đương",
               "examples": [
                 {
                   "japanese": "背申にリュックを背負う。",
@@ -63047,7 +65458,7 @@
               "kanji": "追う",
               "hiragana": "おう",
               "hanVietMeaning": "TRUY",
-              "meaning": "Đuối bắt, đuổi theo",
+              "meaning": "Đuổi bắt, đuổi theo",
               "examples": [
                 {
                   "japanese": "子どもは走って母親の後を追った。",
@@ -63076,7 +65487,7 @@
               "kanji": "追いかける",
               "hiragana": "おいかける",
               "hanVietMeaning": "TRUY",
-              "meaning": "Đuối theo",
+              "meaning": "Đuổi theo",
               "examples": [
                 {
                   "japanese": "犯人を追いかけたが、逃げられてしまった。",
@@ -63365,8 +65776,8 @@
               "sourceNumber": 697,
               "kanji": "取り上げる",
               "hiragana": "とりあげる",
-              "hanVietMeaning": "THỦTHƯỢNG",
-              "meaning": "Cầmlên,tchthu,bànluận",
+              "hanVietMeaning": "THỦ ĐỀ",
+              "meaning": "Cầm lên, tịch thu, bàn luận",
               "examples": [
                 {
                   "japanese": "彼女は机の上の本を取り上げた。",
@@ -63395,7 +65806,7 @@
               "kanji": "取り入れる",
               "hiragana": "とりいれる",
               "hanVietMeaning": "THỦ NHẬP",
-              "meaning": "Cho vào, thu hoạch, áp dụng",
+              "meaning": "Cho vào, thu nhập, áp dụng",
               "examples": [
                 {
                   "japanese": "洗濯物を取り入れる。",
@@ -63459,7 +65870,7 @@
               "kanji": "削る",
               "hiragana": "けずる",
               "hanVietMeaning": "TƯỚC",
-              "meaning": "けず る 前 る (TƯỚC Ggbcấtgim II",
+              "meaning": "Cắt gọt, bớt đi",
               "examples": [
                 {
                   "japanese": "ナイフでをんぴっを削った。",
@@ -63488,7 +65899,7 @@
               "kanji": "縛る",
               "hiragana": "しばる",
               "hanVietMeaning": "PHƯỢC",
-              "meaning": "Trới,buộe,ràngbuộc,hạnchế(thờigian)",
+              "meaning": "Trói, buộc, ràng buộc, hạn chế (thời gian)",
               "examples": [
                 {
                   "japanese": "古い雑誌を重ねてひもで縛る。",
@@ -63516,8 +65927,8 @@
               "sourceNumber": 701,
               "kanji": "絞る",
               "hiragana": "しぼる",
-              "hanVietMeaning": "GIÁO/TRÁ",
-              "meaning": "Vắbbép,gào,vặn II",
+              "hanVietMeaning": "GIẢO",
+              "meaning": "Vắt, ép, vặn",
               "examples": [
                 {
                   "japanese": "水にぬらしたタオルを終る。",
@@ -63545,7 +65956,7 @@
               "sourceNumber": 702,
               "kanji": "回る",
               "hiragana": "まわる",
-              "hanVietMeaning": "HÒI",
+              "hanVietMeaning": "HỒI",
               "meaning": "Quay quanh, tới lượt, qua, xử lý",
               "examples": [
                 {
@@ -63575,7 +65986,7 @@
               "kanji": "回す",
               "hiragana": "まわす",
               "hanVietMeaning": "HỒI",
-              "meaning": "まわ す ッ 回 す (HOD Xoay,chuyền tay, dời sang, chuyển, truyền, dành (thời gian, tiền",
+              "meaning": "Xoay, chuyền tay, dời sang, chuyển, truyền, dành (thời gian, tiền)",
               "examples": [
                 {
                   "japanese": "ドアの取っ手を回して開ける。",
@@ -64140,7 +66551,7 @@
               "kanji": "補う",
               "hiragana": "おぎなう",
               "hanVietMeaning": "BỔ",
-              "meaning": "お ぎ な う 。 ッ > 補う CBO) Bổ sung đền bù",
+              "meaning": "Bổ sung, đền bù",
               "examples": [
                 {
                   "japanese": "ボーナスで毎月の赤字を3Ìう。",
@@ -64433,8 +66844,8 @@
               "sourceNumber": 721,
               "kanji": "しまう",
               "hiragana": "しまう",
-              "hanVietMeaning": "",
-              "meaning": "し まう ッ し まう Cất, giấu",
+              "hanVietMeaning": "THU",
+              "meaning": "Cất, giấu",
               "examples": [
                 {
                   "japanese": "春になったので、ダ物をしまった。",
@@ -64463,7 +66874,7 @@
               "kanji": "怠ける",
               "hiragana": "なまける",
               "hanVietMeaning": "ĐÃI",
-              "meaning": "な まけ る 。 > 怠け る (AD Lười biếng",
+              "meaning": "Lười biếng",
               "examples": [
                 {
                   "japanese": "仕事を怠ける。",
@@ -64549,8 +66960,8 @@
               "sourceNumber": 725,
               "kanji": "睨む",
               "hiragana": "にらむ",
-              "hanVietMeaning": "NGHỄ",
-              "meaning": "に らむ 。 ッ に らむ Lườm, để ý",
+              "hanVietMeaning": "NGA",
+              "meaning": "Lườm, để ý",
               "examples": [
                 {
                   "japanese": "その学生は注意されて、逆に先生をにらんだ。",
@@ -64646,8 +67057,8 @@
               "sourceNumber": 728,
               "kanji": "頼る",
               "hiragana": "たよる",
-              "hanVietMeaning": "TẠO",
-              "meaning": "Gặp, gặp phải",
+              "hanVietMeaning": "LẠI",
+              "meaning": "Dựa vào, nhờ cậy",
               "examples": [
                 {
                   "japanese": "交通事故に遭ってけがをした。",
@@ -64675,8 +67086,8 @@
               "sourceNumber": 729,
               "kanji": "遭う",
               "hiragana": "あう",
-              "hanVietMeaning": "CHIÊU",
-              "meaning": "Mời, vẫy tay (gọi người tới), gây ra",
+              "hanVietMeaning": "TAO",
+              "meaning": "Gặp, gặp phải",
               "examples": [
                 {
                   "japanese": "自宅に友人を招いた。",
@@ -64970,7 +67381,7 @@
               "kanji": "ずれる",
               "hiragana": "ずれる",
               "hanVietMeaning": "",
-              "meaning": "ずれ る 。 ヵ ずれ る Bị chệch,trượt",
+              "meaning": "Bị chệch, trượt",
               "examples": [
                 {
                   "japanese": "地震で鉄道のレールがずれた。",
@@ -65073,7 +67484,7 @@
               "kanji": "崩れる",
               "hiragana": "くずれる",
               "hanVietMeaning": "BĂNG",
-              "meaning": "Phú, thay đổi, đổi",
+              "meaning": "Sụp đổ, sạt lở",
               "examples": [
                 {
                   "japanese": "山を崩して住宅地が造られている。",
@@ -65101,8 +67512,8 @@
               "sourceNumber": 738,
               "kanji": "崩す",
               "hiragana": "くずす",
-              "hanVietMeaning": "HOANG",
-              "meaning": "Cuồng loạn, động (thời tiết), hoang vu, nứt ne, bị tàn",
+              "hanVietMeaning": "BĂNG",
+              "meaning": "Phá, tháo dỡ",
               "examples": [
                 {
                   "japanese": "台風の接近で山もる海も荒れている。",
@@ -65131,7 +67542,7 @@
               "kanji": "荒れる",
               "hiragana": "あれる",
               "hanVietMeaning": "HOANG",
-              "meaning": "Pha,tan phá, làm lộn xộn",
+              "meaning": "Cuồng loạn, động (thời tiết), hoang vu, nứt nẻ, bị tàn phá",
               "examples": [
                 {
                   "japanese": "泥棒に入られ、部屋が荒らされた。",
@@ -65160,7 +67571,7 @@
               "kanji": "荒らす",
               "hiragana": "あらす",
               "hanVietMeaning": "HOANG",
-              "meaning": "Phá tan, phá hủy, làm lộn xộn",
+              "meaning": "Phá, tàn phá, làm lộn xộn",
               "examples": [
                 {
                   "japanese": "泥棒に入られ、部屋が荒らされた。",
@@ -65584,7 +67995,7 @@
               "kanji": "成る",
               "hiragana": "なる",
               "hanVietMeaning": "THÀNH",
-              "meaning": "な る xử Ra qu る",
+              "meaning": "Ra đời",
               "examples": [
                 {
                   "japanese": "庭に実がなる木を植えた。",
@@ -65803,7 +68214,7 @@
               "kanji": "尖る",
               "hiragana": "とがる",
               "hanVietMeaning": "TIÊM",
-              "meaning": "と が る ヵ と が る Nhọn,sắc",
+              "meaning": "Nhọn, sắc",
               "examples": [
                 {
                   "japanese": "この靴は先がとがっている。",
@@ -66146,7 +68557,7 @@
               "kanji": "目覚める",
               "hiragana": "めざめる",
               "hanVietMeaning": "MỤCGIÁC",
-              "meaning": "Tỉnh giắc, mỡ mắt, nhận thức",
+              "meaning": "Tỉnh giấc, mở mắt, nhận thức",
               "examples": [
                 {
                   "japanese": "早朝、鳥の声で目覚めた。",
@@ -66443,7 +68854,7 @@
               "kanji": "鎮める",
               "hiragana": "しずめる",
               "hanVietMeaning": "TiNH/TRAN",
-              "meaning": "Làm cho nguội, làm dịu đi, đàn áp, trấn",
+              "meaning": "Làm cho nguội, làm dịu đi, đàn áp, trấn áp",
               "examples": [
                 {
                   "japanese": "司会者は弁がなしい場内を一言で静めた。",
@@ -66762,7 +69173,7 @@
               "kanji": "備える",
               "hiragana": "そなえる",
               "hanVietMeaning": "BỊ",
-              "meaning": "そなえ る 。 ッ > 備 える (Bp Trang bị lắp đặt, sở hữu, chuẩn bị",
+              "meaning": "Trang bị, lắp đặt, sở hữu, chuẩn bị",
               "examples": [
                 {
                   "japanese": "学校には火災報知機が備えてある。",
@@ -67127,7 +69538,7 @@
               "kanji": "照らす",
               "hiragana": "てらす",
               "hanVietMeaning": "CHIẾU",
-              "meaning": "Chiếu roi",
+              "meaning": "Chiếu rọi",
               "examples": [
                 {
                   "japanese": "懐中電灯で足元を照らしながら夜道を歩いた。",
@@ -67443,7 +69854,7 @@
               "kanji": "羨む",
               "hiragana": "うらやむ",
               "hanVietMeaning": "TIỆN",
-              "meaning": "うら や む ッ う ら や む Ghenty",
+              "meaning": "Ghen tị",
               "examples": [
                 {
                   "japanese": "人の幸せをうらやんでもしかたがない。",
@@ -68839,9 +71250,9 @@
             {
               "sourceNumber": 796,
               "kanji": "センター",
-              "hiragana": "せんたー",
+              "hiragana": "センター",
               "hanVietMeaning": "",
-              "meaning": "_ セン ター centẴr Trung tâm, chính giữa",
+              "meaning": "Trung tâm, chính giữa",
               "examples": [
                 {
                   "japanese": "駅前のショッピングセンターで買い物をする。",
@@ -68868,9 +71279,9 @@
             {
               "sourceNumber": 797,
               "kanji": "カルチャー",
-              "hiragana": "かるちゃー",
+              "hiragana": "カルチャー",
               "hanVietMeaning": "",
-              "meaning": "_ カルチャー culture Văn hóa",
+              "meaning": "Văn hóa",
               "examples": [
                 {
                   "japanese": "外国の生活でカルチャーショックを受けることがある。",
@@ -68990,9 +71401,9 @@
             {
               "sourceNumber": 800,
               "kanji": "キャッチ",
-              "hiragana": "きゃっち",
+              "hiragana": "キャッチ",
               "hanVietMeaning": "",
-              "meaning": "キャ ッ チ ッ キ ャ ツチ メル catch Bắt lấy, chộp lấy, nắm lấy",
+              "meaning": "Bắt lấy, chộp lấy, nắm lấy",
               "examples": [
                 {
                   "japanese": "ボールをキャッチする。",
@@ -69283,9 +71694,9 @@
             {
               "sourceNumber": 803,
               "kanji": "コラム",
-              "hiragana": "こらむ",
+              "hiragana": "コラム",
               "hanVietMeaning": "",
-              "meaning": "コラ ム column Cột mục",
+              "meaning": "Cột mục",
               "examples": [
                 {
                   "japanese": "新聞や雑誌には多くのコラムがある。",
@@ -69312,9 +71723,9 @@
             {
               "sourceNumber": 804,
               "kanji": "エピソード",
-              "hiragana": "えぴそーど",
+              "hiragana": "エピソード",
               "hanVietMeaning": "",
-              "meaning": "エビ ソー ド cpisode Chương phần, hồi",
+              "meaning": "Chương, phần, hồi",
               "examples": [
                 {
                   "japanese": "日常生活のエピソードをエッセイに書く。",
@@ -69973,9 +72384,9 @@
             {
               "sourceNumber": 813,
               "kanji": "フリー",
-              "hiragana": "ふりー",
+              "hiragana": "フリー",
               "hanVietMeaning": "",
-              "meaning": "フリ ー free Tựdo,miễn phí, không mất tiền",
+              "meaning": "Tự do, miễn phí, không mất tiền",
               "examples": [
                 {
                   "japanese": "彼はフリー(ランス)のカメラマンをしている。",
@@ -70060,9 +72471,9 @@
             {
               "sourceNumber": 816,
               "kanji": "インフレーション",
-              "hiragana": "いんふれーしょん",
+              "hiragana": "インフレーション",
               "hanVietMeaning": "",
-              "meaning": "イン フレ < イン フレ ーション imnflation Sự lạm phát",
+              "meaning": "Sự lạm phát",
               "examples": [
                 {
                   "japanese": "インフレで物価が上昇している。",
@@ -70089,9 +72500,9 @@
             {
               "sourceNumber": 817,
               "kanji": "デモンストレーション",
-              "hiragana": "でもんすとれーしょん",
+              "hiragana": "デモンストレーション",
               "hanVietMeaning": "",
-              "meaning": "デモ < デモ ンス トレ ーション demonstraion Biểu tình, cuộc biểu tình",
+              "meaning": "Biểu tình, cuộc biểu tình",
               "examples": [
                 {
                   "japanese": "増税に抗議して、国のあちこちでデモが行われた。",
@@ -70118,9 +72529,9 @@
             {
               "sourceNumber": 818,
               "kanji": "メーカー",
-              "hiragana": "めーかー",
+              "hiragana": "メーカー",
               "hanVietMeaning": "",
-              "meaning": "メー カー maker Nhà sản xuất lớn, thương hiệu nổi tiếng",
+              "meaning": "Nhà sản xuất lớn, thương hiệu nổi tiếng",
               "examples": [
                 {
                   "japanese": "メーカーは海外に工場を持っていることが名い。",
@@ -70290,7 +72701,7 @@
             {
               "sourceNumber": 821,
               "kanji": "パターン",
-              "hiragana": "ぱたーん",
+              "hiragana": "パターン",
               "hanVietMeaning": "",
               "meaning": "Hình mẫu, kiểu mẫu",
               "examples": [
@@ -70354,9 +72765,9 @@
             {
               "sourceNumber": 822,
               "kanji": "プラン",
-              "hiragana": "ぷらん",
+              "hiragana": "プラン",
               "hanVietMeaning": "",
-              "meaning": "パタ ー ン pattem Hình mẫu kiểu mẫu",
+              "meaning": "Kế hoạch, gói cước",
               "examples": [
                 {
                   "japanese": "血鞍列性格lいは、人間の性格を四つのパターンに分けている。",
@@ -70383,9 +72794,9 @@
             {
               "sourceNumber": 823,
               "kanji": "トラブル",
-              "hiragana": "とらぶる",
+              "hiragana": "トラブル",
               "hanVietMeaning": "",
-              "meaning": "プラ ン plan Kế hoạch, gói cước",
+              "meaning": "Rắc rối, khó khăn, sự cố",
               "examples": [
                 {
                   "japanese": "両親は、定年後に海外移住するプランを立てている。",
@@ -70412,9 +72823,9 @@
             {
               "sourceNumber": 824,
               "kanji": "エラー",
-              "hiragana": "えらー",
+              "hiragana": "エラー",
               "hanVietMeaning": "",
-              "meaning": "Sự sai lầm, sai sót, lỗi",
+              "meaning": "Sai lầm, sai sót, lỗi",
               "examples": [
                 {
                   "japanese": "このデジカメ（デジタルカメラ）はよくエラーが起こる。",
@@ -70501,9 +72912,9 @@
             {
               "sourceNumber": 825,
               "kanji": "クレーム",
-              "hiragana": "くれーむ",
+              "hiragana": "クレーム",
               "hanVietMeaning": "",
-              "meaning": "エラ ー crưor Sự sai lầm, sai sót, lỗi",
+              "meaning": "Phàn nàn, khiếu nại",
               "examples": [
                 {
                   "japanese": "とのデジカメ(くデジタルカメラ)はよくエラーが起こる。",
@@ -70530,7 +72941,7 @@
             {
               "sourceNumber": 826,
               "kanji": "キャンセル",
-              "hiragana": "きゃんせる",
+              "hiragana": "キャンセル",
               "hanVietMeaning": "",
               "meaning": "Hủy bỏ",
               "examples": [
@@ -70618,10 +73029,10 @@
             },
             {
               "sourceNumber": 827,
-              "kanji": "カット",
-              "hiragana": "かっと",
+              "kanji": "ストップ",
+              "hiragana": "ストップ",
               "hanVietMeaning": "",
-              "meaning": "キャ ン セ ル 。 ッ キャ ン セ ルス ヌル cancellaion Hủy bỏ",
+              "meaning": "Dừng lại, ngừng lại",
               "examples": [
                 {
                   "japanese": "ホテルの予約をキャンセルした。",
@@ -70647,10 +73058,10 @@
             },
             {
               "sourceNumber": 828,
-              "kanji": "カバー",
-              "hiragana": "かばー",
+              "kanji": "カット",
+              "hiragana": "カット",
               "hanVietMeaning": "",
-              "meaning": "Cắt hạ",
+              "meaning": "Cắt, hạ",
               "examples": [
                 {
                   "japanese": "ケーキを8つにカットした。",
@@ -70686,10 +73097,10 @@
             },
             {
               "sourceNumber": 829,
-              "kanji": "カバー",
-              "hiragana": "かばー",
+              "kanji": "カラー",
+              "hiragana": "カラー",
               "hanVietMeaning": "",
-              "meaning": "Aw cover Phủ, che phủ, bao phủ, vỏ bọc, bìa, trang bìa",
+              "meaning": "Pha, chế phẩm màu, phối màu, bọc bìa, trang bìa",
               "examples": [
                 {
                   "japanese": "私の仕事のミスを同僚がカバーしてくれた。",
@@ -70716,9 +73127,9 @@
             {
               "sourceNumber": 830,
               "kanji": "リハビリテーション",
-              "hiragana": "りはびりてーしょん",
+              "hiragana": "リハビリテーション",
               "hanVietMeaning": "",
-              "meaning": "リハ ビリ ぐ リ ハビ リ テ ー シ ョ ン rehabilitation Phục hồi chức năng",
+              "meaning": "Phục hồi chức năng",
               "examples": [
                 {
                   "japanese": "骨折で入院し、退院後もしばらくリハビリのため病院に通った。",
@@ -70745,9 +73156,9 @@
             {
               "sourceNumber": 831,
               "kanji": "プレッシャー",
-              "hiragana": "ぷれっしゃー",
+              "hiragana": "プレッシャー",
               "hanVietMeaning": "",
-              "meaning": "プレッシャー pressure Áp lực sức ép tâm lý",
+              "meaning": "Áp lực, sức ép tâm lý",
               "examples": [
                 {
                   "japanese": "この仕事は、新人社員にはプレッシャーが大きい。",
@@ -70774,9 +73185,9 @@
             {
               "sourceNumber": 832,
               "kanji": "カウンセリング",
-              "hiragana": "かうんせりんぐ",
-              "hanVietMeaning": "Z",
-              "meaning": "スル counseling Công việc tư vấn tâm lý, tư vấn",
+              "hiragana": "カウンセリング",
+              "hanVietMeaning": "",
+              "meaning": "Công việc tư vấn tâm lý, tư vấn",
               "examples": [
                 {
                   "japanese": "学校で子どもたち【{をプンに}カウンセリングする仕事をしている。",
@@ -70802,10 +73213,10 @@
             },
             {
               "sourceNumber": 833,
-              "kanji": "キャラクター",
-              "hiragana": "きゃらくたー",
+              "kanji": "カメラ",
+              "hiragana": "カメラ",
               "hanVietMeaning": "",
-              "meaning": "Đặc trưng, đặc điểm, tính cách",
+              "meaning": "Máy ảnh, máy quay",
               "examples": [
                 {
                   "japanese": "個性的なキャラクターだ。",
@@ -70832,9 +73243,9 @@
             {
               "sourceNumber": 834,
               "kanji": "ユニークな",
-              "hiragana": "ゆにーくな",
+              "hiragana": "ユニークな",
               "hanVietMeaning": "",
-              "meaning": "ユニ ー ク な uingue Duynhất độc đáo",
+              "meaning": "Duy nhất, độc đáo",
               "examples": [
                 {
                   "japanese": "彼女はユニークな性格だ。",
@@ -70890,9 +73301,9 @@
             {
               "sourceNumber": 836,
               "kanji": "ロマンチックな",
-              "hiragana": "ろまんちっくな",
+              "hiragana": "ロマンチックな",
               "hanVietMeaning": "",
-              "meaning": "_ ロ マン チッ ク な Lãngmạn romantic",
+              "meaning": "Lãng mạn, romantic",
               "examples": [
                 {
                   "japanese": "デートをするならロマンチックな場所がいい。",
@@ -70948,9 +73359,9 @@
             {
               "sourceNumber": 838,
               "kanji": "エコロジー",
-              "hiragana": "えころじー",
+              "hiragana": "エコロジー",
               "hanVietMeaning": "",
-              "meaning": "エコ ロジ ー > エコ coology Sinh thái học",
+              "meaning": "Sinh thái học",
               "examples": [
                 {
                   "japanese": "最近は、どの国でもエコロジーの考え方が当たり前になった。",
@@ -71559,7 +73970,7 @@
               "kanji": "爽やかな",
               "hiragana": "さわやかな",
               "hanVietMeaning": "THÁU MINH",
-              "meaning": "Trong suất",
+              "meaning": "Sảng khoái, tươi mát, mát mẻ",
               "examples": [
                 {
                   "japanese": "水や空気は無色透明だ。",
@@ -71722,7 +74133,7 @@
               "kanji": "率直な",
               "hiragana": "そっちょくな",
               "hanVietMeaning": "TO TRỰC",
-              "meaning": "Ngoan ngoãn, dễ bảo",
+              "meaning": "Thẳng thắn, trực tiếp",
               "examples": [
                 {
                   "japanese": "この童話を読むと、子どものような素直な気持ちになれる。",
@@ -71751,7 +74162,7 @@
               "kanji": "誠実な",
               "hiragana": "せいじつな",
               "hanVietMeaning": "SUÁT TRỰC",
-              "meaning": "Thẳng thắn, chính trực, ngay thẳng",
+              "meaning": "Chân thành, thành thật",
               "examples": [
                 {
                   "japanese": "彼は率直な人で、言うべきことをきちんと言う。",
@@ -71780,7 +74191,7 @@
               "kanji": "謙虚な",
               "hiragana": "けんきょな",
               "hanVietMeaning": "THÀNH THỰC",
-              "meaning": "Thành thực, thành thật",
+              "meaning": "Khiêm tốn, khiêm nhường",
               "examples": [
                 {
                   "japanese": "男女ともゃ、「誠実な人と結婚したい」という若者が多い。",
@@ -71873,7 +74284,7 @@
               "kanji": "慎重な",
               "hiragana": "しんちょうな",
               "hanVietMeaning": "HIÈỀN",
-              "meaning": "Thông minh, khôn ngoan, khôn khéo",
+              "meaning": "Thận trọng, cẩn thận",
               "examples": [
                 {
                   "japanese": "こんな難しい話が理解できるとは賢い子だ。",
@@ -71986,7 +74397,7 @@
               "kanji": "真剣な",
               "hiragana": "しんけんな",
               "hanVietMeaning": "ÔN",
-              "meaning": ". Êm đềm, ôn hòa, điềm đạm",
+              "meaning": "Nghiêm túc, đứng đắn, nghiêm chỉnh",
               "examples": [
                 {
                   "japanese": "このあたりは気候が穏やかで住みやすい。",
@@ -72015,7 +74426,7 @@
               "kanji": "正式な",
               "hiragana": "せいしきな",
               "hanVietMeaning": "CHAN KIEM",
-              "meaning": "Nghiêm trang, đúng đắn, nghiêm chỉnh.",
+              "meaning": "Chính thức, trang trọng",
               "examples": [
                 {
                   "japanese": "二人は結婚するつもりで真剣につき合っている。",
@@ -72044,7 +74455,7 @@
               "kanji": "主な",
               "hiragana": "おもな",
               "hanVietMeaning": "CHINH THỨC",
-              "meaning": "Chính thức, trang trọng",
+              "meaning": "Chủ yếu, chính",
               "examples": [
                 {
                   "japanese": "日本のおお札の正式な名称は「日本銀行券」だ。",
@@ -72073,7 +74484,7 @@
               "kanji": "主要な",
               "hiragana": "しゅような",
               "hanVietMeaning": "CHỦ",
-              "meaning": "Chính chủ yếu",
+              "meaning": "Chủ yếu, chính",
               "examples": [
                 {
                   "japanese": "この車は主に輸出用に作られている。",
@@ -72131,7 +74542,7 @@
               "kanji": "偉大な",
               "hiragana": "いだいな",
               "hanVietMeaning": "VĨ ĐẠI",
-              "meaning": "いだい な 偉大 な (VipAD VIđại",
+              "meaning": "Vĩ đại",
               "examples": [
                 {
                   "japanese": "アインシュタインは科学の分野で偉大な功績をあげた。",
@@ -72263,7 +74674,7 @@
               "kanji": "特殊な",
               "hiragana": "とくしゅな",
               "hanVietMeaning": "ĐẶC THÙ",
-              "meaning": "と くし ゅ な 特殊 な GDACTHU) Đặc biệt đặc thù",
+              "meaning": "Đặc biệt, đặc thù",
               "examples": [
                 {
                   "japanese": "この仕事には特殊を技能が必要だ。",
@@ -72442,7 +74853,7 @@
               "kanji": "妙な",
               "hiragana": "みょうな",
               "hanVietMeaning": "DIỆU",
-              "meaning": "みょう な 妙 な DIEUD) Kỳ lạ kỳ diệu",
+              "meaning": "Kỳ lạ, kỳ diệu",
               "examples": [
                 {
                   "japanese": "妙なことに、初めて来たとの場所をなんだか知っているような気がする。",
@@ -72468,10 +74879,10 @@
             },
             {
               "sourceNumber": 863,
-              "kanji": "怪しい",
-              "hiragana": "あやしい",
-              "hanVietMeaning": "QUÁI",
-              "meaning": "Đáng ngờ, khó tin, không bình thường",
+              "kanji": "器用な",
+              "hiragana": "きような",
+              "hanVietMeaning": "KHÍ DỤNG",
+              "meaning": "Khéo léo, tài khéo, thành thạo",
               "examples": [
                 {
                   "japanese": "怪しい男がうろうろしている。",
@@ -72531,10 +74942,10 @@
             },
             {
               "sourceNumber": 865,
-              "kanji": "高度な",
-              "hiragana": "こうどな",
-              "hanVietMeaning": "CAO ĐỘ",
-              "meaning": "Tiên tiến, độ cao, chiều cao",
+              "kanji": "重大な",
+              "hiragana": "じゅうだいな",
+              "hanVietMeaning": "TRỌNG ĐẠI",
+              "meaning": "Nghiêm trọng, to lớn",
               "examples": [
                 {
                   "japanese": "このメーカーは高度な半導体技術で知られている。",
@@ -72985,7 +75396,7 @@
               "kanji": "高級な",
               "hiragana": "こうきゅうな",
               "hanVietMeaning": "CAO CẤP",
-              "meaning": "と うき ゅ うな 高級 な CAOCAP) Cao cấp",
+              "meaning": "Cao cấp",
               "examples": [
                 {
                   "japanese": "ツバメの巣は中華料理では高級な食材だ。",
@@ -73161,7 +75572,7 @@
               "kanji": "快適な",
               "hiragana": "かいてきな",
               "hanVietMeaning": "KHOAITHICH",
-              "meaning": "Sang khoái, dễ chịu, thoải mái",
+              "meaning": "Sảng khoái, dễ chịu, thoải mái",
               "examples": [
                 {
                   "japanese": "新しい車の乗り心地は快適だ。",
@@ -73476,8 +75887,8 @@
               "sourceNumber": 883,
               "kanji": "確実な",
               "hiragana": "かくじつな",
-              "hanVietMeaning": "XACTEHUC",
-              "meaning": "Xácthựcchắcchấn II",
+              "hanVietMeaning": "XÁC THỰC",
+              "meaning": "Xác thực, chắc chắn",
               "examples": [
                 {
                   "japanese": "問題を巡実に処理する。",
@@ -73580,7 +75991,7 @@
               "kanji": "曖昧な",
               "hiragana": "あいまいな",
               "hanVietMeaning": "ÁI MUỘI",
-              "meaning": "あい まい な Mơ hồ, mập mờ, khó hiểu",
+              "meaning": "Mơ hồ, mập mờ, khó hiểu",
               "examples": [
                 {
                   "japanese": "あの日のことは記憶があいまいだ。",
@@ -73609,7 +76020,7 @@
               "kanji": "具体的な",
               "hiragana": "ぐたいてきな",
               "hanVietMeaning": "CỤ THẺ ĐÍCH",
-              "meaning": "Cụ thể, chỉ tiết, rạch roi",
+              "meaning": "Cụ thể, chi tiết, rạch ròi",
               "examples": [
                 {
                   "japanese": "「わかりにくいので、もっと具体的に説明してください」",
@@ -90090,7 +92501,9 @@
   "verification": {
     "approved": true,
     "method": "manual-page-by-page",
-    "issues": [],
-    "candidateHash": "fdb52112a73f1439f0e30d1204793ee207cb64a8359add29d38427d49ce2bf78"
+    "issues": [
+      "Manual audit continued through PDF page 172; remaining pages require review."
+    ],
+    "candidateHash": "b64819b9d8efc8132b153a57c5a0b2dc8b44adba690f0ef1563bdb9cf66be159"
   }
 }
