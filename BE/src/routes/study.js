@@ -238,6 +238,8 @@ router.get('/session/:sessionId/current', async (req, res) => {
       unitTitle: session.set.unitTitle,
       partNumber: session.set.partNumber,
       partTitle: session.set.partTitle,
+      rangeStart: session.set.rangeStart,
+      rangeEnd: session.set.rangeEnd,
       isSummary: session.set.isSummary,
       kanji: vocab.kanji,
       hiragana: vocab.hiragana,

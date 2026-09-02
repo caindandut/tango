@@ -2,14 +2,27 @@ import { describe, expect, it } from 'vitest';
 import { getFlashcardNextLabel, getStudyLessonTitle, getStudyMeaningLines, isKatakanaVocabulary, shouldShowHanVietMeaning } from '../lib/studyPresentation.js';
 
 describe('study lesson title presentation', () => {
-  it('uses the lesson name supplied by the study session', () => {
+  it('formats the active part and word range for the study heading', () => {
     expect(getStudyLessonTitle({
       lessonTitle: 'Unit 01 - 人生 - 1–50 - Từ vựng N2 Mimikara',
-    })).toBe('Unit 01 - 人生 - 1–50 - Từ vựng N2 Mimikara');
+      partNumber: 1,
+      partTitle: '1–50',
+      rangeStart: 1,
+      rangeEnd: 50,
+    })).toBe('Phần 1: 1–50');
+  });
+
+  it('keeps summary part names instead of renumbering them', () => {
+    expect(getStudyLessonTitle({
+      partNumber: 3,
+      partTitle: 'まとめ1: 371–460',
+      rangeStart: 371,
+      rangeEnd: 460,
+    })).toBe('まとめ1: 371–460');
   });
 
   it('falls back to a useful title when older payloads have no lesson metadata', () => {
-    expect(getStudyLessonTitle({})).toBe('Bài học từ vựng');
+    expect(getStudyLessonTitle({})).toBe('Phần đang học');
   });
 });
 

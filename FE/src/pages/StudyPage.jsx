@@ -675,7 +675,11 @@ export default function StudyPage() {
       <div className="study-main flex-1 flex items-center justify-center px-3 py-3 sm:px-8 sm:py-6">
         <div className="w-full max-w-5xl">
           {currentWord && (
-            <div className={`animate-fade-in ${studyMode === 'flashcard' ? '' : 'study-card !max-w-3xl'}`}>
+            <>
+              <div className="study-lesson-heading" data-testid="study-lesson-heading">
+                <h1>{getStudyLessonTitle(currentWord)}</h1>
+              </div>
+              <div className={`animate-fade-in ${studyMode === 'flashcard' ? '' : 'study-card !max-w-3xl'}`}>
               {error && (
                 <div className="mb-4 flex flex-col gap-3 rounded-xl border border-rose-400/25 bg-rose-500/10 px-4 py-3 text-sm text-rose-100 sm:flex-row sm:items-center sm:justify-between" role="alert">
                   <span>{error}</span>
@@ -692,10 +696,6 @@ export default function StudyPage() {
                   Ôn lại {currentWord.reviewRoundSize} từ đã trả lời sai
                 </div>
               )}
-              <div className="study-lesson-heading" data-testid="study-lesson-heading">
-                <p className="study-lesson-heading__eyebrow">Bài học đang học</p>
-                <h1>{getStudyLessonTitle(currentWord)}</h1>
-              </div>
               {studyMode === 'flashcard' ? (
                 <div>
                   <div className="flex items-center justify-between mb-3 text-sm text-slate-500">
@@ -1052,7 +1052,8 @@ export default function StudyPage() {
               </p>
                 </>
               )}
-            </div>
+              </div>
+            </>
           )}
         </div>
       </div>

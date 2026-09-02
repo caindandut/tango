@@ -75,10 +75,18 @@ export function getReadingCorrectAnswer(checkResult, currentWord) {
 }
 
 export function getStudyLessonTitle(currentWord) {
-  const lessonTitle = currentWord?.lessonTitle || currentWord?.setName;
-  return typeof lessonTitle === 'string' && lessonTitle.trim()
-    ? lessonTitle.trim()
-    : 'Bài học từ vựng';
+  const partTitle = typeof currentWord?.partTitle === 'string' ? currentWord.partTitle.trim() : '';
+  if (/^まとめ/u.test(partTitle)) return partTitle;
+
+  const partNumber = Number(currentWord?.partNumber);
+  const rangeStart = Number(currentWord?.rangeStart);
+  const rangeEnd = Number(currentWord?.rangeEnd);
+  if (Number.isInteger(partNumber) && Number.isInteger(rangeStart) && Number.isInteger(rangeEnd)) {
+    return `Phần ${partNumber}: ${rangeStart}–${rangeEnd}`;
+  }
+
+  if (partTitle) return partTitle;
+  return 'Phần đang học';
 }
 
 export function getFlashcardNextLabel(currentIndex, totalWords) {
