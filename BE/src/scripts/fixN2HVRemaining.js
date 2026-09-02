@@ -1,0 +1,11 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const {computeCandidateHash}=require('../vocabulary/validateN2Vocabulary');
+const file=path.resolve(__dirname,'../../file/n2_vocabulary.json');
+const data=JSON.parse(fs.readFileSync(file,'utf8'));
+const words=data.units.flatMap(u=>(u.parts||[]).flatMap(p=>p.words||[]));
+const fixes={627:'THÔI TIẾN',908:'CHỦ NGHĨA',909:'TINH THẦN',1020:'VỊ',1027:'PHÍ',1028:'DỤNG'};
+for(const w of words) if(fixes[w.sourceNumber]) w.hanVietMeaning=fixes[w.sourceNumber];
+data.verification.candidateHash=computeCandidateHash(data);
+fs.writeFileSync(file,`${JSON.stringify(data,null,2)}\n`,'utf8');
+console.log('corrected remaining Hán–Việt placeholders');
