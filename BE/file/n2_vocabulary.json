@@ -7614,7 +7614,7 @@
                   "segments": [
                     {
                       "text": "スーパーへ夕食の",
-                      "reading": "ざいりょう",
+                      "reading": "スーパーへゆうしょくの",
                       "isUnderlined": false
                     },
                     {
@@ -7639,7 +7639,7 @@
                   "segments": [
                     {
                       "text": "伝統的な日本の家の",
-                      "reading": "ざいりょう",
+                      "reading": "でんとうてきなにほんのいえの",
                       "isUnderlined": false
                     },
                     {
@@ -7664,7 +7664,7 @@
                   "segments": [
                     {
                       "text": "A案がいいのかB案がいいのか、判断の",
-                      "reading": "ざいりょう",
+                      "reading": "AあんがいいのかBあんがいいのか、はんだんの",
                       "isUnderlined": false
                     },
                     {
@@ -7774,7 +7774,7 @@
                   "segments": [
                     {
                       "text": "グラウンドに落ちている",
-                      "reading": "いし",
+                      "reading": "グラウンドにおちている",
                       "isUnderlined": false
                     },
                     {
@@ -8099,7 +8099,7 @@
                   "segments": [
                     {
                       "text": "あの店はいつも込んでいて、入るのに",
-                      "reading": "けん",
+                      "reading": "あのみせはいつもこんでいて、はいるのに",
                       "isUnderlined": false
                     },
                     {
@@ -8488,8 +8488,8 @@
                       "vietnamese": "Kim (Đồng hồ/tiêm/dập ghim,...)",
                       "segments": [
                         {
-                          "text": "【時計／注射／ホチキス…】の",
-                          "reading": "はり",
+                        "text": "【時計／注射／ホチキス…】の",
+                        "reading": "【とけい／ちゅうしゃ／ホチキス…】の",
                           "isUnderlined": false
                         },
                         {
@@ -10181,7 +10181,7 @@
                   "segments": [
                     {
                       "text": "あの店は、",
-                      "reading": "へいじつ",
+                      "reading": "あのみせは、",
                       "isUnderlined": false
                     },
                     {
@@ -13855,7 +13855,7 @@
                   "segments": [
                     {
                       "text": "情報は新しいほど",
-                      "reading": "かち",
+                      "reading": "じょうほうはあたらしいほど",
                       "isUnderlined": false
                     },
                     {
@@ -13865,7 +13865,7 @@
                     },
                     {
                       "text": "が高い。",
-                      "reading": "かち",
+                      "reading": "がたかい。",
                       "isUnderlined": false
                     }
                   ],
@@ -13875,12 +13875,12 @@
                   }
                 },
                 {
-                  "japanese": "商品に傷があって、価値が下がる。",
+                  "japanese": "商品に傷がつくと、価値が下がる。",
                   "vietnamese": "Nếu sản phẩm bị trầy xước thì giá trị sẽ bị giảm。",
                   "segments": [
                     {
-                      "text": "商品に傷があって、",
-                      "reading": "かち",
+                      "text": "商品に傷がつくと、",
+                      "reading": "しょうひんにきずがつくと、",
                       "isUnderlined": false
                     },
                     {
@@ -13890,7 +13890,7 @@
                     },
                     {
                       "text": "が下がる。",
-                      "reading": "かち",
+                      "reading": "がさがる。",
                       "isUnderlined": false
                     }
                   ],
@@ -13905,7 +13905,7 @@
                   "segments": [
                     {
                       "text": "成功するかどうかはさておき、その方法はやってみる",
-                      "reading": "かち",
+                      "reading": "せいこうするかどうかはさておき、そのほうほうはやってみる",
                       "isUnderlined": false
                     },
                     {
@@ -13915,7 +13915,7 @@
                     },
                     {
                       "text": "があると思う。",
-                      "reading": "かち",
+                      "reading": "があるとおもう。",
                       "isUnderlined": false
                     }
                   ],
@@ -13939,8 +13939,8 @@
                           "isUnderlined": true
                         },
                         {
-                          "text": "が高い⇔低い",
-                          "reading": "かち",
+                        "text": "が高い⇔低い",
+                        "reading": "がたかい⇔ひくい",
                           "isUnderlined": false
                         }
                       ],
@@ -13979,8 +13979,8 @@
                           "isUnderlined": true
                         },
                         {
-                          "text": "が上がる⇔下がる",
-                          "reading": "かち",
+                        "text": "が上がる⇔下がる",
+                        "reading": "があがる⇔さがる",
                           "isUnderlined": false
                         }
                       ],
@@ -14024,8 +14024,8 @@
                           "isUnderlined": true
                         },
                         {
-                          "text": "の相違から離婚することもあるそうだ。",
-                          "reading": "かち",
+                        "text": "の相違から離婚することもあるそうだ。",
+                        "reading": "のそういからりこんすることもあるそうだ。",
                           "isUnderlined": false
                         }
                       ],
@@ -99851,6 +99851,6 @@
     "issues": [
       "Manual audit continued through PDF page 172; remaining pages require review."
     ],
-    "candidateHash": "fb0010cc73747405ad5f104f82d075f83304aa92090772292dbdccdb54e608b4"
+    "candidateHash": "72e3aa8bbc3de38aab931cfb32a126d9edcf9f9f91c4174f2978c89d18b49445"
   }
 }
