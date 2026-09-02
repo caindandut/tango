@@ -1,0 +1,12 @@
+const fs = require('fs');
+const path = require('path');
+const file = path.resolve(__dirname, '../../file/n2_vocabulary.json');
+const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+const words = data.units.flatMap((u) => u.parts.flatMap((p) => p.words));
+const word = words.find((w) => w.sourceNumber === 887);
+const item = word.relations.flatMap((r) => r.items).find((i) => i.japanese.includes('化する'));
+if (!item) throw new Error('relation 887 化する not found');
+item.japanese = '抽象化する';
+item.segments = [{ text: '抽象化する', reading: 'ちゅうしょうかする', isUnderlined: false }];
+fs.writeFileSync(file, `${JSON.stringify(data, null, 2)}\n`);
+console.log('Corrected relation 887 合 抽象化する.');
