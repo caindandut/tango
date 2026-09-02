@@ -16,6 +16,7 @@ import {
   shouldShowQuizMeaning,
   shouldShowHanVietMeaning,
   isKatakanaVocabulary,
+  getStudyLessonTitle,
 } from '@/lib/studyPresentation';
 import {
   HAN_VIET_MEANING_STORAGE_KEY,
@@ -672,7 +673,7 @@ export default function StudyPage() {
 
       {/* Main study area */}
       <div className="study-main flex-1 flex items-center justify-center px-3 py-3 sm:px-8 sm:py-6">
-        <div className="w-full max-w-3xl">
+        <div className="w-full max-w-5xl">
           {currentWord && (
             <div className={`animate-fade-in ${studyMode === 'flashcard' ? '' : 'study-card !max-w-3xl'}`}>
               {error && (
@@ -691,6 +692,10 @@ export default function StudyPage() {
                   Ôn lại {currentWord.reviewRoundSize} từ đã trả lời sai
                 </div>
               )}
+              <div className="study-lesson-heading" data-testid="study-lesson-heading">
+                <p className="study-lesson-heading__eyebrow">Bài học đang học</p>
+                <h1>{getStudyLessonTitle(currentWord)}</h1>
+              </div>
               {studyMode === 'flashcard' ? (
                 <div>
                   <div className="flex items-center justify-between mb-3 text-sm text-slate-500">
@@ -720,7 +725,10 @@ export default function StudyPage() {
                       }).map((line) => (
                         <span
                           key={line.type}
-                          className={line.type === 'hanViet' ? 'text-slate-500 text-base sm:text-lg text-center mb-3' : 'text-slate-700 text-xl sm:text-2xl text-center mb-3'}
+                          className={[
+                            'flashcard-meaning-line text-center mb-3',
+                            line.type === 'hanViet' ? 'flashcard-meaning-line--hanviet' : '',
+                          ].join(' ')}
                         >
                           {line.value}
                         </span>
@@ -820,7 +828,7 @@ export default function StudyPage() {
                           type="button"
                           onClick={() => handleQuizSelect(option)}
                           disabled={!!checkResult || isChecking}
-                          className={`min-h-16 rounded-xl border-2 px-2 sm:px-4 py-3 text-base sm:text-lg font-japanese font-semibold transition-all ${stateClass}`}
+                          className={`min-h-16 rounded-xl border-2 px-2 sm:px-4 py-3 text-lg sm:text-xl font-japanese font-semibold transition-all ${stateClass}`}
                           role="radio"
                           aria-checked={checkResult?.userAnswer === option}
                         >
@@ -1052,7 +1060,7 @@ export default function StudyPage() {
       {/* Progress Bar (bottom) */}
       {currentWord && (
         <div className="study-progress px-4 sm:px-8 pb-4">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm font-medium text-slate-600">
                 {currentWord.currentIndex + 1} / {currentWord.totalWords}

@@ -232,6 +232,13 @@ router.get('/session/:sessionId/current', async (req, res) => {
     res.json({
       id: vocab.id,
       sourceNumber: vocab.sourceNumber,
+      lessonTitle: session.set.name,
+      setName: session.set.name,
+      unitNumber: session.set.unitNumber,
+      unitTitle: session.set.unitTitle,
+      partNumber: session.set.partNumber,
+      partTitle: session.set.partTitle,
+      isSummary: session.set.isSummary,
       kanji: vocab.kanji,
       hiragana: vocab.hiragana,
       meaning: vocab.meaning,

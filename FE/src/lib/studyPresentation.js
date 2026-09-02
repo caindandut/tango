@@ -74,6 +74,13 @@ export function getReadingCorrectAnswer(checkResult, currentWord) {
   return checkResult?.correctAnswer || currentWord?.hiragana || '';
 }
 
+export function getStudyLessonTitle(currentWord) {
+  const lessonTitle = currentWord?.lessonTitle || currentWord?.setName;
+  return typeof lessonTitle === 'string' && lessonTitle.trim()
+    ? lessonTitle.trim()
+    : 'Bài học từ vựng';
+}
+
 export function getFlashcardNextLabel(currentIndex, totalWords) {
   return currentIndex + 1 === totalWords ? 'Hoàn thành' : 'Tiếp';
 }

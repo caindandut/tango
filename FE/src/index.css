@@ -102,7 +102,7 @@
 .vocabulary-relations__japanese {
   flex: 0 1 auto;
   white-space: nowrap;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.8;
 }
 
@@ -110,7 +110,7 @@
   flex: 1 1 auto;
   min-width: 0;
   color: #334155;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   line-height: 1.6;
 }
 
@@ -125,11 +125,47 @@
 }
 
 .study-page .flashcard-examples {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
+}
+
+.study-page .study-lesson-heading {
+  margin: 0 auto 1.25rem;
+  max-width: 56rem;
+  padding: 0 0.25rem;
+  text-align: center;
+}
+
+.study-page .study-lesson-heading__eyebrow {
+  color: #10b981;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.study-page .study-lesson-heading h1 {
+  color: #f8fafc;
+  font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+  font-weight: 800;
+  line-height: 1.35;
+  margin-top: 0.35rem;
+  overflow-wrap: anywhere;
 }
 
 .study-page .flashcard-back > .hiragana-result {
   display: none;
+}
+
+.study-page .flashcard-meaning-line {
+  color: #e2e8f0;
+  font-size: clamp(1.3rem, 3vw, 1.65rem);
+  line-height: 1.45;
+}
+
+.study-page .flashcard-meaning-line--hanviet {
+  color: #94a3b8;
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
 }
 
 .study-page .flashcard-reading-visible {
@@ -146,25 +182,25 @@
 }
 
 .study-page .flashcard-examples [lang='ja'] {
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 1.4rem;
+  line-height: 2.15rem;
 }
 
 .study-page .flashcard-examples [lang='ja'] + span {
-  font-size: 1.05rem;
-  line-height: 1.75rem;
+  font-size: 1.15rem;
+  line-height: 1.85rem;
 }
 
 .study-page .flashcard-examples > .flex {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .study-page .vocabulary-examples__title {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .study-page .vocabulary-examples__count {
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .study-page .flashcard-examples .vocabulary-relations {
@@ -172,24 +208,42 @@
 }
 
 .study-page .vocabulary-examples__japanese {
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 1.4rem;
+  line-height: 2.15rem;
 }
 
 .study-page .vocabulary-examples__translation {
-  font-size: 1.05rem;
-  line-height: 1.75rem;
+  font-size: 1.15rem;
+  line-height: 1.85rem;
 }
 
 .study-page .meaning-text {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1.35rem;
+  line-height: 1.85rem;
 }
 
 .study-page .study-vocabulary .text-slate-500,
 .study-page .text-center .text-slate-500 {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   line-height: 1.6;
+}
+
+.study-page .flashcard-scene {
+  min-height: 28rem;
+}
+
+.study-page .flashcard-face {
+  max-width: none;
+}
+
+@media (max-width: 640px) {
+  .study-page .flashcard-scene {
+    min-height: 25rem;
+  }
+
+  .study-page .study-lesson-heading {
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 360px) {

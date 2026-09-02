@@ -1,5 +1,17 @@
 import { describe, expect, it } from 'vitest';
-import { getFlashcardNextLabel, getStudyMeaningLines, isKatakanaVocabulary, shouldShowHanVietMeaning } from '../lib/studyPresentation.js';
+import { getFlashcardNextLabel, getStudyLessonTitle, getStudyMeaningLines, isKatakanaVocabulary, shouldShowHanVietMeaning } from '../lib/studyPresentation.js';
+
+describe('study lesson title presentation', () => {
+  it('uses the lesson name supplied by the study session', () => {
+    expect(getStudyLessonTitle({
+      lessonTitle: 'Unit 01 - 人生 - 1–50 - Từ vựng N2 Mimikara',
+    })).toBe('Unit 01 - 人生 - 1–50 - Từ vựng N2 Mimikara');
+  });
+
+  it('falls back to a useful title when older payloads have no lesson metadata', () => {
+    expect(getStudyLessonTitle({})).toBe('Bài học từ vựng');
+  });
+});
 
 describe('Katakana vocabulary presentation', () => {
   it('detects Katakana headwords without treating hiragana as Katakana', () => {
