@@ -2542,7 +2542,37 @@
                       "isUnderlined": true
                     },
                     {
-                      "text": "の希望は海外で働くことだ。",
+                      "text": "の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "希望",
+                      "reading": "きぼう",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "海外",
+                      "reading": "かいがい",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "で",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "働く",
+                      "reading": "はたらく",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ことだ。",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -2602,7 +2632,17 @@
                       "isUnderlined": true
                     },
                     {
-                      "text": "が楽しみだ。",
+                      "text": "が",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "楽しみ",
+                      "reading": "たのしみ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "だ。",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -2762,7 +2802,22 @@
                   "vietnamese": "Cô ấy có tài năng về âm nhạc.",
                   "segments": [
                     {
-                      "text": "彼女には、音楽の",
+                      "text": "彼女",
+                      "reading": "かのじょ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "には、",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "音楽",
+                      "reading": "おんがく",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "の",
                       "reading": "",
                       "isUnderlined": false
                     },
@@ -2882,7 +2937,32 @@
                   "vietnamese": "Tôi không có năng lực giải quyết vấn đề này.",
                   "segments": [
                     {
-                      "text": "私にはこの問題を解決する",
+                      "text": "私",
+                      "reading": "わたし",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "にはこの",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "問題",
+                      "reading": "もんだい",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "解決",
+                      "reading": "かいけつ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "する",
                       "reading": "",
                       "isUnderlined": false
                     },
@@ -2907,8 +2987,23 @@
                   "vietnamese": "Hội trường này có sức chứa trên 100 người.",
                   "segments": [
                     {
-                      "text": "このホールは100人以上の収容",
+                      "text": "このホールは100",
                       "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "人以上",
+                      "reading": "にんいじょう",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "の",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "収容",
+                      "reading": "しゅうよう",
                       "isUnderlined": false
                     },
                     {
@@ -3137,7 +3232,17 @@
                   "vietnamese": "“Hãy nói điểm xấu và điểm tốt ở tính cách của bạn”",
                   "segments": [
                     {
-                      "text": "「あなたの性格の",
+                      "text": "「あなたの",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "性格",
+                      "reading": "せいかく",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "の",
                       "reading": "",
                       "isUnderlined": false
                     },
@@ -3147,7 +3252,17 @@
                       "isUnderlined": true
                     },
                     {
-                      "text": "と短所を言ってください」",
+                      "text": "と",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "短所",
+                      "reading": "たんしょ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "を言ってください」",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -3162,7 +3277,17 @@
                   "vietnamese": "Ưu điểm của chiếc xe ô tô này là ít tiêu hao nhiên liệu.",
                   "segments": [
                     {
-                      "text": "この車の",
+                      "text": "この",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "車",
+                      "reading": "くるま",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "の",
                       "reading": "",
                       "isUnderlined": false
                     },
@@ -3172,7 +3297,17 @@
                       "isUnderlined": true
                     },
                     {
-                      "text": "は燃費がいいことだ。",
+                      "text": "は",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "燃費",
+                      "reading": "ねんぴ",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "がいいことだ。",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -3312,7 +3447,27 @@
                       "isUnderlined": true
                     },
                     {
-                      "text": "を伸ばすような教育がしたい。",
+                      "text": "を",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "伸ばす",
+                      "reading": "のばす",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "ような",
+                      "reading": "",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "教育",
+                      "reading": "きょういく",
+                      "isUnderlined": false
+                    },
+                    {
+                      "text": "がしたい。",
                       "reading": "",
                       "isUnderlined": false
                     }
@@ -99696,6 +99851,6 @@
     "issues": [
       "Manual audit continued through PDF page 172; remaining pages require review."
     ],
-    "candidateHash": "4831fe0bc506ea0ebfe8d023e5fb646f4be9bbb73792375e2f5a27be4d11a818"
+    "candidateHash": "fb0010cc73747405ad5f104f82d075f83304aa92090772292dbdccdb54e608b4"
   }
 }
