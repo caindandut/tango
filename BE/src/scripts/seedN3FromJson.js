@@ -83,15 +83,23 @@ async function syncExistingN3Vocabulary(tx, lessons) {
   return updated;
 }
 
+const DEFAULT_TRANSACTION_TIMEOUT_MS = 120000;
+const DEFAULT_TRANSACTION_MAX_WAIT_MS = 30000;
+
 async function seedN3FromJson({ client = prisma, force = false } = {}) {
   const jsonPath = path.join(__dirname, '../../file/n3_vocabulary.json');
   const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8').replace(/^\uFEFF/, ''));
   const lessons = validateN3Vocabulary(data);
 
+  const transactionOptions = {
+    maxWait: DEFAULT_TRANSACTION_MAX_WAIT_MS,
+    timeout: DEFAULT_TRANSACTION_TIMEOUT_MS,
+  };
+
   const seeded = await client.$transaction(async (tx) => {
     await tx.$executeRaw`SELECT pg_advisory_xact_lock(hashtext('tango-n3-vocabulary-seed'))`;
     return syncExistingN3Vocabulary(tx, lessons);
-  });
+  }, transactionOptions);
   console.log(seeded
     ? '✅ Successfully seeded N3 Mimikara vocabulary from JSON file'
     : 'ℹ️ N3 vocabulary already exists; skipped startup reset');

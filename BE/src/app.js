@@ -36,9 +36,40 @@ app.use('/api/grammar', createGrammarRouter({
   service: createGrammarService(grammarCurriculum),
 }));
 
+function migrateDatabase() {
+  const prismaCommand = process.platform === 'win32' ? 'npx.cmd' : 'npx';
+
+  execFileSync(
+    prismaCommand,
+    ['--no-install', 'prisma', 'migrate', 'deploy'],
+    { stdio: 'inherit' },
+  );
+}
+
+const prisma = require('./lib/prisma');
+const seedVocabulary = require('./scripts/seedVocabulary');
+
 // Health check
-app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+app.get('/api/health', async (req, res) => {
+  try {
+    const setCount = await prisma.vocabularySet.count();
+    res.json({ status: 'ok', timestamp: new Date().toISOString(), setCount });
+  } catch (err) {
+    res.json({ status: 'ok', timestamp: new Date().toISOString(), dbError: err.message });
+  }
+});
+
+// Manual vocabulary sync endpoint
+app.all('/api/vocabulary/sync', async (req, res) => {
+  try {
+    console.log('🔄 Manual sync requested...');
+    await seedVocabulary();
+    const setCount = await prisma.vocabularySet.count();
+    res.json({ success: true, message: 'Vocabulary synced successfully', setCount });
+  } catch (error) {
+    console.error('Manual sync error:', error);
+    res.status(500).json({ success: false, error: error.message });
+  }
 });
 
 // Global error handler
@@ -56,25 +87,19 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal server error' });
 });
 
-const seedVocabulary = require('./scripts/seedVocabulary');
-
-function migrateDatabase() {
-  const prismaCommand = process.platform === 'win32' ? 'npx.cmd' : 'npx';
-
-  execFileSync(
-    prismaCommand,
-    ['--no-install', 'prisma', 'migrate', 'deploy'],
-    { stdio: 'inherit' },
-  );
-}
-
 // Apply schema changes before syncing published data.
 async function startServer() {
   try {
     console.log('🔄 Applying database migrations...');
     migrateDatabase();
+  } catch (err) {
+    console.error('⚠️ Failed to apply database migrations on startup:', err);
+  }
+
+  try {
     console.log('🔄 Syncing published vocabulary to Database...');
     await seedVocabulary();
+    console.log('✅ Vocabulary sync completed successfully.');
   } catch (err) {
     console.error('⚠️ Failed to sync vocabulary on startup:', err);
   }
