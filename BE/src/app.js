@@ -16,9 +16,13 @@ const PORT = process.env.PORT || 3001;
 // Render forwards the visitor IP through one trusted reverse proxy.
 app.set('trust proxy', 1);
 
+const clientOrigin = process.env.CLIENT_URL
+  ? process.env.CLIENT_URL.trim().replace(/\/+$/, '')
+  : 'http://localhost:5173';
+
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: clientOrigin,
   credentials: true,
 }));
 app.use(express.json());
