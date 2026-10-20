@@ -12,7 +12,15 @@ function shouldMarkMigrationApplied({ columnExists, migration }) {
 async function recoverVocabularyMigration({ databaseUrl = process.env.DATABASE_URL } = {}) {
   if (!databaseUrl) throw new Error('DATABASE_URL is required');
 
-  const pool = new Pool({ connectionString: databaseUrl });
+  const isRemote = Boolean(
+    databaseUrl &&
+    !databaseUrl.includes('localhost') &&
+    !databaseUrl.includes('127.0.0.1')
+  );
+  const pool = new Pool({
+    connectionString: databaseUrl,
+    ssl: isRemote ? { rejectUnauthorized: false } : undefined,
+  });
   try {
     const columnResult = await pool.query(
       `SELECT EXISTS (

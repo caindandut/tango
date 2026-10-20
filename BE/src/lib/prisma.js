@@ -5,7 +5,17 @@ const { Pool } = require('pg');
 let prisma;
 
 function createPrismaClient() {
-  const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+  const connectionString = process.env.DATABASE_URL;
+  const isRemote = Boolean(
+    connectionString &&
+    !connectionString.includes('localhost') &&
+    !connectionString.includes('127.0.0.1')
+  );
+
+  const pool = new Pool({
+    connectionString,
+    ssl: isRemote ? { rejectUnauthorized: false } : undefined,
+  });
   const adapter = new PrismaPg(pool);
   return new PrismaClient({
     adapter,
